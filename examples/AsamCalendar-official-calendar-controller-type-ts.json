@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamCalendar/official-calendar-controller-type/ts/Demo.vue",
+			"sha256": "9ef38424206ea71ef27820a2f098d5056d8939ec3d3fd0501cd12aeba79aaf26",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ea2274f17060821bd4c76558ab0f892f55ab4267096a0d7b85ce459f2285e627.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ea2274f17060821bd4c76558ab0f892f55ab4267096a0d7b85ce459f2285e627.txt\n-->\n<template>\n\t<AsamRadioGroup :model-value=\"controllerType\" @update:model-value=\"updatecontrollerType\">\n\t\t<AsamRadioButton label=\"select\" value=\"select\" />\n\t\t<AsamRadioButton label=\"button\" value=\"button\" />\n\t</AsamRadioGroup>\n\n\t<AsamCalendar v-model=\"value\" :controller-type=\"controllerType\" />\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamRadioGroup, AsamRadioButton, AsamCalendar } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamCalendarofficialcalendarcontrollertypeExample' });\n\nimport { ref } from 'vue';\n\nconst controllerType = ref<'select' | 'button'>('select');\nconst value = ref(new Date());\nfunction updatecontrollerType(value: unknown) {\n\tif (value === 'button' || value === 'select') controllerType.value = value;\n}\n</script>\n",
+			"originalSourceSha256": "01254b33dc53c74981bffc1e0a33fec42e8758757126b2611339fb6bb5f9c006",
+			"notice": {
+				"id": "ea2274f17060821bd4c76558ab0f892f55ab4267096a0d7b85ce459f2285e627",
+				"url": "/licenses/source-notices/ea2274f17060821bd4c76558ab0f892f55ab4267096a0d7b85ce459f2285e627.txt",
+				"licenseFilename": "LICENSE-ea2274f17060821bd4c76558ab0f892f55ab4267096a0d7b85ce459f2285e627.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/calendar/controller-type.vue",
+					"sourceSha256": "89e2e350b39643994f79c9c9afbd36ff2195a27a6464e43dc377f721630f4d14",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-ea2274f17060821bd4c76558ab0f892f55ab4267096a0d7b85ce459f2285e627.txt",
+			"source": "Adapted from Element Plus 2.14.7 calendar/controller-type. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "ea2274f17060821bd4c76558ab0f892f55ab4267096a0d7b85ce459f2285e627",
+			"noticeId": "ea2274f17060821bd4c76558ab0f892f55ab4267096a0d7b85ce459f2285e627"
+		}
+	]
+}

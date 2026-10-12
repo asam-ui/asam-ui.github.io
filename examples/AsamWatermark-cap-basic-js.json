@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamWatermark/cap-basic/js/Demo.vue",
+			"sha256": "aa359545a0a232eae709bdbaefc0b79b50f7451c1301a13f256fcc9c05030f63",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e4cab9f35c620af36f05c822b4357597d5cc42fbc671b9cfebda2abe9691edb1.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e4cab9f35c620af36f05c822b4357597d5cc42fbc671b9cfebda2abe9691edb1.txt\n-->\n<template>\n\t<button type=\"button\" @click=\"isDark = !isDark\">切换深色水印</button>\n\t<AsamWatermark :font=\"font\">\n\t\t<div style=\"height: 500px\" />\n\t</AsamWatermark>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamWatermarkCapBasicDemo' });\nimport { AsamWatermark } from '@asam-ui/ui';\nimport { reactive, watch } from 'vue';\nimport { ref } from 'vue';\nconst isDark = ref(false);\nconst font = reactive({\n\tcolor: 'rgba(0, 0, 0, .15)'\n});\nwatch(\n\tisDark,\n\t() => {\n\t\tfont.color = isDark.value ? 'rgba(255, 255, 255, .15)' : 'rgba(0, 0, 0, .15)';\n\t},\n\t{\n\t\timmediate: true\n\t}\n);\n</script>\n",
+			"originalSourceSha256": "44a9d6c4850c539630d32eba3ba3e5a591c3af6572e4d649e6b139f26913a78f",
+			"notice": {
+				"id": "e4cab9f35c620af36f05c822b4357597d5cc42fbc671b9cfebda2abe9691edb1",
+				"url": "/licenses/source-notices/e4cab9f35c620af36f05c822b4357597d5cc42fbc671b9cfebda2abe9691edb1.txt",
+				"licenseFilename": "LICENSE-e4cab9f35c620af36f05c822b4357597d5cc42fbc671b9cfebda2abe9691edb1.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/watermark/basic.vue",
+					"sourceSha256": "ad60bb395f964c0df5efbb10a25f55452c2d942d7dfc2679b526eb35899956aa",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-e4cab9f35c620af36f05c822b4357597d5cc42fbc671b9cfebda2abe9691edb1.txt",
+			"source": "Adapted from Element Plus 2.14.7 watermark/basic. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "e4cab9f35c620af36f05c822b4357597d5cc42fbc671b9cfebda2abe9691edb1",
+			"noticeId": "e4cab9f35c620af36f05c822b4357597d5cc42fbc671b9cfebda2abe9691edb1"
+		}
+	]
+}

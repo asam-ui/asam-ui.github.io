@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamNotification/ep2147-basic/js/Demo.vue",
+			"sha256": "3a83350c50d0ae3daf4d44a0886e22e39b059002881546ba069e4cd474b70339",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-10674ae89c4d0f97ecc7b5e2c884a3a6f816843897f45b8ae369567b7a195484.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/10674ae89c4d0f97ecc7b5e2c884a3a6f816843897f45b8ae369567b7a195484.txt\n-->\n<template>\n\t<div class=\"flex flex-wrap gap-1\">\n\t\t<AsamButton class=\"!ml-0\" plain @click=\"open1\"> Closes automatically </AsamButton>\n\t\t<AsamButton class=\"!ml-0\" plain @click=\"open2\"> Won't close automatically </AsamButton>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamButton, AsamNotification } from '@asam-ui/ui';\nimport { onBeforeUnmount } from 'vue';\nimport { h } from 'vue';\nconst open1 = () => {\n\ttrackAsamNotification(\n\t\tAsamNotification({\n\t\t\ttitle: 'Title',\n\t\t\tmessage: h('i', { style: 'color: teal' }, 'This is a reminder')\n\t\t})\n\t);\n};\nconst open2 = () => {\n\ttrackAsamNotification(\n\t\tAsamNotification({\n\t\t\ttitle: 'Prompt',\n\t\t\tmessage: 'This is a message that does not automatically close',\n\t\t\tduration: 0\n\t\t})\n\t);\n};\nconst ownedAsamNotification = new Set();\nlet mountedAsamNotification = true;\nconst trackAsamNotification = (handle) => {\n\tif (mountedAsamNotification) ownedAsamNotification.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamNotification = false;\n\tfor (const handle of ownedAsamNotification) handle.close();\n\townedAsamNotification.clear();\n});\n</script>\n",
+			"originalSourceSha256": "24d188f898ad868406918e6249c1785bfd0e09e5b203b62b4b885bddc8dcffeb",
+			"notice": {
+				"id": "10674ae89c4d0f97ecc7b5e2c884a3a6f816843897f45b8ae369567b7a195484",
+				"url": "/licenses/source-notices/10674ae89c4d0f97ecc7b5e2c884a3a6f816843897f45b8ae369567b7a195484.txt",
+				"licenseFilename": "LICENSE-10674ae89c4d0f97ecc7b5e2c884a3a6f816843897f45b8ae369567b7a195484.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/notification/basic.vue",
+					"sourceSha256": "46a71c9be1e7d0b694633d9ff8e7a599cf74496a227fc3a06a60ee109b8221f3",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-10674ae89c4d0f97ecc7b5e2c884a3a6f816843897f45b8ae369567b7a195484.txt",
+			"source": "Adapted from Element Plus 2.14.7 notification/basic. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "10674ae89c4d0f97ecc7b5e2c884a3a6f816843897f45b8ae369567b7a195484",
+			"noticeId": "10674ae89c4d0f97ecc7b5e2c884a3a6f816843897f45b8ae369567b7a195484"
+		}
+	]
+}

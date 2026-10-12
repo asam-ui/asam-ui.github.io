@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="color-scheme" content="light dark" />
+		<meta name="description" content="ASAM UI 开发者文档。Vue 3 组件、安装指南与设计系统。" />
+		<title>开始使用 · ASAM UI</title>
+		<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+		<link rel="stylesheet" href="/assets/style.css?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9" />
+		<script src="/assets/theme-init.js"></script>
+		<script src="/assets/vendor/gsap.min.js" defer></script>
+		<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+		<script src="/assets/catalog.js" defer></script>
+		<script src="/assets/app.js?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9" defer></script>
+		
+	<link rel="stylesheet" href="/assets/ai-guide.css" /><link rel="stylesheet" href="/assets/website-layout.css?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9"><script src="/assets/website-layout.js?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9"></script></head>
+	<body data-page="getting-started">
+		<a class="skip-link" href="#main">跳到正文</a>
+		<header class="site-header" data-site-component="header">
+			<div class="nav-shell">
+				<a class="brand" href="/index.html" aria-label="ASAM UI 首页"
+					><span class="brand-mark" aria-hidden="true">A<span></span></span
+					><strong>ASAM<span class="brand-ui"> UI</span></strong></a
+				>
+				<nav class="primary-nav" aria-label="主导航">
+					<a href="/getting-started.html" aria-current="page">开始使用</a
+					><a href="/component-catalog.html">组件</a><a href="/design-system.html">设计系统</a>
+				<a href="/ai/index.html">AI</a></nav>
+				<div class="nav-actions"><button type="button" class="icon-button website-wide-toggle" aria-pressed="false" aria-label="开启宽屏模式" title="开启宽屏模式"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 4v16M16 4v16"/><path class="wide-expand" d="m11 10-2 2 2 2m2-4 2 2-2 2"/><path class="wide-contract" d="m9 10 2 2-2 2m6-4-2 2 2 2"/></svg></button>
+					<button
+						class="search-trigger"
+						type="button"
+						data-open-search
+						aria-label="搜索文档，快捷键 Control K"
+					>
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+								/></svg></span
+						><span>搜索文档</span><kbd>Ctrl K</kbd></button
+					><button
+						class="icon-button theme-toggle"
+						type="button"
+						aria-label="切换显示模式"
+					>
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z"
+								/></svg
+						></span></button
+					><button
+						class="icon-button menu-toggle"
+						type="button"
+						aria-label="展开导航"
+						aria-controls="mobile-nav"
+						aria-expanded="false"
+					>
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+								/></svg
+						></span>
+					</button>
+				</div>
+			</div>
+			<nav id="mobile-nav" class="mobile-nav" aria-label="移动端导航" hidden>
+				<a href="/getting-started.html"
+					 aria-current="page">开始使用<span class="icon-wrap"
+						><svg
+							class="icon"
+							aria-hidden="true"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 256 256"
+							fill="currentColor"
+						>
+							<path
+								d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+							/></svg></span></a
+				><a href="/component-catalog.html"
+					>组件<span class="icon-wrap"
+						><svg
+							class="icon"
+							aria-hidden="true"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 256 256"
+							fill="currentColor"
+						>
+							<path
+								d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+							/></svg></span></a
+				><a href="/design-system.html"
+					>设计系统<span class="icon-wrap"
+						><svg
+							class="icon"
+							aria-hidden="true"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 256 256"
+							fill="currentColor"
+						>
+							<path
+								d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+							/></svg></span
+				></a>
+			<a href="/ai/index.html">AI</a><details class="mobile-section-nav"><summary>本页导航</summary><div class="docs-sidebar mobile-sidebar-content"><span class="sidebar-heading">文档导航</span><a href="/getting-started.html" class="selected" aria-current="page">开始使用</a><a href="/component-catalog.html">组件目录</a><a href="/design-system.html">设计系统</a><div class="sidebar-divider"></div><span class="sidebar-heading">深入使用</span><a href="/guide/installation.html">安装与消费</a><a href="/guide/architecture.html">架构与边界</a><a href="/guide/provider.html">数据 provider</a><a href="/guide/contracts.html">联合类型与透传契约</a><a href="/guide/data-driven.html">数据驱动</a><a href="/guide/theme.html">主题与 CSS variables</a></div></details><details class="mobile-section-nav"><summary>本页内容</summary><div class="mobile-page-toc"><span>本页内容</span><nav><a href="#_1-安装固定产物与依赖">1. 安装固定产物与依赖</a><a class="toc-sub" href="#独立图标包-按需">独立图标包（按需）</a><a href="#_2-共用-vue-vite-基线">2. 共用 Vue/Vite 基线</a><a href="#_3-全量注册">3. 全量注册</a><a href="#_4-手动按需">4. 手动按需</a><a href="#_5-自动按需-推荐">5. 自动按需（推荐）</a><a class="toc-sub" href="#指令按需导入">指令按需导入</a><a href="#_6-样式、主题与-provider">6. 样式、主题与 provider</a><a href="#_7-验证与迁移">7. 验证与迁移</a><a href="#heading-1">继续接入数据</a></nav></div></details></nav>
+		</header>
+		
+		<div class="docs-layout wrap site-doc-layout" data-site-component="layout"><aside class="docs-sidebar" data-site-component="sidebar" aria-label="文档目录"><span class="sidebar-heading">文档导航</span><a href="/getting-started.html" class="selected" aria-current="page">开始使用</a><a href="/component-catalog.html">组件目录</a><a href="/design-system.html">设计系统</a><div class="sidebar-divider"></div><span class="sidebar-heading">深入使用</span><a href="/guide/installation.html">安装与消费</a><a href="/guide/architecture.html">架构与边界</a><a href="/guide/provider.html">数据 provider</a><a href="/guide/contracts.html">联合类型与透传契约</a><a href="/guide/data-driven.html">数据驱动</a><a href="/guide/theme.html">主题与 CSS variables</a></aside><article id="main" tabindex="-1" class="docs-content ai-content"><h1 id="安装与接入" tabindex="-1">安装与接入 <a class="header-anchor" href="#安装与接入" aria-label="Permalink to &quot;安装与接入&quot;">&ZeroWidthSpace;</a></h1>
+<p>从同一份固定包产物选择一种组件导入方式：<a href="#full-import">全量注册</a>、<a href="#manual-import">手动按需</a>、<a href="#auto-import">自动按需（推荐）</a>。三种方式共享 Vue、Element Plus、样式和 <a href="#provider">provider 初始化</a>。本页以 Vue 3 + TypeScript + Vite 的 ESM 项目为例。</p>
+<table tabindex="0">
+<thead>
+<tr>
+<th>方式</th>
+<th>组件使用</th>
+<th>适合场景</th>
+<th>模板类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全量注册</td>
+<td><code>app.use(AsamUIFull)</code>，模板直接写组件</td>
+<td>快速接入、接受全量 JS</td>
+<td><code>@asam-ui/ui/global</code></td>
+</tr>
+<tr>
+<td>手动按需</td>
+<td>在 SFC 显式 <code>import</code></td>
+<td>希望逐项控制导入</td>
+<td>跟随组件 import</td>
+</tr>
+<tr>
+<td>自动按需（推荐）</td>
+<td>resolver 按模板用量生成 import</td>
+<td>多页面 Vue/Vite 项目</td>
+<td>插件生成 <code>components.d.ts</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_1-安装固定产物与依赖" tabindex="-1">1. 安装固定产物与依赖 <a class="header-anchor" href="#_1-安装固定产物与依赖" aria-label="Permalink to &quot;1. 安装固定产物与依赖&quot;">&ZeroWidthSpace;</a></h2>
+<p>当前包版本为 <code>0.1.0-alpha.1</code>，npmjs 尚未完成首发。请使用项目交付的 <strong>tarball、来源提交 SHA 和 SHA256</strong>；相同 alpha 版本号不能证明产物相同。全量入口要求使用包含 <code>./full</code> 与 <code>./global</code> 出口的新候选，旧 tarball 不能直接照用全量示例。不要把 registry 安装成功或公开发布当作前置事实。</p>
+<p>将已核验的文件放入消费项目的 <code>artifacts/</code>，在该项目中运行：</p>
+<div class="language-sh vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-1" aria-label="复制代码">复制</button><span class="lang">sh</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-1"><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">pnpm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> add</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> ./artifacts/asam-ui-ui-0.1.0-alpha.1.tgz</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> vue@3.5.34</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> element-plus@2.13.7</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">pnpm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> add</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -D</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> vite@8.0.10</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> @vitejs/plugin-vue@6.0.9</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> typescript@6.0.3</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> vue-tsc@3.3.11</span></span></code></pre>
+</div><p>已有项目保留现有包管理器、锁文件和配置，只补缺项并检查兼容范围。当前核心包 peers 是 <code>vue &gt;=3.5.34 &lt;3.6.0</code>、<code>element-plus &gt;=2.13.7 &lt;2.14.0</code>；自动按需另需可选 peer <code>unplugin-vue-components &gt;=32.1.0 &lt;33</code>。上述精确版本是本仓验证组合，Node.js 为 <code>22.19.0</code>，pnpm 为 <code>11.9.0</code>。核心包内已声明编辑器等运行依赖，勿把它们复制成宿主必装 peers。</p>
+<p>当前 Tiptap Vue 适配包的可选菜单依赖使用范围版本，新锁可能解析到与核心不同的补丁。此候选的 pnpm 11 消费项目在自己的 <code>pnpm-workspace.yaml</code> 合并以下定向约束，再运行 <code>pnpm install</code> 和 <code>pnpm peers check</code>；已有同名约束先核对，不覆盖。已有固定锁已解析为 3.31.3 时不需重复调整。其他包管理器采用其对应的定向依赖约束并复核依赖树。</p>
+<div class="language-yaml vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-2" aria-label="复制代码">复制</button><span class="lang">yaml</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-2"><span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">overrides</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    '@tiptap/vue-3@3.31.3>@tiptap/extension-bubble-menu'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'3.31.3'</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    '@tiptap/vue-3@3.31.3>@tiptap/extension-floating-menu'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'3.31.3'</span></span></code></pre>
+</div><p>这两项是已观察到的上游可选依赖补丁漂移修正，不是 ASAM 新增 peers。保留消费锁文件，后续 CI 使用 <code>pnpm install --frozen-lockfile</code>。</p>
+<p>有本仓源码时也可从固定 checkout 构建真实 tarball（仓库根目录执行）：</p>
+<div class="language-sh vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-3" aria-label="复制代码">复制</button><span class="lang">sh</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-3"><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">pnpm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --frozen-lockfile</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">pnpm</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --filter</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> @asam-ui/ui</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> build</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">pnpm</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --dir</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> packages/ui</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> pack</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --pack-destination</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> ../../artifacts</span></span></code></pre>
+</div><p>在 PowerShell 可用 <code>Get-FileHash ./artifacts/asam-ui-ui-0.1.0-alpha.1.tgz -Algorithm SHA256</code> 核对交付清单。更新同版本本地包时必须重装并核对安装内容，不能沿用旧缓存冒充新候选。公开发布后才改为 registry 中已存在的精确版本。</p>
+<h3 id="独立图标包-按需" tabindex="-1">独立图标包（按需） <a class="header-anchor" href="#独立图标包-按需" aria-label="Permalink to &quot;独立图标包（按需）&quot;">&ZeroWidthSpace;</a></h3>
+<p>需要图标时，额外安装交付清单中已核验 SHA256 的独立 tarball；图标不随核心 CSS 或全量插件自动注册：</p>
+<div class="language-sh vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-4" aria-label="复制代码">复制</button><span class="lang">sh</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-4"><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">pnpm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> add</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> ./artifacts/asam-ui-icons-vue-0.1.0-alpha.1.tgz</span></span></code></pre>
+</div><p><code>@asam-ui/icons-vue</code> 使用相同的 Vue peer 范围，不依赖 Element Plus，也不提供 CSS。可从根入口具名导入，或从大小写精确的单图标子路径默认导入，二者选一种：</p>
+<div class="language-ts vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-5" aria-label="复制代码">复制</button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-5"><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { Search } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/icons-vue'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 或：import Search from '@asam-ui/icons-vue/Search';</span></span></code></pre>
+</div><p>将显式导入的图标传给 ASAM 控件，例如 <code>&lt;AsamButton :icon=&quot;Search&quot;&gt;查询&lt;/AsamButton&gt;</code>。图标根入口没有默认导出；已有上游图标 import 应迁移到实际存在的 ASAM 图标名，不能只替换包名并假定全部名字一致。自动按需组件 resolver 不负责图标导入。</p>
+<h2 id="_2-共用-vue-vite-基线" tabindex="-1">2. 共用 Vue/Vite 基线 <a class="header-anchor" href="#_2-共用-vue-vite-基线" aria-label="Permalink to &quot;2. 共用 Vue/Vite 基线&quot;">&ZeroWidthSpace;</a></h2>
+<p>手动和全量模式的 <code>vite.config.ts</code>：</p>
+<div class="language-ts vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-6" aria-label="复制代码">复制</button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-6"><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { defineConfig } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'vite'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> vue </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@vitejs/plugin-vue'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> defineConfig</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({ plugins: [</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">vue</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()] });</span></span></code></pre>
+</div><p><code>index.html</code> 包含 <code>&lt;div id=&quot;app&quot;&gt;&lt;/div&gt;</code> 和 <code>&lt;script type=&quot;module&quot; src=&quot;/src/main.ts&quot;&gt;&lt;/script&gt;</code>。消费端 <code>tsconfig.json</code> 最小配置如下；在既有项目中合并到实际负责应用的 tsconfig，不覆盖现有 paths、types、include 或项目引用。</p>
+<div class="language-json vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-7" aria-label="复制代码">复制</button><span class="lang">json</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-7"><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">	"compilerOptions"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">		"target"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"ES2022"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">		"module"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"ESNext"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">		"moduleResolution"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Bundler"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">		"strict"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">		"skipLibCheck"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">		"noEmit"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">		"lib"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"ESNext"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"DOM"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">		"types"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"vite/client"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	},</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">	"include"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"src/**/*.ts"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"src/**/*.vue"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"components.d.ts"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"vite.config.ts"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p><a id="full-import"></a></p>
+<h2 id="_3-全量注册" tabindex="-1">3. 全量注册 <a class="header-anchor" href="#_3-全量注册" aria-label="Permalink to &quot;3. 全量注册&quot;">&ZeroWidthSpace;</a></h2>
+<p><code>src/main.ts</code> 使用独立全量入口，注册固定候选的公开组件清单，并安装主题和数据运行时：</p>
+<div class="language-ts vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-8" aria-label="复制代码">复制</button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-8"><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { createApp } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'vue'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> AsamUIFull </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui/full'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'element-plus/dist/index.css'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui/style.css'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> App </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> './App.vue'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">createApp</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(App).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">use</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(AsamUIFull).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">mount</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#app'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span></code></pre>
+</div><p>在应用 tsconfig 的 <code>compilerOptions.types</code> 中<strong>追加</strong> <code>&quot;@asam-ui/ui/global&quot;</code>，例如 <code>[&quot;vite/client&quot;, &quot;@asam-ui/ui/global&quot;]</code>。这是可选模板类型入口，不生成运行时注册，不要在 <code>main.ts</code> 中把它作为 JS import。</p>
+<p><code>src/App.vue</code> 无需逐个导入 ASAM 组件：</p>
+<div class="language-vue vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-9" aria-label="复制代码">复制</button><span class="lang">vue</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-9"><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">AsamButton</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> @</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">click</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">count</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">++</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>已点击 {{ count }} 次&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">AsamButton</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> setup</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> lang</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"ts"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { ref } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'vue'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> count</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
+</div><p><code>AsamUIFull</code> 也支持具名导出，接收与 <code>AsamUIOptions</code> 相同的 <code>theme</code>、<code>target</code>、<code>dataProvider</code>、<code>dataScope</code>。根入口 <code>AsamUI</code> 继续只初始化主题与运行时，<strong>不全量注册组件</strong>；现有根入口默认/具名导出保持兼容。一个 app 选择一种安装插件，在首次安装时传入选项，不重复安装两个插件来覆盖配置。全量模式会保留未使用的已注册组件 JS；若需按用量裁剪，请选择 <a href="#manual-import">手动</a> 或 <a href="#auto-import">自动</a>。</p>
+<p><a id="manual-import"></a></p>
+<h2 id="_4-手动按需" tabindex="-1">4. 手动按需 <a class="header-anchor" href="#_4-手动按需" aria-label="Permalink to &quot;4. 手动按需&quot;">&ZeroWidthSpace;</a></h2>
+<p><code>src/main.ts</code> 显式加载两份样式；需要运行时配置时安装根插件：</p>
+<div class="language-ts vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-10" aria-label="复制代码">复制</button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-10"><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { createApp } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'vue'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { AsamUI } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'element-plus/dist/index.css'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui/style.css'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> App </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> './App.vue'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">createApp</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(App).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">use</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(AsamUI).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">mount</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#app'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span></code></pre>
+</div><p><code>src/App.vue</code> 显式导入使用的组件与类型：</p>
+<div class="language-vue vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-11" aria-label="复制代码">复制</button><span class="lang">vue</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-11"><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">AsamButton</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> @</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">click</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">count</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">++</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>已点击 {{ count }} 次&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">AsamButton</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">AsamInput</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"input"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-model</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">name</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> placeholder</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"输入名称"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> setup</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> lang</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"ts"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { ref } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'vue'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { AsamButton, AsamInput } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { AsamInputExpose } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> count</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> name</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">''</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> input</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">AsamInputExpose</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>();</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
+</div><p>默认样式配合静态组件可以不安装 <code>AsamUI</code>；自定义主题、URL 请求或字典能力按 <a href="#provider">provider 初始化</a> 配置。手动模式不需要 <code>unplugin-vue-components</code> 或全局组件类型声明。包是 ESM，构建器可以剔除未引用组件 JS；CSS 仍是完整样式入口。</p>
+<p><a id="auto-import"></a></p>
+<h2 id="_5-自动按需-推荐" tabindex="-1">5. 自动按需（推荐） <a class="header-anchor" href="#_5-自动按需-推荐" aria-label="Permalink to &quot;5. 自动按需（推荐）&quot;">&ZeroWidthSpace;</a></h2>
+<p>在消费项目安装模板组件插件：</p>
+<div class="language-sh vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-12" aria-label="复制代码">复制</button><span class="lang">sh</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-12"><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">pnpm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> add</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -D</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> unplugin-vue-components@32.1.0</span></span></code></pre>
+</div><p>完整 <code>vite.config.ts</code> 示例；已有插件数组中合并 <code>Components</code> 配置，已有 resolver 保留，不重复创建同类插件：</p>
+<div class="language-ts vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-13" aria-label="复制代码">复制</button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-13"><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { defineConfig } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'vite'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> vue </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@vitejs/plugin-vue'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> Components </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'unplugin-vue-components/vite'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { AsamUIResolver } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui/resolver'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> defineConfig</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	plugins: [</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">		vue</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(),</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">		Components</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			dirs: [],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			resolvers: [</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">AsamUIResolver</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			dts: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'components.d.ts'</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		})</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">});</span></span></code></pre>
+</div><p><code>dirs: []</code> 让这个最小示例只使用 resolver；已有本地组件扫描时保留宿主 <code>dirs</code>。无需扫描 ASAM 包源码。<code>src/main.ts</code>：</p>
+<div class="language-ts vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-14" aria-label="复制代码">复制</button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-14"><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { createApp } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'vue'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { AsamUI } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> App </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> './App.vue'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">createApp</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(App).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">use</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(AsamUI).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">mount</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#app'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span></code></pre>
+</div><p><code>src/App.vue</code>：</p>
+<div class="language-vue vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-15" aria-label="复制代码">复制</button><span class="lang">vue</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-15"><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">AsamButton</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> @</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">click</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">count</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">++</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>已点击 {{ count }} 次&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">AsamButton</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">asam-input</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-model</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">name</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> placeholder</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"输入名称"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> setup</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> lang</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"ts"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { ref } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'vue'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> count</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> name</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">''</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
+</div><p>插件把 PascalCase 和 kebab-case 模板名称转换后交给 <code>AsamUIResolver()</code>，只匹配固定候选的公开组件清单。未知名称（例如 <code>AsamUnknown</code>）返回 <code>undefined</code>，不会生成不存在的导入。函数、类型、provider、主题 API、JS/TS 中直接使用的组件仍需显式 import；本配置不负责 Vue 函数自动导入。</p>
+<p>先运行 <code>pnpm exec vite build</code>（或开发服务器编译使用组件的页面），生成 <code>components.d.ts</code>，再运行 <code>pnpm exec vue-tsc --noEmit</code>。生成文件必须包含在应用 tsconfig 中；CI 从干净 checkout 开始时也应先生成再检查。不要手改该文件，也不要通过全量 global 类型掩盖 resolver 未工作的情况。</p>
+<p>resolver 为每个匹配返回 <code>element-plus/dist/index.css</code>、<code>@asam-ui/ui/style.css</code> 两项 <code>sideEffects</code>，因此这个纯模板示例无需再次手写 CSS import。只有脚本导入或没有任何匹配模板时，仍须显式加载两份 CSS。若宿主有最后加载的覆盖样式，可集中显式导入两份库 CSS 后再加载覆盖样式，并检查最终 CSS 顺序。当前没有关闭 resolver 样式注入的选项。</p>
+<h3 id="指令按需导入" tabindex="-1">指令按需导入 <a class="header-anchor" href="#指令按需导入" aria-label="Permalink to &quot;指令按需导入&quot;">&ZeroWidthSpace;</a></h3>
+<p>指令与组件 resolver 分开。需要模板指令自动导入时，在上述配置的 resolvers 中同时加入 <code>AsamUIDirectiveResolver()</code>，并启用 <code>directives: true</code>：</p>
+<div class="language-ts vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-16" aria-label="复制代码">复制</button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-16"><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { AsamUIResolver, AsamUIDirectiveResolver } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui/resolver'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Components</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	dirs: [],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	directives: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	resolvers: [</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">AsamUIResolver</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(), </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">AsamUIDirectiveResolver</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	dts: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'components.d.ts'</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">});</span></span></code></pre>
+</div><p>例如模板 <code>v-asam-loading</code> 匹配公开 <code>vAsamLoading</code>。固定候选还匹配 asam-infinite-scroll、asam-popover、asam-click-outside、asam-mousewheel、asam-trap-focus、asam-repeat-click；未知名称返回 undefined。手动导入指令时仍从根公开出口使用实际名称，并按 Vue 的本地指令命名或 app.directive 注册。组件按需导入不会自动启用指令 resolver。</p>
+<p><a id="provider"></a></p>
+<h2 id="_6-样式、主题与-provider" tabindex="-1">6. 样式、主题与 provider <a class="header-anchor" href="#_6-样式、主题与-provider" aria-label="Permalink to &quot;6. 样式、主题与 provider&quot;">&ZeroWidthSpace;</a></h2>
+<p>三种模式都必须加载 Element Plus 完整 CSS，再加载 ASAM 完整 CSS，最后加载宿主覆盖样式。<code>@asam-ui/ui/style.css</code> 不含 Element Plus CSS、页面 reset、字体或图标资产；目前没有逐组件 CSS 出口。包的 <code>sideEffects: [&quot;**/*.css&quot;]</code> 防止生产构建把已导入 CSS 摇掉，不表示组件 JS 全量加载。ASAM 组件内部显式导入 Element Plus 组件，无需为渲染 ASAM 再 <code>app.use(ElementPlus)</code>；宿主自己的 <code>El*</code> 组件按宿主策略导入。</p>
+<p>以下 <code>src/provider.ts</code> 是可运行的本地演示，不请求真实后端：</p>
+<div class="language-ts vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-17" aria-label="复制代码">复制</button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-17"><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { AsamDataProvider } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> dataProvider</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamDataProvider</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	async</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> request</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">		return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> [{ label: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'已就绪'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, value: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'ready'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }];</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	},</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	dict: {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">		async</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> get</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">			return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> [{ label: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'已就绪'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, value: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'ready'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }];</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">};</span></span></code></pre>
+</div><p>在上述 <code>main.ts</code> 中显式导入后，将所选插件的首次安装改成：</p>
+<div class="language-ts vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-18" aria-label="复制代码">复制</button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-18"><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { dataProvider } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> './provider'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 全量使用 AsamUIFull；手动/自动使用 AsamUI。</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">app.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">use</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(AsamUI, {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	dataProvider,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	dataScope: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'demo-session'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	theme: { color: { primary: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#345678'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> } }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">});</span></span></code></pre>
+</div><p>这里的 <code>app</code> 是 <code>const app = createApp(App)</code>；先 <code>use</code> 再 <code>app.mount('#app')</code>。URL 请求和字典依赖注入，静态数组与 API 函数不要求 provider。真实宿主负责 HTTP、认证、AbortSignal 传递、响应适配和错误通知。也可使用 <code>provideAsamData(app, provider, { scope })</code> 单独安装；登录/租户切换通过 <code>setAsamDataScope</code> 更新上下文。</p>
+<p>只有芋道宿主才需要额外安装同一固定候选的 <code>asam-ui-ui-yudao-0.1.0-alpha.1.tgz</code>，再从 <code>@asam-ui/ui-yudao</code> 显式导入 <code>createYudaoProvider</code>，注入既有请求与字典 store。adapter 不包含 CSS，也不是运行所有组件的必需依赖。</p>
+<h2 id="_7-验证与迁移" tabindex="-1">7. 验证与迁移 <a class="header-anchor" href="#_7-验证与迁移" aria-label="Permalink to &quot;7. 验证与迁移&quot;">&ZeroWidthSpace;</a></h2>
+<p>包版本、公开组件与指令清单、图标子路径及全量出口均以同一固定候选的实际 package.json、声明文件和交付指纹为准。旧版本示例中的固定组件数量不用于判断新候选是否完整。</p>
+<p>三条路径都运行 <code>pnpm exec vite build</code> 与 <code>pnpm exec vue-tsc --noEmit</code>，再预览检查按钮点击、输入、样式和 provider。仓库内 <code>tests/doc-007/verify.mjs</code> 会将同一份真实 tarball 安装到三个独立消费目录，执行构建、类型与浏览器检查；不使用包源码 alias。完整复现命令及浏览器环境要求见该目录 README。</p>
+<ul>
+<li>从根 <code>AsamUI</code> 切换到全量时，只替换插件 import/use，并追加 global 类型；不要移除 provider/theme 选项。</li>
+<li>从全量切换到按需时，移除全量插件与 global 类型；手动模式补全组件 import，自动模式先生成声明。两者按需保留根 <code>AsamUI</code> 初始化。</li>
+<li>既有 CL 的 Vite 配置是 CommonJS，获取 ESM resolver 使用 <code>await import('@asam-ui/ui/resolver')</code>；不要直接粘贴这里的 ESM 配置覆盖它。保留 CL 已有函数自动导入与业务设置。</li>
+<li>这里验证的是 Vue/Vite 三种路径，不扩展为 Nuxt、CDN、Webpack 或函数自动导入支持。</li>
+</ul>
+<p>信息结构参考 <a href="https://element-plus.org/en-US/guide/quickstart.html" target="_blank" rel="noreferrer">Element Plus 官方快速开始</a>；ASAM 的出口、初始化和整包 CSS 行为以本页及实际交付产物为准。</p>
+<section class="doc-section"><h2 id="heading-1">继续接入数据</h2><p>异步选项和字典由宿主注入 provider。阅读<a href="/guide/provider.html">数据 provider</a>与<a href="/guide/data-driven.html">数据驱动指南</a>，再返回组件目录查看对应示例。</p></section></article><aside class="page-toc" data-site-component="outline" aria-label="本页内容"><span>本页内容</span><nav><a href="#_1-安装固定产物与依赖">1. 安装固定产物与依赖</a><a class="toc-sub" href="#独立图标包-按需">独立图标包（按需）</a><a href="#_2-共用-vue-vite-基线">2. 共用 Vue/Vite 基线</a><a href="#_3-全量注册">3. 全量注册</a><a href="#_4-手动按需">4. 手动按需</a><a href="#_5-自动按需-推荐">5. 自动按需（推荐）</a><a class="toc-sub" href="#指令按需导入">指令按需导入</a><a href="#_6-样式、主题与-provider">6. 样式、主题与 provider</a><a href="#_7-验证与迁移">7. 验证与迁移</a><a href="#heading-1">继续接入数据</a></nav></aside></div>
+		<footer class="site-footer wrap">
+			<div>
+				<a class="footer-brand" href="/index.html">ASAM UI</a
+				><span>让一致的体验，从组件开始。</span>
+			</div>
+			<div class="footer-links">
+				<a href="/getting-started.html#release">当前接入方式</a
+				><a href="/design-system.html">设计系统</a
+				><span class="preview-label">静态设计预览</span>
+			</div>
+		</footer>
+		<dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
+			<div class="dialog-top">
+				<h2 id="search-title">搜索文档</h2>
+				<button class="icon-button" type="button" data-close-dialog aria-label="关闭搜索">
+					<span class="icon-wrap"
+						><svg
+							class="icon"
+							aria-hidden="true"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 256 256"
+							fill="currentColor"
+						>
+							<path
+								d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+							/></svg
+					></span>
+				</button>
+			</div>
+			<label class="search-field"
+				><span class="sr-only">搜索组件或指南</span
+				><span class="icon-wrap"
+					><svg
+						class="icon"
+						aria-hidden="true"
+						focusable="false"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 256 256"
+						fill="currentColor"
+					>
+						<path
+							d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+						/></svg></span
+				><input
+					id="global-search"
+					type="search"
+					placeholder="搜索组件、安装、主题…"
+					autocomplete="off"
+			/></label>
+			<div id="search-results" class="search-results" aria-live="polite"></div>
+			<p class="dialog-hint">
+				<kbd>Tab</kbd> 选择结果 <kbd>Enter</kbd> 打开 <kbd>Esc</kbd> 关闭
+			</p>
+		</dialog>
+		<div class="toast" role="status" aria-live="polite"></div>
+	</body>
+</html>

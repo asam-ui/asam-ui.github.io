@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamConfigProvider/cap-button/js/Demo.vue",
+			"sha256": "90daa840582ebaf310d15dd48f7d18c2cf9ca588b11725401f5162fa0c0115ef",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0ef3cb5bf7a1aaedd9fa31af58f67213c02a32bb1d1740113a393e613289a841.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/0ef3cb5bf7a1aaedd9fa31af58f67213c02a32bb1d1740113a393e613289a841.txt\n-->\n<template>\n\t<div>\n\t\t<div>\n\t\t\t<AsamSwitch\n\t\t\t\t:model-value=\"config.autoInsertSpace\"\n\t\t\t\tactive-text=\"autoInsertSpace\"\n\t\t\t\t@update:model-value=\"\n\t\t\t\t\t(value) => {\n\t\t\t\t\t\tif (typeof value === 'boolean') config.autoInsertSpace = value;\n\t\t\t\t\t}\n\t\t\t\t\"\n\t\t\t/>\n\t\t\t<AsamSwitch\n\t\t\t\t:model-value=\"config.plain\"\n\t\t\t\tactive-text=\"plain\"\n\t\t\t\t@update:model-value=\"\n\t\t\t\t\t(value) => {\n\t\t\t\t\t\tif (typeof value === 'boolean') config.plain = value;\n\t\t\t\t\t}\n\t\t\t\t\"\n\t\t\t/>\n\t\t\t<AsamSwitch\n\t\t\t\t:model-value=\"config.round\"\n\t\t\t\tactive-text=\"round\"\n\t\t\t\t@update:model-value=\"\n\t\t\t\t\t(value) => {\n\t\t\t\t\t\tif (typeof value === 'boolean') config.round = value;\n\t\t\t\t\t}\n\t\t\t\t\"\n\t\t\t/>\n\t\t\t<AsamSwitch\n\t\t\t\t:model-value=\"config.dashed\"\n\t\t\t\tactive-text=\"dashed\"\n\t\t\t\t@update:model-value=\"\n\t\t\t\t\t(value) => {\n\t\t\t\t\t\tif (typeof value === 'boolean') config.dashed = value;\n\t\t\t\t\t}\n\t\t\t\t\"\n\t\t\t/>\n\t\t\t<AsamSwitch\n\t\t\t\t:model-value=\"config.text\"\n\t\t\t\tactive-text=\"text\"\n\t\t\t\t@update:model-value=\"\n\t\t\t\t\t(value) => {\n\t\t\t\t\t\tif (typeof value === 'boolean') config.text = value;\n\t\t\t\t\t}\n\t\t\t\t\"\n\t\t\t/>\n\t\t\t<AsamSelect\n\t\t\t\t:model-value=\"config.type\"\n\t\t\t\tclass=\"ml-5\"\n\t\t\t\tstyle=\"max-width: 150px\"\n\t\t\t\t@update:model-value=\"\n\t\t\t\t\t(value) => {\n\t\t\t\t\t\tif (\n\t\t\t\t\t\t\tvalue === 'primary' ||\n\t\t\t\t\t\t\tvalue === 'success' ||\n\t\t\t\t\t\t\tvalue === 'warning' ||\n\t\t\t\t\t\t\tvalue === 'danger' ||\n\t\t\t\t\t\t\tvalue === 'info' ||\n\t\t\t\t\t\t\tvalue === 'default'\n\t\t\t\t\t\t)\n\t\t\t\t\t\t\tconfig.type = value;\n\t\t\t\t\t}\n\t\t\t\t\"\n\t\t\t>\n\t\t\t\t<AsamOption v-for=\"type in buttonTypes.filter(Boolean)\" :key=\"type\" :value=\"type\" />\n\t\t\t</AsamSelect>\n\t\t</div>\n\t\t<AsamDivider />\n\t\t<AsamConfigProvider :button=\"config\">\n\t\t\t<AsamButton>中文</AsamButton>\n\t\t</AsamConfigProvider>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamConfigProviderCapButtonDemo' });\nimport {\n\tAsamSwitch,\n\tAsamSelect,\n\tAsamOption,\n\tAsamDivider,\n\tAsamConfigProvider,\n\tAsamButton\n} from '@asam-ui/ui';\nimport { reactive } from 'vue';\nconst buttonTypes = ['primary', 'success', 'warning', 'danger', 'info', 'default'];\nconst config = reactive({\n\tautoInsertSpace: true,\n\ttype: 'default',\n\tplain: true,\n\tround: true,\n\ttext: false,\n\tdashed: false\n});\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.ml-5 {\n\tmargin-left: 1.25rem;\n}\n</style>\n",
+			"originalSourceSha256": "47510a36c7b0220a102c90b6e7d758b01704a2d0ac2f5ab832a65f44f06bfaaa",
+			"notice": {
+				"id": "0ef3cb5bf7a1aaedd9fa31af58f67213c02a32bb1d1740113a393e613289a841",
+				"url": "/licenses/source-notices/0ef3cb5bf7a1aaedd9fa31af58f67213c02a32bb1d1740113a393e613289a841.txt",
+				"licenseFilename": "LICENSE-0ef3cb5bf7a1aaedd9fa31af58f67213c02a32bb1d1740113a393e613289a841.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/config-provider/button.vue",
+					"sourceSha256": "d13605125768023bde55f7954edebee908f70808eb3bf1a384682496563f6d57",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0ef3cb5bf7a1aaedd9fa31af58f67213c02a32bb1d1740113a393e613289a841.txt",
+			"source": "Adapted from Element Plus 2.14.7 config-provider/button. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0ef3cb5bf7a1aaedd9fa31af58f67213c02a32bb1d1740113a393e613289a841",
+			"noticeId": "0ef3cb5bf7a1aaedd9fa31af58f67213c02a32bb1d1740113a393e613289a841"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamSplitter/cap-collapsible/js/Demo.vue",
+			"sha256": "803d07adcd5f9b85ac75497693edc83891879a767fca951a7a213edf852fc867",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-29ef93790c17a02320743bab1510a59195a41d1035a4c22afdc8fb217913d385.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/29ef93790c17a02320743bab1510a59195a41d1035a4c22afdc8fb217913d385.txt\n-->\n<template>\n\t<AsamSwitch\n\t\t:model-value=\"isCollapsible\"\n\t\tactive-text=\"enable\"\n\t\tinactive-text=\"disable\"\n\t\tinline-prompt\n\t\tclass=\"mb-2\"\n\t\t@update:model-value=\"\n\t\t\t(value) => {\n\t\t\t\tif (typeof value === 'boolean') isCollapsible = value;\n\t\t\t}\n\t\t\"\n\t/>\n\t<div style=\"height: 250px; box-shadow: var(--el-border-color-light) 0 0 10px\">\n\t\t<AsamSplitter>\n\t\t\t<AsamSplitterPanel :collapsible=\"isCollapsible\" min=\"50\">\n\t\t\t\t<div class=\"demo-panel\">1</div>\n\t\t\t</AsamSplitterPanel>\n\t\t\t<AsamSplitterPanel :collapsible=\"isCollapsible\">\n\t\t\t\t<div class=\"demo-panel\">2</div>\n\t\t\t</AsamSplitterPanel>\n\t\t\t<AsamSplitterPanel>\n\t\t\t\t<div class=\"demo-panel\">3</div>\n\t\t\t</AsamSplitterPanel>\n\t\t\t<AsamSplitterPanel :collapsible=\"isCollapsible\">\n\t\t\t\t<AsamSplitter layout=\"vertical\">\n\t\t\t\t\t<AsamSplitterPanel :collapsible=\"isCollapsible\">\n\t\t\t\t\t\t<div class=\"demo-panel\">4</div>\n\t\t\t\t\t</AsamSplitterPanel>\n\t\t\t\t\t<AsamSplitterPanel :collapsible=\"isCollapsible\">\n\t\t\t\t\t\t<div class=\"demo-panel\">5</div>\n\t\t\t\t\t</AsamSplitterPanel>\n\t\t\t\t</AsamSplitter>\n\t\t\t</AsamSplitterPanel>\n\t\t</AsamSplitter>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamSplitterCapCollapsibleDemo' });\nimport { AsamSwitch, AsamSplitter, AsamSplitterPanel } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst isCollapsible = ref(true);\n</script>\n\n<style scoped>\n.demo-panel {\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n\theight: 100%;\n}\n</style>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.mb-2 {\n\tmargin-bottom: 0.5rem;\n}\n</style>\n",
+			"originalSourceSha256": "22f005cd04815715c5f7799b96d3f13abde531d4bb1c6a92746291c57e893e19",
+			"notice": {
+				"id": "29ef93790c17a02320743bab1510a59195a41d1035a4c22afdc8fb217913d385",
+				"url": "/licenses/source-notices/29ef93790c17a02320743bab1510a59195a41d1035a4c22afdc8fb217913d385.txt",
+				"licenseFilename": "LICENSE-29ef93790c17a02320743bab1510a59195a41d1035a4c22afdc8fb217913d385.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/splitter/collapsible.vue",
+					"sourceSha256": "807aeb96f0a2052d2ae27b7a24d1fda7127e9f5e84976ba7f57165cdae7ca0e1",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-29ef93790c17a02320743bab1510a59195a41d1035a4c22afdc8fb217913d385.txt",
+			"source": "Adapted from Element Plus 2.14.7 splitter/collapsible. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "29ef93790c17a02320743bab1510a59195a41d1035a4c22afdc8fb217913d385",
+			"noticeId": "29ef93790c17a02320743bab1510a59195a41d1035a4c22afdc8fb217913d385"
+		}
+	]
+}

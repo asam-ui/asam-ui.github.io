@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamDrawer/ep2147-customization-content/ts/Demo.vue",
+			"sha256": "f3728516cc30195d50837aa18ef3160ad230b91fd990fb8c298f4f561be894f6",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-46ad16d3e7f7c90975f78c6ca5b843a3972d472db4ad68cebcb645590fa4031e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/46ad16d3e7f7c90975f78c6ca5b843a3972d472db4ad68cebcb645590fa4031e.txt\n-->\n<template>\n\t<AsamButton text @click=\"table = true\"> Open Drawer with nested table </AsamButton>\n\t<AsamButton text @click=\"dialog = true\"> Open Drawer with nested form </AsamButton>\n\t<AsamDrawer v-model=\"table\" title=\"I have a nested table inside!\" direction=\"rtl\" size=\"50%\">\n\t\t<AsamTable :data=\"gridData\">\n\t\t\t<AsamTableColumn property=\"date\" label=\"Date\" width=\"150\" />\n\t\t\t<AsamTableColumn property=\"name\" label=\"Name\" width=\"200\" />\n\t\t\t<AsamTableColumn property=\"address\" label=\"Address\" />\n\t\t</AsamTable>\n\t</AsamDrawer>\n\n\t<AsamDrawer\n\t\tv-model=\"dialog\"\n\t\ttitle=\"I have a nested form inside!\"\n\t\t:before-close=\"handleClose\"\n\t\tdirection=\"ltr\"\n\t\tclass=\"demo-drawer\"\n\t>\n\t\t<div class=\"demo-drawer__content\">\n\t\t\t<AsamBaseForm :model=\"form\">\n\t\t\t\t<AsamFormItem label=\"Name\" :label-width=\"formLabelWidth\">\n\t\t\t\t\t<AsamInput\n\t\t\t\t\t\t:model-value=\"form.name\"\n\t\t\t\t\t\t@update:model-value=\"form.name = String($event ?? '')\"\n\t\t\t\t\t\tautocomplete=\"off\"\n\t\t\t\t\t/>\n\t\t\t\t</AsamFormItem>\n\t\t\t\t<AsamFormItem label=\"Area\" :label-width=\"formLabelWidth\">\n\t\t\t\t\t<AsamSelect\n\t\t\t\t\t\t:model-value=\"form.region\"\n\t\t\t\t\t\t@update:model-value=\"form.region = String($event ?? '')\"\n\t\t\t\t\t\tplaceholder=\"Please select activity area\"\n\t\t\t\t\t>\n\t\t\t\t\t\t<AsamOption label=\"Area1\" value=\"shanghai\" />\n\t\t\t\t\t\t<AsamOption label=\"Area2\" value=\"beijing\" />\n\t\t\t\t\t</AsamSelect>\n\t\t\t\t</AsamFormItem>\n\t\t\t</AsamBaseForm>\n\t\t\t<div class=\"demo-drawer__footer\">\n\t\t\t\t<AsamButton @click=\"cancelForm\">Cancel</AsamButton>\n\t\t\t\t<AsamButton type=\"primary\" :loading=\"loading\" @click=\"onClick\">\n\t\t\t\t\t{{ loading ? 'Submitting ...' : 'Submit' }}\n\t\t\t\t</AsamButton>\n\t\t\t</div>\n\t\t</div>\n\t</AsamDrawer>\n</template>\n\n<script lang=\"ts\" setup>\nimport {\n\tAsamBaseForm,\n\tAsamButton,\n\tAsamDrawer,\n\tAsamFormItem,\n\tAsamInput,\n\tAsamMessageBox,\n\tAsamOption,\n\tAsamSelect,\n\tAsamTable,\n\tAsamTableColumn\n} from '@asam-ui/ui';\n\nimport { reactive, ref } from 'vue';\n\nconst formLabelWidth = '80px';\nlet timer: ReturnType<typeof setTimeout> | undefined;\n\nconst table = ref(false);\nconst dialog = ref(false);\nconst loading = ref(false);\n\nconst form = reactive({\n\tname: '',\n\tregion: '',\n\tdate1: '',\n\tdate2: '',\n\tdelivery: false,\n\ttype: [],\n\tresource: '',\n\tdesc: ''\n});\n\nconst gridData = [\n\t{\n\t\tdate: '2016-05-02',\n\t\tname: 'Peter Parker',\n\t\taddress: 'Queens, New York City'\n\t},\n\t{\n\t\tdate: '2016-05-04',\n\t\tname: 'Peter Parker',\n\t\taddress: 'Queens, New York City'\n\t},\n\t{\n\t\tdate: '2016-05-01',\n\t\tname: 'Peter Parker',\n\t\taddress: 'Queens, New York City'\n\t},\n\t{\n\t\tdate: '2016-05-03',\n\t\tname: 'Peter Parker',\n\t\taddress: 'Queens, New York City'\n\t}\n];\n\nconst onClick = () => {\n\tloading.value = true;\n\tsetTimeout(() => {\n\t\tloading.value = false;\n\t\tdialog.value = false;\n\t}, 400);\n};\n\nconst handleClose = (done: () => void) => {\n\tif (loading.value) {\n\t\treturn;\n\t}\n\tAsamMessageBox.confirm('Do you want to submit?')\n\t\t.then(() => {\n\t\t\tloading.value = true;\n\t\t\ttimer = setTimeout(() => {\n\t\t\t\tdone();\n\t\t\t\t// 动画关闭需要一定的时间\n\t\t\t\tsetTimeout(() => {\n\t\t\t\t\tloading.value = false;\n\t\t\t\t}, 400);\n\t\t\t}, 2000);\n\t\t})\n\t\t.catch(() => {\n\t\t\t// catch error\n\t\t});\n};\n\nconst cancelForm = () => {\n\tloading.value = false;\n\tdialog.value = false;\n\tclearTimeout(timer);\n};\n</script>\n",
+			"originalSourceSha256": "f50c9cf2dad63a2d2df7f4a3d73951e7bedc8166663f978467aded4f3f0d58af",
+			"notice": {
+				"id": "46ad16d3e7f7c90975f78c6ca5b843a3972d472db4ad68cebcb645590fa4031e",
+				"url": "/licenses/source-notices/46ad16d3e7f7c90975f78c6ca5b843a3972d472db4ad68cebcb645590fa4031e.txt",
+				"licenseFilename": "LICENSE-46ad16d3e7f7c90975f78c6ca5b843a3972d472db4ad68cebcb645590fa4031e.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/drawer/customization-content.vue",
+					"sourceSha256": "1e4c2e98e9c61d25df87141325f3558eb508b6b75b68d5e0e22f1d97af569a89",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-46ad16d3e7f7c90975f78c6ca5b843a3972d472db4ad68cebcb645590fa4031e.txt",
+			"source": "Adapted from Element Plus 2.14.7 drawer/customization-content. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "46ad16d3e7f7c90975f78c6ca5b843a3972d472db4ad68cebcb645590fa4031e",
+			"noticeId": "46ad16d3e7f7c90975f78c6ca5b843a3972d472db4ad68cebcb645590fa4031e"
+		}
+	]
+}

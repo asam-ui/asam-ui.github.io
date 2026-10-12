@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamPopconfirm/ep2147-trigger-event/ts/Demo.vue",
+			"sha256": "efd0a7c3590177d2e28c3564863a756b006b79823badc647aeb62cf96e2db7a4",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-9c5973f097579087b2432a91bed04cd3bc067ef7a82744af79be1afa24691dc5.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/9c5973f097579087b2432a91bed04cd3bc067ef7a82744af79be1afa24691dc5.txt\n-->\n<template>\n\t<AsamPopconfirm\n\t\tconfirm-button-text=\"Yes\"\n\t\tcancel-button-text=\"No\"\n\t\t:icon=\"InfoFilled\"\n\t\ticon-color=\"#626AEF\"\n\t\ttitle=\"Are you sure to delete this?\"\n\t\t@confirm=\"confirmEvent\"\n\t\t@cancel=\"cancelEvent\"\n\t>\n\t\t<template #reference>\n\t\t\t<AsamButton>Delete</AsamButton>\n\t\t</template>\n\t</AsamPopconfirm>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamPopconfirm } from '@asam-ui/ui';\n\nimport { InfoFilled } from '@asam-ui/icons-vue';\n\nconst confirmEvent = () => {\n\tconsole.log('confirm!');\n};\nconst cancelEvent = () => {\n\tconsole.log('cancel!');\n};\n</script>\n",
+			"originalSourceSha256": "ce687985268ca71637c4e264a7ab06c60ad20818c9fa26eaaf533ce08de4d1ba",
+			"notice": {
+				"id": "9c5973f097579087b2432a91bed04cd3bc067ef7a82744af79be1afa24691dc5",
+				"url": "/licenses/source-notices/9c5973f097579087b2432a91bed04cd3bc067ef7a82744af79be1afa24691dc5.txt",
+				"licenseFilename": "LICENSE-9c5973f097579087b2432a91bed04cd3bc067ef7a82744af79be1afa24691dc5.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/popconfirm/trigger-event.vue",
+					"sourceSha256": "d4e5c774d17e4e1cdf36e957648b1a6a1012a5eff6f4f48bea50cba8d4e58ada",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-9c5973f097579087b2432a91bed04cd3bc067ef7a82744af79be1afa24691dc5.txt",
+			"source": "Adapted from Element Plus 2.14.7 popconfirm/trigger-event. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "9c5973f097579087b2432a91bed04cd3bc067ef7a82744af79be1afa24691dc5",
+			"noticeId": "9c5973f097579087b2432a91bed04cd3bc067ef7a82744af79be1afa24691dc5"
+		}
+	]
+}

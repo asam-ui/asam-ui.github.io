@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTimeline/cap-basic/ts/Demo.vue",
+			"sha256": "321325893336c6fc422d49885838636e0c367b02e5e7b55899d3b56d8d106c85",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-080f68b1366441c21ed8f22dccb893173c8828d5ff88e04f031d24d13615e83f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/080f68b1366441c21ed8f22dccb893173c8828d5ff88e04f031d24d13615e83f.txt\n-->\n<template>\n\t<AsamTimeline>\n\t\t<AsamTimelineItem\n\t\t\tv-for=\"(activity, index) in activities\"\n\t\t\t:key=\"index\"\n\t\t\t:timestamp=\"activity.timestamp\"\n\t\t>\n\t\t\t{{ activity.content }}\n\t\t</AsamTimelineItem>\n\t</AsamTimeline>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTimelineCapBasicDemo' });\nimport { AsamTimeline, AsamTimelineItem } from '@asam-ui/ui';\n\nconst activities = [\n\t{\n\t\tcontent: 'Event start',\n\t\ttimestamp: '2018-04-15'\n\t},\n\t{\n\t\tcontent: 'Approved',\n\t\ttimestamp: '2018-04-13'\n\t},\n\t{\n\t\tcontent: 'Success',\n\t\ttimestamp: '2018-04-11'\n\t}\n];\n</script>\n",
+			"originalSourceSha256": "eeeade921f2a9b30f5f06d8b623778fdca7e95b290321de6aa6c3a0bc15d1b9a",
+			"notice": {
+				"id": "080f68b1366441c21ed8f22dccb893173c8828d5ff88e04f031d24d13615e83f",
+				"url": "/licenses/source-notices/080f68b1366441c21ed8f22dccb893173c8828d5ff88e04f031d24d13615e83f.txt",
+				"licenseFilename": "LICENSE-080f68b1366441c21ed8f22dccb893173c8828d5ff88e04f031d24d13615e83f.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/timeline/basic.vue",
+					"sourceSha256": "4997899e4db0fe5627710b71ddbe54986e5591721ab47fc198cf5ea1b664591b",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-080f68b1366441c21ed8f22dccb893173c8828d5ff88e04f031d24d13615e83f.txt",
+			"source": "Adapted from Element Plus 2.14.7 timeline/basic. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "080f68b1366441c21ed8f22dccb893173c8828d5ff88e04f031d24d13615e83f",
+			"noticeId": "080f68b1366441c21ed8f22dccb893173c8828d5ff88e04f031d24d13615e83f"
+		}
+	]
+}

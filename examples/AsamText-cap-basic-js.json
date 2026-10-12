@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamText/cap-basic/js/Demo.vue",
+			"sha256": "29d808196fc32eb1ba833cf60c0a850eb9f04e3ff6e9798b1a4705cc778baec3",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ceff442a8074dd2dec8c900fcdc2251f33b799988f13332ef24203d90dab0e73.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ceff442a8074dd2dec8c900fcdc2251f33b799988f13332ef24203d90dab0e73.txt\n-->\n<template>\n\t<AsamText class=\"mx-1\">Default</AsamText>\n\t<AsamText class=\"mx-1\" type=\"primary\">Primary</AsamText>\n\t<AsamText class=\"mx-1\" type=\"success\">Success</AsamText>\n\t<AsamText class=\"mx-1\" type=\"info\">Info</AsamText>\n\t<AsamText class=\"mx-1\" type=\"warning\">Warning</AsamText>\n\t<AsamText class=\"mx-1\" type=\"danger\">Danger</AsamText>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTextCapBasicDemo' });\nimport { AsamText } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.mx-1 {\n\tmargin-left: 0.25rem;\n\tmargin-right: 0.25rem;\n}\n</style>\n",
+			"originalSourceSha256": "f8f502ee4437c0249b9fc0e3dd0e2f6747b3a2135f4d02307d5ab9266a9ee112",
+			"notice": {
+				"id": "ceff442a8074dd2dec8c900fcdc2251f33b799988f13332ef24203d90dab0e73",
+				"url": "/licenses/source-notices/ceff442a8074dd2dec8c900fcdc2251f33b799988f13332ef24203d90dab0e73.txt",
+				"licenseFilename": "LICENSE-ceff442a8074dd2dec8c900fcdc2251f33b799988f13332ef24203d90dab0e73.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/text/basic.vue",
+					"sourceSha256": "5e8d759fb001a8b6018e468f376840666befa9a09f4826427fae4c93c670789b",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-ceff442a8074dd2dec8c900fcdc2251f33b799988f13332ef24203d90dab0e73.txt",
+			"source": "Adapted from Element Plus 2.14.7 text/basic. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "ceff442a8074dd2dec8c900fcdc2251f33b799988f13332ef24203d90dab0e73",
+			"noticeId": "ceff442a8074dd2dec8c900fcdc2251f33b799988f13332ef24203d90dab0e73"
+		}
+	]
+}

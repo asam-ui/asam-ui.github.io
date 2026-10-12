@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamConfigProvider/cap-table/ts/Demo.vue",
+			"sha256": "357c76507a74ef85b112c1fdcfc69f3fbdc812bd19503e9a87e6f2abeb90d913",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bfbcc0eb929e409e6259e9ae3153ebe4e41d337d11a122cc450e9c95dba74df9.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bfbcc0eb929e409e6259e9ae3153ebe4e41d337d11a122cc450e9c95dba74df9.txt\n-->\n<template>\n\t<div>\n\t\t<div>\n\t\t\t<AsamSwitch\n\t\t\t\t:model-value=\"config.showOverflowTooltip\"\n\t\t\t\tactive-text=\"showOverflowTooltip\"\n\t\t\t\t@update:model-value=\"\n\t\t\t\t\t(value) => {\n\t\t\t\t\t\tif (typeof value === 'boolean') config.showOverflowTooltip = value;\n\t\t\t\t\t}\n\t\t\t\t\"\n\t\t\t/>\n\t\t\t<AsamSelect\n\t\t\t\t:model-value=\"config.tooltipEffect\"\n\t\t\t\tclass=\"ml-5\"\n\t\t\t\tstyle=\"max-width: 150px\"\n\t\t\t\t@update:model-value=\"\n\t\t\t\t\t(value: unknown) => {\n\t\t\t\t\t\tif (value === 'dark' || value === 'light') config.tooltipEffect = value;\n\t\t\t\t\t}\n\t\t\t\t\"\n\t\t\t>\n\t\t\t\t<AsamOption value=\"dark\" label=\"dark\" />\n\t\t\t\t<AsamOption value=\"light\" label=\"light\" />\n\t\t\t</AsamSelect>\n\t\t</div>\n\t\t<AsamDivider />\n\t\t<AsamConfigProvider :table=\"config\">\n\t\t\t<AsamTable :data=\"tableData\" style=\"width: 100%\">\n\t\t\t\t<!-- @vue-generic {User} -->\n\t\t\t\t<AsamTableColumn type=\"selection\" width=\"55\" />\n\t\t\t\t<!-- @vue-generic {User} -->\n\t\t\t\t<AsamTableColumn label=\"Date\" width=\"120\">\n\t\t\t\t\t<template #default=\"scope\">{{ scope.row.date }}</template>\n\t\t\t\t</AsamTableColumn>\n\t\t\t\t<!-- @vue-generic {User} -->\n\t\t\t\t<AsamTableColumn property=\"name\" label=\"Name\" width=\"120\" />\n\t\t\t\t<!-- @vue-generic {User} -->\n\t\t\t\t<AsamTableColumn\n\t\t\t\t\tproperty=\"address\"\n\t\t\t\t\tlabel=\"Address (inherited from config-provider)\"\n\t\t\t\t\twidth=\"300\"\n\t\t\t\t/>\n\t\t\t\t<!-- @vue-generic {User} -->\n\t\t\t\t<AsamTableColumn\n\t\t\t\t\tproperty=\"address\"\n\t\t\t\t\tlabel=\"Address (explicit false)\"\n\t\t\t\t\t:show-overflow-tooltip=\"false\"\n\t\t\t\t/>\n\t\t\t</AsamTable>\n\t\t</AsamConfigProvider>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamConfigProviderCapTableDemo' });\nimport {\n\tAsamSwitch,\n\tAsamSelect,\n\tAsamOption,\n\tAsamDivider,\n\tAsamConfigProvider,\n\tAsamTable,\n\tAsamTableColumn\n} from '@asam-ui/ui';\n\nimport { reactive } from 'vue';\n\nimport type { AsamConfigProviderTableConfigContext } from '@asam-ui/ui';\n\nconst config = reactive<AsamConfigProviderTableConfigContext & { showOverflowTooltip: boolean }>({\n\tshowOverflowTooltip: true,\n\ttooltipEffect: 'dark'\n});\n\ninterface User {\n\tdate: string;\n\tname: string;\n\taddress: string;\n}\n\nconst tableData: User[] = [\n\t{\n\t\tdate: '2016-05-04',\n\t\tname: 'Aleyna Kutzner',\n\t\taddress: 'Lohrbergstr. 86c, Süd Lilli, Saarland'\n\t},\n\t{\n\t\tdate: '2016-05-03',\n\t\tname: 'Helen Jacobi',\n\t\taddress: '760 A Street, South Frankfield, Illinois'\n\t},\n\t{\n\t\tdate: '2016-05-02',\n\t\tname: 'Brandon Deckert',\n\t\taddress: 'Arnold-Ohletz-Str. 41a, Alt Malinascheid, Thüringen'\n\t},\n\t{\n\t\tdate: '2016-05-01',\n\t\tname: 'Margie Smith',\n\t\taddress: '23618 Windsor Drive, West Ricardoview, Idaho'\n\t}\n];\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.ml-5 {\n\tmargin-left: 1.25rem;\n}\n</style>\n",
+			"originalSourceSha256": "8249f4b8ed94de4c607ba58f4a3503d994d9cee9f21fd5dc5cb69a7a6b173db0",
+			"notice": {
+				"id": "bfbcc0eb929e409e6259e9ae3153ebe4e41d337d11a122cc450e9c95dba74df9",
+				"url": "/licenses/source-notices/bfbcc0eb929e409e6259e9ae3153ebe4e41d337d11a122cc450e9c95dba74df9.txt",
+				"licenseFilename": "LICENSE-bfbcc0eb929e409e6259e9ae3153ebe4e41d337d11a122cc450e9c95dba74df9.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/config-provider/table.vue",
+					"sourceSha256": "71213f8d96981210ceb40619604a3bdbf31d5ac9200d451c7a885d81ef09a901",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-bfbcc0eb929e409e6259e9ae3153ebe4e41d337d11a122cc450e9c95dba74df9.txt",
+			"source": "Adapted from Element Plus 2.14.7 config-provider/table. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "bfbcc0eb929e409e6259e9ae3153ebe4e41d337d11a122cc450e9c95dba74df9",
+			"noticeId": "bfbcc0eb929e409e6259e9ae3153ebe4e41d337d11a122cc450e9c95dba74df9"
+		}
+	]
+}

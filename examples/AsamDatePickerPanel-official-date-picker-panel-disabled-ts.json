@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamDatePickerPanel/official-date-picker-panel-disabled/ts/Demo.vue",
+			"sha256": "ea0ce98c1fe27f82d56d70b81840b369d396ea1666e55d004c7798933d19020c",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-71f75b376e0a5203836a73bed5dd357b219d0830a0524e31c4307cf1f3a1b980.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/71f75b376e0a5203836a73bed5dd357b219d0830a0524e31c4307cf1f3a1b980.txt\n-->\n<template>\n\t<div class=\"flex flex-col items-center\">\n\t\t<AsamSwitch\n\t\t\t:model-value=\"disabled\"\n\t\t\tactive-text=\"Disabled\"\n\t\t\tinactive-text=\"Enabled\"\n\t\t\t@update:model-value=\"disabled = $event === true\"\n\t\t/>\n\t\t<AsamDatePickerPanel v-model=\"value\" :disabled=\"disabled\" />\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\nimport type { AsamDatePickerPanelValue } from '@asam-ui/ui';\nimport { AsamSwitch, AsamDatePickerPanel } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamDatePickerPanelofficialdatepickerpaneldisabledExample' });\n\nimport { ref } from 'vue';\n\nconst value = ref<AsamDatePickerPanelValue>();\nconst disabled = ref(true);\n</script>\n",
+			"originalSourceSha256": "67d2e4d8c91f78510a46af5e54c7085b3871cd35ae4e2f8a52e20eba2340cf53",
+			"notice": {
+				"id": "71f75b376e0a5203836a73bed5dd357b219d0830a0524e31c4307cf1f3a1b980",
+				"url": "/licenses/source-notices/71f75b376e0a5203836a73bed5dd357b219d0830a0524e31c4307cf1f3a1b980.txt",
+				"licenseFilename": "LICENSE-71f75b376e0a5203836a73bed5dd357b219d0830a0524e31c4307cf1f3a1b980.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/date-picker-panel/disabled.vue",
+					"sourceSha256": "d0a49ffe97f662c721e505484caa480f8998c11a9e458c68b82bc207cd2476b6",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-71f75b376e0a5203836a73bed5dd357b219d0830a0524e31c4307cf1f3a1b980.txt",
+			"source": "Adapted from Element Plus 2.14.7 date-picker-panel/disabled. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "71f75b376e0a5203836a73bed5dd357b219d0830a0524e31c4307cf1f3a1b980",
+			"noticeId": "71f75b376e0a5203836a73bed5dd357b219d0830a0524e31c4307cf1f3a1b980"
+		}
+	]
+}

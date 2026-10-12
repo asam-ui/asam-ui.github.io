@@ -1,0 +1,1 @@
+import"./sfc-demo.js";import{t as e}from"./empty-FnNXTnGA.js";var t=Object.assign({},e,{install(e){e.component(`AsamEmpty`,t)}});export{t};

@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamPopover/ep2147-basic-usage/js/Demo.vue",
+			"sha256": "07d57f8689a476d01a3fbda2bd84bfc3798ad80f8220f39f4c0916dc54a85f5f",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-298adf16598abe1670d9566c5d28cfee3fca2ca7313d0ca0387284b5adcc7622.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/298adf16598abe1670d9566c5d28cfee3fca2ca7313d0ca0387284b5adcc7622.txt\n-->\n<template>\n\t<AsamPopover\n\t\tplacement=\"top-start\"\n\t\ttitle=\"Title\"\n\t\t:width=\"200\"\n\t\ttrigger=\"hover\"\n\t\tcontent=\"this is content, this is content, this is content\"\n\t>\n\t\t<template #reference>\n\t\t\t<AsamButton class=\"m-2\">Hover to activate</AsamButton>\n\t\t</template>\n\t</AsamPopover>\n\n\t<AsamPopover\n\t\tplacement=\"bottom\"\n\t\ttitle=\"Title\"\n\t\t:width=\"200\"\n\t\ttrigger=\"click\"\n\t\tcontent=\"this is content, this is content, this is content\"\n\t>\n\t\t<template #reference>\n\t\t\t<AsamButton class=\"m-2\">Click to activate</AsamButton>\n\t\t</template>\n\t</AsamPopover>\n\n\t<AsamPopover\n\t\tref=\"popover\"\n\t\tplacement=\"right\"\n\t\ttitle=\"Title\"\n\t\t:width=\"200\"\n\t\ttrigger=\"focus\"\n\t\tcontent=\"this is content, this is content, this is content\"\n\t>\n\t\t<template #reference>\n\t\t\t<AsamButton class=\"m-2\">Focus to activate</AsamButton>\n\t\t</template>\n\t</AsamPopover>\n\n\t<AsamPopover\n\t\tref=\"popover\"\n\t\ttitle=\"Title\"\n\t\t:width=\"200\"\n\t\ttrigger=\"contextmenu\"\n\t\tcontent=\"this is content, this is content, this is content\"\n\t>\n\t\t<template #reference>\n\t\t\t<AsamButton class=\"m-2\">contextmenu to activate</AsamButton>\n\t\t</template>\n\t</AsamPopover>\n\n\t<AsamPopover\n\t\t:visible=\"visible\"\n\t\tplacement=\"bottom\"\n\t\ttitle=\"Title\"\n\t\t:width=\"200\"\n\t\tcontent=\"this is content, this is content, this is content\"\n\t>\n\t\t<template #reference>\n\t\t\t<AsamButton class=\"m-2\" @click=\"visible = !visible\"> Manual to activate </AsamButton>\n\t\t</template>\n\t</AsamPopover>\n</template>\n\n<script setup>\nimport { AsamButton, AsamPopover } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst visible = ref(false);\n</script>\n\n<style scoped>\n.el-button + .el-button {\n\tmargin-left: 8px;\n}\n</style>\n",
+			"originalSourceSha256": "929eb976545b2841154dbdff92b726499d71e71a5c494b23f6f143e2724e8265",
+			"notice": {
+				"id": "298adf16598abe1670d9566c5d28cfee3fca2ca7313d0ca0387284b5adcc7622",
+				"url": "/licenses/source-notices/298adf16598abe1670d9566c5d28cfee3fca2ca7313d0ca0387284b5adcc7622.txt",
+				"licenseFilename": "LICENSE-298adf16598abe1670d9566c5d28cfee3fca2ca7313d0ca0387284b5adcc7622.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/popover/basic-usage.vue",
+					"sourceSha256": "a9703d0e5630886922abaccbb4d19f0be0965bd4e756c85ec94db56f718839b0",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-298adf16598abe1670d9566c5d28cfee3fca2ca7313d0ca0387284b5adcc7622.txt",
+			"source": "Adapted from Element Plus 2.14.7 popover/basic-usage. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "298adf16598abe1670d9566c5d28cfee3fca2ca7313d0ca0387284b5adcc7622",
+			"noticeId": "298adf16598abe1670d9566c5d28cfee3fca2ca7313d0ca0387284b5adcc7622"
+		}
+	]
+}

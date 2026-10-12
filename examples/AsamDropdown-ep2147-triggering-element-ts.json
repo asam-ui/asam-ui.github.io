@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamDropdown/ep2147-triggering-element/ts/Demo.vue",
+			"sha256": "c25dfd13ba7c48cf67d7226aabc659b301ee9d59d34876d0466f2a6da8eab86e",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-3d7ca9879208cdb1326c426facad47514b7d6d8f3a19e999eaeec2218b9814d9.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/3d7ca9879208cdb1326c426facad47514b7d6d8f3a19e999eaeec2218b9814d9.txt\n-->\n<template>\n\t<div class=\"flex flex-wrap items-center\">\n\t\t<AsamDropdown trigger=\"hover\" placement=\"bottom\" :wrap-menu=\"false\">\n\t\t\t<AsamButton type=\"primary\">\n\t\t\t\tDropdown List<AsamIcon class=\"el-icon--right\"><arrow-down /></AsamIcon>\n\t\t\t</AsamButton>\n\t\t\t<template #dropdown>\n\t\t\t\t<AsamDropdownMenu>\n\t\t\t\t\t<AsamDropdownItem>Action 1</AsamDropdownItem>\n\t\t\t\t\t<AsamDropdownItem>Action 2</AsamDropdownItem>\n\t\t\t\t\t<AsamDropdownItem>Action 3</AsamDropdownItem>\n\t\t\t\t\t<AsamDropdownItem>Action 4</AsamDropdownItem>\n\t\t\t\t\t<AsamDropdownItem>Action 5</AsamDropdownItem>\n\t\t\t\t</AsamDropdownMenu>\n\t\t\t</template>\n\t\t</AsamDropdown>\n\t\t<AsamDropdown\n\t\t\ttrigger=\"hover\"\n\t\t\tplacement=\"bottom\"\n\t\t\t:wrap-menu=\"false\"\n\t\t\tsplit-button\n\t\t\ttype=\"primary\"\n\t\t\t@click=\"handleClick\"\n\t\t>\n\t\t\tDropdown List\n\t\t\t<template #dropdown>\n\t\t\t\t<AsamDropdownMenu>\n\t\t\t\t\t<AsamDropdownItem>Action 1</AsamDropdownItem>\n\t\t\t\t\t<AsamDropdownItem>Action 2</AsamDropdownItem>\n\t\t\t\t\t<AsamDropdownItem>Action 3</AsamDropdownItem>\n\t\t\t\t\t<AsamDropdownItem divided>Action 4</AsamDropdownItem>\n\t\t\t\t\t<AsamDropdownItem>Action 5</AsamDropdownItem>\n\t\t\t\t</AsamDropdownMenu>\n\t\t\t</template>\n\t\t</AsamDropdown>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\nimport {\n\tAsamButton,\n\tAsamDropdown,\n\tAsamDropdownItem,\n\tAsamDropdownMenu,\n\tAsamIcon\n} from '@asam-ui/ui';\n\nimport { ArrowDown } from '@asam-ui/icons-vue';\n\nconst handleClick = () => {\n\t// eslint-disable-next-line no-alert\n\talert('button click');\n};\n</script>\n\n<style scoped>\n.example-showcase .el-dropdown + .el-dropdown {\n\tmargin-left: 15px;\n}\n\n.example-showcase .el-dropdown-link {\n\tcursor: pointer;\n\tcolor: var(--el-color-primary);\n\tdisplay: flex;\n\talign-items: center;\n}\n</style>\n",
+			"originalSourceSha256": "f950ca125bf9c2fd6698c6d04a3df2814284e923a6ace6e54b796c0f629d7e35",
+			"notice": {
+				"id": "3d7ca9879208cdb1326c426facad47514b7d6d8f3a19e999eaeec2218b9814d9",
+				"url": "/licenses/source-notices/3d7ca9879208cdb1326c426facad47514b7d6d8f3a19e999eaeec2218b9814d9.txt",
+				"licenseFilename": "LICENSE-3d7ca9879208cdb1326c426facad47514b7d6d8f3a19e999eaeec2218b9814d9.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/dropdown/triggering-element.vue",
+					"sourceSha256": "1a6c5f914f6cb912aa69169d86855df84f46fee8e2d33712bdc11f6a2c0d227f",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-3d7ca9879208cdb1326c426facad47514b7d6d8f3a19e999eaeec2218b9814d9.txt",
+			"source": "Adapted from Element Plus 2.14.7 dropdown/triggering-element. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "3d7ca9879208cdb1326c426facad47514b7d6d8f3a19e999eaeec2218b9814d9",
+			"noticeId": "3d7ca9879208cdb1326c426facad47514b7d6d8f3a19e999eaeec2218b9814d9"
+		}
+	]
+}

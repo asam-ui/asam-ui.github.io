@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamDialog/ep2147-nested-dialog/js/Demo.vue",
+			"sha256": "facae20216571b1f48c825294fb14ffe511a94ff5a642be54c5ba0fb93ae3240",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-a75efffb096d39d2e68ca4dd2d47172ca04c3d98a55515abf7f3a582a697528d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/a75efffb096d39d2e68ca4dd2d47172ca04c3d98a55515abf7f3a582a697528d.txt\n-->\n<template>\n\t<AsamButton plain @click=\"outerVisible = true\"> Open the outer Dialog </AsamButton>\n\n\t<AsamDialog v-model=\"outerVisible\" title=\"Outer Dialog\" width=\"800\">\n\t\t<span>This is the outer Dialog</span>\n\t\t<AsamDialog v-model=\"innerVisible\" width=\"500\" title=\"Inner Dialog\" append-to-body>\n\t\t\t<span>This is the inner Dialog</span>\n\t\t</AsamDialog>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton @click=\"outerVisible = false\">Cancel</AsamButton>\n\t\t\t\t<AsamButton type=\"primary\" @click=\"innerVisible = true\">\n\t\t\t\t\tOpen the inner Dialog\n\t\t\t\t</AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n</template>\n\n<script setup>\nimport { AsamButton, AsamDialog } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst outerVisible = ref(false);\nconst innerVisible = ref(false);\n</script>\n",
+			"originalSourceSha256": "8833bc40c6aff8d68b2f9e760ab0b70a715ef5037d0c27f6b4e7dc7dd69d7fdf",
+			"notice": {
+				"id": "a75efffb096d39d2e68ca4dd2d47172ca04c3d98a55515abf7f3a582a697528d",
+				"url": "/licenses/source-notices/a75efffb096d39d2e68ca4dd2d47172ca04c3d98a55515abf7f3a582a697528d.txt",
+				"licenseFilename": "LICENSE-a75efffb096d39d2e68ca4dd2d47172ca04c3d98a55515abf7f3a582a697528d.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/dialog/nested-dialog.vue",
+					"sourceSha256": "d54077a15ea280f292fbeffe15883d7147cf4ae5c64b3be319a7e832595644d0",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-a75efffb096d39d2e68ca4dd2d47172ca04c3d98a55515abf7f3a582a697528d.txt",
+			"source": "Adapted from Element Plus 2.14.7 dialog/nested-dialog. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "a75efffb096d39d2e68ca4dd2d47172ca04c3d98a55515abf7f3a582a697528d",
+			"noticeId": "a75efffb096d39d2e68ca4dd2d47172ca04c3d98a55515abf7f3a582a697528d"
+		}
+	]
+}

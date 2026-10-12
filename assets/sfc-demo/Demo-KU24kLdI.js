@@ -1,0 +1,1 @@
+import{E as e,Tt as t,W as n,y as r}from"./sfc-demo.js";import{t as i}from"./Index-BaqEmWKo-CDKb2ukf.js";var a=e({name:`AsamEmptyCapBasicUsageDemo`,__name:`Demo`,setup(e){return(e,a)=>(n(),r(t(i),{description:`description`}))}});export{a as default};

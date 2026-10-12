@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamMessageBox/ep2147-use-html/js/Demo.vue",
+			"sha256": "a382eed11640d818d4e1cadc9c3fb61fd213ecb9c3850d8da8e3076d14fa8c46",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9.txt\n-->\n<template>\n\t<AsamButton plain @click=\"open\">Click to open Message Box</AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamMessageBox } from '@asam-ui/ui';\nconst open = () => {\n\tAsamMessageBox.alert('<strong>proxy is <i>HTML</i> string</strong>', 'HTML String', {\n\t\tdangerouslyUseHTMLString: true\n\t}).catch((action) => {\n\t\tif (action !== 'cancel' && action !== 'close') throw action;\n\t});\n};\n</script>\n",
+			"originalSourceSha256": "e4145e6cc7ef28d7e10e84962f91a76c5b37d55bf0cefa2653185fa9cb77f271",
+			"notice": {
+				"id": "00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9",
+				"url": "/licenses/source-notices/00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9.txt",
+				"licenseFilename": "LICENSE-00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/message-box/use-html.vue",
+					"sourceSha256": "5e8c45ddf9f4e34e39e88e0995b860aebe4b57e9f697d3f055e70b7d8b09955c",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9.txt",
+			"source": "Adapted from Element Plus 2.14.7 message-box/use-html. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9",
+			"noticeId": "00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9"
+		}
+	]
+}

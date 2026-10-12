@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamDescriptions/cap-vertical-list/js/Demo.vue",
+			"sha256": "dac103d61fcea90f775164ca5ace7a272fe774ca547a19d0b1c3ee1a599c9acb",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-31fdac89d3c69275938f5923bd5fe3e3045d162c84b4a16ac24a0036c114038f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/31fdac89d3c69275938f5923bd5fe3e3045d162c84b4a16ac24a0036c114038f.txt\n-->\n<template>\n\t<AsamRadioGroup\n\t\t:model-value=\"size\"\n\t\t@update:model-value=\"\n\t\t\t(value) => {\n\t\t\t\tif (\n\t\t\t\t\tvalue === 'small' ||\n\t\t\t\t\tvalue === 'default' ||\n\t\t\t\t\tvalue === 'big' ||\n\t\t\t\t\tvalue === 'large'\n\t\t\t\t)\n\t\t\t\t\tsize = value;\n\t\t\t}\n\t\t\"\n\t>\n\t\t<AsamRadioItem value=\"large\">Large</AsamRadioItem>\n\t\t<AsamRadioItem value=\"default\">Default</AsamRadioItem>\n\t\t<AsamRadioItem value=\"small\">Small</AsamRadioItem>\n\t</AsamRadioGroup>\n\n\t<AsamDescriptions\n\t\ttitle=\"Vertical list with border\"\n\t\tdirection=\"vertical\"\n\t\t:column=\"4\"\n\t\t:size=\"size\"\n\t\tborder\n\t>\n\t\t<AsamDescriptionsItem label=\"Username\">kooriookami</AsamDescriptionsItem>\n\t\t<AsamDescriptionsItem label=\"Telephone\">18100000000</AsamDescriptionsItem>\n\t\t<AsamDescriptionsItem label=\"Place\" :span=\"2\">Suzhou</AsamDescriptionsItem>\n\t\t<AsamDescriptionsItem label=\"Remarks\">\n\t\t\t<AsamTag size=\"small\">School</AsamTag>\n\t\t</AsamDescriptionsItem>\n\t\t<AsamDescriptionsItem label=\"Address\">\n\t\t\tNo.1188, Wuzhong Avenue, Wuzhong District, Suzhou, Jiangsu Province\n\t\t</AsamDescriptionsItem>\n\t</AsamDescriptions>\n\n\t<AsamDescriptions\n\t\ttitle=\"Vertical list without border\"\n\t\t:column=\"4\"\n\t\t:size=\"size\"\n\t\tdirection=\"vertical\"\n\t\t:style=\"blockMargin\"\n\t>\n\t\t<AsamDescriptionsItem label=\"Username\">kooriookami</AsamDescriptionsItem>\n\t\t<AsamDescriptionsItem label=\"Telephone\">18100000000</AsamDescriptionsItem>\n\t\t<AsamDescriptionsItem label=\"Place\" :span=\"2\">Suzhou</AsamDescriptionsItem>\n\t\t<AsamDescriptionsItem label=\"Remarks\">\n\t\t\t<AsamTag size=\"small\">School</AsamTag>\n\t\t</AsamDescriptionsItem>\n\t\t<AsamDescriptionsItem label=\"Address\">\n\t\t\tNo.1188, Wuzhong Avenue, Wuzhong District, Suzhou, Jiangsu Province\n\t\t</AsamDescriptionsItem>\n\t</AsamDescriptions>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamDescriptionsCapVerticalListDemo' });\nimport {\n\tAsamRadioGroup,\n\tAsamRadioItem,\n\tAsamDescriptions,\n\tAsamDescriptionsItem,\n\tAsamTag\n} from '@asam-ui/ui';\nimport { computed, ref } from 'vue';\nconst size = ref('default');\nconst blockMargin = computed(() => {\n\tconst marginMap = {\n\t\tlarge: '32px',\n\t\tdefault: '28px',\n\t\tbig: '24px',\n\t\tsmall: '24px'\n\t};\n\treturn {\n\t\tmarginTop: marginMap[size.value] || marginMap.default\n\t};\n});\n</script>\n\n<style scoped>\n.el-descriptions {\n\tmargin-top: 20px;\n}\n</style>\n",
+			"originalSourceSha256": "595812ecd00349f6e8f2cb9aba70691e57638bfe48a31b8fca6472aef7138db3",
+			"notice": {
+				"id": "31fdac89d3c69275938f5923bd5fe3e3045d162c84b4a16ac24a0036c114038f",
+				"url": "/licenses/source-notices/31fdac89d3c69275938f5923bd5fe3e3045d162c84b4a16ac24a0036c114038f.txt",
+				"licenseFilename": "LICENSE-31fdac89d3c69275938f5923bd5fe3e3045d162c84b4a16ac24a0036c114038f.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/descriptions/vertical-list.vue",
+					"sourceSha256": "fa143a2e9ae522a61db40ab868478352671c7eecbf2f0473231d64dab8f0a634",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-31fdac89d3c69275938f5923bd5fe3e3045d162c84b4a16ac24a0036c114038f.txt",
+			"source": "Adapted from Element Plus 2.14.7 descriptions/vertical-list. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "31fdac89d3c69275938f5923bd5fe3e3045d162c84b4a16ac24a0036c114038f",
+			"noticeId": "31fdac89d3c69275938f5923bd5fe3e3045d162c84b4a16ac24a0036c114038f"
+		}
+	]
+}

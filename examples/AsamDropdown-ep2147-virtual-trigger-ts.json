@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamDropdown/ep2147-virtual-trigger/ts/Demo.vue",
+			"sha256": "dd31472f30f6ec779e702f7feb207a9f502e71d03787736dbc40ba813de7651f",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-b64eafa6b27811f52d5fbccd3b4c049de7538709d65dd6c9d1be398d363e5b53.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/b64eafa6b27811f52d5fbccd3b4c049de7538709d65dd6c9d1be398d363e5b53.txt\n-->\n<template>\n\t<div @click=\"handleClick\" @contextmenu=\"handleContextmenu\">\n\t\t<AsamCard class=\"content\" body-class=\"card-body\"> Right click </AsamCard>\n\t</div>\n\t<AsamDropdown\n\t\t:wrap-menu=\"false\"\n\t\tref=\"dropdownRef\"\n\t\t:virtual-ref=\"triggerRef\"\n\t\t:show-arrow=\"false\"\n\t\t:popper-options=\"{\n\t\t\tmodifiers: [{ name: 'offset', options: { offset: [0, 0] } }]\n\t\t}\"\n\t\tvirtual-triggering\n\t\ttrigger=\"contextmenu\"\n\t\tplacement=\"bottom-start\"\n\t>\n\t\t<template #dropdown>\n\t\t\t<AsamDropdownMenu>\n\t\t\t\t<AsamDropdownItem :icon=\"Plus\">Action 1</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem :icon=\"CirclePlusFilled\"> Action 2 </AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem :icon=\"CirclePlus\">Action 3</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem :icon=\"Check\">Action 4</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem :icon=\"CircleCheck\">Action 5</AsamDropdownItem>\n\t\t\t</AsamDropdownMenu>\n\t\t</template>\n\t</AsamDropdown>\n</template>\n\n<script lang=\"ts\" setup>\nimport {\n\tAsamCard,\n\tAsamDropdown,\n\tAsamDropdownItem,\n\tAsamDropdownMenu,\n\ttype AsamDropdownExpose as DropdownInstance\n} from '@asam-ui/ui';\n\nimport { ref } from 'vue';\nimport { Check, CircleCheck, CirclePlus, CirclePlusFilled, Plus } from '@asam-ui/icons-vue';\n\nconst dropdownRef = ref<DropdownInstance>();\nconst position = ref(DOMRect.fromRect());\n\nconst triggerRef = ref({\n\tgetBoundingClientRect: () => position.value\n});\n\nconst handleClick = () => {\n\tdropdownRef.value?.handleClose();\n};\n\nconst handleContextmenu = (event: MouseEvent) => {\n\tconst { clientX, clientY } = event;\n\tposition.value = DOMRect.fromRect({\n\t\tx: clientX,\n\t\ty: clientY\n\t});\n\tevent.preventDefault();\n\tdropdownRef.value?.handleOpen();\n};\n</script>\n\n<style scoped>\n.content {\n\tdisplay: flex;\n\tjustify-content: center;\n\talign-items: center;\n\theight: 200px;\n}\n\n.content :deep(.card-body) {\n\tflex-grow: 0;\n}\n</style>\n",
+			"originalSourceSha256": "074211c565d61e9b2a967a01b7f34569b93720a70c76f5715b3f2a85a3be45b8",
+			"notice": {
+				"id": "b64eafa6b27811f52d5fbccd3b4c049de7538709d65dd6c9d1be398d363e5b53",
+				"url": "/licenses/source-notices/b64eafa6b27811f52d5fbccd3b4c049de7538709d65dd6c9d1be398d363e5b53.txt",
+				"licenseFilename": "LICENSE-b64eafa6b27811f52d5fbccd3b4c049de7538709d65dd6c9d1be398d363e5b53.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/dropdown/virtual-trigger.vue",
+					"sourceSha256": "61bee8e4dbfb853d59d8cc86ba115347146faf3dbd66442e7988b0af53d9744f",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-b64eafa6b27811f52d5fbccd3b4c049de7538709d65dd6c9d1be398d363e5b53.txt",
+			"source": "Adapted from Element Plus 2.14.7 dropdown/virtual-trigger. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "b64eafa6b27811f52d5fbccd3b4c049de7538709d65dd6c9d1be398d363e5b53",
+			"noticeId": "b64eafa6b27811f52d5fbccd3b4c049de7538709d65dd6c9d1be398d363e5b53"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTag/cap-basic/js/Demo.vue",
+			"sha256": "a7186af002b9f2a0c76b57848ae3923043f54af19732965bdd8d3debc3c7f8a0",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-d73b777653d5f68b4c7976bcfafcecc69e3790220114c1843f60e4bd1f24f6c5.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/d73b777653d5f68b4c7976bcfafcecc69e3790220114c1843f60e4bd1f24f6c5.txt\n-->\n<template>\n\t<div class=\"flex gap-2\">\n\t\t<AsamTag type=\"primary\">Tag 1</AsamTag>\n\t\t<AsamTag type=\"success\">Tag 2</AsamTag>\n\t\t<AsamTag type=\"info\">Tag 3</AsamTag>\n\t\t<AsamTag type=\"warning\">Tag 4</AsamTag>\n\t\t<AsamTag type=\"danger\">Tag 5</AsamTag>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTagCapBasicDemo' });\nimport { AsamTag } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.gap-2 {\n\tgap: 0.5rem;\n}\n</style>\n",
+			"originalSourceSha256": "90f1722119791b168d73bae0ab2da27ce0408a4e4dc1f9597204709ba6e336cc",
+			"notice": {
+				"id": "d73b777653d5f68b4c7976bcfafcecc69e3790220114c1843f60e4bd1f24f6c5",
+				"url": "/licenses/source-notices/d73b777653d5f68b4c7976bcfafcecc69e3790220114c1843f60e4bd1f24f6c5.txt",
+				"licenseFilename": "LICENSE-d73b777653d5f68b4c7976bcfafcecc69e3790220114c1843f60e4bd1f24f6c5.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/tag/basic.vue",
+					"sourceSha256": "d6e46c712e8b500a08c66e2bd3016b0f67596b70eee234386c79eac8031e891c",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-d73b777653d5f68b4c7976bcfafcecc69e3790220114c1843f60e4bd1f24f6c5.txt",
+			"source": "Adapted from Element Plus 2.14.7 tag/basic. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "d73b777653d5f68b4c7976bcfafcecc69e3790220114c1843f60e4bd1f24f6c5",
+			"noticeId": "d73b777653d5f68b4c7976bcfafcecc69e3790220114c1843f60e4bd1f24f6c5"
+		}
+	]
+}

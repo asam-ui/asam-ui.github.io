@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamMessageBox/ep2147-alert/ts/Demo.vue",
+			"sha256": "7f173c73d91e2c8e21298d2daf93b339e24a875e399bfd6d3fb66e944a894488",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-7a2f37de2f4da99f2640e45637ed85c72b03862bd2c0287f4a8c8bdd64887f69.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/7a2f37de2f4da99f2640e45637ed85c72b03862bd2c0287f4a8c8bdd64887f69.txt\n-->\n<template>\n\t<AsamButton plain @click=\"open\">Click to open the Message Box</AsamButton>\n</template>\n\n<script lang=\"ts\" setup>\nimport {\n\tAsamButton,\n\tAsamMessage,\n\tAsamMessageBox,\n\ttype AsamMessageBoxAction as Action,\n\ttype AsamMessageHandler\n} from '@asam-ui/ui';\n\nimport { onBeforeUnmount } from 'vue';\n\nconst open = () => {\n\tAsamMessageBox.alert('This is a message', 'Title', {\n\t\t// if you want to disable its autofocus\n\t\t// autofocus: false,\n\t\tconfirmButtonText: 'OK',\n\t\tcallback: (action: Action) => {\n\t\t\ttrackAsamMessage(\n\t\t\t\tAsamMessage({\n\t\t\t\t\ttype: 'info',\n\t\t\t\t\tmessage: `action: ${action}`\n\t\t\t\t})\n\t\t\t);\n\t\t}\n\t}).catch((action) => {\n\t\tif (action !== 'cancel' && action !== 'close') throw action;\n\t});\n};\n\nconst ownedAsamMessage = new Set<AsamMessageHandler>();\nlet mountedAsamMessage = true;\nconst trackAsamMessage = (handle: AsamMessageHandler) => {\n\tif (mountedAsamMessage) ownedAsamMessage.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamMessage = false;\n\tfor (const handle of ownedAsamMessage) handle.close();\n\townedAsamMessage.clear();\n});\n</script>\n",
+			"originalSourceSha256": "10bae4f13635583da2cb48c16e4be2d13edb7a7b85b3d124b62bf5a4308a08d0",
+			"notice": {
+				"id": "7a2f37de2f4da99f2640e45637ed85c72b03862bd2c0287f4a8c8bdd64887f69",
+				"url": "/licenses/source-notices/7a2f37de2f4da99f2640e45637ed85c72b03862bd2c0287f4a8c8bdd64887f69.txt",
+				"licenseFilename": "LICENSE-7a2f37de2f4da99f2640e45637ed85c72b03862bd2c0287f4a8c8bdd64887f69.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/message-box/alert.vue",
+					"sourceSha256": "1b065297c66e465d400cd2e65fbcc4ebea3f9c80f87635c684fdd467f18ab1a1",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-7a2f37de2f4da99f2640e45637ed85c72b03862bd2c0287f4a8c8bdd64887f69.txt",
+			"source": "Adapted from Element Plus 2.14.7 message-box/alert. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "7a2f37de2f4da99f2640e45637ed85c72b03862bd2c0287f4a8c8bdd64887f69",
+			"noticeId": "7a2f37de2f4da99f2640e45637ed85c72b03862bd2c0287f4a8c8bdd64887f69"
+		}
+	]
+}

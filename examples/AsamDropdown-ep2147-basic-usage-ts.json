@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamDropdown/ep2147-basic-usage/ts/Demo.vue",
+			"sha256": "da04d5d89b7c862770751a1bbbd1773747e3c7f21f155f5dd5c2a34545463e00",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-055a6d3d55966585d03b7cd0aeac968e697afe186c7f9801bb6aef1ca9cdcec5.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/055a6d3d55966585d03b7cd0aeac968e697afe186c7f9801bb6aef1ca9cdcec5.txt\n-->\n<template>\n\t<AsamDropdown trigger=\"hover\" placement=\"bottom\" :wrap-menu=\"false\">\n\t\t<span class=\"el-dropdown-link\">\n\t\t\tDropdown List\n\t\t\t<AsamIcon class=\"el-icon--right\">\n\t\t\t\t<arrow-down />\n\t\t\t</AsamIcon>\n\t\t</span>\n\t\t<template #dropdown>\n\t\t\t<AsamDropdownMenu>\n\t\t\t\t<AsamDropdownItem>Action 1</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>Action 2</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>Action 3</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem disabled>Action 4</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem divided>Action 5</AsamDropdownItem>\n\t\t\t</AsamDropdownMenu>\n\t\t</template>\n\t</AsamDropdown>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamDropdown, AsamDropdownItem, AsamDropdownMenu, AsamIcon } from '@asam-ui/ui';\n\nimport { ArrowDown } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.example-showcase .el-dropdown-link {\n\tcursor: pointer;\n\tcolor: var(--el-color-primary);\n\tdisplay: flex;\n\talign-items: center;\n}\n</style>\n",
+			"originalSourceSha256": "8eb67bf3396cfe0fe9788332ac1cecb2b91ec951a36479f0b3f846e268503ac7",
+			"notice": {
+				"id": "055a6d3d55966585d03b7cd0aeac968e697afe186c7f9801bb6aef1ca9cdcec5",
+				"url": "/licenses/source-notices/055a6d3d55966585d03b7cd0aeac968e697afe186c7f9801bb6aef1ca9cdcec5.txt",
+				"licenseFilename": "LICENSE-055a6d3d55966585d03b7cd0aeac968e697afe186c7f9801bb6aef1ca9cdcec5.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/dropdown/basic-usage.vue",
+					"sourceSha256": "bb5955a10b7dc649a94735f20dd2b3fc32c4cacd159f612c4c796816e96534b6",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-055a6d3d55966585d03b7cd0aeac968e697afe186c7f9801bb6aef1ca9cdcec5.txt",
+			"source": "Adapted from Element Plus 2.14.7 dropdown/basic-usage. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "055a6d3d55966585d03b7cd0aeac968e697afe186c7f9801bb6aef1ca9cdcec5",
+			"noticeId": "055a6d3d55966585d03b7cd0aeac968e697afe186c7f9801bb6aef1ca9cdcec5"
+		}
+	]
+}

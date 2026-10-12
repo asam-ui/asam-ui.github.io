@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamPopconfirm/ep2147-placement/js/Demo.vue",
+			"sha256": "c0eb8e1a0fc74b946d8aba38b855fad7e8970f16f10d80cc36b7cd3d5fb541fa",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-632379b86f93ce354fc2dfaa59abffc320ad0f85884048eb59b8697adff629e6.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/632379b86f93ce354fc2dfaa59abffc320ad0f85884048eb59b8697adff629e6.txt\n-->\n<template>\n\t<div class=\"popconfirm-base-box\">\n\t\t<div class=\"row center\">\n\t\t\t<AsamPopconfirm class=\"box-item\" title=\"Top Left prompts info\" placement=\"top-start\">\n\t\t\t\t<template #reference>\n\t\t\t\t\t<AsamButton>top-start</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamPopconfirm>\n\t\t\t<AsamPopconfirm class=\"box-item\" title=\"Top Center prompts info\" placement=\"top\">\n\t\t\t\t<template #reference>\n\t\t\t\t\t<AsamButton>top</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamPopconfirm>\n\t\t\t<AsamPopconfirm class=\"box-item\" title=\"Top Right prompts info\" placement=\"top-end\">\n\t\t\t\t<template #reference>\n\t\t\t\t\t<AsamButton>top-end</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamPopconfirm>\n\t\t</div>\n\t\t<div class=\"row\">\n\t\t\t<AsamPopconfirm class=\"box-item\" title=\"Left Top prompts info\" placement=\"left-start\">\n\t\t\t\t<template #reference>\n\t\t\t\t\t<AsamButton>left-start</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamPopconfirm>\n\t\t\t<AsamPopconfirm class=\"box-item\" title=\"Right Top prompts info\" placement=\"right-start\">\n\t\t\t\t<template #reference>\n\t\t\t\t\t<AsamButton>right-start</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamPopconfirm>\n\t\t</div>\n\t\t<div class=\"row\">\n\t\t\t<AsamPopconfirm class=\"box-item\" title=\"Left Center prompts info\" placement=\"left\">\n\t\t\t\t<template #reference>\n\t\t\t\t\t<AsamButton class=\"mt-3 mb-3\">left</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamPopconfirm>\n\t\t\t<AsamPopconfirm class=\"box-item\" title=\"Right Center prompts info\" placement=\"right\">\n\t\t\t\t<template #reference>\n\t\t\t\t\t<AsamButton>right</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamPopconfirm>\n\t\t</div>\n\t\t<div class=\"row\">\n\t\t\t<AsamPopconfirm class=\"box-item\" title=\"Left Bottom prompts info\" placement=\"left-end\">\n\t\t\t\t<template #reference>\n\t\t\t\t\t<AsamButton>left-end</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamPopconfirm>\n\t\t\t<AsamPopconfirm\n\t\t\t\tclass=\"box-item\"\n\t\t\t\ttitle=\"Right Bottom prompts info\"\n\t\t\t\tplacement=\"right-end\"\n\t\t\t>\n\t\t\t\t<template #reference>\n\t\t\t\t\t<AsamButton>right-end</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamPopconfirm>\n\t\t</div>\n\t\t<div class=\"row center\">\n\t\t\t<AsamPopconfirm\n\t\t\t\tclass=\"box-item\"\n\t\t\t\ttitle=\"Bottom Left prompts info\"\n\t\t\t\tplacement=\"bottom-start\"\n\t\t\t>\n\t\t\t\t<template #reference> <AsamButton>bottom-start</AsamButton></template>\n\t\t\t</AsamPopconfirm>\n\t\t\t<AsamPopconfirm class=\"box-item\" title=\"Bottom Center prompts info\" placement=\"bottom\">\n\t\t\t\t<template #reference> <AsamButton>bottom</AsamButton></template>\n\t\t\t</AsamPopconfirm>\n\t\t\t<AsamPopconfirm\n\t\t\t\tclass=\"box-item\"\n\t\t\t\ttitle=\"Bottom Right prompts info\"\n\t\t\t\tplacement=\"bottom-end\"\n\t\t\t>\n\t\t\t\t<template #reference>\n\t\t\t\t\t<AsamButton>bottom-end</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamPopconfirm>\n\t\t</div>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamButton, AsamPopconfirm } from '@asam-ui/ui';\n</script>\n\n<style>\n.popconfirm-base-box {\n\twidth: 600px;\n}\n\n.popconfirm-base-box .row {\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: space-between;\n}\n\n.popconfirm-base-box .center {\n\tjustify-content: center;\n}\n\n.popconfirm-base-box .box-item {\n\twidth: 110px;\n\tmargin-top: 10px;\n}\n</style>\n",
+			"originalSourceSha256": "42e100908fd2e951bd545ddb0c1387930bf1f9678900b3f6813283187b651198",
+			"notice": {
+				"id": "632379b86f93ce354fc2dfaa59abffc320ad0f85884048eb59b8697adff629e6",
+				"url": "/licenses/source-notices/632379b86f93ce354fc2dfaa59abffc320ad0f85884048eb59b8697adff629e6.txt",
+				"licenseFilename": "LICENSE-632379b86f93ce354fc2dfaa59abffc320ad0f85884048eb59b8697adff629e6.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/popconfirm/placement.vue",
+					"sourceSha256": "8dd8f9df54af57bf442e16bf0f679c2280cd66d4275d66aa918cb153f8139df5",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-632379b86f93ce354fc2dfaa59abffc320ad0f85884048eb59b8697adff629e6.txt",
+			"source": "Adapted from Element Plus 2.14.7 popconfirm/placement. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "632379b86f93ce354fc2dfaa59abffc320ad0f85884048eb59b8697adff629e6",
+			"noticeId": "632379b86f93ce354fc2dfaa59abffc320ad0f85884048eb59b8697adff629e6"
+		}
+	]
+}

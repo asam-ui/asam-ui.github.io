@@ -1,0 +1,1 @@
+var e=(e,t)=>{let n={};for(let r of t)Object.defineProperty(n,r,{enumerable:!0,get:()=>e.value?.[r],set:t=>{e.value&&(e.value[r]=t)}});return n};export{e as t};

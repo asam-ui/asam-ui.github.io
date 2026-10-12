@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamConfigProvider/cap-link/ts/Demo.vue",
+			"sha256": "1d1da06e8a273be013f1c7ec4104cd8d9472801a81f62bcabe80966c0c9e25c2",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-9cd45b6ce88479c1e538ca5919fd10a573b838cdc2d8d3a10a8526a8ee1994d8.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/9cd45b6ce88479c1e538ca5919fd10a573b838cdc2d8d3a10a8526a8ee1994d8.txt\n-->\n<template>\n\t<div>\n\t\t<div class=\"flex gap-4\">\n\t\t\t<div class=\"flex flex-col basis-150px gap-1\">\n\t\t\t\t<span>Type:</span>\n\t\t\t\t<AsamSelect\n\t\t\t\t\t:model-value=\"config.type\"\n\t\t\t\t\t@update:model-value=\"\n\t\t\t\t\t\t(value: unknown) => {\n\t\t\t\t\t\t\tif (\n\t\t\t\t\t\t\t\tvalue === 'primary' ||\n\t\t\t\t\t\t\t\tvalue === 'success' ||\n\t\t\t\t\t\t\t\tvalue === 'warning' ||\n\t\t\t\t\t\t\t\tvalue === 'danger' ||\n\t\t\t\t\t\t\t\tvalue === 'info' ||\n\t\t\t\t\t\t\t\tvalue === 'default'\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t\t\tconfig.type = value;\n\t\t\t\t\t\t}\n\t\t\t\t\t\"\n\t\t\t\t>\n\t\t\t\t\t<AsamOption v-for=\"type in linkTypes\" :key=\"type\" :value=\"type\" />\n\t\t\t\t</AsamSelect>\n\t\t\t</div>\n\t\t\t<div class=\"flex flex-col basis-150px gap-1\">\n\t\t\t\t<span>Underline:</span>\n\t\t\t\t<AsamSelect\n\t\t\t\t\t:model-value=\"config.underline\"\n\t\t\t\t\t@update:model-value=\"\n\t\t\t\t\t\t(value: unknown) => {\n\t\t\t\t\t\t\tif (value === 'always' || value === 'hover' || value === 'never')\n\t\t\t\t\t\t\t\tconfig.underline = value;\n\t\t\t\t\t\t}\n\t\t\t\t\t\"\n\t\t\t\t>\n\t\t\t\t\t<AsamOption v-for=\"type in underlineOptions\" :key=\"type\" :value=\"type\" />\n\t\t\t\t</AsamSelect>\n\t\t\t</div>\n\t\t</div>\n\t\t<AsamDivider />\n\t\t<AsamConfigProvider :link=\"config\">\n\t\t\t<AsamLink>Link desu!</AsamLink>\n\t\t</AsamConfigProvider>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamConfigProviderCapLinkDemo' });\nimport { AsamSelect, AsamOption, AsamDivider, AsamConfigProvider, AsamLink } from '@asam-ui/ui';\n\nimport { reactive } from 'vue';\n\nimport type { AsamConfigProviderLinkConfigContext } from '@asam-ui/ui';\n\nconst linkTypes = ['primary', 'success', 'warning', 'info', 'danger', 'default'];\nconst underlineOptions = ['always', 'never', 'hover'];\n\nconst config = reactive<AsamConfigProviderLinkConfigContext>({\n\ttype: 'success',\n\tunderline: 'always'\n});\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.gap-4 {\n\tgap: 1rem;\n}\n\n.flex-col {\n\tflex-direction: column;\n}\n\n.basis-150px {\n\tflex-basis: 150px;\n}\n\n.gap-1 {\n\tgap: 0.25rem;\n}\n</style>\n",
+			"originalSourceSha256": "06a4f84f1b4f1a93b0f912cc23c0738f68d26407fc156cd10e51345640c3f442",
+			"notice": {
+				"id": "9cd45b6ce88479c1e538ca5919fd10a573b838cdc2d8d3a10a8526a8ee1994d8",
+				"url": "/licenses/source-notices/9cd45b6ce88479c1e538ca5919fd10a573b838cdc2d8d3a10a8526a8ee1994d8.txt",
+				"licenseFilename": "LICENSE-9cd45b6ce88479c1e538ca5919fd10a573b838cdc2d8d3a10a8526a8ee1994d8.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/config-provider/link.vue",
+					"sourceSha256": "ac6916996cb09a96c9a472cbf08d4f24d24c1435e76f2b680cc925e8cdd8ae46",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-9cd45b6ce88479c1e538ca5919fd10a573b838cdc2d8d3a10a8526a8ee1994d8.txt",
+			"source": "Adapted from Element Plus 2.14.7 config-provider/link. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "9cd45b6ce88479c1e538ca5919fd10a573b838cdc2d8d3a10a8526a8ee1994d8",
+			"noticeId": "9cd45b6ce88479c1e538ca5919fd10a573b838cdc2d8d3a10a8526a8ee1994d8"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamContainer/cap-layout-ahm/ts/Demo.vue",
+			"sha256": "26d9d51e8c26cc574b5c17f950e14046a9e1bf27a2ae33c2002f18d62e4cbfbb",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e8d2fdbf851388c1ddc8fe74003a5d06b098d0210a31dc6b51daae7389f415bb.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e8d2fdbf851388c1ddc8fe74003a5d06b098d0210a31dc6b51daae7389f415bb.txt\n-->\n<template>\n\t<div class=\"common-layout\">\n\t\t<AsamContainer>\n\t\t\t<AsamAside width=\"200px\">Aside</AsamAside>\n\t\t\t<AsamContainer>\n\t\t\t\t<AsamHeader>Header</AsamHeader>\n\t\t\t\t<AsamMain>Main</AsamMain>\n\t\t\t</AsamContainer>\n\t\t</AsamContainer>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamContainerCapLayoutAhmDemo' });\nimport { AsamContainer, AsamAside, AsamHeader, AsamMain } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Derived from the fixed container/common-layout.scss; scoped and resolved locally. */\n/* stylelint-disable selector-pseudo-class-no-unknown -- Vue SFC implements :deep. */\n.common-layout :deep(.el-header),\n.common-layout :deep(.el-footer),\n.common-layout :deep(.el-main),\n.common-layout :deep(.el-aside) {\n\tdisplay: flex;\n\tjustify-content: center;\n\talign-items: center;\n\tcolor: var(--asam-color-text-primary);\n\ttext-align: center;\n}\n\n.common-layout :deep(.el-header),\n.common-layout :deep(.el-footer) {\n\tbackground-color: color-mix(in srgb, var(--asam-color-primary) 30%, var(--asam-color-surface));\n}\n\n.common-layout :deep(.el-aside) {\n\tbackground-color: color-mix(in srgb, var(--asam-color-primary) 20%, var(--asam-color-surface));\n}\n\n.common-layout :deep(.el-main) {\n\tbackground-color: color-mix(in srgb, var(--asam-color-primary) 10%, var(--asam-color-surface));\n\theight: 150px;\n}\n/* stylelint-enable selector-pseudo-class-no-unknown */\n</style>\n",
+			"originalSourceSha256": "719df52122fca2fcd9e5446b4031cca2973cef8fd5ceb547ff65ebd559f51b88",
+			"notice": {
+				"id": "e8d2fdbf851388c1ddc8fe74003a5d06b098d0210a31dc6b51daae7389f415bb",
+				"url": "/licenses/source-notices/e8d2fdbf851388c1ddc8fe74003a5d06b098d0210a31dc6b51daae7389f415bb.txt",
+				"licenseFilename": "LICENSE-e8d2fdbf851388c1ddc8fe74003a5d06b098d0210a31dc6b51daae7389f415bb.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/container/layout-ahm.vue",
+					"sourceSha256": "7a07cda3fc757077e2e243684dd10c21c97848e9c55179838e49ef12ac1eebba",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-e8d2fdbf851388c1ddc8fe74003a5d06b098d0210a31dc6b51daae7389f415bb.txt",
+			"source": "Adapted from Element Plus 2.14.7 container/layout-ahm. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "e8d2fdbf851388c1ddc8fe74003a5d06b098d0210a31dc6b51daae7389f415bb",
+			"noticeId": "e8d2fdbf851388c1ddc8fe74003a5d06b098d0210a31dc6b51daae7389f415bb"
+		}
+	]
+}

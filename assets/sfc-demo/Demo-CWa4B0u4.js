@@ -1,0 +1,1 @@
+import{T as e,Tt as t,W as n,x as r}from"./sfc-demo.js";import{t as i}from"./Index-DFGXF048-BCixHYN5.js";var a={style:{"max-width":`600px`}},o=Object.assign({name:`AsamAlertCapDescriptionDemo`},{__name:`Demo`,setup(o){return(o,s)=>(n(),r(`div`,a,[e(t(i),{title:`With description`,type:`success`,description:`This is a description.`})]))}});export{o as default};

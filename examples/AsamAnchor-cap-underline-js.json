@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamAnchor/cap-underline/js/Demo.vue",
+			"sha256": "7baa3573d1914c221319503e7cb71a377ecf3ac091c6e89c1d842726d17cc433",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-1a82e31f20e5c908478d3856e4caa92800e6ebb56b23608b3d93b19772d5d70e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/1a82e31f20e5c908478d3856e4caa92800e6ebb56b23608b3d93b19772d5d70e.txt\n-->\n<template>\n\t<AsamAnchor type=\"underline\" :offset=\"70\">\n\t\t<AsamAnchorLink :href=\"`#${locale['basic-usage']}`\">\n\t\t\t{{ locale['Basic Usage'] }}\n\t\t</AsamAnchorLink>\n\t\t<AsamAnchorLink :href=\"`#${locale['horizontal-mode']}`\">\n\t\t\t{{ locale['Horizontal Mode'] }}\n\t\t</AsamAnchorLink>\n\t\t<AsamAnchorLink :href=\"`#${locale['scroll-container']}`\">\n\t\t\t{{ locale['Scroll Container'] }}\n\t\t</AsamAnchorLink>\n\t\t<AsamAnchorLink :href=\"`#${locale['anchor-api']}`\">\n\t\t\t{{ locale['Anchor API'] }}\n\t\t\t<template #sub-link>\n\t\t\t\t<AsamAnchorLink :href=\"`#${locale['anchor-attributes']}`\">\n\t\t\t\t\t{{ locale['Anchor Attributes'] }}\n\t\t\t\t</AsamAnchorLink>\n\t\t\t\t<AsamAnchorLink :href=\"`#${locale['anchor-events']}`\">\n\t\t\t\t\t{{ locale['Anchor Events'] }}\n\t\t\t\t</AsamAnchorLink>\n\t\t\t</template>\n\t\t</AsamAnchorLink>\n\t</AsamAnchor>\n\t<section\n\t\tv-for=\"(target, key) in locale\"\n\t\t:id=\"key === key.toLowerCase() ? target : undefined\"\n\t\t:key=\"key\"\n\t\tstyle=\"min-height: 180px\"\n\t>\n\t\t{{ target }}\n\t</section>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamAnchorCapUnderlineDemo' });\nimport { AsamAnchor, AsamAnchorLink } from '@asam-ui/ui';\nimport { computed } from 'vue';\nconst locale = computed(() => ({\n\t'basic-usage': 'ui032-cap-underline-basic-usage',\n\t'horizontal-mode': 'ui032-cap-underline-horizontal-mode',\n\t'scroll-container': 'ui032-cap-underline-scroll-container',\n\t'anchor-api': 'ui032-cap-underline-anchor-api',\n\t'anchor-attributes': 'ui032-cap-underline-anchor-attributes',\n\t'anchor-events': 'ui032-cap-underline-anchor-events',\n\t'Basic Usage': 'Basic Usage',\n\t'Horizontal Mode': 'Horizontal Mode',\n\t'Scroll Container': 'Scroll Container',\n\t'Anchor API': 'Anchor API',\n\t'Anchor Attributes': 'Anchor Attributes',\n\t'Anchor Events': 'Anchor Events'\n}));\n</script>\n",
+			"originalSourceSha256": "ab5c69daf3b869176d1edf290bb825b1304377de392acb78274068145371549a",
+			"notice": {
+				"id": "1a82e31f20e5c908478d3856e4caa92800e6ebb56b23608b3d93b19772d5d70e",
+				"url": "/licenses/source-notices/1a82e31f20e5c908478d3856e4caa92800e6ebb56b23608b3d93b19772d5d70e.txt",
+				"licenseFilename": "LICENSE-1a82e31f20e5c908478d3856e4caa92800e6ebb56b23608b3d93b19772d5d70e.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/anchor/underline.vue",
+					"sourceSha256": "d9c864e3d3a7f85c463668c10add15a28cebb7b0b99d710effa4656e9faaaf60",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-1a82e31f20e5c908478d3856e4caa92800e6ebb56b23608b3d93b19772d5d70e.txt",
+			"source": "Adapted from Element Plus 2.14.7 anchor/underline. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "1a82e31f20e5c908478d3856e4caa92800e6ebb56b23608b3d93b19772d5d70e",
+			"noticeId": "1a82e31f20e5c908478d3856e4caa92800e6ebb56b23608b3d93b19772d5d70e"
+		}
+	]
+}

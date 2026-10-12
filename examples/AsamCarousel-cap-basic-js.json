@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamCarousel/cap-basic/js/Demo.vue",
+			"sha256": "002afbce117216e44519b846404b04e17ac12791a61bad7f041d1a432455a5ff",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ebf45f937e51566610a5069d57a65ae3c4f470ed636a2e82048447350a7d27fd.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ebf45f937e51566610a5069d57a65ae3c4f470ed636a2e82048447350a7d27fd.txt\n-->\n<template>\n\t<div class=\"block text-center\">\n\t\t<span class=\"demonstration\"> Switch when indicator is hovered (default) </span>\n\t\t<AsamCarousel height=\"150px\">\n\t\t\t<AsamCarouselItem v-for=\"item in 4\" :key=\"item\">\n\t\t\t\t<h3 class=\"small justify-center ui032-text-2xl\">{{ item }}</h3>\n\t\t\t</AsamCarouselItem>\n\t\t</AsamCarousel>\n\t</div>\n\t<div class=\"block text-center ui032-mt-4\">\n\t\t<span class=\"demonstration\">Switch when indicator is clicked</span>\n\t\t<AsamCarousel trigger=\"click\" height=\"150px\">\n\t\t\t<AsamCarouselItem v-for=\"item in 4\" :key=\"item\">\n\t\t\t\t<h3 class=\"small justify-center ui032-text-2xl\">{{ item }}</h3>\n\t\t\t</AsamCarouselItem>\n\t\t</AsamCarousel>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamCarouselCapBasicDemo' });\nimport { AsamCarousel, AsamCarouselItem } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.demonstration {\n\tcolor: var(--el-text-color-secondary);\n}\n\n.el-carousel__item h3 {\n\tcolor: #475669;\n\topacity: 0.75;\n\tline-height: 150px;\n\tmargin: 0;\n\ttext-align: center;\n}\n\n.el-carousel__item:nth-child(2n) {\n\tbackground-color: #99a9bf;\n}\n\n.el-carousel__item:nth-child(2n + 1) {\n\tbackground-color: #d3dce6;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.text-center {\n\ttext-align: center;\n}\n\n.justify-center {\n\tjustify-content: center;\n}\n</style>\n\n<style scoped>\n.ui032-text-2xl {\n\tfont-size: 1.5rem;\n}\n\n.ui032-mt-4 {\n\tmargin-top: var(--asam-space-lg);\n}\n</style>\n",
+			"originalSourceSha256": "ba8a7bcd151176cd0c204277b64823bade15ff336d27c947faea76664e0cbf52",
+			"notice": {
+				"id": "ebf45f937e51566610a5069d57a65ae3c4f470ed636a2e82048447350a7d27fd",
+				"url": "/licenses/source-notices/ebf45f937e51566610a5069d57a65ae3c4f470ed636a2e82048447350a7d27fd.txt",
+				"licenseFilename": "LICENSE-ebf45f937e51566610a5069d57a65ae3c4f470ed636a2e82048447350a7d27fd.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/carousel/basic.vue",
+					"sourceSha256": "9897a230ce857d959d79a753be08e9a43de6ffb9ca4a0d50dc78b31df59ce467",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-ebf45f937e51566610a5069d57a65ae3c4f470ed636a2e82048447350a7d27fd.txt",
+			"source": "Adapted from Element Plus 2.14.7 carousel/basic. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "ebf45f937e51566610a5069d57a65ae3c4f470ed636a2e82048447350a7d27fd",
+			"noticeId": "ebf45f937e51566610a5069d57a65ae3c4f470ed636a2e82048447350a7d27fd"
+		}
+	]
+}

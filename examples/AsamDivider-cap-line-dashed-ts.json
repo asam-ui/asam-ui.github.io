@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamDivider/cap-line-dashed/ts/Demo.vue",
+			"sha256": "8878caab6acf18a7f64a693ede3c3d8ab834b632b098f0513aae91e82f2948b2",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-91d0a54a7429f8cecf82ddc6e72f3d9d9c853826a6d1300a2f0eb4bb15c2771d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/91d0a54a7429f8cecf82ddc6e72f3d9d9c853826a6d1300a2f0eb4bb15c2771d.txt\n-->\n<template>\n\t<div>\n\t\t<span>What language is thine, O sea?</span>\n\t\t<AsamDivider border-style=\"dashed\" />\n\t\t<span>The language of eternal question.</span>\n\t</div>\n\t<AsamDivider border-style=\"dotted\" />\n\t<span>What language is thy answer, O sky?</span>\n\t<AsamDivider border-style=\"double\" />\n\t<span>The language of eternal silence.</span>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamDividerCapLineDashedDemo' });\nimport { AsamDivider } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "be85385dfd3cbb4b61847a7295aee9c1c82a390655171f9f06c79cbf7dfce26f",
+			"notice": {
+				"id": "91d0a54a7429f8cecf82ddc6e72f3d9d9c853826a6d1300a2f0eb4bb15c2771d",
+				"url": "/licenses/source-notices/91d0a54a7429f8cecf82ddc6e72f3d9d9c853826a6d1300a2f0eb4bb15c2771d.txt",
+				"licenseFilename": "LICENSE-91d0a54a7429f8cecf82ddc6e72f3d9d9c853826a6d1300a2f0eb4bb15c2771d.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/divider/line-dashed.vue",
+					"sourceSha256": "98e4408f3a7b1f2c4d0c6327abe1416247ec8e0dcdbebfaf5b2c98a534af7a20",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-91d0a54a7429f8cecf82ddc6e72f3d9d9c853826a6d1300a2f0eb4bb15c2771d.txt",
+			"source": "Adapted from Element Plus 2.14.7 divider/line-dashed. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "91d0a54a7429f8cecf82ddc6e72f3d9d9c853826a6d1300a2f0eb4bb15c2771d",
+			"noticeId": "91d0a54a7429f8cecf82ddc6e72f3d9d9c853826a6d1300a2f0eb4bb15c2771d"
+		}
+	]
+}

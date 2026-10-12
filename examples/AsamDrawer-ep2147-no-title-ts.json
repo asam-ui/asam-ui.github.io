@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamDrawer/ep2147-no-title/ts/Demo.vue",
+			"sha256": "036fe6e882cebb7633bd5da88d2e3e188208f4062d25bb425e227d9ce531f316",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0a41f6f6102b9b1e959bf2b6ba0588d8416fa127f89db3eda60782f3d6856a4c.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/0a41f6f6102b9b1e959bf2b6ba0588d8416fa127f89db3eda60782f3d6856a4c.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" @click=\"drawer = true\"> open </AsamButton>\n\n\t<AsamDrawer v-model=\"drawer\" title=\"I am the title\" :with-header=\"false\">\n\t\t<span>Hi there!</span>\n\t</AsamDrawer>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDrawer } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst drawer = ref(false);\n</script>\n",
+			"originalSourceSha256": "e51ea427fcadcada0599e88660bf2ad615a262968ea3019de020d22b253f44c7",
+			"notice": {
+				"id": "0a41f6f6102b9b1e959bf2b6ba0588d8416fa127f89db3eda60782f3d6856a4c",
+				"url": "/licenses/source-notices/0a41f6f6102b9b1e959bf2b6ba0588d8416fa127f89db3eda60782f3d6856a4c.txt",
+				"licenseFilename": "LICENSE-0a41f6f6102b9b1e959bf2b6ba0588d8416fa127f89db3eda60782f3d6856a4c.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/drawer/no-title.vue",
+					"sourceSha256": "68783b7cc51ae2a3ba89955f0147559b9dff2db550f688244b091790dd8a3411",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0a41f6f6102b9b1e959bf2b6ba0588d8416fa127f89db3eda60782f3d6856a4c.txt",
+			"source": "Adapted from Element Plus 2.14.7 drawer/no-title. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0a41f6f6102b9b1e959bf2b6ba0588d8416fa127f89db3eda60782f3d6856a4c",
+			"noticeId": "0a41f6f6102b9b1e959bf2b6ba0588d8416fa127f89db3eda60782f3d6856a4c"
+		}
+	]
+}

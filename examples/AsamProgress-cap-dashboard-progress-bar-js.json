@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamProgress/cap-dashboard-progress-bar/js/Demo.vue",
+			"sha256": "94b88b760f49d8856ace861d375ea4fb0e360f518d2689e00a48215a222f73f6",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-31c64be87f9c041e3fa9c7f0949579aa13ea6d6ee6b6fefb48867ee6ac0bb82b.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/31c64be87f9c041e3fa9c7f0949579aa13ea6d6ee6b6fefb48867ee6ac0bb82b.txt\n-->\n<template>\n\t<div class=\"demo-progress\">\n\t\t<AsamProgress type=\"dashboard\" :percentage=\"percentage\" :color=\"colors\" />\n\t\t<AsamProgress type=\"dashboard\" :percentage=\"percentage2\" :color=\"colors\" />\n\t\t<div>\n\t\t\t<AsamButtonGroup>\n\t\t\t\t<AsamButton :icon=\"Minus\" @click=\"decrease\" />\n\t\t\t\t<AsamButton :icon=\"Plus\" @click=\"increase\" />\n\t\t\t</AsamButtonGroup>\n\t\t</div>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamProgressCapDashboardProgressBarDemo' });\nimport { AsamProgress, AsamButtonGroup, AsamButton } from '@asam-ui/ui';\nimport { onBeforeUnmount, onMounted, ref } from 'vue';\nimport { Minus, Plus } from '@asam-ui/icons-vue';\nconst percentage = ref(10);\nconst percentage2 = ref(0);\nconst colors = [\n\t{ color: '#f56c6c', percentage: 20 },\n\t{ color: '#e6a23c', percentage: 40 },\n\t{ color: '#5cb87a', percentage: 60 },\n\t{ color: '#1989fa', percentage: 80 },\n\t{ color: '#6f7ad3', percentage: 100 }\n];\nconst increase = () => {\n\tpercentage.value += 10;\n\tif (percentage.value > 100) {\n\t\tpercentage.value = 100;\n\t}\n};\nconst decrease = () => {\n\tpercentage.value -= 10;\n\tif (percentage.value < 0) {\n\t\tpercentage.value = 0;\n\t}\n};\nlet interval;\nonMounted(() => {\n\tinterval = setInterval(() => {\n\t\tpercentage2.value = (percentage2.value % 100) + 10;\n\t}, 500);\n});\nonBeforeUnmount(() => {\n\tif (interval !== undefined) clearInterval(interval);\n});\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.demo-progress .el-progress--line {\n\tmargin-bottom: 15px;\n\tmax-width: 600px;\n}\n\n.demo-progress .el-progress--circle {\n\tmargin-right: 15px;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n",
+			"originalSourceSha256": "f1ea388d0ec5ed20d82c86159a051ff552c30d49a458ae617d61f2589782348e",
+			"notice": {
+				"id": "31c64be87f9c041e3fa9c7f0949579aa13ea6d6ee6b6fefb48867ee6ac0bb82b",
+				"url": "/licenses/source-notices/31c64be87f9c041e3fa9c7f0949579aa13ea6d6ee6b6fefb48867ee6ac0bb82b.txt",
+				"licenseFilename": "LICENSE-31c64be87f9c041e3fa9c7f0949579aa13ea6d6ee6b6fefb48867ee6ac0bb82b.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/progress/dashboard-progress-bar.vue",
+					"sourceSha256": "0a0ea228ec0b9797eec80275452d0694b5aec5d5b64ea851655ae837614c1b9e",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-31c64be87f9c041e3fa9c7f0949579aa13ea6d6ee6b6fefb48867ee6ac0bb82b.txt",
+			"source": "Adapted from Element Plus 2.14.7 progress/dashboard-progress-bar. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "31c64be87f9c041e3fa9c7f0949579aa13ea6d6ee6b6fefb48867ee6ac0bb82b",
+			"noticeId": "31c64be87f9c041e3fa9c7f0949579aa13ea6d6ee6b6fefb48867ee6ac0bb82b"
+		}
+	]
+}

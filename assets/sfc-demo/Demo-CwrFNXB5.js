@@ -1,0 +1,1 @@
+import{Tt as e,W as t,y as n}from"./sfc-demo.js";import{t as r}from"./Index-Uo9t0Uie2-DJ69II_B.js";var i=Object.assign({name:`AsamSkeletonCapConfigurableRowsDemo`},{__name:`Demo`,setup(i){return(i,a)=>(t(),n(e(r),{rows:5}))}});export{i as default};

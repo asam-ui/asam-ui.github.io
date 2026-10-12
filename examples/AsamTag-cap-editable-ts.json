@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTag/cap-editable/ts/Demo.vue",
+			"sha256": "790457a47dbd0d784bc33ecda2d9d74ecc1164f7672095c7c6389cd8b441171e",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f75284197908c909e814ff4cfb537557e04896d63b9edd8df332f6f6dbde5d7d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f75284197908c909e814ff4cfb537557e04896d63b9edd8df332f6f6dbde5d7d.txt\n-->\n<template>\n\t<div class=\"flex gap-2\">\n\t\t<AsamTag\n\t\t\tv-for=\"tag in dynamicTags\"\n\t\t\t:key=\"tag\"\n\t\t\tclosable\n\t\t\t:disable-transitions=\"false\"\n\t\t\t@close=\"handleClose(tag)\"\n\t\t>\n\t\t\t{{ tag }}\n\t\t</AsamTag>\n\t\t<AsamInput\n\t\t\tv-if=\"inputVisible\"\n\t\t\tref=\"InputRef\"\n\t\t\t:model-value=\"inputValue\"\n\t\t\tclass=\"w-20\"\n\t\t\tsize=\"small\"\n\t\t\tv-bind=\"domEnterAttrs(handleInputConfirm)\"\n\t\t\t@update:model-value=\"\n\t\t\t\t(value) => {\n\t\t\t\t\tif (typeof value === 'string') inputValue = value;\n\t\t\t\t}\n\t\t\t\"\n\t\t\t@blur=\"handleInputConfirm\"\n\t\t/>\n\t\t<!-- prettier-ignore -->\n\t\t<AsamButton\n\t\t\tv-else\n\t\t\tclass=\"button-new-tag\"\n\t\t\tsize=\"small\"\n\t\t\t@click=\"showInput\"\n\t\t>\n\t\t\t+ New Tag\n\t\t</AsamButton>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\nimport type { HTMLAttributes } from 'vue';\ndefineOptions({ name: 'AsamTagCapEditableDemo' });\nimport { AsamTag, AsamInput, AsamButton } from '@asam-ui/ui';\n\nimport { nextTick, ref } from 'vue';\n\nimport type { AsamInputExpose } from '@asam-ui/ui';\n\nconst inputValue = ref('');\nconst dynamicTags = ref(['Tag 1', 'Tag 2', 'Tag 3']);\nconst inputVisible = ref(false);\nconst InputRef = ref<AsamInputExpose>();\n\nconst handleClose = (tag: string) => {\n\tdynamicTags.value.splice(dynamicTags.value.indexOf(tag), 1);\n};\n\nconst showInput = () => {\n\tinputVisible.value = true;\n\tnextTick(() => {\n\t\tInputRef.value!.input!.focus();\n\t});\n};\n\nconst handleInputConfirm = () => {\n\tif (inputValue.value) {\n\t\tdynamicTags.value.push(inputValue.value);\n\t}\n\tinputVisible.value = false;\n\tinputValue.value = '';\n};\n\nconst domEnterAttrs = (handler: () => void): Pick<HTMLAttributes, 'class' | 'onKeyup'> => ({\n\tclass: 'ui032-enter-input',\n\tonKeyup: (event) => {\n\t\tif (event.key === 'Enter') handler();\n\t}\n});\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.gap-2 {\n\tgap: 0.5rem;\n}\n\n.w-20 {\n\twidth: 5rem;\n}\n</style>\n",
+			"originalSourceSha256": "43f4ea97273d0dae8a5729ad72a86dceee29b981dea0ecad25c4b7936ee0cbeb",
+			"notice": {
+				"id": "f75284197908c909e814ff4cfb537557e04896d63b9edd8df332f6f6dbde5d7d",
+				"url": "/licenses/source-notices/f75284197908c909e814ff4cfb537557e04896d63b9edd8df332f6f6dbde5d7d.txt",
+				"licenseFilename": "LICENSE-f75284197908c909e814ff4cfb537557e04896d63b9edd8df332f6f6dbde5d7d.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/tag/editable.vue",
+					"sourceSha256": "1113c47ec37e5f7e6b92468e119349a5afe6e31595c68981edd43b3afe18dce4",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-f75284197908c909e814ff4cfb537557e04896d63b9edd8df332f6f6dbde5d7d.txt",
+			"source": "Adapted from Element Plus 2.14.7 tag/editable. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "f75284197908c909e814ff4cfb537557e04896d63b9edd8df332f6f6dbde5d7d",
+			"noticeId": "f75284197908c909e814ff4cfb537557e04896d63b9edd8df332f6f6dbde5d7d"
+		}
+	]
+}

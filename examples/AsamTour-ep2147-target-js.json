@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTour/ep2147-target/js/Demo.vue",
+			"sha256": "a3d2ee8bc08843f8d1d3bdccd5a8472dfc3fd838ce4d76d42edb20191291b334",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-d05023b2fb4ee45b3059ee6e66e9cba365f243ca896806b413c662fec5c3bc3d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/d05023b2fb4ee45b3059ee6e66e9cba365f243ca896806b413c662fec5c3bc3d.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" @click=\"open = true\">Begin Tour</AsamButton>\n\n\t<AsamDivider />\n\n\t<AsamSpace>\n\t\t<span id=\"btn1\"><AsamButton>Upload</AsamButton></span>\n\t\t<span id=\"btn2\"><AsamButton type=\"primary\">Save</AsamButton></span>\n\t\t<AsamButton ref=\"btnRef\" :icon=\"MoreFilled\" />\n\t</AsamSpace>\n\n\t<AsamTour v-model=\"open\">\n\t\t<AsamTourStep target=\"#btn1\" title=\"Upload File\" description=\"Put you files here.\" />\n\t\t<AsamTourStep :target=\"el\" title=\"Save\" description=\"Save your changes\" />\n\t\t<AsamTourStep\n\t\t\t:target=\"btnRef?.$el\"\n\t\t\ttitle=\"Other Actions\"\n\t\t\tdescription=\"Click to see other\"\n\t\t/>\n\t</AsamTour>\n</template>\n\n<script setup>\nimport { AsamButton, AsamDivider, AsamSpace, AsamTour, AsamTourStep } from '@asam-ui/ui';\nimport { ref } from 'vue';\nimport { MoreFilled } from '@asam-ui/icons-vue';\nconst el = () => document.querySelector('#btn2');\nconst btnRef = ref();\nconst open = ref(false);\n</script>\n",
+			"originalSourceSha256": "1e9a9f1059c665097adf78157127d492e5bcded98d90d7629a3b0da1684093b4",
+			"notice": {
+				"id": "d05023b2fb4ee45b3059ee6e66e9cba365f243ca896806b413c662fec5c3bc3d",
+				"url": "/licenses/source-notices/d05023b2fb4ee45b3059ee6e66e9cba365f243ca896806b413c662fec5c3bc3d.txt",
+				"licenseFilename": "LICENSE-d05023b2fb4ee45b3059ee6e66e9cba365f243ca896806b413c662fec5c3bc3d.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/tour/target.vue",
+					"sourceSha256": "f440934af7ab755cf8e94ff042dffd55f8f217279af31e5eaa61a43984189227",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-d05023b2fb4ee45b3059ee6e66e9cba365f243ca896806b413c662fec5c3bc3d.txt",
+			"source": "Adapted from Element Plus 2.14.7 tour/target. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "d05023b2fb4ee45b3059ee6e66e9cba365f243ca896806b413c662fec5c3bc3d",
+			"noticeId": "d05023b2fb4ee45b3059ee6e66e9cba365f243ca896806b413c662fec5c3bc3d"
+		}
+	]
+}

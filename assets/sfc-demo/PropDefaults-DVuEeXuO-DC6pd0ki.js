@@ -1,0 +1,1 @@
+function e(e){let t={};if(e&&typeof e==`object`)for(let[n,r]of Object.entries(e))if(r&&typeof r==`object`&&`default`in r)t[n]=r.default;else{let e=r&&typeof r==`object`&&`type`in r?r.type:r;t[n]=e===Boolean||Array.isArray(e)&&e.includes(Boolean)?!1:void 0}return t}export{e as t};

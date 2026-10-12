@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamCard/cap-shadow/js/Demo.vue",
+			"sha256": "f09ad26c026289597c5197c28fe3c5362d70caa18ca60629b354b9825265ba99",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-dc792b2ba3ead07859071309484f83ba3699987eb0ef7d10f36d0428a5961d4f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/dc792b2ba3ead07859071309484f83ba3699987eb0ef7d10f36d0428a5961d4f.txt\n-->\n<template>\n\t<div class=\"flex flex-wrap gap-4\">\n\t\t<AsamCard style=\"width: 480px\" shadow=\"always\">Always</AsamCard>\n\t\t<AsamCard style=\"width: 480px\" shadow=\"hover\">Hover</AsamCard>\n\t\t<AsamCard style=\"width: 480px\" shadow=\"never\">Never</AsamCard>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamCardCapShadowDemo' });\nimport { AsamCard } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.flex-wrap {\n\tflex-wrap: wrap;\n}\n\n.gap-4 {\n\tgap: 1rem;\n}\n</style>\n",
+			"originalSourceSha256": "29b04255150f03dad64d0b031a12e5eead06db83403cb49cbc3ea39771d35c29",
+			"notice": {
+				"id": "dc792b2ba3ead07859071309484f83ba3699987eb0ef7d10f36d0428a5961d4f",
+				"url": "/licenses/source-notices/dc792b2ba3ead07859071309484f83ba3699987eb0ef7d10f36d0428a5961d4f.txt",
+				"licenseFilename": "LICENSE-dc792b2ba3ead07859071309484f83ba3699987eb0ef7d10f36d0428a5961d4f.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/card/shadow.vue",
+					"sourceSha256": "7d02f846f84415ba15f098b00ec33455e02064559c5141ab55cc549dc60e88e7",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-dc792b2ba3ead07859071309484f83ba3699987eb0ef7d10f36d0428a5961d4f.txt",
+			"source": "Adapted from Element Plus 2.14.7 card/shadow. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "dc792b2ba3ead07859071309484f83ba3699987eb0ef7d10f36d0428a5961d4f",
+			"noticeId": "dc792b2ba3ead07859071309484f83ba3699987eb0ef7d10f36d0428a5961d4f"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTabs/cap-custom-tab/js/Demo.vue",
+			"sha256": "0b6e795d3bbf2b56a65fdd2043b7bd188c575b31bb89487f12f84e9476058ae1",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-c539406cedbfe46d80b156fa86379296ff145070db143fa2a26337a84b91dad4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/c539406cedbfe46d80b156fa86379296ff145070db143fa2a26337a84b91dad4.txt\n-->\n<template>\n\t<AsamTabs type=\"border-card\" class=\"demo-tabs\">\n\t\t<AsamTabPane>\n\t\t\t<template #label>\n\t\t\t\t<span class=\"custom-tabs-label\">\n\t\t\t\t\t<AsamIcon><calendar /></AsamIcon>\n\t\t\t\t\t<span>Route</span>\n\t\t\t\t</span>\n\t\t\t</template>\n\t\t\tRoute\n\t\t</AsamTabPane>\n\t\t<AsamTabPane label=\"Config\">Config</AsamTabPane>\n\t\t<AsamTabPane label=\"Role\">Role</AsamTabPane>\n\t\t<AsamTabPane label=\"Task\">Task</AsamTabPane>\n\t</AsamTabs>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTabsCapCustomTabDemo' });\nimport { AsamTabs, AsamTabPane, AsamIcon } from '@asam-ui/ui';\nimport { Calendar } from '@asam-ui/icons-vue';\n</script>\n\n<style>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.demo-tabs > .el-tabs__content {\n\tpadding: 32px;\n\tcolor: #6b778c;\n\tfont-size: 32px;\n\tfont-weight: 600;\n}\n\n.demo-tabs .custom-tabs-label .el-icon {\n\tvertical-align: middle;\n}\n\n.demo-tabs .custom-tabs-label span {\n\tvertical-align: middle;\n\tmargin-left: 4px;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n",
+			"originalSourceSha256": "ce329e620a127044f3b6f8a084a56118ac737a2788c5dea9c93864727b070326",
+			"notice": {
+				"id": "c539406cedbfe46d80b156fa86379296ff145070db143fa2a26337a84b91dad4",
+				"url": "/licenses/source-notices/c539406cedbfe46d80b156fa86379296ff145070db143fa2a26337a84b91dad4.txt",
+				"licenseFilename": "LICENSE-c539406cedbfe46d80b156fa86379296ff145070db143fa2a26337a84b91dad4.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/tabs/custom-tab.vue",
+					"sourceSha256": "0f71681c23306fcbdd87d799fcd4258cfa06ef0aee1a7b5a22cc26567f7be80c",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-c539406cedbfe46d80b156fa86379296ff145070db143fa2a26337a84b91dad4.txt",
+			"source": "Adapted from Element Plus 2.14.7 tabs/custom-tab. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "c539406cedbfe46d80b156fa86379296ff145070db143fa2a26337a84b91dad4",
+			"noticeId": "c539406cedbfe46d80b156fa86379296ff145070db143fa2a26337a84b91dad4"
+		}
+	]
+}

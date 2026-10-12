@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamMessage/ep2147-closable/js/Demo.vue",
+			"sha256": "8ed13790934ed6264e17bab4430656672ff809dd3e9e37a3e8b901f28f33d7fb",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-652a0d5e0d44a641b5626cfbe9664958dc8e7ac60872fa68006f99af10e50688.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/652a0d5e0d44a641b5626cfbe9664958dc8e7ac60872fa68006f99af10e50688.txt\n-->\n<template>\n\t<div class=\"flex flex-wrap gap-1\">\n\t\t<AsamButton class=\"!ml-0\" :plain=\"true\" @click=\"open6\">Primary</AsamButton>\n\t\t<AsamButton class=\"!ml-0\" :plain=\"true\" @click=\"open2\">Success</AsamButton>\n\t\t<AsamButton class=\"!ml-0\" :plain=\"true\" @click=\"open3\">Warning</AsamButton>\n\t\t<AsamButton class=\"!ml-0\" :plain=\"true\" @click=\"open1\">Info</AsamButton>\n\t\t<AsamButton class=\"!ml-0\" :plain=\"true\" @click=\"open4\">Error</AsamButton>\n\t\t<AsamButton class=\"!ml-0\" :plain=\"true\" @click=\"open5\">\n\t\t\tWon't close automatically\n\t\t</AsamButton>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamButton, AsamMessage } from '@asam-ui/ui';\nimport { onBeforeUnmount } from 'vue';\nconst open1 = () => {\n\ttrackAsamMessage(\n\t\tAsamMessage({\n\t\t\tshowClose: true,\n\t\t\tmessage: 'This is a info message.'\n\t\t})\n\t);\n};\nconst open2 = () => {\n\ttrackAsamMessage(\n\t\tAsamMessage({\n\t\t\tshowClose: true,\n\t\t\tmessage: 'Congrats, this is a success message.',\n\t\t\ttype: 'success'\n\t\t})\n\t);\n};\nconst open3 = () => {\n\ttrackAsamMessage(\n\t\tAsamMessage({\n\t\t\tshowClose: true,\n\t\t\tmessage: 'Warning, this is a warning message.',\n\t\t\ttype: 'warning'\n\t\t})\n\t);\n};\nconst open4 = () => {\n\ttrackAsamMessage(\n\t\tAsamMessage({\n\t\t\tshowClose: true,\n\t\t\tmessage: 'Oops, this is a error message.',\n\t\t\ttype: 'error'\n\t\t})\n\t);\n};\nconst open5 = () => {\n\ttrackAsamMessage(\n\t\tAsamMessage({\n\t\t\tshowClose: true,\n\t\t\tmessage: 'Oops, this is a message that does not automatically close.',\n\t\t\tduration: 0\n\t\t})\n\t);\n};\nconst open6 = () => {\n\ttrackAsamMessage(\n\t\tAsamMessage({\n\t\t\tshowClose: true,\n\t\t\tmessage: 'This is a primary message.',\n\t\t\ttype: 'primary'\n\t\t})\n\t);\n};\nconst ownedAsamMessage = new Set();\nlet mountedAsamMessage = true;\nconst trackAsamMessage = (handle) => {\n\tif (mountedAsamMessage) ownedAsamMessage.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamMessage = false;\n\tfor (const handle of ownedAsamMessage) handle.close();\n\townedAsamMessage.clear();\n});\n</script>\n",
+			"originalSourceSha256": "dca59d7719d8e098f8bf522290b709c0fd99904f562ed99381a18a9b64859926",
+			"notice": {
+				"id": "652a0d5e0d44a641b5626cfbe9664958dc8e7ac60872fa68006f99af10e50688",
+				"url": "/licenses/source-notices/652a0d5e0d44a641b5626cfbe9664958dc8e7ac60872fa68006f99af10e50688.txt",
+				"licenseFilename": "LICENSE-652a0d5e0d44a641b5626cfbe9664958dc8e7ac60872fa68006f99af10e50688.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/message/closable.vue",
+					"sourceSha256": "825d84aca3843bbbc4ac49a40a9877dce07c1a9d16046dfa8ce0920e7b683ef1",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-652a0d5e0d44a641b5626cfbe9664958dc8e7ac60872fa68006f99af10e50688.txt",
+			"source": "Adapted from Element Plus 2.14.7 message/closable. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "652a0d5e0d44a641b5626cfbe9664958dc8e7ac60872fa68006f99af10e50688",
+			"noticeId": "652a0d5e0d44a641b5626cfbe9664958dc8e7ac60872fa68006f99af10e50688"
+		}
+	]
+}

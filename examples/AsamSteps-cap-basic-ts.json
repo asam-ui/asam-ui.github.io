@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamSteps/cap-basic/ts/Demo.vue",
+			"sha256": "7d7ae86de7035e864e706f728ea43dfeecc222e130189495d996987ff817fd42",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ed26bec25af99285dd70e74bc6547cc07f62b18d3d983beffc7644a82c5f1040.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ed26bec25af99285dd70e74bc6547cc07f62b18d3d983beffc7644a82c5f1040.txt\n-->\n<template>\n\t<AsamSteps style=\"max-width: 600px\" :active=\"active\" finish-status=\"success\">\n\t\t<AsamStep title=\"Step 1\" />\n\t\t<AsamStep title=\"Step 2\" />\n\t\t<AsamStep title=\"Step 3\" />\n\t</AsamSteps>\n\n\t<AsamButton style=\"margin-top: 12px\" @click=\"next\">Next step</AsamButton>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamStepsCapBasicDemo' });\nimport { AsamSteps, AsamStep, AsamButton } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst active = ref(0);\n\nconst next = () => {\n\tif (active.value++ > 2) active.value = 0;\n};\n</script>\n",
+			"originalSourceSha256": "994d55eb1b664ec8dcce2d35392ac965a73fae77efd3566178e8fc01cbf4d538",
+			"notice": {
+				"id": "ed26bec25af99285dd70e74bc6547cc07f62b18d3d983beffc7644a82c5f1040",
+				"url": "/licenses/source-notices/ed26bec25af99285dd70e74bc6547cc07f62b18d3d983beffc7644a82c5f1040.txt",
+				"licenseFilename": "LICENSE-ed26bec25af99285dd70e74bc6547cc07f62b18d3d983beffc7644a82c5f1040.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/steps/basic.vue",
+					"sourceSha256": "7c2e19dc6449c336c4a287b19696045694f6ec6f917f86a70d72d5d6c395fe59",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-ed26bec25af99285dd70e74bc6547cc07f62b18d3d983beffc7644a82c5f1040.txt",
+			"source": "Adapted from Element Plus 2.14.7 steps/basic. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "ed26bec25af99285dd70e74bc6547cc07f62b18d3d983beffc7644a82c5f1040",
+			"noticeId": "ed26bec25af99285dd70e74bc6547cc07f62b18d3d983beffc7644a82c5f1040"
+		}
+	]
+}

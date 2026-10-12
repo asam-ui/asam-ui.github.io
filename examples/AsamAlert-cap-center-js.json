@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamAlert/cap-center/js/Demo.vue",
+			"sha256": "d73710279fd21cd82cab81b00ff79dd7c32d034dd003fca5979b2e6bd89cf485",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-3153563ad782db3b60bb37f22480db40e4bc9b9c79f562112e66170cf81418d6.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/3153563ad782db3b60bb37f22480db40e4bc9b9c79f562112e66170cf81418d6.txt\n-->\n<template>\n\t<div style=\"max-width: 600px\">\n\t\t<AsamAlert title=\"Primary alert\" type=\"primary\" center show-icon />\n\t\t<AsamAlert title=\"Success alert\" type=\"success\" center show-icon />\n\t\t<AsamAlert title=\"Info alert\" type=\"info\" center show-icon />\n\t\t<AsamAlert title=\"Warning alert\" type=\"warning\" center show-icon />\n\t\t<AsamAlert title=\"Error alert\" type=\"error\" center show-icon />\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamAlertCapCenterDemo' });\nimport { AsamAlert } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.el-alert {\n\tmargin: 20px 0 0;\n}\n\n.el-alert:first-child {\n\tmargin: 0;\n}\n</style>\n",
+			"originalSourceSha256": "74b795fb9b9c8f1bccf7e850f02b16ad55091ce3a6d0d0d097b6c8ca9ab367cd",
+			"notice": {
+				"id": "3153563ad782db3b60bb37f22480db40e4bc9b9c79f562112e66170cf81418d6",
+				"url": "/licenses/source-notices/3153563ad782db3b60bb37f22480db40e4bc9b9c79f562112e66170cf81418d6.txt",
+				"licenseFilename": "LICENSE-3153563ad782db3b60bb37f22480db40e4bc9b9c79f562112e66170cf81418d6.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/alert/center.vue",
+					"sourceSha256": "fb94f9a1c5e27ff6845004e3265ea06a77be0160dc53d8a074fc4f65456e3a2b",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-3153563ad782db3b60bb37f22480db40e4bc9b9c79f562112e66170cf81418d6.txt",
+			"source": "Adapted from Element Plus 2.14.7 alert/center. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "3153563ad782db3b60bb37f22480db40e4bc9b9c79f562112e66170cf81418d6",
+			"noticeId": "3153563ad782db3b60bb37f22480db40e4bc9b9c79f562112e66170cf81418d6"
+		}
+	]
+}

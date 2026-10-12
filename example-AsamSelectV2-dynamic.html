@@ -1,0 +1,251 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>虚拟列表选择器 · 真实动态行高与内容更新复现输入 · ASAM UI</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/style.css?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9"><link rel="stylesheet" href="/assets/component-docs.css?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9"><link rel="stylesheet" href="/assets/sfc-demo/sfc-demo.css"><script type="module" src="/assets/sfc-demo/sfc-demo.js"></script><link rel="stylesheet" href="/assets/ai-guide.css"><link rel="stylesheet" href="/assets/website-layout.css?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9"><script src="/assets/theme-init.js"></script><script src="/assets/website-layout.js?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9"></script><script src="/assets/vendor/gsap.min.js" defer></script><script src="/assets/vendor/ScrollTrigger.min.js" defer></script><script src="/assets/catalog.js" defer></script><script src="/assets/app.js?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9" defer></script></head><body class="cd-page"><a class="skip-link" href="#main">跳到正文</a><header class="site-header" data-site-component="header">
+			<div class="nav-shell">
+				<a class="brand" href="/index.html" aria-label="ASAM UI 首页"
+					><span class="brand-mark" aria-hidden="true">A<span></span></span
+					><strong>ASAM<span class="brand-ui"> UI</span></strong></a
+				>
+				<nav class="primary-nav" aria-label="主导航">
+					<a href="/getting-started.html">开始使用</a
+					><a href="/component-catalog.html">组件</a><a href="/design-system.html">设计系统</a>
+				<a href="/ai/index.html">AI</a></nav>
+				<div class="nav-actions"><button type="button" class="icon-button website-wide-toggle" aria-pressed="false" aria-label="开启宽屏模式" title="开启宽屏模式"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 4v16M16 4v16"/><path class="wide-expand" d="m11 10-2 2 2 2m2-4 2 2-2 2"/><path class="wide-contract" d="m9 10 2 2-2 2m6-4-2 2 2 2"/></svg></button>
+					<button
+						class="search-trigger"
+						type="button"
+						data-open-search
+						aria-label="搜索文档，快捷键 Control K"
+					>
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+								/></svg></span
+						><span>搜索文档</span><kbd>Ctrl K</kbd></button
+					><button
+						class="icon-button theme-toggle"
+						type="button"
+						aria-label="切换显示模式"
+					>
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z"
+								/></svg
+						></span></button
+					><button
+						class="icon-button menu-toggle"
+						type="button"
+						aria-label="展开导航"
+						aria-controls="mobile-nav"
+						aria-expanded="false"
+					>
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+								/></svg
+						></span>
+					</button>
+				</div>
+			</div>
+			<nav id="mobile-nav" class="mobile-nav" aria-label="移动端导航" hidden>
+				<a href="/getting-started.html"
+					>开始使用<span class="icon-wrap"
+						><svg
+							class="icon"
+							aria-hidden="true"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 256 256"
+							fill="currentColor"
+						>
+							<path
+								d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+							/></svg></span></a
+				><a href="/component-catalog.html"
+					>组件<span class="icon-wrap"
+						><svg
+							class="icon"
+							aria-hidden="true"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 256 256"
+							fill="currentColor"
+						>
+							<path
+								d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+							/></svg></span></a
+				><a href="/design-system.html"
+					>设计系统<span class="icon-wrap"
+						><svg
+							class="icon"
+							aria-hidden="true"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 256 256"
+							fill="currentColor"
+						>
+							<path
+								d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+							/></svg></span
+				></a>
+			<a href="/ai/index.html">AI</a><details class="mobile-section-nav"><summary>本页导航</summary><div class="docs-sidebar mobile-sidebar-content"><span class="sidebar-heading">文档导航</span><a href="/getting-started.html">开始使用</a><a href="/component-catalog.html">组件目录</a><a href="/design-system.html">设计系统</a><div class="sidebar-divider"></div><span class="sidebar-heading">深入使用</span><a href="/guide/installation.html">安装与消费</a><a href="/guide/architecture.html">架构与边界</a><a href="/guide/provider.html">数据 provider</a><a href="/guide/contracts.html">联合类型与透传契约</a><a href="/guide/data-driven.html">数据驱动</a><a href="/guide/theme.html">主题与 CSS variables</a></div></details><details class="mobile-section-nav"><summary>本页内容</summary><div class="mobile-page-toc"><span>本页内容</span><nav><a class="toc-sub" href="#demo-heading-dynamic">真实动态行高与内容更新</a></nav></div></details></nav>
+		</header><div class="docs-layout wrap site-doc-layout" data-site-component="layout"><aside class="docs-sidebar" data-site-component="sidebar" aria-label="文档目录"><span class="sidebar-heading">文档导航</span><a href="/getting-started.html">开始使用</a><a href="/component-catalog.html">组件目录</a><a href="/design-system.html">设计系统</a><div class="sidebar-divider"></div><span class="sidebar-heading">深入使用</span><a href="/guide/installation.html">安装与消费</a><a href="/guide/architecture.html">架构与边界</a><a href="/guide/provider.html">数据 provider</a><a href="/guide/contracts.html">联合类型与透传契约</a><a href="/guide/data-driven.html">数据驱动</a><a href="/guide/theme.html">主题与 CSS variables</a></aside><main class="cd-main"><h1>真实动态行高与内容更新复现输入</h1><section class="cd-demo" id="demo-dynamic" data-demo="AsamSelectV2/dynamic" data-language="ts" data-preview="source-only"><h3 id="demo-heading-dynamic">真实动态行高与内容更新</h3><div class="cd-demo-preview" data-demo-host role="region" aria-label="真实动态行高与内容更新演示"><p role="note">固定依赖 2.14.7 下，此输入首次挂载会出现渲染无响应；动态行高、内容更新和滚动运行尚未通过验证。这里保留完整 TS/JS 复现源码，固定行高的可运行用法见 virtual / layout 示例。 <a href="/component-AsamSelectV2.html">返回组件文档</a> · <a href="/examples/AsamSelectV2-dynamic-ts.json" download>下载 TS 完整源码</a> · <a href="/examples/AsamSelectV2-dynamic-js.json" download>下载 JS 完整源码</a></p></div><p class="cd-demo-error" role="alert" hidden></p><div class="cd-demo-toolbar"><div class="cd-language-switch" role="radiogroup" aria-label="示例语言"><button type="button" role="radio" data-language-button="ts" aria-checked="true" tabindex="0">TS</button><button type="button" role="radio" data-language-button="js" aria-checked="false" tabindex="-1">JS</button></div><span class="cd-source-control"><button type="button" class="cd-source-toggle" data-toggle-source aria-label="收起源码" aria-describedby="source-tip-dynamic" aria-expanded="true" aria-controls="source-dynamic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path data-source-icon d="m6 15 6-6 6 6"/></svg></button><span class="cd-source-tooltip" role="tooltip" id="source-tip-dynamic">收起源码</span></span></div><div class="cd-demo-source" id="source-dynamic"><section class="cd-source-variant" data-variant="ts"><div class="cd-source-header"><div class="cd-files" role="tablist" aria-label="TS 示例文件"><button type="button" role="tab" id="file-dynamic-ts-0" aria-controls="panel-dynamic-ts-0" aria-selected="true" tabindex="0" data-file="0">Demo.vue</button></div><div class="cd-source-actions"><span class="cd-copy-status" role="status"></span><button type="button" data-copy-file aria-label="复制 Demo.vue">复制</button></div></div><div role="tabpanel" id="panel-dynamic-ts-0" aria-labelledby="file-dynamic-ts-0" data-file-panel="0"><div class="language-vue vp-adaptive-theme"><span class="lang">vue</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"example"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">AsamSelectV2</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">			v-model</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">selected</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">options</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">options</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">estimated-option-height</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">40</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">height</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">180</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">fit-input-width</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">420</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">			filterable</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">			aria-label</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"可变行高选项"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			@</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">end-reached</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">direction </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> $event</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> #</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">default</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{ item, index }</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">				>&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">					:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">style</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">						minHeight: index </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">%</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 2</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> ?</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (tall </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '96px'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> :</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '64px'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '32px'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">						whiteSpace: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'normal'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">						lineHeight: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'20px'</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">					}</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">				></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">					{{ item?.label }}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">				&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">AsamSelectV2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">AsamButton</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> @</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">click</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">tall </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> !</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">tall</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>切换实际内容高度&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">AsamButton</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">output</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>选择：{{ selected }}；方向：{{ direction }}&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">output</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> lang</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"ts"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> setup</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { ref } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'vue'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { AsamSelectV2, AsamButton } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> options</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> Array.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({ length: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">100</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }, (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">_</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">value</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	value,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	label: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'动态选项 '</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> +</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> value,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	raw: { value }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}));</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> selected</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">number</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> tall</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">false</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> direction</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">''</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">defineOptions</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({ name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'AsamSelectV2DynamicDemo'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> });</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">style</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> scoped</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.example</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">	display</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">grid</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">	gap</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">--asam-space-md</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">16</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">px</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">style</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
+</div><script type="application/json" data-source>"\u003ctemplate\u003e\n\t\u003cdiv class=\"example\"\u003e\n\t\t\u003cAsamSelectV2\n\t\t\tv-model=\"selected\"\n\t\t\t:options=\"options\"\n\t\t\t:estimated-option-height=\"40\"\n\t\t\t:height=\"180\"\n\t\t\t:fit-input-width=\"420\"\n\t\t\tfilterable\n\t\t\taria-label=\"可变行高选项\"\n\t\t\t@end-reached=\"direction = $event\"\n\t\t\u003e\n\t\t\t\u003ctemplate #default=\"{ item, index }\"\n\t\t\t\t\u003e\u003cdiv\n\t\t\t\t\t:style=\"{\n\t\t\t\t\t\tminHeight: index % 2 ? (tall ? '96px' : '64px') : '32px',\n\t\t\t\t\t\twhiteSpace: 'normal',\n\t\t\t\t\t\tlineHeight: '20px'\n\t\t\t\t\t}\"\n\t\t\t\t\u003e\n\t\t\t\t\t{{ item?.label }}\n\t\t\t\t\u003c/div\u003e\u003c/template\n\t\t\t\u003e\n\t\t\u003c/AsamSelectV2\u003e\n\t\t\u003cAsamButton @click=\"tall = !tall\"\u003e切换实际内容高度\u003c/AsamButton\u003e\n\t\t\u003coutput\u003e选择：{{ selected }}；方向：{{ direction }}\u003c/output\u003e\n\t\u003c/div\u003e\n\u003c/template\u003e\n\u003cscript lang=\"ts\" setup\u003e\nimport { ref } from 'vue';\nimport { AsamSelectV2, AsamButton } from '@asam-ui/ui';\nconst options = Array.from({ length: 100 }, (_, value) =\u003e ({\n\tvalue,\n\tlabel: '动态选项 ' + value,\n\traw: { value }\n}));\nconst selected = ref\u003cnumber | null\u003e(null);\nconst tall = ref(false);\nconst direction = ref('');\ndefineOptions({ name: 'AsamSelectV2DynamicDemo' });\n\u003c/script\u003e\n\u003cstyle scoped\u003e\n.example {\n\tdisplay: grid;\n\tgap: var(--asam-space-md, 16px);\n}\n\u003c/style\u003e\n"</script></div></section><section class="cd-source-variant" data-variant="js" hidden><div class="cd-source-header"><div class="cd-files" role="tablist" aria-label="JS 示例文件"><button type="button" role="tab" id="file-dynamic-js-0" aria-controls="panel-dynamic-js-0" aria-selected="true" tabindex="0" data-file="0">Demo.vue</button></div><div class="cd-source-actions"><span class="cd-copy-status" role="status"></span><button type="button" data-copy-file aria-label="复制 Demo.vue">复制</button></div></div><div role="tabpanel" id="panel-dynamic-js-0" aria-labelledby="file-dynamic-js-0" data-file-panel="0"><div class="language-vue vp-adaptive-theme"><span class="lang">vue</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"example"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">AsamSelectV2</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">			v-model</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">selected</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">options</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">options</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">estimated-option-height</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">40</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">height</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">180</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">fit-input-width</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">420</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">			filterable</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">			aria-label</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"可变行高选项"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			@</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">end-reached</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">direction </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> $event</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> #</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">default</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{ item, index }</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">				>&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">					:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">style</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">						minHeight: index </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">%</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 2</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> ?</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (tall </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '96px'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> :</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '64px'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '32px'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">						whiteSpace: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'normal'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">						lineHeight: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'20px'</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">					}</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">				></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">					{{ item?.label }}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">				&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">AsamSelectV2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">AsamButton</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> @</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">click</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">tall </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> !</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">tall</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>切换实际内容高度&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">AsamButton</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">output</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>选择：{{ selected }}；方向：{{ direction }}&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">output</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> setup</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { ref } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'vue'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { AsamSelectV2, AsamButton } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> options</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> Array.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({ length: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">100</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }, (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">_</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">value</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	value,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	label: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'动态选项 '</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> +</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> value,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	raw: { value }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}));</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> selected</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> tall</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">false</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> direction</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">''</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">defineOptions</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({ name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'AsamSelectV2DynamicDemo'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> });</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">style</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> scoped</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.example</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">	display</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">grid</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">	gap</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">--asam-space-md</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">16</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">px</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">style</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
+</div><script type="application/json" data-source>"\u003ctemplate\u003e\n\t\u003cdiv class=\"example\"\u003e\n\t\t\u003cAsamSelectV2\n\t\t\tv-model=\"selected\"\n\t\t\t:options=\"options\"\n\t\t\t:estimated-option-height=\"40\"\n\t\t\t:height=\"180\"\n\t\t\t:fit-input-width=\"420\"\n\t\t\tfilterable\n\t\t\taria-label=\"可变行高选项\"\n\t\t\t@end-reached=\"direction = $event\"\n\t\t\u003e\n\t\t\t\u003ctemplate #default=\"{ item, index }\"\n\t\t\t\t\u003e\u003cdiv\n\t\t\t\t\t:style=\"{\n\t\t\t\t\t\tminHeight: index % 2 ? (tall ? '96px' : '64px') : '32px',\n\t\t\t\t\t\twhiteSpace: 'normal',\n\t\t\t\t\t\tlineHeight: '20px'\n\t\t\t\t\t}\"\n\t\t\t\t\u003e\n\t\t\t\t\t{{ item?.label }}\n\t\t\t\t\u003c/div\u003e\u003c/template\n\t\t\t\u003e\n\t\t\u003c/AsamSelectV2\u003e\n\t\t\u003cAsamButton @click=\"tall = !tall\"\u003e切换实际内容高度\u003c/AsamButton\u003e\n\t\t\u003coutput\u003e选择：{{ selected }}；方向：{{ direction }}\u003c/output\u003e\n\t\u003c/div\u003e\n\u003c/template\u003e\n\u003cscript setup\u003e\nimport { ref } from 'vue';\nimport { AsamSelectV2, AsamButton } from '@asam-ui/ui';\nconst options = Array.from({ length: 100 }, (_, value) =\u003e ({\n\tvalue,\n\tlabel: '动态选项 ' + value,\n\traw: { value }\n}));\nconst selected = ref(null);\nconst tall = ref(false);\nconst direction = ref('');\ndefineOptions({ name: 'AsamSelectV2DynamicDemo' });\n\u003c/script\u003e\n\u003cstyle scoped\u003e\n.example {\n\tdisplay: grid;\n\tgap: var(--asam-space-md, 16px);\n}\n\u003c/style\u003e\n"</script></div></section></div></section></main><aside class="page-toc" data-site-component="outline" aria-label="本页内容"><span>本页内容</span><nav><a class="toc-sub" href="#demo-heading-dynamic">真实动态行高与内容更新</a></nav></aside></div><dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
+			<div class="dialog-top">
+				<h2 id="search-title">搜索文档</h2>
+				<button class="icon-button" type="button" data-close-dialog aria-label="关闭搜索">
+					<span class="icon-wrap"
+						><svg
+							class="icon"
+							aria-hidden="true"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 256 256"
+							fill="currentColor"
+						>
+							<path
+								d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+							/></svg
+					></span>
+				</button>
+			</div>
+			<label class="search-field"
+				><span class="sr-only">搜索组件或指南</span
+				><span class="icon-wrap"
+					><svg
+						class="icon"
+						aria-hidden="true"
+						focusable="false"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 256 256"
+						fill="currentColor"
+					>
+						<path
+							d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+						/></svg></span
+				><input
+					id="global-search"
+					type="search"
+					placeholder="搜索组件、安装、主题…"
+					autocomplete="off"
+			/></label>
+			<div id="search-results" class="search-results" aria-live="polite"></div>
+			<p class="dialog-hint">
+				<kbd>Tab</kbd> 选择结果 <kbd>Enter</kbd> 打开 <kbd>Esc</kbd> 关闭
+			</p>
+		</dialog><div class="toast" role="status" aria-live="polite"></div></body></html>

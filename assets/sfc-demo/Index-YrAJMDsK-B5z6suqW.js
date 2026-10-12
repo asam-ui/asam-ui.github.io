@@ -1,0 +1,1 @@
+import"./sfc-demo.js";import{t as e}from"./table-v2-Dlmwu7Hb.js";var t=Object.assign({},e,{install(e){e.component(`AsamAutoResizer`,t)}});export{t};

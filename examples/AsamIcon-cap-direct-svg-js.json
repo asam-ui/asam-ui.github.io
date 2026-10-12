@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamIcon/cap-direct-svg/js/Demo.vue",
+			"sha256": "13c5e9a0564f3711293b834b3ae8da94b4dfa83a53239471eef40239d85da868",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-dac168938a80c56887848ab72232f35e6ddf95ca5263ed9b693df58a5be1d8f9.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/dac168938a80c56887848ab72232f35e6ddf95ca5263ed9b693df58a5be1d8f9.txt\n-->\n<template>\n\t<div\n\t\tstyle=\"font-size: 20px; color: var(--asam-color-primary)\"\n\t\tv-bind=\"domDataAttrs('data-example', 'direct-svg-row')\"\n\t>\n\t\t<Edit style=\"width: 1em; height: 1em; margin-right: 8px\" />\n\t\t<Share style=\"width: 1em; height: 1em; margin-right: 8px\" />\n\t\t<Delete style=\"width: 1em; height: 1em; margin-right: 8px\" />\n\t\t<Search style=\"width: 1em; height: 1em; margin-right: 8px\" />\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamIconCapDirectSvgDemo' });\nimport { Edit, Share, Delete, Search } from '@asam-ui/icons-vue';\n\nconst domDataAttrs = (name, value = '') => ({ class: 'ui032-data-marker', [name]: value });\n</script>\n",
+			"originalSourceSha256": "4fb88202f8f4c31c9b99f5a4b93ff26d2057eee860ba8d339927f383f01f33c8",
+			"notice": {
+				"id": "dac168938a80c56887848ab72232f35e6ddf95ca5263ed9b693df58a5be1d8f9",
+				"url": "/licenses/source-notices/dac168938a80c56887848ab72232f35e6ddf95ca5263ed9b693df58a5be1d8f9.txt",
+				"licenseFilename": "LICENSE-dac168938a80c56887848ab72232f35e6ddf95ca5263ed9b693df58a5be1d8f9.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/en-US/component/icon.md",
+					"sourceSha256": "e1632666b64600072a1ed02e6b0f6c6975d5dfefc8b5c22899a6e70e7c64ee34",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc",
+					"sourceGitBlob": "741c116e7be233d377524832c87262b5768d9bd7",
+					"inlineCodeSha256": "a8d20787b55111e0b951ce4f116fa44555cd60082f22c5dc14708484605378f7",
+					"inlineStartLine": 187,
+					"inlineEndLine": 196
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-dac168938a80c56887848ab72232f35e6ddf95ca5263ed9b693df58a5be1d8f9.txt",
+			"source": "Adapted from Element Plus 2.14.7 icon/inline-direct-svg. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "dac168938a80c56887848ab72232f35e6ddf95ca5263ed9b693df58a5be1d8f9",
+			"noticeId": "dac168938a80c56887848ab72232f35e6ddf95ca5263ed9b693df58a5be1d8f9"
+		}
+	]
+}

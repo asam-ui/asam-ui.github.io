@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamIcon/cap-container-classes/ts/Demo.vue",
+			"sha256": "c8d20102244c943df720fd004c5c0c3feb31d6a231fc42e34e6096959474743f",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-40dcafb4f884791ecda6902f0969404af763e058e8609998a9105c82488ab44a.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/40dcafb4f884791ecda6902f0969404af763e058e8609998a9105c82488ab44a.txt\n-->\n<template>\n\t<div>\n\t\t<p>is-loading 让图标每两秒旋转一圈，可用局部样式覆盖动画。</p>\n\t\t<div class=\"icon-row\">\n\t\t\t<AsamIcon :size=\"20\" v-bind=\"domDataAttrs('data-example', 'sized')\"><Edit /></AsamIcon>\n\t\t\t<AsamIcon color=\"var(--asam-color-primary)\" class=\"no-inherit\"><Share /></AsamIcon>\n\t\t\t<AsamIcon v-bind=\"domDataAttrs('data-example', 'inherited')\"><Delete /></AsamIcon>\n\t\t\t<AsamIcon class=\"is-loading\" v-bind=\"domDataAttrs('data-example', 'loading')\">\n\t\t\t\t<Loading />\n\t\t\t</AsamIcon>\n\t\t\t<AsamButton type=\"primary\">\n\t\t\t\t<AsamIcon style=\"vertical-align: middle\"><Search /></AsamIcon>\n\t\t\t\t<span style=\"vertical-align: middle\">Search</span>\n\t\t\t</AsamButton>\n\t\t</div>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\nimport type { HTMLAttributes } from 'vue';\ndefineOptions({ name: 'AsamIconCapContainerClassesDemo' });\nimport { AsamIcon, AsamButton } from '@asam-ui/ui';\nimport { Edit, Share, Delete, Loading, Search } from '@asam-ui/icons-vue';\n\ntype DemoDataAttributes = Record<`data-${string}`, string | number | boolean | null | undefined>;\nconst domDataAttrs = (\n\tname: `data-${string}`,\n\tvalue: string | number | boolean | null | undefined = ''\n): Pick<HTMLAttributes, 'class'> & DemoDataAttributes => ({\n\tclass: 'ui032-data-marker',\n\t[name]: value\n});\n</script>\n\n<style scoped>\n.icon-row {\n\tdisplay: flex;\n\talign-items: center;\n\tgap: var(--asam-space-md);\n\tfont-size: 24px;\n\tcolor: var(--asam-color-danger);\n}\n</style>\n",
+			"originalSourceSha256": "ff7bd27b4bf6a8e1e1c2e0a8192131b0edfb8410dee4bd2cf0bb37c20fdfe410",
+			"notice": {
+				"id": "40dcafb4f884791ecda6902f0969404af763e058e8609998a9105c82488ab44a",
+				"url": "/licenses/source-notices/40dcafb4f884791ecda6902f0969404af763e058e8609998a9105c82488ab44a.txt",
+				"licenseFilename": "LICENSE-40dcafb4f884791ecda6902f0969404af763e058e8609998a9105c82488ab44a.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/en-US/component/icon.md",
+					"sourceSha256": "e1632666b64600072a1ed02e6b0f6c6975d5dfefc8b5c22899a6e70e7c64ee34",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc",
+					"sourceGitBlob": "741c116e7be233d377524832c87262b5768d9bd7",
+					"inlineCodeSha256": "1e13db0733b11d0d19f9d803fa409aa2aa3df9d9767c7314deb2f94a55fb6209",
+					"inlineStartLine": 131,
+					"inlineEndLine": 154
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-40dcafb4f884791ecda6902f0969404af763e058e8609998a9105c82488ab44a.txt",
+			"source": "Adapted from Element Plus 2.14.7 icon/inline-container-classes. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "40dcafb4f884791ecda6902f0969404af763e058e8609998a9105c82488ab44a",
+			"noticeId": "40dcafb4f884791ecda6902f0969404af763e058e8609998a9105c82488ab44a"
+		}
+	]
+}

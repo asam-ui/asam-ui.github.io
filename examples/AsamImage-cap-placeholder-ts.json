@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamImage/cap-placeholder/ts/Demo.vue",
+			"sha256": "25f80476bbf7ec6f2e81002bcfa9f66f4b5bca433cd360c9ddd9fcd5c5127ab9",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-6425093dbb5ccb25dcdfff881c419e419c055d749f3b1d47b62370e35e0bea9e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/6425093dbb5ccb25dcdfff881c419e419c055d749f3b1d47b62370e35e0bea9e.txt\n-->\n<template>\n\t<div class=\"demo-image__placeholder\">\n\t\t<div class=\"block\">\n\t\t\t<span class=\"demonstration\">Default</span>\n\t\t\t<AsamImage :src=\"src\" />\n\t\t</div>\n\t\t<div class=\"block\">\n\t\t\t<span class=\"demonstration\">Custom</span>\n\t\t\t<AsamImage :src=\"src\">\n\t\t\t\t<template #placeholder>\n\t\t\t\t\t<div class=\"image-slot\">Loading<span class=\"dot\">...</span></div>\n\t\t\t\t</template>\n\t\t\t</AsamImage>\n\t\t</div>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamImageCapPlaceholderDemo' });\nimport { AsamImage } from '@asam-ui/ui';\n\nconst src =\n\t'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%22180%22%3E%3Crect%20width%3D%22320%22%20height%3D%22180%22%20fill%3D%22%238899aa%22%2F%3E%3Ccircle%20cx%3D%22240%22%20cy%3D%2245%22%20r%3D%2228%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M0%20180L100%2060L220%20180%22%20fill%3D%22%2340566c%22%2F%3E%3Ctext%20x%3D%2212%22%20y%3D%2230%22%20fill%3D%22%23fff%22%3EASAM%20sample%3C%2Ftext%3E%3C%2Fsvg%3E';\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Existing component and demonstration BEM selectors retain their public names. */\n\n.demo-image__placeholder .block {\n\tpadding: 30px 0;\n\ttext-align: center;\n\tborder-right: solid 1px var(--el-border-color);\n\tdisplay: inline-block;\n\twidth: 49%;\n\tbox-sizing: border-box;\n\tvertical-align: top;\n}\n\n.demo-image__placeholder .demonstration {\n\tdisplay: block;\n\tcolor: var(--el-text-color-secondary);\n\tfont-size: 14px;\n\tmargin-bottom: 20px;\n}\n\n.demo-image__placeholder .el-image {\n\tpadding: 0 5px;\n\tmax-width: 300px;\n\tmax-height: 200px;\n}\n\n.demo-image__placeholder.image-slot {\n\tdisplay: flex;\n\tjustify-content: center;\n\talign-items: center;\n\twidth: 100%;\n\theight: 100%;\n\tbackground: var(--el-fill-color-light);\n\tcolor: var(--el-text-color-secondary);\n\tfont-size: 14px;\n}\n\n.demo-image__placeholder .dot {\n\tanimation: dot 2s infinite steps(3, start);\n\toverflow: hidden;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n",
+			"originalSourceSha256": "6d0f6ed99edab2583b581a12f3580efc010a09634e7c8d57b004edcd08cf4e2e",
+			"notice": {
+				"id": "6425093dbb5ccb25dcdfff881c419e419c055d749f3b1d47b62370e35e0bea9e",
+				"url": "/licenses/source-notices/6425093dbb5ccb25dcdfff881c419e419c055d749f3b1d47b62370e35e0bea9e.txt",
+				"licenseFilename": "LICENSE-6425093dbb5ccb25dcdfff881c419e419c055d749f3b1d47b62370e35e0bea9e.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/image/placeholder.vue",
+					"sourceSha256": "78a0a490a009c7816e2e5653a5e3b7ca432e520334767b9eaf73c8d04310010a",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-6425093dbb5ccb25dcdfff881c419e419c055d749f3b1d47b62370e35e0bea9e.txt",
+			"source": "Adapted from Element Plus 2.14.7 image/placeholder. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "6425093dbb5ccb25dcdfff881c419e419c055d749f3b1d47b62370e35e0bea9e",
+			"noticeId": "6425093dbb5ccb25dcdfff881c419e419c055d749f3b1d47b62370e35e0bea9e"
+		}
+	]
+}

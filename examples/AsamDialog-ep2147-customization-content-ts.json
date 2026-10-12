@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamDialog/ep2147-customization-content/ts/Demo.vue",
+			"sha256": "3c489056b341e7d69f049a63fc8ec33de726097e028445b4af3e7f6ec599b14e",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e8c9291ec84144989e5aa39e9a402c42748f74941aa2d7a3c5a2791edc8a0aa4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e8c9291ec84144989e5aa39e9a402c42748f74941aa2d7a3c5a2791edc8a0aa4.txt\n-->\n<template>\n\t<div class=\"flex flex-wrap gap-1\">\n\t\t<AsamButton class=\"!ml-0\" plain @click=\"dialogTableVisible = true\">\n\t\t\tOpen a Table nested Dialog\n\t\t</AsamButton>\n\n\t\t<AsamButton class=\"!ml-0\" plain @click=\"dialogFormVisible = true\">\n\t\t\tOpen a Form nested Dialog\n\t\t</AsamButton>\n\t</div>\n\n\t<AsamDialog v-model=\"dialogTableVisible\" title=\"Shipping address\" width=\"800\">\n\t\t<AsamTable :data=\"gridData\">\n\t\t\t<AsamTableColumn property=\"date\" label=\"Date\" width=\"150\" />\n\t\t\t<AsamTableColumn property=\"name\" label=\"Name\" width=\"200\" />\n\t\t\t<AsamTableColumn property=\"address\" label=\"Address\" />\n\t\t</AsamTable>\n\t</AsamDialog>\n\n\t<AsamDialog v-model=\"dialogFormVisible\" title=\"Shipping address\" width=\"500\">\n\t\t<AsamBaseForm :model=\"form\">\n\t\t\t<AsamFormItem label=\"Promotion name\" :label-width=\"formLabelWidth\">\n\t\t\t\t<AsamInput\n\t\t\t\t\t:model-value=\"form.name\"\n\t\t\t\t\t@update:model-value=\"form.name = String($event ?? '')\"\n\t\t\t\t\tautocomplete=\"off\"\n\t\t\t\t/>\n\t\t\t</AsamFormItem>\n\t\t\t<AsamFormItem label=\"Zones\" :label-width=\"formLabelWidth\">\n\t\t\t\t<AsamSelect\n\t\t\t\t\t:model-value=\"form.region\"\n\t\t\t\t\t@update:model-value=\"form.region = String($event ?? '')\"\n\t\t\t\t\tplaceholder=\"Please select a zone\"\n\t\t\t\t>\n\t\t\t\t\t<AsamOption label=\"Zone No.1\" value=\"shanghai\" />\n\t\t\t\t\t<AsamOption label=\"Zone No.2\" value=\"beijing\" />\n\t\t\t\t</AsamSelect>\n\t\t\t</AsamFormItem>\n\t\t</AsamBaseForm>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton @click=\"dialogFormVisible = false\">Cancel</AsamButton>\n\t\t\t\t<AsamButton type=\"primary\" @click=\"dialogFormVisible = false\"> Confirm </AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n</template>\n\n<script lang=\"ts\" setup>\nimport {\n\tAsamBaseForm,\n\tAsamButton,\n\tAsamDialog,\n\tAsamFormItem,\n\tAsamInput,\n\tAsamOption,\n\tAsamSelect,\n\tAsamTable,\n\tAsamTableColumn\n} from '@asam-ui/ui';\n\nimport { reactive, ref } from 'vue';\n\nconst dialogTableVisible = ref(false);\nconst dialogFormVisible = ref(false);\nconst formLabelWidth = '140px';\n\nconst form = reactive({\n\tname: '',\n\tregion: '',\n\tdate1: '',\n\tdate2: '',\n\tdelivery: false,\n\ttype: [],\n\tresource: '',\n\tdesc: ''\n});\n\nconst gridData = [\n\t{\n\t\tdate: '2016-05-02',\n\t\tname: 'John Smith',\n\t\taddress: 'No.1518,  Jinshajiang Road, Putuo District'\n\t},\n\t{\n\t\tdate: '2016-05-04',\n\t\tname: 'John Smith',\n\t\taddress: 'No.1518,  Jinshajiang Road, Putuo District'\n\t},\n\t{\n\t\tdate: '2016-05-01',\n\t\tname: 'John Smith',\n\t\taddress: 'No.1518,  Jinshajiang Road, Putuo District'\n\t},\n\t{\n\t\tdate: '2016-05-03',\n\t\tname: 'John Smith',\n\t\taddress: 'No.1518,  Jinshajiang Road, Putuo District'\n\t}\n];\n</script>\n",
+			"originalSourceSha256": "6418399fa7c7df552cd34dbeefce8e509921ef3149456253f2f7675ce8d122b7",
+			"notice": {
+				"id": "e8c9291ec84144989e5aa39e9a402c42748f74941aa2d7a3c5a2791edc8a0aa4",
+				"url": "/licenses/source-notices/e8c9291ec84144989e5aa39e9a402c42748f74941aa2d7a3c5a2791edc8a0aa4.txt",
+				"licenseFilename": "LICENSE-e8c9291ec84144989e5aa39e9a402c42748f74941aa2d7a3c5a2791edc8a0aa4.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/dialog/customization-content.vue",
+					"sourceSha256": "942d20013e94423bdecc52dd1f00162e77b1fac6d019e808c8a3754554f0e23b",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-e8c9291ec84144989e5aa39e9a402c42748f74941aa2d7a3c5a2791edc8a0aa4.txt",
+			"source": "Adapted from Element Plus 2.14.7 dialog/customization-content. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "e8c9291ec84144989e5aa39e9a402c42748f74941aa2d7a3c5a2791edc8a0aa4",
+			"noticeId": "e8c9291ec84144989e5aa39e9a402c42748f74941aa2d7a3c5a2791edc8a0aa4"
+		}
+	]
+}

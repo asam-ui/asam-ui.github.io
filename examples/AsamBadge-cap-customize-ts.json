@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamBadge/cap-customize/ts/Demo.vue",
+			"sha256": "18dc145e9b99cf41487758b28317bf3dbea7bf1b4f7336531970de2e0b89b3c9",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-3216be483d98adc098a3c45ad81c2f238a4d7a33e4765b24818eb366f039d244.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/3216be483d98adc098a3c45ad81c2f238a4d7a33e4765b24818eb366f039d244.txt\n-->\n<template>\n\t<AsamBadge value=\"new\" class=\"item\">\n\t\t<AsamButton>comments</AsamButton>\n\t</AsamBadge>\n\t<AsamBadge value=\"hot\" class=\"item\">\n\t\t<AsamButton>replies</AsamButton>\n\t</AsamBadge>\n\t<AsamBadge value=\"99\" class=\"item\">\n\t\t<AsamButton>share</AsamButton>\n\t\t<template #content=\"{ value }\">\n\t\t\t<div class=\"custom-content\">\n\t\t\t\t<AsamIcon>\n\t\t\t\t\t<Message />\n\t\t\t\t</AsamIcon>\n\t\t\t\t<span>{{ value }}</span>\n\t\t\t</div>\n\t\t</template>\n\t</AsamBadge>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamBadgeCapCustomizeDemo' });\nimport { AsamBadge, AsamButton, AsamIcon } from '@asam-ui/ui';\n\nimport { Message } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.item {\n\tmargin-top: 10px;\n\tmargin-right: 40px;\n}\n\n.custom-content {\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n\tgap: 4px;\n}\n</style>\n",
+			"originalSourceSha256": "0367e544234d2b518fe070bdae773416751650a7dcc7cce241d82c462184cb68",
+			"notice": {
+				"id": "3216be483d98adc098a3c45ad81c2f238a4d7a33e4765b24818eb366f039d244",
+				"url": "/licenses/source-notices/3216be483d98adc098a3c45ad81c2f238a4d7a33e4765b24818eb366f039d244.txt",
+				"licenseFilename": "LICENSE-3216be483d98adc098a3c45ad81c2f238a4d7a33e4765b24818eb366f039d244.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/badge/customize.vue",
+					"sourceSha256": "27259afab985ab275c66a495555048a83a8eb4aa9e7d8fb1e5fc97ce382a8f73",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-3216be483d98adc098a3c45ad81c2f238a4d7a33e4765b24818eb366f039d244.txt",
+			"source": "Adapted from Element Plus 2.14.7 badge/customize. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "3216be483d98adc098a3c45ad81c2f238a4d7a33e4765b24818eb366f039d244",
+			"noticeId": "3216be483d98adc098a3c45ad81c2f238a4d7a33e4765b24818eb366f039d244"
+		}
+	]
+}

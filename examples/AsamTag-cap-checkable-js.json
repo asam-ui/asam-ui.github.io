@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTag/cap-checkable/js/Demo.vue",
+			"sha256": "80f13e25261dfbd3a9090fdc7c8262e0396825aa7f67f4c428e8eb7ef26ad37b",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e2abb3963f7c8a32af22c1d80ed1e086ee8dcbeabb0fff2a0a3c1e7c5fc69ddd.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e2abb3963f7c8a32af22c1d80ed1e086ee8dcbeabb0fff2a0a3c1e7c5fc69ddd.txt\n-->\n<template>\n\t<div class=\"flex gap-2\">\n\t\t<AsamCheckTag checked>Checked</AsamCheckTag>\n\t\t<AsamCheckTag :checked=\"checked\" @change=\"onChange\">Toggle me</AsamCheckTag>\n\t\t<AsamCheckTag disabled>Disabled</AsamCheckTag>\n\t</div>\n\t<div class=\"flex gap-2 mt-4\">\n\t\t<AsamCheckTag :checked=\"checked1\" type=\"primary\" @change=\"onChange1\"> Tag 1 </AsamCheckTag>\n\t\t<AsamCheckTag :checked=\"checked2\" type=\"success\" @change=\"onChange2\"> Tag 2 </AsamCheckTag>\n\t\t<AsamCheckTag :checked=\"checked3\" type=\"info\" @change=\"onChange3\"> Tag 3 </AsamCheckTag>\n\t\t<AsamCheckTag :checked=\"checked4\" type=\"warning\" @change=\"onChange4\"> Tag 4 </AsamCheckTag>\n\t\t<AsamCheckTag :checked=\"checked5\" type=\"danger\" @change=\"onChange5\"> Tag 5 </AsamCheckTag>\n\t\t<AsamCheckTag :checked=\"checked6\" disabled type=\"success\" @change=\"onChange6\">\n\t\t\tTag 6\n\t\t</AsamCheckTag>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTagCapCheckableDemo' });\nimport { AsamCheckTag } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst checked = ref(false);\nconst checked1 = ref(true);\nconst checked2 = ref(true);\nconst checked3 = ref(true);\nconst checked4 = ref(true);\nconst checked5 = ref(true);\nconst checked6 = ref(true);\nconst onChange = (status) => {\n\tchecked.value = status;\n};\nconst onChange1 = (status) => {\n\tchecked1.value = status;\n};\nconst onChange2 = (status) => {\n\tchecked2.value = status;\n};\nconst onChange3 = (status) => {\n\tchecked3.value = status;\n};\nconst onChange4 = (status) => {\n\tchecked4.value = status;\n};\nconst onChange5 = (status) => {\n\tchecked5.value = status;\n};\nconst onChange6 = (status) => {\n\tchecked6.value = status;\n};\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.gap-2 {\n\tgap: 0.5rem;\n}\n\n.mt-4 {\n\tmargin-top: 1rem;\n}\n</style>\n",
+			"originalSourceSha256": "f32edf322639dbdd07d3ecdba1df9b488b652323b8ef1082aa2b4b14de324419",
+			"notice": {
+				"id": "e2abb3963f7c8a32af22c1d80ed1e086ee8dcbeabb0fff2a0a3c1e7c5fc69ddd",
+				"url": "/licenses/source-notices/e2abb3963f7c8a32af22c1d80ed1e086ee8dcbeabb0fff2a0a3c1e7c5fc69ddd.txt",
+				"licenseFilename": "LICENSE-e2abb3963f7c8a32af22c1d80ed1e086ee8dcbeabb0fff2a0a3c1e7c5fc69ddd.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/tag/checkable.vue",
+					"sourceSha256": "c3dd5b72cc246c72eb3d51bfeabd3d24da14f642c1178c509627fa222bc1dad5",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-e2abb3963f7c8a32af22c1d80ed1e086ee8dcbeabb0fff2a0a3c1e7c5fc69ddd.txt",
+			"source": "Adapted from Element Plus 2.14.7 tag/checkable. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "e2abb3963f7c8a32af22c1d80ed1e086ee8dcbeabb0fff2a0a3c1e7c5fc69ddd",
+			"noticeId": "e2abb3963f7c8a32af22c1d80ed1e086ee8dcbeabb0fff2a0a3c1e7c5fc69ddd"
+		}
+	]
+}

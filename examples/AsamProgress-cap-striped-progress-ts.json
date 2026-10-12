@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamProgress/cap-striped-progress/ts/Demo.vue",
+			"sha256": "d333eea05b341b760473ae302fba881509975e43ab180cda6e7e02f56729a7c9",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-652d1a7bdf17b49e34bdcfa9a1bb6840cdfb5216be4aad2f7517bbff7fe829cb.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/652d1a7bdf17b49e34bdcfa9a1bb6840cdfb5216be4aad2f7517bbff7fe829cb.txt\n-->\n<template>\n\t<div class=\"demo-progress\">\n\t\t<AsamProgress :percentage=\"50\" :stroke-width=\"15\" striped />\n\t\t<AsamProgress :percentage=\"30\" :stroke-width=\"15\" status=\"warning\" striped striped-flow />\n\t\t<AsamProgress\n\t\t\t:percentage=\"100\"\n\t\t\t:stroke-width=\"15\"\n\t\t\tstatus=\"success\"\n\t\t\tstriped\n\t\t\tstriped-flow\n\t\t\t:duration=\"10\"\n\t\t/>\n\t\t<AsamProgress\n\t\t\t:percentage=\"percentage\"\n\t\t\t:stroke-width=\"15\"\n\t\t\tstatus=\"exception\"\n\t\t\tstriped\n\t\t\tstriped-flow\n\t\t\t:duration=\"duration\"\n\t\t/>\n\t\t<AsamButtonGroup>\n\t\t\t<AsamButton :icon=\"Minus\" @click=\"decrease\" />\n\t\t\t<AsamButton :icon=\"Plus\" @click=\"increase\" />\n\t\t</AsamButtonGroup>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamProgressCapStripedProgressDemo' });\nimport { AsamProgress, AsamButtonGroup, AsamButton } from '@asam-ui/ui';\n\nimport { computed, ref } from 'vue';\nimport { Minus, Plus } from '@asam-ui/icons-vue';\n\nconst percentage = ref<number>(70);\nconst duration = computed(() => Math.floor(percentage.value / 10));\n\nconst increase = () => {\n\tpercentage.value += 10;\n\tif (percentage.value > 100) {\n\t\tpercentage.value = 100;\n\t}\n};\nconst decrease = () => {\n\tpercentage.value -= 10;\n\tif (percentage.value < 0) {\n\t\tpercentage.value = 0;\n\t}\n};\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.demo-progress .el-progress--line {\n\tmargin-bottom: 15px;\n\tmax-width: 600px;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n",
+			"originalSourceSha256": "d87f35424a35fdc92cc13421c07106daa7fe7f30e9ef67ab70b031f102980ec3",
+			"notice": {
+				"id": "652d1a7bdf17b49e34bdcfa9a1bb6840cdfb5216be4aad2f7517bbff7fe829cb",
+				"url": "/licenses/source-notices/652d1a7bdf17b49e34bdcfa9a1bb6840cdfb5216be4aad2f7517bbff7fe829cb.txt",
+				"licenseFilename": "LICENSE-652d1a7bdf17b49e34bdcfa9a1bb6840cdfb5216be4aad2f7517bbff7fe829cb.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/progress/striped-progress.vue",
+					"sourceSha256": "300169e85f2c9b4d83c53784943aeb1fcb09b665a3c83ca3a352d33b86047daa",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-652d1a7bdf17b49e34bdcfa9a1bb6840cdfb5216be4aad2f7517bbff7fe829cb.txt",
+			"source": "Adapted from Element Plus 2.14.7 progress/striped-progress. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "652d1a7bdf17b49e34bdcfa9a1bb6840cdfb5216be4aad2f7517bbff7fe829cb",
+			"noticeId": "652d1a7bdf17b49e34bdcfa9a1bb6840cdfb5216be4aad2f7517bbff7fe829cb"
+		}
+	]
+}

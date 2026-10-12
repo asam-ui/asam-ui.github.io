@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamContainer/cap-layout-ham/js/Demo.vue",
+			"sha256": "f60667bb8edeb4fbcbbf20343083e14e9111331b2817d6a5dc9410cbb82ab8c9",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-d65dc450836fda1012f8e3e90885b36c0e982965551e14c9207b0f5f83612d86.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/d65dc450836fda1012f8e3e90885b36c0e982965551e14c9207b0f5f83612d86.txt\n-->\n<template>\n\t<div class=\"common-layout\">\n\t\t<AsamContainer>\n\t\t\t<AsamHeader>Header</AsamHeader>\n\t\t\t<AsamContainer>\n\t\t\t\t<AsamAside width=\"200px\">Aside</AsamAside>\n\t\t\t\t<AsamMain>Main</AsamMain>\n\t\t\t</AsamContainer>\n\t\t</AsamContainer>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamContainerCapLayoutHamDemo' });\nimport { AsamContainer, AsamHeader, AsamAside, AsamMain } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Derived from the fixed container/common-layout.scss; scoped and resolved locally. */\n/* stylelint-disable selector-pseudo-class-no-unknown -- Vue SFC implements :deep. */\n.common-layout :deep(.el-header),\n.common-layout :deep(.el-footer),\n.common-layout :deep(.el-main),\n.common-layout :deep(.el-aside) {\n\tdisplay: flex;\n\tjustify-content: center;\n\talign-items: center;\n\tcolor: var(--asam-color-text-primary);\n\ttext-align: center;\n}\n\n.common-layout :deep(.el-header),\n.common-layout :deep(.el-footer) {\n\tbackground-color: color-mix(in srgb, var(--asam-color-primary) 30%, var(--asam-color-surface));\n}\n\n.common-layout :deep(.el-aside) {\n\tbackground-color: color-mix(in srgb, var(--asam-color-primary) 20%, var(--asam-color-surface));\n}\n\n.common-layout :deep(.el-main) {\n\tbackground-color: color-mix(in srgb, var(--asam-color-primary) 10%, var(--asam-color-surface));\n\theight: 150px;\n}\n/* stylelint-enable selector-pseudo-class-no-unknown */\n</style>\n",
+			"originalSourceSha256": "264a38826f003abd499fd191771d1926ae25691c2ee528b5b4be66eabbb6209e",
+			"notice": {
+				"id": "d65dc450836fda1012f8e3e90885b36c0e982965551e14c9207b0f5f83612d86",
+				"url": "/licenses/source-notices/d65dc450836fda1012f8e3e90885b36c0e982965551e14c9207b0f5f83612d86.txt",
+				"licenseFilename": "LICENSE-d65dc450836fda1012f8e3e90885b36c0e982965551e14c9207b0f5f83612d86.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/container/layout-ham.vue",
+					"sourceSha256": "1fc5442859d12aeb73c86ed9270a72d41346f1d39cac624c716fc99a3ff02e61",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-d65dc450836fda1012f8e3e90885b36c0e982965551e14c9207b0f5f83612d86.txt",
+			"source": "Adapted from Element Plus 2.14.7 container/layout-ham. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "d65dc450836fda1012f8e3e90885b36c0e982965551e14c9207b0f5f83612d86",
+			"noticeId": "d65dc450836fda1012f8e3e90885b36c0e982965551e14c9207b0f5f83612d86"
+		}
+	]
+}

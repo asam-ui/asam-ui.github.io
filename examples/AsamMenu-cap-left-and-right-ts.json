@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamMenu/cap-left-and-right/ts/Demo.vue",
+			"sha256": "16adce9daf2290f0f79beddb77dfb60dc3de73226fc661e383ccf4dfa9058b1d",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-a28608aa854ddc80953c9a8ec5ba245dc5e31655a803441a0e15dfd079614e19.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/a28608aa854ddc80953c9a8ec5ba245dc5e31655a803441a0e15dfd079614e19.txt\n-->\n<template>\n\t<AsamMenu\n\t\t:default-active=\"activeIndex\"\n\t\tclass=\"el-menu-demo\"\n\t\tmode=\"horizontal\"\n\t\t:ellipsis=\"false\"\n\t\t@select=\"handleSelect\"\n\t>\n\t\t<AsamMenuItem index=\"0\">\n\t\t\t<img\n\t\t\t\tstyle=\"width: 100px\"\n\t\t\t\tsrc=\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%22180%22%3E%3Crect%20width%3D%22320%22%20height%3D%22180%22%20fill%3D%22%238899aa%22%2F%3E%3Ccircle%20cx%3D%22240%22%20cy%3D%2245%22%20r%3D%2228%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M0%20180L100%2060L220%20180%22%20fill%3D%22%2340566c%22%2F%3E%3Ctext%20x%3D%2212%22%20y%3D%2230%22%20fill%3D%22%23fff%22%3EASAM%20sample%3C%2Ftext%3E%3C%2Fsvg%3E\"\n\t\t\t\talt=\"Element logo\"\n\t\t\t/>\n\t\t</AsamMenuItem>\n\t\t<AsamMenuItem index=\"1\">Processing Center</AsamMenuItem>\n\t\t<AsamSubMenu index=\"2\">\n\t\t\t<template #title>Workspace</template>\n\t\t\t<AsamMenuItem index=\"2-1\">item one</AsamMenuItem>\n\t\t\t<AsamMenuItem index=\"2-2\">item two</AsamMenuItem>\n\t\t\t<AsamMenuItem index=\"2-3\">item three</AsamMenuItem>\n\t\t\t<AsamSubMenu index=\"2-4\">\n\t\t\t\t<template #title>item four</template>\n\t\t\t\t<AsamMenuItem index=\"2-4-1\">item one</AsamMenuItem>\n\t\t\t\t<AsamMenuItem index=\"2-4-2\">item two</AsamMenuItem>\n\t\t\t\t<AsamMenuItem index=\"2-4-3\">item three</AsamMenuItem>\n\t\t\t</AsamSubMenu>\n\t\t</AsamSubMenu>\n\t</AsamMenu>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamMenuCapLeftAndRightDemo' });\nimport { AsamMenu, AsamMenuItem, AsamSubMenu } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst activeIndex = ref('1');\nconst handleSelect = (key: string, keyPath: string[]) => {\n\tconsole.log(key, keyPath);\n};\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.el-menu--horizontal > .el-menu-item:nth-child(1) {\n\tmargin-right: auto;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n",
+			"originalSourceSha256": "ba886367bfcafb5aacea28d8afff37796f0d1122c27297ad1fe451ca72dc2a37",
+			"notice": {
+				"id": "a28608aa854ddc80953c9a8ec5ba245dc5e31655a803441a0e15dfd079614e19",
+				"url": "/licenses/source-notices/a28608aa854ddc80953c9a8ec5ba245dc5e31655a803441a0e15dfd079614e19.txt",
+				"licenseFilename": "LICENSE-a28608aa854ddc80953c9a8ec5ba245dc5e31655a803441a0e15dfd079614e19.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/menu/left-and-right.vue",
+					"sourceSha256": "77c6d8492b272c7f1e12ae8614c8fc48f7b6fdb53b309b6ef0060361dff5bccb",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-a28608aa854ddc80953c9a8ec5ba245dc5e31655a803441a0e15dfd079614e19.txt",
+			"source": "Adapted from Element Plus 2.14.7 menu/left-and-right. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "a28608aa854ddc80953c9a8ec5ba245dc5e31655a803441a0e15dfd079614e19",
+			"noticeId": "a28608aa854ddc80953c9a8ec5ba245dc5e31655a803441a0e15dfd079614e19"
+		}
+	]
+}

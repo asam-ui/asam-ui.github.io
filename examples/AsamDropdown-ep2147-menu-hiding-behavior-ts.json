@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamDropdown/ep2147-menu-hiding-behavior/ts/Demo.vue",
+			"sha256": "b0b806a283a633cd361126cfb3eb7d32deb97bf2684806c1d87af48fcc43108f",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0f62aa50b3bd1bb3017d9b79c5619e2f0cfd62332f70f27c77ce7518747f4485.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/0f62aa50b3bd1bb3017d9b79c5619e2f0cfd62332f70f27c77ce7518747f4485.txt\n-->\n<template>\n\t<AsamDropdown trigger=\"hover\" placement=\"bottom\" :wrap-menu=\"false\" :hide-on-click=\"false\">\n\t\t<span class=\"el-dropdown-link\">\n\t\t\tDropdown List<AsamIcon class=\"el-icon--right\"><arrow-down /></AsamIcon>\n\t\t</span>\n\t\t<template #dropdown>\n\t\t\t<AsamDropdownMenu>\n\t\t\t\t<AsamDropdownItem>Action 1</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>Action 2</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>Action 3</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem disabled>Action 4</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem divided>Action 5</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem divided>Action 6</AsamDropdownItem>\n\t\t\t</AsamDropdownMenu>\n\t\t</template>\n\t</AsamDropdown>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamDropdown, AsamDropdownItem, AsamDropdownMenu, AsamIcon } from '@asam-ui/ui';\n\nimport { ArrowDown } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.example-showcase .el-dropdown + .el-dropdown {\n\tmargin-left: 15px;\n}\n\n.example-showcase .el-dropdown-link {\n\tcursor: pointer;\n\tcolor: var(--el-color-primary);\n\tdisplay: flex;\n\talign-items: center;\n}\n</style>\n",
+			"originalSourceSha256": "216046eef73863d1748b4d47392d7ff835785cbd89547857f7244ba94f6a2d4b",
+			"notice": {
+				"id": "0f62aa50b3bd1bb3017d9b79c5619e2f0cfd62332f70f27c77ce7518747f4485",
+				"url": "/licenses/source-notices/0f62aa50b3bd1bb3017d9b79c5619e2f0cfd62332f70f27c77ce7518747f4485.txt",
+				"licenseFilename": "LICENSE-0f62aa50b3bd1bb3017d9b79c5619e2f0cfd62332f70f27c77ce7518747f4485.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/dropdown/menu-hiding-behavior.vue",
+					"sourceSha256": "62354e23c3350fd4ec497b8f19ad739ae53f736e842caa79418f076a5bec6363",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0f62aa50b3bd1bb3017d9b79c5619e2f0cfd62332f70f27c77ce7518747f4485.txt",
+			"source": "Adapted from Element Plus 2.14.7 dropdown/menu-hiding-behavior. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0f62aa50b3bd1bb3017d9b79c5619e2f0cfd62332f70f27c77ce7518747f4485",
+			"noticeId": "0f62aa50b3bd1bb3017d9b79c5619e2f0cfd62332f70f27c77ce7518747f4485"
+		}
+	]
+}

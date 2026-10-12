@@ -1,0 +1,1 @@
+import{_ as e,gt as t,yt as n}from"./sfc-demo.js";import{d as r}from"./dist-CWqMDESo.js";function i(){let i=n(),a=t(0),o=e(()=>({minWidth:`${Math.max(a.value,11)}px`}));return r(i,()=>{a.value=i.value?.getBoundingClientRect().width??0}),{calculatorRef:i,calculatorWidth:a,inputStyle:o}}export{i as t};

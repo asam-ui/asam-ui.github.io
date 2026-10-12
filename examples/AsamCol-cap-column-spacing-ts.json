@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamCol/cap-column-spacing/ts/Demo.vue",
+			"sha256": "18137185055e6e999a3486b0b29b33bddde1a66a51788ff3c9f29604db011494",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-91ee12432351934278bfd1fde0237e3f6009620d88c114785bbeb5bdafddd9f0.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/91ee12432351934278bfd1fde0237e3f6009620d88c114785bbeb5bdafddd9f0.txt\n-->\n<template>\n\t<AsamRow :gutter=\"20\">\n\t\t<AsamCol :span=\"6\"><div class=\"grid-content ep-bg-purple\" /></AsamCol>\n\t\t<AsamCol :span=\"6\"><div class=\"grid-content ep-bg-purple\" /></AsamCol>\n\t\t<AsamCol :span=\"6\"><div class=\"grid-content ep-bg-purple\" /></AsamCol>\n\t\t<AsamCol :span=\"6\"><div class=\"grid-content ep-bg-purple\" /></AsamCol>\n\t</AsamRow>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamColCapColumnSpacingDemo' });\nimport { AsamRow, AsamCol } from '@asam-ui/ui';\n</script>\n\n<style>\n.el-row {\n\tmargin-bottom: 20px;\n}\n\n.el-row:last-child {\n\tmargin-bottom: 0;\n}\n\n.el-col {\n\tborder-radius: 4px;\n}\n\n.grid-content {\n\tborder-radius: 4px;\n\tmin-height: 36px;\n}\n</style>\n",
+			"originalSourceSha256": "d249636d2dadf8a4bf2387f1e4bb2f76c9c1b296b63059e79dca9161761c9c34",
+			"notice": {
+				"id": "91ee12432351934278bfd1fde0237e3f6009620d88c114785bbeb5bdafddd9f0",
+				"url": "/licenses/source-notices/91ee12432351934278bfd1fde0237e3f6009620d88c114785bbeb5bdafddd9f0.txt",
+				"licenseFilename": "LICENSE-91ee12432351934278bfd1fde0237e3f6009620d88c114785bbeb5bdafddd9f0.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/layout/column-spacing.vue",
+					"sourceSha256": "fbfad542b407e683e36ff194d8f82a64ff94ed14945745ec023888f3d5996b91",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-91ee12432351934278bfd1fde0237e3f6009620d88c114785bbeb5bdafddd9f0.txt",
+			"source": "Adapted from Element Plus 2.14.7 layout/column-spacing. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "91ee12432351934278bfd1fde0237e3f6009620d88c114785bbeb5bdafddd9f0",
+			"noticeId": "91ee12432351934278bfd1fde0237e3f6009620d88c114785bbeb5bdafddd9f0"
+		}
+	]
+}

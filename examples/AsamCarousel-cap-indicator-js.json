@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamCarousel/cap-indicator/js/Demo.vue",
+			"sha256": "71fc376c849b8c234884b9d26381946fa5a611b7b30e22733e1928e51aad4e44",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0329db13270f78ef5e9dfca93098e73e52f20e2f1db1437bd2289a5170841ac7.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/0329db13270f78ef5e9dfca93098e73e52f20e2f1db1437bd2289a5170841ac7.txt\n-->\n<template>\n\t<AsamCarousel indicator-position=\"outside\">\n\t\t<AsamCarouselItem v-for=\"item in 4\" :key=\"item\">\n\t\t\t<h3 class=\"ui032-text-2xl ui032-justify-center\">{{ item }}</h3>\n\t\t</AsamCarouselItem>\n\t</AsamCarousel>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamCarouselCapIndicatorDemo' });\nimport { AsamCarousel, AsamCarouselItem } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.el-carousel__item h3 {\n\tdisplay: flex;\n\tcolor: #475669;\n\topacity: 0.75;\n\tline-height: 300px;\n\tmargin: 0;\n}\n\n.el-carousel__item:nth-child(2n) {\n\tbackground-color: #99a9bf;\n}\n\n.el-carousel__item:nth-child(2n + 1) {\n\tbackground-color: #d3dce6;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n\n<style scoped>\n.ui032-text-2xl {\n\tfont-size: 1.5rem;\n}\n\n.ui032-justify-center {\n\tjustify-content: center;\n}\n</style>\n",
+			"originalSourceSha256": "4ad79704a8d2fa81ebea69066f0e0fcb8f74ee7e1a9bedfaa00e7f9d9145c05a",
+			"notice": {
+				"id": "0329db13270f78ef5e9dfca93098e73e52f20e2f1db1437bd2289a5170841ac7",
+				"url": "/licenses/source-notices/0329db13270f78ef5e9dfca93098e73e52f20e2f1db1437bd2289a5170841ac7.txt",
+				"licenseFilename": "LICENSE-0329db13270f78ef5e9dfca93098e73e52f20e2f1db1437bd2289a5170841ac7.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/carousel/indicator.vue",
+					"sourceSha256": "0544f9ab5e9af74a56c12ccfa9d5ea6ad9ae722e7c687464d1f64e50401e0255",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0329db13270f78ef5e9dfca93098e73e52f20e2f1db1437bd2289a5170841ac7.txt",
+			"source": "Adapted from Element Plus 2.14.7 carousel/indicator. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0329db13270f78ef5e9dfca93098e73e52f20e2f1db1437bd2289a5170841ac7",
+			"noticeId": "0329db13270f78ef5e9dfca93098e73e52f20e2f1db1437bd2289a5170841ac7"
+		}
+	]
+}

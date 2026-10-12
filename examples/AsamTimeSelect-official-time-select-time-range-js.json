@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTimeSelect/official-time-select-time-range/js/Demo.vue",
+			"sha256": "ba39eb3d6b6fc009e9a7d75c3f9927efade37f8df5415ccb908cbcb55d76d3d2",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841.txt\n-->\n<template>\n\t<div class=\"demo-time-range flex flex-wrap gap-4\">\n\t\t<AsamTimeSelect\n\t\t\tv-model=\"startTime\"\n\t\t\tstyle=\"width: 240px\"\n\t\t\t:max-time=\"typeof endTime === 'string' ? endTime : undefined\"\n\t\t\tplaceholder=\"Start time\"\n\t\t\tstart=\"08:30\"\n\t\t\tstep=\"00:15\"\n\t\t\tend=\"18:30\"\n\t\t/>\n\t\t<AsamTimeSelect\n\t\t\tv-model=\"endTime\"\n\t\t\tstyle=\"width: 240px\"\n\t\t\t:min-time=\"typeof startTime === 'string' ? startTime : undefined\"\n\t\t\tplaceholder=\"End time\"\n\t\t\tstart=\"08:30\"\n\t\t\tstep=\"00:15\"\n\t\t\tend=\"18:30\"\n\t\t/>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamTimeSelect } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamTimeSelectofficialtimeselecttimerangeExample' });\nimport { ref } from 'vue';\nconst startTime = ref('');\nconst endTime = ref('');\n</script>\n",
+			"originalSourceSha256": "690590f28b89ee545e4b3970956ecab428f2329ea35605e83dec7ada32a90128",
+			"notice": {
+				"id": "ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841",
+				"url": "/licenses/source-notices/ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841.txt",
+				"licenseFilename": "LICENSE-ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/time-select/time-range.vue",
+					"sourceSha256": "bb808c1688659ce128ec77eaaee968685358696e10aa7ef1409559d2f301ecb0",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841.txt",
+			"source": "Adapted from Element Plus 2.14.7 time-select/time-range. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841",
+			"noticeId": "ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841"
+		}
+	]
+}

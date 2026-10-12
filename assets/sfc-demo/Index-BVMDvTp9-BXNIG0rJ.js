@@ -1,0 +1,1 @@
+import"./sfc-demo.js";import{t as e}from"./progress-DNPajwzp.js";var t=Object.assign({},e,{install(e){e.component(`AsamProgress`,t)}});export{t};

@@ -1,0 +1,48 @@
+{
+  "sourceCommit": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+  "packageVersion": "0.1.0-alpha.1",
+  "archive": "asam-ui-usage.tgz",
+  "sha256": "9d011a7277b68bdb8d72006e7a5c5e80900c1cc349411c8b1947e2830b500ee7",
+  "files": [
+    {
+      "path": "asam-ui-usage/SKILL.md",
+      "sha256": "53f249ffcafb989dd2cbffb462c5dfc223778b3f602617b619ae4d28aac21a23"
+    },
+    {
+      "path": "asam-ui-usage/references/api-pairing.md",
+      "sha256": "305584548aad5043646eba4ae8d0f6bbb441e319171a955369a091cfd4675d14"
+    },
+    {
+      "path": "asam-ui-usage/references/imports.md",
+      "sha256": "0ec6310ac64f285a73a0dc64c9a57ec1f8965dcec1822ff819cf96096d3bf4e1"
+    },
+    {
+      "path": "asam-ui-usage/references/integration.md",
+      "sha256": "1ea095b4ea22d285f413abc26f1f2a5578565d92dd174c4b3201a408f13b49de"
+    },
+    {
+      "path": "asam-ui-usage/references/migration.md",
+      "sha256": "5ba257aab602a7fabf50c4431c9567b84e8f3b68c5a19008cb6427fc38c492ff"
+    },
+    {
+      "path": "asam-ui-usage/references/package-contract.json",
+      "sha256": "55e842c3cca32e4be78a4744a0b80651caa30dc9a04c38ab778607452bbc2183"
+    },
+    {
+      "path": "asam-ui-usage/references/resources.md",
+      "sha256": "d26872323f3e9417d810cb12d05ab3ef0d6e863d39c67309c179bfb4c54961b1"
+    },
+    {
+      "path": "asam-ui-usage/scripts/inspect-contract.mjs",
+      "sha256": "07c9621a10818cc98a8c6526148e46ab9f2dcf0106ecb28ff0008ad8c49b5369"
+    },
+    {
+      "path": "asam-ui-usage/scripts/inspect-project.mjs",
+      "sha256": "aebb66989267b7af04e6956ff20e5a569ea28d93805a404860462253a3cb0610"
+    },
+    {
+      "path": "install.mjs",
+      "sha256": "ee9ec303195e170399b43a0da0ad536d13e0ea4f60317b79443e41f5656d5eaf"
+    }
+  ]
+}

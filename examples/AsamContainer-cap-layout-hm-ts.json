@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamContainer/cap-layout-hm/ts/Demo.vue",
+			"sha256": "c56de26474600021ec60c3691b9acf538777d62ab321f33e79f2963937a16d5a",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-eec6080091301034687bc2e55422acf5507c6b83d357dc080ec825b232d71263.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/eec6080091301034687bc2e55422acf5507c6b83d357dc080ec825b232d71263.txt\n-->\n<template>\n\t<div class=\"common-layout\">\n\t\t<AsamContainer>\n\t\t\t<AsamHeader>Header</AsamHeader>\n\t\t\t<AsamMain>Main</AsamMain>\n\t\t</AsamContainer>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamContainerCapLayoutHmDemo' });\nimport { AsamContainer, AsamHeader, AsamMain } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Derived from the fixed container/common-layout.scss; scoped and resolved locally. */\n/* stylelint-disable selector-pseudo-class-no-unknown -- Vue SFC implements :deep. */\n.common-layout :deep(.el-header),\n.common-layout :deep(.el-footer),\n.common-layout :deep(.el-main),\n.common-layout :deep(.el-aside) {\n\tdisplay: flex;\n\tjustify-content: center;\n\talign-items: center;\n\tcolor: var(--asam-color-text-primary);\n\ttext-align: center;\n}\n\n.common-layout :deep(.el-header),\n.common-layout :deep(.el-footer) {\n\tbackground-color: color-mix(in srgb, var(--asam-color-primary) 30%, var(--asam-color-surface));\n}\n\n.common-layout :deep(.el-aside) {\n\tbackground-color: color-mix(in srgb, var(--asam-color-primary) 20%, var(--asam-color-surface));\n}\n\n.common-layout :deep(.el-main) {\n\tbackground-color: color-mix(in srgb, var(--asam-color-primary) 10%, var(--asam-color-surface));\n\theight: 150px;\n}\n/* stylelint-enable selector-pseudo-class-no-unknown */\n</style>\n",
+			"originalSourceSha256": "684322979b100210b21c5875de7bb3c99dde985c2720900c4254f1bbda78e1ea",
+			"notice": {
+				"id": "eec6080091301034687bc2e55422acf5507c6b83d357dc080ec825b232d71263",
+				"url": "/licenses/source-notices/eec6080091301034687bc2e55422acf5507c6b83d357dc080ec825b232d71263.txt",
+				"licenseFilename": "LICENSE-eec6080091301034687bc2e55422acf5507c6b83d357dc080ec825b232d71263.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/container/layout-hm.vue",
+					"sourceSha256": "81cdd70f06901f92ccb9b2a5d752e9b3d27f6d7a4e763f98dc27a398add91a72",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-eec6080091301034687bc2e55422acf5507c6b83d357dc080ec825b232d71263.txt",
+			"source": "Adapted from Element Plus 2.14.7 container/layout-hm. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "eec6080091301034687bc2e55422acf5507c6b83d357dc080ec825b232d71263",
+			"noticeId": "eec6080091301034687bc2e55422acf5507c6b83d357dc080ec825b232d71263"
+		}
+	]
+}

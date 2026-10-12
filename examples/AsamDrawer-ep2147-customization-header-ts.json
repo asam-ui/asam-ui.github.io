@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamDrawer/ep2147-customization-header/ts/Demo.vue",
+			"sha256": "8e1bcb055af49137d790cf0e8771fc798003e1138b3389c53e0b93c0827a4378",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf.txt\n-->\n<template>\n\t<AsamButton @click=\"visible = true\"> Open Drawer with customized header </AsamButton>\n\t<AsamDrawer v-model=\"visible\" :show-close=\"false\">\n\t\t<template #header=\"{ close, titleId, titleClass }\">\n\t\t\t<h4 :id=\"titleId\" :class=\"titleClass\">This is a custom header!</h4>\n\t\t\t<AsamButton type=\"danger\" @click=\"close\">\n\t\t\t\t<AsamIcon class=\"el-icon--left\"><CircleCloseFilled /></AsamIcon>\n\t\t\t\tClose\n\t\t\t</AsamButton>\n\t\t</template>\n\t\tThis is drawer content.\n\t</AsamDrawer>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDrawer, AsamIcon } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\nimport { CircleCloseFilled } from '@asam-ui/icons-vue';\n\nconst visible = ref(false);\n</script>\n",
+			"originalSourceSha256": "380275f1108d13be034f4e109d81a0d4c95c4f661767119b948d2cdfadbbe785",
+			"notice": {
+				"id": "6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf",
+				"url": "/licenses/source-notices/6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf.txt",
+				"licenseFilename": "LICENSE-6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/drawer/customization-header.vue",
+					"sourceSha256": "4e5ce8839dc8f4d5d55ed4d0793c4eaf23cc7db17f6ad53bfe265edfc014b4e8",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf.txt",
+			"source": "Adapted from Element Plus 2.14.7 drawer/customization-header. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf",
+			"noticeId": "6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf"
+		}
+	]
+}

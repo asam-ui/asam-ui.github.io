@@ -1,0 +1,1 @@
+import"./sfc-demo.js";import{n as e}from"./Index-DqfBC-_6-pnrjWBAC.js";var t=Object.assign({},e,{install(e){e.directive(`asam-popover`,t)}});export{t};

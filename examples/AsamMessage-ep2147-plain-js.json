@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamMessage/ep2147-plain/js/Demo.vue",
+			"sha256": "6a818088e76a621422b4bc047e4ffc3b04f66923c38c29e17e0d2de4d4e5b4ff",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-cbd591e96e8e9a9368ff35482a64b7a941a438dedb835d999e9bc150d5f984a5.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/cbd591e96e8e9a9368ff35482a64b7a941a438dedb835d999e9bc150d5f984a5.txt\n-->\n<template>\n\t<div class=\"flex flex-wrap gap-1\">\n\t\t<AsamButton class=\"!ml-0\" :plain=\"true\" @click=\"open5\">Primary</AsamButton>\n\t\t<AsamButton class=\"!ml-0\" :plain=\"true\" @click=\"open1\">Success</AsamButton>\n\t\t<AsamButton class=\"!ml-0\" :plain=\"true\" @click=\"open2\">Warning</AsamButton>\n\t\t<AsamButton class=\"!ml-0\" :plain=\"true\" @click=\"open3\">Info</AsamButton>\n\t\t<AsamButton class=\"!ml-0\" :plain=\"true\" @click=\"open4\">Error</AsamButton>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamButton, AsamMessage } from '@asam-ui/ui';\nimport { onBeforeUnmount } from 'vue';\nconst open1 = () => {\n\ttrackAsamMessage(\n\t\tAsamMessage({\n\t\t\tmessage: 'Congrats, this is a success message.',\n\t\t\ttype: 'success',\n\t\t\tplain: true\n\t\t})\n\t);\n};\nconst open2 = () => {\n\ttrackAsamMessage(\n\t\tAsamMessage({\n\t\t\tmessage: 'Warning, this is a warning message.',\n\t\t\ttype: 'warning',\n\t\t\tplain: true\n\t\t})\n\t);\n};\nconst open3 = () => {\n\ttrackAsamMessage(\n\t\tAsamMessage({\n\t\t\tmessage: 'This is a info message.',\n\t\t\ttype: 'info',\n\t\t\tplain: true\n\t\t})\n\t);\n};\nconst open4 = () => {\n\ttrackAsamMessage(\n\t\tAsamMessage({\n\t\t\tmessage: 'Oops, this is a error message.',\n\t\t\ttype: 'error',\n\t\t\tplain: true\n\t\t})\n\t);\n};\nconst open5 = () => {\n\ttrackAsamMessage(\n\t\tAsamMessage({\n\t\t\tmessage: 'This is a primary message.',\n\t\t\ttype: 'primary',\n\t\t\tplain: true\n\t\t})\n\t);\n};\nconst ownedAsamMessage = new Set();\nlet mountedAsamMessage = true;\nconst trackAsamMessage = (handle) => {\n\tif (mountedAsamMessage) ownedAsamMessage.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamMessage = false;\n\tfor (const handle of ownedAsamMessage) handle.close();\n\townedAsamMessage.clear();\n});\n</script>\n",
+			"originalSourceSha256": "664bbfec27aaa933048fa8968e582a39b5bf7d1f05afa6341f7d166c6c817f40",
+			"notice": {
+				"id": "cbd591e96e8e9a9368ff35482a64b7a941a438dedb835d999e9bc150d5f984a5",
+				"url": "/licenses/source-notices/cbd591e96e8e9a9368ff35482a64b7a941a438dedb835d999e9bc150d5f984a5.txt",
+				"licenseFilename": "LICENSE-cbd591e96e8e9a9368ff35482a64b7a941a438dedb835d999e9bc150d5f984a5.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/message/plain.vue",
+					"sourceSha256": "b9d906ad6f1d52725994eed2b462c309776a35a18fce9c7c1b5fafa4fb953145",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-cbd591e96e8e9a9368ff35482a64b7a941a438dedb835d999e9bc150d5f984a5.txt",
+			"source": "Adapted from Element Plus 2.14.7 message/plain. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "cbd591e96e8e9a9368ff35482a64b7a941a438dedb835d999e9bc150d5f984a5",
+			"noticeId": "cbd591e96e8e9a9368ff35482a64b7a941a438dedb835d999e9bc150d5f984a5"
+		}
+	]
+}

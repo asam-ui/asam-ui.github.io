@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamBadge/cap-basic/js/Demo.vue",
+			"sha256": "343cb71a1284a39266f6fdfcefefaa5f0b0199114f3411275a8161de1bc549f9",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-a318623b1b11afd15597c7b9c804eca4096c6da606608deaa7464e487f41999f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/a318623b1b11afd15597c7b9c804eca4096c6da606608deaa7464e487f41999f.txt\n-->\n<template>\n\t<AsamBadge :value=\"12\" class=\"item\">\n\t\t<AsamButton>comments</AsamButton>\n\t</AsamBadge>\n\t<AsamBadge :value=\"3\" class=\"item\">\n\t\t<AsamButton>replies</AsamButton>\n\t</AsamBadge>\n\t<AsamBadge :value=\"1\" class=\"item\" type=\"primary\">\n\t\t<AsamButton>comments</AsamButton>\n\t</AsamBadge>\n\t<AsamBadge :value=\"2\" class=\"item\" type=\"warning\">\n\t\t<AsamButton>replies</AsamButton>\n\t</AsamBadge>\n\t<AsamBadge :value=\"1\" class=\"item\" color=\"green\">\n\t\t<AsamButton>custom background</AsamButton>\n\t</AsamBadge>\n\t<AsamDropdown trigger=\"click\">\n\t\t<span class=\"el-dropdown-link\">\n\t\t\tClick Me\n\t\t\t<AsamIcon class=\"el-icon--right\"><caret-bottom /></AsamIcon>\n\t\t</span>\n\t\t<template #dropdown>\n\t\t\t<AsamDropdownMenu>\n\t\t\t\t<AsamDropdownItem class=\"clearfix\">\n\t\t\t\t\tcomments\n\t\t\t\t\t<AsamBadge class=\"mark\" :value=\"12\" />\n\t\t\t\t</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem class=\"clearfix\">\n\t\t\t\t\treplies\n\t\t\t\t\t<AsamBadge class=\"mark\" :value=\"3\" />\n\t\t\t\t</AsamDropdownItem>\n\t\t\t</AsamDropdownMenu>\n\t\t</template>\n\t</AsamDropdown>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamBadgeCapBasicDemo' });\nimport {\n\tAsamBadge,\n\tAsamButton,\n\tAsamDropdown,\n\tAsamIcon,\n\tAsamDropdownMenu,\n\tAsamDropdownItem\n} from '@asam-ui/ui';\nimport { CaretBottom } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.item {\n\tmargin-top: 10px;\n\tmargin-right: 30px;\n}\n\n.el-dropdown {\n\tmargin-top: 1.1rem;\n}\n</style>\n",
+			"originalSourceSha256": "06ec4b2ce25c55a781400366b6e49b6cad9adb0ad18230ee5d0cc842850ab1e8",
+			"notice": {
+				"id": "a318623b1b11afd15597c7b9c804eca4096c6da606608deaa7464e487f41999f",
+				"url": "/licenses/source-notices/a318623b1b11afd15597c7b9c804eca4096c6da606608deaa7464e487f41999f.txt",
+				"licenseFilename": "LICENSE-a318623b1b11afd15597c7b9c804eca4096c6da606608deaa7464e487f41999f.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/badge/basic.vue",
+					"sourceSha256": "ff09e5b14534cc342a7f236d8354bd647102165a26da6b18f6648f76f8995aa1",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-a318623b1b11afd15597c7b9c804eca4096c6da606608deaa7464e487f41999f.txt",
+			"source": "Adapted from Element Plus 2.14.7 badge/basic. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "a318623b1b11afd15597c7b9c804eca4096c6da606608deaa7464e487f41999f",
+			"noticeId": "a318623b1b11afd15597c7b9c804eca4096c6da606608deaa7464e487f41999f"
+		}
+	]
+}

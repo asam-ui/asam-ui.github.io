@@ -1,0 +1,1 @@
+import"./sfc-demo.js";import{t as e}from"./image-viewer-CR6e8aOX.js";var t=Object.assign({},e,{install(e){e.component(`AsamImageViewer`,t)}});export{t};

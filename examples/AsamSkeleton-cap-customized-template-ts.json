@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamSkeleton/cap-customized-template/ts/Demo.vue",
+			"sha256": "5ae5ca2dd55e4047bd6acd648faa58ce405e6d7d1f8f9bc7449440ab0240e6c9",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-054971c1ec898d583df2416db08cfab4c40917d85062f802f1d7119c62ad5409.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/054971c1ec898d583df2416db08cfab4c40917d85062f802f1d7119c62ad5409.txt\n-->\n<template>\n\t<AsamSkeleton style=\"width: 240px\">\n\t\t<template #template>\n\t\t\t<AsamSkeletonItem variant=\"image\" style=\"width: 240px; height: 240px\" />\n\t\t\t<div style=\"padding: 14px\">\n\t\t\t\t<AsamSkeletonItem variant=\"p\" style=\"width: 50%\" />\n\t\t\t\t<div style=\"display: flex; align-items: center; justify-content: space-between\">\n\t\t\t\t\t<AsamSkeletonItem variant=\"text\" style=\"margin-right: 16px\" />\n\t\t\t\t\t<AsamSkeletonItem variant=\"text\" style=\"width: 30%\" />\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</template>\n\t</AsamSkeleton>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamSkeletonCapCustomizedTemplateDemo' });\nimport { AsamSkeleton, AsamSkeletonItem } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "c06ba119128379af5f00e7ead9645c2cb0f64a0207acf57f82f13207aae306cb",
+			"notice": {
+				"id": "054971c1ec898d583df2416db08cfab4c40917d85062f802f1d7119c62ad5409",
+				"url": "/licenses/source-notices/054971c1ec898d583df2416db08cfab4c40917d85062f802f1d7119c62ad5409.txt",
+				"licenseFilename": "LICENSE-054971c1ec898d583df2416db08cfab4c40917d85062f802f1d7119c62ad5409.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/skeleton/customized-template.vue",
+					"sourceSha256": "14273e5be500f2f82f3ae931d1e10709edbb8b8ef6d763a7a172489f4675d150",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-054971c1ec898d583df2416db08cfab4c40917d85062f802f1d7119c62ad5409.txt",
+			"source": "Adapted from Element Plus 2.14.7 skeleton/customized-template. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "054971c1ec898d583df2416db08cfab4c40917d85062f802f1d7119c62ad5409",
+			"noticeId": "054971c1ec898d583df2416db08cfab4c40917d85062f802f1d7119c62ad5409"
+		}
+	]
+}

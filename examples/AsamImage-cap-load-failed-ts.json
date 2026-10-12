@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamImage/cap-load-failed/ts/Demo.vue",
+			"sha256": "1410943a042215f30f9cfcd9a23e721825a761e373a817e6932339fbf0dfe9da",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bf5a3f0aa10550033a92ae7fa3159780e9efbfe4f521321ec5b8f8c6d7301788.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bf5a3f0aa10550033a92ae7fa3159780e9efbfe4f521321ec5b8f8c6d7301788.txt\n-->\n<template>\n\t<div class=\"demo-image__error ui032-flex ui032-gap-2\">\n\t\t<AsamImage />\n\t\t<AsamImage>\n\t\t\t<template #error>\n\t\t\t\t<div class=\"image-viewer-slot image-slot\">\n\t\t\t\t\t<AsamIcon><icon-picture /></AsamIcon>\n\t\t\t\t</div>\n\t\t\t</template>\n\t\t</AsamImage>\n\t\t<AsamImage :src=\"url\" :preview-src-list=\"srcList\" show-progress>\n\t\t\t<template #viewer-error=\"{ activeIndex, src }\">\n\t\t\t\t<div class=\"image-slot viewer-error\">\n\t\t\t\t\t<AsamIcon><icon-picture /></AsamIcon>\n\t\t\t\t\t<span>\n\t\t\t\t\t\tthis is viewer-error slot. current index: {{ activeIndex }}. src:\n\t\t\t\t\t\t{{ src }}\n\t\t\t\t\t</span>\n\t\t\t\t</div>\n\t\t\t</template>\n\t\t</AsamImage>\n\t\t<AsamButton @click=\"showPreview = true\"> preview controlled </AsamButton>\n\n\t\t<AsamImageViewer\n\t\t\tv-if=\"showPreview\"\n\t\t\tshow-progress\n\t\t\t:url-list=\"srcList\"\n\t\t\t@close=\"showPreview = false\"\n\t\t>\n\t\t\t<template #viewer-error=\"{ activeIndex, src }\">\n\t\t\t\t<div class=\"image-slot viewer-error\">\n\t\t\t\t\t<AsamIcon><icon-picture /></AsamIcon>\n\t\t\t\t\t<span>\n\t\t\t\t\t\tthis is viewer-error slot. current index: {{ activeIndex }}. src:\n\t\t\t\t\t\t{{ src }}\n\t\t\t\t\t</span>\n\t\t\t\t</div>\n\t\t\t</template>\n\t\t</AsamImageViewer>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamImageCapLoadFailedDemo' });\nimport { AsamImage, AsamIcon, AsamButton, AsamImageViewer } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\nimport { Picture as IconPicture } from '@asam-ui/icons-vue';\n\nconst showPreview = ref(false);\n\nconst srcList = [\n\t'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%22180%22%3E%3Crect%20width%3D%22320%22%20height%3D%22180%22%20fill%3D%22%238899aa%22%2F%3E%3Ccircle%20cx%3D%22240%22%20cy%3D%2245%22%20r%3D%2228%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M0%20180L100%2060L220%20180%22%20fill%3D%22%2340566c%22%2F%3E%3Ctext%20x%3D%2212%22%20y%3D%2230%22%20fill%3D%22%23fff%22%3EASAM%20sample%3C%2Ftext%3E%3C%2Fsvg%3E',\n\t'data:image/png;base64,AA=='\n];\nconst url =\n\t'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%22180%22%3E%3Crect%20width%3D%22320%22%20height%3D%22180%22%20fill%3D%22%238899aa%22%2F%3E%3Ccircle%20cx%3D%22240%22%20cy%3D%2245%22%20r%3D%2228%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M0%20180L100%2060L220%20180%22%20fill%3D%22%2340566c%22%2F%3E%3Ctext%20x%3D%2212%22%20y%3D%2230%22%20fill%3D%22%23fff%22%3EASAM%20sample%3C%2Ftext%3E%3C%2Fsvg%3E';\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Existing component and demonstration BEM selectors retain their public names. */\n\n.demo-image__error .el-image {\n\tmax-width: 300px;\n\tmax-height: 200px;\n\twidth: 100%;\n}\n\n.demo-image__error .image-slot {\n\tdisplay: flex;\n\tjustify-content: center;\n\talign-items: center;\n\tflex-direction: column;\n\tfont-size: 30px;\n\theight: 200px;\n\tbackground: #fff;\n}\n\n.demo-image__error .image-slot .el-icon {\n\tfont-size: 30px;\n}\n\n.image-viewer-slot {\n\tbackground: var(--el-fill-color-light);\n}\n\n.viewer-error {\n\tcolor: #000;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n\n<style scoped>\n.ui032-flex {\n\tdisplay: flex;\n}\n\n.ui032-gap-2 {\n\tgap: var(--asam-space-sm);\n}\n</style>\n",
+			"originalSourceSha256": "a5ce595c38e8d1825b5e23054c22f00def6cd8e76fcce21c56cd2e33f03b6433",
+			"notice": {
+				"id": "bf5a3f0aa10550033a92ae7fa3159780e9efbfe4f521321ec5b8f8c6d7301788",
+				"url": "/licenses/source-notices/bf5a3f0aa10550033a92ae7fa3159780e9efbfe4f521321ec5b8f8c6d7301788.txt",
+				"licenseFilename": "LICENSE-bf5a3f0aa10550033a92ae7fa3159780e9efbfe4f521321ec5b8f8c6d7301788.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/image/load-failed.vue",
+					"sourceSha256": "f5dc7a96415e5ce20f0800463552209cb2a40c1dd9a93bda7016c61d1048e9f4",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-bf5a3f0aa10550033a92ae7fa3159780e9efbfe4f521321ec5b8f8c6d7301788.txt",
+			"source": "Adapted from Element Plus 2.14.7 image/load-failed. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "bf5a3f0aa10550033a92ae7fa3159780e9efbfe4f521321ec5b8f8c6d7301788",
+			"noticeId": "bf5a3f0aa10550033a92ae7fa3159780e9efbfe4f521321ec5b8f8c6d7301788"
+		}
+	]
+}

@@ -1,0 +1,1 @@
+import{E as e,W as t,v as n,x as r}from"./sfc-demo.js";var i={width:`1em`,height:`1em`,xmlns:`http://www.w3.org/2000/svg`,viewBox:`0 0 1024 1024`},a=e({name:`CaretBottom`,__name:`caret-bottom`,setup(e){return(e,a)=>(t(),r(`svg`,i,[...a[0]||=[n(`path`,{fill:`currentColor`,d:`m192 384 320 384 320-384z`},null,-1)]]))}});export{a as t};

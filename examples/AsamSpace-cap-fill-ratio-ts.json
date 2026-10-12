@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamSpace/cap-fill-ratio/ts/Demo.vue",
+			"sha256": "d55db243a57b0a8e67c8f2e1f68bc1ec47aeab122a0517e90bf27a5b62d00aa9",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-5b24a7bfba13272577ce39493bd24b10f312cc7ba29fbdcd0215cfd7c8dc3c7d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/5b24a7bfba13272577ce39493bd24b10f312cc7ba29fbdcd0215cfd7c8dc3c7d.txt\n-->\n<template>\n\t<div>\n\t\t<div style=\"margin-bottom: 15px\">\n\t\t\tdirection:\n\t\t\t<AsamRadioItem\n\t\t\t\t:model-value=\"direction\"\n\t\t\t\tvalue=\"horizontal\"\n\t\t\t\t@update:model-value=\"\n\t\t\t\t\t(value) => {\n\t\t\t\t\t\tif (value === 'horizontal' || value === 'vertical') direction = value;\n\t\t\t\t\t}\n\t\t\t\t\"\n\t\t\t>\n\t\t\t\thorizontal\n\t\t\t</AsamRadioItem>\n\t\t\t<AsamRadioItem\n\t\t\t\t:model-value=\"direction\"\n\t\t\t\tvalue=\"vertical\"\n\t\t\t\t@update:model-value=\"\n\t\t\t\t\t(value) => {\n\t\t\t\t\t\tif (value === 'horizontal' || value === 'vertical') direction = value;\n\t\t\t\t\t}\n\t\t\t\t\"\n\t\t\t>\n\t\t\t\tvertical\n\t\t\t</AsamRadioItem>\n\t\t</div>\n\t\t<div style=\"margin-bottom: 15px\">\n\t\t\tfillRatio:<AsamSlider\n\t\t\t\t:model-value=\"fillRatio\"\n\t\t\t\t@update:model-value=\"\n\t\t\t\t\t(value) => {\n\t\t\t\t\t\tif (typeof value === 'number') fillRatio = value;\n\t\t\t\t\t}\n\t\t\t\t\"\n\t\t\t/>\n\t\t</div>\n\t\t<!-- prettier-ignore -->\n\t\t<AsamSpace\n\t\t\tfill\n\t\t\twrap\n\t\t\t:fill-ratio=\"fillRatio\"\n\t\t\t:direction=\"direction\"\n\t\t\tstyle=\"width: 100%\"\n\t\t>\n\t\t\t<AsamCard v-for=\"i in 5\" :key=\"i\" class=\"box-card\">\n\t\t\t\t<template #header>\n\t\t\t\t\t<div class=\"card-header\">\n\t\t\t\t\t\t<span>Card name</span>\n\t\t\t\t\t\t<AsamButton class=\"button\" text>Operation button</AsamButton>\n\t\t\t\t\t</div>\n\t\t\t\t</template>\n\t\t\t\t<div v-for=\"o in 4\" :key=\"o\" class=\"text item\">\n\t\t\t\t\t{{ 'List item ' + o }}\n\t\t\t\t</div>\n\t\t\t</AsamCard>\n\t\t</AsamSpace>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamSpaceCapFillRatioDemo' });\nimport { AsamRadioItem, AsamSlider, AsamSpace, AsamCard, AsamButton } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nimport type { AsamSpaceInstance } from '@asam-ui/ui';\n\nconst direction = ref<AsamSpaceInstance['direction']>('horizontal');\nconst fillRatio = ref(30);\n</script>\n",
+			"originalSourceSha256": "ebbc2cf4ee664ea48792565f7cc8e9c2066f2303288c96833722e52d49af0ef4",
+			"notice": {
+				"id": "5b24a7bfba13272577ce39493bd24b10f312cc7ba29fbdcd0215cfd7c8dc3c7d",
+				"url": "/licenses/source-notices/5b24a7bfba13272577ce39493bd24b10f312cc7ba29fbdcd0215cfd7c8dc3c7d.txt",
+				"licenseFilename": "LICENSE-5b24a7bfba13272577ce39493bd24b10f312cc7ba29fbdcd0215cfd7c8dc3c7d.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/space/fill-ratio.vue",
+					"sourceSha256": "2477eb3a10ba579870ee412ec65e3a3284ee0e32bf4d158cb145ac7eefc35bdd",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-5b24a7bfba13272577ce39493bd24b10f312cc7ba29fbdcd0215cfd7c8dc3c7d.txt",
+			"source": "Adapted from Element Plus 2.14.7 space/fill-ratio. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "5b24a7bfba13272577ce39493bd24b10f312cc7ba29fbdcd0215cfd7c8dc3c7d",
+			"noticeId": "5b24a7bfba13272577ce39493bd24b10f312cc7ba29fbdcd0215cfd7c8dc3c7d"
+		}
+	]
+}

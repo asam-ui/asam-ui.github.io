@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamAnchor/cap-affix/js/Demo.vue",
+			"sha256": "027fe452878a2cf38cd839f6d0cbaf8ed38e5051f7de439d4c4625d66860e8c7",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-a39095b82898f6e607b83a984383d4ef171bef41c7653e3acb5fde59b65b42aa.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/a39095b82898f6e607b83a984383d4ef171bef41c7653e3acb5fde59b65b42aa.txt\n-->\n<template>\n\t<AsamAffix :offset=\"60\">\n\t\t<AsamAnchor :offset=\"70\" style=\"width: 300px\">\n\t\t\t<AsamAnchorLink :href=\"`#${locale['basic-usage']}`\">\n\t\t\t\t{{ locale['Basic Usage'] }}\n\t\t\t</AsamAnchorLink>\n\t\t\t<AsamAnchorLink :href=\"`#${locale['horizontal-mode']}`\">\n\t\t\t\t{{ locale['Horizontal Mode'] }}\n\t\t\t</AsamAnchorLink>\n\t\t\t<AsamAnchorLink :href=\"`#${locale['scroll-container']}`\">\n\t\t\t\t{{ locale['Scroll Container'] }}\n\t\t\t</AsamAnchorLink>\n\t\t\t<AsamAnchorLink :href=\"`#${locale['anchor-api']}`\">\n\t\t\t\t{{ locale['Anchor API'] }}\n\t\t\t\t<template #sub-link>\n\t\t\t\t\t<AsamAnchorLink :href=\"`#${locale['anchor-attributes']}`\">\n\t\t\t\t\t\t{{ locale['Anchor Attributes'] }}\n\t\t\t\t\t</AsamAnchorLink>\n\t\t\t\t\t<AsamAnchorLink :href=\"`#${locale['anchor-events']}`\">\n\t\t\t\t\t\t{{ locale['Anchor Events'] }}\n\t\t\t\t\t</AsamAnchorLink>\n\t\t\t\t</template>\n\t\t\t</AsamAnchorLink>\n\t\t</AsamAnchor>\n\t</AsamAffix>\n\t<section\n\t\tv-for=\"(target, key) in locale\"\n\t\t:id=\"key === key.toLowerCase() ? target : undefined\"\n\t\t:key=\"key\"\n\t\tstyle=\"min-height: 180px\"\n\t>\n\t\t{{ target }}\n\t</section>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamAnchorCapAffixDemo' });\nimport { AsamAffix, AsamAnchor, AsamAnchorLink } from '@asam-ui/ui';\nimport { computed } from 'vue';\nconst locale = computed(() => ({\n\t'basic-usage': 'ui032-cap-affix-basic-usage',\n\t'horizontal-mode': 'ui032-cap-affix-horizontal-mode',\n\t'scroll-container': 'ui032-cap-affix-scroll-container',\n\t'anchor-api': 'ui032-cap-affix-anchor-api',\n\t'anchor-attributes': 'ui032-cap-affix-anchor-attributes',\n\t'anchor-events': 'ui032-cap-affix-anchor-events',\n\t'Basic Usage': 'Basic Usage',\n\t'Horizontal Mode': 'Horizontal Mode',\n\t'Scroll Container': 'Scroll Container',\n\t'Anchor API': 'Anchor API',\n\t'Anchor Attributes': 'Anchor Attributes',\n\t'Anchor Events': 'Anchor Events'\n}));\n</script>\n",
+			"originalSourceSha256": "72f54f929c9e11ea53d74a885aa6fd819253f55e1ca4e3d15a82e1ae0014ae7f",
+			"notice": {
+				"id": "a39095b82898f6e607b83a984383d4ef171bef41c7653e3acb5fde59b65b42aa",
+				"url": "/licenses/source-notices/a39095b82898f6e607b83a984383d4ef171bef41c7653e3acb5fde59b65b42aa.txt",
+				"licenseFilename": "LICENSE-a39095b82898f6e607b83a984383d4ef171bef41c7653e3acb5fde59b65b42aa.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/anchor/affix.vue",
+					"sourceSha256": "113f877e00ec17a30685f180071f077c3e31d78b56614f21017d4063dd055375",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-a39095b82898f6e607b83a984383d4ef171bef41c7653e3acb5fde59b65b42aa.txt",
+			"source": "Adapted from Element Plus 2.14.7 anchor/affix. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "a39095b82898f6e607b83a984383d4ef171bef41c7653e3acb5fde59b65b42aa",
+			"noticeId": "a39095b82898f6e607b83a984383d4ef171bef41c7653e3acb5fde59b65b42aa"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamMessageBox/ep2147-draggable/js/Demo.vue",
+			"sha256": "81e94e82862c89f797d755259b27b7b7c3a34bf1a87660a29898901f2b414dac",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-399986496e94e8a7964b94c5d2b5c41fc124bbd625a79b1da2d3c6263b62f2cd.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/399986496e94e8a7964b94c5d2b5c41fc124bbd625a79b1da2d3c6263b62f2cd.txt\n-->\n<template>\n\t<div class=\"flex flex-wrap gap-1\">\n\t\t<AsamButton class=\"!ml-0\" plain @click=\"open\"> Open a draggable Message Box </AsamButton>\n\t\t<AsamButton class=\"!ml-0\" plain @click=\"open2\">\n\t\t\tOpen a overflow draggable Message Box\n\t\t</AsamButton>\n\t\t<AsamButton class=\"!ml-0\" plain @click=\"open3\">\n\t\t\tOpen a custom dragging style Message Box\n\t\t</AsamButton>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamButton, AsamMessage, AsamMessageBox } from '@asam-ui/ui';\nimport { onBeforeUnmount } from 'vue';\nconst open = () => {\n\tAsamMessageBox.confirm('proxy will permanently delete the file. Continue?', 'Warning', {\n\t\tconfirmButtonText: 'OK',\n\t\tcancelButtonText: 'Cancel',\n\t\ttype: 'warning',\n\t\tdraggable: true\n\t})\n\t\t.then(() => {\n\t\t\ttrackAsamMessage(\n\t\t\t\tAsamMessage({\n\t\t\t\t\ttype: 'success',\n\t\t\t\t\tmessage: 'Delete completed'\n\t\t\t\t})\n\t\t\t);\n\t\t})\n\t\t.catch(() => {\n\t\t\ttrackAsamMessage(\n\t\t\t\tAsamMessage({\n\t\t\t\t\ttype: 'info',\n\t\t\t\t\tmessage: 'Delete canceled'\n\t\t\t\t})\n\t\t\t);\n\t\t});\n};\nconst open2 = () => {\n\tAsamMessageBox.confirm('proxy will permanently delete the file. Continue?', 'Warning', {\n\t\tconfirmButtonText: 'OK',\n\t\tcancelButtonText: 'Cancel',\n\t\ttype: 'warning',\n\t\tdraggable: true,\n\t\toverflow: true\n\t})\n\t\t.then(() => {\n\t\t\ttrackAsamMessage(\n\t\t\t\tAsamMessage({\n\t\t\t\t\ttype: 'success',\n\t\t\t\t\tmessage: 'Delete completed'\n\t\t\t\t})\n\t\t\t);\n\t\t})\n\t\t.catch(() => {\n\t\t\ttrackAsamMessage(\n\t\t\t\tAsamMessage({\n\t\t\t\t\ttype: 'info',\n\t\t\t\t\tmessage: 'Delete canceled'\n\t\t\t\t})\n\t\t\t);\n\t\t});\n};\nconst open3 = () => {\n\tAsamMessageBox.confirm(\n\t\t'This message box has custom dragging styles. Try dragging it to see the effects!',\n\t\t'Custom Dragging Style',\n\t\t{\n\t\t\tconfirmButtonText: 'OK',\n\t\t\tcancelButtonText: 'Cancel',\n\t\t\ttype: 'info',\n\t\t\tdraggable: true,\n\t\t\tcustomClass: 'custom-dragging-message-box'\n\t\t}\n\t)\n\t\t.then(() => {\n\t\t\ttrackAsamMessage(\n\t\t\t\tAsamMessage({\n\t\t\t\t\ttype: 'success',\n\t\t\t\t\tmessage: 'Action completed'\n\t\t\t\t})\n\t\t\t);\n\t\t})\n\t\t.catch(() => {\n\t\t\ttrackAsamMessage(\n\t\t\t\tAsamMessage({\n\t\t\t\t\ttype: 'info',\n\t\t\t\t\tmessage: 'Action canceled'\n\t\t\t\t})\n\t\t\t);\n\t\t});\n};\nconst ownedAsamMessage = new Set();\nlet mountedAsamMessage = true;\nconst trackAsamMessage = (handle) => {\n\tif (mountedAsamMessage) ownedAsamMessage.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamMessage = false;\n\tfor (const handle of ownedAsamMessage) handle.close();\n\townedAsamMessage.clear();\n});\n</script>\n\n<style>\n.custom-dragging-message-box.is-dragging {\n\tborder: 2px dashed var(--el-color-primary);\n\topacity: 0.65;\n}\n</style>\n",
+			"originalSourceSha256": "5a9291fa73e0c955d4c099d3b857160ba6affe7a5b39faddf8fb7da515e00694",
+			"notice": {
+				"id": "399986496e94e8a7964b94c5d2b5c41fc124bbd625a79b1da2d3c6263b62f2cd",
+				"url": "/licenses/source-notices/399986496e94e8a7964b94c5d2b5c41fc124bbd625a79b1da2d3c6263b62f2cd.txt",
+				"licenseFilename": "LICENSE-399986496e94e8a7964b94c5d2b5c41fc124bbd625a79b1da2d3c6263b62f2cd.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/message-box/draggable.vue",
+					"sourceSha256": "40d742de96c188b20d19c47d607cc13be4057211e10d8a31390f30ae057b320f",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-399986496e94e8a7964b94c5d2b5c41fc124bbd625a79b1da2d3c6263b62f2cd.txt",
+			"source": "Adapted from Element Plus 2.14.7 message-box/draggable. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "399986496e94e8a7964b94c5d2b5c41fc124bbd625a79b1da2d3c6263b62f2cd",
+			"noticeId": "399986496e94e8a7964b94c5d2b5c41fc124bbd625a79b1da2d3c6263b62f2cd"
+		}
+	]
+}

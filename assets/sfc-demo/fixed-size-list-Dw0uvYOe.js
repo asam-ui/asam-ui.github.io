@@ -1,0 +1,6 @@
+import{Lt as e}from"./sfc-demo.js";import{n as t}from"./error-DSg9eOJF.js";import{d as n,r,t as i}from"./defaults-oMahYubS.js";import{a}from"./scrollbar-Bp1Om-Yf.js";import{t as o}from"./build-list-DswB5Wr2.js";var s=o({name:`ElFixedSizeList`,getItemOffset:({itemSize:e},t)=>t*e,getItemSize:({itemSize:e})=>e,getEstimatedTotalSize:({total:e,itemSize:t})=>t*e,getOffset:({height:o,total:s,itemSize:c,layout:l,width:u},d,f,p)=>{let m=a(l)?u:o;e(m)&&t(`[ElVirtualList]`,`
+        You should set
+          width/height
+        to number when your layout is
+          horizontal/vertical
+      `);let h=Math.max(0,s*c-m),g=Math.min(h,d*c),_=Math.max(0,(d+1)*c-m);switch(f===`smart`&&(f=p>=_-m&&p<=g+m?i:r),f){case n:return g;case`end`:return _;case r:{let e=Math.round(_+(g-_)/2);return e<Math.ceil(m/2)?0:e>h+Math.floor(m/2)?h:e}case i:default:return p>=_&&p<=g?p:p<_?_:g}},getStartIndexForOffset:({total:e,itemSize:t},n)=>Math.max(0,Math.min(e-1,Math.floor(n/t))),getStopIndexForStartIndex:({height:e,total:t,itemSize:n,layout:r,width:i},o,s)=>{let c=o*n,l=a(r)?i:e,u=Math.ceil((l+s-c)/n);return Math.max(0,Math.min(t-1,o+u-1))},initCache(){},clearCache:!0,validateProps(){}});export{s as t};

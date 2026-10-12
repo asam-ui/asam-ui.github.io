@@ -1,0 +1,1 @@
+import{Tt as e,W as t,y as n}from"./sfc-demo.js";import{t as r}from"./Index-BaqEmWKo-CDKb2ukf.js";var i=Object.assign({name:`AsamEmptyCapImageSizeDemo`},{__name:`Demo`,setup(i){return(i,a)=>(t(),n(e(r),{"image-size":200}))}});export{i as default};

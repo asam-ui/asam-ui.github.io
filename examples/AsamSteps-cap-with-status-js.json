@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamSteps/cap-with-status/js/Demo.vue",
+			"sha256": "f277fbed80b44829d6113f2623149dbd8c2724bbd220314e96a43619569d0bbc",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f9817102e1b71083424cc6328e7f9e5d0ede1a855df12ce2bc560fc9bd44d439.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f9817102e1b71083424cc6328e7f9e5d0ede1a855df12ce2bc560fc9bd44d439.txt\n-->\n<template>\n\t<AsamSteps style=\"max-width: 600px\" :space=\"200\" :active=\"1\" finish-status=\"success\">\n\t\t<AsamStep title=\"Done\" />\n\t\t<AsamStep title=\"Processing\" />\n\t\t<AsamStep title=\"Step 3\" />\n\t</AsamSteps>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamStepsCapWithStatusDemo' });\nimport { AsamSteps, AsamStep } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "8bc496e06b596980ac318f98581c379318990ebcb61596e8b9a2d4f07a714625",
+			"notice": {
+				"id": "f9817102e1b71083424cc6328e7f9e5d0ede1a855df12ce2bc560fc9bd44d439",
+				"url": "/licenses/source-notices/f9817102e1b71083424cc6328e7f9e5d0ede1a855df12ce2bc560fc9bd44d439.txt",
+				"licenseFilename": "LICENSE-f9817102e1b71083424cc6328e7f9e5d0ede1a855df12ce2bc560fc9bd44d439.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/steps/with-status.vue",
+					"sourceSha256": "30188fe1f7560db4eb05bbc1f2f0abc6340e04a409035e0977ab5b143ff2ab78",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-f9817102e1b71083424cc6328e7f9e5d0ede1a855df12ce2bc560fc9bd44d439.txt",
+			"source": "Adapted from Element Plus 2.14.7 steps/with-status. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "f9817102e1b71083424cc6328e7f9e5d0ede1a855df12ce2bc560fc9bd44d439",
+			"noticeId": "f9817102e1b71083424cc6328e7f9e5d0ede1a855df12ce2bc560fc9bd44d439"
+		}
+	]
+}

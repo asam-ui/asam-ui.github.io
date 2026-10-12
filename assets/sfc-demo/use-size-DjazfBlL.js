@@ -1,0 +1,1 @@
+import{Tt as e,_ as t,j as n}from"./sfc-demo.js";import{t as r}from"./size-B9nX7HRv.js";import{t as i}from"./runtime-Bsgax5ca.js";var a=i({type:String,values:r,required:!1}),o=Symbol(`size`),s=()=>{let r=n(o,{});return t(()=>e(r.size)||``)};export{s as n,a as r,o as t};

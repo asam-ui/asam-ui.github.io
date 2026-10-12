@@ -1,0 +1,1 @@
+import"./sfc-demo.js";import{t as e}from"./click-outside-CV8Vfqdw.js";var t=Object.assign({},e,{install(e){e.directive(`asam-click-outside`,t)}});export{t};

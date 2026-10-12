@@ -1,0 +1,1 @@
+import"./sfc-demo.js";import{i as e}from"./Index-CnBY3x4a2-CezcXu-j.js";var t=Object.assign({},e,{install(e){e.component(`AsamMenuItemGroup`,t)}});export{t};

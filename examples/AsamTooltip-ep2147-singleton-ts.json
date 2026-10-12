@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTooltip/ep2147-singleton/ts/Demo.vue",
+			"sha256": "38e2fb09109725bd9791b5c03aeffb01a5c02708d0b0a5d172cfe89f893c6dd5",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bf259e6da208760412b485d8e15ca10ae47180c627cb6bf33aad34c8d4a8c295.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bf259e6da208760412b485d8e15ca10ae47180c627cb6bf33aad34c8d4a8c295.txt\n-->\n<template>\n\t<div>\n\t\t<span v-for=\"i in 3\" :key=\"i\" @mouseover=\"setReference\"\n\t\t\t><AsamButton @click=\"visible = !visible\">Click to open tooltip</AsamButton></span\n\t\t>\n\t</div>\n\n\t<AsamTooltip\n\t\tref=\"tooltipRef\"\n\t\t:visible=\"visible\"\n\t\t:popper-options=\"{\n\t\t\tmodifiers: [\n\t\t\t\t{\n\t\t\t\t\tname: 'computeStyles',\n\t\t\t\t\toptions: {\n\t\t\t\t\t\tadaptive: false,\n\t\t\t\t\t\tenabled: false\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t]\n\t\t}\"\n\t\t:virtual-ref=\"buttonRef\"\n\t\tvirtual-triggering\n\t\tpopper-class=\"singleton-tooltip\"\n\t>\n\t\t<template #content>\n\t\t\t<span> Some content </span>\n\t\t</template>\n\t</AsamTooltip>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst buttonRef = ref<HTMLElement>();\nconst tooltipRef = ref();\n\nconst visible = ref(false);\n\nconst setReference = (event: MouseEvent) => {\n\tbuttonRef.value = event.currentTarget instanceof HTMLElement ? event.currentTarget : undefined;\n};\n</script>\n\n<style>\n.singleton-tooltip {\n\ttransition: transform 0.3s var(--el-transition-function-fast-bezier);\n}\n</style>\n",
+			"originalSourceSha256": "1a151647b85384aab00a6a2c0eeb4ecc1754a66fa88c374fe3969a82d9657526",
+			"notice": {
+				"id": "bf259e6da208760412b485d8e15ca10ae47180c627cb6bf33aad34c8d4a8c295",
+				"url": "/licenses/source-notices/bf259e6da208760412b485d8e15ca10ae47180c627cb6bf33aad34c8d4a8c295.txt",
+				"licenseFilename": "LICENSE-bf259e6da208760412b485d8e15ca10ae47180c627cb6bf33aad34c8d4a8c295.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/tooltip/singleton.vue",
+					"sourceSha256": "2d5bb0706a3ea9dc43afac804439b3e8d327fd35c65edf7976f7994e73a72676",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-bf259e6da208760412b485d8e15ca10ae47180c627cb6bf33aad34c8d4a8c295.txt",
+			"source": "Adapted from Element Plus 2.14.7 tooltip/singleton. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "bf259e6da208760412b485d8e15ca10ae47180c627cb6bf33aad34c8d4a8c295",
+			"noticeId": "bf259e6da208760412b485d8e15ca10ae47180c627cb6bf33aad34c8d4a8c295"
+		}
+	]
+}

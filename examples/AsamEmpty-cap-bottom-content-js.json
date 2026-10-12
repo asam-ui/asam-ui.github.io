@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamEmpty/cap-bottom-content/js/Demo.vue",
+			"sha256": "8e2fba76618033efe306a14149c9ec4a23e74a8e3a1d1710bca10c05594a3b9f",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt\n-->\n<template>\n\t<AsamEmpty>\n\t\t<AsamButton type=\"primary\">Button</AsamButton>\n\t</AsamEmpty>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamEmptyCapBottomContentDemo' });\nimport { AsamEmpty, AsamButton } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "58c1f378ceb146bc72f0f379798a14a14452e0967621bb25cf1d0e52df014fae",
+			"notice": {
+				"id": "78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f",
+				"url": "/licenses/source-notices/78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt",
+				"licenseFilename": "LICENSE-78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/empty/bottom-content.vue",
+					"sourceSha256": "6b0be86b5e824cfa26c61d5ee6ccf2e4c93a2586512d87370dae943d9f9cd0e2",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt",
+			"source": "Adapted from Element Plus 2.14.7 empty/bottom-content. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f",
+			"noticeId": "78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamText/cap-mixed/ts/Demo.vue",
+			"sha256": "661bf6bf4dcd54c3bb4c3da1e27fb514b716df975e7ef4772e9f10285633859d",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f893fe311e220708f7563252b2d6f421aaa38a036459065ac3f141298c5352cb.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f893fe311e220708f7563252b2d6f421aaa38a036459065ac3f141298c5352cb.txt\n-->\n<template>\n\t<AsamSpace direction=\"vertical\">\n\t\t<AsamText>\n\t\t\t<AsamIcon>\n\t\t\t\t<Grid />\n\t\t\t</AsamIcon>\n\t\t\tElement-Plus\n\t\t</AsamText>\n\t\t<AsamRow>\n\t\t\t<AsamText>Rate</AsamText>\n\t\t\t<AsamRate class=\"ml-1\" />\n\t\t</AsamRow>\n\t\t<AsamText>\n\t\t\tThis is text mixed icon\n\t\t\t<AsamIcon>\n\t\t\t\t<Bell />\n\t\t\t</AsamIcon>\n\t\t\tand component\n\t\t\t<AsamButton>Button</AsamButton>\n\t\t</AsamText>\n\t</AsamSpace>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTextCapMixedDemo' });\nimport { AsamSpace, AsamText, AsamIcon, AsamRow, AsamRate, AsamButton } from '@asam-ui/ui';\n\nimport { Bell, Grid } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.ml-1 {\n\tmargin-left: 0.25rem;\n}\n</style>\n",
+			"originalSourceSha256": "68e48eac7c3a6252fbfb250229edd52829f0f665d20947cad8c853850e64a87e",
+			"notice": {
+				"id": "f893fe311e220708f7563252b2d6f421aaa38a036459065ac3f141298c5352cb",
+				"url": "/licenses/source-notices/f893fe311e220708f7563252b2d6f421aaa38a036459065ac3f141298c5352cb.txt",
+				"licenseFilename": "LICENSE-f893fe311e220708f7563252b2d6f421aaa38a036459065ac3f141298c5352cb.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/text/mixed.vue",
+					"sourceSha256": "9796787d1fbd89687b4b38b32dfbba5c4bbbc9878ffad22dc68dbbef4472f5cf",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-f893fe311e220708f7563252b2d6f421aaa38a036459065ac3f141298c5352cb.txt",
+			"source": "Adapted from Element Plus 2.14.7 text/mixed. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "f893fe311e220708f7563252b2d6f421aaa38a036459065ac3f141298c5352cb",
+			"noticeId": "f893fe311e220708f7563252b2d6f421aaa38a036459065ac3f141298c5352cb"
+		}
+	]
+}

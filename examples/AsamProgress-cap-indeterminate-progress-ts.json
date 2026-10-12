@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamProgress/cap-indeterminate-progress/ts/Demo.vue",
+			"sha256": "f490196a9ac919b4906be2ae28742cd521369615e206b257fbc60d8aa3051628",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-cb1d983fa9e60d2c6f01d3cfbabeb2fa29f1c8863c611d19fa6743381a32ab78.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/cb1d983fa9e60d2c6f01d3cfbabeb2fa29f1c8863c611d19fa6743381a32ab78.txt\n-->\n<template>\n\t<div class=\"demo-progress\">\n\t\t<AsamProgress :percentage=\"50\" :indeterminate=\"true\" />\n\t\t<AsamProgress :percentage=\"100\" :format=\"format\" :indeterminate=\"true\" />\n\t\t<AsamProgress :percentage=\"100\" status=\"success\" :indeterminate=\"true\" :duration=\"5\" />\n\t\t<AsamProgress :percentage=\"100\" status=\"warning\" :indeterminate=\"true\" :duration=\"1\" />\n\t\t<AsamProgress :percentage=\"50\" status=\"exception\" :indeterminate=\"true\" />\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamProgressCapIndeterminateProgressDemo' });\nimport { AsamProgress } from '@asam-ui/ui';\n\nconst format = (percentage: number) => (percentage === 100 ? 'Full' : `${percentage}%`);\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.demo-progress .el-progress--line {\n\tmargin-bottom: 15px;\n\tmax-width: 600px;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n",
+			"originalSourceSha256": "55b79b2112279d3c8339cc16659061599d05ea723f00b5f6837915b3c69fd98a",
+			"notice": {
+				"id": "cb1d983fa9e60d2c6f01d3cfbabeb2fa29f1c8863c611d19fa6743381a32ab78",
+				"url": "/licenses/source-notices/cb1d983fa9e60d2c6f01d3cfbabeb2fa29f1c8863c611d19fa6743381a32ab78.txt",
+				"licenseFilename": "LICENSE-cb1d983fa9e60d2c6f01d3cfbabeb2fa29f1c8863c611d19fa6743381a32ab78.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/progress/indeterminate-progress.vue",
+					"sourceSha256": "89dcc2b19eed29d7b0733048b842ab4a9bd67e41bacef328a1a3b93ca9540be6",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-cb1d983fa9e60d2c6f01d3cfbabeb2fa29f1c8863c611d19fa6743381a32ab78.txt",
+			"source": "Adapted from Element Plus 2.14.7 progress/indeterminate-progress. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "cb1d983fa9e60d2c6f01d3cfbabeb2fa29f1c8863c611d19fa6743381a32ab78",
+			"noticeId": "cb1d983fa9e60d2c6f01d3cfbabeb2fa29f1c8863c611d19fa6743381a32ab78"
+		}
+	]
+}

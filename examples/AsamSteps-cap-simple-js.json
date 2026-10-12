@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamSteps/cap-simple/js/Demo.vue",
+			"sha256": "f349c2a7b799499e1eb6abf47533523c5d45c4c360682e9da67dcd14db481fe9",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-9c857ee3f3ba3ea93574f58eb8f00f1bfc77aa31eae3081b610ded09405b5b08.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/9c857ee3f3ba3ea93574f58eb8f00f1bfc77aa31eae3081b610ded09405b5b08.txt\n-->\n<template>\n\t<AsamSteps class=\"mb-4\" style=\"max-width: 600px\" :space=\"200\" :active=\"1\" simple>\n\t\t<AsamStep title=\"Step 1\" :icon=\"Edit\" />\n\t\t<AsamStep title=\"Step 2\" :icon=\"UploadFilled\" />\n\t\t<AsamStep title=\"Step 3\" :icon=\"Picture\" />\n\t</AsamSteps>\n\n\t<AsamSteps style=\"max-width: 600px\" :active=\"1\" finish-status=\"success\" simple>\n\t\t<AsamStep title=\"Step 1\" />\n\t\t<AsamStep title=\"Step 2\" />\n\t\t<AsamStep title=\"Step 3\" />\n\t</AsamSteps>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamStepsCapSimpleDemo' });\nimport { AsamSteps, AsamStep } from '@asam-ui/ui';\nimport { Edit, Picture, UploadFilled } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.mb-4 {\n\tmargin-bottom: 1rem;\n}\n</style>\n",
+			"originalSourceSha256": "d72a83a7890fce4372d0ac76ce0072a25731a1fd270cfc2440fd3eb8058be4dc",
+			"notice": {
+				"id": "9c857ee3f3ba3ea93574f58eb8f00f1bfc77aa31eae3081b610ded09405b5b08",
+				"url": "/licenses/source-notices/9c857ee3f3ba3ea93574f58eb8f00f1bfc77aa31eae3081b610ded09405b5b08.txt",
+				"licenseFilename": "LICENSE-9c857ee3f3ba3ea93574f58eb8f00f1bfc77aa31eae3081b610ded09405b5b08.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/steps/simple.vue",
+					"sourceSha256": "6fe136cb418e624ba5c06d735e6b96906aedc6390e3fba43bb1ec5f9b2f59d33",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-9c857ee3f3ba3ea93574f58eb8f00f1bfc77aa31eae3081b610ded09405b5b08.txt",
+			"source": "Adapted from Element Plus 2.14.7 steps/simple. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "9c857ee3f3ba3ea93574f58eb8f00f1bfc77aa31eae3081b610ded09405b5b08",
+			"noticeId": "9c857ee3f3ba3ea93574f58eb8f00f1bfc77aa31eae3081b610ded09405b5b08"
+		}
+	]
+}

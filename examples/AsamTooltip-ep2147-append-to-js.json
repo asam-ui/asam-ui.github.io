@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTooltip/ep2147-append-to/js/Demo.vue",
+			"sha256": "61db4704407bae77f2b0e945214aae43b52663b7180b07928ccd1643f992d544",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-746e4433b73e8cd76e66da7b0d69666dde9ef0abe31cf0a06f224a8a008a2aa0.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/746e4433b73e8cd76e66da7b0d69666dde9ef0abe31cf0a06f224a8a008a2aa0.txt\n-->\n<template>\n\t<AsamTooltip\n\t\t:append-to=\"targetElement\"\n\t\ttrigger=\"click\"\n\t\tcontent=\"Append to .target\"\n\t\tplacement=\"top\"\n\t>\n\t\t<AsamButton class=\"target\">Click to open tooltip</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\nimport { onMounted, ref } from 'vue';\nconst targetElement = ref('');\nonMounted(() => {\n\ttargetElement.value = '.target';\n});\n</script>\n\n<style scoped>\n.target {\n\tposition: relative;\n\tmargin-top: 20px;\n}\n</style>\n",
+			"originalSourceSha256": "4c998b4d626eb5e01176b7363a062d653c802d43ab11b68b7409c5d8ec50f944",
+			"notice": {
+				"id": "746e4433b73e8cd76e66da7b0d69666dde9ef0abe31cf0a06f224a8a008a2aa0",
+				"url": "/licenses/source-notices/746e4433b73e8cd76e66da7b0d69666dde9ef0abe31cf0a06f224a8a008a2aa0.txt",
+				"licenseFilename": "LICENSE-746e4433b73e8cd76e66da7b0d69666dde9ef0abe31cf0a06f224a8a008a2aa0.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/tooltip/append-to.vue",
+					"sourceSha256": "936b1bbe94479d9bf05a8ddb9269abe281c80160640d50293f07910ef10443ff",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-746e4433b73e8cd76e66da7b0d69666dde9ef0abe31cf0a06f224a8a008a2aa0.txt",
+			"source": "Adapted from Element Plus 2.14.7 tooltip/append-to. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "746e4433b73e8cd76e66da7b0d69666dde9ef0abe31cf0a06f224a8a008a2aa0",
+			"noticeId": "746e4433b73e8cd76e66da7b0d69666dde9ef0abe31cf0a06f224a8a008a2aa0"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamSpace/cap-literal-type-spacer/ts/Demo.vue",
+			"sha256": "eaef08402e8c0adfeadfd8e0081bd31bd553c2187cc279e304543d278c996ba7",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-976e928556794712e6471c4641bab1260119e2a0ab2dd3281f632627418b9cba.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/976e928556794712e6471c4641bab1260119e2a0ab2dd3281f632627418b9cba.txt\n-->\n<template>\n\t<AsamSpace :size=\"size\" spacer=\"|\">\n\t\t<div v-for=\"i in 2\" :key=\"i\">\n\t\t\t<AsamButton> button {{ i }} </AsamButton>\n\t\t</div>\n\t</AsamSpace>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamSpaceCapLiteralTypeSpacerDemo' });\nimport { AsamSpace, AsamButton } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst size = ref(10);\n</script>\n",
+			"originalSourceSha256": "62f26b4b6e92efb0fd930100123d8f0b7244a53e72834ea3de54a19be626c040",
+			"notice": {
+				"id": "976e928556794712e6471c4641bab1260119e2a0ab2dd3281f632627418b9cba",
+				"url": "/licenses/source-notices/976e928556794712e6471c4641bab1260119e2a0ab2dd3281f632627418b9cba.txt",
+				"licenseFilename": "LICENSE-976e928556794712e6471c4641bab1260119e2a0ab2dd3281f632627418b9cba.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/space/literal-type-spacer.vue",
+					"sourceSha256": "dcbb75466dbac173851bca048f9b37519e70472bcfad92da6887681a2f3f3313",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-976e928556794712e6471c4641bab1260119e2a0ab2dd3281f632627418b9cba.txt",
+			"source": "Adapted from Element Plus 2.14.7 space/literal-type-spacer. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "976e928556794712e6471c4641bab1260119e2a0ab2dd3281f632627418b9cba",
+			"noticeId": "976e928556794712e6471c4641bab1260119e2a0ab2dd3281f632627418b9cba"
+		}
+	]
+}

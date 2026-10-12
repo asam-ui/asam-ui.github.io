@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamCalendar/official-calendar-basic/js/Demo.vue",
+			"sha256": "4de9c3914269a3bd25dd16a5d4a15a9d002dab6c4ca79ced972c1cbc68cde592",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0e04c184c6b2804985ece3c4d0f63a53444d89d0955514386c7752bae2a17f02.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/0e04c184c6b2804985ece3c4d0f63a53444d89d0955514386c7752bae2a17f02.txt\n-->\n<template>\n\t<AsamCalendar v-model=\"value\" />\n</template>\n\n<script setup>\nimport { AsamCalendar } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamCalendarofficialcalendarbasicExample' });\nimport { ref } from 'vue';\nconst value = ref(new Date());\n</script>\n",
+			"originalSourceSha256": "806064b617715a2d83f8600bbed11c2e09a7af6862a3e2bd6dd2592e6865e71b",
+			"notice": {
+				"id": "0e04c184c6b2804985ece3c4d0f63a53444d89d0955514386c7752bae2a17f02",
+				"url": "/licenses/source-notices/0e04c184c6b2804985ece3c4d0f63a53444d89d0955514386c7752bae2a17f02.txt",
+				"licenseFilename": "LICENSE-0e04c184c6b2804985ece3c4d0f63a53444d89d0955514386c7752bae2a17f02.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/calendar/basic.vue",
+					"sourceSha256": "e80f4dc7aa598c9e666890d948fe15b9a939087bf42a7c9a2fe2d0d7124d56bc",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0e04c184c6b2804985ece3c4d0f63a53444d89d0955514386c7752bae2a17f02.txt",
+			"source": "Adapted from Element Plus 2.14.7 calendar/basic. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0e04c184c6b2804985ece3c4d0f63a53444d89d0955514386c7752bae2a17f02",
+			"noticeId": "0e04c184c6b2804985ece3c4d0f63a53444d89d0955514386c7752bae2a17f02"
+		}
+	]
+}

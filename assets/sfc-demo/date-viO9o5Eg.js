@@ -1,0 +1,1 @@
+var e=[`year`,`years`,`month`,`months`,`date`,`dates`,`week`,`quarter`,`quarters`,`datetime`,`datetimerange`,`daterange`,`monthrange`,`yearrange`,`quarterrange`],t=[`sun`,`mon`,`tue`,`wed`,`thu`,`fri`,`sat`];export{e as n,t};

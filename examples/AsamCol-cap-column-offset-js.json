@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamCol/cap-column-offset/js/Demo.vue",
+			"sha256": "434e1c95842610669bb92a928ef2c6dafc3858e926d3e1e39531e36d36bcb973",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-54ecabd6f8f2df8b0e43677e255d0cfb409610bb46c573a152c5dc5ea2642e05.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/54ecabd6f8f2df8b0e43677e255d0cfb409610bb46c573a152c5dc5ea2642e05.txt\n-->\n<template>\n\t<AsamRow :gutter=\"20\">\n\t\t<AsamCol :span=\"6\"><div class=\"grid-content ep-bg-purple\" /></AsamCol>\n\t\t<AsamCol :span=\"6\" :offset=\"6\">\n\t\t\t<div class=\"grid-content ep-bg-purple\" />\n\t\t</AsamCol>\n\t</AsamRow>\n\t<AsamRow :gutter=\"20\">\n\t\t<AsamCol :span=\"6\" :offset=\"6\">\n\t\t\t<div class=\"grid-content ep-bg-purple\" />\n\t\t</AsamCol>\n\t\t<AsamCol :span=\"6\" :offset=\"6\">\n\t\t\t<div class=\"grid-content ep-bg-purple\" />\n\t\t</AsamCol>\n\t</AsamRow>\n\t<AsamRow :gutter=\"20\">\n\t\t<AsamCol :span=\"12\" :offset=\"6\">\n\t\t\t<div class=\"grid-content ep-bg-purple\" />\n\t\t</AsamCol>\n\t</AsamRow>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamColCapColumnOffsetDemo' });\nimport { AsamRow, AsamCol } from '@asam-ui/ui';\n</script>\n\n<style>\n.el-row {\n\tmargin-bottom: 20px;\n}\n\n.el-row:last-child {\n\tmargin-bottom: 0;\n}\n\n.el-col {\n\tborder-radius: 4px;\n}\n\n.grid-content {\n\tborder-radius: 4px;\n\tmin-height: 36px;\n}\n</style>\n",
+			"originalSourceSha256": "67960ce1e29f0dadf04a0ba0cf1cf848f668d11a3d6374a807163e719cfcd019",
+			"notice": {
+				"id": "54ecabd6f8f2df8b0e43677e255d0cfb409610bb46c573a152c5dc5ea2642e05",
+				"url": "/licenses/source-notices/54ecabd6f8f2df8b0e43677e255d0cfb409610bb46c573a152c5dc5ea2642e05.txt",
+				"licenseFilename": "LICENSE-54ecabd6f8f2df8b0e43677e255d0cfb409610bb46c573a152c5dc5ea2642e05.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/layout/column-offset.vue",
+					"sourceSha256": "99c4d88793cd9ad54d9fb6db65cbfdbeca303ad95e2dfc350d60f4d5e53dec8e",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-54ecabd6f8f2df8b0e43677e255d0cfb409610bb46c573a152c5dc5ea2642e05.txt",
+			"source": "Adapted from Element Plus 2.14.7 layout/column-offset. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "54ecabd6f8f2df8b0e43677e255d0cfb409610bb46c573a152c5dc5ea2642e05",
+			"noticeId": "54ecabd6f8f2df8b0e43677e255d0cfb409610bb46c573a152c5dc5ea2642e05"
+		}
+	]
+}

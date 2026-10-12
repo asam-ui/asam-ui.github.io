@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTabs/cap-default-value/js/Demo.vue",
+			"sha256": "1b3205456441c7f9d3e7a500e9220cf5eddcc7116127766af3057a89b78ca73a",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e5a988abe2c2c898678af0aa757096de6185edd38347f455cf553c1523c605c8.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e5a988abe2c2c898678af0aa757096de6185edd38347f455cf553c1523c605c8.txt\n-->\n<template>\n\t<AsamTabs v-model=\"activeName\" class=\"demo-tabs\" default-value=\"third\" @tab-click=\"handleClick\">\n\t\t<AsamTabPane v-for=\"tab in tabs\" :key=\"tab.name\" :label=\"tab.label\" :name=\"tab.name\">\n\t\t\tdefault-value: third\n\t\t\t<br />\n\t\t\tactive: {{ activeName }}\n\t\t</AsamTabPane>\n\t</AsamTabs>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTabsCapDefaultValueDemo' });\nimport { AsamTabs, AsamTabPane } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst tabs = ref([\n\t{ label: 'User', name: 'first' },\n\t{ label: 'Config', name: 'second' },\n\t{ label: 'Role', name: 'third' },\n\t{ label: 'Task', name: 'fourth' }\n]);\nconst activeName = ref();\nconst handleClick = (tab, event) => {\n\tconsole.log(tab, event);\n};\n</script>\n\n<style>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.demo-tabs > .el-tabs__content {\n\tpadding: 32px;\n\tcolor: #6b778c;\n\tfont-size: 32px;\n\tfont-weight: 600;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n",
+			"originalSourceSha256": "9999618d8f5d925c28dbf9b47832df6cb58ec5673774ddfbb4dd4a11e9ef562e",
+			"notice": {
+				"id": "e5a988abe2c2c898678af0aa757096de6185edd38347f455cf553c1523c605c8",
+				"url": "/licenses/source-notices/e5a988abe2c2c898678af0aa757096de6185edd38347f455cf553c1523c605c8.txt",
+				"licenseFilename": "LICENSE-e5a988abe2c2c898678af0aa757096de6185edd38347f455cf553c1523c605c8.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/tabs/default-value.vue",
+					"sourceSha256": "859495b97cfb59a677e81b8af8d5a4645425448bf4648076c842269b1309a2a3",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-e5a988abe2c2c898678af0aa757096de6185edd38347f455cf553c1523c605c8.txt",
+			"source": "Adapted from Element Plus 2.14.7 tabs/default-value. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "e5a988abe2c2c898678af0aa757096de6185edd38347f455cf553c1523c605c8",
+			"noticeId": "e5a988abe2c2c898678af0aa757096de6185edd38347f455cf553c1523c605c8"
+		}
+	]
+}

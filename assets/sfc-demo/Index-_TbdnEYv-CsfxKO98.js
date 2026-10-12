@@ -1,0 +1,1 @@
+import"./sfc-demo.js";import{t as e}from"./collapse-transition-C4Vxq9Yk.js";var t=Object.assign({},e,{install(e){e.component(`AsamCollapseTransition`,t)}});export{t};

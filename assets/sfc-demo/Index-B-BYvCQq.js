@@ -1,0 +1,1 @@
+import{t as e}from"./AsamButton-DAOF18el-CDdW3qaQ.js";var t=Object.assign(e,{install:t=>{t.component(`AsamButton`,e)}});export{t};

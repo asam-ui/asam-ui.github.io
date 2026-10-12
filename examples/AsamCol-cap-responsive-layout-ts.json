@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamCol/cap-responsive-layout/ts/Demo.vue",
+			"sha256": "4b4cdcbb1890cef7d6ba484edc8a38f534a69b1dfb68db10a4e1d6782c90bd4c",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-14a5cb72088bc1918bc5674660b5354067565876f10515f278ff566f074172b3.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/14a5cb72088bc1918bc5674660b5354067565876f10515f278ff566f074172b3.txt\n-->\n<template>\n\t<AsamRow :gutter=\"10\">\n\t\t<AsamCol :xs=\"8\" :sm=\"6\" :md=\"4\" :lg=\"3\" :xl=\"1\">\n\t\t\t<div class=\"grid-content ep-bg-purple\" />\n\t\t</AsamCol>\n\t\t<AsamCol :xs=\"4\" :sm=\"6\" :md=\"8\" :lg=\"9\" :xl=\"11\">\n\t\t\t<div class=\"grid-content ep-bg-purple-light\" />\n\t\t</AsamCol>\n\t\t<AsamCol :xs=\"4\" :sm=\"6\" :md=\"8\" :lg=\"9\" :xl=\"11\">\n\t\t\t<div class=\"grid-content ep-bg-purple\" />\n\t\t</AsamCol>\n\t\t<AsamCol :xs=\"8\" :sm=\"6\" :md=\"4\" :lg=\"3\" :xl=\"1\">\n\t\t\t<div class=\"grid-content ep-bg-purple-light\" />\n\t\t</AsamCol>\n\t</AsamRow>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamColCapResponsiveLayoutDemo' });\nimport { AsamRow, AsamCol } from '@asam-ui/ui';\n</script>\n\n<style>\n.el-col {\n\tborder-radius: 4px;\n}\n\n.grid-content {\n\tborder-radius: 4px;\n\tmin-height: 36px;\n}\n</style>\n",
+			"originalSourceSha256": "a4cd59d067d316be2f3dfba54bbcfb84e0a709ac89275a5465cc8905bb8715cc",
+			"notice": {
+				"id": "14a5cb72088bc1918bc5674660b5354067565876f10515f278ff566f074172b3",
+				"url": "/licenses/source-notices/14a5cb72088bc1918bc5674660b5354067565876f10515f278ff566f074172b3.txt",
+				"licenseFilename": "LICENSE-14a5cb72088bc1918bc5674660b5354067565876f10515f278ff566f074172b3.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/layout/responsive-layout.vue",
+					"sourceSha256": "415092e7ba674163408562b2694d9137e646a0da3d6c95b6bae8b2c837d06f34",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-14a5cb72088bc1918bc5674660b5354067565876f10515f278ff566f074172b3.txt",
+			"source": "Adapted from Element Plus 2.14.7 layout/responsive-layout. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "14a5cb72088bc1918bc5674660b5354067565876f10515f278ff566f074172b3",
+			"noticeId": "14a5cb72088bc1918bc5674660b5354067565876f10515f278ff566f074172b3"
+		}
+	]
+}

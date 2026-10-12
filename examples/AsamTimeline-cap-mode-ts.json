@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTimeline/cap-mode/ts/Demo.vue",
+			"sha256": "f37a907a8994e44109a7ff565795b66df930c3499e78e6c1df4ca62d9cc8ce7c",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e8c1952841ee9e39e399b687d4732dccec7f160b21f4d8a3a4bfd1a4150cc056.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e8c1952841ee9e39e399b687d4732dccec7f160b21f4d8a3a4bfd1a4150cc056.txt\n-->\n<template>\n\t<AsamRadioGroup\n\t\t:model-value=\"mode\"\n\t\t@update:model-value=\"\n\t\t\t(value) => {\n\t\t\t\tif (\n\t\t\t\t\tvalue === 'start' ||\n\t\t\t\t\tvalue === 'end' ||\n\t\t\t\t\tvalue === 'alternate' ||\n\t\t\t\t\tvalue === 'alternate-reverse'\n\t\t\t\t)\n\t\t\t\t\tmode = value;\n\t\t\t}\n\t\t\"\n\t>\n\t\t<AsamRadioButton label=\"start\" value=\"start\" />\n\t\t<AsamRadioButton label=\"alternate\" value=\"alternate\" />\n\t\t<AsamRadioButton label=\"alternate-reverse\" value=\"alternate-reverse\" />\n\t\t<AsamRadioButton label=\"end\" value=\"end\" />\n\t</AsamRadioGroup>\n\n\t<AsamTimeline class=\"mt-4\" :mode=\"mode\">\n\t\t<AsamTimelineItem\n\t\t\tv-for=\"(activity, index) in activities\"\n\t\t\t:key=\"index\"\n\t\t\t:timestamp=\"activity.timestamp\"\n\t\t>\n\t\t\t{{ activity.content }}\n\t\t</AsamTimelineItem>\n\t</AsamTimeline>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTimelineCapModeDemo' });\nimport { AsamRadioGroup, AsamRadioButton, AsamTimeline, AsamTimelineItem } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nimport type { AsamTimelineProps } from '@asam-ui/ui';\n\nconst activities = [\n\t{\n\t\tcontent: 'Event start',\n\t\ttimestamp: '2018-04-15'\n\t},\n\t{\n\t\tcontent: 'Approved',\n\t\ttimestamp: '2018-04-13'\n\t},\n\t{\n\t\tcontent: 'Success',\n\t\ttimestamp: '2018-04-11'\n\t}\n];\n\nconst mode = ref<AsamTimelineProps['mode']>('start');\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.mt-4 {\n\tmargin-top: 1rem;\n}\n</style>\n",
+			"originalSourceSha256": "eb88690e7b06518ce83e00057d0f7a5fe763988aa3c6c270044794de3d5c0c99",
+			"notice": {
+				"id": "e8c1952841ee9e39e399b687d4732dccec7f160b21f4d8a3a4bfd1a4150cc056",
+				"url": "/licenses/source-notices/e8c1952841ee9e39e399b687d4732dccec7f160b21f4d8a3a4bfd1a4150cc056.txt",
+				"licenseFilename": "LICENSE-e8c1952841ee9e39e399b687d4732dccec7f160b21f4d8a3a4bfd1a4150cc056.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/timeline/mode.vue",
+					"sourceSha256": "d154d41e3523ad1537e890009ccfba822f3d3d0b1cfa557fbce34d9c618c52b4",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-e8c1952841ee9e39e399b687d4732dccec7f160b21f4d8a3a4bfd1a4150cc056.txt",
+			"source": "Adapted from Element Plus 2.14.7 timeline/mode. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "e8c1952841ee9e39e399b687d4732dccec7f160b21f4d8a3a4bfd1a4150cc056",
+			"noticeId": "e8c1952841ee9e39e399b687d4732dccec7f160b21f4d8a3a4bfd1a4150cc056"
+		}
+	]
+}

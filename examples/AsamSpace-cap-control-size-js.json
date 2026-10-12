@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamSpace/cap-control-size/js/Demo.vue",
+			"sha256": "82c9f3880bbb7551a6cc5b14120615d599bf78666cd3a93ca5b3820457f6a24b",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-902d5a90080fa40f208f1e0f8d500034072a5de1524d993c29acd643df96503f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/902d5a90080fa40f208f1e0f8d500034072a5de1524d993c29acd643df96503f.txt\n-->\n<template>\n\t<AsamSpace direction=\"vertical\" alignment=\"start\" :size=\"30\">\n\t\t<AsamRadioGroup\n\t\t\t:model-value=\"size\"\n\t\t\t@update:model-value=\"\n\t\t\t\t(value) => {\n\t\t\t\t\tif (value === 'small' || value === 'default' || value === 'large') size = value;\n\t\t\t\t}\n\t\t\t\"\n\t\t>\n\t\t\t<AsamRadioItem value=\"large\">Large</AsamRadioItem>\n\t\t\t<AsamRadioItem value=\"default\">Default</AsamRadioItem>\n\t\t\t<AsamRadioItem value=\"small\">Small</AsamRadioItem>\n\t\t</AsamRadioGroup>\n\n\t\t<AsamSpace wrap :size=\"size\">\n\t\t\t<!-- prettier-ignore -->\n\t\t\t<AsamCard\n\t\t\t\tv-for=\"i in 3\"\n\t\t\t\t:key=\"i\"\n\t\t\t\tclass=\"box-card\"\n\t\t\t\tstyle=\"width: 250px\"\n\t\t\t>\n\t\t\t\t<template #header>\n\t\t\t\t\t<div class=\"card-header\">\n\t\t\t\t\t\t<span>Card name</span>\n\t\t\t\t\t\t<AsamButton class=\"button\" text>Operation button</AsamButton>\n\t\t\t\t\t</div>\n\t\t\t\t</template>\n\t\t\t\t<div v-for=\"o in 4\" :key=\"o\" class=\"text item\">\n\t\t\t\t\t{{ 'List item ' + o }}\n\t\t\t\t</div>\n\t\t\t</AsamCard>\n\t\t</AsamSpace>\n\t</AsamSpace>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamSpaceCapControlSizeDemo' });\nimport { AsamSpace, AsamRadioGroup, AsamRadioItem, AsamCard, AsamButton } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst size = ref('default');\n</script>\n",
+			"originalSourceSha256": "a89398c8d0129900bc83a805840f87de3a91480083ed41cd952517c849df1196",
+			"notice": {
+				"id": "902d5a90080fa40f208f1e0f8d500034072a5de1524d993c29acd643df96503f",
+				"url": "/licenses/source-notices/902d5a90080fa40f208f1e0f8d500034072a5de1524d993c29acd643df96503f.txt",
+				"licenseFilename": "LICENSE-902d5a90080fa40f208f1e0f8d500034072a5de1524d993c29acd643df96503f.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/space/control-size.vue",
+					"sourceSha256": "46d7c514b54178bcd599205199383bd482a2fe23bd9faa68a682d1eac112cbee",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-902d5a90080fa40f208f1e0f8d500034072a5de1524d993c29acd643df96503f.txt",
+			"source": "Adapted from Element Plus 2.14.7 space/control-size. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "902d5a90080fa40f208f1e0f8d500034072a5de1524d993c29acd643df96503f",
+			"noticeId": "902d5a90080fa40f208f1e0f8d500034072a5de1524d993c29acd643df96503f"
+		}
+	]
+}

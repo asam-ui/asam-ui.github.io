@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamResult/cap-basic-usage/js/Demo.vue",
+			"sha256": "7904b89408b26a4306a6cd60ce85cfa563cca21aeb1027bcf04e51704d71b54c",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ec4ce9db82c6ab1fa0e72f855af2c030149b88e1b23508d51d9ba83e359b4ed3.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ec4ce9db82c6ab1fa0e72f855af2c030149b88e1b23508d51d9ba83e359b4ed3.txt\n-->\n<template>\n\t<AsamRow>\n\t\t<AsamCol :sm=\"12\" :lg=\"6\" :xl=\"4\">\n\t\t\t<AsamResult\n\t\t\t\ticon=\"primary\"\n\t\t\t\ttitle=\"Primary Tip\"\n\t\t\t\tsub-title=\"Please follow the instructions\"\n\t\t\t>\n\t\t\t\t<template #extra>\n\t\t\t\t\t<AsamButton type=\"primary\">Back</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamResult>\n\t\t</AsamCol>\n\t\t<AsamCol :sm=\"12\" :lg=\"6\" :xl=\"4\">\n\t\t\t<AsamResult\n\t\t\t\ticon=\"success\"\n\t\t\t\ttitle=\"Success Tip\"\n\t\t\t\tsub-title=\"Please follow the instructions\"\n\t\t\t>\n\t\t\t\t<template #extra>\n\t\t\t\t\t<AsamButton type=\"primary\">Back</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamResult>\n\t\t</AsamCol>\n\t\t<AsamCol :sm=\"12\" :lg=\"6\" :xl=\"4\">\n\t\t\t<AsamResult\n\t\t\t\ticon=\"warning\"\n\t\t\t\ttitle=\"Warning Tip\"\n\t\t\t\tsub-title=\"Please follow the instructions\"\n\t\t\t>\n\t\t\t\t<template #extra>\n\t\t\t\t\t<AsamButton type=\"primary\">Back</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamResult>\n\t\t</AsamCol>\n\t\t<AsamCol :sm=\"12\" :lg=\"6\" :xl=\"4\">\n\t\t\t<AsamResult icon=\"error\" title=\"Error Tip\" sub-title=\"Please follow the instructions\">\n\t\t\t\t<template #extra>\n\t\t\t\t\t<AsamButton type=\"primary\">Back</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamResult>\n\t\t</AsamCol>\n\t\t<AsamCol :sm=\"12\" :lg=\"6\" :xl=\"4\">\n\t\t\t<AsamResult icon=\"info\" title=\"Info Tip\">\n\t\t\t\t<template #sub-title>\n\t\t\t\t\t<p>Using slot as subtitle</p>\n\t\t\t\t</template>\n\t\t\t\t<template #extra>\n\t\t\t\t\t<AsamButton type=\"primary\">Back</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamResult>\n\t\t</AsamCol>\n\t</AsamRow>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamResultCapBasicUsageDemo' });\nimport { AsamRow, AsamCol, AsamResult, AsamButton } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "5b1d610ab5fa0d6f55476c294bbeed8f66c81f2532160a55daf1be1a3a0565f1",
+			"notice": {
+				"id": "ec4ce9db82c6ab1fa0e72f855af2c030149b88e1b23508d51d9ba83e359b4ed3",
+				"url": "/licenses/source-notices/ec4ce9db82c6ab1fa0e72f855af2c030149b88e1b23508d51d9ba83e359b4ed3.txt",
+				"licenseFilename": "LICENSE-ec4ce9db82c6ab1fa0e72f855af2c030149b88e1b23508d51d9ba83e359b4ed3.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/result/basic-usage.vue",
+					"sourceSha256": "8c657b1a17ce7bdb7d8b11c69c52a98044513c9d84b6d967c334138fdb715207",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-ec4ce9db82c6ab1fa0e72f855af2c030149b88e1b23508d51d9ba83e359b4ed3.txt",
+			"source": "Adapted from Element Plus 2.14.7 result/basic-usage. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "ec4ce9db82c6ab1fa0e72f855af2c030149b88e1b23508d51d9ba83e359b4ed3",
+			"noticeId": "ec4ce9db82c6ab1fa0e72f855af2c030149b88e1b23508d51d9ba83e359b4ed3"
+		}
+	]
+}

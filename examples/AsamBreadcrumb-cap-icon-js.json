@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamBreadcrumb/cap-icon/js/Demo.vue",
+			"sha256": "a2b777014233f3ee6e55d1af8819df93e0fc286339a881a47a6e891f55d6e265",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e915599463c4f6cad0a2d5507750cda0fe0417810dcd79245533d0e7dc25e717.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e915599463c4f6cad0a2d5507750cda0fe0417810dcd79245533d0e7dc25e717.txt\n-->\n<template>\n\t<AsamBreadcrumb :separator-icon=\"ArrowRight\">\n\t\t<AsamBreadcrumbItem :to=\"{ path: '/' }\">homepage</AsamBreadcrumbItem>\n\t\t<AsamBreadcrumbItem>promotion management</AsamBreadcrumbItem>\n\t\t<AsamBreadcrumbItem>promotion list</AsamBreadcrumbItem>\n\t\t<AsamBreadcrumbItem>promotion detail</AsamBreadcrumbItem>\n\t</AsamBreadcrumb>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamBreadcrumbCapIconDemo' });\nimport { AsamBreadcrumb, AsamBreadcrumbItem } from '@asam-ui/ui';\nimport { ArrowRight } from '@asam-ui/icons-vue';\n</script>\n",
+			"originalSourceSha256": "deef3da8b9db1a91ead67521d4455e2de4ee48442f6de2eb9fef0779aba90c5a",
+			"notice": {
+				"id": "e915599463c4f6cad0a2d5507750cda0fe0417810dcd79245533d0e7dc25e717",
+				"url": "/licenses/source-notices/e915599463c4f6cad0a2d5507750cda0fe0417810dcd79245533d0e7dc25e717.txt",
+				"licenseFilename": "LICENSE-e915599463c4f6cad0a2d5507750cda0fe0417810dcd79245533d0e7dc25e717.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/breadcrumb/icon.vue",
+					"sourceSha256": "5533b21aedd9b87a618bab4e9150b7fc4ea05f092e6fe4be2dee8677e9bd0c57",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-e915599463c4f6cad0a2d5507750cda0fe0417810dcd79245533d0e7dc25e717.txt",
+			"source": "Adapted from Element Plus 2.14.7 breadcrumb/icon. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "e915599463c4f6cad0a2d5507750cda0fe0417810dcd79245533d0e7dc25e717",
+			"noticeId": "e915599463c4f6cad0a2d5507750cda0fe0417810dcd79245533d0e7dc25e717"
+		}
+	]
+}

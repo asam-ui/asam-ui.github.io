@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamProgress/cap-internal-percentage/js/Demo.vue",
+			"sha256": "1d01cd1344df5660ecd4dbefbb9a2b18fcda50f731204684008589664805ddc4",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0e5cc3c25fd1943c9f566a5a7052dac338f184e5f17192f00edf254bbfba049c.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/0e5cc3c25fd1943c9f566a5a7052dac338f184e5f17192f00edf254bbfba049c.txt\n-->\n<template>\n\t<div class=\"demo-progress\">\n\t\t<AsamProgress :text-inside=\"true\" :stroke-width=\"26\" :percentage=\"70\" />\n\t\t<AsamProgress :text-inside=\"true\" :stroke-width=\"24\" :percentage=\"100\" status=\"success\" />\n\t\t<AsamProgress :text-inside=\"true\" :stroke-width=\"22\" :percentage=\"80\" status=\"warning\" />\n\t\t<AsamProgress :text-inside=\"true\" :stroke-width=\"20\" :percentage=\"50\" status=\"exception\" />\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamProgressCapInternalPercentageDemo' });\nimport { AsamProgress } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.demo-progress .el-progress--line {\n\tmargin-bottom: 15px;\n\tmax-width: 600px;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n",
+			"originalSourceSha256": "ef42045f6909c5fac97a3c4efca3b134a54b3f4547369bcb3e194997a16fe342",
+			"notice": {
+				"id": "0e5cc3c25fd1943c9f566a5a7052dac338f184e5f17192f00edf254bbfba049c",
+				"url": "/licenses/source-notices/0e5cc3c25fd1943c9f566a5a7052dac338f184e5f17192f00edf254bbfba049c.txt",
+				"licenseFilename": "LICENSE-0e5cc3c25fd1943c9f566a5a7052dac338f184e5f17192f00edf254bbfba049c.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/progress/internal-percentage.vue",
+					"sourceSha256": "2c7c27f7a60693c9509531e93ce14bd9d2941e23e11364394c49d2db697fa55b",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0e5cc3c25fd1943c9f566a5a7052dac338f184e5f17192f00edf254bbfba049c.txt",
+			"source": "Adapted from Element Plus 2.14.7 progress/internal-percentage. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0e5cc3c25fd1943c9f566a5a7052dac338f184e5f17192f00edf254bbfba049c",
+			"noticeId": "0e5cc3c25fd1943c9f566a5a7052dac338f184e5f17192f00edf254bbfba049c"
+		}
+	]
+}

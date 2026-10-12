@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamProgress/cap-customized-content/ts/Demo.vue",
+			"sha256": "b28524e1546406e16c0d3929901d55227047502c2f3c64467161f70df17f60de",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-c1435533bc6f4c2c1a4376bd193ff1154ada7c3032d006e2fb20163e2c9592af.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/c1435533bc6f4c2c1a4376bd193ff1154ada7c3032d006e2fb20163e2c9592af.txt\n-->\n<template>\n\t<div class=\"demo-progress\">\n\t\t<AsamProgress :percentage=\"50\">\n\t\t\t<AsamButton text>Content</AsamButton>\n\t\t</AsamProgress>\n\t\t<AsamProgress :text-inside=\"true\" :stroke-width=\"20\" :percentage=\"50\" status=\"exception\">\n\t\t\t<span>Content</span>\n\t\t</AsamProgress>\n\t\t<AsamProgress type=\"circle\" :percentage=\"100\" status=\"success\">\n\t\t\t<AsamButton type=\"success\" :icon=\"Check\" circle />\n\t\t</AsamProgress>\n\t\t<AsamProgress type=\"dashboard\" :percentage=\"80\">\n\t\t\t<template #default=\"{ percentage }\">\n\t\t\t\t<span class=\"percentage-value\">{{ percentage }}%</span>\n\t\t\t\t<span class=\"percentage-label\">Progressing</span>\n\t\t\t</template>\n\t\t</AsamProgress>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamProgressCapCustomizedContentDemo' });\nimport { AsamProgress, AsamButton } from '@asam-ui/ui';\n\nimport { Check } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.percentage-value {\n\tdisplay: block;\n\tmargin-top: 10px;\n\tfont-size: 28px;\n}\n\n.percentage-label {\n\tdisplay: block;\n\tmargin-top: 10px;\n\tfont-size: 12px;\n}\n\n.demo-progress .el-progress--line {\n\tmargin-bottom: 15px;\n\tmax-width: 600px;\n}\n\n.demo-progress .el-progress--circle {\n\tmargin-right: 15px;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n",
+			"originalSourceSha256": "4e7e519d8a131f8d19aa80da27c311fdbfe3e4bad31fb043d760293ebfe1bace",
+			"notice": {
+				"id": "c1435533bc6f4c2c1a4376bd193ff1154ada7c3032d006e2fb20163e2c9592af",
+				"url": "/licenses/source-notices/c1435533bc6f4c2c1a4376bd193ff1154ada7c3032d006e2fb20163e2c9592af.txt",
+				"licenseFilename": "LICENSE-c1435533bc6f4c2c1a4376bd193ff1154ada7c3032d006e2fb20163e2c9592af.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/progress/customized-content.vue",
+					"sourceSha256": "f2d6103345aca6ec155697db1cda6ef857446f79d658d5dfee98771a30f46e62",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-c1435533bc6f4c2c1a4376bd193ff1154ada7c3032d006e2fb20163e2c9592af.txt",
+			"source": "Adapted from Element Plus 2.14.7 progress/customized-content. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "c1435533bc6f4c2c1a4376bd193ff1154ada7c3032d006e2fb20163e2c9592af",
+			"noticeId": "c1435533bc6f4c2c1a4376bd193ff1154ada7c3032d006e2fb20163e2c9592af"
+		}
+	]
+}

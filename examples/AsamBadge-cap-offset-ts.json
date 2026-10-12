@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamBadge/cap-offset/ts/Demo.vue",
+			"sha256": "a9a973428963a956268bf42f68928f362289245bfcbf4d65204b008d8f57a685",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778.txt\n-->\n<template>\n\t<AsamBadge class=\"item\" :value=\"1\" :offset=\"[10, 5]\">\n\t\t<AsamButton> offset</AsamButton>\n\t</AsamBadge>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamBadgeCapOffsetDemo' });\nimport { AsamBadge, AsamButton } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.item {\n\tmargin-top: 10px;\n\tmargin-right: 30px;\n}\n</style>\n",
+			"originalSourceSha256": "dcd284a0933d4a91e123062b55e60733e337e99077feb7a19f03f4e205ab0cc2",
+			"notice": {
+				"id": "4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778",
+				"url": "/licenses/source-notices/4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778.txt",
+				"licenseFilename": "LICENSE-4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/badge/offset.vue",
+					"sourceSha256": "924dcef34c6d6cc4a02f5e0d14fdd22b57d2123cec050d10599d43dcebb52419",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778.txt",
+			"source": "Adapted from Element Plus 2.14.7 badge/offset. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778",
+			"noticeId": "4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778"
+		}
+	]
+}

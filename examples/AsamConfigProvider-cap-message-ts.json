@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamConfigProvider/cap-message/ts/Demo.vue",
+			"sha256": "c193e331cf55d2d6ca4839a00df1828cdab7887dedf40bab120c4fa275a6b9f3",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bed44c8af1d348440fbb1fd11d7d34268e9317a610b86df2f81f2aa91baf20ff.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bed44c8af1d348440fbb1fd11d7d34268e9317a610b86df2f81f2aa91baf20ff.txt\n-->\n<template>\n\t<div>\n\t\t<AsamConfigProvider :message=\"config\">\n\t\t\t<AsamButton @click=\"open\">OPEN</AsamButton>\n\t\t</AsamConfigProvider>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamConfigProviderCapMessageDemo' });\nimport { AsamConfigProvider, AsamButton } from '@asam-ui/ui';\n\nimport { reactive } from 'vue';\nimport { AsamMessage } from '@asam-ui/ui';\n\nconst config = reactive({\n\tmax: 3,\n\tplain: true,\n\tplacement: 'bottom'\n});\n\nconst open = () => {\n\tAsamMessage('This is a message from bottom.');\n};\n</script>\n",
+			"originalSourceSha256": "4f02672396f5844135349c2b630c77ea7efbf0ff2a471be71406e50848bf6603",
+			"notice": {
+				"id": "bed44c8af1d348440fbb1fd11d7d34268e9317a610b86df2f81f2aa91baf20ff",
+				"url": "/licenses/source-notices/bed44c8af1d348440fbb1fd11d7d34268e9317a610b86df2f81f2aa91baf20ff.txt",
+				"licenseFilename": "LICENSE-bed44c8af1d348440fbb1fd11d7d34268e9317a610b86df2f81f2aa91baf20ff.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/config-provider/message.vue",
+					"sourceSha256": "b56272e4e71a8da34592df92411e2d072b6ee0d6f97c45e507779366be97aa72",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-bed44c8af1d348440fbb1fd11d7d34268e9317a610b86df2f81f2aa91baf20ff.txt",
+			"source": "Adapted from Element Plus 2.14.7 config-provider/message. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "bed44c8af1d348440fbb1fd11d7d34268e9317a610b86df2f81f2aa91baf20ff",
+			"noticeId": "bed44c8af1d348440fbb1fd11d7d34268e9317a610b86df2f81f2aa91baf20ff"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamSkeleton/cap-leading-trailing-without-bouncing/js/Demo.vue",
+			"sha256": "c25ec058714a1d4097eab65113ad0e5c6d21cf5c5bda46a9680b8d7cadfc744c",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-4063faeed6afbcdb5b52d0f262e9bc03ef14aed876316ae48cb937ac00b863e5.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/4063faeed6afbcdb5b52d0f262e9bc03ef14aed876316ae48cb937ac00b863e5.txt\n-->\n<template>\n\t<AsamSpace direction=\"vertical\" alignment=\"flex-start\">\n\t\t<div>\n\t\t\t<label style=\"margin-right: 16px\">Switch Loading</label>\n\t\t\t<AsamSwitch\n\t\t\t\t:model-value=\"loading\"\n\t\t\t\t@update:model-value=\"\n\t\t\t\t\t(value) => {\n\t\t\t\t\t\tif (typeof value === 'boolean') loading = value;\n\t\t\t\t\t}\n\t\t\t\t\"\n\t\t\t/>\n\t\t</div>\n\t\t<AsamSkeleton\n\t\t\tstyle=\"width: 240px\"\n\t\t\t:loading=\"loading\"\n\t\t\tanimated\n\t\t\t:throttle=\"{ leading: 500, trailing: 500, initVal: true }\"\n\t\t>\n\t\t\t<template #template>\n\t\t\t\t<AsamSkeletonItem variant=\"image\" style=\"width: 240px; height: 265px\" />\n\t\t\t\t<div style=\"padding: 14px\">\n\t\t\t\t\t<AsamSkeletonItem variant=\"h3\" style=\"width: 50%\" />\n\t\t\t\t\t<div\n\t\t\t\t\t\tstyle=\"\n\t\t\t\t\t\t\tdisplay: flex;\n\t\t\t\t\t\t\talign-items: center;\n\t\t\t\t\t\t\tjustify-content: space-between;\n\t\t\t\t\t\t\tmargin-top: 16px;\n\t\t\t\t\t\t\theight: 16px;\n\t\t\t\t\t\t\"\n\t\t\t\t\t>\n\t\t\t\t\t\t<AsamSkeletonItem variant=\"text\" style=\"margin-right: 16px\" />\n\t\t\t\t\t\t<AsamSkeletonItem variant=\"text\" style=\"width: 30%\" />\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</template>\n\t\t\t<template #default>\n\t\t\t\t<AsamCard :body-style=\"{ padding: '0px', marginBottom: '1px' }\">\n\t\t\t\t\t<img\n\t\t\t\t\t\tsrc=\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%22180%22%3E%3Crect%20width%3D%22320%22%20height%3D%22180%22%20fill%3D%22%238899aa%22%2F%3E%3Ctext%20x%3D%2224%22%20y%3D%2290%22%20fill%3D%22white%22%3EASAM%20local%20sample%3C%2Ftext%3E%3C%2Fsvg%3E\"\n\t\t\t\t\t\tclass=\"image\"\n\t\t\t\t\t/>\n\t\t\t\t\t<div style=\"padding: 14px\">\n\t\t\t\t\t\t<span>Delicious hamburger</span>\n\t\t\t\t\t\t<div class=\"bottom card-header\">\n\t\t\t\t\t\t\t<div class=\"time\">{{ currentDate }}</div>\n\t\t\t\t\t\t\t<AsamButton text class=\"button\">operation button</AsamButton>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</AsamCard>\n\t\t\t</template>\n\t\t</AsamSkeleton>\n\t</AsamSpace>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamSkeletonCapLeadingTrailingWithoutBouncingDemo' });\nimport {\n\tAsamSpace,\n\tAsamSwitch,\n\tAsamSkeleton,\n\tAsamSkeletonItem,\n\tAsamCard,\n\tAsamButton\n} from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst loading = ref(false);\nconst currentDate = new Date().toDateString();\n</script>\n",
+			"originalSourceSha256": "37318daa2c5c6832ae62a7610f9d3ba57a7ff78f0209bd3dedd07caed6c58458",
+			"notice": {
+				"id": "4063faeed6afbcdb5b52d0f262e9bc03ef14aed876316ae48cb937ac00b863e5",
+				"url": "/licenses/source-notices/4063faeed6afbcdb5b52d0f262e9bc03ef14aed876316ae48cb937ac00b863e5.txt",
+				"licenseFilename": "LICENSE-4063faeed6afbcdb5b52d0f262e9bc03ef14aed876316ae48cb937ac00b863e5.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/skeleton/leading-trailing-without-bouncing.vue",
+					"sourceSha256": "426be872d0d948d590ccb22ef0e5e0c8ca714a40739dfbe702d16e56cf7b2212",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-4063faeed6afbcdb5b52d0f262e9bc03ef14aed876316ae48cb937ac00b863e5.txt",
+			"source": "Adapted from Element Plus 2.14.7 skeleton/leading-trailing-without-bouncing. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "4063faeed6afbcdb5b52d0f262e9bc03ef14aed876316ae48cb937ac00b863e5",
+			"noticeId": "4063faeed6afbcdb5b52d0f262e9bc03ef14aed876316ae48cb937ac00b863e5"
+		}
+	]
+}

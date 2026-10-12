@@ -1,0 +1,1 @@
+import{s as e}from"./_baseAssignValue-CRCe5WSz.js";import{i as t,n,r}from"./_flatRest-q6FZyjkm.js";import{g as i}from"./_Uint8Array-BoX9esZY.js";function a(e,i){return r(n(e,i,t),e+``)}function o(t){return e(t)&&i(t)}export{a as n,o as t};

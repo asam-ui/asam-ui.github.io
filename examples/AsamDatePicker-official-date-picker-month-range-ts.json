@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamDatePicker/official-date-picker-month-range/ts/Demo.vue",
+			"sha256": "d73f6b5fca3c84432844589aa692259738252b88e010c109430fd1eb64fc22d2",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-47cc4ae51b78367c907178bb0edf84fa06d20ab39bd7dbc9ce9ac194f3d6c5e7.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/47cc4ae51b78367c907178bb0edf84fa06d20ab39bd7dbc9ce9ac194f3d6c5e7.txt\n-->\n<template>\n\t<div class=\"demo-date-picker\">\n\t\t<div class=\"block\">\n\t\t\t<span class=\"demonstration\">Default</span>\n\t\t\t<AsamDatePicker\n\t\t\t\tv-model=\"value1\"\n\t\t\t\tvalue-format=\"\"\n\t\t\t\ttype=\"monthrange\"\n\t\t\t\trange-separator=\"To\"\n\t\t\t\tstart-placeholder=\"Start month\"\n\t\t\t\tend-placeholder=\"End month\"\n\t\t\t/>\n\t\t</div>\n\t\t<div class=\"block\">\n\t\t\t<span class=\"demonstration\">With quick options</span>\n\t\t\t<AsamDatePicker\n\t\t\t\tv-model=\"value2\"\n\t\t\t\tvalue-format=\"\"\n\t\t\t\ttype=\"monthrange\"\n\t\t\t\tunlink-panels\n\t\t\t\trange-separator=\"To\"\n\t\t\t\tstart-placeholder=\"Start month\"\n\t\t\t\tend-placeholder=\"End month\"\n\t\t\t\t:shortcuts=\"shortcuts\"\n\t\t\t/>\n\t\t</div>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\nimport type { AsamDateValue } from '@asam-ui/ui';\nimport { AsamDatePicker } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamDatePickerofficialdatepickermonthrangeExample' });\n\nimport { ref } from 'vue';\n\nconst value1 = ref<AsamDateValue>('');\nconst value2 = ref<AsamDateValue>('');\n\nconst shortcuts = [\n\t{\n\t\ttext: 'This month',\n\t\tvalue: [new Date(), new Date()]\n\t},\n\t{\n\t\ttext: 'This year',\n\t\tvalue: () => {\n\t\t\tconst end = new Date();\n\t\t\tconst start = new Date(new Date().getFullYear(), 0);\n\t\t\treturn [start, end];\n\t\t}\n\t},\n\t{\n\t\ttext: 'Last 6 months',\n\t\tvalue: () => {\n\t\t\tconst end = new Date();\n\t\t\tconst start = new Date();\n\t\t\tstart.setMonth(start.getMonth() - 6);\n\t\t\treturn [start, end];\n\t\t}\n\t}\n];\n</script>\n\n<style scoped>\n/* stylelint-disable selector-pseudo-class-no-unknown, selector-class-pattern, no-descending-specificity -- Vue deep/native BEM selectors and equivalent media selector groups retained from the fixed official example. */\n.demo-date-picker {\n\tdisplay: flex;\n\twidth: 100%;\n\tpadding: 0;\n\tflex-wrap: wrap;\n}\n\n.demo-date-picker .block {\n\tpadding: 1.5rem 0;\n\ttext-align: center;\n\tborder-right: solid 1px var(--el-border-color);\n\tflex: 1;\n\tmin-width: 300px;\n}\n\n.demo-date-picker .block:last-child {\n\tborder-right: none;\n}\n\n.demo-date-picker .demonstration {\n\tdisplay: block;\n\tcolor: var(--el-text-color-secondary);\n\tfont-size: 14px;\n\tmargin-bottom: 1rem;\n}\n\n@media screen and (width <= 768px) {\n\t.demo-date-picker .block {\n\t\tflex: 0 0 100%;\n\t\tpadding: 1rem 0;\n\t\tmin-width: auto;\n\t\tborder-right: none;\n\t\tborder-bottom: solid 1px var(--el-border-color);\n\t}\n\n\t.demo-date-picker .block:last-child {\n\t\tborder-bottom: none;\n\t}\n}\n</style>\n",
+			"originalSourceSha256": "ae08869dc00a08ded0ce01b7aa02678acc8d87ae202b64b2f1e9efb276c6a860",
+			"notice": {
+				"id": "47cc4ae51b78367c907178bb0edf84fa06d20ab39bd7dbc9ce9ac194f3d6c5e7",
+				"url": "/licenses/source-notices/47cc4ae51b78367c907178bb0edf84fa06d20ab39bd7dbc9ce9ac194f3d6c5e7.txt",
+				"licenseFilename": "LICENSE-47cc4ae51b78367c907178bb0edf84fa06d20ab39bd7dbc9ce9ac194f3d6c5e7.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/date-picker/month-range.vue",
+					"sourceSha256": "c9bee9ae160e0d3e5df179d7cd8242bd58df9b7211e096598a42a0a4357e3461",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-47cc4ae51b78367c907178bb0edf84fa06d20ab39bd7dbc9ce9ac194f3d6c5e7.txt",
+			"source": "Adapted from Element Plus 2.14.7 date-picker/month-range. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "47cc4ae51b78367c907178bb0edf84fa06d20ab39bd7dbc9ce9ac194f3d6c5e7",
+			"noticeId": "47cc4ae51b78367c907178bb0edf84fa06d20ab39bd7dbc9ce9ac194f3d6c5e7"
+		}
+	]
+}

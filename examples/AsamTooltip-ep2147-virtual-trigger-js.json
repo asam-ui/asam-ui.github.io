@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTooltip/ep2147-virtual-trigger/js/Demo.vue",
+			"sha256": "ecc7c6185ed33fd6fd768187d0fde09e5bda749afc3ee7d87a3353585875f1fd",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ac4e56ad9e05098f951fad4144f173742fcb02962f551cc289e7b9473da41bf1.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ac4e56ad9e05098f951fad4144f173742fcb02962f551cc289e7b9473da41bf1.txt\n-->\n<template>\n\t<AsamTooltip\n\t\t:visible=\"visible\"\n\t\tcontent=\"Bottom center\"\n\t\tplacement=\"bottom\"\n\t\teffect=\"light\"\n\t\ttrigger=\"click\"\n\t\tvirtual-triggering\n\t\t:virtual-ref=\"triggerRef\"\n\t/>\n\t<AsamButton @click=\"visible = !visible\">test</AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\nimport { onMounted, onUnmounted, ref } from 'vue';\nconst visible = ref(false);\nconst position = ref(DOMRect.fromRect({ x: 0, y: 0, width: 0, height: 0 }));\nconst triggerRef = ref({\n\tgetBoundingClientRect: () => position.value\n});\nconst mousemoveHandler = ({ clientX, clientY }) => {\n\tposition.value = DOMRect.fromRect({\n\t\tx: clientX,\n\t\ty: clientY\n\t});\n};\nonMounted(() => {\n\tdocument.addEventListener('mousemove', mousemoveHandler);\n});\nonUnmounted(() => {\n\tdocument.removeEventListener('mousemove', mousemoveHandler);\n});\n</script>\n",
+			"originalSourceSha256": "42cd22a06007aca2372434b265035b92f14e82db87c49325769c64deed2acf45",
+			"notice": {
+				"id": "ac4e56ad9e05098f951fad4144f173742fcb02962f551cc289e7b9473da41bf1",
+				"url": "/licenses/source-notices/ac4e56ad9e05098f951fad4144f173742fcb02962f551cc289e7b9473da41bf1.txt",
+				"licenseFilename": "LICENSE-ac4e56ad9e05098f951fad4144f173742fcb02962f551cc289e7b9473da41bf1.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/tooltip/virtual-trigger.vue",
+					"sourceSha256": "9bdb35598052f2b8fb5a549a137057208e8f9984e09cafdd79335a8a82f57d94",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-ac4e56ad9e05098f951fad4144f173742fcb02962f551cc289e7b9473da41bf1.txt",
+			"source": "Adapted from Element Plus 2.14.7 tooltip/virtual-trigger. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "ac4e56ad9e05098f951fad4144f173742fcb02962f551cc289e7b9473da41bf1",
+			"noticeId": "ac4e56ad9e05098f951fad4144f173742fcb02962f551cc289e7b9473da41bf1"
+		}
+	]
+}

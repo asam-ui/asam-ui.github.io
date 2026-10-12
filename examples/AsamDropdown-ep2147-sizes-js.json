@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamDropdown/ep2147-sizes/js/Demo.vue",
+			"sha256": "e0d23a5056c27a6deda41d3cb8ba5c00d6309110c0d66578e7959bfdf2652731",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-c764468aa857e1961a132c6fe9178bac472e3424c4fc847dd2057de3b794fd34.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/c764468aa857e1961a132c6fe9178bac472e3424c4fc847dd2057de3b794fd34.txt\n-->\n<template>\n\t<AsamDropdown\n\t\ttrigger=\"hover\"\n\t\tplacement=\"bottom\"\n\t\t:wrap-menu=\"false\"\n\t\tsize=\"large\"\n\t\tsplit-button\n\t\ttype=\"primary\"\n\t>\n\t\tLarge\n\t\t<template #dropdown>\n\t\t\t<AsamDropdownMenu>\n\t\t\t\t<AsamDropdownItem>Action 1</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>Action 2</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>Action 3</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>Action 4</AsamDropdownItem>\n\t\t\t</AsamDropdownMenu>\n\t\t</template>\n\t</AsamDropdown>\n\n\t<AsamDropdown trigger=\"hover\" placement=\"bottom\" :wrap-menu=\"false\" split-button type=\"primary\">\n\t\tDefault\n\t\t<template #dropdown>\n\t\t\t<AsamDropdownMenu>\n\t\t\t\t<AsamDropdownItem>Action 1</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>Action 2</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>Action 3</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>Action 4</AsamDropdownItem>\n\t\t\t</AsamDropdownMenu>\n\t\t</template>\n\t</AsamDropdown>\n\n\t<AsamDropdown\n\t\ttrigger=\"hover\"\n\t\tplacement=\"bottom\"\n\t\t:wrap-menu=\"false\"\n\t\tsize=\"small\"\n\t\tsplit-button\n\t\ttype=\"primary\"\n\t>\n\t\tSmall\n\t\t<template #dropdown>\n\t\t\t<AsamDropdownMenu>\n\t\t\t\t<AsamDropdownItem>Action 1</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>Action 2</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>Action 3</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>Action 4</AsamDropdownItem>\n\t\t\t</AsamDropdownMenu>\n\t\t</template>\n\t</AsamDropdown>\n</template>\n\n<script setup>\nimport { AsamDropdown, AsamDropdownItem, AsamDropdownMenu } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.example-showcase .el-dropdown + .el-dropdown {\n\tmargin-left: 15px;\n}\n</style>\n",
+			"originalSourceSha256": "337a0b2b522993a416176ee4c6bf24ef852510bde01200fa624458d59e0431d3",
+			"notice": {
+				"id": "c764468aa857e1961a132c6fe9178bac472e3424c4fc847dd2057de3b794fd34",
+				"url": "/licenses/source-notices/c764468aa857e1961a132c6fe9178bac472e3424c4fc847dd2057de3b794fd34.txt",
+				"licenseFilename": "LICENSE-c764468aa857e1961a132c6fe9178bac472e3424c4fc847dd2057de3b794fd34.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/dropdown/sizes.vue",
+					"sourceSha256": "e07f93232a42845552f7b9fd7ccf1cc54935066d59c8fa00acd9499f72649260",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-c764468aa857e1961a132c6fe9178bac472e3424c4fc847dd2057de3b794fd34.txt",
+			"source": "Adapted from Element Plus 2.14.7 dropdown/sizes. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "c764468aa857e1961a132c6fe9178bac472e3424c4fc847dd2057de3b794fd34",
+			"noticeId": "c764468aa857e1961a132c6fe9178bac472e3424c4fc847dd2057de3b794fd34"
+		}
+	]
+}

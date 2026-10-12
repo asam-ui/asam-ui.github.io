@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamPopconfirm/ep2147-customize/ts/Demo.vue",
+			"sha256": "9f18b8b07e726a20d37fb5033ba1980469c41b2c77021b2f020f888be0cfaf54",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-2744033a25bc178aad1bc7ee8d5a29023a945cd55f086cc365227fc74f2fe84e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/2744033a25bc178aad1bc7ee8d5a29023a945cd55f086cc365227fc74f2fe84e.txt\n-->\n<template>\n\t<AsamPopconfirm\n\t\twidth=\"220\"\n\t\t:icon=\"InfoFilled\"\n\t\ticon-color=\"#626AEF\"\n\t\ttitle=\"Are you sure to delete this?\"\n\t\t@cancel=\"onCancel\"\n\t>\n\t\t<template #reference>\n\t\t\t<AsamButton>Delete</AsamButton>\n\t\t</template>\n\t\t<template #actions=\"{ confirm, cancel }\">\n\t\t\t<AsamButton size=\"small\" @click=\"cancel\">No!</AsamButton>\n\t\t\t<AsamButton type=\"danger\" size=\"small\" :disabled=\"!clicked\" @click=\"confirm\">\n\t\t\t\tYes?\n\t\t\t</AsamButton>\n\t\t</template>\n\t</AsamPopconfirm>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamPopconfirm } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\nimport { InfoFilled } from '@asam-ui/icons-vue';\n\nconst clicked = ref(false);\nfunction onCancel() {\n\tclicked.value = true;\n}\n</script>\n",
+			"originalSourceSha256": "834c8176560cfed40821cfbe03e6a87f84c81e4653315432f60c691e64bb6cd3",
+			"notice": {
+				"id": "2744033a25bc178aad1bc7ee8d5a29023a945cd55f086cc365227fc74f2fe84e",
+				"url": "/licenses/source-notices/2744033a25bc178aad1bc7ee8d5a29023a945cd55f086cc365227fc74f2fe84e.txt",
+				"licenseFilename": "LICENSE-2744033a25bc178aad1bc7ee8d5a29023a945cd55f086cc365227fc74f2fe84e.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/popconfirm/customize.vue",
+					"sourceSha256": "4ddf23fb4ea4965ebfa6c691c75cdd56375fda8e939e3b1ed334fb674608f163",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-2744033a25bc178aad1bc7ee8d5a29023a945cd55f086cc365227fc74f2fe84e.txt",
+			"source": "Adapted from Element Plus 2.14.7 popconfirm/customize. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "2744033a25bc178aad1bc7ee8d5a29023a945cd55f086cc365227fc74f2fe84e",
+			"noticeId": "2744033a25bc178aad1bc7ee8d5a29023a945cd55f086cc365227fc74f2fe84e"
+		}
+	]
+}

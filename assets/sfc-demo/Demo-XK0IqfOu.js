@@ -1,0 +1,1 @@
+import{E as e,Tt as t,W as n,y as r}from"./sfc-demo.js";import{t as i}from"./Index-Den6hpw6-BKQmjmzt.js";var a=e({name:`AsamCalendarofficialcalendarrangeExample`,__name:`Demo`,setup(e){return(e,a)=>(n(),r(t(i),{range:[new Date(2019,2,4),new Date(2019,2,24)]},null,8,[`range`]))}});export{a as default};

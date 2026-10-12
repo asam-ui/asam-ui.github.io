@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamCol/cap-basic-layout/js/Demo.vue",
+			"sha256": "004b07367d07a8dd65003a0a9ab5e7ade4d79725cfde0eeae1ee1e985601710d",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-8a3587a19867bdce43ee85c9ab5e0a7b5aab7dea76c5f79139977b84b5f9bf6c.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/8a3587a19867bdce43ee85c9ab5e0a7b5aab7dea76c5f79139977b84b5f9bf6c.txt\n-->\n<template>\n\t<AsamRow>\n\t\t<AsamCol :span=\"24\">\n\t\t\t<div class=\"grid-content ep-bg-purple-dark\" />\n\t\t</AsamCol>\n\t</AsamRow>\n\t<AsamRow>\n\t\t<AsamCol :span=\"12\">\n\t\t\t<div class=\"grid-content ep-bg-purple\" />\n\t\t</AsamCol>\n\t\t<AsamCol :span=\"12\">\n\t\t\t<div class=\"grid-content ep-bg-purple-light\" />\n\t\t</AsamCol>\n\t</AsamRow>\n\t<AsamRow>\n\t\t<AsamCol :span=\"8\">\n\t\t\t<div class=\"grid-content ep-bg-purple\" />\n\t\t</AsamCol>\n\t\t<AsamCol :span=\"8\">\n\t\t\t<div class=\"grid-content ep-bg-purple-light\" />\n\t\t</AsamCol>\n\t\t<AsamCol :span=\"8\">\n\t\t\t<div class=\"grid-content ep-bg-purple\" />\n\t\t</AsamCol>\n\t</AsamRow>\n\t<AsamRow>\n\t\t<AsamCol :span=\"6\">\n\t\t\t<div class=\"grid-content ep-bg-purple\" />\n\t\t</AsamCol>\n\t\t<AsamCol :span=\"6\">\n\t\t\t<div class=\"grid-content ep-bg-purple-light\" />\n\t\t</AsamCol>\n\t\t<AsamCol :span=\"6\">\n\t\t\t<div class=\"grid-content ep-bg-purple\" />\n\t\t</AsamCol>\n\t\t<AsamCol :span=\"6\">\n\t\t\t<div class=\"grid-content ep-bg-purple-light\" />\n\t\t</AsamCol>\n\t</AsamRow>\n\t<AsamRow>\n\t\t<AsamCol :span=\"4\">\n\t\t\t<div class=\"grid-content ep-bg-purple\" />\n\t\t</AsamCol>\n\t\t<AsamCol :span=\"4\">\n\t\t\t<div class=\"grid-content ep-bg-purple-light\" />\n\t\t</AsamCol>\n\t\t<AsamCol :span=\"4\">\n\t\t\t<div class=\"grid-content ep-bg-purple\" />\n\t\t</AsamCol>\n\t\t<AsamCol :span=\"4\">\n\t\t\t<div class=\"grid-content ep-bg-purple-light\" />\n\t\t</AsamCol>\n\t\t<AsamCol :span=\"4\">\n\t\t\t<div class=\"grid-content ep-bg-purple\" />\n\t\t</AsamCol>\n\t\t<AsamCol :span=\"4\">\n\t\t\t<div class=\"grid-content ep-bg-purple-light\" />\n\t\t</AsamCol>\n\t</AsamRow>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamColCapBasicLayoutDemo' });\nimport { AsamRow, AsamCol } from '@asam-ui/ui';\n</script>\n\n<style>\n.el-row {\n\tmargin-bottom: 20px;\n}\n\n.el-row:last-child {\n\tmargin-bottom: 0;\n}\n\n.el-col {\n\tborder-radius: 4px;\n}\n\n.grid-content {\n\tborder-radius: 4px;\n\tmin-height: 36px;\n}\n</style>\n",
+			"originalSourceSha256": "6cd76db167f04a618a8f173c66770033a36062a4d455f0e64492aefc7472f266",
+			"notice": {
+				"id": "8a3587a19867bdce43ee85c9ab5e0a7b5aab7dea76c5f79139977b84b5f9bf6c",
+				"url": "/licenses/source-notices/8a3587a19867bdce43ee85c9ab5e0a7b5aab7dea76c5f79139977b84b5f9bf6c.txt",
+				"licenseFilename": "LICENSE-8a3587a19867bdce43ee85c9ab5e0a7b5aab7dea76c5f79139977b84b5f9bf6c.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/layout/basic-layout.vue",
+					"sourceSha256": "27925019930db82517a1035eeba96d9c92f1da570dcb84ffb61daa1d33d23453",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-8a3587a19867bdce43ee85c9ab5e0a7b5aab7dea76c5f79139977b84b5f9bf6c.txt",
+			"source": "Adapted from Element Plus 2.14.7 layout/basic-layout. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "8a3587a19867bdce43ee85c9ab5e0a7b5aab7dea76c5f79139977b84b5f9bf6c",
+			"noticeId": "8a3587a19867bdce43ee85c9ab5e0a7b5aab7dea76c5f79139977b84b5f9bf6c"
+		}
+	]
+}

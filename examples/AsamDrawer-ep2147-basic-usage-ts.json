@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamDrawer/ep2147-basic-usage/ts/Demo.vue",
+			"sha256": "049649b1ea0f502ca5b586c80646fd93ec50e9ca18599584cbcb8f614bccc2a5",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f353c5b32e4e2002a6fae49f2c13e5ee7acf3149cef89f67e875495d3e29cb80.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f353c5b32e4e2002a6fae49f2c13e5ee7acf3149cef89f67e875495d3e29cb80.txt\n-->\n<template>\n\t<label\n\t\t>展开方向\n\t\t<select :value=\"direction\" @change=\"changeDirection\">\n\t\t\t<option value=\"ltr\">从左展开</option>\n\t\t\t<option value=\"rtl\">从右展开</option>\n\t\t\t<option value=\"ttb\">从上展开</option>\n\t\t\t<option value=\"btt\">从下展开</option>\n\t\t</select></label\n\t>\n\n\t<AsamButton type=\"primary\" style=\"margin-left: 16px\" @click=\"drawer = true\"> open </AsamButton>\n\t<AsamButton type=\"primary\" style=\"margin-left: 16px\" @click=\"drawer2 = true\">\n\t\twith footer\n\t</AsamButton>\n\n\t<AsamDrawer\n\t\tv-model=\"drawer\"\n\t\ttitle=\"I am the title\"\n\t\t:direction=\"direction\"\n\t\t:before-close=\"handleClose\"\n\t>\n\t\t<span>Hi, there!</span>\n\t</AsamDrawer>\n\t<AsamDrawer v-model=\"drawer2\" :direction=\"direction\">\n\t\t<template #header>\n\t\t\t<h4>set title by slot</h4>\n\t\t</template>\n\t\t<template #default>\n\t\t\t<div>\n\t\t\t\t<label\n\t\t\t\t\t><input v-model=\"radio1\" type=\"radio\" value=\"Option 1\" />\n\t\t\t\t\tOption 1\n\t\t\t\t</label>\n\t\t\t\t<label\n\t\t\t\t\t><input v-model=\"radio1\" type=\"radio\" value=\"Option 2\" />\n\t\t\t\t\tOption 2\n\t\t\t\t</label>\n\t\t\t</div>\n\t\t</template>\n\t\t<template #footer>\n\t\t\t<div style=\"flex: auto\">\n\t\t\t\t<AsamButton @click=\"cancelClick\">cancel</AsamButton>\n\t\t\t\t<AsamButton type=\"primary\" @click=\"confirmClick\">confirm</AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDrawer>\n</template>\n\n<script lang=\"ts\" setup>\nimport {\n\tAsamButton,\n\tAsamDrawer,\n\tAsamMessageBox,\n\ttype AsamDrawerProps as DrawerProps\n} from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst drawer = ref(false);\nconst drawer2 = ref(false);\nconst direction = ref<DrawerProps['direction']>('rtl');\nconst radio1 = ref('Option 1');\nconst handleClose = (done: () => void) => {\n\tAsamMessageBox.confirm('Are you sure you want to close this?')\n\t\t.then(() => {\n\t\t\tdone();\n\t\t})\n\t\t.catch(() => {\n\t\t\t// catch error\n\t\t});\n};\nfunction cancelClick() {\n\tdrawer2.value = false;\n}\nfunction confirmClick() {\n\tAsamMessageBox.confirm(`Are you confirm to chose ${radio1.value} ?`)\n\t\t.then(() => {\n\t\t\tdrawer2.value = false;\n\t\t})\n\t\t.catch(() => {\n\t\t\t// catch error\n\t\t});\n}\n\nconst changeDirection = (event: Event) => {\n\tconst target = event.currentTarget;\n\tif (!(target instanceof HTMLSelectElement)) return;\n\tconst value = target.value;\n\tif (value === 'ltr' || value === 'rtl' || value === 'ttb' || value === 'btt') {\n\t\tdirection.value = value;\n\t}\n};\n</script>\n",
+			"originalSourceSha256": "179b8a1a692cde6cf7176314b0ffe0a87833a6a45eb99c5b1202a0e01a7c098a",
+			"notice": {
+				"id": "f353c5b32e4e2002a6fae49f2c13e5ee7acf3149cef89f67e875495d3e29cb80",
+				"url": "/licenses/source-notices/f353c5b32e4e2002a6fae49f2c13e5ee7acf3149cef89f67e875495d3e29cb80.txt",
+				"licenseFilename": "LICENSE-f353c5b32e4e2002a6fae49f2c13e5ee7acf3149cef89f67e875495d3e29cb80.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/drawer/basic-usage.vue",
+					"sourceSha256": "ed2041bea202be017bc85581084d0f01a3e652ef00f254bbbd51894a91a8ef05",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-f353c5b32e4e2002a6fae49f2c13e5ee7acf3149cef89f67e875495d3e29cb80.txt",
+			"source": "Adapted from Element Plus 2.14.7 drawer/basic-usage. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "f353c5b32e4e2002a6fae49f2c13e5ee7acf3149cef89f67e875495d3e29cb80",
+			"noticeId": "f353c5b32e4e2002a6fae49f2c13e5ee7acf3149cef89f67e875495d3e29cb80"
+		}
+	]
+}

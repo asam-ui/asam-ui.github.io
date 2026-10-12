@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamSkeleton/cap-basic-usage/js/Demo.vue",
+			"sha256": "94fe7dece3ec0b2f72801f10be270003802b5e9bf775da81f7a8021db0da75bf",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-637846642a0cf9a509e242abdb678c45dbce942a75f0fd595a6dd7a2cdeab199.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/637846642a0cf9a509e242abdb678c45dbce942a75f0fd595a6dd7a2cdeab199.txt\n-->\n<template>\n\t<AsamSkeleton />\n\t<br />\n\t<AsamSkeleton :style=\"{ '--el-skeleton-circle-size': '100px' }\">\n\t\t<template #template>\n\t\t\t<AsamSkeletonItem variant=\"circle\" />\n\t\t</template>\n\t</AsamSkeleton>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamSkeletonCapBasicUsageDemo' });\nimport { AsamSkeleton, AsamSkeletonItem } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "ff2f6eab57ed8a1d5bf30d340bc258229f0f695a38104af2828cd0fea72087d0",
+			"notice": {
+				"id": "637846642a0cf9a509e242abdb678c45dbce942a75f0fd595a6dd7a2cdeab199",
+				"url": "/licenses/source-notices/637846642a0cf9a509e242abdb678c45dbce942a75f0fd595a6dd7a2cdeab199.txt",
+				"licenseFilename": "LICENSE-637846642a0cf9a509e242abdb678c45dbce942a75f0fd595a6dd7a2cdeab199.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/skeleton/basic-usage.vue",
+					"sourceSha256": "c896cd20856d9b32a27d2f920333b50fbcd4792b826b7d5333a4035b39cd47af",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-637846642a0cf9a509e242abdb678c45dbce942a75f0fd595a6dd7a2cdeab199.txt",
+			"source": "Adapted from Element Plus 2.14.7 skeleton/basic-usage. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "637846642a0cf9a509e242abdb678c45dbce942a75f0fd595a6dd7a2cdeab199",
+			"noticeId": "637846642a0cf9a509e242abdb678c45dbce942a75f0fd595a6dd7a2cdeab199"
+		}
+	]
+}

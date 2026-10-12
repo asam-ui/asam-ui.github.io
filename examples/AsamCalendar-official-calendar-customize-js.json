@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamCalendar/official-calendar-customize/js/Demo.vue",
+			"sha256": "fbce7d0419603acdac2d1990bd48a6af52fcf7cb2fea30e3fe354346819ed465",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f3da9241a57802e758859acea56250acf8548d1ca4098f012af3a5f480dba94f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f3da9241a57802e758859acea56250acf8548d1ca4098f012af3a5f480dba94f.txt\n-->\n<template>\n\t<AsamCalendar>\n\t\t<template #date-cell=\"{ data }\">\n\t\t\t<p :class=\"data.isSelected ? 'is-selected' : ''\">\n\t\t\t\t{{ data.day.split('-').slice(1).join('-') }}\n\t\t\t\t{{ data.isSelected ? '✔️' : '' }}\n\t\t\t</p>\n\t\t</template>\n\t</AsamCalendar>\n</template>\n<script setup>\nimport { AsamCalendar } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamCalendarofficialcalendarcustomizeExample' });\n</script>\n\n<style scoped>\n/* stylelint-disable selector-pseudo-class-no-unknown, selector-class-pattern, no-descending-specificity -- Vue deep/native BEM selectors and equivalent media selector groups retained from the fixed official example. */\n.is-selected {\n\tcolor: var(--asam-color-primary);\n}\n</style>\n",
+			"originalSourceSha256": "f1452a9f0fe3d91e451de3ad000ce1a1744ac09541a717bafc0ebff3aeacfc09",
+			"notice": {
+				"id": "f3da9241a57802e758859acea56250acf8548d1ca4098f012af3a5f480dba94f",
+				"url": "/licenses/source-notices/f3da9241a57802e758859acea56250acf8548d1ca4098f012af3a5f480dba94f.txt",
+				"licenseFilename": "LICENSE-f3da9241a57802e758859acea56250acf8548d1ca4098f012af3a5f480dba94f.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/calendar/customize.vue",
+					"sourceSha256": "828808d4e3a9d8c11a569c12e4fcadb58eddec4ff9e0888034c7818ef374c6ed",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-f3da9241a57802e758859acea56250acf8548d1ca4098f012af3a5f480dba94f.txt",
+			"source": "Adapted from Element Plus 2.14.7 calendar/customize. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "f3da9241a57802e758859acea56250acf8548d1ca4098f012af3a5f480dba94f",
+			"noticeId": "f3da9241a57802e758859acea56250acf8548d1ca4098f012af3a5f480dba94f"
+		}
+	]
+}

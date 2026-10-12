@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamAlert/cap-icon-description/ts/Demo.vue",
+			"sha256": "7b1d9ee5394bd94dd599de308baccf0c7d019cdf93476d61a4b5925af759802d",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-3e970d5cfa9b1727a98f73c7ea2268801d8ee766024c16f18582088cc705e317.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/3e970d5cfa9b1727a98f73c7ea2268801d8ee766024c16f18582088cc705e317.txt\n-->\n<template>\n\t<div style=\"max-width: 600px\">\n\t\t<AsamAlert\n\t\t\ttitle=\"Primary alert\"\n\t\t\ttype=\"primary\"\n\t\t\tdescription=\"More text description\"\n\t\t\tshow-icon\n\t\t/>\n\t\t<AsamAlert\n\t\t\ttitle=\"Success alert\"\n\t\t\ttype=\"success\"\n\t\t\tdescription=\"More text description\"\n\t\t\tshow-icon\n\t\t/>\n\t\t<AsamAlert title=\"Info alert\" type=\"info\" description=\"More text description\" show-icon />\n\t\t<AsamAlert\n\t\t\ttitle=\"Warning alert\"\n\t\t\ttype=\"warning\"\n\t\t\tdescription=\"More text description\"\n\t\t\tshow-icon\n\t\t/>\n\t\t<AsamAlert title=\"Error alert\" type=\"error\" description=\"More text description\" show-icon />\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamAlertCapIconDescriptionDemo' });\nimport { AsamAlert } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.el-alert {\n\tmargin: 20px 0 0;\n}\n\n.el-alert:first-child {\n\tmargin: 0;\n}\n</style>\n",
+			"originalSourceSha256": "010a5c399eafb8168f539dd925558e725726901e1fc0332c576f40b6671b6d40",
+			"notice": {
+				"id": "3e970d5cfa9b1727a98f73c7ea2268801d8ee766024c16f18582088cc705e317",
+				"url": "/licenses/source-notices/3e970d5cfa9b1727a98f73c7ea2268801d8ee766024c16f18582088cc705e317.txt",
+				"licenseFilename": "LICENSE-3e970d5cfa9b1727a98f73c7ea2268801d8ee766024c16f18582088cc705e317.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/alert/icon-description.vue",
+					"sourceSha256": "33373430f6993d25085353c60b5f16de59be0b1b4bc7e971300f4448130fee3f",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-3e970d5cfa9b1727a98f73c7ea2268801d8ee766024c16f18582088cc705e317.txt",
+			"source": "Adapted from Element Plus 2.14.7 alert/icon-description. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "3e970d5cfa9b1727a98f73c7ea2268801d8ee766024c16f18582088cc705e317",
+			"noticeId": "3e970d5cfa9b1727a98f73c7ea2268801d8ee766024c16f18582088cc705e317"
+		}
+	]
+}

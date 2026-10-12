@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamSteps/cap-with-description/js/Demo.vue",
+			"sha256": "ab7404757ded767e513916fc7e97a401596b44977aa94a1fb724f40dfda62df1",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-245bd0b321ae7cf727c575307a8088c00e2343c49ca8b3a601bdb99d2e871f7a.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/245bd0b321ae7cf727c575307a8088c00e2343c49ca8b3a601bdb99d2e871f7a.txt\n-->\n<template>\n\t<AsamSteps style=\"max-width: 600px\" :active=\"1\">\n\t\t<AsamStep title=\"Step 1\" description=\"Some description\" />\n\t\t<AsamStep title=\"Step 2\" description=\"Some description\" />\n\t\t<AsamStep title=\"Step 3\" description=\"Some description\" />\n\t</AsamSteps>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamStepsCapWithDescriptionDemo' });\nimport { AsamSteps, AsamStep } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "dfd35006d46f1ce386173cc8799e5f9ffd2c3d7e5eb3731d453393654b852df9",
+			"notice": {
+				"id": "245bd0b321ae7cf727c575307a8088c00e2343c49ca8b3a601bdb99d2e871f7a",
+				"url": "/licenses/source-notices/245bd0b321ae7cf727c575307a8088c00e2343c49ca8b3a601bdb99d2e871f7a.txt",
+				"licenseFilename": "LICENSE-245bd0b321ae7cf727c575307a8088c00e2343c49ca8b3a601bdb99d2e871f7a.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/steps/with-description.vue",
+					"sourceSha256": "e2f022bcbe23d0619cf5aa1de82f10b97bbb4c05f10596d5a15b085d932d9ba1",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-245bd0b321ae7cf727c575307a8088c00e2343c49ca8b3a601bdb99d2e871f7a.txt",
+			"source": "Adapted from Element Plus 2.14.7 steps/with-description. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "245bd0b321ae7cf727c575307a8088c00e2343c49ca8b3a601bdb99d2e871f7a",
+			"noticeId": "245bd0b321ae7cf727c575307a8088c00e2343c49ca8b3a601bdb99d2e871f7a"
+		}
+	]
+}

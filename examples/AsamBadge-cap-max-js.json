@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamBadge/cap-max/js/Demo.vue",
+			"sha256": "b2ceeec43bd0cd79322442c518d1bdcf9ef2595d884b4bcb3eef47b7bae33006",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-40aa414f789b851d1af8b574132f7e4d7751d0e04931fb9a054af6d795c6a10a.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/40aa414f789b851d1af8b574132f7e4d7751d0e04931fb9a054af6d795c6a10a.txt\n-->\n<template>\n\t<AsamBadge :value=\"200\" :max=\"99\" class=\"item\">\n\t\t<AsamButton>comments</AsamButton>\n\t</AsamBadge>\n\t<AsamBadge :value=\"100\" :max=\"10\" class=\"item\">\n\t\t<AsamButton>replies</AsamButton>\n\t</AsamBadge>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamBadgeCapMaxDemo' });\nimport { AsamBadge, AsamButton } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.item {\n\tmargin-top: 10px;\n\tmargin-right: 40px;\n}\n</style>\n",
+			"originalSourceSha256": "108e5e81a0811c018d0bc62825614960a27636e9d44b02ac5bca3ac9a3a2ffa1",
+			"notice": {
+				"id": "40aa414f789b851d1af8b574132f7e4d7751d0e04931fb9a054af6d795c6a10a",
+				"url": "/licenses/source-notices/40aa414f789b851d1af8b574132f7e4d7751d0e04931fb9a054af6d795c6a10a.txt",
+				"licenseFilename": "LICENSE-40aa414f789b851d1af8b574132f7e4d7751d0e04931fb9a054af6d795c6a10a.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/badge/max.vue",
+					"sourceSha256": "d578fc5f5bee2174a7f28f45ab72314500d25b2432b2b073abe521ed4bd92022",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-40aa414f789b851d1af8b574132f7e4d7751d0e04931fb9a054af6d795c6a10a.txt",
+			"source": "Adapted from Element Plus 2.14.7 badge/max. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "40aa414f789b851d1af8b574132f7e4d7751d0e04931fb9a054af6d795c6a10a",
+			"noticeId": "40aa414f789b851d1af8b574132f7e4d7751d0e04931fb9a054af6d795c6a10a"
+		}
+	]
+}

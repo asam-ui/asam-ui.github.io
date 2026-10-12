@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamNotification/ep2147-progress-bar/js/Demo.vue",
+			"sha256": "646b7c2f7a1cc444fc02c70ffefd7a9262647ea54d96bfb88c5577f3d3d585c1",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-8520b42cbe66bd83b9c74e44c9e70af9f4ad5c53b86212150fc80754d157ed2d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/8520b42cbe66bd83b9c74e44c9e70af9f4ad5c53b86212150fc80754d157ed2d.txt\n-->\n<template>\n\t<AsamButton plain @click=\"open('')\"> Default </AsamButton>\n\t<AsamButton plain type=\"success\" @click=\"open('success')\"> Success </AsamButton>\n\t<AsamButton plain type=\"warning\" @click=\"open('warning')\"> Warning </AsamButton>\n\t<AsamButton plain type=\"danger\" @click=\"open('error')\"> Error </AsamButton>\n\t<AsamButton plain type=\"info\" @click=\"open('info')\"> Info </AsamButton>\n\t<AsamButton plain @click=\"openCustomColor\"> Custom color </AsamButton>\n\t<AsamButton plain @click=\"openWithoutPause\"> No pause on hover </AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamNotification } from '@asam-ui/ui';\nimport { onBeforeUnmount } from 'vue';\nfunction open(type) {\n\ttrackAsamNotification(\n\t\tAsamNotification({\n\t\t\ttitle: `${type || 'Default'} progress`,\n\t\t\tmessage: 'Hover to pause the timer and progress bar',\n\t\t\ttype,\n\t\t\tduration: 6000,\n\t\t\tprogress: true\n\t\t})\n\t);\n}\nfunction openWithoutPause() {\n\ttrackAsamNotification(\n\t\tAsamNotification({\n\t\t\ttitle: 'No pause on hover',\n\t\t\tmessage: 'Timer and progress bar keep running even when hovering',\n\t\t\tduration: 6000,\n\t\t\tprogress: true,\n\t\t\tpauseOnHover: false\n\t\t})\n\t);\n}\nfunction openCustomColor() {\n\ttrackAsamNotification(\n\t\tAsamNotification({\n\t\t\ttitle: 'Custom color',\n\t\t\tmessage: 'Custom progress bar color overrides the default',\n\t\t\tduration: 6000,\n\t\t\tprogress: {\n\t\t\t\tcolor: [\n\t\t\t\t\t{ color: '#f56c6c', percentage: 20 },\n\t\t\t\t\t{ color: '#e6a23c', percentage: 40 },\n\t\t\t\t\t{ color: '#5cb87a', percentage: 60 },\n\t\t\t\t\t{ color: '#1989fa', percentage: 80 },\n\t\t\t\t\t{ color: '#6f7ad3', percentage: 100 }\n\t\t\t\t]\n\t\t\t}\n\t\t})\n\t);\n}\nconst ownedAsamNotification = new Set();\nlet mountedAsamNotification = true;\nconst trackAsamNotification = (handle) => {\n\tif (mountedAsamNotification) ownedAsamNotification.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamNotification = false;\n\tfor (const handle of ownedAsamNotification) handle.close();\n\townedAsamNotification.clear();\n});\n</script>\n",
+			"originalSourceSha256": "7a45e812429edbb6ec23352d293d66906e07a01170c6cac2b225c97a1049a6f7",
+			"notice": {
+				"id": "8520b42cbe66bd83b9c74e44c9e70af9f4ad5c53b86212150fc80754d157ed2d",
+				"url": "/licenses/source-notices/8520b42cbe66bd83b9c74e44c9e70af9f4ad5c53b86212150fc80754d157ed2d.txt",
+				"licenseFilename": "LICENSE-8520b42cbe66bd83b9c74e44c9e70af9f4ad5c53b86212150fc80754d157ed2d.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/notification/progress-bar.vue",
+					"sourceSha256": "6b98d9fad60bba24375e7f8a2e47562153c04fe241c1a2de685a47be3912d823",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-8520b42cbe66bd83b9c74e44c9e70af9f4ad5c53b86212150fc80754d157ed2d.txt",
+			"source": "Adapted from Element Plus 2.14.7 notification/progress-bar. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "8520b42cbe66bd83b9c74e44c9e70af9f4ad5c53b86212150fc80754d157ed2d",
+			"noticeId": "8520b42cbe66bd83b9c74e44c9e70af9f4ad5c53b86212150fc80754d157ed2d"
+		}
+	]
+}

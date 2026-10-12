@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamMenu/cap-popper-offset/ts/Demo.vue",
+			"sha256": "a079d199d6b7d61b5e7359e9e13bf982afa19251ce410dfa8b522679af904544",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f543e8d65b1b03036320646c968818d3ce08492a40d9567f9f9384841cb07c92.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f543e8d65b1b03036320646c968818d3ce08492a40d9567f9f9384841cb07c92.txt\n-->\n<template>\n\t<AsamMenu\n\t\tellipsis\n\t\tclass=\"el-menu-popper-demo\"\n\t\tmode=\"horizontal\"\n\t\t:popper-offset=\"16\"\n\t\tstyle=\"max-width: 600px\"\n\t>\n\t\t<AsamMenuItem index=\"1\">Processing Center</AsamMenuItem>\n\t\t<AsamSubMenu index=\"2\">\n\t\t\t<template #title>Workspace</template>\n\t\t\t<AsamMenuItem index=\"2-1\">item one</AsamMenuItem>\n\t\t\t<AsamMenuItem index=\"2-2\">item two</AsamMenuItem>\n\t\t\t<AsamMenuItem index=\"2-3\">item three</AsamMenuItem>\n\t\t\t<AsamSubMenu index=\"2-4\">\n\t\t\t\t<template #title>item four</template>\n\t\t\t\t<AsamMenuItem index=\"2-4-1\">item one</AsamMenuItem>\n\t\t\t\t<AsamMenuItem index=\"2-4-2\">item two</AsamMenuItem>\n\t\t\t\t<AsamMenuItem index=\"2-4-3\">item three</AsamMenuItem>\n\t\t\t</AsamSubMenu>\n\t\t</AsamSubMenu>\n\t\t<AsamSubMenu index=\"3\" :popper-offset=\"8\">\n\t\t\t<template #title>Override Popper Offset</template>\n\t\t\t<AsamMenuItem index=\"3-1\">item one</AsamMenuItem>\n\t\t\t<AsamMenuItem index=\"3-2\">item two</AsamMenuItem>\n\t\t\t<AsamMenuItem index=\"3-3\">item three</AsamMenuItem>\n\t\t\t<AsamSubMenu index=\"3-4\" :popper-offset=\"20\">\n\t\t\t\t<template #title>override child</template>\n\t\t\t\t<AsamMenuItem index=\"3-4-1\">item one</AsamMenuItem>\n\t\t\t\t<AsamMenuItem index=\"3-4-2\">item two</AsamMenuItem>\n\t\t\t\t<AsamMenuItem index=\"3-4-3\">item three</AsamMenuItem>\n\t\t\t</AsamSubMenu>\n\t\t</AsamSubMenu>\n\t\t<AsamMenuItem index=\"4\" disabled>Info</AsamMenuItem>\n\t\t<AsamMenuItem index=\"5\">Orders</AsamMenuItem>\n\t</AsamMenu>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamMenuCapPopperOffsetDemo' });\nimport { AsamMenu, AsamMenuItem, AsamSubMenu } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "4c00e477abaf00fb3d76e58cb47da6c960d02dc7ab664593550b8065c5bb06fe",
+			"notice": {
+				"id": "f543e8d65b1b03036320646c968818d3ce08492a40d9567f9f9384841cb07c92",
+				"url": "/licenses/source-notices/f543e8d65b1b03036320646c968818d3ce08492a40d9567f9f9384841cb07c92.txt",
+				"licenseFilename": "LICENSE-f543e8d65b1b03036320646c968818d3ce08492a40d9567f9f9384841cb07c92.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/menu/popper-offset.vue",
+					"sourceSha256": "516dbb18e95af300691c13eca354306a4df0266f351a09d819813bc777c094c4",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-f543e8d65b1b03036320646c968818d3ce08492a40d9567f9f9384841cb07c92.txt",
+			"source": "Adapted from Element Plus 2.14.7 menu/popper-offset. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "f543e8d65b1b03036320646c968818d3ce08492a40d9567f9f9384841cb07c92",
+			"noticeId": "f543e8d65b1b03036320646c968818d3ce08492a40d9567f9f9384841cb07c92"
+		}
+	]
+}

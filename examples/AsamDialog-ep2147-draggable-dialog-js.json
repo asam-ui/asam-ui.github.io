@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamDialog/ep2147-draggable-dialog/js/Demo.vue",
+			"sha256": "ba98472f2989021c1d6b188271024254b5d385a8eeb097e0449e47380af639a1",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-dbc2fc85a49b4bc413f7357a2df49933e7afdc6a1f7930f3d31878dcc6316dd3.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/dbc2fc85a49b4bc413f7357a2df49933e7afdc6a1f7930f3d31878dcc6316dd3.txt\n-->\n<template>\n\t<div class=\"flex flex-wrap gap-1\">\n\t\t<AsamButton class=\"!ml-0\" plain @click=\"dialogVisible = true\">\n\t\t\tOpen a draggable Dialog\n\t\t</AsamButton>\n\t\t<AsamButton class=\"!ml-0\" plain @click=\"dialogOverflowVisible = true\">\n\t\t\tOpen a overflow draggable Dialog\n\t\t</AsamButton>\n\t\t<AsamButton class=\"!ml-0\" plain @click=\"customDraggingVisible = true\">\n\t\t\tOpen a custom dragging style Dialog\n\t\t</AsamButton>\n\t</div>\n\n\t<AsamDialog v-model=\"dialogVisible\" title=\"Tips\" width=\"500\" draggable>\n\t\t<span>It's a draggable Dialog</span>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton @click=\"dialogVisible = false\">Cancel</AsamButton>\n\t\t\t\t<AsamButton type=\"primary\" @click=\"dialogVisible = false\"> Confirm </AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n\n\t<AsamDialog v-model=\"dialogOverflowVisible\" title=\"Tips\" width=\"500\" draggable overflow>\n\t\t<span>It's a overflow draggable Dialog</span>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton @click=\"dialogOverflowVisible = false\">Cancel</AsamButton>\n\t\t\t\t<AsamButton type=\"primary\" @click=\"dialogOverflowVisible = false\">\n\t\t\t\t\tConfirm\n\t\t\t\t</AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n\n\t<AsamDialog\n\t\tv-model=\"customDraggingVisible\"\n\t\tclass=\"custom-dragging-style\"\n\t\ttitle=\"Custom Dragging Style\"\n\t\twidth=\"500\"\n\t\tdraggable\n\t>\n\t\t<span>This dialog has custom dragging styles. Try dragging it to see the effects!</span>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton @click=\"customDraggingVisible = false\">Cancel</AsamButton>\n\t\t\t\t<AsamButton type=\"primary\" @click=\"customDraggingVisible = false\">\n\t\t\t\t\tConfirm\n\t\t\t\t</AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n</template>\n\n<script setup>\nimport { AsamButton, AsamDialog } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst dialogVisible = ref(false);\nconst dialogOverflowVisible = ref(false);\nconst customDraggingVisible = ref(false);\n</script>\n\n<style scoped>\n:global(.custom-dragging-style.is-dragging) {\n\tborder: 2px dashed var(--el-color-primary);\n\topacity: 0.65;\n}\n</style>\n",
+			"originalSourceSha256": "1391acf7b24d3240f90000edead3ff04441355216544c0c5c4373cb15dd41bb1",
+			"notice": {
+				"id": "dbc2fc85a49b4bc413f7357a2df49933e7afdc6a1f7930f3d31878dcc6316dd3",
+				"url": "/licenses/source-notices/dbc2fc85a49b4bc413f7357a2df49933e7afdc6a1f7930f3d31878dcc6316dd3.txt",
+				"licenseFilename": "LICENSE-dbc2fc85a49b4bc413f7357a2df49933e7afdc6a1f7930f3d31878dcc6316dd3.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/dialog/draggable-dialog.vue",
+					"sourceSha256": "da50572dcffefa226a3077ddec258c4ff1725ac537e5339060d5d5378ca7cd41",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-dbc2fc85a49b4bc413f7357a2df49933e7afdc6a1f7930f3d31878dcc6316dd3.txt",
+			"source": "Adapted from Element Plus 2.14.7 dialog/draggable-dialog. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "dbc2fc85a49b4bc413f7357a2df49933e7afdc6a1f7930f3d31878dcc6316dd3",
+			"noticeId": "dbc2fc85a49b4bc413f7357a2df49933e7afdc6a1f7930f3d31878dcc6316dd3"
+		}
+	]
+}

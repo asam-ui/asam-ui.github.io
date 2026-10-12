@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="color-scheme" content="light dark" />
+		<meta name="description" content="ASAM UI 开发者文档。Vue 3 组件、安装指南与设计系统。" />
+		<title>让界面一致，让开发专注 · ASAM UI</title>
+		<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+		<link rel="stylesheet" href="/assets/style.css?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9" />
+		<script src="/assets/theme-init.js"></script>
+		<link rel="preload" as="image" href="/assets/hero.webp" />
+		<script src="/assets/vendor/gsap.min.js" defer></script>
+		<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+		<script src="/assets/catalog.js" defer></script>
+		<script src="/assets/app.js?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9" defer></script>
+		
+	<link rel="stylesheet" href="/assets/home-interactive.css?v=f840b6d2148f5e756adc7a1f4e9ab735e8641d0b3bdb1f13e4afbb0f2bbcba61" />
+		<script>if (!matchMedia('(prefers-reduced-motion: reduce)').matches) { document.documentElement.dataset.homeBoot = 'pending'; window.__asamHomeBootTimeout = setTimeout(() => { delete document.documentElement.dataset.homeBoot; }, 2200); }</script>
+		<script src="/assets/home-interactive.js?v=f840b6d2148f5e756adc7a1f4e9ab735e8641d0b3bdb1f13e4afbb0f2bbcba61" defer></script>
+		<script src="/assets/home-motion.js?v=f840b6d2148f5e756adc7a1f4e9ab735e8641d0b3bdb1f13e4afbb0f2bbcba61" defer></script>
+		<link rel="stylesheet" href="/assets/home-scene.css?v=f840b6d2148f5e756adc7a1f4e9ab735e8641d0b3bdb1f13e4afbb0f2bbcba61" />
+		<script type="module" src="/assets/home-scene/home-scene.js?v=f840b6d2148f5e756adc7a1f4e9ab735e8641d0b3bdb1f13e4afbb0f2bbcba61"></script>
+		<link rel="stylesheet" href="/assets/ai-guide.css"><link rel="stylesheet" href="/assets/website-layout.css?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9"><script src="/assets/website-layout.js?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9"></script></head>
+	<body data-page="home" data-home-motion="enhanced">
+		<div class="boot-screen" aria-hidden="true">
+			<div class="boot-panel"></div><div class="boot-panel"></div>
+			<div class="boot-content">
+				<div class="boot-tiles"><i></i><i></i><i></i></div>
+				<strong class="boot-word">ASAM <span>UI</span></strong>
+				<small>BUILD WITH CONSISTENCY</small><div class="boot-rule"></div>
+			</div>
+		</div>
+		<div class="motion-progress" aria-hidden="true"></div>
+		<a class="skip-link" href="#main">跳到正文</a>
+		<header class="site-header" data-site-component="header">
+			<div class="nav-shell">
+				<a class="brand" href="/index.html" aria-label="ASAM UI 首页"
+					 aria-current="page"><span class="brand-mark" aria-hidden="true">A<span></span></span
+					><strong>ASAM<span class="brand-ui"> UI</span></strong></a
+				>
+				<nav class="primary-nav" aria-label="主导航">
+					<a href="/getting-started.html">开始使用</a
+					><a href="/component-catalog.html">组件</a><a href="/design-system.html">设计系统</a>
+				<a href="/ai/index.html">AI</a></nav>
+				<div class="nav-actions"><button type="button" class="icon-button website-wide-toggle" aria-pressed="false" aria-label="开启宽屏模式" title="开启宽屏模式"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 4v16M16 4v16"/><path class="wide-expand" d="m11 10-2 2 2 2m2-4 2 2-2 2"/><path class="wide-contract" d="m9 10 2 2-2 2m6-4-2 2 2 2"/></svg></button>
+					<button
+						class="search-trigger"
+						type="button"
+						data-open-search
+						aria-label="搜索文档，快捷键 Control K"
+					>
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+								/></svg></span
+						><span>搜索文档</span><kbd>Ctrl K</kbd></button
+					><button
+						class="icon-button theme-toggle"
+						type="button"
+						aria-label="切换显示模式"
+					>
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z"
+								/></svg
+						></span></button
+					><button
+						class="icon-button menu-toggle"
+						type="button"
+						aria-label="展开导航"
+						aria-controls="mobile-nav"
+						aria-expanded="false"
+					>
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+								/></svg
+						></span>
+					</button>
+				</div>
+			</div>
+			<nav id="mobile-nav" class="mobile-nav" aria-label="移动端导航" hidden>
+				<a href="/getting-started.html"
+					>开始使用<span class="icon-wrap"
+						><svg
+							class="icon"
+							aria-hidden="true"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 256 256"
+							fill="currentColor"
+						>
+							<path
+								d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+							/></svg></span></a
+				><a href="/component-catalog.html"
+					>组件<span class="icon-wrap"
+						><svg
+							class="icon"
+							aria-hidden="true"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 256 256"
+							fill="currentColor"
+						>
+							<path
+								d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+							/></svg></span></a
+				><a href="/design-system.html"
+					>设计系统<span class="icon-wrap"
+						><svg
+							class="icon"
+							aria-hidden="true"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 256 256"
+							fill="currentColor"
+						>
+							<path
+								d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+							/></svg></span
+				></a>
+			<a href="/ai/index.html">AI</a></nav>
+		</header>
+		
+		<main id="main">
+			<section class="hero wrap">
+				<div class="hero-copy">
+					<div class="eyebrow hero-enter">为 Vue 3 业务应用而构建</div>
+					<h1 class="hero-enter"><span class="hero-line"><span class="hero-line-inner">让界面一致，</span></span><span class="hero-line"><span class="hero-line-inner">让开发专注。</span></span></h1>
+					<p class="hero-enter">
+						从基础控件到数据驱动组件，<br
+							class="desktop-br"
+						/>用熟悉的方式，构建更好的业务界面。
+					</p>
+					<div class="hero-actions hero-enter">
+						<a class="button primary" href="/getting-started.html"
+							>开始使用
+							<span class="icon-wrap"
+								><svg
+									class="icon"
+									aria-hidden="true"
+									focusable="false"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 256 256"
+									fill="currentColor"
+								>
+									<path
+										d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+									/></svg></span></a
+						><a class="button secondary" href="/component-catalog.html"
+							>浏览组件
+							<span class="icon-wrap"
+								><svg
+									class="icon"
+									aria-hidden="true"
+									focusable="false"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 256 256"
+									fill="currentColor"
+								>
+									<path
+										d="M104,40H56A16,16,0,0,0,40,56v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V56A16,16,0,0,0,104,40Zm0,64H56V56h48v48Zm96-64H152a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,64H152V56h48v48Zm-96,32H56a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V152A16,16,0,0,0,104,136Zm0,64H56V152h48v48Zm96-64H152a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V152A16,16,0,0,0,200,136Zm0,64H152V152h48v48Z"
+									/></svg></span
+						></a>
+					</div>
+				<button type="button" class="motion-replay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6" /></svg>重播动效</button></div><div class="hero-art"><div class="hero-image-motion hero-scene" data-scene-state="fallback" data-assembly="assembled">
+			<div class="scene-viewport"><div class="scene-fallback">
+					<img
+						src="/assets/hero.webp"
+						width="1254"
+						height="1254"
+						alt="由蓝色透明模块构成的立体 A 字形雕塑"
+						fetchpriority="high"
+					/></div><div class="scene-renderer"></div></div>
+			<span class="scene-announcement" id="scene-instructions">点击展开或重组。拖拽或按方向键调整视角，按 Home 复位。</span>
+			<span class="scene-announcement" role="status" aria-live="polite"></span>
+		</div>
+				</div>
+			</section>
+			<div class="stack-strip wrap">
+				<span>熟悉的技术，更顺手的组合</span>
+				<div>
+					<strong>Vue <small>3</small></strong
+					><strong>TypeScript</strong><strong>Element Plus</strong
+					><strong>CSS Variables</strong>
+				</div>
+			</div>
+			<section class="section wrap component-intro">
+				<div class="section-heading" data-reveal>
+					<h2>从一个组件，<br />到完整界面。</h2>
+					<p>找到适合当前任务的构建块，让交互、样式与数据各归其位。</p>
+				</div>
+				<div class="feature-grid">
+					<div class="tilt-card tilt-card-wide" data-tilt-card data-tilt-strength="8" data-reveal><a data-tilt-surface class="feature feature-wide" href="/component-AsamForm.html"
+						><div class="feature-symbol">
+							<span class="icon-wrap"
+								><svg
+									class="icon"
+									aria-hidden="true"
+									focusable="false"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 256 256"
+									fill="currentColor"
+								>
+									<path
+										d="M224,128a8,8,0,0,1-8,8H128a8,8,0,0,1,0-16h88A8,8,0,0,1,224,128ZM128,72h88a8,8,0,0,0,0-16H128a8,8,0,0,0,0,16Zm88,112H128a8,8,0,0,0,0,16h88a8,8,0,0,0,0-16ZM82.34,42.34,56,68.69,45.66,58.34A8,8,0,0,0,34.34,69.66l16,16a8,8,0,0,0,11.32,0l32-32A8,8,0,0,0,82.34,42.34Zm0,64L56,132.69,45.66,122.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32,0l32-32a8,8,0,0,0-11.32-11.32Zm0,64L56,196.69,45.66,186.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32,0l32-32a8,8,0,0,0-11.32-11.32Z"
+									/></svg
+							></span>
+						</div>
+						<span class="feature-code">AsamForm</span>
+						<h3>表单，自有章法。</h3>
+						<p>配置化表单与分区布局，让信息录入更清晰。</p>
+						<span class="feature-link"
+							>查看表单组件
+							<span class="icon-wrap"
+								><svg
+									class="icon"
+									aria-hidden="true"
+									focusable="false"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 256 256"
+									fill="currentColor"
+								>
+									<path
+										d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+									/></svg></span></span></a
+					></div><div class="tilt-card" data-tilt-card data-tilt-strength="8" data-reveal><a
+						data-tilt-surface class="feature feature-blue"
+						href="/component-AsamDataTable.html"
+						><div class="feature-symbol">
+							<span class="icon-wrap"
+								><svg
+									class="icon"
+									aria-hidden="true"
+									focusable="false"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 256 256"
+									fill="currentColor"
+								>
+									<path
+										d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM40,112H80v32H40Zm56,0H216v32H96ZM216,64V96H40V64ZM40,160H80v32H40Zm176,32H96V160H216v32Z"
+									/></svg
+							></span>
+						</div>
+						<span class="feature-code">AsamDataTable</span>
+						<h3>让数据有条理。</h3>
+						<p>连接查询与表格，承接业务数据展示。</p>
+						<span class="feature-link"
+							>查看数据表格
+							<span class="icon-wrap"
+								><svg
+									class="icon"
+									aria-hidden="true"
+									focusable="false"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 256 256"
+									fill="currentColor"
+								>
+									<path
+										d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+									/></svg></span></span></a
+					></div><div class="tilt-card" data-tilt-card data-tilt-strength="8" data-reveal><a data-tilt-surface class="feature feature-soft" href="/component-AsamSelect.html"
+						><div class="feature-symbol">
+							<span class="icon-wrap"
+								><svg
+									class="icon"
+									aria-hidden="true"
+									focusable="false"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 256 256"
+									fill="currentColor"
+								>
+									<path
+										d="M88,24V16a8,8,0,0,1,16,0v8a8,8,0,0,1-16,0ZM16,104h8a8,8,0,0,0,0-16H16a8,8,0,0,0,0,16ZM124.42,39.16a8,8,0,0,0,10.74-3.58l8-16a8,8,0,0,0-14.31-7.16l-8,16A8,8,0,0,0,124.42,39.16Zm-96,81.69-16,8a8,8,0,0,0,7.16,14.31l16-8a8,8,0,1,0-7.16-14.31ZM219.31,184a16,16,0,0,1,0,22.63l-12.68,12.68a16,16,0,0,1-22.63,0L132.7,168,115,214.09c0,.1-.08.21-.13.32a15.83,15.83,0,0,1-14.6,9.59l-.79,0a15.83,15.83,0,0,1-14.41-11L32.8,52.92A16,16,0,0,1,52.92,32.8L213,85.07a16,16,0,0,1,1.41,29.8l-.32.13L168,132.69ZM208,195.31,156.69,144h0a16,16,0,0,1,4.93-26l.32-.14,45.95-17.64L48,48l52.2,159.86,17.65-46c0-.11.08-.22.13-.33a16,16,0,0,1,11.69-9.34,16.72,16.72,0,0,1,3-.28,16,16,0,0,1,11.3,4.69L195.31,208Z"
+									/></svg
+							></span>
+						</div>
+						<span class="feature-code">AsamSelect</span>
+						<h3>每一次选择，都一致。</h3>
+						<p>从静态选项出发，按需接入远程和字典数据。</p>
+						<span class="feature-link"
+							>查看选择器
+							<span class="icon-wrap"
+								><svg
+									class="icon"
+									aria-hidden="true"
+									focusable="false"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 256 256"
+									fill="currentColor"
+								>
+									<path
+										d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+									/></svg></span></span
+					></a></div>
+				</div>
+			</section>
+			<section class="system-section wrap" data-reveal>
+				<div class="system-copy">
+					<h2>一致，是设计的一部分。</h2>
+					<p>
+						把品牌色、间距与圆角变成可复用的语言。<br />通过 ASAM
+						tokens，让每个组件保持同一种表达。
+					</p>
+					<a class="text-link" href="/design-system.html"
+						>探索设计系统
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+								/></svg></span
+					></a>
+				</div>
+				<div class="token-composition" aria-label="ASAM 主色与基础设计变量">
+		<div class="tilt-card tilt-token-big" data-tilt-card data-tilt-strength="5">
+			<div class="token-big" data-tilt-surface><span>Primary</span><strong>#2D6BD6</strong></div>
+		</div>
+		<div class="tilt-card tilt-token-small" data-tilt-card data-tilt-strength="5">
+			<div class="token-small" data-tilt-surface><span>Surface</span><strong>#F3F5F9</strong></div>
+		</div>
+		<div class="tilt-card tilt-token-radius" data-tilt-card data-tilt-strength="5">
+			<div class="token-radius" data-tilt-surface><div></div><span>Card radius <strong>10px</strong></span></div>
+		</div>
+	</div>
+			</section>
+			<section class="start-section wrap" data-reveal>
+				<span class="start-icon"
+					><span class="icon-wrap"
+						><svg
+							class="icon"
+							aria-hidden="true"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 256 256"
+							fill="currentColor"
+						>
+							<path
+								d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"
+							/></svg></span
+				></span>
+				<div>
+					<h2>下一步，开始构建。</h2>
+					<p>了解本地包接入方式，将 ASAM UI 带入你的项目。</p>
+				</div>
+				<a class="button primary" href="/getting-started.html"
+					>开始使用
+					<span class="icon-wrap"
+						><svg
+							class="icon"
+							aria-hidden="true"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 256 256"
+							fill="currentColor"
+						>
+							<path
+								d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+							/></svg></span
+				></a>
+			</section>
+		</main>
+		<footer class="site-footer wrap">
+			<div>
+				<a class="footer-brand" href="/index.html">ASAM UI</a
+				><span>让一致的体验，从组件开始。</span>
+			</div>
+			<div class="footer-links">
+				<a href="/getting-started.html#release">当前接入方式</a
+				><a href="/design-system.html">设计系统</a
+				><span class="preview-label">静态设计预览</span>
+			</div>
+		</footer>
+		<dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
+			<div class="dialog-top">
+				<h2 id="search-title">搜索文档</h2>
+				<button class="icon-button" type="button" data-close-dialog aria-label="关闭搜索">
+					<span class="icon-wrap"
+						><svg
+							class="icon"
+							aria-hidden="true"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 256 256"
+							fill="currentColor"
+						>
+							<path
+								d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+							/></svg
+					></span>
+				</button>
+			</div>
+			<label class="search-field"
+				><span class="sr-only">搜索组件或指南</span
+				><span class="icon-wrap"
+					><svg
+						class="icon"
+						aria-hidden="true"
+						focusable="false"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 256 256"
+						fill="currentColor"
+					>
+						<path
+							d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+						/></svg></span
+				><input
+					id="global-search"
+					type="search"
+					placeholder="搜索组件、安装、主题…"
+					autocomplete="off"
+			/></label>
+			<div id="search-results" class="search-results" aria-live="polite"></div>
+			<p class="dialog-hint">
+				<kbd>Tab</kbd> 选择结果 <kbd>Enter</kbd> 打开 <kbd>Esc</kbd> 关闭
+			</p>
+		</dialog>
+		<div class="toast" role="status" aria-live="polite"></div>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamProgress/cap-custom-color/js/Demo.vue",
+			"sha256": "5cb743f0e34aef4a3626bb1c8f468b775614b86726ad6dc03186dfb38c96c8d0",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e5398633d6f23196b46cc87d05a484615f101761c49faac9559bec7f09048bdd.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e5398633d6f23196b46cc87d05a484615f101761c49faac9559bec7f09048bdd.txt\n-->\n<template>\n\t<div class=\"demo-progress\">\n\t\t<AsamProgress :percentage=\"percentage\" :color=\"customColor\" />\n\n\t\t<AsamProgress :percentage=\"percentage\" :color=\"customColorMethod\" />\n\n\t\t<AsamProgress :percentage=\"percentage\" :color=\"customColors\" />\n\t\t<AsamProgress :percentage=\"percentage\" :color=\"customColors\" />\n\t\t<div>\n\t\t\t<AsamButtonGroup>\n\t\t\t\t<AsamButton :icon=\"Minus\" @click=\"decrease\" />\n\t\t\t\t<AsamButton :icon=\"Plus\" @click=\"increase\" />\n\t\t\t</AsamButtonGroup>\n\t\t</div>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamProgressCapCustomColorDemo' });\nimport { AsamProgress, AsamButtonGroup, AsamButton } from '@asam-ui/ui';\nimport { ref } from 'vue';\nimport { Minus, Plus } from '@asam-ui/icons-vue';\nconst percentage = ref(20);\nconst customColor = ref('#409eff');\nconst customColors = [\n\t{ color: '#f56c6c', percentage: 20 },\n\t{ color: '#e6a23c', percentage: 40 },\n\t{ color: '#5cb87a', percentage: 60 },\n\t{ color: '#1989fa', percentage: 80 },\n\t{ color: '#6f7ad3', percentage: 100 }\n];\nconst customColorMethod = (percentage) => {\n\tif (percentage < 30) {\n\t\treturn '#909399';\n\t}\n\tif (percentage < 70) {\n\t\treturn '#e6a23c';\n\t}\n\treturn '#67c23a';\n};\nconst increase = () => {\n\tpercentage.value += 10;\n\tif (percentage.value > 100) {\n\t\tpercentage.value = 100;\n\t}\n};\nconst decrease = () => {\n\tpercentage.value -= 10;\n\tif (percentage.value < 0) {\n\t\tpercentage.value = 0;\n\t}\n};\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.demo-progress .el-progress--line {\n\tmargin-bottom: 15px;\n\tmax-width: 600px;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n",
+			"originalSourceSha256": "ce3d1f98124ba81aa3a2d09d1c171dce213e1691b4383e1b178c217680caece3",
+			"notice": {
+				"id": "e5398633d6f23196b46cc87d05a484615f101761c49faac9559bec7f09048bdd",
+				"url": "/licenses/source-notices/e5398633d6f23196b46cc87d05a484615f101761c49faac9559bec7f09048bdd.txt",
+				"licenseFilename": "LICENSE-e5398633d6f23196b46cc87d05a484615f101761c49faac9559bec7f09048bdd.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/progress/custom-color.vue",
+					"sourceSha256": "0bd4b295863a759ec23918db61a20c1a7af33962322d5906f116b75d9d29c8e0",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-e5398633d6f23196b46cc87d05a484615f101761c49faac9559bec7f09048bdd.txt",
+			"source": "Adapted from Element Plus 2.14.7 progress/custom-color. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "e5398633d6f23196b46cc87d05a484615f101761c49faac9559bec7f09048bdd",
+			"noticeId": "e5398633d6f23196b46cc87d05a484615f101761c49faac9559bec7f09048bdd"
+		}
+	]
+}

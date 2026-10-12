@@ -1,0 +1,1 @@
+import{Lt as e}from"./sfc-demo.js";var t=class extends Error{constructor(e){super(e),this.name=`ElementPlusError`}};function n(e,n){throw new t(`[${e}] ${n}`)}function r(n,r){{let i=e(n)?new t(`[${n}] ${r}`):n;console.warn(i)}}export{n,r as t};

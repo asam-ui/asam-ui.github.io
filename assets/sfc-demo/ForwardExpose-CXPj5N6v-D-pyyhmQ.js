@@ -1,0 +1,1 @@
+function e(e,t){return new Proxy({},{get(n,r){if(!t.includes(r))return;let i=e.value?.[r];return typeof i==`function`?i.bind(e.value):i},has(e,n){return t.includes(n)},ownKeys(){return t.map(String)},getOwnPropertyDescriptor(e,n){return t.includes(n)?{enumerable:!0,configurable:!0}:void 0}})}export{e as t};

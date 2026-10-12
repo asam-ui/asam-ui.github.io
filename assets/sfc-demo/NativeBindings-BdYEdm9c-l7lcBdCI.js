@@ -1,0 +1,1 @@
+import{D as e,_ as t}from"./sfc-demo.js";function n(n,r,i){let a=e();return t(()=>{let e=Object.fromEntries(Object.entries(n));for(let t of r)delete e[t];let t=a?.vnode.props??{};for(let n of i){let r=n.replace(/[A-Z]/g,e=>`-${e.toLowerCase()}`);Object.hasOwn(t,n)?e[n]=t[n]:Object.hasOwn(t,r)?e[n]=t[r]:delete e[n]}return e})}export{n as t};

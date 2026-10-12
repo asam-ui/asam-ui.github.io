@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTag/cap-removable/ts/Demo.vue",
+			"sha256": "ae0cda0e8edc35b17582d245ccd361f9340c26343645adebe5343be613618b82",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25.txt\n-->\n<template>\n\t<div class=\"flex gap-2\">\n\t\t<AsamTag v-for=\"tag in tags\" :key=\"tag.name\" closable :type=\"tag.type\">\n\t\t\t{{ tag.name }}\n\t\t</AsamTag>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTagCapRemovableDemo' });\nimport { AsamTag } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nimport type { AsamTagProps } from '@asam-ui/ui';\n\ninterface TagsItem {\n\tname: string;\n\ttype: AsamTagProps['type'];\n}\n\nconst tags = ref<TagsItem[]>([\n\t{ name: 'Tag 1', type: 'primary' },\n\t{ name: 'Tag 2', type: 'success' },\n\t{ name: 'Tag 3', type: 'info' },\n\t{ name: 'Tag 4', type: 'warning' },\n\t{ name: 'Tag 5', type: 'danger' }\n]);\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.gap-2 {\n\tgap: 0.5rem;\n}\n</style>\n",
+			"originalSourceSha256": "76a2aa7177995effba3658522d7a1e107a85b03af3ad82cf8042cf2c8c2a5c5c",
+			"notice": {
+				"id": "bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25",
+				"url": "/licenses/source-notices/bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25.txt",
+				"licenseFilename": "LICENSE-bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/tag/removable.vue",
+					"sourceSha256": "4c6e952b78375645ea718504ae40ce7b03be6f2160a604d42ebdcc4e07ecfc22",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25.txt",
+			"source": "Adapted from Element Plus 2.14.7 tag/removable. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25",
+			"noticeId": "bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25"
+		}
+	]
+}

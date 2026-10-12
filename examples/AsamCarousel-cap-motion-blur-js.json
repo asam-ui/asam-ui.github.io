@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamCarousel/cap-motion-blur/js/Demo.vue",
+			"sha256": "868d767a8729fa144eb16281f47e74335b29d060ac00bd0a41cc2ca9eec409c7",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-c5432e46342743068bcae000f197f962376ef0defda63dc97ce9ac80c8d7311d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/c5432e46342743068bcae000f197f962376ef0defda63dc97ce9ac80c8d7311d.txt\n-->\n<template>\n\t<div class=\"block text-center\">\n\t\t<span class=\"demonstration\">Motion blur the switch (default)</span>\n\t\t<AsamCarousel height=\"200px\" motion-blur>\n\t\t\t<AsamCarouselItem v-for=\"item in 4\" :key=\"item\">\n\t\t\t\t<h3 class=\"small justify-center ui032-text-2xl\">{{ item }}</h3>\n\t\t\t</AsamCarouselItem>\n\t\t</AsamCarousel>\n\t</div>\n\t<p class=\"text-center demonstration\">Vertical effect</p>\n\t<!-- prettier-ignore -->\n\t<AsamCarousel\n\t\theight=\"200px\"\n\t\tdirection=\"vertical\"\n\t\tmotion-blur\n\t\t:autoplay=\"false\"\n\t>\n\t\t<AsamCarouselItem v-for=\"item in 4\" :key=\"item\">\n\t\t\t<h3 class=\"ui032-text-2xl ui032-justify-center\">{{ item }}</h3>\n\t\t</AsamCarouselItem>\n\t</AsamCarousel>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamCarouselCapMotionBlurDemo' });\nimport { AsamCarousel, AsamCarouselItem } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.demonstration {\n\tcolor: var(--el-text-color-secondary);\n}\n\n.el-carousel__item h3 {\n\tcolor: #475669;\n\topacity: 0.75;\n\tline-height: 200px;\n\tmargin: 0;\n\ttext-align: center;\n}\n\n.el-carousel__item:nth-child(2n) {\n\tbackground-color: #99a9bf;\n}\n\n.el-carousel__item:nth-child(2n + 1) {\n\tbackground-color: #d3dce6;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.text-center {\n\ttext-align: center;\n}\n\n.justify-center {\n\tjustify-content: center;\n}\n</style>\n\n<style scoped>\n.ui032-text-2xl {\n\tfont-size: 1.5rem;\n}\n\n.ui032-justify-center {\n\tjustify-content: center;\n}\n</style>\n",
+			"originalSourceSha256": "610f41b3b93d9ec77717374ee75103100831b63453c30f9d8f1bb58f5c96346a",
+			"notice": {
+				"id": "c5432e46342743068bcae000f197f962376ef0defda63dc97ce9ac80c8d7311d",
+				"url": "/licenses/source-notices/c5432e46342743068bcae000f197f962376ef0defda63dc97ce9ac80c8d7311d.txt",
+				"licenseFilename": "LICENSE-c5432e46342743068bcae000f197f962376ef0defda63dc97ce9ac80c8d7311d.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/carousel/motion-blur.vue",
+					"sourceSha256": "007373d2c18b76df02e2b2610f8a78656e7a44b1bcccb7528093b4ff65d98a17",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-c5432e46342743068bcae000f197f962376ef0defda63dc97ce9ac80c8d7311d.txt",
+			"source": "Adapted from Element Plus 2.14.7 carousel/motion-blur. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "c5432e46342743068bcae000f197f962376ef0defda63dc97ce9ac80c8d7311d",
+			"noticeId": "c5432e46342743068bcae000f197f962376ef0defda63dc97ce9ac80c8d7311d"
+		}
+	]
+}

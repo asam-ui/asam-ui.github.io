@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamCalendar/official-calendar-header/ts/Demo.vue",
+			"sha256": "5d3fd330b3cf01bb234ac266deb016bdffa44c6ab93c614f1949f77f2204fe8f",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e82c3874e42205f5e75cc0b4ad1bcbe77c3f2427a0813fa25541cd4e5201baaa.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e82c3874e42205f5e75cc0b4ad1bcbe77c3f2427a0813fa25541cd4e5201baaa.txt\n-->\n<template>\n\t<AsamCalendar ref=\"calendar\">\n\t\t<template #header=\"{ date }\">\n\t\t\t<span>Custom header content</span>\n\t\t\t<span>{{ date }}</span>\n\t\t\t<AsamButtonGroup>\n\t\t\t\t<AsamButton size=\"small\" @click=\"selectDate('prev-year')\">\n\t\t\t\t\tPrevious Year\n\t\t\t\t</AsamButton>\n\t\t\t\t<AsamButton size=\"small\" @click=\"selectDate('prev-month')\">\n\t\t\t\t\tPrevious Month\n\t\t\t\t</AsamButton>\n\t\t\t\t<AsamButton size=\"small\" @click=\"selectDate('today')\">Today</AsamButton>\n\t\t\t\t<AsamButton size=\"small\" @click=\"selectDate('next-month')\"> Next Month </AsamButton>\n\t\t\t\t<AsamButton size=\"small\" @click=\"selectDate('next-year')\"> Next Year </AsamButton>\n\t\t\t</AsamButtonGroup>\n\t\t</template>\n\t</AsamCalendar>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamCalendar, AsamButtonGroup, AsamButton } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamCalendarofficialcalendarheaderExample' });\n\nimport { ref } from 'vue';\n\nimport type {\n\tAsamCalendarDateType as CalendarDateType,\n\tAsamCalendarInstance as CalendarInstance\n} from '@asam-ui/ui';\n\nconst calendar = ref<CalendarInstance>();\nconst selectDate = (val: CalendarDateType) => {\n\tif (!calendar.value) return;\n\tcalendar.value.selectDate(val);\n};\n</script>\n",
+			"originalSourceSha256": "0dce8a7fe359aef1d42fe2c17de5f622fc57d6bd4bd5656e6eb2eb6beb032332",
+			"notice": {
+				"id": "e82c3874e42205f5e75cc0b4ad1bcbe77c3f2427a0813fa25541cd4e5201baaa",
+				"url": "/licenses/source-notices/e82c3874e42205f5e75cc0b4ad1bcbe77c3f2427a0813fa25541cd4e5201baaa.txt",
+				"licenseFilename": "LICENSE-e82c3874e42205f5e75cc0b4ad1bcbe77c3f2427a0813fa25541cd4e5201baaa.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/calendar/header.vue",
+					"sourceSha256": "24aa5ce2811321873abe63cb76c69be9b737c1300f78269f049beb47433be2bb",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-e82c3874e42205f5e75cc0b4ad1bcbe77c3f2427a0813fa25541cd4e5201baaa.txt",
+			"source": "Adapted from Element Plus 2.14.7 calendar/header. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "e82c3874e42205f5e75cc0b4ad1bcbe77c3f2427a0813fa25541cd4e5201baaa",
+			"noticeId": "e82c3874e42205f5e75cc0b4ad1bcbe77c3f2427a0813fa25541cd4e5201baaa"
+		}
+	]
+}

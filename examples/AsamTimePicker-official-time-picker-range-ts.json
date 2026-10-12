@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTimePicker/official-time-picker-range/ts/Demo.vue",
+			"sha256": "8b6933121880dd8bafc43acd9580d00573c8db2c023c952de7d407523cc68911",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-cdc2f6d951e8177190dea12004f7e7a8bbc7de3d86c50cb4328c52c868b946a6.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/cdc2f6d951e8177190dea12004f7e7a8bbc7de3d86c50cb4328c52c868b946a6.txt\n-->\n<template>\n\t<div class=\"demo-range\">\n\t\t<AsamTimePicker\n\t\t\tv-model=\"value1\"\n\t\t\tvalue-format=\"\"\n\t\t\tis-range\n\t\t\trange-separator=\"To\"\n\t\t\tstart-placeholder=\"Start time\"\n\t\t\tend-placeholder=\"End time\"\n\t\t/>\n\t\t<AsamTimePicker\n\t\t\tv-model=\"value2\"\n\t\t\tvalue-format=\"\"\n\t\t\tis-range\n\t\t\tarrow-control\n\t\t\trange-separator=\"To\"\n\t\t\tstart-placeholder=\"Start time\"\n\t\t\tend-placeholder=\"End time\"\n\t\t/>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\nimport type { AsamTimeValue } from '@asam-ui/ui';\nimport { AsamTimePicker } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamTimePickerofficialtimepickerrangeExample' });\n\nimport { ref } from 'vue';\n\nconst value1 = ref<AsamTimeValue>([new Date(2016, 9, 10, 8, 40), new Date(2016, 9, 10, 9, 40)]);\nconst value2 = ref<AsamTimeValue>([new Date(2016, 9, 10, 8, 40), new Date(2016, 9, 10, 9, 40)]);\n</script>\n\n<style scoped>\n/* stylelint-disable selector-pseudo-class-no-unknown, selector-class-pattern, no-descending-specificity -- Vue deep/native BEM selectors and equivalent media selector groups retained from the fixed official example. */\n.demo-range .el-date-editor {\n\tmargin: 8px;\n}\n\n.demo-range .el-range-separator {\n\tbox-sizing: content-box;\n}\n</style>\n",
+			"originalSourceSha256": "19b63010ff389969c23d476dc51d0559ce97f37a3b835677177a59bcf5b68969",
+			"notice": {
+				"id": "cdc2f6d951e8177190dea12004f7e7a8bbc7de3d86c50cb4328c52c868b946a6",
+				"url": "/licenses/source-notices/cdc2f6d951e8177190dea12004f7e7a8bbc7de3d86c50cb4328c52c868b946a6.txt",
+				"licenseFilename": "LICENSE-cdc2f6d951e8177190dea12004f7e7a8bbc7de3d86c50cb4328c52c868b946a6.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/time-picker/range.vue",
+					"sourceSha256": "06386a1cfae44973e1b8d60019d52a82535767d0021858ce7d54a6c56040436f",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-cdc2f6d951e8177190dea12004f7e7a8bbc7de3d86c50cb4328c52c868b946a6.txt",
+			"source": "Adapted from Element Plus 2.14.7 time-picker/range. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "cdc2f6d951e8177190dea12004f7e7a8bbc7de3d86c50cb4328c52c868b946a6",
+			"noticeId": "cdc2f6d951e8177190dea12004f7e7a8bbc7de3d86c50cb4328c52c868b946a6"
+		}
+	]
+}

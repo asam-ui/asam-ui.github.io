@@ -1,0 +1,1 @@
+import{E as e,Tt as t,W as n,y as r}from"./sfc-demo.js";import{a as i}from"./Index-k-lkvKhn.js";var a=e({__name:`Demo`,setup(e){let a=0,o={lazy:!0,lazyLoad(e,t){let{level:n}=e;setTimeout(()=>{t(Array.from({length:n+1}).map(()=>({value:++a,label:`Option - ${a}`,leaf:n>=2})))},1e3)}};return(e,a)=>(n(),r(t(i),{"value-mode":`native`,props:o}))}});export{a as default};

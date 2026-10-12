@@ -1,0 +1,19 @@
+.bd-mobile-ai {
+	display: none;
+	padding: 6px 8px;
+	border-radius: var(--asam-radius-action);
+	color: var(--accent-text);
+	font-size: 13px;
+}
+
+.bd-mobile-ai:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 3px;
+}
+
+@media (width <= 767px) {
+	.bd-mobile-ai {
+		display: inline-flex;
+		align-items: center;
+	}
+}
