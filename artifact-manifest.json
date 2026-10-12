@@ -49,13 +49,13 @@
     },
     {
       "path": "ai/index.html",
-      "bytes": 11147,
-      "sha256": "e671be15230831b6f3fa2d6bbff0c57a0000e9e6a0278b30c4a70445c4097e28"
+      "bytes": 11216,
+      "sha256": "daa64e5c84edb45316e61b86810cfdfe08457bb14c5e6b4bbf8dd1ba36d7f050"
     },
     {
       "path": "ai/mcp.html",
-      "bytes": 13807,
-      "sha256": "15143babbdf9ec2f3eee8450aed0052ed16a197ade0de9dd6a5d3d4bee469224"
+      "bytes": 15478,
+      "sha256": "430312116764db41c8d59bc5b737edf19e88f3a81ee6892d18be76c850969323"
     },
     {
       "path": "ai/resources.html",
@@ -16209,8 +16209,8 @@
     },
     {
       "path": "ai/access-manifest.json",
-      "bytes": 5014,
-      "sha256": "2c8bd0d4b7f1a007c62d913e097d85d16e67c6754b3e06fe344f340ff63dbbd4"
+      "bytes": 5490,
+      "sha256": "9367b390a84de75b0dd19505be76540956159f063f1020765d1c4ffe616c6a61"
     },
     {
       "path": "licenses/asam-ui-mcp.txt",
@@ -16268,7 +16268,7 @@
     "parentPublic": "3f62ff357aed87cc7183811ec9fe097964cd82e2",
     "packageVersion": "0.1.0-alpha.1",
     "skillArchiveSHA256": "b59a00254be77d898c7f12a052327c96f72315c89756d3108f2e55cfcbeb164c",
-    "mcpPublished": false,
+    "mcpPublished": true,
     "apiSfcSourceUnchanged": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
     "scope": "3 AI pages, standard usage Skill, download archive, approved license and access manifest",
     "sourceCorrections": [
@@ -16276,6 +16276,12 @@
         "source": "7b61ffb6c5c346a7a92de007c65a295e4c78638b",
         "parentPublic": "cd3b866b689465a8571cdd78c5af287a9245766f",
         "scope": "Raw SKILL.md anchor only plus affected access-manifest record"
+      },
+      {
+        "source": "a6d09d2c338bf3dcc6b073cb5cf006afb5046592",
+        "parentPublic": "46df795983ddb132aee3b277a99cf631c11c1e47",
+        "scope": "Published MCP availability and normal public npx/host guidance only",
+        "mcpArtifactSHA256": "8207ebe920b98b35d4b544d5c8fa8b5b0319954152561e88c3ca0dfc1ab17d80"
       }
     ]
   }

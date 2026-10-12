@@ -11,12 +11,12 @@
   "unchangedApiSfcSource": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
   "skillSource": "1ae352ba18ffd6198d47e1a55430b9080de0c2eb",
   "skillArchiveSHA256": "b59a00254be77d898c7f12a052327c96f72315c89756d3108f2e55cfcbeb164c",
-  "mcpPublished": false,
+  "mcpPublished": true,
   "files": [
     {
       "path": "ai/index.html",
-      "bytes": 11147,
-      "sha256": "e671be15230831b6f3fa2d6bbff0c57a0000e9e6a0278b30c4a70445c4097e28",
+      "bytes": 11216,
+      "sha256": "daa64e5c84edb45316e61b86810cfdfe08457bb14c5e6b4bbf8dd1ba36d7f050",
       "source": "apps/website/pages/ai/index.md"
     },
     {
@@ -27,8 +27,8 @@
     },
     {
       "path": "ai/mcp.html",
-      "bytes": 13807,
-      "sha256": "15143babbdf9ec2f3eee8450aed0052ed16a197ade0de9dd6a5d3d4bee469224",
+      "bytes": 15478,
+      "sha256": "430312116764db41c8d59bc5b737edf19e88f3a81ee6892d18be76c850969323",
       "source": "apps/website/pages/ai/mcp.md"
     },
     {
@@ -112,6 +112,17 @@
       "reason": "Preserve raw SKILL.md href; VitePress rewrote Markdown link to absent SKILL.html",
       "previousPublicRef": "cd3b866b689465a8571cdd78c5af287a9245766f",
       "previousSHA256": "2b9e1ccd53ed73ac1ad2e50dfbab142c244532d3212116e6e35c01781b3ccd0f"
+    },
+    {
+      "source": "a6d09d2c338bf3dcc6b073cb5cf006afb5046592",
+      "paths": [
+        "ai/index.html",
+        "ai/mcp.html"
+      ],
+      "reason": "Actual MCP first publication verified; real pinned npx/config/normal licence usage without internal approval workflow",
+      "previousPublicRef": "46df795983ddb132aee3b277a99cf631c11c1e47"
     }
-  ]
+  ],
+  "mcpVersion": "0.1.0-alpha.1",
+  "mcpArtifactSHA256": "8207ebe920b98b35d4b544d5c8fa8b5b0319954152561e88c3ca0dfc1ab17d80"
 }
