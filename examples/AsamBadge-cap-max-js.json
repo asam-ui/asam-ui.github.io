@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamBadge/cap-max/js/Demo.vue",
-			"sha256": "b2ceeec43bd0cd79322442c518d1bdcf9ef2595d884b4bcb3eef47b7bae33006",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-40aa414f789b851d1af8b574132f7e4d7751d0e04931fb9a054af6d795c6a10a.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/40aa414f789b851d1af8b574132f7e4d7751d0e04931fb9a054af6d795c6a10a.txt\n-->\n<template>\n\t<AsamBadge :value=\"200\" :max=\"99\" class=\"item\">\n\t\t<AsamButton>comments</AsamButton>\n\t</AsamBadge>\n\t<AsamBadge :value=\"100\" :max=\"10\" class=\"item\">\n\t\t<AsamButton>replies</AsamButton>\n\t</AsamBadge>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamBadgeCapMaxDemo' });\nimport { AsamBadge, AsamButton } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.item {\n\tmargin-top: 10px;\n\tmargin-right: 40px;\n}\n</style>\n",
-			"originalSourceSha256": "108e5e81a0811c018d0bc62825614960a27636e9d44b02ac5bca3ac9a3a2ffa1",
+			"sha256": "41b0a7efd042b13846d10d05c98bbf163db8824060cdd237d2d0c676cee308bf",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-40aa414f789b851d1af8b574132f7e4d7751d0e04931fb9a054af6d795c6a10a.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/40aa414f789b851d1af8b574132f7e4d7751d0e04931fb9a054af6d795c6a10a.txt\n-->\n<template>\n\t<AsamBadge :value=\"200\" :max=\"99\" class=\"item\">\n\t\t<AsamButton type=\"primary\">评论</AsamButton>\n\t</AsamBadge>\n\t<AsamBadge :value=\"100\" :max=\"10\" class=\"item\">\n\t\t<AsamButton type=\"primary\">回复</AsamButton>\n\t</AsamBadge>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamBadgeCapMaxDemo' });\nimport { AsamBadge, AsamButton } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.item {\n\tmargin-top: 10px;\n\tmargin-right: 40px;\n}\n</style>\n",
+			"originalSourceSha256": "be29f8891ce0633e4beea4dae0f362a9268f9ceadb6888248b6dcf9661712dd2",
 			"notice": {
 				"id": "40aa414f789b851d1af8b574132f7e4d7751d0e04931fb9a054af6d795c6a10a",
 				"url": "/licenses/source-notices/40aa414f789b851d1af8b574132f7e4d7751d0e04931fb9a054af6d795c6a10a.txt",

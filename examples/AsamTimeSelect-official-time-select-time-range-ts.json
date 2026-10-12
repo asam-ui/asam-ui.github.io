@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTimeSelect/official-time-select-time-range/ts/Demo.vue",
-			"sha256": "41d4ae28f424929dd69a7c848a9068c54dd4252f27fe25b9c452632fc4cb406c",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841.txt\n-->\n<template>\n\t<div class=\"demo-time-range flex flex-wrap gap-4\">\n\t\t<AsamTimeSelect\n\t\t\tv-model=\"startTime\"\n\t\t\tstyle=\"width: 240px\"\n\t\t\t:max-time=\"typeof endTime === 'string' ? endTime : undefined\"\n\t\t\tplaceholder=\"Start time\"\n\t\t\tstart=\"08:30\"\n\t\t\tstep=\"00:15\"\n\t\t\tend=\"18:30\"\n\t\t/>\n\t\t<AsamTimeSelect\n\t\t\tv-model=\"endTime\"\n\t\t\tstyle=\"width: 240px\"\n\t\t\t:min-time=\"typeof startTime === 'string' ? startTime : undefined\"\n\t\t\tplaceholder=\"End time\"\n\t\t\tstart=\"08:30\"\n\t\t\tstep=\"00:15\"\n\t\t\tend=\"18:30\"\n\t\t/>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\nimport type { AsamTimeSelectValue } from '@asam-ui/ui';\nimport { AsamTimeSelect } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamTimeSelectofficialtimeselecttimerangeExample' });\n\nimport { ref } from 'vue';\n\nconst startTime = ref<AsamTimeSelectValue>('');\nconst endTime = ref<AsamTimeSelectValue>('');\n</script>\n",
-			"originalSourceSha256": "130865674246785b84271746935dafcedfb2e3ed041f8b6b341be429aac86c5c",
+			"sha256": "4a32c2f71da69e443db4b2aeb9931a2d0853990e95b517d20ad3e04069e349cd",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841.txt\n-->\n<template>\n\t<div class=\"demo-time-range flex flex-wrap gap-4\">\n\t\t<AsamTimeSelect\n\t\t\tv-model=\"startTime\"\n\t\t\tstyle=\"width: 240px\"\n\t\t\t:max-time=\"typeof endTime === 'string' ? endTime : undefined\"\n\t\t\tplaceholder=\"开始时间\"\n\t\t\tstart=\"08:30\"\n\t\t\tstep=\"00:15\"\n\t\t\tend=\"18:30\"\n\t\t/>\n\t\t<AsamTimeSelect\n\t\t\tv-model=\"endTime\"\n\t\t\tstyle=\"width: 240px\"\n\t\t\t:min-time=\"typeof startTime === 'string' ? startTime : undefined\"\n\t\t\tplaceholder=\"结束时间\"\n\t\t\tstart=\"08:30\"\n\t\t\tstep=\"00:15\"\n\t\t\tend=\"18:30\"\n\t\t/>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\nimport type { AsamTimeSelectValue } from '@asam-ui/ui';\nimport { AsamTimeSelect } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamTimeSelectofficialtimeselecttimerangeExample' });\n\nimport { ref } from 'vue';\n\nconst startTime = ref<AsamTimeSelectValue>('');\nconst endTime = ref<AsamTimeSelectValue>('');\n</script>\n",
+			"originalSourceSha256": "5e3441a6ed4578b59bd0360d3a6d339ecd8a7311cbc1eea1e122cb73aa9f0eb4",
 			"notice": {
 				"id": "ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841",
 				"url": "/licenses/source-notices/ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841.txt",

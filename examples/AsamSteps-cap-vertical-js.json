@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSteps/cap-vertical/js/Demo.vue",
-			"sha256": "90ba3efd984a7e31b38bdb168ca508d4787246dcd6fadc74f02a289765e9d669",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e1afb0599071a6397791637d6820a31f9c15eb00644d84284a8c1c4ef96882ba.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e1afb0599071a6397791637d6820a31f9c15eb00644d84284a8c1c4ef96882ba.txt\n-->\n<template>\n\t<div style=\"height: 300px; max-width: 600px\">\n\t\t<AsamSteps direction=\"vertical\" :active=\"1\">\n\t\t\t<AsamStep title=\"Step 1\" />\n\t\t\t<AsamStep title=\"Step 2\" />\n\t\t\t<AsamStep title=\"Step 3\" />\n\t\t</AsamSteps>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamStepsCapVerticalDemo' });\nimport { AsamSteps, AsamStep } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "2c426fe84889f7d75cba921a67b75e7bbff7380db15183fe3e3e1327d37b2fa2",
+			"sha256": "0d5b49df6e3dd398916ba666e60771be50860695ccbe137acf0604ec1d54ea1b",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e1afb0599071a6397791637d6820a31f9c15eb00644d84284a8c1c4ef96882ba.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e1afb0599071a6397791637d6820a31f9c15eb00644d84284a8c1c4ef96882ba.txt\n-->\n<template>\n\t<div style=\"height: 300px; max-width: 600px\">\n\t\t<AsamSteps direction=\"vertical\" :active=\"1\">\n\t\t\t<AsamStep title=\"步骤 1\" />\n\t\t\t<AsamStep title=\"步骤 2\" />\n\t\t\t<AsamStep title=\"步骤 3\" />\n\t\t</AsamSteps>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamStepsCapVerticalDemo' });\nimport { AsamSteps, AsamStep } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "6c109febd8b89e5a867aa1291b406ed427bc36f01b42077b114e498884eb02ca",
 			"notice": {
 				"id": "e1afb0599071a6397791637d6820a31f9c15eb00644d84284a8c1c4ef96882ba",
 				"url": "/licenses/source-notices/e1afb0599071a6397791637d6820a31f9c15eb00644d84284a8c1c4ef96882ba.txt",

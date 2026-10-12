@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamPagination/cap-basic-usage/js/Demo.vue",
-			"sha256": "fe5974f3723f00485b29aeed39ece30d130fc229306097a8b84104e6e94c6ce6",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-9aa3818e6a5aa6585a865f573b256c10abb4fc20b70f3531e2475e7a6f76fbed.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/9aa3818e6a5aa6585a865f573b256c10abb4fc20b70f3531e2475e7a6f76fbed.txt\n-->\n<template>\n\t<div class=\"example-pagination-block\">\n\t\t<div class=\"example-demonstration\">When you have few pages</div>\n\t\t<AsamPagination layout=\"prev, pager, next\" :total=\"50\" />\n\t</div>\n\t<div class=\"example-pagination-block\">\n\t\t<div class=\"example-demonstration\">When you have more than 7 pages</div>\n\t\t<AsamPagination layout=\"prev, pager, next\" :total=\"1000\" />\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamPaginationCapBasicUsageDemo' });\nimport { AsamPagination } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.example-pagination-block + .example-pagination-block {\n\tmargin-top: 10px;\n}\n\n.example-pagination-block .example-demonstration {\n\tmargin-bottom: 16px;\n}\n</style>\n",
-			"originalSourceSha256": "3eadc8c9642a2435541f0d98fd2ab795b890624c8464ca18aed314733b367b6d",
+			"sha256": "081c87654aed2b9e9916df4f022fa59ca5b1bbc0c27a399b427fd65573261ba2",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-9aa3818e6a5aa6585a865f573b256c10abb4fc20b70f3531e2475e7a6f76fbed.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/9aa3818e6a5aa6585a865f573b256c10abb4fc20b70f3531e2475e7a6f76fbed.txt\n-->\n<template>\n\t<div class=\"example-pagination-block\">\n\t\t<div class=\"example-demonstration\">页数较少时</div>\n\t\t<AsamPagination layout=\"prev, pager, next\" :total=\"50\" />\n\t</div>\n\t<div class=\"example-pagination-block\">\n\t\t<div class=\"example-demonstration\">页数超过七页时</div>\n\t\t<AsamPagination layout=\"prev, pager, next\" :total=\"1000\" />\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamPaginationCapBasicUsageDemo' });\nimport { AsamPagination } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.example-pagination-block + .example-pagination-block {\n\tmargin-top: 10px;\n}\n\n.example-pagination-block .example-demonstration {\n\tmargin-bottom: 16px;\n}\n</style>\n",
+			"originalSourceSha256": "84195156e187511e7137db239d2666225f7689d9d77d50a5c63c48d4aa0183db",
 			"notice": {
 				"id": "9aa3818e6a5aa6585a865f573b256c10abb4fc20b70f3531e2475e7a6f76fbed",
 				"url": "/licenses/source-notices/9aa3818e6a5aa6585a865f573b256c10abb4fc20b70f3531e2475e7a6f76fbed.txt",

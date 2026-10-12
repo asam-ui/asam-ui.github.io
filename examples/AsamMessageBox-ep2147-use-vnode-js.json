@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamMessageBox/ep2147-use-vnode/js/Demo.vue",
-			"sha256": "bd4498e44a86a17ec612b3c2ce3101a737cda73c6edf46d1bfcf611df39f8737",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-864f9a4eae21abb84247e514cc50460821773ba2cb2b3790aacf17c80edc8c02.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/864f9a4eae21abb84247e514cc50460821773ba2cb2b3790aacf17c80edc8c02.txt\n-->\n<template>\n\t<div class=\"flex flex-wrap gap-1\">\n\t\t<AsamButton class=\"!ml-0\" plain @click=\"open\">Common VNode</AsamButton>\n\t\t<AsamButton class=\"!ml-0\" plain @click=\"open1\">Dynamic props</AsamButton>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamButton, AsamMessageBox, AsamSwitch } from '@asam-ui/ui';\nimport { h, ref } from 'vue';\nconst open = () => {\n\tAsamMessageBox({\n\t\ttitle: 'Message',\n\t\tmessage: h('p', null, [\n\t\t\th('span', null, 'Message can be '),\n\t\t\th('i', { style: 'color: teal' }, 'VNode')\n\t\t])\n\t}).catch((action) => {\n\t\tif (action !== 'cancel' && action !== 'close') throw action;\n\t});\n};\nconst open1 = () => {\n\tconst checked = ref(false);\n\tAsamMessageBox({\n\t\ttitle: 'Message',\n\t\t// Should pass a function if VNode contains dynamic props\n\t\tmessage: () =>\n\t\t\th(AsamSwitch, {\n\t\t\t\tmodelValue: checked.value,\n\t\t\t\t'onUpdate:modelValue': (val) => {\n\t\t\t\t\tchecked.value = val;\n\t\t\t\t}\n\t\t\t})\n\t}).catch((action) => {\n\t\tif (action !== 'cancel' && action !== 'close') throw action;\n\t});\n};\n</script>\n",
-			"originalSourceSha256": "297b1c26207b777ccabcbcacac6e153fef861fe0909088d4d3b41e87feb38055",
+			"sha256": "fd8da93367ad8e4b1a59389ad90ab8371f4ab324aedf7a008cd9dde171775be3",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-864f9a4eae21abb84247e514cc50460821773ba2cb2b3790aacf17c80edc8c02.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/864f9a4eae21abb84247e514cc50460821773ba2cb2b3790aacf17c80edc8c02.txt\n-->\n<template>\n\t<div class=\"flex flex-wrap gap-1\">\n\t\t<AsamButton type=\"primary\" class=\"!ml-0\" plain @click=\"open\">普通 VNode</AsamButton>\n\t\t<AsamButton type=\"primary\" class=\"!ml-0\" plain @click=\"open1\">动态属性</AsamButton>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamButton, AsamMessageBox, AsamSwitch } from '@asam-ui/ui';\nimport { h, ref } from 'vue';\nconst open = () => {\n\tAsamMessageBox({\n\t\ttitle: '消息',\n\t\tmessage: h('p', null, [\n\t\t\th('span', null, '消息内容可以使用 '),\n\t\t\th('i', { style: 'color: teal' }, 'VNode')\n\t\t])\n\t}).catch((action) => {\n\t\tif (action !== 'cancel' && action !== 'close') throw action;\n\t});\n};\nconst open1 = () => {\n\tconst checked = ref(false);\n\tAsamMessageBox({\n\t\ttitle: '消息',\n\t\t// Should pass a function if VNode contains dynamic props\n\t\tmessage: () =>\n\t\t\th(AsamSwitch, {\n\t\t\t\tmodelValue: checked.value,\n\t\t\t\t'onUpdate:modelValue': (val) => {\n\t\t\t\t\tchecked.value = val;\n\t\t\t\t}\n\t\t\t})\n\t}).catch((action) => {\n\t\tif (action !== 'cancel' && action !== 'close') throw action;\n\t});\n};\n</script>\n",
+			"originalSourceSha256": "f627d383443f57144c663b15cf44f642e91604df2dec876c22c7c05b4275b77c",
 			"notice": {
 				"id": "864f9a4eae21abb84247e514cc50460821773ba2cb2b3790aacf17c80edc8c02",
 				"url": "/licenses/source-notices/864f9a4eae21abb84247e514cc50460821773ba2cb2b3790aacf17c80edc8c02.txt",

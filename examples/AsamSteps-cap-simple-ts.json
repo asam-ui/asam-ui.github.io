@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSteps/cap-simple/ts/Demo.vue",
-			"sha256": "38cfe4c853355299876cc67c415daea1a8a9909582779968ead0dadeebbcf075",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-9c857ee3f3ba3ea93574f58eb8f00f1bfc77aa31eae3081b610ded09405b5b08.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/9c857ee3f3ba3ea93574f58eb8f00f1bfc77aa31eae3081b610ded09405b5b08.txt\n-->\n<template>\n\t<AsamSteps class=\"mb-4\" style=\"max-width: 600px\" :space=\"200\" :active=\"1\" simple>\n\t\t<AsamStep title=\"Step 1\" :icon=\"Edit\" />\n\t\t<AsamStep title=\"Step 2\" :icon=\"UploadFilled\" />\n\t\t<AsamStep title=\"Step 3\" :icon=\"Picture\" />\n\t</AsamSteps>\n\n\t<AsamSteps style=\"max-width: 600px\" :active=\"1\" finish-status=\"success\" simple>\n\t\t<AsamStep title=\"Step 1\" />\n\t\t<AsamStep title=\"Step 2\" />\n\t\t<AsamStep title=\"Step 3\" />\n\t</AsamSteps>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamStepsCapSimpleDemo' });\nimport { AsamSteps, AsamStep } from '@asam-ui/ui';\n\nimport { Edit, Picture, UploadFilled } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.mb-4 {\n\tmargin-bottom: 1rem;\n}\n</style>\n",
-			"originalSourceSha256": "399ddac0eeadc090b2e87e7fa544eb01530eb7fd4bbaa69e9d2a16c15cb449ad",
+			"sha256": "74c3c4251c110b0d7566706dab5fdcacf0ed6e7441665d8bbd19ed1afc4ee192",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-9c857ee3f3ba3ea93574f58eb8f00f1bfc77aa31eae3081b610ded09405b5b08.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/9c857ee3f3ba3ea93574f58eb8f00f1bfc77aa31eae3081b610ded09405b5b08.txt\n-->\n<template>\n\t<AsamSteps class=\"mb-4\" style=\"max-width: 600px\" :space=\"200\" :active=\"1\" simple>\n\t\t<AsamStep title=\"步骤 1\" :icon=\"Edit\" />\n\t\t<AsamStep title=\"步骤 2\" :icon=\"UploadFilled\" />\n\t\t<AsamStep title=\"步骤 3\" :icon=\"Picture\" />\n\t</AsamSteps>\n\n\t<AsamSteps style=\"max-width: 600px\" :active=\"1\" finish-status=\"success\" simple>\n\t\t<AsamStep title=\"步骤 1\" />\n\t\t<AsamStep title=\"步骤 2\" />\n\t\t<AsamStep title=\"步骤 3\" />\n\t</AsamSteps>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamStepsCapSimpleDemo' });\nimport { AsamSteps, AsamStep } from '@asam-ui/ui';\n\nimport { Edit, Picture, UploadFilled } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.mb-4 {\n\tmargin-bottom: 1rem;\n}\n</style>\n",
+			"originalSourceSha256": "8ba6e8c964e9db9df059ba48813fb12711f5d7ae9d7ff01faf9a3f226b9faa2a",
 			"notice": {
 				"id": "9c857ee3f3ba3ea93574f58eb8f00f1bfc77aa31eae3081b610ded09405b5b08",
 				"url": "/licenses/source-notices/9c857ee3f3ba3ea93574f58eb8f00f1bfc77aa31eae3081b610ded09405b5b08.txt",

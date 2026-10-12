@@ -1,1 +1,0 @@
-import"./sfc-demo.js";import{t as e}from"./service-CGvPa74m.js";import{t}from"./directive-BqHCOrBJ.js";var n={...t,install(t){e._context=t._context,t.directive(`asam-loading`,n)}};export{n as t};

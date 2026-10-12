@@ -1,0 +1,1 @@
+import{Ct as e,H as t,v as n,w as r}from"./vue.esm-bundler-5NdF0u5k.js";import{a as i}from"./Index-BRetoYxZ.js";var a=r({__name:`Demo`,setup(r){let a=0,o={lazy:!0,lazyLoad(e,t){let{level:n}=e;setTimeout(()=>{t(Array.from({length:n+1}).map(()=>({value:++a,label:`Option - ${a}`,leaf:n>=2})))},1e3)}};return(r,a)=>(t(),n(e(i),{"value-mode":`native`,props:o}))}});export{a as default};

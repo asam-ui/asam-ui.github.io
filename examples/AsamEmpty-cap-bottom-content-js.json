@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamEmpty/cap-bottom-content/js/Demo.vue",
-			"sha256": "8e2fba76618033efe306a14149c9ec4a23e74a8e3a1d1710bca10c05594a3b9f",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt\n-->\n<template>\n\t<AsamEmpty>\n\t\t<AsamButton type=\"primary\">Button</AsamButton>\n\t</AsamEmpty>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamEmptyCapBottomContentDemo' });\nimport { AsamEmpty, AsamButton } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "58c1f378ceb146bc72f0f379798a14a14452e0967621bb25cf1d0e52df014fae",
+			"sha256": "8027050da4d62f1264d2c34b701528bc62b6a11ee6370720dc17715cfb333417",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt\n-->\n<template>\n\t<AsamEmpty>\n\t\t<AsamButton type=\"primary\">按钮</AsamButton>\n\t</AsamEmpty>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamEmptyCapBottomContentDemo' });\nimport { AsamEmpty, AsamButton } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "c5c045f7bff20af895369982f63f8444cceac7381f81c4725617a15d8e42e938",
 			"notice": {
 				"id": "78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f",
 				"url": "/licenses/source-notices/78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt",

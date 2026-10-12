@@ -1,1 +1,0 @@
-import{E as e,T as t,Tt as n,W as r,ot as i,w as a,y as o}from"./sfc-demo.js";import{t as s}from"./Index-BL9Q0qcw-2SuNyYLh.js";import{t as c}from"./Index-B-BYvCQq.js";var l=e({__name:`Demo`,setup(e){return(e,l)=>(r(),o(n(s),{title:`Are you sure to delete this?`},{reference:i(()=>[t(n(c),null,{default:i(()=>[...l[0]||=[a(`Delete`,-1)]]),_:1})]),_:1}))}});export{l as default};

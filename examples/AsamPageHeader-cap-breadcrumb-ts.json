@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamPageHeader/cap-breadcrumb/ts/Demo.vue",
-			"sha256": "33d4f93e0b0a72697617d9d53e5d73b5ab5205b3087abfb75d9a4fb3ae3adb6c",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-d4bf4560d1f1c4be0b95c566e933f8e0f18952f9d9832da15c6fc58949978e8d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/d4bf4560d1f1c4be0b95c566e933f8e0f18952f9d9832da15c6fc58949978e8d.txt\n-->\n<template>\n\t<AsamPageHeader>\n\t\t<template #breadcrumb>\n\t\t\t<AsamBreadcrumb separator=\"/\">\n\t\t\t\t<AsamBreadcrumbItem :to=\"{ path: './page-header.html' }\">\n\t\t\t\t\thomepage\n\t\t\t\t</AsamBreadcrumbItem>\n\t\t\t\t<AsamBreadcrumbItem><a href=\"./page-header.html\">route 1</a></AsamBreadcrumbItem>\n\t\t\t\t<AsamBreadcrumbItem>route 2</AsamBreadcrumbItem>\n\t\t\t</AsamBreadcrumb>\n\t\t</template>\n\n\t\t<template #content>\n\t\t\t<span class=\"text-large font-600 mr-3\"> Title </span>\n\t\t</template>\n\t</AsamPageHeader>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamPageHeaderCapBreadcrumbDemo' });\nimport { AsamPageHeader, AsamBreadcrumb, AsamBreadcrumbItem } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.text-large {\n\tfont-size: var(--el-font-size-large);\n}\n\n.font-600 {\n\tfont-weight: 600;\n}\n\n.mr-3 {\n\tmargin-right: 0.75rem;\n}\n</style>\n",
-			"originalSourceSha256": "a98e793b34eea4d5973e1be88fc86b41905d0fb33f0f2a5ca48fc5792e17fd74",
+			"sha256": "fd6429fb01238c2b92614f82e5888ac216154620532f95b352a4a85225cfadac",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-d4bf4560d1f1c4be0b95c566e933f8e0f18952f9d9832da15c6fc58949978e8d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/d4bf4560d1f1c4be0b95c566e933f8e0f18952f9d9832da15c6fc58949978e8d.txt\n-->\n<template>\n\t<AsamPageHeader>\n\t\t<template #breadcrumb>\n\t\t\t<AsamBreadcrumb separator=\"/\">\n\t\t\t\t<AsamBreadcrumbItem :to=\"{ path: './page-header.html' }\"> 首页 </AsamBreadcrumbItem>\n\t\t\t\t<AsamBreadcrumbItem\n\t\t\t\t\t><AsamLink href=\"/component-AsamPageHeader.html\"\n\t\t\t\t\t\t>路由一</AsamLink\n\t\t\t\t\t></AsamBreadcrumbItem\n\t\t\t\t>\n\t\t\t\t<AsamBreadcrumbItem>路由二</AsamBreadcrumbItem>\n\t\t\t</AsamBreadcrumb>\n\t\t</template>\n\n\t\t<template #content>\n\t\t\t<span class=\"text-large font-600 mr-3\"> 标题 </span>\n\t\t</template>\n\t</AsamPageHeader>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamPageHeaderCapBreadcrumbDemo' });\nimport { AsamLink, AsamPageHeader, AsamBreadcrumb, AsamBreadcrumbItem } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.text-large {\n\tfont-size: var(--el-font-size-large);\n}\n\n.font-600 {\n\tfont-weight: 600;\n}\n\n.mr-3 {\n\tmargin-right: 0.75rem;\n}\n</style>\n",
+			"originalSourceSha256": "ffbecab5afb0fe22c792da2c2543604fa24e005396bcae8905fbbd68bce60a98",
 			"notice": {
 				"id": "d4bf4560d1f1c4be0b95c566e933f8e0f18952f9d9832da15c6fc58949978e8d",
 				"url": "/licenses/source-notices/d4bf4560d1f1c4be0b95c566e933f8e0f18952f9d9832da15c6fc58949978e8d.txt",

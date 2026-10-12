@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamPopconfirm/ep2147-customize/js/Demo.vue",
-			"sha256": "fa8e741c4101630c55274ce2beb8eca216ee3719c31ef385dada130cf38af4de",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-2744033a25bc178aad1bc7ee8d5a29023a945cd55f086cc365227fc74f2fe84e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/2744033a25bc178aad1bc7ee8d5a29023a945cd55f086cc365227fc74f2fe84e.txt\n-->\n<template>\n\t<AsamPopconfirm\n\t\twidth=\"220\"\n\t\t:icon=\"InfoFilled\"\n\t\ticon-color=\"#626AEF\"\n\t\ttitle=\"Are you sure to delete this?\"\n\t\t@cancel=\"onCancel\"\n\t>\n\t\t<template #reference>\n\t\t\t<AsamButton>Delete</AsamButton>\n\t\t</template>\n\t\t<template #actions=\"{ confirm, cancel }\">\n\t\t\t<AsamButton size=\"small\" @click=\"cancel\">No!</AsamButton>\n\t\t\t<AsamButton type=\"danger\" size=\"small\" :disabled=\"!clicked\" @click=\"confirm\">\n\t\t\t\tYes?\n\t\t\t</AsamButton>\n\t\t</template>\n\t</AsamPopconfirm>\n</template>\n\n<script setup>\nimport { AsamButton, AsamPopconfirm } from '@asam-ui/ui';\nimport { ref } from 'vue';\nimport { InfoFilled } from '@asam-ui/icons-vue';\nconst clicked = ref(false);\nfunction onCancel() {\n\tclicked.value = true;\n}\n</script>\n",
-			"originalSourceSha256": "9feedd84abc8884146fd9fc2e7fbb7e692ebaab430349c952a55bd86542e5a14",
+			"sha256": "cfaec01bc43dab57dbd41ffc18e4b80a5a8ca1227f4f2ace4ed6982b27f08784",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-2744033a25bc178aad1bc7ee8d5a29023a945cd55f086cc365227fc74f2fe84e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/2744033a25bc178aad1bc7ee8d5a29023a945cd55f086cc365227fc74f2fe84e.txt\n-->\n<template>\n\t<AsamPopconfirm\n\t\twidth=\"220\"\n\t\t:icon=\"InfoFilled\"\n\t\ticon-color=\"#626AEF\"\n\t\ttitle=\"确定删除此项吗？\"\n\t\t@cancel=\"onCancel\"\n\t>\n\t\t<template #reference>\n\t\t\t<AsamButton type=\"primary\">删除</AsamButton>\n\t\t</template>\n\t\t<template #actions=\"{ confirm, cancel }\">\n\t\t\t<AsamButton type=\"primary\" size=\"small\" @click=\"cancel\">No!</AsamButton>\n\t\t\t<AsamButton type=\"danger\" size=\"small\" :disabled=\"!clicked\" @click=\"confirm\">\n\t\t\t\t是否确认？\n\t\t\t</AsamButton>\n\t\t</template>\n\t</AsamPopconfirm>\n</template>\n\n<script setup>\nimport { AsamButton, AsamPopconfirm } from '@asam-ui/ui';\nimport { ref } from 'vue';\nimport { InfoFilled } from '@asam-ui/icons-vue';\nconst clicked = ref(false);\nfunction onCancel() {\n\tclicked.value = true;\n}\n</script>\n",
+			"originalSourceSha256": "2746c9eadf5562b14954513288005fa686cd167a2179d3777b1ad9a29abf02cb",
 			"notice": {
 				"id": "2744033a25bc178aad1bc7ee8d5a29023a945cd55f086cc365227fc74f2fe84e",
 				"url": "/licenses/source-notices/2744033a25bc178aad1bc7ee8d5a29023a945cd55f086cc365227fc74f2fe84e.txt",

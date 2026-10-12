@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTabs/cap-border-card/ts/Demo.vue",
-			"sha256": "251f4d10aabf199005d38fd02c54b3343d3bf9608602ca52ea5963f84171a709",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-84b332e248f183a79dc2fd1e465c5f5583c1329d54c1f508fd3b919843f7237c.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/84b332e248f183a79dc2fd1e465c5f5583c1329d54c1f508fd3b919843f7237c.txt\n-->\n<template>\n\t<AsamTabs type=\"border-card\">\n\t\t<AsamTabPane label=\"User\">User</AsamTabPane>\n\t\t<AsamTabPane label=\"Config\">Config</AsamTabPane>\n\t\t<AsamTabPane label=\"Role\">Role</AsamTabPane>\n\t\t<AsamTabPane label=\"Task\">Task</AsamTabPane>\n\t</AsamTabs>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTabsCapBorderCardDemo' });\nimport { AsamTabs, AsamTabPane } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "68952d924846f231edf8718864ad63a873503465750f4919644f8c74d456a152",
+			"sha256": "1f4d554293ed1d02a6b780ccf724670eedb93ebb67d7b4697d5828016352f498",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-84b332e248f183a79dc2fd1e465c5f5583c1329d54c1f508fd3b919843f7237c.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/84b332e248f183a79dc2fd1e465c5f5583c1329d54c1f508fd3b919843f7237c.txt\n-->\n<template>\n\t<AsamTabs type=\"border-card\">\n\t\t<AsamTabPane label=\"用户\">用户</AsamTabPane>\n\t\t<AsamTabPane label=\"配置\">配置</AsamTabPane>\n\t\t<AsamTabPane label=\"角色\">角色</AsamTabPane>\n\t\t<AsamTabPane label=\"任务\">任务</AsamTabPane>\n\t</AsamTabs>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTabsCapBorderCardDemo' });\nimport { AsamTabs, AsamTabPane } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "c1b162f68bfcb337b7f60e263884cd3c2432a5e6169fe46d3e08a96beced7b3a",
 			"notice": {
 				"id": "84b332e248f183a79dc2fd1e465c5f5583c1329d54c1f508fd3b919843f7237c",
 				"url": "/licenses/source-notices/84b332e248f183a79dc2fd1e465c5f5583c1329d54c1f508fd3b919843f7237c.txt",

@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTimePicker/official-time-picker-basic/js/Demo.vue",
-			"sha256": "77abbfc0119bae15d47b7e65ca1cbe2a25877f6652f5261a0fcdd2689f067d75",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-68c21012452faf8f763960e4e467f0751250a7b8fad3fe89bb8ff588d878c40d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/68c21012452faf8f763960e4e467f0751250a7b8fad3fe89bb8ff588d878c40d.txt\n-->\n<template>\n\t<div class=\"example-basic\">\n\t\t<AsamTimePicker v-model=\"value1\" value-format=\"\" placeholder=\"Arbitrary time\" />\n\t\t<AsamTimePicker\n\t\t\tv-model=\"value2\"\n\t\t\tvalue-format=\"\"\n\t\t\tarrow-control\n\t\t\tplaceholder=\"Arbitrary time\"\n\t\t/>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamTimePicker } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamTimePickerofficialtimepickerbasicExample' });\nimport { ref } from 'vue';\nconst value1 = ref();\nconst value2 = ref();\n</script>\n\n<style scoped>\n/* stylelint-disable selector-pseudo-class-no-unknown, selector-class-pattern, no-descending-specificity -- Vue deep/native BEM selectors and equivalent media selector groups retained from the fixed official example. */\n.example-basic .el-date-editor {\n\tmargin: 8px;\n}\n</style>\n",
-			"originalSourceSha256": "6932fd1e9a427e7afdd2e7eb6d4d9e4ba6d8532d20958349cb8327b1bb92c69f",
+			"sha256": "ca1fab091b184454ef5dc732187a4b8f04c247f01a614b52c8c22d79612a36dd",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-68c21012452faf8f763960e4e467f0751250a7b8fad3fe89bb8ff588d878c40d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/68c21012452faf8f763960e4e467f0751250a7b8fad3fe89bb8ff588d878c40d.txt\n-->\n<template>\n\t<div class=\"example-basic\">\n\t\t<AsamTimePicker v-model=\"value1\" value-format=\"\" placeholder=\"任意时间\" />\n\t\t<AsamTimePicker v-model=\"value2\" value-format=\"\" arrow-control placeholder=\"任意时间\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamTimePicker } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamTimePickerofficialtimepickerbasicExample' });\nimport { ref } from 'vue';\nconst value1 = ref();\nconst value2 = ref();\n</script>\n\n<style scoped>\n/* stylelint-disable selector-pseudo-class-no-unknown, selector-class-pattern, no-descending-specificity -- Vue deep/native BEM selectors and equivalent media selector groups retained from the fixed official example. */\n.example-basic .el-date-editor {\n\tmargin: 8px;\n}\n</style>\n",
+			"originalSourceSha256": "61bd4f11e00225aea3d81633c3c1bb1d6a8c816467638a92bb48d885079e3047",
 			"notice": {
 				"id": "68c21012452faf8f763960e4e467f0751250a7b8fad3fe89bb8ff588d878c40d",
 				"url": "/licenses/source-notices/68c21012452faf8f763960e4e467f0751250a7b8fad3fe89bb8ff588d878c40d.txt",

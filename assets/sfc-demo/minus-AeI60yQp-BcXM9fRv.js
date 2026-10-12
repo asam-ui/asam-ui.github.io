@@ -1,1 +1,0 @@
-import{E as e,W as t,v as n,x as r}from"./sfc-demo.js";var i={width:`1em`,height:`1em`,xmlns:`http://www.w3.org/2000/svg`,viewBox:`0 0 1024 1024`},a=e({name:`Minus`,__name:`minus`,setup(e){return(e,a)=>(t(),r(`svg`,i,[...a[0]||=[n(`path`,{fill:`currentColor`,d:`M128 544h768a32 32 0 1 0 0-64H128a32 32 0 0 0 0 64`},null,-1)]]))}});export{a as t};

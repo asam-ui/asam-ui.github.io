@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamBadge/cap-dot/js/Demo.vue",
-			"sha256": "f15a5e3c97c5678ee74b20fdf92bfe67d063a9e5465bd1dbfc725f19a3e5bef4",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-5b8057d667604827f5043d95a190fc4c429841c76469747c80952b22f247387e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/5b8057d667604827f5043d95a190fc4c429841c76469747c80952b22f247387e.txt\n-->\n<template>\n\t<AsamBadge is-dot class=\"item\">query</AsamBadge>\n\t<AsamBadge is-dot class=\"item\">\n\t\t<AsamButton class=\"share-button\" :icon=\"Share\" type=\"primary\" />\n\t</AsamBadge>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamBadgeCapDotDemo' });\nimport { AsamBadge, AsamButton } from '@asam-ui/ui';\nimport { Share } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.item {\n\tmargin-top: 10px;\n\tmargin-right: 40px;\n}\n</style>\n",
-			"originalSourceSha256": "55b90f7473872fce6d7a5b16f795ebe696d2b42e175a5acb79bfe9194ab6d475",
+			"sha256": "64423fcfc4eb6e5b13c7ea2694548f283ce883d75ef643aeb02029f3138f0b10",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-5b8057d667604827f5043d95a190fc4c429841c76469747c80952b22f247387e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/5b8057d667604827f5043d95a190fc4c429841c76469747c80952b22f247387e.txt\n-->\n<template>\n\t<AsamBadge is-dot class=\"item\">查询</AsamBadge>\n\t<AsamBadge is-dot class=\"item\">\n\t\t<AsamButton class=\"share-button\" :icon=\"Share\" type=\"primary\" />\n\t</AsamBadge>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamBadgeCapDotDemo' });\nimport { AsamBadge, AsamButton } from '@asam-ui/ui';\nimport { Share } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.item {\n\tmargin-top: 10px;\n\tmargin-right: 40px;\n}\n</style>\n",
+			"originalSourceSha256": "5cae949ed7e8fde3ccb994705eaf36ef48c41270ab1baa9ab79c266bb3f6e826",
 			"notice": {
 				"id": "5b8057d667604827f5043d95a190fc4c429841c76469747c80952b22f247387e",
 				"url": "/licenses/source-notices/5b8057d667604827f5043d95a190fc4c429841c76469747c80952b22f247387e.txt",

@@ -1,35 +1,37 @@
 {
   "schemaVersion": 1,
-  "status": "PREPARED_PUBLIC_DELTA_NOT_DEPLOYED",
-  "source": "88ccef1dd91d01c065c124a01d99a1dca1c657ca",
+  "status": "SOURCE_DELIVERY_PREPARED_PUBLIC_URL_VERIFICATION_PENDING",
+  "source": "f398458b57b9106c9496eb641737664421df111a",
   "acceptedSource": "7d11052e70675e2d7cb204834035ce1aea722052",
   "website": "https://asam-ui.github.io/",
   "publicRepository": "asam-ui/asam-ui.github.io",
   "expectedPublicBaseRef": "3f62ff357aed87cc7183811ec9fe097964cd82e2",
   "componentVersion": "0.1.0-alpha.1",
   "componentProductSource": "4110356ba3d9cb669de5c4d9d22ab72f7d1d6a4a",
-  "unchangedApiSfcSource": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
   "skillSource": "1ae352ba18ffd6198d47e1a55430b9080de0c2eb",
   "skillArchiveSHA256": "b59a00254be77d898c7f12a052327c96f72315c89756d3108f2e55cfcbeb164c",
   "mcpPublished": true,
   "files": [
     {
       "path": "ai/index.html",
-      "bytes": 11216,
-      "sha256": "daa64e5c84edb45316e61b86810cfdfe08457bb14c5e6b4bbf8dd1ba36d7f050",
-      "source": "apps/website/pages/ai/index.md"
+      "bytes": 13654,
+      "sha256": "b9f12ac7d31c6fed06a909e1771544f4184d19b32d020574729d371562717315",
+      "origin": "accepted-normal-f398",
+      "source": "approved-AI-leaf-normal-build-f398"
     },
     {
       "path": "ai/skill.html",
-      "bytes": 14582,
-      "sha256": "6995ba95d4f5c435abdb4ccff18d4f3cd65a2a912b85d945152bdcfbf8cd422c",
-      "source": "apps/website/pages/ai/skill.md"
+      "bytes": 17244,
+      "sha256": "736db135a173b366d233dee2996f3b7b8e22a403f9bf5e4881f52bf9ca152186",
+      "origin": "accepted-normal-f398",
+      "source": "approved-AI-leaf-normal-build-f398"
     },
     {
       "path": "ai/mcp.html",
-      "bytes": 15478,
-      "sha256": "430312116764db41c8d59bc5b737edf19e88f3a81ee6892d18be76c850969323",
-      "source": "apps/website/pages/ai/mcp.md"
+      "bytes": 17952,
+      "sha256": "5d2142fb499ac501f28abd27886567a7cda62deaa0e877239f03a8caf291b660",
+      "origin": "accepted-normal-f398",
+      "source": "approved-AI-leaf-normal-build-f398"
     },
     {
       "path": "skills/asam-ui-usage/SKILL.md",
@@ -104,7 +106,7 @@
       "source": "approved-MCP-license-6907B"
     }
   ],
-  "applyPolicy": "Only these files and this access-manifest. Verify current public ref and paths before an authorized write; preserve all other public files, API/SFC corpus, component runtime assets and site content-manifest. Regenerate any site artifact index separately over the final complete public tree if its existing publishing workflow requires it. No private source or Storybook.",
+  "applyPolicy": "本次完整官网接受正常制品交付；公开 Skill 九文件、b59 归档及其清单、已批准许可保持原字节。当前官网 API/SFC 和文案按 f398 正常构建来源；已发 MCP8207 与公开 Skill b59 为原固定 snapshot，网站变化不代表新包发行。实际网址可见性另由原 QA→ACC 验证，不以源码 push 冒公网 PASS。",
   "sourceCorrections": [
     {
       "source": "7b61ffb6c5c346a7a92de007c65a295e4c78638b",
@@ -121,8 +123,16 @@
       ],
       "reason": "Actual MCP first publication verified; real pinned npx/config/normal licence usage without internal approval workflow",
       "previousPublicRef": "46df795983ddb132aee3b277a99cf631c11c1e47"
+    },
+    {
+      "source": "f398458b57b9106c9496eb641737664421df111a",
+      "parentPublic": "e6ee21fa25efa6113a97b47252bfd15d94863af9",
+      "scope": "完整官网控件中文与安装说明接受正常产物；原公开 raw9/b59/许可保持，实际新 AI HTML hash 配对"
     }
   ],
   "mcpVersion": "0.1.0-alpha.1",
-  "mcpArtifactSHA256": "8207ebe920b98b35d4b544d5c8fa8b5b0319954152561e88c3ca0dfc1ab17d80"
+  "mcpArtifactSHA256": "8207ebe920b98b35d4b544d5c8fa8b5b0319954152561e88c3ca0dfc1ab17d80",
+  "websiteArtifactSource": "f398458b57b9106c9496eb641737664421df111a",
+  "rootAcceptedMain": "df3613318915e55bf2c7b78d29bb8308be219a8e",
+  "currentPublicApiSfcSource": "f398458b57b9106c9496eb641737664421df111a"
 }

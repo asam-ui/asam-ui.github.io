@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTimeline/cap-reverse/ts/Demo.vue",
-			"sha256": "140f525c2a598aed6afe9f4782364f77bddbfb32484ba2bac2e1f5d77a6343b6",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-2d7e5292b3d42eadac0d3ba5f57abb5f11f3a42078486298f407bf3f6bdd72f6.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/2d7e5292b3d42eadac0d3ba5f57abb5f11f3a42078486298f407bf3f6bdd72f6.txt\n-->\n<template>\n\t<AsamSwitch\n\t\t:model-value=\"reverse\"\n\t\tactive-text=\"reverse\"\n\t\t@update:model-value=\"\n\t\t\t(value) => {\n\t\t\t\tif (typeof value === 'boolean') reverse = value;\n\t\t\t}\n\t\t\"\n\t/>\n\n\t<AsamTimeline class=\"mt-2\" :reverse=\"reverse\">\n\t\t<AsamTimelineItem\n\t\t\tv-for=\"(activity, index) in activities\"\n\t\t\t:key=\"index\"\n\t\t\t:timestamp=\"activity.timestamp\"\n\t\t>\n\t\t\t{{ activity.content }}\n\t\t</AsamTimelineItem>\n\t</AsamTimeline>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTimelineCapReverseDemo' });\nimport { AsamSwitch, AsamTimeline, AsamTimelineItem } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst reverse = ref(true);\nconst activities = [\n\t{\n\t\tcontent: 'Event start',\n\t\ttimestamp: '2018-04-15'\n\t},\n\t{\n\t\tcontent: 'Approved',\n\t\ttimestamp: '2018-04-13'\n\t},\n\t{\n\t\tcontent: 'Success',\n\t\ttimestamp: '2018-04-11'\n\t}\n];\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.mt-2 {\n\tmargin-top: 0.5rem;\n}\n</style>\n",
-			"originalSourceSha256": "45c5d87eca93d515a85727f7f3c2f75cf6d9f711b92489d3dd9935b617b9727e",
+			"sha256": "18cd335908e8c10e55b83f5ee0c449e97aa60951dd21e0628311c7fbe19dd859",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-2d7e5292b3d42eadac0d3ba5f57abb5f11f3a42078486298f407bf3f6bdd72f6.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/2d7e5292b3d42eadac0d3ba5f57abb5f11f3a42078486298f407bf3f6bdd72f6.txt\n-->\n<template>\n\t<AsamSwitch\n\t\t:model-value=\"reverse\"\n\t\tactive-text=\"reverse\"\n\t\t@update:model-value=\"\n\t\t\t(value) => {\n\t\t\t\tif (typeof value === 'boolean') reverse = value;\n\t\t\t}\n\t\t\"\n\t/>\n\n\t<AsamTimeline class=\"mt-2\" :reverse=\"reverse\">\n\t\t<AsamTimelineItem\n\t\t\tv-for=\"(activity, index) in activities\"\n\t\t\t:key=\"index\"\n\t\t\t:timestamp=\"activity.timestamp\"\n\t\t>\n\t\t\t{{ activity.content }}\n\t\t</AsamTimelineItem>\n\t</AsamTimeline>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTimelineCapReverseDemo' });\nimport { AsamSwitch, AsamTimeline, AsamTimelineItem } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst reverse = ref(true);\nconst activities = [\n\t{\n\t\tcontent: '开始事件',\n\t\ttimestamp: '2018-04-15'\n\t},\n\t{\n\t\tcontent: '已通过',\n\t\ttimestamp: '2018-04-13'\n\t},\n\t{\n\t\tcontent: '成功',\n\t\ttimestamp: '2018-04-11'\n\t}\n];\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.mt-2 {\n\tmargin-top: 0.5rem;\n}\n</style>\n",
+			"originalSourceSha256": "09f619cf41c7733a270f5db9f2ddd1a842fbdfbdbff87a072514af2a74ccf1a2",
 			"notice": {
 				"id": "2d7e5292b3d42eadac0d3ba5f57abb5f11f3a42078486298f407bf3f6bdd72f6",
 				"url": "/licenses/source-notices/2d7e5292b3d42eadac0d3ba5f57abb5f11f3a42078486298f407bf3f6bdd72f6.txt",

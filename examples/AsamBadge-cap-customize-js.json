@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamBadge/cap-customize/js/Demo.vue",
-			"sha256": "61e082db8e5df839e367ee79af1312237966ee833968388caa945a1ee1ec76b7",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-3216be483d98adc098a3c45ad81c2f238a4d7a33e4765b24818eb366f039d244.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/3216be483d98adc098a3c45ad81c2f238a4d7a33e4765b24818eb366f039d244.txt\n-->\n<template>\n\t<AsamBadge value=\"new\" class=\"item\">\n\t\t<AsamButton>comments</AsamButton>\n\t</AsamBadge>\n\t<AsamBadge value=\"hot\" class=\"item\">\n\t\t<AsamButton>replies</AsamButton>\n\t</AsamBadge>\n\t<AsamBadge value=\"99\" class=\"item\">\n\t\t<AsamButton>share</AsamButton>\n\t\t<template #content=\"{ value }\">\n\t\t\t<div class=\"custom-content\">\n\t\t\t\t<AsamIcon>\n\t\t\t\t\t<Message />\n\t\t\t\t</AsamIcon>\n\t\t\t\t<span>{{ value }}</span>\n\t\t\t</div>\n\t\t</template>\n\t</AsamBadge>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamBadgeCapCustomizeDemo' });\nimport { AsamBadge, AsamButton, AsamIcon } from '@asam-ui/ui';\nimport { Message } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.item {\n\tmargin-top: 10px;\n\tmargin-right: 40px;\n}\n\n.custom-content {\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n\tgap: 4px;\n}\n</style>\n",
-			"originalSourceSha256": "36792858766d01e5cfe94fe57d8980ca9709554f852fca064775461acffb617f",
+			"sha256": "170f71884ed51142d81c33888ad5c6e0885f76cda4905a605148164e82d33de1",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-3216be483d98adc098a3c45ad81c2f238a4d7a33e4765b24818eb366f039d244.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/3216be483d98adc098a3c45ad81c2f238a4d7a33e4765b24818eb366f039d244.txt\n-->\n<template>\n\t<AsamBadge value=\"new\" class=\"item\">\n\t\t<AsamButton type=\"primary\">评论</AsamButton>\n\t</AsamBadge>\n\t<AsamBadge value=\"hot\" class=\"item\">\n\t\t<AsamButton type=\"primary\">回复</AsamButton>\n\t</AsamBadge>\n\t<AsamBadge value=\"99\" class=\"item\">\n\t\t<AsamButton type=\"primary\">分享</AsamButton>\n\t\t<template #content=\"{ value }\">\n\t\t\t<div class=\"custom-content\">\n\t\t\t\t<AsamIcon>\n\t\t\t\t\t<Message />\n\t\t\t\t</AsamIcon>\n\t\t\t\t<span>{{ value }}</span>\n\t\t\t</div>\n\t\t</template>\n\t</AsamBadge>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamBadgeCapCustomizeDemo' });\nimport { AsamBadge, AsamButton, AsamIcon } from '@asam-ui/ui';\nimport { Message } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.item {\n\tmargin-top: 10px;\n\tmargin-right: 40px;\n}\n\n.custom-content {\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n\tgap: 4px;\n}\n</style>\n",
+			"originalSourceSha256": "cf43822dd5a89cd535e792fc22e0bc7ae94ac6a2b35bc7c14eef0350d752fab6",
 			"notice": {
 				"id": "3216be483d98adc098a3c45ad81c2f238a4d7a33e4765b24818eb366f039d244",
 				"url": "/licenses/source-notices/3216be483d98adc098a3c45ad81c2f238a4d7a33e4765b24818eb366f039d244.txt",

@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamResult/cap-customized-content/ts/Demo.vue",
-			"sha256": "ef9a377a5b030d3636ac1c36831ca79d4ce69522287a463342e21b1ba4e323f9",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0f1b348beaf318e56eb1a0dcf3a3c70112b094b0376b30fde175a3623288f734.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/0f1b348beaf318e56eb1a0dcf3a3c70112b094b0376b30fde175a3623288f734.txt\n-->\n<template>\n\t<AsamResult title=\"404\" sub-title=\"Sorry, request error\">\n\t\t<template #icon>\n\t\t\t<AsamImage\n\t\t\t\tsrc=\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%22180%22%3E%3Crect%20width%3D%22320%22%20height%3D%22180%22%20fill%3D%22%238899aa%22%2F%3E%3Ctext%20x%3D%2224%22%20y%3D%2290%22%20fill%3D%22white%22%3EASAM%20local%20sample%3C%2Ftext%3E%3C%2Fsvg%3E\"\n\t\t\t/>\n\t\t</template>\n\n\t\t<template #extra>\n\t\t\t<AsamButton type=\"primary\">Back</AsamButton>\n\t\t</template>\n\t</AsamResult>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamResultCapCustomizedContentDemo' });\nimport { AsamResult, AsamImage, AsamButton } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "7c9ca4bcc107be43d3709221a09c61b13a99346f090497b59c93d9657e81c584",
+			"sha256": "8de3e9a621adbf625b9a89d2fc00b93ba4261b4828017075edf099c29fe0322f",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0f1b348beaf318e56eb1a0dcf3a3c70112b094b0376b30fde175a3623288f734.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/0f1b348beaf318e56eb1a0dcf3a3c70112b094b0376b30fde175a3623288f734.txt\n-->\n<template>\n\t<AsamResult title=\"404\" sub-title=\"抱歉，请求失败\">\n\t\t<template #icon>\n\t\t\t<AsamImage\n\t\t\t\tsrc=\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%22180%22%3E%3Crect%20width%3D%22320%22%20height%3D%22180%22%20fill%3D%22%238899aa%22%2F%3E%3Ctext%20x%3D%2224%22%20y%3D%2290%22%20fill%3D%22white%22%3EASAM%20local%20sample%3C%2Ftext%3E%3C%2Fsvg%3E\"\n\t\t\t/>\n\t\t</template>\n\n\t\t<template #extra>\n\t\t\t<AsamButton type=\"primary\">返回</AsamButton>\n\t\t</template>\n\t</AsamResult>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamResultCapCustomizedContentDemo' });\nimport { AsamResult, AsamImage, AsamButton } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "350551bca86407eeb853aa96be068d609b2063af5ddb57507ef5d3e7b94410d3",
 			"notice": {
 				"id": "0f1b348beaf318e56eb1a0dcf3a3c70112b094b0376b30fde175a3623288f734",
 				"url": "/licenses/source-notices/0f1b348beaf318e56eb1a0dcf3a3c70112b094b0376b30fde175a3623288f734.txt",

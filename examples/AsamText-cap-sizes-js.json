@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamText/cap-sizes/js/Demo.vue",
-			"sha256": "849b527cbf0c18b2329ddf57148fdcea0127f009ec2a1a97c80686d99486eaf8",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-6de7975f7b5c40f38eb40b522abfb6bcc2c8ac53acd53915d5f31b58c0056bc5.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/6de7975f7b5c40f38eb40b522abfb6bcc2c8ac53acd53915d5f31b58c0056bc5.txt\n-->\n<template>\n\t<AsamText class=\"mx-1\" size=\"large\">Large</AsamText>\n\t<AsamText class=\"mx-1\">Default</AsamText>\n\t<AsamText class=\"mx-1\" size=\"small\">Small</AsamText>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTextCapSizesDemo' });\nimport { AsamText } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.mx-1 {\n\tmargin-left: 0.25rem;\n\tmargin-right: 0.25rem;\n}\n</style>\n",
-			"originalSourceSha256": "1bb168fd7a60c07b76667bfdb9ba540778ce1071bd06d49182493b6504a5820e",
+			"sha256": "e4be838ae50a18f8d77ef896f01e7cc68ed398918a2087974f30c18c1811faaa",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-6de7975f7b5c40f38eb40b522abfb6bcc2c8ac53acd53915d5f31b58c0056bc5.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/6de7975f7b5c40f38eb40b522abfb6bcc2c8ac53acd53915d5f31b58c0056bc5.txt\n-->\n<template>\n\t<AsamText class=\"mx-1\" size=\"large\">大尺寸</AsamText>\n\t<AsamText class=\"mx-1\">默认</AsamText>\n\t<AsamText class=\"mx-1\" size=\"small\">小尺寸</AsamText>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTextCapSizesDemo' });\nimport { AsamText } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.mx-1 {\n\tmargin-left: 0.25rem;\n\tmargin-right: 0.25rem;\n}\n</style>\n",
+			"originalSourceSha256": "6d112fc5a9653cd40636223977c0af085252bb0f3eb3e7102f21841a074f7fee",
 			"notice": {
 				"id": "6de7975f7b5c40f38eb40b522abfb6bcc2c8ac53acd53915d5f31b58c0056bc5",
 				"url": "/licenses/source-notices/6de7975f7b5c40f38eb40b522abfb6bcc2c8ac53acd53915d5f31b58c0056bc5.txt",

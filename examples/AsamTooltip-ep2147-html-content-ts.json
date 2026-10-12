@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTooltip/ep2147-html-content/ts/Demo.vue",
-			"sha256": "df34828212c524e9f4fe6829cdeb3c67e866ac6125d09a54d68e2e2b5e15596f",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e2e01e18375f2dec3347932556dbf472aa956d8c0e637b0f611c15f67cd30400.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e2e01e18375f2dec3347932556dbf472aa956d8c0e637b0f611c15f67cd30400.txt\n-->\n<template>\n\t<AsamTooltip content=\"<span>The content can be <strong>HTML</strong></span>\" raw-content>\n\t\t<AsamButton>hover me</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "e72e2e067b3891d933bb99992884d83edc4bef541dfa2c680c83478abb8e3846",
+			"sha256": "f6bc4e0452be450ace3e6d1790bf7c7f31a70de72b292049f319531b46de9453",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e2e01e18375f2dec3347932556dbf472aa956d8c0e637b0f611c15f67cd30400.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e2e01e18375f2dec3347932556dbf472aa956d8c0e637b0f611c15f67cd30400.txt\n-->\n<template>\n\t<AsamTooltip content=\"<span>内容可以使用 <strong>HTML</strong></span>\" raw-content>\n\t\t<AsamButton type=\"primary\">悬停查看</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "42cef21b86fe81fb4fc2dfe00864f2bc232124cb7df63bedbce439dd19133c4a",
 			"notice": {
 				"id": "e2e01e18375f2dec3347932556dbf472aa956d8c0e637b0f611c15f67cd30400",
 				"url": "/licenses/source-notices/e2e01e18375f2dec3347932556dbf472aa956d8c0e637b0f611c15f67cd30400.txt",

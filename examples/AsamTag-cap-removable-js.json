@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTag/cap-removable/js/Demo.vue",
-			"sha256": "b7a1ff5e505305032bee9a08faa3fede452be343d5930ab5f0e441b810fed615",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25.txt\n-->\n<template>\n\t<div class=\"flex gap-2\">\n\t\t<AsamTag v-for=\"tag in tags\" :key=\"tag.name\" closable :type=\"tag.type\">\n\t\t\t{{ tag.name }}\n\t\t</AsamTag>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTagCapRemovableDemo' });\nimport { AsamTag } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst tags = ref([\n\t{ name: 'Tag 1', type: 'primary' },\n\t{ name: 'Tag 2', type: 'success' },\n\t{ name: 'Tag 3', type: 'info' },\n\t{ name: 'Tag 4', type: 'warning' },\n\t{ name: 'Tag 5', type: 'danger' }\n]);\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.gap-2 {\n\tgap: 0.5rem;\n}\n</style>\n",
-			"originalSourceSha256": "ff492096479433ec61bfe502647f058d3f4605ee8f14c1fc51dd6aa967a2aff2",
+			"sha256": "2df77039d9438c93a2198253c53710a82acde5377ab5564d9f873404b5f812de",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25.txt\n-->\n<template>\n\t<div class=\"flex gap-2\">\n\t\t<AsamTag v-for=\"tag in tags\" :key=\"tag.name\" closable :type=\"tag.type\">\n\t\t\t{{ tag.name }}\n\t\t</AsamTag>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTagCapRemovableDemo' });\nimport { AsamTag } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst tags = ref([\n\t{ name: '标签一', type: 'primary' },\n\t{ name: '标签二', type: 'success' },\n\t{ name: '标签三', type: 'info' },\n\t{ name: '标签四', type: 'warning' },\n\t{ name: '标签五', type: 'danger' }\n]);\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.gap-2 {\n\tgap: 0.5rem;\n}\n</style>\n",
+			"originalSourceSha256": "42cb3a1182e8c5c3a98becd5e915a3d12074fa903c04d2a2967de779add48e32",
 			"notice": {
 				"id": "bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25",
 				"url": "/licenses/source-notices/bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25.txt",

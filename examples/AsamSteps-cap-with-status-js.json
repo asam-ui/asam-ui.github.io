@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSteps/cap-with-status/js/Demo.vue",
-			"sha256": "f277fbed80b44829d6113f2623149dbd8c2724bbd220314e96a43619569d0bbc",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f9817102e1b71083424cc6328e7f9e5d0ede1a855df12ce2bc560fc9bd44d439.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f9817102e1b71083424cc6328e7f9e5d0ede1a855df12ce2bc560fc9bd44d439.txt\n-->\n<template>\n\t<AsamSteps style=\"max-width: 600px\" :space=\"200\" :active=\"1\" finish-status=\"success\">\n\t\t<AsamStep title=\"Done\" />\n\t\t<AsamStep title=\"Processing\" />\n\t\t<AsamStep title=\"Step 3\" />\n\t</AsamSteps>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamStepsCapWithStatusDemo' });\nimport { AsamSteps, AsamStep } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "8bc496e06b596980ac318f98581c379318990ebcb61596e8b9a2d4f07a714625",
+			"sha256": "77c680c7e7f3a1071f0b0c923ec5ddc36369a491f728b76ff00137dc9e0dc05f",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f9817102e1b71083424cc6328e7f9e5d0ede1a855df12ce2bc560fc9bd44d439.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f9817102e1b71083424cc6328e7f9e5d0ede1a855df12ce2bc560fc9bd44d439.txt\n-->\n<template>\n\t<AsamSteps style=\"max-width: 600px\" :space=\"200\" :active=\"1\" finish-status=\"success\">\n\t\t<AsamStep title=\"完成\" />\n\t\t<AsamStep title=\"处理中\" />\n\t\t<AsamStep title=\"步骤 3\" />\n\t</AsamSteps>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamStepsCapWithStatusDemo' });\nimport { AsamSteps, AsamStep } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "f66ee06d151d95595fd920ad5f9e13fc9522c06a1d95abd8c50a8d334f852ec1",
 			"notice": {
 				"id": "f9817102e1b71083424cc6328e7f9e5d0ede1a855df12ce2bc560fc9bd44d439",
 				"url": "/licenses/source-notices/f9817102e1b71083424cc6328e7f9e5d0ede1a855df12ce2bc560fc9bd44d439.txt",

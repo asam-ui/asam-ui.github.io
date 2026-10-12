@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSteps/cap-with-description/ts/Demo.vue",
-			"sha256": "ae9fd5f0b55c0a602e4c71d589c83286eb5c503f52b4962f5f1b43ebf9e3d3e4",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-245bd0b321ae7cf727c575307a8088c00e2343c49ca8b3a601bdb99d2e871f7a.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/245bd0b321ae7cf727c575307a8088c00e2343c49ca8b3a601bdb99d2e871f7a.txt\n-->\n<template>\n\t<AsamSteps style=\"max-width: 600px\" :active=\"1\">\n\t\t<AsamStep title=\"Step 1\" description=\"Some description\" />\n\t\t<AsamStep title=\"Step 2\" description=\"Some description\" />\n\t\t<AsamStep title=\"Step 3\" description=\"Some description\" />\n\t</AsamSteps>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamStepsCapWithDescriptionDemo' });\nimport { AsamSteps, AsamStep } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "a0c4d56625d327baed8731e6d4943a97e21de53ac957bdaa9074b836b243ab18",
+			"sha256": "edbfc0ba145abee3911f58ff0f3aa8b270f34f4a37b8884fff2e4ddd73d18ca6",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-245bd0b321ae7cf727c575307a8088c00e2343c49ca8b3a601bdb99d2e871f7a.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/245bd0b321ae7cf727c575307a8088c00e2343c49ca8b3a601bdb99d2e871f7a.txt\n-->\n<template>\n\t<AsamSteps style=\"max-width: 600px\" :active=\"1\">\n\t\t<AsamStep title=\"步骤 1\" description=\"示例说明\" />\n\t\t<AsamStep title=\"步骤 2\" description=\"示例说明\" />\n\t\t<AsamStep title=\"步骤 3\" description=\"示例说明\" />\n\t</AsamSteps>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamStepsCapWithDescriptionDemo' });\nimport { AsamSteps, AsamStep } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "f977fdca9892494af96c84940145c6d64bbdf432dc53b172d7226eeff306c42c",
 			"notice": {
 				"id": "245bd0b321ae7cf727c575307a8088c00e2343c49ca8b3a601bdb99d2e871f7a",
 				"url": "/licenses/source-notices/245bd0b321ae7cf727c575307a8088c00e2343c49ca8b3a601bdb99d2e871f7a.txt",

@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamBreadcrumb/cap-icon/js/Demo.vue",
-			"sha256": "a2b777014233f3ee6e55d1af8819df93e0fc286339a881a47a6e891f55d6e265",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e915599463c4f6cad0a2d5507750cda0fe0417810dcd79245533d0e7dc25e717.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e915599463c4f6cad0a2d5507750cda0fe0417810dcd79245533d0e7dc25e717.txt\n-->\n<template>\n\t<AsamBreadcrumb :separator-icon=\"ArrowRight\">\n\t\t<AsamBreadcrumbItem :to=\"{ path: '/' }\">homepage</AsamBreadcrumbItem>\n\t\t<AsamBreadcrumbItem>promotion management</AsamBreadcrumbItem>\n\t\t<AsamBreadcrumbItem>promotion list</AsamBreadcrumbItem>\n\t\t<AsamBreadcrumbItem>promotion detail</AsamBreadcrumbItem>\n\t</AsamBreadcrumb>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamBreadcrumbCapIconDemo' });\nimport { AsamBreadcrumb, AsamBreadcrumbItem } from '@asam-ui/ui';\nimport { ArrowRight } from '@asam-ui/icons-vue';\n</script>\n",
-			"originalSourceSha256": "deef3da8b9db1a91ead67521d4455e2de4ee48442f6de2eb9fef0779aba90c5a",
+			"sha256": "24a95554011087d6cc7b317efb6db5fc7572ef73cd9b8526453b352bb0af3cb6",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e915599463c4f6cad0a2d5507750cda0fe0417810dcd79245533d0e7dc25e717.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e915599463c4f6cad0a2d5507750cda0fe0417810dcd79245533d0e7dc25e717.txt\n-->\n<template>\n\t<AsamBreadcrumb :separator-icon=\"ArrowRight\">\n\t\t<AsamBreadcrumbItem :to=\"{ path: '/' }\">首页</AsamBreadcrumbItem>\n\t\t<AsamBreadcrumbItem>活动管理</AsamBreadcrumbItem>\n\t\t<AsamBreadcrumbItem>活动列表</AsamBreadcrumbItem>\n\t\t<AsamBreadcrumbItem>活动详情</AsamBreadcrumbItem>\n\t</AsamBreadcrumb>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamBreadcrumbCapIconDemo' });\nimport { AsamBreadcrumb, AsamBreadcrumbItem } from '@asam-ui/ui';\nimport { ArrowRight } from '@asam-ui/icons-vue';\n</script>\n",
+			"originalSourceSha256": "f5455446c635fd6790630c4d14fa02ee6cd8ac2070c570597dc84f780c475d06",
 			"notice": {
 				"id": "e915599463c4f6cad0a2d5507750cda0fe0417810dcd79245533d0e7dc25e717",
 				"url": "/licenses/source-notices/e915599463c4f6cad0a2d5507750cda0fe0417810dcd79245533d0e7dc25e717.txt",

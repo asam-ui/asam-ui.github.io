@@ -1,1 +1,0 @@
-import"./sfc-demo.js";import{t as e}from"./dynamic-size-grid-DP_4VSxQ.js";var t=Object.assign({},e,{install(e){e.component(`AsamDynamicSizeGrid`,t)}});export{t};

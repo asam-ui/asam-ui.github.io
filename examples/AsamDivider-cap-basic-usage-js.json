@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDivider/cap-basic-usage/js/Demo.vue",
-			"sha256": "95c0f3a1aa06931c845b1e90816e3431a5a675f35df26845500ace2b92d6e8ae",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-7a40e64f1c27555b8279a9677192a1b7e892c77aa0fd7b43bdd4cfefa60b268a.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/7a40e64f1c27555b8279a9677192a1b7e892c77aa0fd7b43bdd4cfefa60b268a.txt\n-->\n<template>\n\t<div>\n\t\t<span>\n\t\t\tI sit at my window this morning where the world like a passer-by stops for a moment,\n\t\t\tnods to me and goes.\n\t\t</span>\n\t\t<AsamDivider />\n\t\t<span>\n\t\t\tThere little thoughts are the rustle of leaves; they have their whisper of joy in my\n\t\t\tmind.\n\t\t</span>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamDividerCapBasicUsageDemo' });\nimport { AsamDivider } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "6327ddd841cd53da84270ba13c30ee7e69c659e7f04d7ef88afa06201b0dcfea",
+			"sha256": "0d5b4ec5c2d73b49691b93e17c1bfdee3b024fbb32fd12b2febedc64580f98a2",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-7a40e64f1c27555b8279a9677192a1b7e892c77aa0fd7b43bdd4cfefa60b268a.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/7a40e64f1c27555b8279a9677192a1b7e892c77aa0fd7b43bdd4cfefa60b268a.txt\n-->\n<template>\n\t<div>\n\t\t<span> 清晨坐在窗前，世界如过客般短暂停留，点头后离去。 </span>\n\t\t<AsamDivider />\n\t\t<span> 细小的思绪如树叶沙沙作响，在心中低语着喜悦。 </span>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamDividerCapBasicUsageDemo' });\nimport { AsamDivider } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "b3320647e813603d00fc41484405bda2756394d6484137d77da959ca5b8c3c6e",
 			"notice": {
 				"id": "7a40e64f1c27555b8279a9677192a1b7e892c77aa0fd7b43bdd4cfefa60b268a",
 				"url": "/licenses/source-notices/7a40e64f1c27555b8279a9677192a1b7e892c77aa0fd7b43bdd4cfefa60b268a.txt",

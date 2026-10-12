@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamPopover/ep2147-virtual-triggering/ts/Demo.vue",
-			"sha256": "5c9100767d737be0cce34f479113acccd5d343eb4bb423b8cd93423bd07a248a",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bc4af4e49fd3d0e49fc264d3f1868f83bd7d7c14bdf86090acfa0f25b4916a72.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bc4af4e49fd3d0e49fc264d3f1868f83bd7d7c14bdf86090acfa0f25b4916a72.txt\n-->\n<template>\n\t<AsamButton ref=\"buttonRef\" v-asam-click-outside=\"onClickOutside\"> Click me </AsamButton>\n\n\t<AsamPopover\n\t\tref=\"popoverRef\"\n\t\t:virtual-ref=\"buttonRef\"\n\t\ttrigger=\"click\"\n\t\ttitle=\"With title\"\n\t\tvirtual-triggering\n\t>\n\t\t<span> Some content </span>\n\t</AsamPopover>\n</template>\n\n<script lang=\"ts\" setup>\nimport {\n\tAsamButton,\n\tAsamClickOutside as vAsamClickOutside,\n\tAsamPopover,\n\ttype AsamPopoverExpose as PopoverInstance\n} from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst buttonRef = ref();\nconst popoverRef = ref<PopoverInstance>();\nconst onClickOutside = () => {\n\tpopoverRef.value?.hide();\n};\n</script>\n",
-			"originalSourceSha256": "cbb97ab19de9203a622c9b13a884d5c8416033c450dd955d14148402c0a5d594",
+			"sha256": "88a314d81629d629d31513861524c8bc1bd5e9578f0afca0145c16ef3749c287",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bc4af4e49fd3d0e49fc264d3f1868f83bd7d7c14bdf86090acfa0f25b4916a72.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bc4af4e49fd3d0e49fc264d3f1868f83bd7d7c14bdf86090acfa0f25b4916a72.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" ref=\"buttonRef\" v-asam-click-outside=\"onClickOutside\">\n\t\t点击按钮\n\t</AsamButton>\n\n\t<AsamPopover\n\t\tref=\"popoverRef\"\n\t\t:virtual-ref=\"buttonRef\"\n\t\ttrigger=\"click\"\n\t\ttitle=\"带标题\"\n\t\tvirtual-triggering\n\t>\n\t\t<span> 示例内容 </span>\n\t</AsamPopover>\n</template>\n\n<script lang=\"ts\" setup>\nimport {\n\tAsamButton,\n\tAsamClickOutside as vAsamClickOutside,\n\tAsamPopover,\n\ttype AsamPopoverExpose as PopoverInstance\n} from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst buttonRef = ref();\nconst popoverRef = ref<PopoverInstance>();\nconst onClickOutside = () => {\n\tpopoverRef.value?.hide();\n};\n</script>\n",
+			"originalSourceSha256": "c948053585c2394a7c58972364a88b595221864938ebf6755ea5f2e573211eb1",
 			"notice": {
 				"id": "bc4af4e49fd3d0e49fc264d3f1868f83bd7d7c14bdf86090acfa0f25b4916a72",
 				"url": "/licenses/source-notices/bc4af4e49fd3d0e49fc264d3f1868f83bd7d7c14bdf86090acfa0f25b4916a72.txt",

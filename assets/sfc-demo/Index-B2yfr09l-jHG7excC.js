@@ -1,1 +1,0 @@
-import"./sfc-demo.js";import{t as e}from"./trap-focus-OTtvTolf.js";var t=Object.assign({},e,{install(e){e.directive(`asam-trap-focus`,t)}});export{t};

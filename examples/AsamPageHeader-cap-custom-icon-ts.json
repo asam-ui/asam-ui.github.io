@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamPageHeader/cap-custom-icon/ts/Demo.vue",
-			"sha256": "b5f74713522774de4b3ef451bc7c542c62020d6654375fb1e6f18d7297494085",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-babe5a77e540c97bced640fa4c7b876bab83a23bc8efc776c3fea1991afcade6.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/babe5a77e540c97bced640fa4c7b876bab83a23bc8efc776c3fea1991afcade6.txt\n-->\n<template>\n\t<AsamPageHeader :icon=\"ArrowLeft\">\n\t\t<template #content>\n\t\t\t<span class=\"text-large font-600 mr-3\"> Title </span>\n\t\t</template>\n\t</AsamPageHeader>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamPageHeaderCapCustomIconDemo' });\nimport { AsamPageHeader } from '@asam-ui/ui';\n\nimport { ArrowLeft } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.text-large {\n\tfont-size: var(--el-font-size-large);\n}\n\n.font-600 {\n\tfont-weight: 600;\n}\n\n.mr-3 {\n\tmargin-right: 0.75rem;\n}\n</style>\n",
-			"originalSourceSha256": "16639796a696606a89593ef1ef47b8c435647d1221c70ba3306151e2214d3fa4",
+			"sha256": "80271d9b8128fc37919e0eaf65fbb5c554a98ca0ab94b2323e3dd026ca1eb518",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-babe5a77e540c97bced640fa4c7b876bab83a23bc8efc776c3fea1991afcade6.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/babe5a77e540c97bced640fa4c7b876bab83a23bc8efc776c3fea1991afcade6.txt\n-->\n<template>\n\t<AsamPageHeader :icon=\"ArrowLeft\">\n\t\t<template #content>\n\t\t\t<span class=\"text-large font-600 mr-3\"> 标题 </span>\n\t\t</template>\n\t</AsamPageHeader>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamPageHeaderCapCustomIconDemo' });\nimport { AsamPageHeader } from '@asam-ui/ui';\n\nimport { ArrowLeft } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.text-large {\n\tfont-size: var(--el-font-size-large);\n}\n\n.font-600 {\n\tfont-weight: 600;\n}\n\n.mr-3 {\n\tmargin-right: 0.75rem;\n}\n</style>\n",
+			"originalSourceSha256": "a2e72e52b0098535bd33398368e365175f295d9e6e5a3d5747c03b47fd1a1d54",
 			"notice": {
 				"id": "babe5a77e540c97bced640fa4c7b876bab83a23bc8efc776c3fea1991afcade6",
 				"url": "/licenses/source-notices/babe5a77e540c97bced640fa4c7b876bab83a23bc8efc776c3fea1991afcade6.txt",

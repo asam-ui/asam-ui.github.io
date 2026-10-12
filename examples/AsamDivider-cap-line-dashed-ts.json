@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDivider/cap-line-dashed/ts/Demo.vue",
-			"sha256": "8878caab6acf18a7f64a693ede3c3d8ab834b632b098f0513aae91e82f2948b2",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-91d0a54a7429f8cecf82ddc6e72f3d9d9c853826a6d1300a2f0eb4bb15c2771d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/91d0a54a7429f8cecf82ddc6e72f3d9d9c853826a6d1300a2f0eb4bb15c2771d.txt\n-->\n<template>\n\t<div>\n\t\t<span>What language is thine, O sea?</span>\n\t\t<AsamDivider border-style=\"dashed\" />\n\t\t<span>The language of eternal question.</span>\n\t</div>\n\t<AsamDivider border-style=\"dotted\" />\n\t<span>What language is thy answer, O sky?</span>\n\t<AsamDivider border-style=\"double\" />\n\t<span>The language of eternal silence.</span>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamDividerCapLineDashedDemo' });\nimport { AsamDivider } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "be85385dfd3cbb4b61847a7295aee9c1c82a390655171f9f06c79cbf7dfce26f",
+			"sha256": "dfc9975d6e82f512ed97edc66d141b71f5f56fa7c70fed05d8fe9e8c88a18ceb",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-91d0a54a7429f8cecf82ddc6e72f3d9d9c853826a6d1300a2f0eb4bb15c2771d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/91d0a54a7429f8cecf82ddc6e72f3d9d9c853826a6d1300a2f0eb4bb15c2771d.txt\n-->\n<template>\n\t<div>\n\t\t<span>大海，你用怎样的语言？</span>\n\t\t<AsamDivider border-style=\"dashed\" />\n\t\t<span>那是永恒的提问。</span>\n\t</div>\n\t<AsamDivider border-style=\"dotted\" />\n\t<span>天空，你用怎样的语言回答？</span>\n\t<AsamDivider border-style=\"double\" />\n\t<span>那是永恒的沉默。</span>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamDividerCapLineDashedDemo' });\nimport { AsamDivider } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "6176b2b7cf4501c79b80b27786bd2a664dc603b7edd3de3b96c9540bb59cb138",
 			"notice": {
 				"id": "91d0a54a7429f8cecf82ddc6e72f3d9d9c853826a6d1300a2f0eb4bb15c2771d",
 				"url": "/licenses/source-notices/91d0a54a7429f8cecf82ddc6e72f3d9d9c853826a6d1300a2f0eb4bb15c2771d.txt",

@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTimeSelect/official-time-select-time-formats/ts/Demo.vue",
-			"sha256": "b2125c30e359cd6c59cdfeaf38f54c2bf5bed169204aec4581fa137bcb9ed097",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-68bb7c6059957f9b71679cb329d7b27801b9b307934b7b453040fdeb2b1d6a41.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/68bb7c6059957f9b71679cb329d7b27801b9b307934b7b453040fdeb2b1d6a41.txt\n-->\n<template>\n\t<AsamTimeSelect\n\t\tv-model=\"value\"\n\t\tstyle=\"width: 240px\"\n\t\tstart=\"00:00\"\n\t\tstep=\"00:30\"\n\t\tend=\"23:59\"\n\t\tplaceholder=\"Select time\"\n\t\tformat=\"hh:mm A\"\n\t/>\n</template>\n\n<script lang=\"ts\" setup>\nimport type { AsamTimeSelectValue } from '@asam-ui/ui';\nimport { AsamTimeSelect } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamTimeSelectofficialtimeselecttimeformatsExample' });\n\nimport { ref } from 'vue';\n\nconst value = ref<AsamTimeSelectValue>('');\n</script>\n",
-			"originalSourceSha256": "ece140609bfbe5c694c0dcf062ba4c4375b83c17481d805ab7e48da304c16902",
+			"sha256": "d5703c6e0cb78513f307982baedcad880192b4c253e8f8e1c76b459961bb8fd1",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-68bb7c6059957f9b71679cb329d7b27801b9b307934b7b453040fdeb2b1d6a41.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/68bb7c6059957f9b71679cb329d7b27801b9b307934b7b453040fdeb2b1d6a41.txt\n-->\n<template>\n\t<AsamTimeSelect\n\t\tv-model=\"value\"\n\t\tstyle=\"width: 240px\"\n\t\tstart=\"00:00\"\n\t\tstep=\"00:30\"\n\t\tend=\"23:59\"\n\t\tplaceholder=\"选择时间\"\n\t\tformat=\"hh:mm A\"\n\t/>\n</template>\n\n<script lang=\"ts\" setup>\nimport type { AsamTimeSelectValue } from '@asam-ui/ui';\nimport { AsamTimeSelect } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamTimeSelectofficialtimeselecttimeformatsExample' });\n\nimport { ref } from 'vue';\n\nconst value = ref<AsamTimeSelectValue>('');\n</script>\n",
+			"originalSourceSha256": "c174a2eb91dea9ca8fb9f806253bd055eb52e9976f812286c3994350dc10656c",
 			"notice": {
 				"id": "68bb7c6059957f9b71679cb329d7b27801b9b307934b7b453040fdeb2b1d6a41",
 				"url": "/licenses/source-notices/68bb7c6059957f9b71679cb329d7b27801b9b307934b7b453040fdeb2b1d6a41.txt",

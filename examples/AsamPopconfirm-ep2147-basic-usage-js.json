@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamPopconfirm/ep2147-basic-usage/js/Demo.vue",
-			"sha256": "983e89c45fb77e28d24b10890b69b635054c5255a4f3c84d5937a94f9dd3b86e",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218.txt\n-->\n<template>\n\t<AsamPopconfirm title=\"Are you sure to delete this?\">\n\t\t<template #reference>\n\t\t\t<AsamButton>Delete</AsamButton>\n\t\t</template>\n\t</AsamPopconfirm>\n</template>\n\n<script setup>\nimport { AsamButton, AsamPopconfirm } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "abc95f46595b38b99bbb64bfe0452da603b19bbc7d36e16a1108acd1fc0ed930",
+			"sha256": "179898174ec1b5fa75a6a094b587dbdddfc9217b7e0aa62a714cf928ad6cdea1",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218.txt\n-->\n<template>\n\t<AsamPopconfirm title=\"确定删除此项吗？\">\n\t\t<template #reference>\n\t\t\t<AsamButton type=\"primary\">删除</AsamButton>\n\t\t</template>\n\t</AsamPopconfirm>\n</template>\n\n<script setup>\nimport { AsamButton, AsamPopconfirm } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "72993481c1755821c30a69b5b648343c5f6f288450e98a5563d9303fe03d9b0f",
 			"notice": {
 				"id": "18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218",
 				"url": "/licenses/source-notices/18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218.txt",

@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamAlert/cap-description/js/Demo.vue",
-			"sha256": "51f05e645735859de1bcb58a841e44c6e8ba532865c0f02946dd2328449ade81",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-fe0beec6376c7ce43ebc8e79403c18506fa9be01b2766145fcb23f4659488d51.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/fe0beec6376c7ce43ebc8e79403c18506fa9be01b2766145fcb23f4659488d51.txt\n-->\n<template>\n\t<div style=\"max-width: 600px\">\n\t\t<AsamAlert title=\"With description\" type=\"success\" description=\"This is a description.\" />\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamAlertCapDescriptionDemo' });\nimport { AsamAlert } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "2fedf84717c44ba92f558289bd560a88b826e017b15e6da2a327b0f891957f11",
+			"sha256": "ce46637052f017585dd0fee52689374e504f873a73e6debaa9d3d460ecc1c7fb",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-fe0beec6376c7ce43ebc8e79403c18506fa9be01b2766145fcb23f4659488d51.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/fe0beec6376c7ce43ebc8e79403c18506fa9be01b2766145fcb23f4659488d51.txt\n-->\n<template>\n\t<div style=\"max-width: 600px\">\n\t\t<AsamAlert title=\"带说明\" type=\"success\" description=\"这是一段说明。\" />\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamAlertCapDescriptionDemo' });\nimport { AsamAlert } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "f25b9e3a2a47ff7cac655f99780a7edd617618a1dc40f0e65c80f2e8fb8913b4",
 			"notice": {
 				"id": "fe0beec6376c7ce43ebc8e79403c18506fa9be01b2766145fcb23f4659488d51",
 				"url": "/licenses/source-notices/fe0beec6376c7ce43ebc8e79403c18506fa9be01b2766145fcb23f4659488d51.txt",

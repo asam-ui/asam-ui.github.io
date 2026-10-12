@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamPopconfirm/ep2147-basic-usage/ts/Demo.vue",
-			"sha256": "c0d1f980b267459dccc3ef2f6166ac4f11430aa967df5171a807756bf2834c11",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218.txt\n-->\n<template>\n\t<AsamPopconfirm title=\"Are you sure to delete this?\">\n\t\t<template #reference>\n\t\t\t<AsamButton>Delete</AsamButton>\n\t\t</template>\n\t</AsamPopconfirm>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamPopconfirm } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "188a0322ead1d2938b4783d6202322f7b7af7734149a435f227fa3fb93620684",
+			"sha256": "eef15bc5a3fe238c1e29906b3e819d953fce1b2b6c5d8dc8da7899aa159a92b3",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218.txt\n-->\n<template>\n\t<AsamPopconfirm title=\"确定删除此项吗？\">\n\t\t<template #reference>\n\t\t\t<AsamButton type=\"primary\">删除</AsamButton>\n\t\t</template>\n\t</AsamPopconfirm>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamPopconfirm } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "6927fd26f87330d933ef9cf9d00c5b2ade4b429c41c1fc4659c0d45d0510de7e",
 			"notice": {
 				"id": "18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218",
 				"url": "/licenses/source-notices/18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218.txt",

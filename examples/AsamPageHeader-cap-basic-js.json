@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamPageHeader/cap-basic/js/Demo.vue",
-			"sha256": "241d973900c9eff4e94ad9c55315010933729ec299ee05c375db71d22ac2e6d9",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-eb46e0e0a12d0871d98a7be2146834cae22a898a46c96283a6c01c03e32f7335.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/eb46e0e0a12d0871d98a7be2146834cae22a898a46c96283a6c01c03e32f7335.txt\n-->\n<template>\n\t<AsamPageHeader @back=\"goBack\">\n\t\t<template #content>\n\t\t\t<span class=\"text-large font-600 mr-3\"> Title </span>\n\t\t</template>\n\t</AsamPageHeader>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamPageHeaderCapBasicDemo' });\nimport { AsamPageHeader } from '@asam-ui/ui';\nconst goBack = () => {\n\tconsole.log('go back');\n};\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.text-large {\n\tfont-size: var(--el-font-size-large);\n}\n\n.font-600 {\n\tfont-weight: 600;\n}\n\n.mr-3 {\n\tmargin-right: 0.75rem;\n}\n</style>\n",
-			"originalSourceSha256": "2828e3eb5d5ab3516b8eb7acba1f74dcfdde0e47cd122cfb05fa5128af5f9ae3",
+			"sha256": "812fe61037e44d76d76a3eee6cb6056c3c189b037b1dcc506188a5925bbcc556",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-eb46e0e0a12d0871d98a7be2146834cae22a898a46c96283a6c01c03e32f7335.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/eb46e0e0a12d0871d98a7be2146834cae22a898a46c96283a6c01c03e32f7335.txt\n-->\n<template>\n\t<AsamPageHeader @back=\"goBack\">\n\t\t<template #content>\n\t\t\t<span class=\"text-large font-600 mr-3\"> 标题 </span>\n\t\t</template>\n\t</AsamPageHeader>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamPageHeaderCapBasicDemo' });\nimport { AsamPageHeader } from '@asam-ui/ui';\nconst goBack = () => {\n\tconsole.log('go back');\n};\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.text-large {\n\tfont-size: var(--el-font-size-large);\n}\n\n.font-600 {\n\tfont-weight: 600;\n}\n\n.mr-3 {\n\tmargin-right: 0.75rem;\n}\n</style>\n",
+			"originalSourceSha256": "fd9d2b00fecf3e2dd26536f1809eacc2093439f1980fb6cffd79eb55ddfcae5e",
 			"notice": {
 				"id": "eb46e0e0a12d0871d98a7be2146834cae22a898a46c96283a6c01c03e32f7335",
 				"url": "/licenses/source-notices/eb46e0e0a12d0871d98a7be2146834cae22a898a46c96283a6c01c03e32f7335.txt",

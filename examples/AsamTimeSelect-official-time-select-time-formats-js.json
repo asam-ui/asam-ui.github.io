@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTimeSelect/official-time-select-time-formats/js/Demo.vue",
-			"sha256": "54e330c883ae38fc72bbc2af9e5e1a3d97a7412d9911cc7c0fa53fa330656528",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-68bb7c6059957f9b71679cb329d7b27801b9b307934b7b453040fdeb2b1d6a41.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/68bb7c6059957f9b71679cb329d7b27801b9b307934b7b453040fdeb2b1d6a41.txt\n-->\n<template>\n\t<AsamTimeSelect\n\t\tv-model=\"value\"\n\t\tstyle=\"width: 240px\"\n\t\tstart=\"00:00\"\n\t\tstep=\"00:30\"\n\t\tend=\"23:59\"\n\t\tplaceholder=\"Select time\"\n\t\tformat=\"hh:mm A\"\n\t/>\n</template>\n\n<script setup>\nimport { AsamTimeSelect } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamTimeSelectofficialtimeselecttimeformatsExample' });\nimport { ref } from 'vue';\nconst value = ref('');\n</script>\n",
-			"originalSourceSha256": "e00e82cd73251c916fb056fbb40d9d3346d63889e18d59f182febff2562e6664",
+			"sha256": "fc2572c7acb29accd3f0894bdde32931049f0355f850c216286fa69147b96cc5",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-68bb7c6059957f9b71679cb329d7b27801b9b307934b7b453040fdeb2b1d6a41.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/68bb7c6059957f9b71679cb329d7b27801b9b307934b7b453040fdeb2b1d6a41.txt\n-->\n<template>\n\t<AsamTimeSelect\n\t\tv-model=\"value\"\n\t\tstyle=\"width: 240px\"\n\t\tstart=\"00:00\"\n\t\tstep=\"00:30\"\n\t\tend=\"23:59\"\n\t\tplaceholder=\"选择时间\"\n\t\tformat=\"hh:mm A\"\n\t/>\n</template>\n\n<script setup>\nimport { AsamTimeSelect } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamTimeSelectofficialtimeselecttimeformatsExample' });\nimport { ref } from 'vue';\nconst value = ref('');\n</script>\n",
+			"originalSourceSha256": "7ac966695b3021a25c7ae57672e99eae2a41774cd1f71d37bb209e56469bf1fa",
 			"notice": {
 				"id": "68bb7c6059957f9b71679cb329d7b27801b9b307934b7b453040fdeb2b1d6a41",
 				"url": "/licenses/source-notices/68bb7c6059957f9b71679cb329d7b27801b9b307934b7b453040fdeb2b1d6a41.txt",

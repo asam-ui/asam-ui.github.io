@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDrawer/ep2147-resizable/js/Demo.vue",
-			"sha256": "62c40874e6f1dc2c93db35ac1b81cc8aea377855859c11486260351a60022147",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0a7ecfbba2fd30d2dcaf04552e54178d09876c7b270311bbd6dae3fbd4ddb0e7.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/0a7ecfbba2fd30d2dcaf04552e54178d09876c7b270311bbd6dae3fbd4ddb0e7.txt\n-->\n<template>\n\t<label\n\t\t>展开方向\n\t\t<select :value=\"direction\" @change=\"changeDirection\">\n\t\t\t<option value=\"ltr\">从左展开</option>\n\t\t\t<option value=\"rtl\">从右展开</option>\n\t\t\t<option value=\"ttb\">从上展开</option>\n\t\t\t<option value=\"btt\">从下展开</option>\n\t\t</select></label\n\t>\n\n\t<AsamDrawer v-model=\"drawer\" :direction=\"direction\" resizable>\n\t\tThis is drawer content.\n\t</AsamDrawer>\n</template>\n\n<script setup>\nimport { AsamDrawer } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst direction = ref();\nconst drawer = ref(false);\nconst changeDirection = (event) => {\n\tconst target = event.currentTarget;\n\tif (!(target instanceof HTMLSelectElement)) return;\n\tconst value = target.value;\n\tif (value === 'ltr' || value === 'rtl' || value === 'ttb' || value === 'btt') {\n\t\tdirection.value = value;\n\t\tdrawer.value = true;\n\t}\n};\n</script>\n",
-			"originalSourceSha256": "789ab9f34318c7dbb5c55d1768cb479471fb62b8d6814039966bf201d669020d",
+			"sha256": "f92357e3d116ffb811eb4c8af464e9fa21b74c6e8dcfaa454057b8c80b44b760",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0a7ecfbba2fd30d2dcaf04552e54178d09876c7b270311bbd6dae3fbd4ddb0e7.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/0a7ecfbba2fd30d2dcaf04552e54178d09876c7b270311bbd6dae3fbd4ddb0e7.txt\n-->\n<template>\n\t<label\n\t\t>展开方向\n\t\t<AsamSelect :model-value=\"direction\" @change=\"changeDirection\">\n\t\t\t<AsamOption value=\"ltr\" :label=\"'从左展开'\">从左展开</AsamOption>\n\t\t\t<AsamOption value=\"rtl\" :label=\"'从右展开'\">从右展开</AsamOption>\n\t\t\t<AsamOption value=\"ttb\" :label=\"'从上展开'\">从上展开</AsamOption>\n\t\t\t<AsamOption value=\"btt\" :label=\"'从下展开'\">从下展开</AsamOption>\n\t\t</AsamSelect></label\n\t>\n\n\t<AsamDrawer v-model=\"drawer\" :direction=\"direction\" resizable> 这是抽屉内容。 </AsamDrawer>\n</template>\n\n<script setup>\nimport { AsamSelect, AsamOption, AsamDrawer } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst direction = ref();\nconst drawer = ref(false);\nconst changeDirection = (value) => {\n\tif (value === 'ltr' || value === 'rtl' || value === 'ttb' || value === 'btt') {\n\t\tdirection.value = value;\n\t\tdrawer.value = true;\n\t}\n};\n</script>\n",
+			"originalSourceSha256": "ef902904595fa5a74270312bf1e176222f6dac003d29a05fb2d4c1ee7244c227",
 			"notice": {
 				"id": "0a7ecfbba2fd30d2dcaf04552e54178d09876c7b270311bbd6dae3fbd4ddb0e7",
 				"url": "/licenses/source-notices/0a7ecfbba2fd30d2dcaf04552e54178d09876c7b270311bbd6dae3fbd4ddb0e7.txt",

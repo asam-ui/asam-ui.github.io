@@ -1,1 +1,0 @@
-import{E as e,Tt as t,W as n,y as r}from"./sfc-demo.js";import{t as i}from"./Index-7hdqx8Df-CcPWIFaf.js";var a=e({name:`AsamPaginationCapNumberOfPagersDemo`,__name:`Demo`,setup(e){return(e,a)=>(n(),r(t(i),{"page-size":20,"pager-count":11,layout:`prev, pager, next`,total:1e3}))}});export{a as default};

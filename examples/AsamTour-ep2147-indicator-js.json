@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTour/ep2147-indicator/js/Demo.vue",
-			"sha256": "7e93fcc7e87f7ba8286871163b39d036a79413fe3b153adf5ef5b273906adb5e",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-91564ec4c54d57d9be713dd6c97ce36d872990c7259fe70dcc40b06a0fe5fb2b.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/91564ec4c54d57d9be713dd6c97ce36d872990c7259fe70dcc40b06a0fe5fb2b.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" @click=\"open = true\">Begin Tour</AsamButton>\n\n\t<AsamDivider />\n\n\t<AsamSpace>\n\t\t<AsamButton ref=\"ref1\">Upload</AsamButton>\n\t\t<AsamButton ref=\"ref2\" type=\"primary\">Save</AsamButton>\n\t\t<AsamButton ref=\"ref3\" :icon=\"MoreFilled\" />\n\t</AsamSpace>\n\n\t<AsamTour v-model=\"open\">\n\t\t<AsamTourStep :target=\"ref1?.$el\" title=\"Upload File\" description=\"Put you files here.\" />\n\t\t<AsamTourStep :target=\"ref2?.$el\" title=\"Save\" description=\"Save your changes\" />\n\t\t<AsamTourStep :target=\"ref3?.$el\" title=\"Other Actions\" description=\"Click to see other\" />\n\t\t<template #indicators=\"{ current, total }\">\n\t\t\t<span>{{ current + 1 }} / {{ total }}</span>\n\t\t</template>\n\t</AsamTour>\n</template>\n\n<script setup>\nimport { AsamButton, AsamDivider, AsamSpace, AsamTour, AsamTourStep } from '@asam-ui/ui';\nimport { ref } from 'vue';\nimport { MoreFilled } from '@asam-ui/icons-vue';\nconst ref1 = ref();\nconst ref2 = ref();\nconst ref3 = ref();\nconst open = ref(false);\n</script>\n",
-			"originalSourceSha256": "f09800806e348f1121d96c6bbb465be67f021a2b844af7d0b24686a56584ed1f",
+			"sha256": "c959f4024ecff90b80cf83063935a8b5eba03d7b231a5686286a6d964ddc1c0e",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-91564ec4c54d57d9be713dd6c97ce36d872990c7259fe70dcc40b06a0fe5fb2b.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/91564ec4c54d57d9be713dd6c97ce36d872990c7259fe70dcc40b06a0fe5fb2b.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" @click=\"open = true\">开始导览</AsamButton>\n\n\t<AsamDivider />\n\n\t<AsamSpace>\n\t\t<AsamButton type=\"primary\" ref=\"ref1\">上传</AsamButton>\n\t\t<AsamButton ref=\"ref2\" type=\"primary\">保存</AsamButton>\n\t\t<AsamButton type=\"primary\" ref=\"ref3\" :icon=\"MoreFilled\" />\n\t</AsamSpace>\n\n\t<AsamTour v-model=\"open\">\n\t\t<AsamTourStep :target=\"ref1?.$el\" title=\"上传文件\" description=\"将文件放在这里。\" />\n\t\t<AsamTourStep :target=\"ref2?.$el\" title=\"保存\" description=\"保存修改\" />\n\t\t<AsamTourStep :target=\"ref3?.$el\" title=\"其他操作\" description=\"点击查看其他内容\" />\n\t\t<template #indicators=\"{ current, total }\">\n\t\t\t<span>{{ current + 1 }} / {{ total }}</span>\n\t\t</template>\n\t</AsamTour>\n</template>\n\n<script setup>\nimport { AsamButton, AsamDivider, AsamSpace, AsamTour, AsamTourStep } from '@asam-ui/ui';\nimport { ref } from 'vue';\nimport { MoreFilled } from '@asam-ui/icons-vue';\nconst ref1 = ref();\nconst ref2 = ref();\nconst ref3 = ref();\nconst open = ref(false);\n</script>\n",
+			"originalSourceSha256": "c2f137621fc95cfcb88ea7c42d4c613796d44874c9075774edc2789ecfa06f4d",
 			"notice": {
 				"id": "91564ec4c54d57d9be713dd6c97ce36d872990c7259fe70dcc40b06a0fe5fb2b",
 				"url": "/licenses/source-notices/91564ec4c54d57d9be713dd6c97ce36d872990c7259fe70dcc40b06a0fe5fb2b.txt",

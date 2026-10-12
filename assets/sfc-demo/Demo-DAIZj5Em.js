@@ -1,1 +1,0 @@
-import{E as e,Tt as t,W as n,y as r}from"./sfc-demo.js";import{t as i}from"./Index-Uo9t0Uie2-DJ69II_B.js";var a=e({name:`AsamSkeletonCapAnimationDemo`,__name:`Demo`,setup(e){return(e,a)=>(n(),r(t(i),{rows:5,animated:``}))}});export{a as default};

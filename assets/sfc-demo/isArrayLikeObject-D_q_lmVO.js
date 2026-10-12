@@ -1,0 +1,1 @@
+import{c as e}from"./fromPairs-Cs9dJ7FM.js";import{i as t,n,r}from"./_flatRest-DLZRK6of.js";import{Lt as i}from"./sfc-demo.js";function a(e,i){return r(n(e,i,t),e+``)}function o(t){return e(t)&&i(t)}export{a as n,o as t};

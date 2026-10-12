@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDivider/cap-vertical-divider/ts/Demo.vue",
-			"sha256": "c28bf0fb05c0f5f06b3dd811b1ade295da6480e2a80cd555938c313eb9133193",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-619c34987a2746cd48a00572a623ba1d037c1ca4508a5cd3e3914cf9e43e265e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/619c34987a2746cd48a00572a623ba1d037c1ca4508a5cd3e3914cf9e43e265e.txt\n-->\n<template>\n\t<div>\n\t\t<span>Rain</span>\n\t\t<AsamDivider direction=\"vertical\" />\n\t\t<span>Home</span>\n\t\t<AsamDivider direction=\"vertical\" border-style=\"dashed\" />\n\t\t<span>Grass</span>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamDividerCapVerticalDividerDemo' });\nimport { AsamDivider } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "ca2d7e4577d08cd9e100d2ddd9eace04055013b5a2998b21049c0b26b5b3ff49",
+			"sha256": "8148109015b31cc2206849d49f92107af1ffa16865d281abf5d4f7367fe5a141",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-619c34987a2746cd48a00572a623ba1d037c1ca4508a5cd3e3914cf9e43e265e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/619c34987a2746cd48a00572a623ba1d037c1ca4508a5cd3e3914cf9e43e265e.txt\n-->\n<template>\n\t<div>\n\t\t<span>雨天</span>\n\t\t<AsamDivider direction=\"vertical\" />\n\t\t<span>首页</span>\n\t\t<AsamDivider direction=\"vertical\" border-style=\"dashed\" />\n\t\t<span>草地</span>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamDividerCapVerticalDividerDemo' });\nimport { AsamDivider } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "e6ca5325468161675bd6f32a43b13f4c0ab536c598c368fbdee58d010069fa24",
 			"notice": {
 				"id": "619c34987a2746cd48a00572a623ba1d037c1ca4508a5cd3e3914cf9e43e265e",
 				"url": "/licenses/source-notices/619c34987a2746cd48a00572a623ba1d037c1ca4508a5cd3e3914cf9e43e265e.txt",

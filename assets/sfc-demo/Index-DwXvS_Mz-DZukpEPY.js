@@ -1,1 +1,0 @@
-import"./sfc-demo.js";import{t as e}from"./mousewheel-BGRV6vrO.js";var t=Object.assign({},e,{install(e){e.directive(`asam-mousewheel`,t)}});export{t};

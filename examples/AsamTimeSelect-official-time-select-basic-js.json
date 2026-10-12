@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTimeSelect/official-time-select-basic/js/Demo.vue",
-			"sha256": "62ee0984beadd222cb97179c3652761f1b6f5db5c3aad8fab8f41196f48313ec",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-8150732b824c87cd2a6d15f2d200466f138ce1f6b026d04d12b290b2a02f600b.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/8150732b824c87cd2a6d15f2d200466f138ce1f6b026d04d12b290b2a02f600b.txt\n-->\n<template>\n\t<AsamTimeSelect\n\t\tv-model=\"value\"\n\t\tstyle=\"width: 240px\"\n\t\tstart=\"08:30\"\n\t\tstep=\"00:15\"\n\t\tend=\"18:30\"\n\t\tplaceholder=\"Select time\"\n\t/>\n</template>\n\n<script setup>\nimport { AsamTimeSelect } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamTimeSelectofficialtimeselectbasicExample' });\nimport { ref } from 'vue';\nconst value = ref('');\n</script>\n",
-			"originalSourceSha256": "776897bdfb3b8121903fe03e917ebd757d1309fac5a6de89b56e9a85c5599052",
+			"sha256": "98f8cf244041b77d93aece68f6ac4f2abd06c0d0a90bb35eb07bc70a0151ff78",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-8150732b824c87cd2a6d15f2d200466f138ce1f6b026d04d12b290b2a02f600b.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/8150732b824c87cd2a6d15f2d200466f138ce1f6b026d04d12b290b2a02f600b.txt\n-->\n<template>\n\t<AsamTimeSelect\n\t\tv-model=\"value\"\n\t\tstyle=\"width: 240px\"\n\t\tstart=\"08:30\"\n\t\tstep=\"00:15\"\n\t\tend=\"18:30\"\n\t\tplaceholder=\"选择时间\"\n\t/>\n</template>\n\n<script setup>\nimport { AsamTimeSelect } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamTimeSelectofficialtimeselectbasicExample' });\nimport { ref } from 'vue';\nconst value = ref('');\n</script>\n",
+			"originalSourceSha256": "1490437a3deab0410f8b676bc78408bef6a75ef9317b69fe85bbb81e12714e5a",
 			"notice": {
 				"id": "8150732b824c87cd2a6d15f2d200466f138ce1f6b026d04d12b290b2a02f600b",
 				"url": "/licenses/source-notices/8150732b824c87cd2a6d15f2d200466f138ce1f6b026d04d12b290b2a02f600b.txt",

@@ -1,1 +1,0 @@
-import"./sfc-demo.js";import{n as e}from"./Index-Uo9t0Uie2-DJ69II_B.js";var t=Object.assign({},e,{install(e){e.component(`AsamSkeletonItem`,t)}});export{t};

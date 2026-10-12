@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSteps/cap-with-icon/ts/Demo.vue",
-			"sha256": "7f5dd2c6df08558b67423d1994e77d87e30303bb660150d76baa67cd8a281a0e",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-9188d046dbb665094a3662e7cbefdf2a9b288d18534ea94958303c528aace687.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/9188d046dbb665094a3662e7cbefdf2a9b288d18534ea94958303c528aace687.txt\n-->\n<template>\n\t<AsamSteps style=\"max-width: 600px\" :active=\"1\">\n\t\t<AsamStep title=\"Step 1\" :icon=\"Edit\" />\n\t\t<AsamStep title=\"Step 2\" :icon=\"Upload\" />\n\t\t<AsamStep title=\"Step 3\" :icon=\"Picture\" />\n\t</AsamSteps>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamStepsCapWithIconDemo' });\nimport { AsamSteps, AsamStep } from '@asam-ui/ui';\n\nimport { Edit, Picture, Upload } from '@asam-ui/icons-vue';\n</script>\n",
-			"originalSourceSha256": "65fb738d43cbbddd2cf4482b4a5eabfe2438b9f0d8aed522a180450c206c1eab",
+			"sha256": "871f3e7c921da7cd9d56dda2ab11517f1c20edd42a62e9fdb681c4b1531fefbc",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-9188d046dbb665094a3662e7cbefdf2a9b288d18534ea94958303c528aace687.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/9188d046dbb665094a3662e7cbefdf2a9b288d18534ea94958303c528aace687.txt\n-->\n<template>\n\t<AsamSteps style=\"max-width: 600px\" :active=\"1\">\n\t\t<AsamStep title=\"步骤 1\" :icon=\"Edit\" />\n\t\t<AsamStep title=\"步骤 2\" :icon=\"Upload\" />\n\t\t<AsamStep title=\"步骤 3\" :icon=\"Picture\" />\n\t</AsamSteps>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamStepsCapWithIconDemo' });\nimport { AsamSteps, AsamStep } from '@asam-ui/ui';\n\nimport { Edit, Picture, Upload } from '@asam-ui/icons-vue';\n</script>\n",
+			"originalSourceSha256": "4681ff9a7860a5d112bbb3fa3aede49b69aabb10f636a512915c073cee7de86f",
 			"notice": {
 				"id": "9188d046dbb665094a3662e7cbefdf2a9b288d18534ea94958303c528aace687",
 				"url": "/licenses/source-notices/9188d046dbb665094a3662e7cbefdf2a9b288d18534ea94958303c528aace687.txt",

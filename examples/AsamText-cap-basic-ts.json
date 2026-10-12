@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamText/cap-basic/ts/Demo.vue",
-			"sha256": "fe00b63c19417e14169de6ed4fa5c597ab8e70bfbd5235065b2e977a9173eb38",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ceff442a8074dd2dec8c900fcdc2251f33b799988f13332ef24203d90dab0e73.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ceff442a8074dd2dec8c900fcdc2251f33b799988f13332ef24203d90dab0e73.txt\n-->\n<template>\n\t<AsamText class=\"mx-1\">Default</AsamText>\n\t<AsamText class=\"mx-1\" type=\"primary\">Primary</AsamText>\n\t<AsamText class=\"mx-1\" type=\"success\">Success</AsamText>\n\t<AsamText class=\"mx-1\" type=\"info\">Info</AsamText>\n\t<AsamText class=\"mx-1\" type=\"warning\">Warning</AsamText>\n\t<AsamText class=\"mx-1\" type=\"danger\">Danger</AsamText>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTextCapBasicDemo' });\nimport { AsamText } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.mx-1 {\n\tmargin-left: 0.25rem;\n\tmargin-right: 0.25rem;\n}\n</style>\n",
-			"originalSourceSha256": "241c3ef8857a4ca40c2a97a8cbc3509241d812074dc0005bb664b19edbfc3cbe",
+			"sha256": "5290ec1c98d0a78d2cf2d7f5b152ae80da457464db5dad45f74655260aab459e",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ceff442a8074dd2dec8c900fcdc2251f33b799988f13332ef24203d90dab0e73.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ceff442a8074dd2dec8c900fcdc2251f33b799988f13332ef24203d90dab0e73.txt\n-->\n<template>\n\t<AsamText class=\"mx-1\">默认</AsamText>\n\t<AsamText class=\"mx-1\" type=\"primary\">主要</AsamText>\n\t<AsamText class=\"mx-1\" type=\"success\">成功</AsamText>\n\t<AsamText class=\"mx-1\" type=\"info\">信息</AsamText>\n\t<AsamText class=\"mx-1\" type=\"warning\">警告</AsamText>\n\t<AsamText class=\"mx-1\" type=\"danger\">危险</AsamText>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTextCapBasicDemo' });\nimport { AsamText } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.mx-1 {\n\tmargin-left: 0.25rem;\n\tmargin-right: 0.25rem;\n}\n</style>\n",
+			"originalSourceSha256": "8f063b96a2b4a97ba47025baafe43286c4198da0859fae724d586dd5a6eab4ee",
 			"notice": {
 				"id": "ceff442a8074dd2dec8c900fcdc2251f33b799988f13332ef24203d90dab0e73",
 				"url": "/licenses/source-notices/ceff442a8074dd2dec8c900fcdc2251f33b799988f13332ef24203d90dab0e73.txt",

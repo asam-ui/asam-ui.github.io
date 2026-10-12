@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSpace/cap-basic/ts/Demo.vue",
-			"sha256": "494c045d79195d788e3e5fa7c72902f69d5d1a6c2bdcd7139697e3dd4eaf7a5a",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-54f4ed712563348ae44787c6446c60b98ba57c05b0c6d53cb742a6f90150e841.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/54f4ed712563348ae44787c6446c60b98ba57c05b0c6d53cb742a6f90150e841.txt\n-->\n<template>\n\t<AsamSpace wrap>\n\t\t<AsamCard v-for=\"i in 3\" :key=\"i\" class=\"box-card\" style=\"width: 250px\">\n\t\t\t<template #header>\n\t\t\t\t<div class=\"card-header\">\n\t\t\t\t\t<span>Card name</span>\n\t\t\t\t\t<AsamButton class=\"button\" text>Operation button</AsamButton>\n\t\t\t\t</div>\n\t\t\t</template>\n\n\t\t\t<div v-for=\"o in 4\" :key=\"o\" class=\"text item\">\n\t\t\t\t{{ 'List item ' + o }}\n\t\t\t</div>\n\t\t</AsamCard>\n\t</AsamSpace>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamSpaceCapBasicDemo' });\nimport { AsamSpace, AsamCard, AsamButton } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "e514d3d00d63d00493ae89f68d61c1335959f5cc4e6e1a6a48810b7733baf429",
+			"sha256": "74fe2fdf091edc7144394ab2c144d908167c6e597582b4baa8ee13f2dcd0790e",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-54f4ed712563348ae44787c6446c60b98ba57c05b0c6d53cb742a6f90150e841.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/54f4ed712563348ae44787c6446c60b98ba57c05b0c6d53cb742a6f90150e841.txt\n-->\n<template>\n\t<AsamSpace wrap>\n\t\t<AsamCard v-for=\"i in 3\" :key=\"i\" class=\"box-card\" style=\"width: 250px\">\n\t\t\t<template #header>\n\t\t\t\t<div class=\"card-header\">\n\t\t\t\t\t<span>卡片名称</span>\n\t\t\t\t\t<AsamButton type=\"primary\" class=\"button\" text>操作按钮</AsamButton>\n\t\t\t\t</div>\n\t\t\t</template>\n\n\t\t\t<div v-for=\"o in 4\" :key=\"o\" class=\"text item\">\n\t\t\t\t{{ '列表项 ' + o }}\n\t\t\t</div>\n\t\t</AsamCard>\n\t</AsamSpace>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamSpaceCapBasicDemo' });\nimport { AsamSpace, AsamCard, AsamButton } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "371e67a703e3cb2ceb6598c562b8ca9ffe4829e5cf45ab1f2b6eef04248e51c7",
 			"notice": {
 				"id": "54f4ed712563348ae44787c6446c60b98ba57c05b0c6d53cb742a6f90150e841",
 				"url": "/licenses/source-notices/54f4ed712563348ae44787c6446c60b98ba57c05b0c6d53cb742a6f90150e841.txt",

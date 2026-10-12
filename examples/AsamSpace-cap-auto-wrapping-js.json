@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSpace/cap-auto-wrapping/js/Demo.vue",
-			"sha256": "4fdc5515000a10b516e08c5eba2c45d99619311194451d5b0d29e9334f3c9bbd",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807.txt\n-->\n<template>\n\t<AsamSpace wrap>\n\t\t<div v-for=\"i in 20\" :key=\"i\">\n\t\t\t<AsamButton text> Text button </AsamButton>\n\t\t</div>\n\t</AsamSpace>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamSpaceCapAutoWrappingDemo' });\nimport { AsamSpace, AsamButton } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "a598f7f0631f1cb9756dee3b6efed7f9d5d518a30167af8575abab7e6719454e",
+			"sha256": "934af21c0e6e7f3ea0eef3b1249abd38e54ad47cc92c7f08e20942db58f60468",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807.txt\n-->\n<template>\n\t<AsamSpace wrap>\n\t\t<div v-for=\"i in 20\" :key=\"i\">\n\t\t\t<AsamButton type=\"primary\" text> 文字按钮 </AsamButton>\n\t\t</div>\n\t</AsamSpace>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamSpaceCapAutoWrappingDemo' });\nimport { AsamSpace, AsamButton } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "0fad0f60e8cd287e9d55a3e750fde8b025e2380bb6ea97aa24038fe2c3b09f33",
 			"notice": {
 				"id": "00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807",
 				"url": "/licenses/source-notices/00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807.txt",

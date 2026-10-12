@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"component": "AsamSelectV2",
 	"demo": "dynamic",
 	"language": "js",
@@ -9,8 +9,8 @@
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSelectV2/dynamic/js/Demo.vue",
-			"sha256": "08a4191743a51ca0864bd7967fff50cb47cf81db14c246e93f3bfbe8cf4c5e9f",
-			"source": "<template>\n\t<div class=\"example\">\n\t\t<AsamSelectV2\n\t\t\tv-model=\"selected\"\n\t\t\t:options=\"options\"\n\t\t\t:estimated-option-height=\"40\"\n\t\t\t:height=\"180\"\n\t\t\t:fit-input-width=\"420\"\n\t\t\tfilterable\n\t\t\taria-label=\"可变行高选项\"\n\t\t\t@end-reached=\"direction = $event\"\n\t\t>\n\t\t\t<template #default=\"{ item, index }\"\n\t\t\t\t><div\n\t\t\t\t\t:style=\"{\n\t\t\t\t\t\tminHeight: index % 2 ? (tall ? '96px' : '64px') : '32px',\n\t\t\t\t\t\twhiteSpace: 'normal',\n\t\t\t\t\t\tlineHeight: '20px'\n\t\t\t\t\t}\"\n\t\t\t\t>\n\t\t\t\t\t{{ item?.label }}\n\t\t\t\t</div></template\n\t\t\t>\n\t\t</AsamSelectV2>\n\t\t<AsamButton @click=\"tall = !tall\">切换实际内容高度</AsamButton>\n\t\t<output>选择：{{ selected }}；方向：{{ direction }}</output>\n\t</div>\n</template>\n<script setup>\nimport { ref } from 'vue';\nimport { AsamSelectV2, AsamButton } from '@asam-ui/ui';\nconst options = Array.from({ length: 100 }, (_, value) => ({\n\tvalue,\n\tlabel: '动态选项 ' + value,\n\traw: { value }\n}));\nconst selected = ref(null);\nconst tall = ref(false);\nconst direction = ref('');\ndefineOptions({ name: 'AsamSelectV2DynamicDemo' });\n</script>\n<style scoped>\n.example {\n\tdisplay: grid;\n\tgap: var(--asam-space-md, 16px);\n}\n</style>\n"
+			"sha256": "94ce74531e5de84f94a739dbf6595c07c0351d439b09288877e279b58280e0e1",
+			"source": "<template>\n\t<div class=\"example\">\n\t\t<AsamSelectV2\n\t\t\tv-model=\"selected\"\n\t\t\t:options=\"options\"\n\t\t\t:estimated-option-height=\"40\"\n\t\t\t:height=\"180\"\n\t\t\t:fit-input-width=\"420\"\n\t\t\tfilterable\n\t\t\taria-label=\"可变行高选项\"\n\t\t\t@end-reached=\"direction = $event\"\n\t\t>\n\t\t\t<template #default=\"{ item, index }\"\n\t\t\t\t><div\n\t\t\t\t\t:style=\"{\n\t\t\t\t\t\tminHeight: index % 2 ? (tall ? '96px' : '64px') : '32px',\n\t\t\t\t\t\twhiteSpace: 'normal',\n\t\t\t\t\t\tlineHeight: '20px'\n\t\t\t\t\t}\"\n\t\t\t\t>\n\t\t\t\t\t{{ item?.label }}\n\t\t\t\t</div></template\n\t\t\t>\n\t\t</AsamSelectV2>\n\t\t<AsamButton type=\"primary\" @click=\"tall = !tall\">切换实际内容高度</AsamButton>\n\t\t<output>选择：{{ selected }}；方向：{{ direction }}</output>\n\t</div>\n</template>\n<script setup>\nimport { ref } from 'vue';\nimport { AsamSelectV2, AsamButton } from '@asam-ui/ui';\nconst options = Array.from({ length: 100 }, (_, value) => ({\n\tvalue,\n\tlabel: '动态选项 ' + value,\n\traw: { value }\n}));\nconst selected = ref(null);\nconst tall = ref(false);\nconst direction = ref('');\ndefineOptions({ name: 'AsamSelectV2DynamicDemo' });\n</script>\n<style scoped>\n.example {\n\tdisplay: grid;\n\tgap: var(--asam-space-md, 16px);\n}\n</style>\n"
 		}
 	]
 }

@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamBadge/cap-dot/ts/Demo.vue",
-			"sha256": "fc303ed3eb0c00889fe1c03e5b652d145deefc149b1fc3dd9c37195744a5bc48",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-5b8057d667604827f5043d95a190fc4c429841c76469747c80952b22f247387e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/5b8057d667604827f5043d95a190fc4c429841c76469747c80952b22f247387e.txt\n-->\n<template>\n\t<AsamBadge is-dot class=\"item\">query</AsamBadge>\n\t<AsamBadge is-dot class=\"item\">\n\t\t<AsamButton class=\"share-button\" :icon=\"Share\" type=\"primary\" />\n\t</AsamBadge>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamBadgeCapDotDemo' });\nimport { AsamBadge, AsamButton } from '@asam-ui/ui';\n\nimport { Share } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.item {\n\tmargin-top: 10px;\n\tmargin-right: 40px;\n}\n</style>\n",
-			"originalSourceSha256": "64d288216eeaca96c063bad6bf260d7fa2f45ff63f060e2a6de28b04b5efb18b",
+			"sha256": "aec8111a3058383c18580ffa66a7d5b21e0bb87dd61869cdb6c30b218eae8e42",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-5b8057d667604827f5043d95a190fc4c429841c76469747c80952b22f247387e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/5b8057d667604827f5043d95a190fc4c429841c76469747c80952b22f247387e.txt\n-->\n<template>\n\t<AsamBadge is-dot class=\"item\">查询</AsamBadge>\n\t<AsamBadge is-dot class=\"item\">\n\t\t<AsamButton class=\"share-button\" :icon=\"Share\" type=\"primary\" />\n\t</AsamBadge>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamBadgeCapDotDemo' });\nimport { AsamBadge, AsamButton } from '@asam-ui/ui';\n\nimport { Share } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.item {\n\tmargin-top: 10px;\n\tmargin-right: 40px;\n}\n</style>\n",
+			"originalSourceSha256": "93a87c15d67b93f70a2212dd9f723d82ab75b8fb38dc6a56ebe7b30a5e7d168c",
 			"notice": {
 				"id": "5b8057d667604827f5043d95a190fc4c429841c76469747c80952b22f247387e",
 				"url": "/licenses/source-notices/5b8057d667604827f5043d95a190fc4c429841c76469747c80952b22f247387e.txt",

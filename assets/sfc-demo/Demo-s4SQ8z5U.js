@@ -1,1 +1,0 @@
-import{Tt as e,W as t,y as n}from"./sfc-demo.js";import{t as r}from"./Index-7hdqx8Df-CcPWIFaf.js";var i=Object.assign({name:`AsamPaginationCapBackgroundColorDemo`},{__name:`Demo`,setup(i){return(i,a)=>(t(),n(e(r),{background:``,layout:`prev, pager, next`,total:1e3}))}});export{i as default};

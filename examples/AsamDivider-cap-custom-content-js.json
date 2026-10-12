@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDivider/cap-custom-content/js/Demo.vue",
-			"sha256": "2ba2c514631a7fa83aa151ac7b2c8d18b798677d66b52051635a97051e7f5f1e",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-4736700fad27526acb49e7152ebaf3ee625ff6b3e94536d560e612be8f65d24d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/4736700fad27526acb49e7152ebaf3ee625ff6b3e94536d560e612be8f65d24d.txt\n-->\n<template>\n\t<div>\n\t\t<span>What you are you do not see, what you see is your shadow. </span>\n\t\t<AsamDivider content-position=\"left\">Rabindranath Tagore</AsamDivider>\n\t\t<span>\n\t\t\tMy wishes are fools, they shout across thy song, my Master. Let me but listen.\n\t\t</span>\n\t\t<AsamDivider>\n\t\t\t<AsamIcon><star-filled /></AsamIcon>\n\t\t</AsamDivider>\n\t\t<span>I cannot choose the best. The best chooses me.</span>\n\t\t<AsamDivider content-position=\"right\">Rabindranath Tagore</AsamDivider>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamDividerCapCustomContentDemo' });\nimport { AsamDivider, AsamIcon } from '@asam-ui/ui';\nimport { StarFilled } from '@asam-ui/icons-vue';\n</script>\n",
-			"originalSourceSha256": "66c7f3e8f8b5d3f40426f4bb49cc6c316438bd69de3abbeca9ca648426a8a2b3",
+			"sha256": "37a33a350c0d81eeed1d518945af29ecbea8edba33085294eae85723ba8255cd",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-4736700fad27526acb49e7152ebaf3ee625ff6b3e94536d560e612be8f65d24d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/4736700fad27526acb49e7152ebaf3ee625ff6b3e94536d560e612be8f65d24d.txt\n-->\n<template>\n\t<div>\n\t\t<span>你看不见真实的自己，看到的只是影子。 </span>\n\t\t<AsamDivider content-position=\"left\">泰戈尔</AsamDivider>\n\t\t<span> 我的愿望喧闹地打断你的歌声，请让我静静聆听。 </span>\n\t\t<AsamDivider>\n\t\t\t<AsamIcon><star-filled /></AsamIcon>\n\t\t</AsamDivider>\n\t\t<span>我无法选择最好的，最好的选择了我。</span>\n\t\t<AsamDivider content-position=\"right\">泰戈尔</AsamDivider>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamDividerCapCustomContentDemo' });\nimport { AsamDivider, AsamIcon } from '@asam-ui/ui';\nimport { StarFilled } from '@asam-ui/icons-vue';\n</script>\n",
+			"originalSourceSha256": "56fd5631a976f8f1ce4533e5893b835a778f4efb42ba647d529149fb74f3ad1f",
 			"notice": {
 				"id": "4736700fad27526acb49e7152ebaf3ee625ff6b3e94536d560e612be8f65d24d",
 				"url": "/licenses/source-notices/4736700fad27526acb49e7152ebaf3ee625ff6b3e94536d560e612be8f65d24d.txt",

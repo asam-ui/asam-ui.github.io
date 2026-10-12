@@ -1,1 +1,0 @@
-import"./sfc-demo.js";import{t as e}from"./fixed-size-grid-CBNZhIMq.js";var t=Object.assign({},e,{install(e){e.component(`AsamFixedSizeGrid`,t)}});export{t};

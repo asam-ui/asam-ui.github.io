@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as r,a2 as o}from"./chunks/framework.wRPE-3eo.js";const _=JSON.parse('{"title":"可选 MCP","description":"","frontmatter":{},"headers":[],"relativePath":"ai/mcp.md","filePath":"ai/mcp.md"}'),i={name:"ai/mcp.md"};function c(l,a,n,p,s,h){return t(),r("div",null,[...a[0]||(a[0]=[o("",9)])])}const m=e(i,[["render",c]]);export{_ as __pageData,m as default};

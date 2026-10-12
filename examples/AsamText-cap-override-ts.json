@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamText/cap-override/ts/Demo.vue",
-			"sha256": "04d92828dc4bdd19344fefbe51dae8b6e6c97d1c32ba847e77b6d66d43b59dbd",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-02803b03fc23a01f50ba0240a9ccfb0463cbc825ec999129db917cb17aa7d9a3.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/02803b03fc23a01f50ba0240a9ccfb0463cbc825ec999129db917cb17aa7d9a3.txt\n-->\n<template>\n\t<AsamSpace direction=\"vertical\">\n\t\t<AsamText>span</AsamText>\n\t\t<AsamText tag=\"p\">This is a paragraph.</AsamText>\n\t\t<AsamText tag=\"b\">Bold</AsamText>\n\t\t<AsamText tag=\"i\">Italic</AsamText>\n\t\t<AsamText>\n\t\t\tThis is\n\t\t\t<AsamText tag=\"sub\" size=\"small\">subscript</AsamText>\n\t\t</AsamText>\n\t\t<AsamText>\n\t\t\tThis is\n\t\t\t<AsamText tag=\"sup\" size=\"small\">superscript</AsamText>\n\t\t</AsamText>\n\t\t<AsamText tag=\"ins\">Inserted</AsamText>\n\t\t<AsamText tag=\"del\">Deleted</AsamText>\n\t\t<AsamText tag=\"mark\">Marked</AsamText>\n\t</AsamSpace>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTextCapOverrideDemo' });\nimport { AsamSpace, AsamText } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "3ac559b2096ca457ef3cdd7824deb6b20e6ceb0742deb2eb58ad389cebcb8c10",
+			"sha256": "29776d0d2bc7ffea89b7fb5c114b8fb485930d054be8c92e84aa5a8c492ea828",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-02803b03fc23a01f50ba0240a9ccfb0463cbc825ec999129db917cb17aa7d9a3.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/02803b03fc23a01f50ba0240a9ccfb0463cbc825ec999129db917cb17aa7d9a3.txt\n-->\n<template>\n\t<AsamSpace direction=\"vertical\">\n\t\t<AsamText>span</AsamText>\n\t\t<AsamText tag=\"p\">这是一段文字。</AsamText>\n\t\t<AsamText tag=\"b\">粗体</AsamText>\n\t\t<AsamText tag=\"i\">斜体</AsamText>\n\t\t<AsamText>\n\t\t\t这是\n\t\t\t<AsamText tag=\"sub\" size=\"small\">subscript</AsamText>\n\t\t</AsamText>\n\t\t<AsamText>\n\t\t\t这是\n\t\t\t<AsamText tag=\"sup\" size=\"small\">superscript</AsamText>\n\t\t</AsamText>\n\t\t<AsamText tag=\"ins\">已插入</AsamText>\n\t\t<AsamText tag=\"del\">已删除</AsamText>\n\t\t<AsamText tag=\"mark\">已标记</AsamText>\n\t</AsamSpace>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTextCapOverrideDemo' });\nimport { AsamSpace, AsamText } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "d35b1f0e845a7a52a2a4367e666fc573f9744a32d3e8fa01c8e6b63a296ffb2f",
 			"notice": {
 				"id": "02803b03fc23a01f50ba0240a9ccfb0463cbc825ec999129db917cb17aa7d9a3",
 				"url": "/licenses/source-notices/02803b03fc23a01f50ba0240a9ccfb0463cbc825ec999129db917cb17aa7d9a3.txt",

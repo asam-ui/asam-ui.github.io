@@ -1,1 +1,0 @@
-import"./sfc-demo.js";import{t as e}from"./statistic-DfLy0K8K.js";var t=Object.assign({},e,{install(e){e.component(`AsamStatistic`,t)}});export{t};

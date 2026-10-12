@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamCard/cap-simple/js/Demo.vue",
-			"sha256": "6679422599278fc5cf3ba93e98794b6bc07fad36e0abe68185720fbf036d417c",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f36ea2be03e7e1d8da811a3d50ac3585ab6ec288bbc09b6e0ca5426610fe3b2e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f36ea2be03e7e1d8da811a3d50ac3585ab6ec288bbc09b6e0ca5426610fe3b2e.txt\n-->\n<template>\n\t<AsamCard style=\"max-width: 480px\">\n\t\t<p v-for=\"o in 4\" :key=\"o\" class=\"text item\">{{ 'List item ' + o }}</p>\n\t</AsamCard>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamCardCapSimpleDemo' });\nimport { AsamCard } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "ffadcf747db6c39419c134903d9a618d2316d9b9ff59319dbffcf4db37460d9d",
+			"sha256": "a4befb97be6ea51568b0ce8f0b678b781311fa052183284b256876e133197d92",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f36ea2be03e7e1d8da811a3d50ac3585ab6ec288bbc09b6e0ca5426610fe3b2e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f36ea2be03e7e1d8da811a3d50ac3585ab6ec288bbc09b6e0ca5426610fe3b2e.txt\n-->\n<template>\n\t<AsamCard style=\"max-width: 480px\">\n\t\t<p v-for=\"o in 4\" :key=\"o\" class=\"text item\">{{ '列表项 ' + o }}</p>\n\t</AsamCard>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamCardCapSimpleDemo' });\nimport { AsamCard } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "b93926a2901f5c15179361bdbb89b98dc18f83aef0c10a247aec6f1a13d90f5a",
 			"notice": {
 				"id": "f36ea2be03e7e1d8da811a3d50ac3585ab6ec288bbc09b6e0ca5426610fe3b2e",
 				"url": "/licenses/source-notices/f36ea2be03e7e1d8da811a3d50ac3585ab6ec288bbc09b6e0ca5426610fe3b2e.txt",

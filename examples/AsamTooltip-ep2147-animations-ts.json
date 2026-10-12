@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTooltip/ep2147-animations/ts/Demo.vue",
-			"sha256": "0c8d29f901234f092c389822ea7a7e9bb08d00318d902d0a760064f9f4f7a700",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-23712ec656e6dbe2d1fac82321cfd4d1a3b6544e96c3d01c7c1d7e2bc49d371b.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/23712ec656e6dbe2d1fac82321cfd4d1a3b6544e96c3d01c7c1d7e2bc49d371b.txt\n-->\n<template>\n\t<AsamTooltip content=\"I am an el-tooltip\" transition=\"slide-fade\">\n\t\t<AsamButton>trigger me</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n</script>\n\n<style>\n.slide-fade-enter-active {\n\ttransition: all 0.3s ease-out;\n}\n\n.slide-fade-leave-active {\n\ttransition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);\n}\n\n.slide-fade-enter-from,\n.slide-fade-leave-to {\n\ttransform: translateX(120px);\n\topacity: 0;\n}\n</style>\n",
-			"originalSourceSha256": "38984bebe10279dc6f63845bffac12491aae20c5e33274703329829eebe37b5c",
+			"sha256": "bb28a3c5bd14369588749affb209dab567d902b93b65baa8795002b1939ba311",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-23712ec656e6dbe2d1fac82321cfd4d1a3b6544e96c3d01c7c1d7e2bc49d371b.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/23712ec656e6dbe2d1fac82321cfd4d1a3b6544e96c3d01c7c1d7e2bc49d371b.txt\n-->\n<template>\n\t<AsamTooltip content=\"这是一条文字提示\" transition=\"slide-fade\">\n\t\t<AsamButton type=\"primary\">触发操作</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n</script>\n\n<style>\n.slide-fade-enter-active {\n\ttransition: all 0.3s ease-out;\n}\n\n.slide-fade-leave-active {\n\ttransition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);\n}\n\n.slide-fade-enter-from,\n.slide-fade-leave-to {\n\ttransform: translateX(120px);\n\topacity: 0;\n}\n</style>\n",
+			"originalSourceSha256": "d5be9a39004a6231a0ad6d1cd5df0390b170d7afbf939fd04de15a2d97afb26f",
 			"notice": {
 				"id": "23712ec656e6dbe2d1fac82321cfd4d1a3b6544e96c3d01c7c1d7e2bc49d371b",
 				"url": "/licenses/source-notices/23712ec656e6dbe2d1fac82321cfd4d1a3b6544e96c3d01c7c1d7e2bc49d371b.txt",

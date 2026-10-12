@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamCard/cap-basic/js/Demo.vue",
-			"sha256": "4e37568571e492d453fcc03f2e6b253c6ce9c08e7146da84fc17f26acbcbe279",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319.txt\n-->\n<template>\n\t<AsamCard style=\"max-width: 480px\">\n\t\t<template #header>\n\t\t\t<div class=\"card-header\">\n\t\t\t\t<span>Card name</span>\n\t\t\t</div>\n\t\t</template>\n\n\t\t<p v-for=\"o in 4\" :key=\"o\" class=\"text item\">{{ 'List item ' + o }}</p>\n\t\t<template #footer>Footer content</template>\n\t</AsamCard>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamCardCapBasicDemo' });\nimport { AsamCard } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "fd1fdbfb7d5d3fea90897646ea606f837e76088ea572cc7513f0aeea61cb4cc6",
+			"sha256": "ba11b26f10c7468c6d259081e2138ba91e413517fc3c1db03fc67927bd66c317",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319.txt\n-->\n<template>\n\t<AsamCard style=\"max-width: 480px\">\n\t\t<template #header>\n\t\t\t<div class=\"card-header\">\n\t\t\t\t<span>卡片名称</span>\n\t\t\t</div>\n\t\t</template>\n\n\t\t<p v-for=\"o in 4\" :key=\"o\" class=\"text item\">{{ '列表项 ' + o }}</p>\n\t\t<template #footer>底部内容</template>\n\t</AsamCard>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamCardCapBasicDemo' });\nimport { AsamCard } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "432e41b0cb2746e29312399b82d80e85edd150e0d0b002cd5a25d7c4887904d9",
 			"notice": {
 				"id": "845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319",
 				"url": "/licenses/source-notices/845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319.txt",

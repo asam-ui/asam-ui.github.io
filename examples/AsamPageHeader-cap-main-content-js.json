@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamPageHeader/cap-main-content/js/Demo.vue",
-			"sha256": "50d35c015f37967a8fb9e0eb178fbf220bf76fc3583587750ba4013a38c44a78",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-fef9b66edd231df25dd2f709f634243fc300f3ce9b368fde0ebe9f003ef796ac.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/fef9b66edd231df25dd2f709f634243fc300f3ce9b368fde0ebe9f003ef796ac.txt\n-->\n<template>\n\t<AsamPageHeader>\n\t\t<template #content>\n\t\t\t<span class=\"text-large font-600 mr-3\"> Title </span>\n\t\t</template>\n\n\t\t<div class=\"mt-4 text-sm font-bold\">\n\t\t\tYour additional content can be added with default slot, You may put as many content as\n\t\t\tyou want here.\n\t\t</div>\n\t</AsamPageHeader>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamPageHeaderCapMainContentDemo' });\nimport { AsamPageHeader } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.text-large {\n\tfont-size: var(--el-font-size-large);\n}\n\n.font-600 {\n\tfont-weight: 600;\n}\n\n.mr-3 {\n\tmargin-right: 0.75rem;\n}\n\n.mt-4 {\n\tmargin-top: 1rem;\n}\n\n.text-sm {\n\tfont-size: var(--el-font-size-small);\n}\n\n.font-bold {\n\tfont-weight: 700;\n}\n</style>\n",
-			"originalSourceSha256": "bfd73bdacf5c3d974b1287cf21b7126971f9aa7244b9d556d594e4e74921c3dd",
+			"sha256": "7f59a411b9c32e890510b8f3961beafd7fa7711a856dd9e71e8edf3b8f6fe230",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-fef9b66edd231df25dd2f709f634243fc300f3ce9b368fde0ebe9f003ef796ac.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/fef9b66edd231df25dd2f709f634243fc300f3ce9b368fde0ebe9f003ef796ac.txt\n-->\n<template>\n\t<AsamPageHeader>\n\t\t<template #content>\n\t\t\t<span class=\"text-large font-600 mr-3\"> 标题 </span>\n\t\t</template>\n\n\t\t<div class=\"mt-4 text-sm font-bold\">通过 default 插槽添加内容，可按实际需要扩展。</div>\n\t</AsamPageHeader>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamPageHeaderCapMainContentDemo' });\nimport { AsamPageHeader } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.text-large {\n\tfont-size: var(--el-font-size-large);\n}\n\n.font-600 {\n\tfont-weight: 600;\n}\n\n.mr-3 {\n\tmargin-right: 0.75rem;\n}\n\n.mt-4 {\n\tmargin-top: 1rem;\n}\n\n.text-sm {\n\tfont-size: var(--el-font-size-small);\n}\n\n.font-bold {\n\tfont-weight: 700;\n}\n</style>\n",
+			"originalSourceSha256": "c58568630adece66829cc9d5f7e614a90fb789a59fa92065e6b743b67b2b12ca",
 			"notice": {
 				"id": "fef9b66edd231df25dd2f709f634243fc300f3ce9b368fde0ebe9f003ef796ac",
 				"url": "/licenses/source-notices/fef9b66edd231df25dd2f709f634243fc300f3ce9b368fde0ebe9f003ef796ac.txt",

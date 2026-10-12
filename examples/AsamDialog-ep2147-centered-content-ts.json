@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDialog/ep2147-centered-content/ts/Demo.vue",
-			"sha256": "e7448dc66334b96ad19c0cbe357138718ba35e1a8761d88cd976f93fd113040b",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-174c029651e1d5640929fd7b7fda986e74413779167ff2518de675d9000ccf69.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/174c029651e1d5640929fd7b7fda986e74413779167ff2518de675d9000ccf69.txt\n-->\n<template>\n\t<AsamButton plain @click=\"centerDialogVisible = true\"> Click to open the Dialog </AsamButton>\n\n\t<AsamDialog v-model=\"centerDialogVisible\" title=\"Warning\" width=\"500\" center>\n\t\t<span> It should be noted that the content will not be aligned in center by default </span>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton @click=\"centerDialogVisible = false\">Cancel</AsamButton>\n\t\t\t\t<AsamButton type=\"primary\" @click=\"centerDialogVisible = false\">\n\t\t\t\t\tConfirm\n\t\t\t\t</AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDialog } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst centerDialogVisible = ref(false);\n</script>\n",
-			"originalSourceSha256": "7223d5ad6abdb2a5f287b57245928a9ec834ac3be68905d17d3d1d31921aa108",
+			"sha256": "afc66923d5a135b7aa1ed7387ba0a65986e4a58d076befa4c41b1e20a88be15b",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-174c029651e1d5640929fd7b7fda986e74413779167ff2518de675d9000ccf69.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/174c029651e1d5640929fd7b7fda986e74413779167ff2518de675d9000ccf69.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" plain @click=\"centerDialogVisible = true\">\n\t\t点击打开对话框\n\t</AsamButton>\n\n\t<AsamDialog v-model=\"centerDialogVisible\" title=\"警告\" width=\"500\" center>\n\t\t<span> 注意：内容默认不会居中对齐。 </span>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton type=\"primary\" @click=\"centerDialogVisible = false\">取消</AsamButton>\n\t\t\t\t<AsamButton type=\"primary\" @click=\"centerDialogVisible = false\"> 确认 </AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDialog } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst centerDialogVisible = ref(false);\n</script>\n",
+			"originalSourceSha256": "a7f2b4348e06c2f4c0067c210dbfa28d161b4304a68c53ed1cb5b87c919b1a4c",
 			"notice": {
 				"id": "174c029651e1d5640929fd7b7fda986e74413779167ff2518de675d9000ccf69",
 				"url": "/licenses/source-notices/174c029651e1d5640929fd7b7fda986e74413779167ff2518de675d9000ccf69.txt",

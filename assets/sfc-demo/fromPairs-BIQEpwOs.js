@@ -1,1 +1,0 @@
-import{t as e}from"./_baseAssignValue-CRCe5WSz.js";function t(t){for(var n=-1,r=t==null?0:t.length,i={};++n<r;){var a=t[n];e(i,a[0],a[1])}return i}export{t};

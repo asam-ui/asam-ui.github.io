@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTooltip/ep2147-advanced-usage/js/Demo.vue",
-			"sha256": "a7d4561838237d3c0bbb98800574702b907e7ed966ad1acf2d38faa27a3182da",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb.txt\n-->\n<template>\n\t<AsamTooltip\n\t\t:disabled=\"disabled\"\n\t\tcontent=\"click to close tooltip function\"\n\t\tplacement=\"bottom\"\n\t\teffect=\"light\"\n\t>\n\t\t<AsamButton @click=\"disabled = !disabled\">\n\t\t\tclick to {{ disabled ? 'active' : 'close' }} tooltip function\n\t\t</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst disabled = ref(false);\n</script>\n",
-			"originalSourceSha256": "fd3201974defba430fb71c1fc018e9ebea3e9d46e0b3ae0211723095de8eaa45",
+			"sha256": "a42a831f76acb47aead0117adcdd495402d3e85265d5bff15cd4b8464edc7586",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb.txt\n-->\n<template>\n\t<AsamTooltip :disabled=\"disabled\" content=\"点击关闭文字提示\" placement=\"bottom\" effect=\"light\">\n\t\t<AsamButton type=\"primary\" @click=\"disabled = !disabled\">\n\t\t\t点击以 {{ disabled ? 'active' : 'close' }} 提示函数\n\t\t</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst disabled = ref(false);\n</script>\n",
+			"originalSourceSha256": "824c7da5ca2ac85ceb351f994a4667d70a6292bb8489f7eafa6c34994aea53c8",
 			"notice": {
 				"id": "1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb",
 				"url": "/licenses/source-notices/1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb.txt",

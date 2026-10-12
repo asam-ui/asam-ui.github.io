@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamEmpty/cap-basic-usage/js/Demo.vue",
-			"sha256": "c4f5518ec832d9f047a8e0185c97c39d28589795b303dccdcfe4fa1b8b94711b",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-6b546cb61b735659838a3293671503ac784afec3d34d262536f1428d75b8b6e7.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/6b546cb61b735659838a3293671503ac784afec3d34d262536f1428d75b8b6e7.txt\n-->\n<template>\n\t<AsamEmpty description=\"description\" />\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamEmptyCapBasicUsageDemo' });\nimport { AsamEmpty } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "fd3e78ac79ee10be99fbcc582fc264525935f53f29feb031c0031c5455d17b5b",
+			"sha256": "71ce537f729ceca06c3279dd209420345c230872c650fe835ade24641a765ba9",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-6b546cb61b735659838a3293671503ac784afec3d34d262536f1428d75b8b6e7.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/6b546cb61b735659838a3293671503ac784afec3d34d262536f1428d75b8b6e7.txt\n-->\n<template>\n\t<AsamEmpty description=\"说明\" />\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamEmptyCapBasicUsageDemo' });\nimport { AsamEmpty } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "9a5c752eeba406955c794239a9d133005e2be1a2580f90918d81d96956c067fe",
 			"notice": {
 				"id": "6b546cb61b735659838a3293671503ac784afec3d34d262536f1428d75b8b6e7",
 				"url": "/licenses/source-notices/6b546cb61b735659838a3293671503ac784afec3d34d262536f1428d75b8b6e7.txt",

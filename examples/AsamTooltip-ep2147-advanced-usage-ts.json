@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTooltip/ep2147-advanced-usage/ts/Demo.vue",
-			"sha256": "52f431e18e7aff8f6a1a4841af41e71cd5debe30f1cc17d11142d1ff7cdf1f10",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb.txt\n-->\n<template>\n\t<AsamTooltip\n\t\t:disabled=\"disabled\"\n\t\tcontent=\"click to close tooltip function\"\n\t\tplacement=\"bottom\"\n\t\teffect=\"light\"\n\t>\n\t\t<AsamButton @click=\"disabled = !disabled\">\n\t\t\tclick to {{ disabled ? 'active' : 'close' }} tooltip function\n\t\t</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst disabled = ref(false);\n</script>\n",
-			"originalSourceSha256": "98ca9f7f2f727160744edff1689cd45c06b197080adc277baf38317e6233c707",
+			"sha256": "0c0df5b5eae851dffdbcfd4d0bf29e483e4f359a4603ac9d0ccc5f19006a020d",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb.txt\n-->\n<template>\n\t<AsamTooltip :disabled=\"disabled\" content=\"点击关闭文字提示\" placement=\"bottom\" effect=\"light\">\n\t\t<AsamButton type=\"primary\" @click=\"disabled = !disabled\">\n\t\t\t点击以 {{ disabled ? 'active' : 'close' }} 提示函数\n\t\t</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst disabled = ref(false);\n</script>\n",
+			"originalSourceSha256": "ada77ad6087a7083ddabbf8733dfdb287bef983f6724b68e84248770a3fb62f0",
 			"notice": {
 				"id": "1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb",
 				"url": "/licenses/source-notices/1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb.txt",

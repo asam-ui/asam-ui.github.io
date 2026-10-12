@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTooltip/ep2147-theme/js/Demo.vue",
-			"sha256": "cecb5aeedd46c3fd53b499d4d27d82d67844ad72ec6c4e1b757f25610febd85e",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-093f8d95b00d57c3cabb255dc199457b70efefc99359bc50fc354688251394e5.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/093f8d95b00d57c3cabb255dc199457b70efefc99359bc50fc354688251394e5.txt\n-->\n<template>\n\t<AsamTooltip content=\"Top center\" placement=\"top\">\n\t\t<AsamButton>Dark</AsamButton>\n\t</AsamTooltip>\n\t<AsamTooltip content=\"Bottom center\" placement=\"bottom\" effect=\"light\">\n\t\t<AsamButton>Light</AsamButton>\n\t</AsamTooltip>\n\n\t<AsamTooltip content=\"Bottom center\" effect=\"customized\">\n\t\t<AsamButton>Customized theme</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n</script>\n\n<style>\n.el-popper.is-customized {\n\t/* Set padding to ensure the height is 32px */\n\tpadding: 6px 12px;\n\tbackground: linear-gradient(90deg, rgb(159 229 151), rgb(204 229 129));\n}\n\n.el-popper.is-customized .el-popper__arrow::before {\n\tbackground: linear-gradient(45deg, #b2e68d, #bce689);\n\tright: 0;\n}\n</style>\n",
-			"originalSourceSha256": "ee5cae8e71f8911282ecc571d4b39d4268b675bdb07b8d98bb71410553fe8539",
+			"sha256": "b1ee8a1e4ff748769150213994bf89f190e0eea327093c605c1cda622597b886",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-093f8d95b00d57c3cabb255dc199457b70efefc99359bc50fc354688251394e5.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/093f8d95b00d57c3cabb255dc199457b70efefc99359bc50fc354688251394e5.txt\n-->\n<template>\n\t<AsamTooltip content=\"顶部居中\" placement=\"top\">\n\t\t<AsamButton type=\"primary\">深色</AsamButton>\n\t</AsamTooltip>\n\t<AsamTooltip content=\"底部居中\" placement=\"bottom\" effect=\"light\">\n\t\t<AsamButton type=\"primary\">浅色</AsamButton>\n\t</AsamTooltip>\n\n\t<AsamTooltip content=\"底部居中\" effect=\"customized\">\n\t\t<AsamButton type=\"primary\">自定义主题</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n</script>\n\n<style>\n.el-popper.is-customized {\n\t/* Set padding to ensure the height is 32px */\n\tpadding: 6px 12px;\n\tbackground: linear-gradient(90deg, rgb(159 229 151), rgb(204 229 129));\n}\n\n.el-popper.is-customized .el-popper__arrow::before {\n\tbackground: linear-gradient(45deg, #b2e68d, #bce689);\n\tright: 0;\n}\n</style>\n",
+			"originalSourceSha256": "3bd8f8a1d0b7f200a17e22553633808df279461762c56745194a22c0caa6f603",
 			"notice": {
 				"id": "093f8d95b00d57c3cabb255dc199457b70efefc99359bc50fc354688251394e5",
 				"url": "/licenses/source-notices/093f8d95b00d57c3cabb255dc199457b70efefc99359bc50fc354688251394e5.txt",

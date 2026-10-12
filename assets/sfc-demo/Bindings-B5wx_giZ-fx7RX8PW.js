@@ -1,0 +1,1 @@
+import{T as e}from"./vue.esm-bundler-5NdF0u5k.js";function t(t){let n=e();return()=>{let e=n?.vnode.props??{};return Object.fromEntries(Object.entries(t).filter(([t])=>{let n=t.replace(/[A-Z]/g,e=>`-${e.toLowerCase()}`);return Object.hasOwn(e,t)||Object.hasOwn(e,n)}))}}export{t};

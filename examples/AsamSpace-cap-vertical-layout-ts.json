@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSpace/cap-vertical-layout/ts/Demo.vue",
-			"sha256": "bf63c5ff32f38f2aad4d8d1cdd5494f45f20e83ec3f2fca13bf7f904c837e495",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-5363a1c347471a77e3d9736c65a85e978279384b8cb7adc61c3562ab1764f55d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/5363a1c347471a77e3d9736c65a85e978279384b8cb7adc61c3562ab1764f55d.txt\n-->\n<template>\n\t<AsamSpace direction=\"vertical\">\n\t\t<AsamCard v-for=\"i in 2\" :key=\"i\" class=\"box-card\" style=\"width: 250px\">\n\t\t\t<template #header>\n\t\t\t\t<div class=\"card-header\">\n\t\t\t\t\t<span>Card name</span>\n\t\t\t\t\t<AsamButton class=\"button\" text>Operation button</AsamButton>\n\t\t\t\t</div>\n\t\t\t</template>\n\n\t\t\t<div v-for=\"o in 4\" :key=\"o\" class=\"text item\">\n\t\t\t\t{{ 'List item ' + o }}\n\t\t\t</div>\n\t\t</AsamCard>\n\t</AsamSpace>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamSpaceCapVerticalLayoutDemo' });\nimport { AsamSpace, AsamCard, AsamButton } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "bc82556a473c1303a75b2c0f608dafd0d2c05fd7533078ef706bcb466af8a71c",
+			"sha256": "b46bf7eb6680a3b44dd0e8769f135495a65d0b0eb29f2ec1488567b4e59ddb24",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-5363a1c347471a77e3d9736c65a85e978279384b8cb7adc61c3562ab1764f55d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/5363a1c347471a77e3d9736c65a85e978279384b8cb7adc61c3562ab1764f55d.txt\n-->\n<template>\n\t<AsamSpace direction=\"vertical\">\n\t\t<AsamCard v-for=\"i in 2\" :key=\"i\" class=\"box-card\" style=\"width: 250px\">\n\t\t\t<template #header>\n\t\t\t\t<div class=\"card-header\">\n\t\t\t\t\t<span>卡片名称</span>\n\t\t\t\t\t<AsamButton type=\"primary\" class=\"button\" text>操作按钮</AsamButton>\n\t\t\t\t</div>\n\t\t\t</template>\n\n\t\t\t<div v-for=\"o in 4\" :key=\"o\" class=\"text item\">\n\t\t\t\t{{ '列表项 ' + o }}\n\t\t\t</div>\n\t\t</AsamCard>\n\t</AsamSpace>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamSpaceCapVerticalLayoutDemo' });\nimport { AsamSpace, AsamCard, AsamButton } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "212bf21ee8ca0e3fb3ac253f1560466244a985b3052031cb2c40a9aba1edbeb0",
 			"notice": {
 				"id": "5363a1c347471a77e3d9736c65a85e978279384b8cb7adc61c3562ab1764f55d",
 				"url": "/licenses/source-notices/5363a1c347471a77e3d9736c65a85e978279384b8cb7adc61c3562ab1764f55d.txt",

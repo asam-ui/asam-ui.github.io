@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTooltip/ep2147-rich-content/ts/Demo.vue",
-			"sha256": "32632050b818a920c952aa11ca59302400ae59fb9ae9046c04529bd68caf0c2a",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ed72f7ff04f38f8703f69b7d3e2843a89f3dc197074e7d1470a34719bf76feda.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ed72f7ff04f38f8703f69b7d3e2843a89f3dc197074e7d1470a34719bf76feda.txt\n-->\n<template>\n\t<AsamTooltip placement=\"top\">\n\t\t<template #content> multiple lines<br />second line </template>\n\t\t<AsamButton>Top center</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "bb2d45557ffeb88b38a0ba6fef6182c056d4165ed482f3c4e0ad9096486330b1",
+			"sha256": "a8714d54a7995ee0fd7ee1ad3641368a87cb96d87b3f47fa69495c7a2fa40451",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ed72f7ff04f38f8703f69b7d3e2843a89f3dc197074e7d1470a34719bf76feda.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ed72f7ff04f38f8703f69b7d3e2843a89f3dc197074e7d1470a34719bf76feda.txt\n-->\n<template>\n\t<AsamTooltip placement=\"top\">\n\t\t<template #content> 多行文字<br />第二行 </template>\n\t\t<AsamButton type=\"primary\">顶部居中</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "10baf21b9cca877582e96f1466fbc7be8106fe4fb0a2b7cfef13ee5e9624ff2e",
 			"notice": {
 				"id": "ed72f7ff04f38f8703f69b7d3e2843a89f3dc197074e7d1470a34719bf76feda",
 				"url": "/licenses/source-notices/ed72f7ff04f38f8703f69b7d3e2843a89f3dc197074e7d1470a34719bf76feda.txt",

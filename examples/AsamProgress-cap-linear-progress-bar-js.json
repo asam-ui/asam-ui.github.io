@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamProgress/cap-linear-progress-bar/js/Demo.vue",
-			"sha256": "a3bbdc2ad4e130dec3b1efab29a12dbe3b8a30ce9b45d19cc749e307f42fd197",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f73ca26514349f807ef044d6c1644408b43ad98e3f4dbfd997c0bb448ed1ef04.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f73ca26514349f807ef044d6c1644408b43ad98e3f4dbfd997c0bb448ed1ef04.txt\n-->\n<template>\n\t<div class=\"demo-progress\">\n\t\t<AsamProgress :percentage=\"50\" />\n\t\t<AsamProgress :percentage=\"100\" :format=\"format\" />\n\t\t<AsamProgress :percentage=\"100\" status=\"success\" />\n\t\t<AsamProgress :percentage=\"100\" status=\"warning\" />\n\t\t<AsamProgress :percentage=\"50\" status=\"exception\" />\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamProgressCapLinearProgressBarDemo' });\nimport { AsamProgress } from '@asam-ui/ui';\nconst format = (percentage) => (percentage === 100 ? 'Full' : `${percentage}%`);\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.demo-progress .el-progress--line {\n\tmargin-bottom: 15px;\n\tmax-width: 600px;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n",
-			"originalSourceSha256": "02fd916437fa4cbd8fb47b108abb88a7f0d1e52ab8cf6649d4eb65e1617adc68",
+			"sha256": "bea698a77508cc5cf661f7c2399c1c0df691e8e55665d287afa4e703a14e50b0",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f73ca26514349f807ef044d6c1644408b43ad98e3f4dbfd997c0bb448ed1ef04.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f73ca26514349f807ef044d6c1644408b43ad98e3f4dbfd997c0bb448ed1ef04.txt\n-->\n<template>\n\t<div class=\"demo-progress\">\n\t\t<AsamProgress :percentage=\"50\" />\n\t\t<AsamProgress :percentage=\"100\" :format=\"format\" />\n\t\t<AsamProgress :percentage=\"100\" status=\"success\" />\n\t\t<AsamProgress :percentage=\"100\" status=\"warning\" />\n\t\t<AsamProgress :percentage=\"50\" status=\"exception\" />\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamProgressCapLinearProgressBarDemo' });\nimport { AsamProgress } from '@asam-ui/ui';\nconst format = (percentage) => (percentage === 100 ? '完整进度' : `${percentage}%`);\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.demo-progress .el-progress--line {\n\tmargin-bottom: 15px;\n\tmax-width: 600px;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n",
+			"originalSourceSha256": "143c2df816c91c47a1186fbefd5a196a078597b2b17edaa72b1da818bb83c417",
 			"notice": {
 				"id": "f73ca26514349f807ef044d6c1644408b43ad98e3f4dbfd997c0bb448ed1ef04",
 				"url": "/licenses/source-notices/f73ca26514349f807ef044d6c1644408b43ad98e3f4dbfd997c0bb448ed1ef04.txt",

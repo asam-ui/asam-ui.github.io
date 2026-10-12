@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamAlert/cap-icon/ts/Demo.vue",
-			"sha256": "68c71609dda36a2ead499e6b46d44107e1e7067985a0311ce9b43de3221116df",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ea19b69c68346ae3682eec73c4e79021d0e0179fb0ec80679c160424b9a004b1.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ea19b69c68346ae3682eec73c4e79021d0e0179fb0ec80679c160424b9a004b1.txt\n-->\n<template>\n\t<div style=\"max-width: 600px\">\n\t\t<AsamAlert title=\"Primary alert\" type=\"primary\" show-icon />\n\t\t<AsamAlert title=\"Success alert\" type=\"success\" show-icon />\n\t\t<AsamAlert title=\"Info alert\" type=\"info\" show-icon />\n\t\t<AsamAlert title=\"Warning alert\" type=\"warning\" show-icon />\n\t\t<AsamAlert title=\"Error alert\" type=\"error\" show-icon />\n\t\t<AsamAlert title=\"Error alert with custom icon\" type=\"error\" show-icon>\n\t\t\t<template #icon>\n\t\t\t\t<Bell />\n\t\t\t</template>\n\t\t</AsamAlert>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamAlertCapIconDemo' });\nimport { AsamAlert } from '@asam-ui/ui';\n\nimport { Bell } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.el-alert {\n\tmargin: 20px 0 0;\n}\n\n.el-alert:first-child {\n\tmargin: 0;\n}\n</style>\n",
-			"originalSourceSha256": "d2a1c75c242f7f12731cba3fe005ee4dc5d0c1930b776363c7827f07ba22c6b6",
+			"sha256": "12a9d0ff75469fbe6c59be474a1c46144e83c592560467e149d2432a2b021811",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ea19b69c68346ae3682eec73c4e79021d0e0179fb0ec80679c160424b9a004b1.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ea19b69c68346ae3682eec73c4e79021d0e0179fb0ec80679c160424b9a004b1.txt\n-->\n<template>\n\t<div style=\"max-width: 600px\">\n\t\t<AsamAlert title=\"主要提示\" type=\"primary\" show-icon />\n\t\t<AsamAlert title=\"成功提示\" type=\"success\" show-icon />\n\t\t<AsamAlert title=\"信息提示\" type=\"info\" show-icon />\n\t\t<AsamAlert title=\"警告提示\" type=\"warning\" show-icon />\n\t\t<AsamAlert title=\"错误提示\" type=\"error\" show-icon />\n\t\t<AsamAlert title=\"带自定义图标的错误提示\" type=\"error\" show-icon>\n\t\t\t<template #icon>\n\t\t\t\t<Bell />\n\t\t\t</template>\n\t\t</AsamAlert>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamAlertCapIconDemo' });\nimport { AsamAlert } from '@asam-ui/ui';\n\nimport { Bell } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.el-alert {\n\tmargin: 20px 0 0;\n}\n\n.el-alert:first-child {\n\tmargin: 0;\n}\n</style>\n",
+			"originalSourceSha256": "374f4772dd4e52ef41b15b3901b3aa6f07c4036d710a91245838ff60474eae01",
 			"notice": {
 				"id": "ea19b69c68346ae3682eec73c4e79021d0e0179fb0ec80679c160424b9a004b1",
 				"url": "/licenses/source-notices/ea19b69c68346ae3682eec73c4e79021d0e0179fb0ec80679c160424b9a004b1.txt",

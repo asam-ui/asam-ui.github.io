@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamPageHeader/cap-no-icon/ts/Demo.vue",
-			"sha256": "c3326c019751beffaaca78a30b55bd1b49b89ee04e1b90a6282f5bc936dd2723",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-233b85c4ebc97a0c45c57b1faa1ef0c2ebbc6c5df05cf59b2074baa01b5ca0ea.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/233b85c4ebc97a0c45c57b1faa1ef0c2ebbc6c5df05cf59b2074baa01b5ca0ea.txt\n-->\n<template>\n\t<AsamPageHeader icon=\"\">\n\t\t<template #content>\n\t\t\t<span class=\"text-large font-600 mr-3\"> Title </span>\n\t\t</template>\n\t</AsamPageHeader>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamPageHeaderCapNoIconDemo' });\nimport { AsamPageHeader } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.text-large {\n\tfont-size: var(--el-font-size-large);\n}\n\n.font-600 {\n\tfont-weight: 600;\n}\n\n.mr-3 {\n\tmargin-right: 0.75rem;\n}\n</style>\n",
-			"originalSourceSha256": "41fb15b60010e8263127e9942580896a31c0959b7d99a45efd5230be0d5e25fd",
+			"sha256": "356a681d81290c34062d5ebb08040358289c3f33cb4655d351881ea26afd002a",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-233b85c4ebc97a0c45c57b1faa1ef0c2ebbc6c5df05cf59b2074baa01b5ca0ea.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/233b85c4ebc97a0c45c57b1faa1ef0c2ebbc6c5df05cf59b2074baa01b5ca0ea.txt\n-->\n<template>\n\t<AsamPageHeader icon=\"\">\n\t\t<template #content>\n\t\t\t<span class=\"text-large font-600 mr-3\"> 标题 </span>\n\t\t</template>\n\t</AsamPageHeader>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamPageHeaderCapNoIconDemo' });\nimport { AsamPageHeader } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.text-large {\n\tfont-size: var(--el-font-size-large);\n}\n\n.font-600 {\n\tfont-weight: 600;\n}\n\n.mr-3 {\n\tmargin-right: 0.75rem;\n}\n</style>\n",
+			"originalSourceSha256": "af1d57445d16f62f6b95b112b5f2ca92faa1098f9b413d01e4ac9911ceb5ee46",
 			"notice": {
 				"id": "233b85c4ebc97a0c45c57b1faa1ef0c2ebbc6c5df05cf59b2074baa01b5ca0ea",
 				"url": "/licenses/source-notices/233b85c4ebc97a0c45c57b1faa1ef0c2ebbc6c5df05cf59b2074baa01b5ca0ea.txt",

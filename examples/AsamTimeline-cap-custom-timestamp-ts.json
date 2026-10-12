@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTimeline/cap-custom-timestamp/ts/Demo.vue",
-			"sha256": "f2795d689d601a70d3df73de525fe9a25da6087465471dbaa465417a0372039e",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-b8b1740673420d38f461f160742ca9c087ed7ed9d23adf40e29a61db651e4ff4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/b8b1740673420d38f461f160742ca9c087ed7ed9d23adf40e29a61db651e4ff4.txt\n-->\n<template>\n\t<AsamTimeline>\n\t\t<AsamTimelineItem timestamp=\"2018/4/12\" placement=\"top\">\n\t\t\t<AsamCard>\n\t\t\t\t<h4>Update Github template</h4>\n\t\t\t\t<p>Tom committed 2018/4/12 20:46</p>\n\t\t\t</AsamCard>\n\t\t</AsamTimelineItem>\n\t\t<AsamTimelineItem timestamp=\"2018/4/3\" placement=\"top\">\n\t\t\t<AsamCard>\n\t\t\t\t<h4>Update Github template</h4>\n\t\t\t\t<p>Tom committed 2018/4/3 20:46</p>\n\t\t\t</AsamCard>\n\t\t</AsamTimelineItem>\n\t\t<AsamTimelineItem timestamp=\"2018/4/2\" placement=\"top\">\n\t\t\t<AsamCard>\n\t\t\t\t<h4>Update Github template</h4>\n\t\t\t\t<p>Tom committed 2018/4/2 20:46</p>\n\t\t\t</AsamCard>\n\t\t</AsamTimelineItem>\n\t</AsamTimeline>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTimelineCapCustomTimestampDemo' });\nimport { AsamTimeline, AsamTimelineItem, AsamCard } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "4efb302c79d329fd1031cf6dae8d8787a71ff2c5fc712875883dd604218c9438",
+			"sha256": "c76c6e15d2d26504f91fb0c0182ce5f201c347f3ea5f1eba3adbb07a6698905e",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-b8b1740673420d38f461f160742ca9c087ed7ed9d23adf40e29a61db651e4ff4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/b8b1740673420d38f461f160742ca9c087ed7ed9d23adf40e29a61db651e4ff4.txt\n-->\n<template>\n\t<AsamTimeline>\n\t\t<AsamTimelineItem timestamp=\"2018/4/12\" placement=\"top\">\n\t\t\t<AsamCard>\n\t\t\t\t<h4>更新 GitHub 模板</h4>\n\t\t\t\t<p>Tom 提交于 2018/4/12 20:46</p>\n\t\t\t</AsamCard>\n\t\t</AsamTimelineItem>\n\t\t<AsamTimelineItem timestamp=\"2018/4/3\" placement=\"top\">\n\t\t\t<AsamCard>\n\t\t\t\t<h4>更新 GitHub 模板</h4>\n\t\t\t\t<p>Tom 提交于 2018/4/3 20:46</p>\n\t\t\t</AsamCard>\n\t\t</AsamTimelineItem>\n\t\t<AsamTimelineItem timestamp=\"2018/4/2\" placement=\"top\">\n\t\t\t<AsamCard>\n\t\t\t\t<h4>更新 GitHub 模板</h4>\n\t\t\t\t<p>Tom 提交于 2018/4/2 20:46</p>\n\t\t\t</AsamCard>\n\t\t</AsamTimelineItem>\n\t</AsamTimeline>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTimelineCapCustomTimestampDemo' });\nimport { AsamTimeline, AsamTimelineItem, AsamCard } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "ec4fbd705b58aa0406e6646b6175f82f5ba056f2f7ad17cc7ef7a90ca0034152",
 			"notice": {
 				"id": "b8b1740673420d38f461f160742ca9c087ed7ed9d23adf40e29a61db651e4ff4",
 				"url": "/licenses/source-notices/b8b1740673420d38f461f160742ca9c087ed7ed9d23adf40e29a61db651e4ff4.txt",

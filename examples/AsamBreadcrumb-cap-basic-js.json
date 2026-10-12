@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamBreadcrumb/cap-basic/js/Demo.vue",
-			"sha256": "5f1bf380f34c6287185e4c5b646ab79588b7eb902bc2179a2ee8cd5c3fa55717",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-9cc63d8a9b6312a760cbb2f6cd603b731343646925a40f7e1b9e71d3e1f7ceca.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/9cc63d8a9b6312a760cbb2f6cd603b731343646925a40f7e1b9e71d3e1f7ceca.txt\n-->\n<template>\n\t<AsamBreadcrumb separator=\"/\">\n\t\t<AsamBreadcrumbItem :to=\"{ path: '/' }\">homepage</AsamBreadcrumbItem>\n\t\t<AsamBreadcrumbItem>\n\t\t\t<a href=\"/\">promotion management</a>\n\t\t</AsamBreadcrumbItem>\n\t\t<AsamBreadcrumbItem>promotion list</AsamBreadcrumbItem>\n\t\t<AsamBreadcrumbItem>promotion detail</AsamBreadcrumbItem>\n\t</AsamBreadcrumb>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamBreadcrumbCapBasicDemo' });\nimport { AsamBreadcrumb, AsamBreadcrumbItem } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "162a6a4bb35f279ec543c4b94ce4a420bcad4f2414ead6149ab9002fcf6410c8",
+			"sha256": "1535c32bd0b9586b6eed6836282b26c9cf79c415cb60d8a50b7893f486273d3e",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-9cc63d8a9b6312a760cbb2f6cd603b731343646925a40f7e1b9e71d3e1f7ceca.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/9cc63d8a9b6312a760cbb2f6cd603b731343646925a40f7e1b9e71d3e1f7ceca.txt\n-->\n<template>\n\t<AsamBreadcrumb separator=\"/\">\n\t\t<AsamBreadcrumbItem :to=\"{ path: '/' }\">首页</AsamBreadcrumbItem>\n\t\t<AsamBreadcrumbItem>\n\t\t\t<AsamLink href=\"/\">活动管理</AsamLink>\n\t\t</AsamBreadcrumbItem>\n\t\t<AsamBreadcrumbItem>活动列表</AsamBreadcrumbItem>\n\t\t<AsamBreadcrumbItem>活动详情</AsamBreadcrumbItem>\n\t</AsamBreadcrumb>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamBreadcrumbCapBasicDemo' });\nimport { AsamLink, AsamBreadcrumb, AsamBreadcrumbItem } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "ed1ac33e7e3001b71ddb9d6bdfe06439e65100b10e94f44f9c2412fcce21e799",
 			"notice": {
 				"id": "9cc63d8a9b6312a760cbb2f6cd603b731343646925a40f7e1b9e71d3e1f7ceca",
 				"url": "/licenses/source-notices/9cc63d8a9b6312a760cbb2f6cd603b731343646925a40f7e1b9e71d3e1f7ceca.txt",

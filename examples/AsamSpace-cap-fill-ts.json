@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSpace/cap-fill/ts/Demo.vue",
-			"sha256": "61981cbcfc4ee7a490d64ef70ebbbf68907e363839105b645f6e62110bf8ce5c",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0c2a4b922c59b97be15d998c47e374b13002dda2da94c436e5c654301f2f9a5f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/0c2a4b922c59b97be15d998c47e374b13002dda2da94c436e5c654301f2f9a5f.txt\n-->\n<template>\n\t<div>\n\t\t<div style=\"margin-bottom: 15px\">\n\t\t\tfill:\n\t\t\t<AsamSwitch\n\t\t\t\t:model-value=\"fill\"\n\t\t\t\t@update:model-value=\"\n\t\t\t\t\t(value) => {\n\t\t\t\t\t\tif (typeof value === 'boolean') fill = value;\n\t\t\t\t\t}\n\t\t\t\t\"\n\t\t\t/>\n\t\t</div>\n\t\t<AsamSpace :fill=\"fill\" wrap>\n\t\t\t<AsamCard v-for=\"i in 3\" :key=\"i\" class=\"box-card\">\n\t\t\t\t<template #header>\n\t\t\t\t\t<div class=\"card-header\">\n\t\t\t\t\t\t<span>Card name</span>\n\t\t\t\t\t\t<AsamButton class=\"button\" text>Operation button</AsamButton>\n\t\t\t\t\t</div>\n\t\t\t\t</template>\n\t\t\t\t<div v-for=\"o in 4\" :key=\"o\" class=\"text item\">\n\t\t\t\t\t{{ 'List item ' + o }}\n\t\t\t\t</div>\n\t\t\t</AsamCard>\n\t\t</AsamSpace>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamSpaceCapFillDemo' });\nimport { AsamSwitch, AsamSpace, AsamCard, AsamButton } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst fill = ref(true);\n</script>\n",
-			"originalSourceSha256": "6463f4a1572f8f745b9675e8077c8cbc5c321276b5ef17d60ee8bbcde9d9fb79",
+			"sha256": "6c7c90228a1bd781244f92351a7fd454214c8e52d14cac5148440171eff8e56a",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0c2a4b922c59b97be15d998c47e374b13002dda2da94c436e5c654301f2f9a5f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/0c2a4b922c59b97be15d998c47e374b13002dda2da94c436e5c654301f2f9a5f.txt\n-->\n<template>\n\t<div>\n\t\t<div style=\"margin-bottom: 15px\">\n\t\t\t填充：\n\t\t\t<AsamSwitch\n\t\t\t\t:model-value=\"fill\"\n\t\t\t\t@update:model-value=\"\n\t\t\t\t\t(value) => {\n\t\t\t\t\t\tif (typeof value === 'boolean') fill = value;\n\t\t\t\t\t}\n\t\t\t\t\"\n\t\t\t/>\n\t\t</div>\n\t\t<AsamSpace :fill=\"fill\" wrap>\n\t\t\t<AsamCard v-for=\"i in 3\" :key=\"i\" class=\"box-card\">\n\t\t\t\t<template #header>\n\t\t\t\t\t<div class=\"card-header\">\n\t\t\t\t\t\t<span>卡片名称</span>\n\t\t\t\t\t\t<AsamButton type=\"primary\" class=\"button\" text>操作按钮</AsamButton>\n\t\t\t\t\t</div>\n\t\t\t\t</template>\n\t\t\t\t<div v-for=\"o in 4\" :key=\"o\" class=\"text item\">\n\t\t\t\t\t{{ '列表项 ' + o }}\n\t\t\t\t</div>\n\t\t\t</AsamCard>\n\t\t</AsamSpace>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamSpaceCapFillDemo' });\nimport { AsamSwitch, AsamSpace, AsamCard, AsamButton } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst fill = ref(true);\n</script>\n",
+			"originalSourceSha256": "4e3b69828067ebdf96275ee81976b4506d7730e8d757b68e209e366068aeafd8",
 			"notice": {
 				"id": "0c2a4b922c59b97be15d998c47e374b13002dda2da94c436e5c654301f2f9a5f",
 				"url": "/licenses/source-notices/0c2a4b922c59b97be15d998c47e374b13002dda2da94c436e5c654301f2f9a5f.txt",

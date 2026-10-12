@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamAlert/cap-description/ts/Demo.vue",
-			"sha256": "8396de2e3d21fe501ec3946c5359dcdae2d7c297ae5f3ca64dfa74fb04ea7980",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-fe0beec6376c7ce43ebc8e79403c18506fa9be01b2766145fcb23f4659488d51.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/fe0beec6376c7ce43ebc8e79403c18506fa9be01b2766145fcb23f4659488d51.txt\n-->\n<template>\n\t<div style=\"max-width: 600px\">\n\t\t<AsamAlert title=\"With description\" type=\"success\" description=\"This is a description.\" />\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamAlertCapDescriptionDemo' });\nimport { AsamAlert } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "1633ce78a603ee1b0d656defdb3982ba66ea21b8938cb541d0f67baad678b621",
+			"sha256": "ce7feb0846caaed0d5eb05e15885e9a31c51876f7ce628b40a4fbc600b644efd",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-fe0beec6376c7ce43ebc8e79403c18506fa9be01b2766145fcb23f4659488d51.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/fe0beec6376c7ce43ebc8e79403c18506fa9be01b2766145fcb23f4659488d51.txt\n-->\n<template>\n\t<div style=\"max-width: 600px\">\n\t\t<AsamAlert title=\"带说明\" type=\"success\" description=\"这是一段说明。\" />\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamAlertCapDescriptionDemo' });\nimport { AsamAlert } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "18d8614f018cb68237f20840b7794f3b4eca0b5e403a3de89c661446248f7865",
 			"notice": {
 				"id": "fe0beec6376c7ce43ebc8e79403c18506fa9be01b2766145fcb23f4659488d51",
 				"url": "/licenses/source-notices/fe0beec6376c7ce43ebc8e79403c18506fa9be01b2766145fcb23f4659488d51.txt",

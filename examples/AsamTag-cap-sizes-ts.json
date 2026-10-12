@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTag/cap-sizes/ts/Demo.vue",
-			"sha256": "07111dbae54b9c3b39973c98544ee3eb7fdd701b87a72b4c8be038e0650c8bac",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4.txt\n-->\n<template>\n\t<div class=\"flex gap-2\">\n\t\t<AsamTag size=\"large\">Large</AsamTag>\n\t\t<AsamTag>Default</AsamTag>\n\t\t<AsamTag size=\"small\">Small</AsamTag>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTagCapSizesDemo' });\nimport { AsamTag } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.gap-2 {\n\tgap: 0.5rem;\n}\n</style>\n",
-			"originalSourceSha256": "d4508e236cc56bbb9aa368d82a996aa3370727fbe10adf3934d0f118f8f6fe03",
+			"sha256": "eb7ead45d85eeaf7e0f536b0cea6ddb9e842442afdf93006d8901f0af9a52c1d",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4.txt\n-->\n<template>\n\t<div class=\"flex gap-2\">\n\t\t<AsamTag size=\"large\">大尺寸</AsamTag>\n\t\t<AsamTag>默认</AsamTag>\n\t\t<AsamTag size=\"small\">小尺寸</AsamTag>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTagCapSizesDemo' });\nimport { AsamTag } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.gap-2 {\n\tgap: 0.5rem;\n}\n</style>\n",
+			"originalSourceSha256": "74ebbcfdbb5b382dc5a428fa928f0f2d5ffdff6a49d4c8f6a6b77e3a04a2ed8b",
 			"notice": {
 				"id": "561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4",
 				"url": "/licenses/source-notices/561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4.txt",

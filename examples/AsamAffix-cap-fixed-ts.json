@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamAffix/cap-fixed/ts/Demo.vue",
-			"sha256": "d63057b687d649dec576cace1eaea006e3df77ab9e67c93bffc5e662dc797a8b",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-9fe3e767bd1d416d8f027043e9e2fce098430e137dcf91923053e60ed1686c64.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/9fe3e767bd1d416d8f027043e9e2fce098430e137dcf91923053e60ed1686c64.txt\n-->\n<template>\n\t<AsamAffix position=\"bottom\" :offset=\"20\">\n\t\t<AsamButton type=\"primary\">Offset bottom 20px</AsamButton>\n\t</AsamAffix>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamAffixCapFixedDemo' });\nimport { AsamAffix, AsamButton } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "de41318179a13fe63a6a016afadfa510ad793edba50a100cf361f1f62e16bc73",
+			"sha256": "24f660050463bcd51ab1b1e6d2c348640e7f6f697f8710ed88715047c48bbf22",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-9fe3e767bd1d416d8f027043e9e2fce098430e137dcf91923053e60ed1686c64.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/9fe3e767bd1d416d8f027043e9e2fce098430e137dcf91923053e60ed1686c64.txt\n-->\n<template>\n\t<AsamAffix position=\"bottom\" :offset=\"20\">\n\t\t<AsamButton type=\"primary\">底部偏移 20px</AsamButton>\n\t</AsamAffix>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamAffixCapFixedDemo' });\nimport { AsamAffix, AsamButton } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "49eb33feb7fb7625fd1e34a4b98d1a7d374b33efa149916d772051c35e2bd4c4",
 			"notice": {
 				"id": "9fe3e767bd1d416d8f027043e9e2fce098430e137dcf91923053e60ed1686c64",
 				"url": "/licenses/source-notices/9fe3e767bd1d416d8f027043e9e2fce098430e137dcf91923053e60ed1686c64.txt",

@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTooltip/ep2147-virtual-trigger/js/Demo.vue",
-			"sha256": "ecc7c6185ed33fd6fd768187d0fde09e5bda749afc3ee7d87a3353585875f1fd",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ac4e56ad9e05098f951fad4144f173742fcb02962f551cc289e7b9473da41bf1.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ac4e56ad9e05098f951fad4144f173742fcb02962f551cc289e7b9473da41bf1.txt\n-->\n<template>\n\t<AsamTooltip\n\t\t:visible=\"visible\"\n\t\tcontent=\"Bottom center\"\n\t\tplacement=\"bottom\"\n\t\teffect=\"light\"\n\t\ttrigger=\"click\"\n\t\tvirtual-triggering\n\t\t:virtual-ref=\"triggerRef\"\n\t/>\n\t<AsamButton @click=\"visible = !visible\">test</AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\nimport { onMounted, onUnmounted, ref } from 'vue';\nconst visible = ref(false);\nconst position = ref(DOMRect.fromRect({ x: 0, y: 0, width: 0, height: 0 }));\nconst triggerRef = ref({\n\tgetBoundingClientRect: () => position.value\n});\nconst mousemoveHandler = ({ clientX, clientY }) => {\n\tposition.value = DOMRect.fromRect({\n\t\tx: clientX,\n\t\ty: clientY\n\t});\n};\nonMounted(() => {\n\tdocument.addEventListener('mousemove', mousemoveHandler);\n});\nonUnmounted(() => {\n\tdocument.removeEventListener('mousemove', mousemoveHandler);\n});\n</script>\n",
-			"originalSourceSha256": "42cd22a06007aca2372434b265035b92f14e82db87c49325769c64deed2acf45",
+			"sha256": "cb37f3aa81f126e3be0ef78b4c070aebb0ad9e4f949c0652fe0a47c2dc6b685a",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ac4e56ad9e05098f951fad4144f173742fcb02962f551cc289e7b9473da41bf1.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ac4e56ad9e05098f951fad4144f173742fcb02962f551cc289e7b9473da41bf1.txt\n-->\n<template>\n\t<AsamTooltip\n\t\t:visible=\"visible\"\n\t\tcontent=\"底部居中\"\n\t\tplacement=\"bottom\"\n\t\teffect=\"light\"\n\t\ttrigger=\"click\"\n\t\tvirtual-triggering\n\t\t:virtual-ref=\"triggerRef\"\n\t/>\n\t<AsamButton type=\"primary\" @click=\"visible = !visible\">切换文字提示</AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\nimport { onMounted, onUnmounted, ref } from 'vue';\nconst visible = ref(false);\nconst position = ref(DOMRect.fromRect({ x: 0, y: 0, width: 0, height: 0 }));\nconst triggerRef = ref({\n\tgetBoundingClientRect: () => position.value\n});\nconst mousemoveHandler = ({ clientX, clientY }) => {\n\tposition.value = DOMRect.fromRect({\n\t\tx: clientX,\n\t\ty: clientY\n\t});\n};\nonMounted(() => {\n\tdocument.addEventListener('mousemove', mousemoveHandler);\n});\nonUnmounted(() => {\n\tdocument.removeEventListener('mousemove', mousemoveHandler);\n});\n</script>\n",
+			"originalSourceSha256": "210cd9c4fd0c1ae1b99e11a9b89053eeac48271675d65a6d0c4cffe677f47f0c",
 			"notice": {
 				"id": "ac4e56ad9e05098f951fad4144f173742fcb02962f551cc289e7b9473da41bf1",
 				"url": "/licenses/source-notices/ac4e56ad9e05098f951fad4144f173742fcb02962f551cc289e7b9473da41bf1.txt",

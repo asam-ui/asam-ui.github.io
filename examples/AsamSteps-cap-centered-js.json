@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSteps/cap-centered/js/Demo.vue",
-			"sha256": "8d9e6a86a8b7629c07e776940e002c311e33eedc5b5e0769570f950eb1975ddb",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-c19a87c9d35f8d8be29dd34ae3b4fa79bc1533401cca0df65db67e54d66264b2.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/c19a87c9d35f8d8be29dd34ae3b4fa79bc1533401cca0df65db67e54d66264b2.txt\n-->\n<template>\n\t<AsamSteps style=\"max-width: 600px\" :active=\"2\" align-center>\n\t\t<AsamStep title=\"Step 1\" description=\"Some description\" />\n\t\t<AsamStep title=\"Step 2\" description=\"Some description\" />\n\t\t<AsamStep title=\"Step 3\" description=\"Some description\" />\n\t</AsamSteps>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamStepsCapCenteredDemo' });\nimport { AsamSteps, AsamStep } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "8ba3bb388fa1440d7d55f0dd9b80639cfcbb704ca91d3ba39fdf99584330d8e2",
+			"sha256": "3c74303535ab39649ca712e0f277567471d0662ec4cb6e237227baebb1cd977d",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-c19a87c9d35f8d8be29dd34ae3b4fa79bc1533401cca0df65db67e54d66264b2.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/c19a87c9d35f8d8be29dd34ae3b4fa79bc1533401cca0df65db67e54d66264b2.txt\n-->\n<template>\n\t<AsamSteps style=\"max-width: 600px\" :active=\"2\" align-center>\n\t\t<AsamStep title=\"步骤 1\" description=\"示例说明\" />\n\t\t<AsamStep title=\"步骤 2\" description=\"示例说明\" />\n\t\t<AsamStep title=\"步骤 3\" description=\"示例说明\" />\n\t</AsamSteps>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamStepsCapCenteredDemo' });\nimport { AsamSteps, AsamStep } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "d03076660121fc65003828744411489bc15b3aceb891fff18e5cd16a48a18cbd",
 			"notice": {
 				"id": "c19a87c9d35f8d8be29dd34ae3b4fa79bc1533401cca0df65db67e54d66264b2",
 				"url": "/licenses/source-notices/c19a87c9d35f8d8be29dd34ae3b4fa79bc1533401cca0df65db67e54d66264b2.txt",

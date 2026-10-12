@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTag/cap-sizes/js/Demo.vue",
-			"sha256": "431bd058e47d04be7b090b65de2e79e1495dd7bd389166494ff9f70ff4fd6478",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4.txt\n-->\n<template>\n\t<div class=\"flex gap-2\">\n\t\t<AsamTag size=\"large\">Large</AsamTag>\n\t\t<AsamTag>Default</AsamTag>\n\t\t<AsamTag size=\"small\">Small</AsamTag>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTagCapSizesDemo' });\nimport { AsamTag } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.gap-2 {\n\tgap: 0.5rem;\n}\n</style>\n",
-			"originalSourceSha256": "5ad95bb3096e9a085c67c81d8b882c4d7bd253751649fb20262d9381a0bb045e",
+			"sha256": "a9e05b5bbff525f471df3f2b4cb78d9c4d58538fce4160b33a082a2c3db530e0",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4.txt\n-->\n<template>\n\t<div class=\"flex gap-2\">\n\t\t<AsamTag size=\"large\">大尺寸</AsamTag>\n\t\t<AsamTag>默认</AsamTag>\n\t\t<AsamTag size=\"small\">小尺寸</AsamTag>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTagCapSizesDemo' });\nimport { AsamTag } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.gap-2 {\n\tgap: 0.5rem;\n}\n</style>\n",
+			"originalSourceSha256": "d273a9724c0502ad6c36874a05d3388f7a54513bdef2a35a44464274d88f18c8",
 			"notice": {
 				"id": "561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4",
 				"url": "/licenses/source-notices/561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4.txt",

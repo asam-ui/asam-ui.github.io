@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDatePickerPanel/official-date-picker-panel-border/js/Demo.vue",
-			"sha256": "2ce33e4151449418132ab96efb1ab6bd4bda978546dc78ceaec2402076e21d3d",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-1cf9ac1cdab509f650666d092832d8cd5e55ea4ce330be4c64834f1abdb55065.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/1cf9ac1cdab509f650666d092832d8cd5e55ea4ce330be4c64834f1abdb55065.txt\n-->\n<template>\n\t<div>\n\t\t<!-- prettier-ignore -->\n\t\t<button @click=\"border = !border\">切换边框</button\n\t\t><AsamDatePickerPanel v-model=\"value\" :border=\"border\" />\n\t</div>\n</template>\n<script setup>\nimport { AsamDatePickerPanel } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamDatePickerPanelofficialdatepickerpanelborderExample' });\nimport { ref } from 'vue';\nconst border = ref(true);\nconst value = ref();\n</script>\n",
-			"originalSourceSha256": "c6590cbf56678688c9d7871cd94e2697db9cc1f0e9322fb917a1d7009184f930",
+			"sha256": "04e44db91a9afb73c7926b077a6ce80169493f54eb0015d4e026c47cd2b98d3a",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-1cf9ac1cdab509f650666d092832d8cd5e55ea4ce330be4c64834f1abdb55065.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/1cf9ac1cdab509f650666d092832d8cd5e55ea4ce330be4c64834f1abdb55065.txt\n-->\n<template>\n\t<div>\n\t\t<!-- prettier-ignore -->\n\t\t<AsamButton native-type=\"submit\" type=\"primary\" @click=\"border = !border\">切换边框</AsamButton\n\t\t><AsamDatePickerPanel v-model=\"value\" :border=\"border\" />\n\t</div>\n</template>\n<script setup>\nimport { AsamButton, AsamDatePickerPanel } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamDatePickerPanelofficialdatepickerpanelborderExample' });\nimport { ref } from 'vue';\nconst border = ref(true);\nconst value = ref();\n</script>\n",
+			"originalSourceSha256": "4be7c18809ad3d73c8c7fbfa91f26bceb00e8d2f2dbaf8f7fcf3aee3fc95b2ec",
 			"notice": {
 				"id": "1cf9ac1cdab509f650666d092832d8cd5e55ea4ce330be4c64834f1abdb55065",
 				"url": "/licenses/source-notices/1cf9ac1cdab509f650666d092832d8cd5e55ea4ce330be4c64834f1abdb55065.txt",

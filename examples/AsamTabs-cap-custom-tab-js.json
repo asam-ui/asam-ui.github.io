@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTabs/cap-custom-tab/js/Demo.vue",
-			"sha256": "0b6e795d3bbf2b56a65fdd2043b7bd188c575b31bb89487f12f84e9476058ae1",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-c539406cedbfe46d80b156fa86379296ff145070db143fa2a26337a84b91dad4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/c539406cedbfe46d80b156fa86379296ff145070db143fa2a26337a84b91dad4.txt\n-->\n<template>\n\t<AsamTabs type=\"border-card\" class=\"demo-tabs\">\n\t\t<AsamTabPane>\n\t\t\t<template #label>\n\t\t\t\t<span class=\"custom-tabs-label\">\n\t\t\t\t\t<AsamIcon><calendar /></AsamIcon>\n\t\t\t\t\t<span>Route</span>\n\t\t\t\t</span>\n\t\t\t</template>\n\t\t\tRoute\n\t\t</AsamTabPane>\n\t\t<AsamTabPane label=\"Config\">Config</AsamTabPane>\n\t\t<AsamTabPane label=\"Role\">Role</AsamTabPane>\n\t\t<AsamTabPane label=\"Task\">Task</AsamTabPane>\n\t</AsamTabs>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTabsCapCustomTabDemo' });\nimport { AsamTabs, AsamTabPane, AsamIcon } from '@asam-ui/ui';\nimport { Calendar } from '@asam-ui/icons-vue';\n</script>\n\n<style>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.demo-tabs > .el-tabs__content {\n\tpadding: 32px;\n\tcolor: #6b778c;\n\tfont-size: 32px;\n\tfont-weight: 600;\n}\n\n.demo-tabs .custom-tabs-label .el-icon {\n\tvertical-align: middle;\n}\n\n.demo-tabs .custom-tabs-label span {\n\tvertical-align: middle;\n\tmargin-left: 4px;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n",
-			"originalSourceSha256": "ce329e620a127044f3b6f8a084a56118ac737a2788c5dea9c93864727b070326",
+			"sha256": "dce4266c712b8f8e68eec124b010cfbe40503044149d2280df9e948e2d357ef8",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-c539406cedbfe46d80b156fa86379296ff145070db143fa2a26337a84b91dad4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/c539406cedbfe46d80b156fa86379296ff145070db143fa2a26337a84b91dad4.txt\n-->\n<template>\n\t<AsamTabs type=\"border-card\" class=\"demo-tabs\">\n\t\t<AsamTabPane>\n\t\t\t<template #label>\n\t\t\t\t<span class=\"custom-tabs-label\">\n\t\t\t\t\t<AsamIcon><calendar /></AsamIcon>\n\t\t\t\t\t<span>路由</span>\n\t\t\t\t</span>\n\t\t\t</template>\n\t\t\t路由\n\t\t</AsamTabPane>\n\t\t<AsamTabPane label=\"配置\">配置</AsamTabPane>\n\t\t<AsamTabPane label=\"角色\">角色</AsamTabPane>\n\t\t<AsamTabPane label=\"任务\">任务</AsamTabPane>\n\t</AsamTabs>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTabsCapCustomTabDemo' });\nimport { AsamTabs, AsamTabPane, AsamIcon } from '@asam-ui/ui';\nimport { Calendar } from '@asam-ui/icons-vue';\n</script>\n\n<style>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.demo-tabs > .el-tabs__content {\n\tpadding: 32px;\n\tcolor: #6b778c;\n\tfont-size: 32px;\n\tfont-weight: 600;\n}\n\n.demo-tabs .custom-tabs-label .el-icon {\n\tvertical-align: middle;\n}\n\n.demo-tabs .custom-tabs-label span {\n\tvertical-align: middle;\n\tmargin-left: 4px;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n",
+			"originalSourceSha256": "372b01a2f9009516944b116958d59873b4344e1053a3cca74af673158a9d3809",
 			"notice": {
 				"id": "c539406cedbfe46d80b156fa86379296ff145070db143fa2a26337a84b91dad4",
 				"url": "/licenses/source-notices/c539406cedbfe46d80b156fa86379296ff145070db143fa2a26337a84b91dad4.txt",

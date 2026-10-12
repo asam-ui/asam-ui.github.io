@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamCard/cap-with-images/ts/Demo.vue",
-			"sha256": "db93ac73d556ff105589c0405c2bf3b96f0e463cf8ad2cd079bf7e66547e95e0",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-80f4bc9b1026b6f4f28605b81e7c7891eec82fd6dca8d6de4d4b1dff2fe6b6cf.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/80f4bc9b1026b6f4f28605b81e7c7891eec82fd6dca8d6de4d4b1dff2fe6b6cf.txt\n-->\n<template>\n\t<AsamCard style=\"max-width: 480px\">\n\t\t<template #header>Yummy hamburger</template>\n\n\t\t<img\n\t\t\tsrc=\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%22180%22%3E%3Crect%20width%3D%22320%22%20height%3D%22180%22%20fill%3D%22%238899aa%22%2F%3E%3Ctext%20x%3D%2224%22%20y%3D%2290%22%20fill%3D%22white%22%3EASAM%20local%20sample%3C%2Ftext%3E%3C%2Fsvg%3E\"\n\t\t\tstyle=\"width: 100%\"\n\t\t/>\n\t</AsamCard>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamCardCapWithImagesDemo' });\nimport { AsamCard } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "1f09f23a99d7295568c2dd7d1f44e525582210e56baf0f7401f212a1ebed47bd",
+			"sha256": "bd1232cdd00bc49d1dd5285135813edcde76ef4c7395961a2d98f0ee4323e0c4",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-80f4bc9b1026b6f4f28605b81e7c7891eec82fd6dca8d6de4d4b1dff2fe6b6cf.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/80f4bc9b1026b6f4f28605b81e7c7891eec82fd6dca8d6de4d4b1dff2fe6b6cf.txt\n-->\n<template>\n\t<AsamCard style=\"max-width: 480px\">\n\t\t<template #header>美味汉堡</template>\n\n\t\t<AsamImage\n\t\t\tsrc=\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%22180%22%3E%3Crect%20width%3D%22320%22%20height%3D%22180%22%20fill%3D%22%238899aa%22%2F%3E%3Ctext%20x%3D%2224%22%20y%3D%2290%22%20fill%3D%22white%22%3EASAM%20local%20sample%3C%2Ftext%3E%3C%2Fsvg%3E\"\n\t\t\tstyle=\"width: 100%\"\n\t\t/>\n\t</AsamCard>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamCardCapWithImagesDemo' });\nimport { AsamImage, AsamCard } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "1367269b4b5411b72de6b3b033a303636d6e613468bf3843336a30df594f808d",
 			"notice": {
 				"id": "80f4bc9b1026b6f4f28605b81e7c7891eec82fd6dca8d6de4d4b1dff2fe6b6cf",
 				"url": "/licenses/source-notices/80f4bc9b1026b6f4f28605b81e7c7891eec82fd6dca8d6de4d4b1dff2fe6b6cf.txt",

@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSpace/cap-auto-wrapping/ts/Demo.vue",
-			"sha256": "48dc1a1079b50e5c004b374855a3f5f7243ab79b65c5889d7c1f42a9f4abde0a",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807.txt\n-->\n<template>\n\t<AsamSpace wrap>\n\t\t<div v-for=\"i in 20\" :key=\"i\">\n\t\t\t<AsamButton text> Text button </AsamButton>\n\t\t</div>\n\t</AsamSpace>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamSpaceCapAutoWrappingDemo' });\nimport { AsamSpace, AsamButton } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "f4c8728874d4faebcd5d2b362c0b580109075b106261d579832bfdca7bbabcd7",
+			"sha256": "7741dcaf757c7a12e44795b72581d1a8e3d6671289bb01c3220f0cc9bc07c541",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807.txt\n-->\n<template>\n\t<AsamSpace wrap>\n\t\t<div v-for=\"i in 20\" :key=\"i\">\n\t\t\t<AsamButton type=\"primary\" text> 文字按钮 </AsamButton>\n\t\t</div>\n\t</AsamSpace>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamSpaceCapAutoWrappingDemo' });\nimport { AsamSpace, AsamButton } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "6dfd46f0aca7bf64238974cbaff128a760072043d59aa801d1e6e4a3935d0f3a",
 			"notice": {
 				"id": "00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807",
 				"url": "/licenses/source-notices/00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807.txt",

@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTabs/cap-basic/js/Demo.vue",
-			"sha256": "af4c32026d28b0ebb5427156471af0526dcb77f9d71e1bb7607df9373f776166",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e00306ed2d0f0b43c198f31ffebeb3274b3bafe1a894d2ab1d94c0f3c8671a17.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e00306ed2d0f0b43c198f31ffebeb3274b3bafe1a894d2ab1d94c0f3c8671a17.txt\n-->\n<template>\n\t<AsamTabs\n\t\t:model-value=\"activeName\"\n\t\tclass=\"demo-tabs\"\n\t\t@update:model-value=\"\n\t\t\t(value) => {\n\t\t\t\tif (typeof value === 'string') activeName = value;\n\t\t\t}\n\t\t\"\n\t\t@tab-click=\"handleClick\"\n\t>\n\t\t<AsamTabPane label=\"User\" name=\"first\">User</AsamTabPane>\n\t\t<AsamTabPane label=\"Config\" name=\"second\">Config</AsamTabPane>\n\t\t<AsamTabPane label=\"Role\" name=\"third\">Role</AsamTabPane>\n\t\t<AsamTabPane label=\"Task\" name=\"fourth\">Task</AsamTabPane>\n\t</AsamTabs>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTabsCapBasicDemo' });\nimport { AsamTabs, AsamTabPane } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst activeName = ref('first');\nconst handleClick = (tab, event) => {\n\tconsole.log(tab, event);\n};\n</script>\n\n<style>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.demo-tabs > .el-tabs__content {\n\tpadding: 32px;\n\tcolor: #6b778c;\n\tfont-size: 32px;\n\tfont-weight: 600;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n",
-			"originalSourceSha256": "c9b9cb281ab7ecf1d5bd1ab726b11f37c386ed851054f5f879e97ee70e6446bf",
+			"sha256": "10bfedc215a6d86e51adf382cce243aef81f1e81d487c9eb93dee5f271e4e1c3",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e00306ed2d0f0b43c198f31ffebeb3274b3bafe1a894d2ab1d94c0f3c8671a17.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e00306ed2d0f0b43c198f31ffebeb3274b3bafe1a894d2ab1d94c0f3c8671a17.txt\n-->\n<template>\n\t<AsamTabs\n\t\t:model-value=\"activeName\"\n\t\tclass=\"demo-tabs\"\n\t\t@update:model-value=\"\n\t\t\t(value) => {\n\t\t\t\tif (typeof value === 'string') activeName = value;\n\t\t\t}\n\t\t\"\n\t\t@tab-click=\"handleClick\"\n\t>\n\t\t<AsamTabPane label=\"用户\" name=\"first\">用户</AsamTabPane>\n\t\t<AsamTabPane label=\"配置\" name=\"second\">配置</AsamTabPane>\n\t\t<AsamTabPane label=\"角色\" name=\"third\">角色</AsamTabPane>\n\t\t<AsamTabPane label=\"任务\" name=\"fourth\">任务</AsamTabPane>\n\t</AsamTabs>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTabsCapBasicDemo' });\nimport { AsamTabs, AsamTabPane } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst activeName = ref('first');\nconst handleClick = (tab, event) => {\n\tconsole.log(tab, event);\n};\n</script>\n\n<style>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.demo-tabs > .el-tabs__content {\n\tpadding: 32px;\n\tcolor: #6b778c;\n\tfont-size: 32px;\n\tfont-weight: 600;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n",
+			"originalSourceSha256": "0bb5d3a6068539a8524acce21b2f82f18184fc0065a4f754c0952fc3180b3399",
 			"notice": {
 				"id": "e00306ed2d0f0b43c198f31ffebeb3274b3bafe1a894d2ab1d94c0f3c8671a17",
 				"url": "/licenses/source-notices/e00306ed2d0f0b43c198f31ffebeb3274b3bafe1a894d2ab1d94c0f3c8671a17.txt",

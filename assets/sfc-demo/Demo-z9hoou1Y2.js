@@ -1,0 +1,1 @@
+import{Ct as e,H as t,mt as n,v as r}from"./vue.esm-bundler-5NdF0u5k.js";import{t as i}from"./Index-Den6hpw6-C_4LzSwA.js";var a=Object.assign({name:`AsamCalendarofficialcalendarbasicExample`},{__name:`Demo`,setup(a){let o=n(new Date);return(n,a)=>(t(),r(e(i),{modelValue:o.value,"onUpdate:modelValue":a[0]||=e=>o.value=e},null,8,[`modelValue`]))}});export{a as default};

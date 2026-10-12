@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamAlert/cap-basic/js/Demo.vue",
-			"sha256": "8fbddc6b4fe3cf56a475144f2db2b67ec6412ae2759e1a659c2a1a43a8bac544",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-c27fcd63753734868ce46ae42b77a4e12a7d301387af7588c882bd2457f69aa2.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/c27fcd63753734868ce46ae42b77a4e12a7d301387af7588c882bd2457f69aa2.txt\n-->\n<template>\n\t<div style=\"max-width: 600px\">\n\t\t<AsamAlert title=\"Primary alert\" type=\"primary\" />\n\t\t<AsamAlert title=\"Success alert\" type=\"success\" />\n\t\t<AsamAlert title=\"Info alert\" type=\"info\" />\n\t\t<AsamAlert title=\"Warning alert\" type=\"warning\" />\n\t\t<AsamAlert title=\"Error alert\" type=\"error\" />\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamAlertCapBasicDemo' });\nimport { AsamAlert } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.el-alert {\n\tmargin: 20px 0 0;\n}\n\n.el-alert:first-child {\n\tmargin: 0;\n}\n</style>\n",
-			"originalSourceSha256": "d095e18c0cbd40162bde644e256dfd566fad65ec032955373b5f575d2d7f7152",
+			"sha256": "eb5a167babb0ba86ae915ceed7b3c9ab32b7d537d6ce7dbea8189e7d78c63088",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-c27fcd63753734868ce46ae42b77a4e12a7d301387af7588c882bd2457f69aa2.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/c27fcd63753734868ce46ae42b77a4e12a7d301387af7588c882bd2457f69aa2.txt\n-->\n<template>\n\t<div style=\"max-width: 600px\">\n\t\t<AsamAlert title=\"主要提示\" type=\"primary\" />\n\t\t<AsamAlert title=\"成功提示\" type=\"success\" />\n\t\t<AsamAlert title=\"信息提示\" type=\"info\" />\n\t\t<AsamAlert title=\"警告提示\" type=\"warning\" />\n\t\t<AsamAlert title=\"错误提示\" type=\"error\" />\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamAlertCapBasicDemo' });\nimport { AsamAlert } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.el-alert {\n\tmargin: 20px 0 0;\n}\n\n.el-alert:first-child {\n\tmargin: 0;\n}\n</style>\n",
+			"originalSourceSha256": "7f364b3a321251ce5cf02097e33f69481d38dbfd68883c5d8cc278b11c6bc75a",
 			"notice": {
 				"id": "c27fcd63753734868ce46ae42b77a4e12a7d301387af7588c882bd2457f69aa2",
 				"url": "/licenses/source-notices/c27fcd63753734868ce46ae42b77a4e12a7d301387af7588c882bd2457f69aa2.txt",

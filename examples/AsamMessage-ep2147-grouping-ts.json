@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamMessage/ep2147-grouping/ts/Demo.vue",
-			"sha256": "9a46f93b7749b47935b7a56b46f1408ddbf1d49385b88f348163ae2960b30bac",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f865c23c6c2926d9997c885298f4efe660b407cf237e5faebc88f61f0b4869e9.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f865c23c6c2926d9997c885298f4efe660b407cf237e5faebc88f61f0b4869e9.txt\n-->\n<template>\n\t<AsamButton :plain=\"true\" @click=\"open\">Show message</AsamButton>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamMessage, type AsamMessageHandler } from '@asam-ui/ui';\n\nimport { onBeforeUnmount } from 'vue';\n\nconst open = () => {\n\ttrackAsamMessage(\n\t\tAsamMessage({\n\t\t\tmessage: 'This is a message.',\n\t\t\tgrouping: true,\n\t\t\ttype: 'success'\n\t\t})\n\t);\n};\n\nconst ownedAsamMessage = new Set<AsamMessageHandler>();\nlet mountedAsamMessage = true;\nconst trackAsamMessage = (handle: AsamMessageHandler) => {\n\tif (mountedAsamMessage) ownedAsamMessage.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamMessage = false;\n\tfor (const handle of ownedAsamMessage) handle.close();\n\townedAsamMessage.clear();\n});\n</script>\n",
-			"originalSourceSha256": "5282c5483b46b741d2ffee4ea29c5d9a321c31b44f4653caa3bffd184cbc1dd4",
+			"sha256": "87f53623b38190c177e43a91f6c86a7f1b5861aca0c89f57f6f8a278eb5739e9",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f865c23c6c2926d9997c885298f4efe660b407cf237e5faebc88f61f0b4869e9.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f865c23c6c2926d9997c885298f4efe660b407cf237e5faebc88f61f0b4869e9.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" :plain=\"true\" @click=\"open\">显示消息</AsamButton>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamMessage, type AsamMessageHandler } from '@asam-ui/ui';\n\nimport { onBeforeUnmount } from 'vue';\n\nconst open = () => {\n\ttrackAsamMessage(\n\t\tAsamMessage({\n\t\t\tmessage: '这是一条消息。',\n\t\t\tgrouping: true,\n\t\t\ttype: 'success'\n\t\t})\n\t);\n};\n\nconst ownedAsamMessage = new Set<AsamMessageHandler>();\nlet mountedAsamMessage = true;\nconst trackAsamMessage = (handle: AsamMessageHandler) => {\n\tif (mountedAsamMessage) ownedAsamMessage.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamMessage = false;\n\tfor (const handle of ownedAsamMessage) handle.close();\n\townedAsamMessage.clear();\n});\n</script>\n",
+			"originalSourceSha256": "c10f4e1df0e882ca8ebe672a9830612086275ebe5a959f6a8be733a751fee767",
 			"notice": {
 				"id": "f865c23c6c2926d9997c885298f4efe660b407cf237e5faebc88f61f0b4869e9",
 				"url": "/licenses/source-notices/f865c23c6c2926d9997c885298f4efe660b407cf237e5faebc88f61f0b4869e9.txt",

@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDatePickerPanel/official-date-picker-panel-disabled/js/Demo.vue",
-			"sha256": "7ce2940df3bd51989503560c0f3d76f15b97e972acd01fb7f8c7dfee23d8121b",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-71f75b376e0a5203836a73bed5dd357b219d0830a0524e31c4307cf1f3a1b980.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/71f75b376e0a5203836a73bed5dd357b219d0830a0524e31c4307cf1f3a1b980.txt\n-->\n<template>\n\t<div class=\"flex flex-col items-center\">\n\t\t<AsamSwitch\n\t\t\t:model-value=\"disabled\"\n\t\t\tactive-text=\"Disabled\"\n\t\t\tinactive-text=\"Enabled\"\n\t\t\t@update:model-value=\"disabled = $event === true\"\n\t\t/>\n\t\t<AsamDatePickerPanel v-model=\"value\" :disabled=\"disabled\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamSwitch, AsamDatePickerPanel } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamDatePickerPanelofficialdatepickerpaneldisabledExample' });\nimport { ref } from 'vue';\nconst value = ref();\nconst disabled = ref(true);\n</script>\n",
-			"originalSourceSha256": "f6b3f499fac752df7bb92d7c6a23d9affe64f7e974cc8eabb0de9a7fe8d874fb",
+			"sha256": "0dfce6f05a1fcc9ee53d53f50614ba36a5153ffba5f819b2e388c711d5221966",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-71f75b376e0a5203836a73bed5dd357b219d0830a0524e31c4307cf1f3a1b980.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/71f75b376e0a5203836a73bed5dd357b219d0830a0524e31c4307cf1f3a1b980.txt\n-->\n<template>\n\t<div class=\"flex flex-col items-center\">\n\t\t<AsamSwitch\n\t\t\t:model-value=\"disabled\"\n\t\t\tactive-text=\"Disabled\"\n\t\t\tinactive-text=\"已启用\"\n\t\t\t@update:model-value=\"disabled = $event === true\"\n\t\t/>\n\t\t<AsamDatePickerPanel v-model=\"value\" :disabled=\"disabled\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamSwitch, AsamDatePickerPanel } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamDatePickerPanelofficialdatepickerpaneldisabledExample' });\nimport { ref } from 'vue';\nconst value = ref();\nconst disabled = ref(true);\n</script>\n",
+			"originalSourceSha256": "967bc13c0b485792d577982e7b2a297a6ae5d5b4bbf928267b158192d384a5b7",
 			"notice": {
 				"id": "71f75b376e0a5203836a73bed5dd357b219d0830a0524e31c4307cf1f3a1b980",
 				"url": "/licenses/source-notices/71f75b376e0a5203836a73bed5dd357b219d0830a0524e31c4307cf1f3a1b980.txt",

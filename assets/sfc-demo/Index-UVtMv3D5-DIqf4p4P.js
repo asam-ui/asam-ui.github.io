@@ -1,0 +1,1 @@
+import"./vue.esm-bundler-5NdF0u5k.js";import{t as e}from"./icon-Dr6cg85B.js";var t=Object.assign({},e,{install(e){e.component(`AsamIcon`,t)}});export{t};

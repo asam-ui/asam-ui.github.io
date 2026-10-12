@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTabs/cap-border-card/js/Demo.vue",
-			"sha256": "ca8aaa4d33d59a23e24d684d4fdf2506dc56ec875da6e4b3c074e8e18c534831",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-84b332e248f183a79dc2fd1e465c5f5583c1329d54c1f508fd3b919843f7237c.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/84b332e248f183a79dc2fd1e465c5f5583c1329d54c1f508fd3b919843f7237c.txt\n-->\n<template>\n\t<AsamTabs type=\"border-card\">\n\t\t<AsamTabPane label=\"User\">User</AsamTabPane>\n\t\t<AsamTabPane label=\"Config\">Config</AsamTabPane>\n\t\t<AsamTabPane label=\"Role\">Role</AsamTabPane>\n\t\t<AsamTabPane label=\"Task\">Task</AsamTabPane>\n\t</AsamTabs>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTabsCapBorderCardDemo' });\nimport { AsamTabs, AsamTabPane } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "8c9c630174194a18c73e1f271f19b4e560c2c6b0dab3685ddd929b141765ef21",
+			"sha256": "ab8c1819bf8bc90b4149ed5211b0412a18ac1f2aabf7995cd3d8d676f2c8d4d4",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-84b332e248f183a79dc2fd1e465c5f5583c1329d54c1f508fd3b919843f7237c.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/84b332e248f183a79dc2fd1e465c5f5583c1329d54c1f508fd3b919843f7237c.txt\n-->\n<template>\n\t<AsamTabs type=\"border-card\">\n\t\t<AsamTabPane label=\"用户\">用户</AsamTabPane>\n\t\t<AsamTabPane label=\"配置\">配置</AsamTabPane>\n\t\t<AsamTabPane label=\"角色\">角色</AsamTabPane>\n\t\t<AsamTabPane label=\"任务\">任务</AsamTabPane>\n\t</AsamTabs>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTabsCapBorderCardDemo' });\nimport { AsamTabs, AsamTabPane } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "1f4a67000fe29ae3c05ff3c31600dc369818f00d5c735dce15370a48a8ba6092",
 			"notice": {
 				"id": "84b332e248f183a79dc2fd1e465c5f5583c1329d54c1f508fd3b919843f7237c",
 				"url": "/licenses/source-notices/84b332e248f183a79dc2fd1e465c5f5583c1329d54c1f508fd3b919843f7237c.txt",

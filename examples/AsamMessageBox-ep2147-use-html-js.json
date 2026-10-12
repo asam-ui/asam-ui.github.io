@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamMessageBox/ep2147-use-html/js/Demo.vue",
-			"sha256": "a382eed11640d818d4e1cadc9c3fb61fd213ecb9c3850d8da8e3076d14fa8c46",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9.txt\n-->\n<template>\n\t<AsamButton plain @click=\"open\">Click to open Message Box</AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamMessageBox } from '@asam-ui/ui';\nconst open = () => {\n\tAsamMessageBox.alert('<strong>proxy is <i>HTML</i> string</strong>', 'HTML String', {\n\t\tdangerouslyUseHTMLString: true\n\t}).catch((action) => {\n\t\tif (action !== 'cancel' && action !== 'close') throw action;\n\t});\n};\n</script>\n",
-			"originalSourceSha256": "e4145e6cc7ef28d7e10e84962f91a76c5b37d55bf0cefa2653185fa9cb77f271",
+			"sha256": "8d3c87bfab98e6ab53d9f7798559b5125738ab570f9b86161f70111f915df7f0",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" plain @click=\"open\">点击打开消息框</AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamMessageBox } from '@asam-ui/ui';\nconst open = () => {\n\tAsamMessageBox.alert('<strong>这是一段 <i>HTML</i> 内容</strong>', 'HTML 内容', {\n\t\tdangerouslyUseHTMLString: true\n\t}).catch((action) => {\n\t\tif (action !== 'cancel' && action !== 'close') throw action;\n\t});\n};\n</script>\n",
+			"originalSourceSha256": "fbd268482e0178084b225fb692b2b491c74719ff01970ab1423d7593210a84a1",
 			"notice": {
 				"id": "00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9",
 				"url": "/licenses/source-notices/00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9.txt",

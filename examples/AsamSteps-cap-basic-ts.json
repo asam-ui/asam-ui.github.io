@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSteps/cap-basic/ts/Demo.vue",
-			"sha256": "7d7ae86de7035e864e706f728ea43dfeecc222e130189495d996987ff817fd42",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ed26bec25af99285dd70e74bc6547cc07f62b18d3d983beffc7644a82c5f1040.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ed26bec25af99285dd70e74bc6547cc07f62b18d3d983beffc7644a82c5f1040.txt\n-->\n<template>\n\t<AsamSteps style=\"max-width: 600px\" :active=\"active\" finish-status=\"success\">\n\t\t<AsamStep title=\"Step 1\" />\n\t\t<AsamStep title=\"Step 2\" />\n\t\t<AsamStep title=\"Step 3\" />\n\t</AsamSteps>\n\n\t<AsamButton style=\"margin-top: 12px\" @click=\"next\">Next step</AsamButton>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamStepsCapBasicDemo' });\nimport { AsamSteps, AsamStep, AsamButton } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst active = ref(0);\n\nconst next = () => {\n\tif (active.value++ > 2) active.value = 0;\n};\n</script>\n",
-			"originalSourceSha256": "994d55eb1b664ec8dcce2d35392ac965a73fae77efd3566178e8fc01cbf4d538",
+			"sha256": "04238ee0492ff223e357e1df6ca53f834957a16ff0d5589d1d39b94a5e9358ae",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ed26bec25af99285dd70e74bc6547cc07f62b18d3d983beffc7644a82c5f1040.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ed26bec25af99285dd70e74bc6547cc07f62b18d3d983beffc7644a82c5f1040.txt\n-->\n<template>\n\t<AsamSteps style=\"max-width: 600px\" :active=\"active\" finish-status=\"success\">\n\t\t<AsamStep title=\"步骤 1\" />\n\t\t<AsamStep title=\"步骤 2\" />\n\t\t<AsamStep title=\"步骤 3\" />\n\t</AsamSteps>\n\n\t<AsamButton type=\"primary\" style=\"margin-top: 12px\" @click=\"next\">下一步</AsamButton>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamStepsCapBasicDemo' });\nimport { AsamSteps, AsamStep, AsamButton } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst active = ref(0);\n\nconst next = () => {\n\tif (active.value++ > 2) active.value = 0;\n};\n</script>\n",
+			"originalSourceSha256": "cd5a19bf37faa4f334ae0700c2b221a23bbf379f4f7c8aa24e75a2047cb9ccda",
 			"notice": {
 				"id": "ed26bec25af99285dd70e74bc6547cc07f62b18d3d983beffc7644a82c5f1040",
 				"url": "/licenses/source-notices/ed26bec25af99285dd70e74bc6547cc07f62b18d3d983beffc7644a82c5f1040.txt",

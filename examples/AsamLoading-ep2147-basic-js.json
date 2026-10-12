@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamLoading/ep2147-basic/js/Demo.vue",
-			"sha256": "8bdc8c05bf4a52f103b586d79db57ef230ccd062415f6b5aa1a6a7d8f29bd039",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-3a8f57077f420dde653eb21714bfccbf8b61fd66fb30f9798afd807d0d0c4258.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/3a8f57077f420dde653eb21714bfccbf8b61fd66fb30f9798afd807d0d0c4258.txt\n-->\n<template>\n\t<AsamTable v-asam-loading=\"loading\" :data=\"tableData\" style=\"width: 100%\">\n\t\t<AsamTableColumn prop=\"date\" label=\"Date\" width=\"180\" />\n\t\t<AsamTableColumn prop=\"name\" label=\"Name\" width=\"180\" />\n\t\t<AsamTableColumn prop=\"address\" label=\"Address\" />\n\t</AsamTable>\n</template>\n\n<script setup>\nimport { AsamTable, AsamTableColumn, vAsamLoading } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst loading = ref(true);\nconst tableData = [\n\t{\n\t\tdate: '2016-05-02',\n\t\tname: 'John Smith',\n\t\taddress: 'No.1518,  Jinshajiang Road, Putuo District'\n\t},\n\t{\n\t\tdate: '2016-05-04',\n\t\tname: 'John Smith',\n\t\taddress: 'No.1518,  Jinshajiang Road, Putuo District'\n\t},\n\t{\n\t\tdate: '2016-05-01',\n\t\tname: 'John Smith',\n\t\taddress: 'No.1518,  Jinshajiang Road, Putuo District'\n\t}\n];\n</script>\n\n<style>\nbody {\n\tmargin: 0;\n}\n\n.example-showcase .el-loading-mask {\n\tz-index: 9;\n}\n</style>\n",
-			"originalSourceSha256": "4028bf7fd78ec938a909330ac2bc3edbd4482d28be559b4777c8527bed975be2",
+			"sha256": "cada4e12a3cf699259a39fd2e814d03410f7c23df58120fa384f4b1bc916d4a3",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-3a8f57077f420dde653eb21714bfccbf8b61fd66fb30f9798afd807d0d0c4258.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/3a8f57077f420dde653eb21714bfccbf8b61fd66fb30f9798afd807d0d0c4258.txt\n-->\n<template>\n\t<AsamTable v-asam-loading=\"loading\" :data=\"tableData\" style=\"width: 100%\">\n\t\t<AsamTableColumn prop=\"date\" label=\"日期\" width=\"180\" />\n\t\t<AsamTableColumn prop=\"name\" label=\"姓名\" width=\"180\" />\n\t\t<AsamTableColumn prop=\"address\" label=\"地址\" />\n\t</AsamTable>\n</template>\n\n<script setup>\nimport { AsamTable, AsamTableColumn, vAsamLoading } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst loading = ref(true);\nconst tableData = [\n\t{\n\t\tdate: '2016-05-02',\n\t\tname: '约翰·史密斯',\n\t\taddress: '普陀区金沙江路 1518 号'\n\t},\n\t{\n\t\tdate: '2016-05-04',\n\t\tname: '约翰·史密斯',\n\t\taddress: '普陀区金沙江路 1518 号'\n\t},\n\t{\n\t\tdate: '2016-05-01',\n\t\tname: '约翰·史密斯',\n\t\taddress: '普陀区金沙江路 1518 号'\n\t}\n];\n</script>\n\n<style>\nbody {\n\tmargin: 0;\n}\n\n.example-showcase .el-loading-mask {\n\tz-index: 9;\n}\n</style>\n",
+			"originalSourceSha256": "3d05214565224f2a29df623851513ed433c3628483f8fcec9b7c01d9c5d2f460",
 			"notice": {
 				"id": "3a8f57077f420dde653eb21714bfccbf8b61fd66fb30f9798afd807d0d0c4258",
 				"url": "/licenses/source-notices/3a8f57077f420dde653eb21714bfccbf8b61fd66fb30f9798afd807d0d0c4258.txt",

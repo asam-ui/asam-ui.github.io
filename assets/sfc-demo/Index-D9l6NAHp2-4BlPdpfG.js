@@ -1,0 +1,1 @@
+import"./vue.esm-bundler-5NdF0u5k.js";import{t as e}from"./fixed-size-list-Djt6Hd1I.js";var t=Object.assign({},e,{install(e){e.component(`AsamFixedSizeList`,t)}});export{t};
