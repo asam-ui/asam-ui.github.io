@@ -1,0 +1,135 @@
+ASAM UI Documentation Tool Use License, Version 1.0
+
+Copyright (c) 2026 ASAM UI contributors. All rights reserved.
+
+This is a restricted-use license, not an open-source license.
+
+1. Covered software
+
+This license applies to the original ASAM UI documentation-query implementation code
+distributed in the @asam-ui/mcp package (the "Software"). Third-party
+code and dependencies are not covered by this license and remain subject to
+their own licenses.
+
+2. Permission to use in applications
+
+Subject to the conditions below, any person may download, install, copy, run,
+and use the Software, including for commercial purposes. You may include the
+Software as an integrated part of a website or application that you build,
+publish, host, or distribute. Recipients may use that website or application
+as delivered. You may charge for the website or application, but not for the
+Software as a separately usable component product.
+
+You may perform ordinary, automated build transformations needed to integrate
+and deliver the Software in such a website or application, including
+transpilation, bundling, minification, and tree-shaking. Using documented
+configuration, public APIs, slots, and CSS custom properties in your own
+application is permitted. Apart from ordinary build transformations, these
+permissions do not allow edits to the Software's source files or distribution
+of a modified component package.
+
+3. Restrictions
+
+Unless you have separate written permission from the copyright holders, you
+may not:
+
+- modify, adapt, or create a separately distributed derivative of the
+  Software or its component packages, except for the ordinary build
+  transformations permitted above;
+- sell, sublicense, repackage, or redistribute the Software as a standalone
+  component library, package, template, or other separately usable component
+  product, whether under the original name or another name; or
+- publish or republish the Software, in whole or in substantial part, as a
+  package on npm or any other package registry.
+
+These restrictions do not prohibit distributing an application merely because
+its compiled assets contain the Software as an integrated component.
+
+4. Notices and third-party rights
+
+Keep this copyright notice and license text with any copy of the Software's
+source or component package that you retain or pass on under this license.
+Do not remove notices already present in the Software. Comply separately with
+all applicable third-party licenses and notice requirements; this license
+does not limit rights granted by those third parties.
+
+5. Ownership and trademarks
+
+The Software is licensed, not sold. All rights not expressly granted are
+reserved. This license does not grant rights to ASAM UI names, logos, or
+trademarks except as needed to identify the Software accurately.
+
+6. Warranty and liability
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, AND NONINFRINGEMENT. TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE
+COPYRIGHT HOLDERS ARE NOT LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY
+ARISING FROM THE SOFTWARE OR ITS USE.
+
+Appendix A. ASAM-original documentation and SFC example use
+
+A.1. Scope and separation
+
+This appendix applies only to ASAM-original documentation text, ASAM-original
+API documentation and metadata, and ASAM-original portions of SFC examples
+included in the @asam-ui/mcp documentation snapshot or returned by its tools
+(the "ASAM Documentation Materials"). It grants permission only with respect
+to rights held by ASAM UI contributors. A public URL, the absence of a notice,
+or inclusion in a query result is not a representation that all material is
+ASAM-original.
+
+The Software defined in section 1 (the MCP implementation) is not an SFC
+example under this appendix. Source code of the underlying ASAM component
+packages, dependencies, and third-party material are not ASAM Documentation
+Materials merely because a document or example references them.
+
+A.2. Documentation and API queries
+
+You may download, retain, read, and query the ASAM Documentation Materials,
+including through an agent or development tool, for developing, integrating,
+using, maintaining, and verifying your websites or business applications,
+including commercial applications. You may copy relevant ASAM-original
+documentation and API excerpts into your application development context or
+internal application documentation for those purposes. These permissions do
+not authorize distributing the documentation snapshot, an API catalogue, or
+a documentation collection as a separately usable product.
+
+A.3. ASAM-original SFC examples in applications
+
+You may copy and modify ASAM-original SFC example portions to integrate them
+into your own website or business application, including adapting component
+usage, composition, event handlers, styles, and application data. You may
+publish, host, and distribute those portions, as modified, as an integrated
+part of your application in source or compiled form. You may charge for the
+application, but not for those examples as a separately usable component,
+example pack, template, library, or documentation product. Preserve applicable
+copyright and attribution notices included with the portions you retain or
+distribute.
+
+A.4. Limited exception; implementation restrictions remain
+
+The permission to modify material in A.3 is limited to ASAM-original SFC
+example portions. It does not permit editing the MCP implementation, editing
+an underlying ASAM component package, or creating a separately distributed
+derivative, fork, or repackaging of the MCP implementation. The Software
+remains subject to sections 1 through 6, including section 3 restrictions on
+standalone sale, sublicensing, repackaging, redistribution, and registry
+republication. Copying or modifying an example does not authorize republishing
+@asam-ui/mcp or another ASAM package.
+
+A.5. Third-party material, existing packages, and notices
+
+Third-party documentation, API definitions, example portions, and dependencies,
+including material identified by upstream source or license notices, remain
+subject to their own licenses and notice requirements. This appendix does not
+claim ownership of, grant additional rights to, restrict rights granted by,
+or replace the licenses of those third parties. Retain and comply with the
+applicable source notices and license texts accompanying them.
+
+The licenses of @asam-ui/ui, @asam-ui/ui-yudao, @asam-ui/icons-vue, and other
+separately licensed packages remain unchanged. Their implementation code is
+not covered by the example-copying and modification permission in A.3. The
+ownership, trademark, warranty, and liability provisions in sections 5 and 6
+also apply to the ASAM Documentation Materials, with references to Software
+in those provisions read as including the ASAM Documentation Materials.

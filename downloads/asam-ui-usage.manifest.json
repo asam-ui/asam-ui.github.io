@@ -1,8 +1,8 @@
 {
-  "sourceCommit": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+  "sourceCommit": "1ae352ba18ffd6198d47e1a55430b9080de0c2eb",
   "packageVersion": "0.1.0-alpha.1",
   "archive": "asam-ui-usage.tgz",
-  "sha256": "9d011a7277b68bdb8d72006e7a5c5e80900c1cc349411c8b1947e2830b500ee7",
+  "sha256": "b59a00254be77d898c7f12a052327c96f72315c89756d3108f2e55cfcbeb164c",
   "files": [
     {
       "path": "asam-ui-usage/SKILL.md",
@@ -26,11 +26,11 @@
     },
     {
       "path": "asam-ui-usage/references/package-contract.json",
-      "sha256": "55e842c3cca32e4be78a4744a0b80651caa30dc9a04c38ab778607452bbc2183"
+      "sha256": "19e67837c7fad1fd9cd722f192641c3e3febab62829878b7a73acd7e3e7b9574"
     },
     {
       "path": "asam-ui-usage/references/resources.md",
-      "sha256": "d26872323f3e9417d810cb12d05ab3ef0d6e863d39c67309c179bfb4c54961b1"
+      "sha256": "aa7c32be814aa5d57f6cf25b92458f46d19f6e47d2efd3d1726c40120c8ea4d3"
     },
     {
       "path": "asam-ui-usage/scripts/inspect-contract.mjs",

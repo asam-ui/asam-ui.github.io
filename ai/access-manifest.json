@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "status": "PREPARED_PUBLIC_DELTA_NOT_DEPLOYED",
+  "source": "88ccef1dd91d01c065c124a01d99a1dca1c657ca",
+  "acceptedSource": "7d11052e70675e2d7cb204834035ce1aea722052",
+  "website": "https://asam-ui.github.io/",
+  "publicRepository": "asam-ui/asam-ui.github.io",
+  "expectedPublicBaseRef": "3f62ff357aed87cc7183811ec9fe097964cd82e2",
+  "componentVersion": "0.1.0-alpha.1",
+  "componentProductSource": "4110356ba3d9cb669de5c4d9d22ab72f7d1d6a4a",
+  "unchangedApiSfcSource": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
+  "skillSource": "1ae352ba18ffd6198d47e1a55430b9080de0c2eb",
+  "skillArchiveSHA256": "b59a00254be77d898c7f12a052327c96f72315c89756d3108f2e55cfcbeb164c",
+  "mcpPublished": false,
+  "files": [
+    {
+      "path": "ai/index.html",
+      "bytes": 11147,
+      "sha256": "e671be15230831b6f3fa2d6bbff0c57a0000e9e6a0278b30c4a70445c4097e28",
+      "source": "apps/website/pages/ai/index.md"
+    },
+    {
+      "path": "ai/skill.html",
+      "bytes": 14584,
+      "sha256": "2b9e1ccd53ed73ac1ad2e50dfbab142c244532d3212116e6e35c01781b3ccd0f",
+      "source": "apps/website/pages/ai/skill.md"
+    },
+    {
+      "path": "ai/mcp.html",
+      "bytes": 13807,
+      "sha256": "15143babbdf9ec2f3eee8450aed0052ed16a197ade0de9dd6a5d3d4bee469224",
+      "source": "apps/website/pages/ai/mcp.md"
+    },
+    {
+      "path": "skills/asam-ui-usage/SKILL.md",
+      "bytes": 3570,
+      "sha256": "53f249ffcafb989dd2cbffb462c5dfc223778b3f602617b619ae4d28aac21a23",
+      "source": "accepted-skill:asam-ui-usage/SKILL.md"
+    },
+    {
+      "path": "skills/asam-ui-usage/references/api-pairing.md",
+      "bytes": 2858,
+      "sha256": "305584548aad5043646eba4ae8d0f6bbb441e319171a955369a091cfd4675d14",
+      "source": "accepted-skill:asam-ui-usage/references/api-pairing.md"
+    },
+    {
+      "path": "skills/asam-ui-usage/references/imports.md",
+      "bytes": 4406,
+      "sha256": "0ec6310ac64f285a73a0dc64c9a57ec1f8965dcec1822ff819cf96096d3bf4e1",
+      "source": "accepted-skill:asam-ui-usage/references/imports.md"
+    },
+    {
+      "path": "skills/asam-ui-usage/references/integration.md",
+      "bytes": 4447,
+      "sha256": "1ea095b4ea22d285f413abc26f1f2a5578565d92dd174c4b3201a408f13b49de",
+      "source": "accepted-skill:asam-ui-usage/references/integration.md"
+    },
+    {
+      "path": "skills/asam-ui-usage/references/migration.md",
+      "bytes": 5788,
+      "sha256": "5ba257aab602a7fabf50c4431c9567b84e8f3b68c5a19008cb6427fc38c492ff",
+      "source": "accepted-skill:asam-ui-usage/references/migration.md"
+    },
+    {
+      "path": "skills/asam-ui-usage/references/package-contract.json",
+      "bytes": 787123,
+      "sha256": "19e67837c7fad1fd9cd722f192641c3e3febab62829878b7a73acd7e3e7b9574",
+      "source": "accepted-skill:asam-ui-usage/references/package-contract.json"
+    },
+    {
+      "path": "skills/asam-ui-usage/references/resources.md",
+      "bytes": 3145,
+      "sha256": "aa7c32be814aa5d57f6cf25b92458f46d19f6e47d2efd3d1726c40120c8ea4d3",
+      "source": "accepted-skill:asam-ui-usage/references/resources.md"
+    },
+    {
+      "path": "skills/asam-ui-usage/scripts/inspect-contract.mjs",
+      "bytes": 5891,
+      "sha256": "07c9621a10818cc98a8c6526148e46ab9f2dcf0106ecb28ff0008ad8c49b5369",
+      "source": "accepted-skill:asam-ui-usage/scripts/inspect-contract.mjs"
+    },
+    {
+      "path": "skills/asam-ui-usage/scripts/inspect-project.mjs",
+      "bytes": 3314,
+      "sha256": "aebb66989267b7af04e6956ff20e5a569ea28d93805a404860462253a3cb0610",
+      "source": "accepted-skill:asam-ui-usage/scripts/inspect-project.mjs"
+    },
+    {
+      "path": "downloads/asam-ui-usage.tgz",
+      "bytes": 164564,
+      "sha256": "b59a00254be77d898c7f12a052327c96f72315c89756d3108f2e55cfcbeb164c",
+      "source": "accepted-Skill-b59a0025"
+    },
+    {
+      "path": "downloads/asam-ui-usage.manifest.json",
+      "bytes": 1722,
+      "sha256": "eb7fa29905d31aa9fbf891c67ea3afb25acf73aa9314ced05e4cd28134bac2e4",
+      "source": "accepted-Skill-manifest"
+    },
+    {
+      "path": "licenses/asam-ui-mcp.txt",
+      "bytes": 6907,
+      "sha256": "abb2ea987d278ab9b0689bf6a77a5609e32d8e8277804d00c2c429b5acd470ae",
+      "source": "approved-MCP-license-6907B"
+    }
+  ],
+  "applyPolicy": "Only these files and this access-manifest. Verify current public ref and paths before an authorized write; preserve all other public files, API/SFC corpus, component runtime assets and site content-manifest. Regenerate any site artifact index separately over the final complete public tree if its existing publishing workflow requires it. No private source or Storybook."
+}

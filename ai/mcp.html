@@ -7,17 +7,17 @@
 		<meta name="description" content="ASAM UI 开发者文档。Vue 3 组件、安装指南与设计系统。" />
 		<title>可选 MCP · ASAM UI</title>
 		<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-		<link rel="stylesheet" href="/assets/style.css?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9" />
+		<link rel="stylesheet" href="/assets/style.css" />
 		<script src="/assets/theme-init.js"></script>
 		<script src="/assets/vendor/gsap.min.js" defer></script>
 		<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 		<script src="/assets/catalog.js" defer></script>
-		<script src="/assets/app.js?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9" defer></script>
+		<script src="/assets/app.js" defer></script>
 		
-	<link rel="stylesheet" href="/assets/ai-guide.css" /><link rel="stylesheet" href="/assets/website-layout.css?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9"><script src="/assets/website-layout.js?v=d662bda7995f863c76ed4504f7d1b99bec86777e3abe169a87082b7808dc6dc9"></script></head>
+	<link rel="stylesheet" href="/assets/ai-guide.css" /></head>
 	<body data-page="ai">
 		<a class="skip-link" href="#main">跳到正文</a>
-		<header class="site-header" data-site-component="header">
+		<header class="site-header">
 			<div class="nav-shell">
 				<a class="brand" href="/index.html" aria-label="ASAM UI 首页"
 					><span class="brand-mark" aria-hidden="true">A<span></span></span
@@ -25,9 +25,9 @@
 				>
 				<nav class="primary-nav" aria-label="主导航">
 					<a href="/getting-started.html">开始使用</a
-					><a href="/component-catalog.html">组件</a><a href="/design-system.html">设计系统</a>
-				<a href="/ai/index.html" aria-current="page">AI</a></nav>
-				<div class="nav-actions"><button type="button" class="icon-button website-wide-toggle" aria-pressed="false" aria-label="开启宽屏模式" title="开启宽屏模式"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 4v16M16 4v16"/><path class="wide-expand" d="m11 10-2 2 2 2m2-4 2 2-2 2"/><path class="wide-contract" d="m9 10 2 2-2 2m6-4-2 2 2 2"/></svg></button>
+					><a href="/components.html">组件</a><a href="/design-system.html">设计系统</a>
+				</nav>
+				<div class="nav-actions">
 					<button
 						class="search-trigger"
 						type="button"
@@ -102,7 +102,7 @@
 							<path
 								d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
 							/></svg></span></a
-				><a href="/component-catalog.html"
+				><a href="/components.html"
 					>组件<span class="icon-wrap"
 						><svg
 							class="icon"
@@ -129,19 +129,60 @@
 								d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
 							/></svg></span
 				></a>
-			<a href="/ai/index.html" aria-current="page">AI</a><details class="mobile-section-nav"><summary>本页导航</summary><div class="docs-sidebar mobile-sidebar-content"><span class="sidebar-heading">文档导航</span><a href="/getting-started.html">开始使用</a><a href="/component-catalog.html">组件目录</a><a href="/design-system.html">设计系统</a><div class="sidebar-divider"></div><span class="sidebar-heading">AI</span><a href="/ai/index.html">AI 接入</a><a href="/ai/skill.html">Skill 安装</a><a href="/ai/agent.html">Agent 接入</a><a href="/ai/resources.html">组件资料</a><a href="/ai/mcp.html" class="selected" aria-current="page">可选 MCP</a></div></details><details class="mobile-section-nav"><summary>本页内容</summary><div class="mobile-page-toc"><span>本页内容</span><nav><a href="#已有工具时">已有工具时</a><a href="#没有工具时">没有工具时</a><a href="#数据边界">数据边界</a></nav></div></details></nav>
+			</nav>
 		</header>
 		
-		<div class="docs-layout wrap site-doc-layout" data-site-component="layout"><aside class="docs-sidebar" data-site-component="sidebar" aria-label="文档目录"><span class="sidebar-heading">文档导航</span><a href="/getting-started.html">开始使用</a><a href="/component-catalog.html">组件目录</a><a href="/design-system.html">设计系统</a><div class="sidebar-divider"></div><span class="sidebar-heading">AI</span><a href="/ai/index.html">AI 接入</a><a href="/ai/skill.html">Skill 安装</a><a href="/ai/agent.html">Agent 接入</a><a href="/ai/resources.html">组件资料</a><a href="/ai/mcp.html" class="selected" aria-current="page">可选 MCP</a></aside><article id="main" tabindex="-1" class="docs-content ai-content"><h1 id="可选-mcp" tabindex="-1">可选 MCP <a class="header-anchor" href="#可选-mcp" aria-label="Permalink to &quot;可选 MCP&quot;">&ZeroWidthSpace;</a></h1>
-<p>MCP 可帮助 Agent 查找组件文档和示例，但不是安装或使用 ASAM UI 的前置条件。</p>
-<h2 id="已有工具时" tabindex="-1">已有工具时 <a class="header-anchor" href="#已有工具时" aria-label="Permalink to &quot;已有工具时&quot;">&ZeroWidthSpace;</a></h2>
-<p>核对当前宿主实际提供的工具、访问权限和文档版本，再读取相关组件资料。返回的信息需要与安装包类型核对，不把旧版本文档当作当前契约。</p>
-<p>MCP 仅用于本机/内网已有服务的可选检索。公网官网独立提供完整组件文档、API 与同源 SFC，不包含 Storybook；不能把公网 Storybook 地址作为接入前提。</p>
-<h2 id="没有工具时" tabindex="-1">没有工具时 <a class="header-anchor" href="#没有工具时" aria-label="Permalink to &quot;没有工具时&quot;">&ZeroWidthSpace;</a></h2>
-<p>直接使用 <a href="/ai/resources.html">组件资料</a>、已安装的声明文件与同版本示例，继续安装、配置和验证。不要为一次组件接入新增 MCP 服务，也不要猜测工具名、地址或认证信息。</p>
-<h2 id="数据边界" tabindex="-1">数据边界 <a class="header-anchor" href="#数据边界" aria-label="Permalink to &quot;数据边界&quot;">&ZeroWidthSpace;</a></h2>
-<p>组件文档查询不需要业务凭据或真实数据。连接新服务或发送业务源码需遵守消费项目原有授权；此 Skill 不授予外发权限。工具返回成功不代替 typecheck、build 或真实渲染验证。</p>
-<footer class="ai-footer"><a href="/guide/installation.html">安装与消费 →</a><a href="/component-catalog.html">浏览组件 →</a></footer></article><aside class="page-toc" data-site-component="outline" aria-label="本页内容"><span>本页内容</span><nav><a href="#已有工具时">已有工具时</a><a href="#没有工具时">没有工具时</a><a href="#数据边界">数据边界</a></nav></aside></div>
+		<main id="main" class="docs-layout wrap ai-layout"><aside class="docs-sidebar" aria-label="AI 目录"><span class="sidebar-heading">AI</span><nav><a href="/ai/index.html">AI 接入</a><a href="/ai/skill.html">Skill 安装</a><a href="/ai/agent.html">Agent 接入</a><a href="/ai/resources.html">组件资料</a><a href="/ai/mcp.html" class="selected" aria-current="page">可选 MCP</a></nav></aside><article class="docs-content ai-content"><h1 id="文档查询-mcp" tabindex="-1">文档查询 MCP <a class="header-anchor" href="#文档查询-mcp" aria-label="Permalink to &quot;文档查询 MCP&quot;">&ZeroWidthSpace;</a></h1>
+<p><code>@asam-ui/mcp</code> 是独立 stdio 文档服务，提供组件目录、公开 API、完整 TS/JS SFC 和接入指南。
+不需要克隆私有主仓、启动 Storybook 或访问内网。MCP 与 Skill 可分别使用。</p>
+<p><strong>当前为待首发候选，尚未获得 npm 首次发布批准。下列公网配置在精确版本发布后生效。</strong>
+本地固定 tarball 的验证不代表 npm 公网安装已通过。</p>
+<h2 id="最小配置" tabindex="-1">最小配置 <a class="header-anchor" href="#最小配置" aria-label="Permalink to &quot;最小配置&quot;">&ZeroWidthSpace;</a></h2>
+<p>Node.js &gt;=22.19。在 VS Code 项目 <code>.vscode/mcp.json</code> 添加：</p>
+<div class="language-json vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-1" aria-label="复制代码">复制</button><span class="lang">json</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-1"><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">	"servers"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">		"asam-ui"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">			"type"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"stdio"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">			"command"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"npx"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">			"args"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"-y"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"@asam-ui/mcp@0.1.0-alpha.1"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p>在 VS Code MCP 服务列表启动并信任服务。Windows 找不到 <code>npx</code> 时使用 <code>npx.cmd</code>。
+其他宿主按自己的格式使用相同 command/args；VS Code 的 <code>servers</code> 与一些宿主的
+<code>mcpServers</code> 格式不同。<a href="https://code.visualstudio.com/docs/copilot/customization/mcp-servers" target="_blank" rel="noreferrer">VS Code 配置说明</a>。</p>
+<h2 id="验证一次查询" tabindex="-1">验证一次查询 <a class="header-anchor" href="#验证一次查询" aria-label="Permalink to &quot;验证一次查询&quot;">&ZeroWidthSpace;</a></h2>
+<p>让 Agent：“用 ASAM 文档工具查 AsamButton 的 size 类型，再取 basic 的 TS 示例，
+确认返回组件版本 0.1.0-alpha.1”。工具顺序：</p>
+<ol>
+<li><code>list_components</code>：查询 Button，得到精确公开名称。</li>
+<li><code>get_component_api</code>：component 为 AsamButton、section 为 props、member 为 size。</li>
+<li><code>get_component_example</code>：component 为 AsamButton、demo 为 basic、language 为 ts。</li>
+</ol>
+<p>返回组件版本、文档 sourceSha 和快照哈希；API 与示例应同源。
+API 支持分页；示例不传 demo 时列出可用示例，选择后返回完整文件及适用许可。
+<code>get_guide</code> 提供 installation、provider、theme、skill。</p>
+<h2 id="配对与更新" tabindex="-1">配对与更新 <a class="header-anchor" href="#配对与更新" aria-label="Permalink to &quot;配对与更新&quot;">&ZeroWidthSpace;</a></h2>
+<p>候选配对组件 0.1.0-alpha.1，产品来源 4110356ba3d9cb669de5c4d9d22ab72f7d1d6a4a，
+官网资料来源 abb44e4d0431ffaad22c5c09aa3a761c13c406e1。包内 <code>data/manifest.json</code>
+记录公开输入 URL、SHA256 与压缩快照哈希。运行时读取包内固定资料，不追随网站最新内容。
+更新时安装新的固定 MCP 版本；工具参数 version 与资料不符会明确报错。</p>
+<p>未知组件、示例、版本或非法参数返回错误。资料缺失/损坏时启动失败，诊断写 stderr。
+没有 MCP 时直接读 <a href="./resources.html">组件资料</a> 与安装包声明即可。</p>
+<details>
+<summary>维护与本地候选验证</summary>
+<p>维护者复用同源官网 API/示例/许可/指南，用产品源文件哈希校对组件版本，pnpm 自测打包。
+固定本地 tarball 可由 npx 启动；公网命令需发布后补验。
+首发审阅对象应列包名、version、tarball SHA256、tag、access、发布身份与失败处置。
+服务只查询公开资料，不提供业务数据、消费源码读取或代码写入工具。</p>
+<p>已覆盖固定 tarball 的 npx 启动，以及 Codex 原生 app-server MCP 层的工具发现、API 和
+完整 TS/JS 示例查询。模型自主调用流程仍因网络超时未完成；当前验证环境的 VS Code
+没有 Copilot 扩展，未完成真实发现/查询。以上 VS Code 配置依据宿主官方格式，未作为已测宿主声明。
+公网 npm 安装需首发后补验。</p>
+<p>本 MCP 的<a href="/licenses/asam-ui-mcp.txt">完整许可与自有资料/SFC 使用附录</a>已获批准；
+许可批准不等于首次 npm 发布批准。第三方内容及原组件包仍保留各自许可。</p>
+</details>
+<footer class="ai-footer"><a href="/guide/installation.html">安装与消费 →</a><a href="/component-catalog.html">浏览组件 →</a></footer></article></main>
 		<footer class="site-footer wrap">
 			<div>
 				<a class="footer-brand" href="/index.html">ASAM UI</a
