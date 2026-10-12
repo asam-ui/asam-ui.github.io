@@ -21,8 +21,8 @@
     },
     {
       "path": "ai/skill.html",
-      "bytes": 14584,
-      "sha256": "2b9e1ccd53ed73ac1ad2e50dfbab142c244532d3212116e6e35c01781b3ccd0f",
+      "bytes": 14582,
+      "sha256": "6995ba95d4f5c435abdb4ccff18d4f3cd65a2a912b85d945152bdcfbf8cd422c",
       "source": "apps/website/pages/ai/skill.md"
     },
     {
@@ -104,5 +104,14 @@
       "source": "approved-MCP-license-6907B"
     }
   ],
-  "applyPolicy": "Only these files and this access-manifest. Verify current public ref and paths before an authorized write; preserve all other public files, API/SFC corpus, component runtime assets and site content-manifest. Regenerate any site artifact index separately over the final complete public tree if its existing publishing workflow requires it. No private source or Storybook."
+  "applyPolicy": "Only these files and this access-manifest. Verify current public ref and paths before an authorized write; preserve all other public files, API/SFC corpus, component runtime assets and site content-manifest. Regenerate any site artifact index separately over the final complete public tree if its existing publishing workflow requires it. No private source or Storybook.",
+  "sourceCorrections": [
+    {
+      "source": "7b61ffb6c5c346a7a92de007c65a295e4c78638b",
+      "path": "ai/skill.html",
+      "reason": "Preserve raw SKILL.md href; VitePress rewrote Markdown link to absent SKILL.html",
+      "previousPublicRef": "cd3b866b689465a8571cdd78c5af287a9245766f",
+      "previousSHA256": "2b9e1ccd53ed73ac1ad2e50dfbab142c244532d3212116e6e35c01781b3ccd0f"
+    }
+  ]
 }

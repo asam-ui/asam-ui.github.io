@@ -64,8 +64,8 @@
     },
     {
       "path": "ai/skill.html",
-      "bytes": 14584,
-      "sha256": "2b9e1ccd53ed73ac1ad2e50dfbab142c244532d3212116e6e35c01781b3ccd0f"
+      "bytes": 14582,
+      "sha256": "6995ba95d4f5c435abdb4ccff18d4f3cd65a2a912b85d945152bdcfbf8cd422c"
     },
     {
       "path": "assets/ai-guide.css",
@@ -16209,8 +16209,8 @@
     },
     {
       "path": "ai/access-manifest.json",
-      "bytes": 4619,
-      "sha256": "6aa45f906e374b6eabeb304cb2b61ebcef232902dc0c109a9f4bded70b40d74d"
+      "bytes": 5014,
+      "sha256": "2c8bd0d4b7f1a007c62d913e097d85d16e67c6754b3e06fe344f340ff63dbbd4"
     },
     {
       "path": "licenses/asam-ui-mcp.txt",
@@ -16270,6 +16270,13 @@
     "skillArchiveSHA256": "b59a00254be77d898c7f12a052327c96f72315c89756d3108f2e55cfcbeb164c",
     "mcpPublished": false,
     "apiSfcSourceUnchanged": "abb44e4d0431ffaad22c5c09aa3a761c13c406e1",
-    "scope": "3 AI pages, standard usage Skill, download archive, approved license and access manifest"
+    "scope": "3 AI pages, standard usage Skill, download archive, approved license and access manifest",
+    "sourceCorrections": [
+      {
+        "source": "7b61ffb6c5c346a7a92de007c65a295e4c78638b",
+        "parentPublic": "cd3b866b689465a8571cdd78c5af287a9245766f",
+        "scope": "Raw SKILL.md anchor only plus affected access-manifest record"
+      }
+    ]
   }
 }
