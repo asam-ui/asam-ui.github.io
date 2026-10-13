@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSpace/cap-auto-wrapping/js/Demo.vue",
-			"sha256": "934af21c0e6e7f3ea0eef3b1249abd38e54ad47cc92c7f08e20942db58f60468",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807.txt\n-->\n<template>\n\t<AsamSpace wrap>\n\t\t<div v-for=\"i in 20\" :key=\"i\">\n\t\t\t<AsamButton type=\"primary\" text> 文字按钮 </AsamButton>\n\t\t</div>\n\t</AsamSpace>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamSpaceCapAutoWrappingDemo' });\nimport { AsamSpace, AsamButton } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "0fad0f60e8cd287e9d55a3e750fde8b025e2380bb6ea97aa24038fe2c3b09f33",
+			"sha256": "983e3a11f112b9806c7c59f0d7262bdfc6c32d1bb02ac65032c6cdc83fe05a86",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807.txt\n-->\n<template>\n\t<AsamSpace wrap>\n\t\t<div v-for=\"i in 20\" :key=\"i\">\n\t\t\t<AsamButton type=\"default\" text> 文字按钮 </AsamButton>\n\t\t</div>\n\t</AsamSpace>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamSpaceCapAutoWrappingDemo' });\nimport { AsamSpace, AsamButton } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "093ff2e0085697a1677500a849fcbc939694b6a205cdc14d7752d170e075c391",
 			"notice": {
 				"id": "00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807",
 				"url": "/licenses/source-notices/00b9302ea8ba337ce5bb9e217b3aa68c0fd1c5ef44e3eec33d0c98f8a50e9807.txt",

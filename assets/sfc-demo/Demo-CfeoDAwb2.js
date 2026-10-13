@@ -1,1 +1,0 @@
-import{C as e,Ct as t,H as n,S as r,it as i,v as a}from"./vue.esm-bundler-5NdF0u5k.js";import{t as o}from"./Index-BL9Q0qcw-DAqULSbs.js";import{t as s}from"./Index-FzXQ4_vV.js";var c={__name:`Demo`,setup(c){return(c,l)=>(n(),a(t(o),{title:`确定删除此项吗？`},{reference:i(()=>[e(t(s),{type:`primary`},{default:i(()=>[...l[0]||=[r(`删除`,-1)]]),_:1})]),_:1}))}};export{c as default};

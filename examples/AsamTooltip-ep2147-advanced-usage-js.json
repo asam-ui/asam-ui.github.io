@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTooltip/ep2147-advanced-usage/js/Demo.vue",
-			"sha256": "a42a831f76acb47aead0117adcdd495402d3e85265d5bff15cd4b8464edc7586",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb.txt\n-->\n<template>\n\t<AsamTooltip :disabled=\"disabled\" content=\"点击关闭文字提示\" placement=\"bottom\" effect=\"light\">\n\t\t<AsamButton type=\"primary\" @click=\"disabled = !disabled\">\n\t\t\t点击以 {{ disabled ? 'active' : 'close' }} 提示函数\n\t\t</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst disabled = ref(false);\n</script>\n",
-			"originalSourceSha256": "824c7da5ca2ac85ceb351f994a4667d70a6292bb8489f7eafa6c34994aea53c8",
+			"sha256": "3f97bbd5210e8064a1a0eaf31c7e2bbfd15237f0d9dc8f5fa5bcc5295bcd91d3",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb.txt\n-->\n<template>\n\t<AsamTooltip :disabled=\"disabled\" content=\"点击关闭文字提示\" placement=\"bottom\" effect=\"light\">\n\t\t<AsamButton type=\"default\" @click=\"disabled = !disabled\">\n\t\t\t点击以 {{ disabled ? '启用' : '关闭' }} 提示函数\n\t\t</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst disabled = ref(false);\n</script>\n",
+			"originalSourceSha256": "203d836c8cf9a29bdbf8341c2f7b231652fbfe40a5e584af2ad4ca6054e86cb0",
 			"notice": {
 				"id": "1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb",
 				"url": "/licenses/source-notices/1179c17f8bdce9e7bb1fa7d296b196188253b437cb63cec8dace41f795108bfb.txt",

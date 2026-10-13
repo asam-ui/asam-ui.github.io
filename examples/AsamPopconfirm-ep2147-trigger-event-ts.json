@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamPopconfirm/ep2147-trigger-event/ts/Demo.vue",
-			"sha256": "e1a04a59409fc0c1a66860a2d591360a6a92176c1964114ce1c310232e51e857",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-9c5973f097579087b2432a91bed04cd3bc067ef7a82744af79be1afa24691dc5.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/9c5973f097579087b2432a91bed04cd3bc067ef7a82744af79be1afa24691dc5.txt\n-->\n<template>\n\t<AsamPopconfirm\n\t\tconfirm-button-text=\"Yes\"\n\t\tcancel-button-text=\"No\"\n\t\t:icon=\"InfoFilled\"\n\t\ticon-color=\"#626AEF\"\n\t\ttitle=\"确定删除此项吗？\"\n\t\t@confirm=\"confirmEvent\"\n\t\t@cancel=\"cancelEvent\"\n\t>\n\t\t<template #reference>\n\t\t\t<AsamButton type=\"primary\">删除</AsamButton>\n\t\t</template>\n\t</AsamPopconfirm>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamPopconfirm } from '@asam-ui/ui';\n\nimport { InfoFilled } from '@asam-ui/icons-vue';\n\nconst confirmEvent = () => {\n\tconsole.log('confirm!');\n};\nconst cancelEvent = () => {\n\tconsole.log('cancel!');\n};\n</script>\n",
-			"originalSourceSha256": "dc42763efc8099d07fc09ebb4cefa10ee54a16dc28e9c3c3fe87e0979b8d0df6",
+			"sha256": "02eb27ad8521df4333008f4f57d11cfc8793d8a03894d3b093d5d8c19efdaca2",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-9c5973f097579087b2432a91bed04cd3bc067ef7a82744af79be1afa24691dc5.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/9c5973f097579087b2432a91bed04cd3bc067ef7a82744af79be1afa24691dc5.txt\n-->\n<template>\n\t<AsamPopconfirm\n\t\tconfirm-button-text=\"Yes\"\n\t\tcancel-button-text=\"No\"\n\t\t:icon=\"InfoFilled\"\n\t\ticon-color=\"#626AEF\"\n\t\ttitle=\"确定删除此项吗？\"\n\t\t@confirm=\"confirmEvent\"\n\t\t@cancel=\"cancelEvent\"\n\t>\n\t\t<template #reference>\n\t\t\t<AsamButton type=\"default\">删除</AsamButton>\n\t\t</template>\n\t</AsamPopconfirm>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamPopconfirm } from '@asam-ui/ui';\n\nimport { InfoFilled } from '@asam-ui/icons-vue';\n\nconst confirmEvent = () => {\n\tconsole.log('confirm!');\n};\nconst cancelEvent = () => {\n\tconsole.log('cancel!');\n};\n</script>\n",
+			"originalSourceSha256": "345c2837122706285d6c114dd6cd1d3891cde21f18117c045ee36c9e669658d7",
 			"notice": {
 				"id": "9c5973f097579087b2432a91bed04cd3bc067ef7a82744af79be1afa24691dc5",
 				"url": "/licenses/source-notices/9c5973f097579087b2432a91bed04cd3bc067ef7a82744af79be1afa24691dc5.txt",

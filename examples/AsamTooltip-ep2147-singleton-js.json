@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTooltip/ep2147-singleton/js/Demo.vue",
-			"sha256": "64738f69d89119fcf23d0b53fafde3bad98c653d173f21d1f448676c08594390",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bf259e6da208760412b485d8e15ca10ae47180c627cb6bf33aad34c8d4a8c295.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bf259e6da208760412b485d8e15ca10ae47180c627cb6bf33aad34c8d4a8c295.txt\n-->\n<template>\n\t<div>\n\t\t<span v-for=\"i in 3\" :key=\"i\" @mouseover=\"setReference\"\n\t\t\t><AsamButton type=\"primary\" @click=\"visible = !visible\">点击打开提示</AsamButton></span\n\t\t>\n\t</div>\n\n\t<AsamTooltip\n\t\tref=\"tooltipRef\"\n\t\t:visible=\"visible\"\n\t\t:popper-options=\"{\n\t\t\tmodifiers: [\n\t\t\t\t{\n\t\t\t\t\tname: 'computeStyles',\n\t\t\t\t\toptions: {\n\t\t\t\t\t\tadaptive: false,\n\t\t\t\t\t\tenabled: false\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t]\n\t\t}\"\n\t\t:virtual-ref=\"buttonRef\"\n\t\tvirtual-triggering\n\t\tpopper-class=\"singleton-tooltip\"\n\t>\n\t\t<template #content>\n\t\t\t<span> 示例内容 </span>\n\t\t</template>\n\t</AsamTooltip>\n</template>\n\n<script setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst buttonRef = ref();\nconst tooltipRef = ref();\nconst visible = ref(false);\nconst setReference = (event) => {\n\tbuttonRef.value = event.currentTarget instanceof HTMLElement ? event.currentTarget : undefined;\n};\n</script>\n\n<style>\n.singleton-tooltip {\n\ttransition: transform 0.3s var(--el-transition-function-fast-bezier);\n}\n</style>\n",
-			"originalSourceSha256": "49edad5500aaeb5f7cf241cd64d8758ff651dc9117dad6c362d0c61677513ee4",
+			"sha256": "fa6e0abc5c7a3dc9ebc9d80efad5eeb5c0aebef21a2a72f6e3d22c36ab7e7d9c",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bf259e6da208760412b485d8e15ca10ae47180c627cb6bf33aad34c8d4a8c295.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bf259e6da208760412b485d8e15ca10ae47180c627cb6bf33aad34c8d4a8c295.txt\n-->\n<template>\n\t<div>\n\t\t<span v-for=\"i in 3\" :key=\"i\" @mouseover=\"setReference\"\n\t\t\t><AsamButton type=\"default\" @click=\"visible = !visible\">点击打开提示</AsamButton></span\n\t\t>\n\t</div>\n\n\t<AsamTooltip\n\t\tref=\"tooltipRef\"\n\t\t:visible=\"visible\"\n\t\t:popper-options=\"{\n\t\t\tmodifiers: [\n\t\t\t\t{\n\t\t\t\t\tname: 'computeStyles',\n\t\t\t\t\toptions: {\n\t\t\t\t\t\tadaptive: false,\n\t\t\t\t\t\tenabled: false\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t]\n\t\t}\"\n\t\t:virtual-ref=\"buttonRef\"\n\t\tvirtual-triggering\n\t\tpopper-class=\"singleton-tooltip\"\n\t>\n\t\t<template #content>\n\t\t\t<span> 示例内容 </span>\n\t\t</template>\n\t</AsamTooltip>\n</template>\n\n<script setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst buttonRef = ref();\nconst tooltipRef = ref();\nconst visible = ref(false);\nconst setReference = (event) => {\n\tbuttonRef.value = event.currentTarget instanceof HTMLElement ? event.currentTarget : undefined;\n};\n</script>\n\n<style>\n.singleton-tooltip {\n\ttransition: transform 0.3s var(--el-transition-function-fast-bezier);\n}\n</style>\n",
+			"originalSourceSha256": "3b98b9538fbbcac8f3f14f4b924fa9cbb7ab4b62a0907719d2c81460a7a57942",
 			"notice": {
 				"id": "bf259e6da208760412b485d8e15ca10ae47180c627cb6bf33aad34c8d4a8c295",
 				"url": "/licenses/source-notices/bf259e6da208760412b485d8e15ca10ae47180c627cb6bf33aad34c8d4a8c295.txt",

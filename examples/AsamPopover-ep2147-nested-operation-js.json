@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamPopover/ep2147-nested-operation/js/Demo.vue",
-			"sha256": "2bc18d66c11810b5d4ff3b792452f66c1eb43dc1c1cafb8f58b82af9430f4059",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-33aabaf7ea384883ad0f918879af68eaf8e1365ab320c84af0aea2267e7c4b4e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/33aabaf7ea384883ad0f918879af68eaf8e1365ab320c84af0aea2267e7c4b4e.txt\n-->\n<template>\n\t<AsamPopover :visible=\"visible\" placement=\"top\" :width=\"180\">\n\t\t<p>确定删除此项吗？</p>\n\t\t<div style=\"text-align: right; margin: 0\">\n\t\t\t<AsamButton type=\"primary\" size=\"small\" text @click=\"visible = false\">取消</AsamButton>\n\t\t\t<AsamButton size=\"small\" type=\"primary\" @click=\"visible = false\"> 确认 </AsamButton>\n\t\t</div>\n\t\t<template #reference>\n\t\t\t<AsamButton type=\"primary\" @click=\"visible = true\">删除</AsamButton>\n\t\t</template>\n\t</AsamPopover>\n</template>\n\n<script setup>\nimport { AsamButton, AsamPopover } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst visible = ref(false);\n</script>\n",
-			"originalSourceSha256": "309ae4cccbd2b8c08f0cf1fc57e2b855e4fbb1e69f4fd1685e350750cfc77e3f",
+			"sha256": "29edd07264517e81f3bfb57336cc3be6895a13f43ef600aa8feb37f58f280579",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-33aabaf7ea384883ad0f918879af68eaf8e1365ab320c84af0aea2267e7c4b4e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/33aabaf7ea384883ad0f918879af68eaf8e1365ab320c84af0aea2267e7c4b4e.txt\n-->\n<template>\n\t<AsamPopover :visible=\"visible\" placement=\"top\" :width=\"180\">\n\t\t<p>确定删除此项吗？</p>\n\t\t<div style=\"text-align: right; margin: 0\">\n\t\t\t<AsamButton type=\"default\" size=\"small\" text @click=\"visible = false\">取消</AsamButton>\n\t\t\t<AsamButton size=\"small\" type=\"default\" @click=\"visible = false\"> 确认 </AsamButton>\n\t\t</div>\n\t\t<template #reference>\n\t\t\t<AsamButton type=\"default\" @click=\"visible = true\">删除</AsamButton>\n\t\t</template>\n\t</AsamPopover>\n</template>\n\n<script setup>\nimport { AsamButton, AsamPopover } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst visible = ref(false);\n</script>\n",
+			"originalSourceSha256": "eb0bf8e6cff82d9364a190d4d52f38e930954433b5d6f06f0167790bd1829c67",
 			"notice": {
 				"id": "33aabaf7ea384883ad0f918879af68eaf8e1365ab320c84af0aea2267e7c4b4e",
 				"url": "/licenses/source-notices/33aabaf7ea384883ad0f918879af68eaf8e1365ab320c84af0aea2267e7c4b4e.txt",

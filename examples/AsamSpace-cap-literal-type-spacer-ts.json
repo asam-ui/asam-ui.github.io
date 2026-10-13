@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSpace/cap-literal-type-spacer/ts/Demo.vue",
-			"sha256": "6788050299b7743acc617c6b4e69aab43b10fc122e3419b4cce78c9dbe67a3b2",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-976e928556794712e6471c4641bab1260119e2a0ab2dd3281f632627418b9cba.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/976e928556794712e6471c4641bab1260119e2a0ab2dd3281f632627418b9cba.txt\n-->\n<template>\n\t<AsamSpace :size=\"size\" spacer=\"|\">\n\t\t<div v-for=\"i in 2\" :key=\"i\">\n\t\t\t<AsamButton type=\"primary\"> 按钮 {{ i }} </AsamButton>\n\t\t</div>\n\t</AsamSpace>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamSpaceCapLiteralTypeSpacerDemo' });\nimport { AsamSpace, AsamButton } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst size = ref(10);\n</script>\n",
-			"originalSourceSha256": "94b9b7ea14d3e03ef7d7b91674efd8d3585e7749378f67c5bc19060ba0a4eb35",
+			"sha256": "cdf8d26a3b171b3d79249d8a169a4ac2d35c35f110c4a67f03c36630583c738d",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-976e928556794712e6471c4641bab1260119e2a0ab2dd3281f632627418b9cba.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/976e928556794712e6471c4641bab1260119e2a0ab2dd3281f632627418b9cba.txt\n-->\n<template>\n\t<AsamSpace :size=\"size\" spacer=\"|\">\n\t\t<div v-for=\"i in 2\" :key=\"i\">\n\t\t\t<AsamButton type=\"default\"> 按钮 {{ i }} </AsamButton>\n\t\t</div>\n\t</AsamSpace>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamSpaceCapLiteralTypeSpacerDemo' });\nimport { AsamSpace, AsamButton } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst size = ref(10);\n</script>\n",
+			"originalSourceSha256": "d765402b8e08fd5c3daba350e09bb50c94e1036c4f27099fdf9c11bd6bec463f",
 			"notice": {
 				"id": "976e928556794712e6471c4641bab1260119e2a0ab2dd3281f632627418b9cba",
 				"url": "/licenses/source-notices/976e928556794712e6471c4641bab1260119e2a0ab2dd3281f632627418b9cba.txt",

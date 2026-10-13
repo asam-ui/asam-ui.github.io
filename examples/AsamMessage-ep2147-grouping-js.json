@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamMessage/ep2147-grouping/js/Demo.vue",
-			"sha256": "2755089eff84cb07af5d2e014dde8b349373ee18b98550b465364a5355d189d7",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f865c23c6c2926d9997c885298f4efe660b407cf237e5faebc88f61f0b4869e9.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f865c23c6c2926d9997c885298f4efe660b407cf237e5faebc88f61f0b4869e9.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" :plain=\"true\" @click=\"open\">显示消息</AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamMessage } from '@asam-ui/ui';\nimport { onBeforeUnmount } from 'vue';\nconst open = () => {\n\ttrackAsamMessage(\n\t\tAsamMessage({\n\t\t\tmessage: '这是一条消息。',\n\t\t\tgrouping: true,\n\t\t\ttype: 'success'\n\t\t})\n\t);\n};\nconst ownedAsamMessage = new Set();\nlet mountedAsamMessage = true;\nconst trackAsamMessage = (handle) => {\n\tif (mountedAsamMessage) ownedAsamMessage.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamMessage = false;\n\tfor (const handle of ownedAsamMessage) handle.close();\n\townedAsamMessage.clear();\n});\n</script>\n",
-			"originalSourceSha256": "c121f0f23bf04ff27fb0b547637c16a05ee1fbf625c3404609a62599fb25662d",
+			"sha256": "91ae6154a31fafef8aa0e96b9fbe66de1866c47775aa5a43357658b7e3650545",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f865c23c6c2926d9997c885298f4efe660b407cf237e5faebc88f61f0b4869e9.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f865c23c6c2926d9997c885298f4efe660b407cf237e5faebc88f61f0b4869e9.txt\n-->\n<template>\n\t<AsamButton type=\"default\" :plain=\"true\" @click=\"open\">显示消息</AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamMessage } from '@asam-ui/ui';\nimport { onBeforeUnmount } from 'vue';\nconst open = () => {\n\ttrackAsamMessage(\n\t\tAsamMessage({\n\t\t\tmessage: '这是一条消息。',\n\t\t\tgrouping: true,\n\t\t\ttype: 'success'\n\t\t})\n\t);\n};\nconst ownedAsamMessage = new Set();\nlet mountedAsamMessage = true;\nconst trackAsamMessage = (handle) => {\n\tif (mountedAsamMessage) ownedAsamMessage.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamMessage = false;\n\tfor (const handle of ownedAsamMessage) handle.close();\n\townedAsamMessage.clear();\n});\n</script>\n",
+			"originalSourceSha256": "f4711c63b6794f5a532a4386f1b628e8a3d4e48e7c033d372198c1a41c57ae3a",
 			"notice": {
 				"id": "f865c23c6c2926d9997c885298f4efe660b407cf237e5faebc88f61f0b4869e9",
 				"url": "/licenses/source-notices/f865c23c6c2926d9997c885298f4efe660b407cf237e5faebc88f61f0b4869e9.txt",

@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamBadge/cap-offset/js/Demo.vue",
-			"sha256": "53761eed81b486cf16f391ce6ee0a8eca77b669cbd9013a691a1a70bfa4528ef",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778.txt\n-->\n<template>\n\t<AsamBadge class=\"item\" :value=\"1\" :offset=\"[10, 5]\">\n\t\t<AsamButton type=\"primary\"> offset</AsamButton>\n\t</AsamBadge>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamBadgeCapOffsetDemo' });\nimport { AsamBadge, AsamButton } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.item {\n\tmargin-top: 10px;\n\tmargin-right: 30px;\n}\n</style>\n",
-			"originalSourceSha256": "0f478b8938c37bd20d5e93fbe5843e6522f30c78e27717167356094a162b9bf9",
+			"sha256": "6a8b0896103985e687710d07e7e42e60e78444153b027d2fb68268df16c9d14e",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778.txt\n-->\n<template>\n\t<AsamBadge class=\"item\" :value=\"1\" :offset=\"[10, 5]\">\n\t\t<AsamButton type=\"default\">偏移量（offset）</AsamButton>\n\t</AsamBadge>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamBadgeCapOffsetDemo' });\nimport { AsamBadge, AsamButton } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.item {\n\tmargin-top: 10px;\n\tmargin-right: 30px;\n}\n</style>\n",
+			"originalSourceSha256": "dd06f9ec28675bd99341d123a1cad83bd6b532244eee0e38439523bb4489dec6",
 			"notice": {
 				"id": "4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778",
 				"url": "/licenses/source-notices/4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778.txt",

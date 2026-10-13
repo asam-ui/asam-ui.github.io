@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTooltip/ep2147-controlled/ts/Demo.vue",
-			"sha256": "1b351632691a5fbba682211237992af16534b507df5259e3bb301dd23835c4a3",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d.txt\n-->\n<template>\n\t<AsamTooltip :visible=\"visible\">\n\t\t<template #content>\n\t\t\t<span>内容</span>\n\t\t</template>\n\t\t<span @mouseenter=\"visible = true\" @mouseleave=\"visible = false\"\n\t\t\t><AsamButton type=\"primary\"> 悬停查看 </AsamButton></span\n\t\t>\n\t</AsamTooltip>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst visible = ref(false);\n</script>\n",
-			"originalSourceSha256": "92437e98305491fb04f2fbd35e106796e13cca3b1c3948139701ce5c1251774a",
+			"sha256": "586f005014e7e701ce0a64a9f553d1d55f0870e5e6757aa5b78e1bb2ee912215",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d.txt\n-->\n<template>\n\t<AsamTooltip :visible=\"visible\">\n\t\t<template #content>\n\t\t\t<span>内容</span>\n\t\t</template>\n\t\t<span @mouseenter=\"visible = true\" @mouseleave=\"visible = false\"\n\t\t\t><AsamButton type=\"default\"> 悬停查看 </AsamButton></span\n\t\t>\n\t</AsamTooltip>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst visible = ref(false);\n</script>\n",
+			"originalSourceSha256": "b51aeecd25fb68c9e98bedf12f31aebf7bc6fddcc442275b4d7fe18011e08175",
 			"notice": {
 				"id": "950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d",
 				"url": "/licenses/source-notices/950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d.txt",

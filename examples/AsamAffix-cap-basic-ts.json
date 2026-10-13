@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamAffix/cap-basic/ts/Demo.vue",
-			"sha256": "1c84c6c3a853ee81f5d6a3fff7a9afcf81bfd064a13a7f4a56df08304738cd18",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4.txt\n-->\n<template>\n\t<AsamAffix :offset=\"120\">\n\t\t<AsamButton type=\"primary\">顶部偏移 120px</AsamButton>\n\t</AsamAffix>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamAffixCapBasicDemo' });\nimport { AsamAffix, AsamButton } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "41630f078b8e739fb68a30bd9e6bc7fea2095611fb999a1a9ad390e6e7f47266",
+			"sha256": "161ff6ff3c6ac40ed053aa5d46c2acacfcbf548e5d8caabcdb557f22e3e5d3dc",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4.txt\n-->\n<template>\n\t<AsamAffix :offset=\"120\">\n\t\t<AsamButton type=\"default\">顶部偏移 120px</AsamButton>\n\t</AsamAffix>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamAffixCapBasicDemo' });\nimport { AsamAffix, AsamButton } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "bb889d382609f2524132cff56cdf2e7cb46d2eba668f172ebab1c4105e053ef1",
 			"notice": {
 				"id": "77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4",
 				"url": "/licenses/source-notices/77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4.txt",

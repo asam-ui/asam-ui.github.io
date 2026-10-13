@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDialog/ep2147-basic-usage/ts/Demo.vue",
-			"sha256": "576744e9a9134815606f701078a88daadde4126604ace48242af6a0e768dc484",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ee1ec316b17ef0c7e7e7a86a05f3b68e1af77b855a4ed03497c899355456d7ef.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ee1ec316b17ef0c7e7e7a86a05f3b68e1af77b855a4ed03497c899355456d7ef.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" plain @click=\"dialogVisible = true\"> 点击打开对话框 </AsamButton>\n\n\t<AsamDialog v-model=\"dialogVisible\" title=\"提示\" width=\"500\" :before-close=\"handleClose\">\n\t\t<span>这是一条消息。</span>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton type=\"primary\" @click=\"dialogVisible = false\">取消</AsamButton>\n\t\t\t\t<AsamButton type=\"primary\" @click=\"dialogVisible = false\"> 确认 </AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDialog, AsamMessageBox } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst dialogVisible = ref(false);\n\nconst handleClose = (done: () => void) => {\n\tAsamMessageBox.confirm('确定关闭当前对话框吗？')\n\t\t.then(() => {\n\t\t\tdone();\n\t\t})\n\t\t.catch(() => {\n\t\t\t// catch error\n\t\t});\n};\n</script>\n",
-			"originalSourceSha256": "4946151f081658884f3948637c118b307295ca4bad7a7d957efe80e43af0ee38",
+			"sha256": "1fa86f7e11a6170f9d253807bf48f5a13ebfd809bb6b405b34df0e85693a8f2a",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ee1ec316b17ef0c7e7e7a86a05f3b68e1af77b855a4ed03497c899355456d7ef.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ee1ec316b17ef0c7e7e7a86a05f3b68e1af77b855a4ed03497c899355456d7ef.txt\n-->\n<template>\n\t<AsamButton type=\"default\" plain @click=\"dialogVisible = true\"> 点击打开对话框 </AsamButton>\n\n\t<AsamDialog v-model=\"dialogVisible\" title=\"提示\" width=\"500\" :before-close=\"handleClose\">\n\t\t<span>这是一条消息。</span>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton type=\"default\" @click=\"dialogVisible = false\">取消</AsamButton>\n\t\t\t\t<AsamButton type=\"default\" @click=\"dialogVisible = false\"> 确认 </AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDialog, AsamMessageBox } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst dialogVisible = ref(false);\n\nconst handleClose = (done: () => void) => {\n\tAsamMessageBox.confirm('确定关闭当前对话框吗？')\n\t\t.then(() => {\n\t\t\tdone();\n\t\t})\n\t\t.catch(() => {\n\t\t\t// catch error\n\t\t});\n};\n</script>\n",
+			"originalSourceSha256": "19d1cc74a35a34a4d9799bac0753bdd5185920cfe245648d8890f2701c029120",
 			"notice": {
 				"id": "ee1ec316b17ef0c7e7e7a86a05f3b68e1af77b855a4ed03497c899355456d7ef",
 				"url": "/licenses/source-notices/ee1ec316b17ef0c7e7e7a86a05f3b68e1af77b855a4ed03497c899355456d7ef.txt",

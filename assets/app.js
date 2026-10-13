@@ -46,7 +46,7 @@
 	function reflectTheme() {
 		const dark = document.documentElement.dataset.theme === 'dark';
 		const heroImage = $('.hero-art img');
-		if (heroImage) heroImage.src = dark ? 'assets/hero-dark.webp' : 'assets/hero.webp';
+		if (heroImage && !heroImage.classList.contains('brand-image')) heroImage.src = dark ? 'assets/hero-dark.webp' : 'assets/hero.webp';
 		themeToggle.setAttribute('aria-label', dark ? '切换为浅色显示' : '切换为深色显示');
 		themeToggle.setAttribute('aria-pressed', String(dark));
 	}

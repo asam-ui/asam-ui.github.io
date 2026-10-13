@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamAffix/cap-target/js/Demo.vue",
-			"sha256": "f02c09d156e32030ff61a5c9abae704b1b4ce2a4ac23bc374f46b1c706657a92",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-7ed55121a57f39df175f33be813256f1f3d97160a94980bd2000df7f53ca0473.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/7ed55121a57f39df175f33be813256f1f3d97160a94980bd2000df7f53ca0473.txt\n-->\n<template>\n\t<div class=\"affix-container\">\n\t\t<AsamAffix target=\".affix-container\" :offset=\"80\">\n\t\t\t<AsamButton type=\"primary\">目标容器</AsamButton>\n\t\t</AsamAffix>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamAffixCapTargetDemo' });\nimport { AsamAffix, AsamButton } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.affix-container {\n\ttext-align: center;\n\theight: 400px;\n\tborder-radius: 4px;\n\tbackground: var(--el-color-primary-light-9);\n}\n</style>\n",
-			"originalSourceSha256": "a3be15ee7e03f073318b136b5b6229cb4dbda26e9aeba87bef50f5bd4a4bd950",
+			"sha256": "d1bef31afbc350c95c8f80b047d464771d2c5148159df13caead49f4656ba362",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-7ed55121a57f39df175f33be813256f1f3d97160a94980bd2000df7f53ca0473.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/7ed55121a57f39df175f33be813256f1f3d97160a94980bd2000df7f53ca0473.txt\n-->\n<template>\n\t<div class=\"affix-container\">\n\t\t<AsamAffix target=\".affix-container\" :offset=\"80\">\n\t\t\t<AsamButton type=\"default\">目标容器</AsamButton>\n\t\t</AsamAffix>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamAffixCapTargetDemo' });\nimport { AsamAffix, AsamButton } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.affix-container {\n\ttext-align: center;\n\theight: 400px;\n\tborder-radius: 4px;\n\tbackground: var(--el-color-primary-light-9);\n}\n</style>\n",
+			"originalSourceSha256": "b5b0c5baba379fbac1cd015e7c54fa761601473047272438b1278d5d14c2e1c1",
 			"notice": {
 				"id": "7ed55121a57f39df175f33be813256f1f3d97160a94980bd2000df7f53ca0473",
 				"url": "/licenses/source-notices/7ed55121a57f39df175f33be813256f1f3d97160a94980bd2000df7f53ca0473.txt",

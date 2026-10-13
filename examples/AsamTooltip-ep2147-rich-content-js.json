@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTooltip/ep2147-rich-content/js/Demo.vue",
-			"sha256": "813668c331dcfca26f067e7228aa67588f31fd0a16f2a92f5205bea45e4fa48a",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ed72f7ff04f38f8703f69b7d3e2843a89f3dc197074e7d1470a34719bf76feda.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ed72f7ff04f38f8703f69b7d3e2843a89f3dc197074e7d1470a34719bf76feda.txt\n-->\n<template>\n\t<AsamTooltip placement=\"top\">\n\t\t<template #content> 多行文字<br />第二行 </template>\n\t\t<AsamButton type=\"primary\">顶部居中</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "a403a8ad36f054dda29fc6b496bec076a8061a9f925b2693799b5a2cc66f3c84",
+			"sha256": "9e0734eb0d53076a69f1c2fd1b3e1f0951a3c966fd002bd55adb30f6dce3e359",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ed72f7ff04f38f8703f69b7d3e2843a89f3dc197074e7d1470a34719bf76feda.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ed72f7ff04f38f8703f69b7d3e2843a89f3dc197074e7d1470a34719bf76feda.txt\n-->\n<template>\n\t<AsamTooltip placement=\"top\">\n\t\t<template #content> 多行文字<br />第二行 </template>\n\t\t<AsamButton type=\"default\">顶部居中</AsamButton>\n\t</AsamTooltip>\n</template>\n\n<script setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "274bf94c92ffac030ba0b9a86fe5311054f59dea7d4241dc2403763587348f98",
 			"notice": {
 				"id": "ed72f7ff04f38f8703f69b7d3e2843a89f3dc197074e7d1470a34719bf76feda",
 				"url": "/licenses/source-notices/ed72f7ff04f38f8703f69b7d3e2843a89f3dc197074e7d1470a34719bf76feda.txt",

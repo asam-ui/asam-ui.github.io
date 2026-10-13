@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamAffix/popup-container/ts/Demo.vue",
+			"sha256": "8ee4f82591448e98001ba3c6543b2abfbfbc50faa3112013df382d1bef1350a1",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4.txt\n-->\n<template>\n\t<div ref=\"mountTarget\" class=\"popup-stage\" :class=\"{ local: !globalPopup }\">\n\t\t<div class=\"popup-mode\">\n\t\t\t<ContainerSwitch\n\t\t\t\tv-model=\"globalPopup\"\n\t\t\t\tactive-text=\"全局挂载到 body\"\n\t\t\t\tinactive-text=\"局部挂载到当前区域\"\n\t\t\t/>\n\t\t</div>\n\t\t<AsamAffix :offset=\"120\" :teleported=\"globalPopup\">\n\t\t\t<AsamButton type=\"default\">顶部偏移 120px</AsamButton>\n\t\t</AsamAffix>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamAffixCapBasicDemo' });\nimport { AsamAffix, AsamButton } from '@asam-ui/ui';\n\nimport { ref as containerRef } from 'vue';\nimport { AsamSwitch as ContainerSwitch } from '@asam-ui/ui';\nconst globalPopup = containerRef(true);\nconst mountTarget = containerRef<HTMLElement>();\n</script>\n\n<style scoped>\n.popup-stage {\n\tposition: relative;\n\tisolation: isolate;\n\tmin-height: 140px;\n\tpadding: var(--asam-space-md);\n\tborder: 1px dashed var(--asam-color-border);\n}\n.popup-mode {\n\tmargin-bottom: var(--asam-space-lg);\n}\n</style>\n",
+			"originalSourceSha256": "525b02be00effe307a8d66a252d1c8c4686c3e7226b9fd13c34ac6a18fc9cacd",
+			"notice": {
+				"id": "77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4",
+				"url": "/licenses/source-notices/77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4.txt",
+				"licenseFilename": "LICENSE-77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0",
+				"upstreamExampleSource": {
+					"source": "docs/examples/affix/basic.vue",
+					"sourceSha256": "841a06d2bd54cf2d221d884e28dd7e70a73f7908e9e937e3a997b3c0618fae65",
+					"archiveSha256": "1d8d7f29379784e3e4eebe501673d449787815a9f4a93610b1205c17accb27dc"
+				}
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4.txt",
+			"source": "Adapted from Element Plus 2.14.7 affix/basic. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4",
+			"noticeId": "77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4"
+		}
+	]
+}

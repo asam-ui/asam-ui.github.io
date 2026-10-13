@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDrawer/ep2147-modal/js/Demo.vue",
-			"sha256": "87ee8c6ce6896cdb90b5702913706e867b7abf16735b9153e031ad2d39c36089",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-4b31055affc9df9d6a6f7023a0783f36b30612bb1dafbf143757d72fd14a5db2.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/4b31055affc9df9d6a6f7023a0783f36b30612bb1dafbf143757d72fd14a5db2.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" plain @click=\"drawerVisible = true\"> 打开模态抽屉 </AsamButton>\n\n\t<AsamDrawer v-model=\"drawerVisible\" :modal=\"false\" modal-penetrable>\n\t\t<span>模态抽屉</span>\n\t\t<template #footer>\n\t\t\t<div class=\"drawer-footer\">\n\t\t\t\t<AsamButton type=\"primary\" @click=\"drawerVisible = false\">取消</AsamButton>\n\t\t\t\t<AsamButton type=\"primary\" @click=\"drawerVisible = false\"> 确认 </AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDrawer>\n</template>\n\n<script setup>\nimport { AsamButton, AsamDrawer } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst drawerVisible = ref(false);\n</script>\n",
-			"originalSourceSha256": "53da31a65f127118d3483da2172d348870e325a50ebf907d8d38988712186012",
+			"sha256": "cb1f87d34e86010471a7aa85879f3e0097988987f22de32aa6df7173f868967b",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-4b31055affc9df9d6a6f7023a0783f36b30612bb1dafbf143757d72fd14a5db2.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/4b31055affc9df9d6a6f7023a0783f36b30612bb1dafbf143757d72fd14a5db2.txt\n-->\n<template>\n\t<AsamButton type=\"default\" plain @click=\"drawerVisible = true\"> 打开模态抽屉 </AsamButton>\n\n\t<AsamDrawer v-model=\"drawerVisible\" :modal=\"false\" modal-penetrable>\n\t\t<span>模态抽屉</span>\n\t\t<template #footer>\n\t\t\t<div class=\"drawer-footer\">\n\t\t\t\t<AsamButton type=\"default\" @click=\"drawerVisible = false\">取消</AsamButton>\n\t\t\t\t<AsamButton type=\"default\" @click=\"drawerVisible = false\"> 确认 </AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDrawer>\n</template>\n\n<script setup>\nimport { AsamButton, AsamDrawer } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst drawerVisible = ref(false);\n</script>\n",
+			"originalSourceSha256": "188b105d2e2b637577ebbbb83cbb94aaacd7816b8af88dd3c400fa1c0f763dd6",
 			"notice": {
 				"id": "4b31055affc9df9d6a6f7023a0783f36b30612bb1dafbf143757d72fd14a5db2",
 				"url": "/licenses/source-notices/4b31055affc9df9d6a6f7023a0783f36b30612bb1dafbf143757d72fd14a5db2.txt",

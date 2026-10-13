@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamBadge/cap-offset/ts/Demo.vue",
-			"sha256": "0e8e25ab7e878cc58f4cfbb107e8d6590cd74fdcec68c1fdd42c6fede94041d8",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778.txt\n-->\n<template>\n\t<AsamBadge class=\"item\" :value=\"1\" :offset=\"[10, 5]\">\n\t\t<AsamButton type=\"primary\"> offset</AsamButton>\n\t</AsamBadge>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamBadgeCapOffsetDemo' });\nimport { AsamBadge, AsamButton } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.item {\n\tmargin-top: 10px;\n\tmargin-right: 30px;\n}\n</style>\n",
-			"originalSourceSha256": "570ac39dba9bf1723f5b4342bbe99237772856609117ea5e8b86ef2b1e319610",
+			"sha256": "860769771c3c30de9d062028c74f28d0dd95f4d6d609f9313f68da086606bcaf",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778.txt\n-->\n<template>\n\t<AsamBadge class=\"item\" :value=\"1\" :offset=\"[10, 5]\">\n\t\t<AsamButton type=\"default\">偏移量（offset）</AsamButton>\n\t</AsamBadge>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamBadgeCapOffsetDemo' });\nimport { AsamBadge, AsamButton } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.item {\n\tmargin-top: 10px;\n\tmargin-right: 30px;\n}\n</style>\n",
+			"originalSourceSha256": "035c940842ea6f33f07e73fc67ab3abe55aff6be809cbcc0f7f7e63fec5cdcb4",
 			"notice": {
 				"id": "4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778",
 				"url": "/licenses/source-notices/4facce33c0202da77d651d86fcea0394dc208155d61157f51d11c917c86d6778.txt",

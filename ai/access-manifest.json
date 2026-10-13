@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "status": "SOURCE_DELIVERY_PREPARED_PUBLIC_URL_VERIFICATION_PENDING",
-  "source": "f398458b57b9106c9496eb641737664421df111a",
+  "source": "4c430436859750b832bc7b670918a17e6ddfd972",
   "acceptedSource": "7d11052e70675e2d7cb204834035ce1aea722052",
   "website": "https://asam-ui.github.io/",
   "publicRepository": "asam-ui/asam-ui.github.io",
@@ -14,24 +14,24 @@
   "files": [
     {
       "path": "ai/index.html",
-      "bytes": 13654,
-      "sha256": "b9f12ac7d31c6fed06a909e1771544f4184d19b32d020574729d371562717315",
-      "origin": "accepted-normal-f398",
-      "source": "approved-AI-leaf-normal-build-f398"
+      "bytes": 14757,
+      "sha256": "177ec7e4b9af5a21b030107f6d2d27dcc20d0aa3998cd25f1290ed58af142300",
+      "origin": "accepted-normal-4c430",
+      "source": "approved-AI-leaf-normal-build-4c430"
     },
     {
       "path": "ai/skill.html",
-      "bytes": 17244,
-      "sha256": "736db135a173b366d233dee2996f3b7b8e22a403f9bf5e4881f52bf9ca152186",
-      "origin": "accepted-normal-f398",
-      "source": "approved-AI-leaf-normal-build-f398"
+      "bytes": 18347,
+      "sha256": "2f593eb4f4c411107a7ffbe6cab8d752858313c8d11dbad767c68907440666d3",
+      "origin": "accepted-normal-4c430",
+      "source": "approved-AI-leaf-normal-build-4c430"
     },
     {
       "path": "ai/mcp.html",
-      "bytes": 17952,
-      "sha256": "5d2142fb499ac501f28abd27886567a7cda62deaa0e877239f03a8caf291b660",
-      "origin": "accepted-normal-f398",
-      "source": "approved-AI-leaf-normal-build-f398"
+      "bytes": 19055,
+      "sha256": "22e9e3f880c4d9e15b9045aa121af21352694693995e68dc1237e715ab13a973",
+      "origin": "accepted-normal-4c430",
+      "source": "approved-AI-leaf-normal-build-4c430"
     },
     {
       "path": "skills/asam-ui-usage/SKILL.md",
@@ -106,7 +106,7 @@
       "source": "approved-MCP-license-6907B"
     }
   ],
-  "applyPolicy": "本次完整官网接受正常制品交付；公开 Skill 九文件、b59 归档及其清单、已批准许可保持原字节。当前官网 API/SFC 和文案按 f398 正常构建来源；已发 MCP8207 与公开 Skill b59 为原固定 snapshot，网站变化不代表新包发行。实际网址可见性另由原 QA→ACC 验证，不以源码 push 冒公网 PASS。",
+  "applyPolicy": "本次完整官网接受正常制品交付；公开 Skill 九文件、b59 归档及其清单、已批准许可保持原字节。当前官网 API/SFC 和文案按 4c430 正常构建来源；已发 MCP8207 与公开 Skill b59 为原固定 snapshot，网站变化不代表新包发行。实际网址可见性另由原 QA→ACC 验证，不以源码 push 冒公网 PASS。",
   "sourceCorrections": [
     {
       "source": "7b61ffb6c5c346a7a92de007c65a295e4c78638b",
@@ -128,11 +128,16 @@
       "source": "f398458b57b9106c9496eb641737664421df111a",
       "parentPublic": "e6ee21fa25efa6113a97b47252bfd15d94863af9",
       "scope": "完整官网控件中文与安装说明接受正常产物；原公开 raw9/b59/许可保持，实际新 AI HTML hash 配对"
+    },
+    {
+      "source": "4c430436859750b832bc7b670918a17e6ddfd972",
+      "parentPublic": "d44bb9f5435a6b97c36b91ea0f1995b2d83f6e85",
+      "scope": "已接受完整官网五项整改与确认Logo正常产物；原公开 raw9/b59/许可保持，实际新 AI HTML hash 配对"
     }
   ],
   "mcpVersion": "0.1.0-alpha.1",
   "mcpArtifactSHA256": "8207ebe920b98b35d4b544d5c8fa8b5b0319954152561e88c3ca0dfc1ab17d80",
-  "websiteArtifactSource": "f398458b57b9106c9496eb641737664421df111a",
-  "rootAcceptedMain": "df3613318915e55bf2c7b78d29bb8308be219a8e",
-  "currentPublicApiSfcSource": "f398458b57b9106c9496eb641737664421df111a"
+  "websiteArtifactSource": "4c430436859750b832bc7b670918a17e6ddfd972",
+  "rootAcceptedMain": "28e502401482506cd795a6921e949541a0299445",
+  "currentPublicApiSfcSource": "4c430436859750b832bc7b670918a17e6ddfd972"
 }

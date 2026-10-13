@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamText/cap-mixed/js/Demo.vue",
-			"sha256": "79e39748b83fed1acb0f026c3f0e88ee35d45fd18c63b865db446d6c1eb6cff2",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f893fe311e220708f7563252b2d6f421aaa38a036459065ac3f141298c5352cb.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f893fe311e220708f7563252b2d6f421aaa38a036459065ac3f141298c5352cb.txt\n-->\n<template>\n\t<AsamSpace direction=\"vertical\">\n\t\t<AsamText>\n\t\t\t<AsamIcon>\n\t\t\t\t<Grid />\n\t\t\t</AsamIcon>\n\t\t\tElement-Plus\n\t\t</AsamText>\n\t\t<AsamRow>\n\t\t\t<AsamText>评分</AsamText>\n\t\t\t<AsamRate class=\"ml-1\" />\n\t\t</AsamRow>\n\t\t<AsamText>\n\t\t\t文字与图标混排\n\t\t\t<AsamIcon>\n\t\t\t\t<Bell />\n\t\t\t</AsamIcon>\n\t\t\t与组件\n\t\t\t<AsamButton type=\"primary\">按钮</AsamButton>\n\t\t</AsamText>\n\t</AsamSpace>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTextCapMixedDemo' });\nimport { AsamSpace, AsamText, AsamIcon, AsamRow, AsamRate, AsamButton } from '@asam-ui/ui';\nimport { Bell, Grid } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.ml-1 {\n\tmargin-left: 0.25rem;\n}\n</style>\n",
-			"originalSourceSha256": "584b0083e0f9050626c7859f2d1175c8cf2944c0db5277b66b3d6266a421b763",
+			"sha256": "48b2328e4f4ac6a62afa98863b0184475a62f14bba03b8fcb66dbd0eedea02e6",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f893fe311e220708f7563252b2d6f421aaa38a036459065ac3f141298c5352cb.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f893fe311e220708f7563252b2d6f421aaa38a036459065ac3f141298c5352cb.txt\n-->\n<template>\n\t<AsamSpace direction=\"vertical\">\n\t\t<AsamText>\n\t\t\t<AsamIcon>\n\t\t\t\t<Grid />\n\t\t\t</AsamIcon>\n\t\t\tElement-Plus\n\t\t</AsamText>\n\t\t<AsamRow>\n\t\t\t<AsamText>评分</AsamText>\n\t\t\t<AsamRate class=\"ml-1\" />\n\t\t</AsamRow>\n\t\t<AsamText>\n\t\t\t文字与图标混排\n\t\t\t<AsamIcon>\n\t\t\t\t<Bell />\n\t\t\t</AsamIcon>\n\t\t\t与组件\n\t\t\t<AsamButton type=\"default\">按钮</AsamButton>\n\t\t</AsamText>\n\t</AsamSpace>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTextCapMixedDemo' });\nimport { AsamSpace, AsamText, AsamIcon, AsamRow, AsamRate, AsamButton } from '@asam-ui/ui';\nimport { Bell, Grid } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.ml-1 {\n\tmargin-left: 0.25rem;\n}\n</style>\n",
+			"originalSourceSha256": "9b530ebfcae3dd4753f33b518a8f15464fe1b7e3a54aa030a98d135ca6a5329b",
 			"notice": {
 				"id": "f893fe311e220708f7563252b2d6f421aaa38a036459065ac3f141298c5352cb",
 				"url": "/licenses/source-notices/f893fe311e220708f7563252b2d6f421aaa38a036459065ac3f141298c5352cb.txt",

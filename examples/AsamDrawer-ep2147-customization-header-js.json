@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDrawer/ep2147-customization-header/js/Demo.vue",
-			"sha256": "2200b83e5c3e511c4d39bc6b5295900a04f99dbf569d67c698b3a038c566acd4",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" @click=\"visible = true\"> 打开自定义头部的抽屉 </AsamButton>\n\t<AsamDrawer v-model=\"visible\" :show-close=\"false\">\n\t\t<template #header=\"{ close, titleId, titleClass }\">\n\t\t\t<h4 :id=\"titleId\" :class=\"titleClass\">自定义头部示例</h4>\n\t\t\t<AsamButton type=\"danger\" @click=\"close\">\n\t\t\t\t<AsamIcon class=\"el-icon--left\"><CircleCloseFilled /></AsamIcon>\n\t\t\t\t关闭\n\t\t\t</AsamButton>\n\t\t</template>\n\t\t这是抽屉内容。\n\t</AsamDrawer>\n</template>\n\n<script setup>\nimport { AsamButton, AsamDrawer, AsamIcon } from '@asam-ui/ui';\nimport { ref } from 'vue';\nimport { CircleCloseFilled } from '@asam-ui/icons-vue';\nconst visible = ref(false);\n</script>\n",
-			"originalSourceSha256": "7b53c65d4f9143807f98de31947c0da54400a289546fd174e43e1e5e6c9d0d4d",
+			"sha256": "f47dbadb170126bbd053cb7e6d85d5ded35092e967f311735cf4f47ff537f312",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"visible = true\"> 打开自定义头部的抽屉 </AsamButton>\n\t<AsamDrawer v-model=\"visible\" :show-close=\"false\">\n\t\t<template #header=\"{ close, titleId, titleClass }\">\n\t\t\t<h4 :id=\"titleId\" :class=\"titleClass\">自定义头部示例</h4>\n\t\t\t<AsamButton type=\"default\" @click=\"close\">\n\t\t\t\t<AsamIcon class=\"el-icon--left\"><CircleCloseFilled /></AsamIcon>\n\t\t\t\t关闭\n\t\t\t</AsamButton>\n\t\t</template>\n\t\t这是抽屉内容。\n\t</AsamDrawer>\n</template>\n\n<script setup>\nimport { AsamButton, AsamDrawer, AsamIcon } from '@asam-ui/ui';\nimport { ref } from 'vue';\nimport { CircleCloseFilled } from '@asam-ui/icons-vue';\nconst visible = ref(false);\n</script>\n",
+			"originalSourceSha256": "6bbaf367420a92f51cc7db41998b703cabec47c353bc9c3cbd57bad75b6385c1",
 			"notice": {
 				"id": "6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf",
 				"url": "/licenses/source-notices/6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf.txt",

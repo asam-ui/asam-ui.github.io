@@ -2,6 +2,55 @@
 	display: none !important;
 }
 
+.brand-mark,
+.footer-brand-mark {
+	display: block;
+	flex: none;
+	width: 40px;
+	height: 40px;
+	transform: none;
+	overflow: visible;
+}
+
+.footer-brand {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.footer-brand-mark {
+	width: 32px;
+	height: 32px;
+}
+
+.brand-image {
+	display: block;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.brand-mark .brand-image,
+.footer-brand-mark .brand-image {
+	width: 100%;
+	height: 100%;
+}
+
+.brand-image-dark,
+[data-theme='dark'] .brand-image-light {
+	display: none !important;
+}
+
+[data-theme='dark'] .brand-image-dark {
+	display: block !important;
+}
+
+@media (width <= 767px) {
+	.brand-mark {
+		width: 36px;
+		height: 36px;
+	}
+}
+
 .cd-language-switch {
 	display: inline-flex;
 }

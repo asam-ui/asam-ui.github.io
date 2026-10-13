@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamPopconfirm/ep2147-basic-usage/js/Demo.vue",
-			"sha256": "179898174ec1b5fa75a6a094b587dbdddfc9217b7e0aa62a714cf928ad6cdea1",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218.txt\n-->\n<template>\n\t<AsamPopconfirm title=\"确定删除此项吗？\">\n\t\t<template #reference>\n\t\t\t<AsamButton type=\"primary\">删除</AsamButton>\n\t\t</template>\n\t</AsamPopconfirm>\n</template>\n\n<script setup>\nimport { AsamButton, AsamPopconfirm } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "72993481c1755821c30a69b5b648343c5f6f288450e98a5563d9303fe03d9b0f",
+			"sha256": "336ed685017de115cddcb3493f5866ace3da7bb791999fb196b67529c6da15c7",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218.txt\n-->\n<template>\n\t<AsamPopconfirm title=\"确定删除此项吗？\">\n\t\t<template #reference>\n\t\t\t<AsamButton type=\"default\">删除</AsamButton>\n\t\t</template>\n\t</AsamPopconfirm>\n</template>\n\n<script setup>\nimport { AsamButton, AsamPopconfirm } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "c3fa51bd9e67bc0b8f587dc158a51fc99957f2bd606e3110cc19e6d227944fc2",
 			"notice": {
 				"id": "18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218",
 				"url": "/licenses/source-notices/18b18eaa3825d567c7ca9cae10228e1ee2494bc545d7ef031b752c799bd96218.txt",

@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamWatermark/cap-basic/js/Demo.vue",
-			"sha256": "7c99420bb131eeb328b894672c27bfa7a1e6c7e6013f4388ecc373c2a8303ccd",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e4cab9f35c620af36f05c822b4357597d5cc42fbc671b9cfebda2abe9691edb1.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e4cab9f35c620af36f05c822b4357597d5cc42fbc671b9cfebda2abe9691edb1.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" native-type=\"button\" @click=\"isDark = !isDark\"\n\t\t>切换深色水印</AsamButton\n\t>\n\t<AsamWatermark :font=\"font\">\n\t\t<div style=\"height: 500px\" />\n\t</AsamWatermark>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamWatermarkCapBasicDemo' });\nimport { AsamButton, AsamWatermark } from '@asam-ui/ui';\nimport { reactive, watch } from 'vue';\nimport { ref } from 'vue';\nconst isDark = ref(false);\nconst font = reactive({\n\tcolor: 'rgba(0, 0, 0, .15)'\n});\nwatch(\n\tisDark,\n\t() => {\n\t\tfont.color = isDark.value ? 'rgba(255, 255, 255, .15)' : 'rgba(0, 0, 0, .15)';\n\t},\n\t{\n\t\timmediate: true\n\t}\n);\n</script>\n",
-			"originalSourceSha256": "f17a44b329ba65912645af4aaca847b28a950595e88b25c6cde4f799b26430c2",
+			"sha256": "c12de00ee1ff354739a1fdac717e5aa3d28e150ada28e52607566ec48146f30b",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e4cab9f35c620af36f05c822b4357597d5cc42fbc671b9cfebda2abe9691edb1.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e4cab9f35c620af36f05c822b4357597d5cc42fbc671b9cfebda2abe9691edb1.txt\n-->\n<template>\n\t<AsamButton type=\"default\" native-type=\"button\" @click=\"isDark = !isDark\"\n\t\t>切换深色水印</AsamButton\n\t>\n\t<AsamWatermark :font=\"font\">\n\t\t<div style=\"height: 500px\" />\n\t</AsamWatermark>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamWatermarkCapBasicDemo' });\nimport { AsamButton, AsamWatermark } from '@asam-ui/ui';\nimport { reactive, watch } from 'vue';\nimport { ref } from 'vue';\nconst isDark = ref(false);\nconst font = reactive({\n\tcolor: 'rgba(0, 0, 0, .15)'\n});\nwatch(\n\tisDark,\n\t() => {\n\t\tfont.color = isDark.value ? 'rgba(255, 255, 255, .15)' : 'rgba(0, 0, 0, .15)';\n\t},\n\t{\n\t\timmediate: true\n\t}\n);\n</script>\n",
+			"originalSourceSha256": "c7338e37001f36abea69c56b81a0cd65d0fb0b46a389551e7d0eb0cd5319f282",
 			"notice": {
 				"id": "e4cab9f35c620af36f05c822b4357597d5cc42fbc671b9cfebda2abe9691edb1",
 				"url": "/licenses/source-notices/e4cab9f35c620af36f05c822b4357597d5cc42fbc671b9cfebda2abe9691edb1.txt",

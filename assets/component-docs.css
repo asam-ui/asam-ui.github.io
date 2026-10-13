@@ -303,6 +303,34 @@
 	background: var(--surface);
 }
 
+.cd-api table {
+	table-layout: fixed;
+}
+
+.cd-api table th:first-child {
+	width: 18%;
+	overflow-wrap: anywhere;
+}
+
+.cd-api table th:nth-child(2) {
+	width: 30%;
+}
+
+.cd-api table th:nth-child(3) {
+	width: 34%;
+}
+
+.cd-api table th:nth-child(n + 4) {
+	width: 9%;
+}
+
+.cd-complex-type code {
+	display: block;
+	max-height: 280px;
+	overflow: auto;
+	overflow-wrap: anywhere;
+}
+
 .cd-api > details {
 	margin: 16px 0;
 }

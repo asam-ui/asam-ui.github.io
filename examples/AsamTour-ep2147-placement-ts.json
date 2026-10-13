@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTour/ep2147-placement/ts/Demo.vue",
-			"sha256": "b20ad4001287599794aff63483e2df32f9ba091ec65d63e8598ea9ac748a780e",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ee86e3d6d81131c319e473bf58ced5feef760d96662f1e3eaa37c2592e7a7dba.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ee86e3d6d81131c319e473bf58ced5feef760d96662f1e3eaa37c2592e7a7dba.txt\n-->\n<template>\n\t<AsamButton ref=\"btnRef\" type=\"primary\" @click=\"open = true\"> 开始导览 </AsamButton>\n\n\t<AsamTour v-model=\"open\">\n\t\t<AsamTourStep title=\"居中\" description=\"显示在屏幕中央。\" />\n\t\t<AsamTourStep\n\t\t\ttitle=\"右侧\"\n\t\t\tdescription=\"位于目标右侧。\"\n\t\t\tplacement=\"right\"\n\t\t\t:target=\"btnRef?.$el\"\n\t\t/>\n\t\t<AsamTourStep\n\t\t\ttitle=\"顶部\"\n\t\t\tdescription=\"位于目标上方。\"\n\t\t\tplacement=\"top\"\n\t\t\t:target=\"btnRef?.$el\"\n\t\t/>\n\t</AsamTour>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamTour, AsamTourStep } from '@asam-ui/ui';\ntype ButtonInstance = InstanceType<typeof AsamButton>;\nimport { ref } from 'vue';\n\nconst btnRef = ref<ButtonInstance>();\n\nconst open = ref(false);\n</script>\n",
-			"originalSourceSha256": "ef0eba27761435b028e35f7c94cae45cd778d74abb2f73be6481b3e9a8b46681",
+			"sha256": "252c50cfeb9216ef157ae475ab349ed52f8b80d7a355f3ad40f927a7d7fdfbd4",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ee86e3d6d81131c319e473bf58ced5feef760d96662f1e3eaa37c2592e7a7dba.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ee86e3d6d81131c319e473bf58ced5feef760d96662f1e3eaa37c2592e7a7dba.txt\n-->\n<template>\n\t<AsamButton ref=\"btnRef\" type=\"default\" @click=\"open = true\"> 开始导览 </AsamButton>\n\n\t<AsamTour v-model=\"open\">\n\t\t<AsamTourStep title=\"居中\" description=\"显示在屏幕中央。\" />\n\t\t<AsamTourStep\n\t\t\ttitle=\"右侧\"\n\t\t\tdescription=\"位于目标右侧。\"\n\t\t\tplacement=\"right\"\n\t\t\t:target=\"btnRef?.$el\"\n\t\t/>\n\t\t<AsamTourStep\n\t\t\ttitle=\"顶部\"\n\t\t\tdescription=\"位于目标上方。\"\n\t\t\tplacement=\"top\"\n\t\t\t:target=\"btnRef?.$el\"\n\t\t/>\n\t</AsamTour>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamTour, AsamTourStep } from '@asam-ui/ui';\ntype ButtonInstance = InstanceType<typeof AsamButton>;\nimport { ref } from 'vue';\n\nconst btnRef = ref<ButtonInstance>();\n\nconst open = ref(false);\n</script>\n",
+			"originalSourceSha256": "8dd90ed542552cccf6b41880df9ded544562a7e085ea175cb19a98e00b2da847",
 			"notice": {
 				"id": "ee86e3d6d81131c319e473bf58ced5feef760d96662f1e3eaa37c2592e7a7dba",
 				"url": "/licenses/source-notices/ee86e3d6d81131c319e473bf58ced5feef760d96662f1e3eaa37c2592e7a7dba.txt",

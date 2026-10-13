@@ -6,28 +6,28 @@
 		<meta name="color-scheme" content="light dark" />
 		<meta name="description" content="ASAM UI 开发者文档。Vue 3 组件、安装指南与设计系统。" />
 		<title>让界面一致，让开发专注 · ASAM UI</title>
-		<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-		<link rel="stylesheet" href="/assets/style.css?v=b07c05f3c9b9c610284b5c4ad9c83faf36534acef08c7106710a085b561a5411" />
+		<link rel="icon" href="/assets/favicon.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" type="image/svg+xml" />
+		<link rel="stylesheet" href="/assets/style.css?v=3d43c9a4f00e75963302d248a25fffd65aebee2063c75f6470b3b9e6e48061b3" />
 		<script src="/assets/theme-init.js"></script>
-		<link rel="preload" as="image" href="/assets/hero.webp" />
+		<link rel="preload" as="image" href="/assets/brand/mark-light.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" />
 		<script src="/assets/vendor/gsap.min.js" defer></script>
 		<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 		<script src="/assets/catalog.js" defer></script>
-		<script src="/assets/app.js?v=b07c05f3c9b9c610284b5c4ad9c83faf36534acef08c7106710a085b561a5411" defer></script>
+		<script src="/assets/app.js?v=3d43c9a4f00e75963302d248a25fffd65aebee2063c75f6470b3b9e6e48061b3" defer></script>
 		
-	<link rel="stylesheet" href="/assets/home-interactive.css?v=42c41ce4e2cf9aa86bfc49c73cc0595262b98398e469787ee43d2312fcbd854e" />
+	<link rel="stylesheet" href="/assets/home-interactive.css?v=6e6cfd495f8306d2683d3b2c16f28fbc6732ac9ed3492a5266a9d5385906f2c6" />
 		<script>if (!matchMedia('(prefers-reduced-motion: reduce)').matches) { document.documentElement.dataset.homeBoot = 'pending'; window.__asamHomeBootTimeout = setTimeout(() => { delete document.documentElement.dataset.homeBoot; }, 2200); }</script>
-		<script src="/assets/home-interactive.js?v=42c41ce4e2cf9aa86bfc49c73cc0595262b98398e469787ee43d2312fcbd854e" defer></script>
-		<script src="/assets/home-motion.js?v=42c41ce4e2cf9aa86bfc49c73cc0595262b98398e469787ee43d2312fcbd854e" defer></script>
-		<link rel="stylesheet" href="/assets/home-scene.css?v=42c41ce4e2cf9aa86bfc49c73cc0595262b98398e469787ee43d2312fcbd854e" />
-		<script type="module" src="/assets/home-scene/home-scene.js?v=42c41ce4e2cf9aa86bfc49c73cc0595262b98398e469787ee43d2312fcbd854e"></script>
-		<link rel="stylesheet" href="/assets/ai-guide.css"><link rel="stylesheet" href="/assets/website-layout.css?v=b07c05f3c9b9c610284b5c4ad9c83faf36534acef08c7106710a085b561a5411"><script src="/assets/website-layout.js?v=b07c05f3c9b9c610284b5c4ad9c83faf36534acef08c7106710a085b561a5411"></script></head>
+		<script src="/assets/home-interactive.js?v=6e6cfd495f8306d2683d3b2c16f28fbc6732ac9ed3492a5266a9d5385906f2c6" defer></script>
+		<script src="/assets/home-motion.js?v=6e6cfd495f8306d2683d3b2c16f28fbc6732ac9ed3492a5266a9d5385906f2c6" defer></script>
+		<link rel="stylesheet" href="/assets/home-scene.css?v=6e6cfd495f8306d2683d3b2c16f28fbc6732ac9ed3492a5266a9d5385906f2c6" />
+		<script type="module" src="/assets/home-scene/home-scene.js?v=6e6cfd495f8306d2683d3b2c16f28fbc6732ac9ed3492a5266a9d5385906f2c6"></script>
+		<link rel="stylesheet" href="/assets/ai-guide.css"><link rel="stylesheet" href="/assets/website-layout.css?v=3d43c9a4f00e75963302d248a25fffd65aebee2063c75f6470b3b9e6e48061b3"><script src="/assets/website-layout.js?v=3d43c9a4f00e75963302d248a25fffd65aebee2063c75f6470b3b9e6e48061b3"></script><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a"></head>
 	<body data-page="home" data-home-motion="enhanced">
 		<div class="boot-screen" aria-hidden="true">
 			<div class="boot-panel"></div><div class="boot-panel"></div>
 			<div class="boot-content">
 				<div class="boot-tiles"><i></i><i></i><i></i></div>
-				<strong class="boot-word">ASAM <span>UI</span></strong>
+				<strong class="boot-word"><img class="brand-image brand-image-light" src="/assets/brand/lockup-light.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="240" height="51.2" alt="" aria-hidden="true" decoding="async"><img class="brand-image brand-image-dark" src="/assets/brand/lockup-dark.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="240" height="51.2" alt="" aria-hidden="true" decoding="async"></strong>
 				<small>以统一规范构建</small><div class="boot-rule"></div>
 			</div>
 		</div>
@@ -36,8 +36,7 @@
 		<header class="site-header" data-site-component="header">
 			<div class="nav-shell">
 				<a class="brand" href="/index.html" aria-label="ASAM UI 首页"
-					 aria-current="page"><span class="brand-mark" aria-hidden="true">A<span></span></span
-					><strong>ASAM<span class="brand-ui"> UI</span></strong></a
+					 aria-current="page"><span class="brand-mark" aria-hidden="true"><img class="brand-image brand-image-light" src="/assets/brand/mark-light.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="40" height="40" alt="" aria-hidden="true" decoding="async"><img class="brand-image brand-image-dark" src="/assets/brand/mark-dark.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="40" height="40" alt="" aria-hidden="true" decoding="async"></span><strong>ASAM<span class="brand-ui"> UI</span></strong></a
 				>
 				<nav class="primary-nav" aria-label="主导航">
 					<a href="/getting-started.html">开始使用</a
@@ -190,14 +189,7 @@
 						></a>
 					</div>
 				<button type="button" class="motion-replay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6" /></svg>重播动效</button></div><div class="hero-art"><div class="hero-image-motion hero-scene" data-scene-state="fallback" data-assembly="assembled">
-			<div class="scene-viewport"><div class="scene-fallback">
-					<img
-						src="/assets/hero.webp"
-						width="1254"
-						height="1254"
-						alt="由蓝色透明模块构成的立体 A 字形雕塑"
-						fetchpriority="high"
-					/></div><div class="scene-renderer"></div></div>
+			<div class="scene-viewport"><div class="scene-fallback" role="img" aria-label="ASAM UI 标志"><img class="brand-image brand-image-light" src="/assets/brand/mark-light.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="640" height="640" alt="" aria-hidden="true" decoding="async"><img class="brand-image brand-image-dark" src="/assets/brand/mark-dark.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="640" height="640" alt="" aria-hidden="true" decoding="async"></div><div class="scene-renderer"></div></div>
 			<span class="scene-announcement" id="scene-instructions">点击展开或重组。拖拽或按方向键调整视角，按 Home 复位。</span>
 			<span class="scene-announcement" role="status" aria-live="polite"></span>
 		</div>
@@ -394,7 +386,7 @@
 		</main>
 		<footer class="site-footer wrap">
 			<div>
-				<a class="footer-brand" href="/index.html">ASAM UI</a
+				<a class="footer-brand" href="/index.html"><span class="footer-brand-mark" aria-hidden="true"><img class="brand-image brand-image-light" src="/assets/brand/mark-light.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="32" height="32" alt="" aria-hidden="true" decoding="async"><img class="brand-image brand-image-dark" src="/assets/brand/mark-dark.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="32" height="32" alt="" aria-hidden="true" decoding="async"></span><span>ASAM UI</span></a
 				><span>让一致的体验，从组件开始。</span>
 			</div>
 			<div class="footer-links">

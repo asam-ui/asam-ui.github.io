@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "f398458b57b9106c9496eb641737664421df111a",
+	"sourceSha": "4c430436859750b832bc7b670918a17e6ddfd972",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSpace/cap-alignment/js/Demo.vue",
-			"sha256": "f222fe3a3d9bbc62ae4693b621c371e93e9db60e9e8d67478b499e79b09c14ae",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-db62b803a66106853c116a03f98401a7e25fe1488a9418ff043ec63d6b4b0618.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/db62b803a66106853c116a03f98401a7e25fe1488a9418ff043ec63d6b4b0618.txt\n-->\n<template>\n\t<div class=\"alignment-container\">\n\t\t<AsamSpace>\n\t\t\tstring\n\t\t\t<AsamButton type=\"primary\"> button </AsamButton>\n\t\t\t<AsamCard>\n\t\t\t\t<template #header> header </template>\n\n\t\t\t\tbody\n\t\t\t</AsamCard>\n\t\t</AsamSpace>\n\t</div>\n\t<div class=\"alignment-container\">\n\t\t<AsamSpace alignment=\"flex-start\">\n\t\t\tstring\n\t\t\t<AsamButton type=\"primary\"> button </AsamButton>\n\t\t\t<AsamCard>\n\t\t\t\t<template #header> header </template>\n\t\t\t\tbody\n\t\t\t</AsamCard>\n\t\t</AsamSpace>\n\t</div>\n\t<div class=\"alignment-container\">\n\t\t<AsamSpace alignment=\"flex-end\">\n\t\t\tstring\n\t\t\t<AsamButton type=\"primary\"> button </AsamButton>\n\t\t\t<AsamCard>\n\t\t\t\t<template #header> header </template>\n\t\t\t\tbody\n\t\t\t</AsamCard>\n\t\t</AsamSpace>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamSpaceCapAlignmentDemo' });\nimport { AsamSpace, AsamButton, AsamCard } from '@asam-ui/ui';\n</script>\n\n<style>\n.alignment-container {\n\twidth: 240px;\n\tmargin-bottom: 20px;\n\tpadding: 8px;\n\tborder: 1px solid var(--el-border-color);\n}\n</style>\n",
-			"originalSourceSha256": "3b39f18e31b7d3994a4eca081fccaa334aba2a5a42b58067a58c0c3a1d6cc0ca",
+			"sha256": "51a81b4134bafebe2589f96aff21ea3674b98653b6645d1a04a056c7d65b6964",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-db62b803a66106853c116a03f98401a7e25fe1488a9418ff043ec63d6b4b0618.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/db62b803a66106853c116a03f98401a7e25fe1488a9418ff043ec63d6b4b0618.txt\n-->\n<template>\n\t<div class=\"alignment-container\">\n\t\t<AsamSpace>\n\t\t\tstring\n\t\t\t<AsamButton type=\"default\">按钮</AsamButton>\n\t\t\t<AsamCard>\n\t\t\t\t<template #header> header </template>\n\n\t\t\t\tbody\n\t\t\t</AsamCard>\n\t\t</AsamSpace>\n\t</div>\n\t<div class=\"alignment-container\">\n\t\t<AsamSpace alignment=\"flex-start\">\n\t\t\tstring\n\t\t\t<AsamButton type=\"default\">按钮</AsamButton>\n\t\t\t<AsamCard>\n\t\t\t\t<template #header> header </template>\n\t\t\t\tbody\n\t\t\t</AsamCard>\n\t\t</AsamSpace>\n\t</div>\n\t<div class=\"alignment-container\">\n\t\t<AsamSpace alignment=\"flex-end\">\n\t\t\tstring\n\t\t\t<AsamButton type=\"default\">按钮</AsamButton>\n\t\t\t<AsamCard>\n\t\t\t\t<template #header> header </template>\n\t\t\t\tbody\n\t\t\t</AsamCard>\n\t\t</AsamSpace>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamSpaceCapAlignmentDemo' });\nimport { AsamSpace, AsamButton, AsamCard } from '@asam-ui/ui';\n</script>\n\n<style>\n.alignment-container {\n\twidth: 240px;\n\tmargin-bottom: 20px;\n\tpadding: 8px;\n\tborder: 1px solid var(--el-border-color);\n}\n</style>\n",
+			"originalSourceSha256": "7aaabdbd914413c5db4700387c3934f02b33f6e99dc6a9ea1cdfc30b3152a57f",
 			"notice": {
 				"id": "db62b803a66106853c116a03f98401a7e25fe1488a9418ff043ec63d6b4b0618",
 				"url": "/licenses/source-notices/db62b803a66106853c116a03f98401a7e25fe1488a9418ff043ec63d6b4b0618.txt",
