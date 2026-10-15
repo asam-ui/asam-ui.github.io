@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "61f2550bfcbd07ec8af8c172fe3f4f3ce0cb1ee5",
+	"sourceSha": "0dea4fac3b349586d4dd15b5b4bbc5cd4d85e3ef",
 	"notices": [
 		{
 			"id": "958014fa179d5e45e0adb1b69b815592fa9555e7f1e1d48cdb185896950c2267",
@@ -2109,17 +2109,17 @@
 					"sourcePath": "apps/website/examples/AsamAffix/cap-basic/js/Demo.vue"
 				},
 				{
-					"originalSourceSha256": "525b02be00effe307a8d66a252d1c8c4686c3e7226b9fd13c34ac6a18fc9cacd",
-					"publicSourceSha256": "8ee4f82591448e98001ba3c6543b2abfbfbc50faa3112013df382d1bef1350a1",
-					"implementationSha256": "242739a7bbc24160f6eb9ea63a7c7dfeb528d112be13ff683ab08f1480032b3b",
+					"originalSourceSha256": "54f8c49555806b798e1ccc9365df1740ca32ee7a48d9326ca23b6c56f4784e47",
+					"publicSourceSha256": "d2c5371f4c464f11288f42a1240f870729f19091caee8d76c5ff901b705ce188",
+					"implementationSha256": "696c3dbde4cb9a246986146fd6258eecc0a671c080e3dc43e8d17fecf471f901",
 					"rawHeader": "<!--\nAdapted from Element Plus 2.14.7 affix/basic. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n-->\n",
 					"rawHeaderSha256": "e9b199bd745307e3511053cdccaca023433faee851ecad27a1d1f5e23f648455",
 					"sourcePath": "apps/website/examples/AsamAffix/popup-container/ts/Demo.vue"
 				},
 				{
-					"originalSourceSha256": "3b5b7b6de7e0a16c859676ce0dc8d7dd9af95e42d48ca49b69281c49c4c3c346",
-					"publicSourceSha256": "3a9ea732c8ef7dd430417f028d05cd7b5b59dcf00658da335ec9146ecf6d5c62",
-					"implementationSha256": "c806010017fa202a9edd02905451b9aa5c4bf9dae47d22c1772eca80b39dd381",
+					"originalSourceSha256": "61f81e6a020af5b158cf9004a79ccabeb5fface06ef82a01c92cafe0c8099926",
+					"publicSourceSha256": "ebcc3babe182950dda2cf42190308441c78612acb71265a08584f8fcd28173b7",
+					"implementationSha256": "02caf4054897216d774fdcdbd80be307195afe163d9ba7e240452070bfb02189",
 					"rawHeader": "<!--\nAdapted from Element Plus 2.14.7 affix/basic. Fixed SHA 77d5c32c4ebcfffde67e51f6325c6d350ca668a0.\n\nMIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n-->\n",
 					"rawHeaderSha256": "e9b199bd745307e3511053cdccaca023433faee851ecad27a1d1f5e23f648455",
 					"sourcePath": "apps/website/examples/AsamAffix/popup-container/js/Demo.vue"

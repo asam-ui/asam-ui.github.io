@@ -1,6 +1,6 @@
 {
 	"version": "0.1.0-alpha.1",
-	"docsVersion": "61f2550bfcbd07ec8af8c172fe3f4f3ce0cb1ee5",
+	"docsVersion": "0dea4fac3b349586d4dd15b5b4bbc5cd4d85e3ef",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",

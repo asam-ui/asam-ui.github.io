@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "61f2550bfcbd07ec8af8c172fe3f4f3ce0cb1ee5",
+	"sourceSha": "0dea4fac3b349586d4dd15b5b4bbc5cd4d85e3ef",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamAffix/popup-container/ts/Demo.vue",
-			"sha256": "8ee4f82591448e98001ba3c6543b2abfbfbc50faa3112013df382d1bef1350a1",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4.txt\n-->\n<template>\n\t<div ref=\"mountTarget\" class=\"popup-stage\" :class=\"{ local: !globalPopup }\">\n\t\t<div class=\"popup-mode\">\n\t\t\t<ContainerSwitch\n\t\t\t\tv-model=\"globalPopup\"\n\t\t\t\tactive-text=\"全局挂载到 body\"\n\t\t\t\tinactive-text=\"局部挂载到当前区域\"\n\t\t\t/>\n\t\t</div>\n\t\t<AsamAffix :offset=\"120\" :teleported=\"globalPopup\">\n\t\t\t<AsamButton type=\"default\">顶部偏移 120px</AsamButton>\n\t\t</AsamAffix>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamAffixCapBasicDemo' });\nimport { AsamAffix, AsamButton } from '@asam-ui/ui';\n\nimport { ref as containerRef } from 'vue';\nimport { AsamSwitch as ContainerSwitch } from '@asam-ui/ui';\nconst globalPopup = containerRef(true);\nconst mountTarget = containerRef<HTMLElement>();\n</script>\n\n<style scoped>\n.popup-stage {\n\tposition: relative;\n\tisolation: isolate;\n\tmin-height: 140px;\n\tpadding: var(--asam-space-md);\n\tborder: 1px dashed var(--asam-color-border);\n}\n.popup-mode {\n\tmargin-bottom: var(--asam-space-lg);\n}\n</style>\n",
-			"originalSourceSha256": "525b02be00effe307a8d66a252d1c8c4686c3e7226b9fd13c34ac6a18fc9cacd",
+			"sha256": "d2c5371f4c464f11288f42a1240f870729f19091caee8d76c5ff901b705ce188",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4.txt\n-->\n<template>\n\t<div ref=\"mountTarget\" class=\"popup-stage\" :class=\"{ local: !globalPopup }\">\n\t\t<div class=\"popup-mode\">\n\t\t\t<ContainerSwitch\n\t\t\t\tv-model=\"globalPopup\"\n\t\t\t\tactive-text=\"全局挂载到 body\"\n\t\t\t\tinactive-text=\"局部挂载到当前区域\"\n\t\t\t/>\n\t\t</div>\n\t\t<AsamAffix :offset=\"120\" :teleported=\"globalPopup\">\n\t\t\t<AsamButton type=\"default\">顶部偏移 120px</AsamButton>\n\t\t</AsamAffix>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamAffixCapBasicDemo' });\nimport { AsamAffix, AsamButton } from '@asam-ui/ui';\n\nimport { ref as containerRef } from 'vue';\nimport { AsamSwitch as ContainerSwitch } from '@asam-ui/ui';\nconst globalPopup = containerRef(true);\nconst mountTarget = containerRef<HTMLElement>();\n</script>\n\n<style scoped>\n.popup-stage {\n\tposition: relative;\n\tisolation: isolate;\n\tmin-height: 140px;\n\tpadding: var(--asam-space-md);\n\tborder: 1px dashed var(--asam-color-border);\n}\n\n.popup-mode {\n\tmargin-bottom: var(--asam-space-lg);\n}\n</style>\n",
+			"originalSourceSha256": "54f8c49555806b798e1ccc9365df1740ca32ee7a48d9326ca23b6c56f4784e47",
 			"notice": {
 				"id": "77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4",
 				"url": "/licenses/source-notices/77631e2d1f79b5b52858878eb8d96266547ffcaa1f85db92af9a9e0061d8d4e4.txt",

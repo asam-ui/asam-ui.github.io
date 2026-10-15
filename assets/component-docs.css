@@ -239,6 +239,13 @@
 	overflow-wrap: anywhere;
 }
 
+.cd-complex-type code {
+	display: block;
+	max-height: 280px;
+	overflow: auto;
+	overflow-wrap: anywhere;
+}
+
 .cd-page pre code {
 	overflow-wrap: normal;
 }
@@ -322,13 +329,6 @@
 
 .cd-api table th:nth-child(n + 4) {
 	width: 9%;
-}
-
-.cd-complex-type code {
-	display: block;
-	max-height: 280px;
-	overflow: auto;
-	overflow-wrap: anywhere;
 }
 
 .cd-api > details {
