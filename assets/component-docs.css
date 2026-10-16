@@ -315,7 +315,7 @@
 }
 
 .cd-api table th:first-child {
-	width: 18%;
+	width: 17%;
 	overflow-wrap: anywhere;
 }
 
@@ -324,11 +324,37 @@
 }
 
 .cd-api table th:nth-child(3) {
-	width: 34%;
+	width: 29%;
 }
 
-.cd-api table th:nth-child(n + 4) {
-	width: 9%;
+.cd-api table th:nth-child(4) {
+	width: 7%;
+}
+
+.cd-api table th:nth-child(5) {
+	width: 17%;
+}
+
+.cd-table-scroll :is(th, td) {
+	overflow-wrap: anywhere;
+}
+
+.cd-api-notes section {
+	scroll-margin-top: 96px;
+}
+
+.cd-default-facts {
+	margin-block: 16px;
+	scroll-margin-top: 96px;
+}
+
+.cd-default-facts h6 {
+	font-size: 14px;
+}
+
+.cd-default-facts code {
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
 }
 
 .cd-api > details {
