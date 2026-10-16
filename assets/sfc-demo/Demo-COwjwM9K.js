@@ -1,1 +1,0 @@
-import{Ct as e,H as t,v as n,w as r}from"./vue.esm-bundler-5NdF0u5k.js";import{t as i}from"./Index-BaqEmWKo-C63p3v7B.js";var a=r({name:`AsamEmptyCapBasicUsageDemo`,__name:`Demo`,setup(r){return(r,a)=>(t(),n(e(i),{description:`说明`}))}});export{a as default};

@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "0dea4fac3b349586d4dd15b5b4bbc5cd4d85e3ef",
+	"sourceSha": "e8aeefd5ffe1fade708fbde720dd7f9d81b6769b",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSpace/cap-customized-size/ts/Demo.vue",
-			"sha256": "ce14cc691ba8b12707bddf797e22d68875bda3872964eed319b49b75cdadd75a",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e87bbb7dbdd66a8bf292b71b55ce13a314c8b46306846e336d932691a3a37146.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e87bbb7dbdd66a8bf292b71b55ce13a314c8b46306846e336d932691a3a37146.txt\n-->\n<template>\n\t<AsamSlider\n\t\t:model-value=\"size\"\n\t\t@update:model-value=\"\n\t\t\t(value) => {\n\t\t\t\tif (typeof value === 'number') size = value;\n\t\t\t}\n\t\t\"\n\t/>\n\t<AsamSpace wrap :size=\"size\">\n\t\t<!-- prettier-ignore -->\n\t\t<AsamCard\n\t\t\tv-for=\"i in 2\"\n\t\t\t:key=\"i\"\n\t\t\tclass=\"box-card\"\n\t\t\tstyle=\"width: 250px\"\n\t\t>\n\t\t\t<template #header>\n\t\t\t\t<div class=\"card-header\">\n\t\t\t\t\t<span>卡片名称</span>\n\t\t\t\t\t<AsamButton type=\"default\" class=\"button\" text>操作按钮</AsamButton>\n\t\t\t\t</div>\n\t\t\t</template>\n\t\t\t<div v-for=\"o in 4\" :key=\"o\" class=\"text item\">\n\t\t\t\t{{ \"列表项 \" + o }}\n\t\t\t</div>\n\t\t</AsamCard>\n\t</AsamSpace>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamSpaceCapCustomizedSizeDemo' });\nimport { AsamSlider, AsamSpace, AsamCard, AsamButton } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst size = ref(20);\n</script>\n",
-			"originalSourceSha256": "6691668e5a7a4ab20ec5441ac00651e3b76a862d04f0f0b0fd0af8de54918863",
+			"sha256": "a196e64bef1393323143a89a3c05b706f9a82aa016a51ee0ffc880d34f935734",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e87bbb7dbdd66a8bf292b71b55ce13a314c8b46306846e336d932691a3a37146.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e87bbb7dbdd66a8bf292b71b55ce13a314c8b46306846e336d932691a3a37146.txt\n-->\n<template>\n\t<div class=\"demo-root-layout\">\n\t\t<AsamSlider\n\t\t\t:model-value=\"size\"\n\t\t\t@update:model-value=\"\n\t\t\t\t(value) => {\n\t\t\t\t\tif (typeof value === 'number') size = value;\n\t\t\t\t}\n\t\t\t\"\n\t\t/>\n\t\t<AsamSpace wrap :size=\"size\">\n\t\t\t<!-- prettier-ignore -->\n\t\t\t<AsamCard\n\t\t\tv-for=\"i in 2\"\n\t\t\t:key=\"i\"\n\t\t\tclass=\"box-card\"\n\t\t\tstyle=\"width: 250px\"\n\t\t>\n\t\t\t<template #header>\n\t\t\t\t<div class=\"card-header\">\n\t\t\t\t\t<span>卡片名称</span>\n\t\t\t\t\t<AsamButton type=\"default\" class=\"button\" text>操作按钮</AsamButton>\n\t\t\t\t</div>\n\t\t\t</template>\n\t\t\t<div v-for=\"o in 4\" :key=\"o\" class=\"text item\">\n\t\t\t\t{{ \"列表项 \" + o }}\n\t\t\t</div>\n\t\t</AsamCard>\n\t\t</AsamSpace>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamSpaceCapCustomizedSizeDemo' });\nimport { AsamSlider, AsamSpace, AsamCard, AsamButton } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst size = ref(20);\n</script>\n\n<style scoped>\n.demo-root-layout {\n\tdisplay: flex;\n\tgap: var(--asam-space-md);\n\tflex-wrap: wrap;\n\talign-items: center;\n}\n.demo-root-layout > :is(p, pre, output) {\n\tmargin-block: 0;\n}\n</style>\n",
+			"originalSourceSha256": "27d7840407627fe8e40f34295000cdad6c3635860c20d149b9069314103bd2f5",
 			"notice": {
 				"id": "e87bbb7dbdd66a8bf292b71b55ce13a314c8b46306846e336d932691a3a37146",
 				"url": "/licenses/source-notices/e87bbb7dbdd66a8bf292b71b55ce13a314c8b46306846e336d932691a3a37146.txt",

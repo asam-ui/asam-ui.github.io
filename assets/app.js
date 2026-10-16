@@ -34,14 +34,11 @@
 			notify('复制未完成，请手动选择并复制文本');
 		}
 	}
-	$$('[data-copy]').forEach((button) =>
-		button.addEventListener('click', () =>
-			copy(document.getElementById(button.dataset.copy).textContent)
-		)
-	);
-	$$('[data-copy-value]').forEach((button) =>
-		button.addEventListener('click', () => copy(button.dataset.copyValue))
-	);
+	document.addEventListener('click', (event) => {
+		const button = event.target instanceof Element ? event.target.closest('[data-copy], [data-copy-value]') : null;
+		if (!button) return;
+		copy(button.hasAttribute('data-copy-value') ? button.dataset.copyValue : document.getElementById(button.dataset.copy)?.textContent || '');
+	});
 	const themeToggle = $('.theme-toggle');
 	function reflectTheme() {
 		const dark = document.documentElement.dataset.theme === 'dark';
@@ -237,18 +234,23 @@
 		}
 	});
 
-	$$('[data-manager]').forEach((button) =>
-		button.addEventListener('click', () => {
+	document.addEventListener('click', (event) => {
+		const button = event.target instanceof Element ? event.target.closest('[data-manager]') : null;
+		if (!button) return;
 			$$('[data-manager]').forEach((item) =>
 				item.setAttribute('aria-pressed', String(item === button))
 			);
 			const manager = button.dataset.manager;
 			$('#install-code').textContent =
 				`${manager} ${manager === 'npm' ? 'install' : 'add'} ./vendor/asam-ui-ui-0.1.0-alpha.1.tgz`;
-		})
-	);
+	});
 
 
+	const pageCleanups = [];
+	const cleanupPage = () => { for (const cleanup of pageCleanups.splice(0)) cleanup(); };
+	function initializePage() {
+	cleanupPage();
+	reflectTheme();
 	// Each sequence explains hierarchy, feedback, or the transition to a new content group.
 	// Static content remains visible if GSAP fails to load; no CSS initially hides content.
 	if (window.gsap && window.ScrollTrigger && document.body.dataset.homeMotion !== 'enhanced') {
@@ -306,7 +308,7 @@
 				}
 			});
 		});
-		window.addEventListener('pagehide', () => media.revert());
+		pageCleanups.push(() => media.revert());
 	}
 	const headings = $$('.doc-section[id]');
 	if (headings.length && $('.page-toc')) {
@@ -321,6 +323,12 @@
 			{ rootMargin: '-100px 0px -55% 0px' }
 		);
 		headings.forEach((heading) => observer.observe(heading));
-		window.addEventListener('pagehide', () => observer.disconnect());
+		pageCleanups.push(() => observer.disconnect());
 	}
+	}
+	document.addEventListener('asam:page-leave', cleanupPage);
+	document.addEventListener('asam:page-enter', initializePage);
+	window.addEventListener('pagehide', cleanupPage);
+	window.addEventListener('pageshow', (event) => { if (event.persisted) initializePage(); });
+	initializePage();
 })();

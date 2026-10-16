@@ -1,1 +1,0 @@
-import"./vue.esm-bundler-5NdF0u5k.js";import{t as e}from"./tree-CaiYXp6D.js";var t=Object.assign({},e,{install(e){e.component(`AsamTree`,t)}});export{t};

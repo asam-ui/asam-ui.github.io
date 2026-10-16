@@ -1,0 +1,1 @@
+import{I as e}from"./sfc-demo.js";function t(t){let n=e();return()=>{let e=n?.vnode.props??{};return Object.fromEntries(Object.entries(t).filter(([t])=>{let n=t.replace(/[A-Z]/g,e=>`-${e.toLowerCase()}`);return Object.hasOwn(e,t)||Object.hasOwn(e,n)}))}}export{t};

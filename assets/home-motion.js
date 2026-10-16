@@ -1,7 +1,6 @@
 (() => {
-	if (document.body.dataset.homeMotion !== 'enhanced') return;
 	const root = document.documentElement;
-	const replay = document.querySelector('.motion-replay');
+	let replay = document.querySelector('.motion-replay');
 	const dismissBoot = () => {
 		clearTimeout(window.__asamHomeBootTimeout);
 		delete root.dataset.homeBoot;
@@ -17,7 +16,9 @@
 	let media;
 	let entered = false;
 	function mount(restored = false) {
+		if (document.body.dataset.homeMotion !== 'enhanced') return;
 		if (media) return;
+		replay = document.querySelector('.motion-replay');
 		media = gsap.matchMedia();
 		media.add(
 			{
@@ -278,11 +279,14 @@
 		);
 	}
 	mount();
-	window.addEventListener('pagehide', () => {
+	const cleanup = () => {
 		media?.revert();
 		media = null;
 		dismissBoot();
-	});
+	};
+	window.addEventListener('pagehide', cleanup);
+	document.addEventListener('asam:page-leave', cleanup);
+	document.addEventListener('asam:page-enter', () => mount(true));
 	window.addEventListener('pageshow', (event) => {
 		if (event.persisted) mount(true);
 	});

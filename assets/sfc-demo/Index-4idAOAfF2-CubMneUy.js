@@ -1,0 +1,1 @@
+import{n as e}from"./AsamTable-DKh6N2w9-CXwzQiE5.js";import"./sfc-demo.js";var t=Object.assign({},e,{install(e){e.component(`AsamTableColumn`,t)}});export{t};

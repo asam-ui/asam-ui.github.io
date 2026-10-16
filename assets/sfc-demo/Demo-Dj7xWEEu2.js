@@ -1,0 +1,1 @@
+import{$ as e,F as t,Jt as n,L as r,Pt as i,k as a}from"./sfc-demo.js";import{t as o}from"./Index-Bu71rnYy2-DKrUA5uX.js";var s=t({name:`AsamStatisticBasicDemo`,__name:`Demo`,setup(t){return(t,s)=>(e(),a(i(o),n(r({title:`本地示例数量`,value:12345.67,precision:2,suffix:`条`})),null,16))}});export{s as default};

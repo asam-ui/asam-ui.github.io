@@ -1,0 +1,1 @@
+import"./sfc-demo.js";import{t as e}from"./scrollbar-BcRXu2pr.js";var t=Object.assign({},e,{install(e){e.component(`AsamScrollbar`,t)}});export{t};

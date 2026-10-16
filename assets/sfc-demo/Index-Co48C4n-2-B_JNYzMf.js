@@ -1,1 +1,0 @@
-import"./vue.esm-bundler-5NdF0u5k.js";import{t as e}from"./click-outside-CoCmRHtE.js";var t=Object.assign({},e,{install(e){e.directive(`asam-click-outside`,t)}});export{t};

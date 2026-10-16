@@ -1,0 +1,1 @@
+import"./sfc-demo.js";import{a as e}from"./Index-C28mQpT2-CjTQ1-tQ.js";var t=Object.assign({},e,{install(e){e.component(`AsamHeader`,t)}});export{t};

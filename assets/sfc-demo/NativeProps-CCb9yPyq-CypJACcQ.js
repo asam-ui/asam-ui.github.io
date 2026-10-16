@@ -1,1 +1,0 @@
-import{T as e,Tt as t}from"./vue.esm-bundler-5NdF0u5k.js";function n(n,r=[`size`]){let i=e();return()=>{let e={};for(let[a,o]of Object.entries(i?.vnode.props??{})){let i=t(a);Object.hasOwn(n,i)&&!r.includes(i)&&(e[i]=o)}return e}}export{n as t};

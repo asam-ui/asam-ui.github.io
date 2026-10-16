@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "0dea4fac3b349586d4dd15b5b4bbc5cd4d85e3ef",
+	"sourceSha": "e8aeefd5ffe1fade708fbde720dd7f9d81b6769b",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDatePickerPanel/official-date-picker-panel-border/js/Demo.vue",
-			"sha256": "759166387371e81694038a57e78916883e50d32a70270760eba8a088c00b689b",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-1cf9ac1cdab509f650666d092832d8cd5e55ea4ce330be4c64834f1abdb55065.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/1cf9ac1cdab509f650666d092832d8cd5e55ea4ce330be4c64834f1abdb55065.txt\n-->\n<template>\n\t<div>\n\t\t<!-- prettier-ignore -->\n\t\t<AsamButton native-type=\"submit\" type=\"default\" @click=\"border = !border\">切换边框</AsamButton\n\t\t><AsamDatePickerPanel v-model=\"value\" :border=\"border\" />\n\t</div>\n</template>\n<script setup>\nimport { AsamButton, AsamDatePickerPanel } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamDatePickerPanelofficialdatepickerpanelborderExample' });\nimport { ref } from 'vue';\nconst border = ref(true);\nconst value = ref();\n</script>\n",
-			"originalSourceSha256": "7fd82a53f68e0283ad98049c6ebd7cb7cce5e8c3786e0fd6ecf93723b78ebced",
+			"sha256": "d4286a178779141f65cdfeaa5280a71acec45fcc93f6f671b978b3f16ed7cb40",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-1cf9ac1cdab509f650666d092832d8cd5e55ea4ce330be4c64834f1abdb55065.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/1cf9ac1cdab509f650666d092832d8cd5e55ea4ce330be4c64834f1abdb55065.txt\n-->\n<template>\n\t<div class=\"demo-layout-1\">\n\t\t<!-- prettier-ignore -->\n\t\t<AsamButton native-type=\"submit\" type=\"default\" @click=\"border = !border\">切换边框</AsamButton\n\t\t><AsamDatePickerPanel v-model=\"value\" :border=\"border\" />\n\t</div>\n</template>\n<script setup>\nimport { AsamButton, AsamDatePickerPanel } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamDatePickerPanelofficialdatepickerpanelborderExample' });\nimport { ref } from 'vue';\nconst border = ref(true);\nconst value = ref();\n</script>\n\n<style scoped>\n.demo-layout-1 {\n\tdisplay: flex;\n\tflex-wrap: wrap;\n\talign-items: center;\n\tgap: var(--asam-space-md);\n}\n</style>\n",
+			"originalSourceSha256": "add087426021e305315f456e93d1751a6244ff394eeff194953dc88170c9706f",
 			"notice": {
 				"id": "1cf9ac1cdab509f650666d092832d8cd5e55ea4ce330be4c64834f1abdb55065",
 				"url": "/licenses/source-notices/1cf9ac1cdab509f650666d092832d8cd5e55ea4ce330be4c64834f1abdb55065.txt",

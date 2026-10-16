@@ -1,0 +1,1 @@
+import"./sfc-demo.js";import{t as e}from"./badge-BZBq6pnE.js";var t=Object.assign({},e,{install(e){e.component(`AsamBadge`,t)}});export{t};

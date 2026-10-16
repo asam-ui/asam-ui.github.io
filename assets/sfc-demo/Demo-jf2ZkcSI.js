@@ -1,1 +1,0 @@
-import{Ct as e,H as t,v as n}from"./vue.esm-bundler-5NdF0u5k.js";import{t as r}from"./Index-Uo9t0Uie2-BGmo722E.js";var i=Object.assign({name:`AsamSkeletonCapConfigurableRowsDemo`},{__name:`Demo`,setup(i){return(i,a)=>(t(),n(e(r),{rows:5}))}});export{i as default};

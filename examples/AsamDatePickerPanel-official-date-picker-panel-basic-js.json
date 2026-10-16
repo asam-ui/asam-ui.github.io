@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "0dea4fac3b349586d4dd15b5b4bbc5cd4d85e3ef",
+	"sourceSha": "e8aeefd5ffe1fade708fbde720dd7f9d81b6769b",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDatePickerPanel/official-date-picker-panel-basic/js/Demo.vue",
-			"sha256": "c3dcbb34e86808a24092a2f603a9d267035f701c30631c44237f26b4678a37b9",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-8a73ffac061290414d9c46cf288a9f2e92e5d0e089b09439d0a5470d0a95e6a6.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/8a73ffac061290414d9c46cf288a9f2e92e5d0e089b09439d0a5470d0a95e6a6.txt\n-->\n<template>\n\t<div class=\"flex justify-center\">\n\t\t<AsamDatePickerPanel v-model=\"value\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamDatePickerPanel } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamDatePickerPanelofficialdatepickerpanelbasicExample' });\nimport { ref } from 'vue';\nconst value = ref();\n</script>\n",
-			"originalSourceSha256": "c25ed1f4cf0d3693a637dd00ba3801c8d908c2cae213b6c4cc7f9221cbed2e9a",
+			"sha256": "69069e1d907662dafc63f81f157b3fdf4fd01b7cc3a12ac5459c8095c5222696",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-8a73ffac061290414d9c46cf288a9f2e92e5d0e089b09439d0a5470d0a95e6a6.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/8a73ffac061290414d9c46cf288a9f2e92e5d0e089b09439d0a5470d0a95e6a6.txt\n-->\n<template>\n\t<div class=\"flex justify-center\">\n\t\t<AsamDatePickerPanel v-model=\"value\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamDatePickerPanel } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamDatePickerPanelofficialdatepickerpanelbasicExample' });\nimport { ref } from 'vue';\nconst value = ref();\n</script>\n\n<style scoped>\n/* Keep layout utilities local so the downloaded SFC needs no CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n.justify-center {\n\tjustify-content: center;\n}\n</style>\n",
+			"originalSourceSha256": "bd74484835751daff122e6418e26db856c27cc9db905ff7c1995d3e062dd038f",
 			"notice": {
 				"id": "8a73ffac061290414d9c46cf288a9f2e92e5d0e089b09439d0a5470d0a95e6a6",
 				"url": "/licenses/source-notices/8a73ffac061290414d9c46cf288a9f2e92e5d0e089b09439d0a5470d0a95e6a6.txt",

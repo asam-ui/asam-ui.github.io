@@ -150,6 +150,11 @@
 	max-width: none;
 }
 
+.site-doc-layout > .docs-content {
+	min-width: 0;
+	overflow-wrap: anywhere;
+}
+
 .site-doc-layout > .cd-catalog {
 	max-width: none;
 	margin: 0;
@@ -158,6 +163,11 @@
 .site-doc-layout > .page-toc {
 	max-height: calc(100dvh - 112px);
 	overflow-y: auto;
+	min-width: 0;
+}
+
+.site-doc-layout > .page-toc a {
+	overflow-wrap: anywhere;
 }
 
 .site-doc-layout h2,
@@ -193,10 +203,25 @@
 	margin-left: 12px;
 }
 
+.docs-menu-family {
+	margin-left: 12px;
+}
+
+.docs-menu-family > summary {
+	font-weight: 500;
+}
+
 .docs-menu-group a small {
 	margin-left: auto;
 	font: 10px var(--mono);
 	color: var(--muted);
+	min-width: 0;
+	overflow-wrap: anywhere;
+}
+
+html[data-wide='true'] .docs-menu-group a > span {
+	white-space: nowrap;
+	flex-shrink: 0;
 }
 
 .page-toc .toc-sub {
@@ -273,6 +298,7 @@ html[data-theme='dark'] .site-doc-layout .shiki span {
 		max-width: none;
 		margin-inline: 0;
 		padding-inline: 24px;
+		grid-template-columns: 320px minmax(0, 1fr) 260px;
 	}
 
 	html[data-wide='true'] .site-doc-layout > .page-toc {
@@ -281,11 +307,11 @@ html[data-theme='dark'] .site-doc-layout .shiki span {
 }
 
 @media (width < 1150px) and (width >= 768px) {
-	html:not([data-wide='true']) .site-doc-layout {
-		grid-template-columns: 220px minmax(0, 1fr);
+	html[data-wide] .site-doc-layout {
+		grid-template-columns: 260px minmax(0, 1fr);
 	}
 
-	html:not([data-wide='true']) .site-doc-layout > .page-toc {
+	html[data-wide] .site-doc-layout > .page-toc {
 		display: none;
 	}
 }

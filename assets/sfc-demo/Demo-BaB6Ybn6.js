@@ -1,0 +1,1 @@
+import{$ as e,C as t,N as n,P as r,Pt as i,j as a}from"./sfc-demo.js";import{t as o}from"./Index-DH9dCoQ1-D9NgIsjr.js";var s=Object.assign({name:`AsamBacktopCapBasicDemo`},{__name:`Demo`,setup(s){return(s,c)=>(e(),a(t,null,[c[0]||=n(` 向下滚动可看到右下角按钮。 `,-1),r(i(o),{right:100,bottom:100})],64))}});export{s as default};

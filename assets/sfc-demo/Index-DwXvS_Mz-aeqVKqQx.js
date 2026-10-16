@@ -1,0 +1,1 @@
+import{t as e}from"./mousewheel-CkprN3n4.js";import"./sfc-demo.js";var t=Object.assign({},e,{install(e){e.directive(`asam-mousewheel`,t)}});export{t};

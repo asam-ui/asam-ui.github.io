@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "0dea4fac3b349586d4dd15b5b4bbc5cd4d85e3ef",
+	"sourceSha": "e8aeefd5ffe1fade708fbde720dd7f9d81b6769b",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDatePickerPanel/official-date-picker-panel-basic/ts/Demo.vue",
-			"sha256": "bb18d6b737126f60839f7d3c06ff8c358f083488f124200734cc611ebddaaa28",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-8a73ffac061290414d9c46cf288a9f2e92e5d0e089b09439d0a5470d0a95e6a6.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/8a73ffac061290414d9c46cf288a9f2e92e5d0e089b09439d0a5470d0a95e6a6.txt\n-->\n<template>\n\t<div class=\"flex justify-center\">\n\t\t<AsamDatePickerPanel v-model=\"value\" />\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\nimport type { AsamDatePickerPanelValue } from '@asam-ui/ui';\nimport { AsamDatePickerPanel } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamDatePickerPanelofficialdatepickerpanelbasicExample' });\n\nimport { ref } from 'vue';\n\nconst value = ref<AsamDatePickerPanelValue>();\n</script>\n",
-			"originalSourceSha256": "fcb726697254dd6794efc24fa8bee0463f3f9e0a44584e1bf9169607f2194209",
+			"sha256": "a8146450af9a1248348fbc95d4451ff9fdada8568e90692eb17ca70ecbcaf6b2",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-8a73ffac061290414d9c46cf288a9f2e92e5d0e089b09439d0a5470d0a95e6a6.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/8a73ffac061290414d9c46cf288a9f2e92e5d0e089b09439d0a5470d0a95e6a6.txt\n-->\n<template>\n\t<div class=\"flex justify-center\">\n\t\t<AsamDatePickerPanel v-model=\"value\" />\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\nimport type { AsamDatePickerPanelValue } from '@asam-ui/ui';\nimport { AsamDatePickerPanel } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamDatePickerPanelofficialdatepickerpanelbasicExample' });\n\nimport { ref } from 'vue';\n\nconst value = ref<AsamDatePickerPanelValue>();\n</script>\n\n<style scoped>\n/* Keep layout utilities local so the downloaded SFC needs no CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n.justify-center {\n\tjustify-content: center;\n}\n</style>\n",
+			"originalSourceSha256": "a4b2fd7952851996dde15bc5d06b3b78cdad1968fa21d94833b68e9cb7f6fe77",
 			"notice": {
 				"id": "8a73ffac061290414d9c46cf288a9f2e92e5d0e089b09439d0a5470d0a95e6a6",
 				"url": "/licenses/source-notices/8a73ffac061290414d9c46cf288a9f2e92e5d0e089b09439d0a5470d0a95e6a6.txt",

@@ -1,0 +1,1 @@
+import"./sfc-demo.js";import{t as e}from"./tree-Cn8ahIZQ.js";var t=Object.assign({},e,{install(e){e.component(`AsamTree`,t)}});export{t};

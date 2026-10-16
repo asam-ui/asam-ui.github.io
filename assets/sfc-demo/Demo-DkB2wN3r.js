@@ -1,1 +1,0 @@
-import{Ct as e,E as t,H as n,Lt as r,v as i}from"./vue.esm-bundler-5NdF0u5k.js";import{t as a}from"./Index-Bu71rnYy2-BUrMnWRG.js";var o=Object.assign({name:`AsamStatisticBasicDemo`},{__name:`Demo`,setup(o){return(o,s)=>(n(),i(e(a),r(t({title:`本地示例数量`,value:12345.67,precision:2,suffix:`条`})),null,16))}});export{o as default};

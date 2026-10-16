@@ -1,0 +1,1 @@
+import{$ as e,Pt as t,k as n}from"./sfc-demo.js";import{t as r}from"./Index-Den6hpw6-BpF7VMvv.js";var i=Object.assign({name:`AsamCalendarofficialcalendarrangeExample`},{__name:`Demo`,setup(i){return(i,a)=>(e(),n(t(r),{range:[new Date(2019,2,4),new Date(2019,2,24)]},null,8,[`range`]))}});export{i as default};

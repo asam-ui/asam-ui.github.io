@@ -1,0 +1,1 @@
+import{$ as e,F as t,P as n,Pt as r,j as i}from"./sfc-demo.js";import{t as a}from"./Index-DFGXF048-AeaQMoO5.js";var o={style:{"max-width":`600px`}},s=t({name:`AsamAlertCapDescriptionDemo`,__name:`Demo`,setup(t){return(t,s)=>(e(),i(`div`,o,[n(r(a),{title:`带说明`,type:`success`,description:`这是一段说明。`})]))}});export{s as default};

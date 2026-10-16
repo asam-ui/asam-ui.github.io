@@ -1,0 +1,1 @@
+import"./sfc-demo.js";import{n as e}from"./Index-D4t3TBEp-C2XYIynl.js";var t=Object.assign({},e,{install(e){e.component(`AsamAvatarGroup`,t)}});export{t};

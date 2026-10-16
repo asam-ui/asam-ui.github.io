@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "0dea4fac3b349586d4dd15b5b4bbc5cd4d85e3ef",
+	"sourceSha": "e8aeefd5ffe1fade708fbde720dd7f9d81b6769b",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamCalendar/official-calendar-controller-type/ts/Demo.vue",
-			"sha256": "9ef38424206ea71ef27820a2f098d5056d8939ec3d3fd0501cd12aeba79aaf26",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ea2274f17060821bd4c76558ab0f892f55ab4267096a0d7b85ce459f2285e627.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ea2274f17060821bd4c76558ab0f892f55ab4267096a0d7b85ce459f2285e627.txt\n-->\n<template>\n\t<AsamRadioGroup :model-value=\"controllerType\" @update:model-value=\"updatecontrollerType\">\n\t\t<AsamRadioButton label=\"select\" value=\"select\" />\n\t\t<AsamRadioButton label=\"button\" value=\"button\" />\n\t</AsamRadioGroup>\n\n\t<AsamCalendar v-model=\"value\" :controller-type=\"controllerType\" />\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamRadioGroup, AsamRadioButton, AsamCalendar } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamCalendarofficialcalendarcontrollertypeExample' });\n\nimport { ref } from 'vue';\n\nconst controllerType = ref<'select' | 'button'>('select');\nconst value = ref(new Date());\nfunction updatecontrollerType(value: unknown) {\n\tif (value === 'button' || value === 'select') controllerType.value = value;\n}\n</script>\n",
-			"originalSourceSha256": "01254b33dc53c74981bffc1e0a33fec42e8758757126b2611339fb6bb5f9c006",
+			"sha256": "6df179240679e7cec56c4fa5857dd37baa3eda3f517e102a2f494fa3f69963f9",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ea2274f17060821bd4c76558ab0f892f55ab4267096a0d7b85ce459f2285e627.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ea2274f17060821bd4c76558ab0f892f55ab4267096a0d7b85ce459f2285e627.txt\n-->\n<template>\n\t<div class=\"demo-root-layout\">\n\t\t<AsamRadioGroup :model-value=\"controllerType\" @update:model-value=\"updatecontrollerType\">\n\t\t\t<AsamRadioButton label=\"select\" value=\"select\" />\n\t\t\t<AsamRadioButton label=\"button\" value=\"button\" />\n\t\t</AsamRadioGroup>\n\n\t\t<AsamCalendar v-model=\"value\" :controller-type=\"controllerType\" />\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamRadioGroup, AsamRadioButton, AsamCalendar } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamCalendarofficialcalendarcontrollertypeExample' });\n\nimport { ref } from 'vue';\n\nconst controllerType = ref<'select' | 'button'>('select');\nconst value = ref(new Date());\nfunction updatecontrollerType(value: unknown) {\n\tif (value === 'button' || value === 'select') controllerType.value = value;\n}\n</script>\n\n<style scoped>\n.demo-root-layout {\n\tdisplay: flex;\n\tgap: var(--asam-space-md);\n\tflex-wrap: wrap;\n\talign-items: center;\n}\n.demo-root-layout > :is(p, pre, output) {\n\tmargin-block: 0;\n}\n</style>\n",
+			"originalSourceSha256": "029dfc74eded93a922be7e404ada95b6438c11d4f7e22df63ad019c85865bfaf",
 			"notice": {
 				"id": "ea2274f17060821bd4c76558ab0f892f55ab4267096a0d7b85ce459f2285e627",
 				"url": "/licenses/source-notices/ea2274f17060821bd4c76558ab0f892f55ab4267096a0d7b85ce459f2285e627.txt",

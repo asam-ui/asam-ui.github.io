@@ -371,6 +371,12 @@
 	outline-offset: 3px;
 }
 
+/* Select draws focus on its wrapper; the editable child must not gain a second ring. */
+.cd-page .el-select__input:focus-visible,
+.cd-page .el-select-v2__combobox-input:focus-visible {
+	outline: none;
+}
+
 @media (width <= 1150px) {
 	.cd-layout {
 		grid-template-columns: 220px minmax(0, 1fr);

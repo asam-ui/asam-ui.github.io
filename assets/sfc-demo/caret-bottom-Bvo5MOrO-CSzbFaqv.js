@@ -1,1 +1,0 @@
-import{H as e,_ as t,b as n,w as r}from"./vue.esm-bundler-5NdF0u5k.js";var i={width:`1em`,height:`1em`,xmlns:`http://www.w3.org/2000/svg`,viewBox:`0 0 1024 1024`},a=r({name:`CaretBottom`,__name:`caret-bottom`,setup(r){return(r,a)=>(e(),n(`svg`,i,[...a[0]||=[t(`path`,{fill:`currentColor`,d:`m192 384 320 384 320-384z`},null,-1)]]))}});export{a as t};

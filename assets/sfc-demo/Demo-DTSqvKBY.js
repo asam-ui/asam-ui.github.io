@@ -1,0 +1,1 @@
+import{$ as e,F as t,O as n,P as r,Pt as i,j as a}from"./sfc-demo.js";import{t as o}from"./Index-CM-nT6xM-B-4V65tZ.js";var s=t({name:`AsamDividerCapBasicUsageDemo`,__name:`Demo`,setup(t){return(t,s)=>(e(),a(`div`,null,[s[0]||=n(`span`,null,` 清晨坐在窗前，世界如过客般短暂停留，点头后离去。 `,-1),r(i(o)),s[1]||=n(`span`,null,` 细小的思绪如树叶沙沙作响，在心中低语着喜悦。 `,-1)]))}});export{s as default};

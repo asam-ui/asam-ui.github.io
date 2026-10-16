@@ -1,1 +1,0 @@
-import{s as e}from"./fromPairs-Cs9dJ7FM.js";import{t}from"./debounce-CaN8pzTi.js";var n=`Expected a function`;function r(r,i,a){var o=!0,s=!0;if(typeof r!=`function`)throw TypeError(n);return e(a)&&(o=`leading`in a?!!a.leading:o,s=`trailing`in a?!!a.trailing:s),t(r,i,{leading:o,maxWait:i,trailing:s})}export{r as t};

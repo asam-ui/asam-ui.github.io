@@ -1,0 +1,1 @@
+import{$ as e,F as t,Pt as n,Tt as r,k as i}from"./sfc-demo.js";import{t as a}from"./Index-Den6hpw6-BpF7VMvv.js";var o=t({name:`AsamCalendarofficialcalendarbasicExample`,__name:`Demo`,setup(t){let o=r(new Date);return(t,r)=>(e(),i(n(a),{modelValue:o.value,"onUpdate:modelValue":r[0]||=e=>o.value=e},null,8,[`modelValue`]))}});export{o as default};

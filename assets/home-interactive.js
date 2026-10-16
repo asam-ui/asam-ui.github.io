@@ -1,7 +1,7 @@
 (() => {
-	if (document.body.dataset.page !== 'home') return;
 	let cleanup;
 	function mount() {
+		if (document.body.dataset.page !== 'home') return;
 		if (cleanup) return;
 		const events = new AbortController();
 		const reduce = matchMedia('(prefers-reduced-motion: reduce)');
@@ -132,6 +132,8 @@
 		};
 	}
 	mount();
+	document.addEventListener('asam:page-leave', () => cleanup?.());
+	document.addEventListener('asam:page-enter', mount);
 	window.addEventListener('pagehide', () => cleanup?.());
 	window.addEventListener('pageshow', (event) => {
 		if (event.persisted) mount();

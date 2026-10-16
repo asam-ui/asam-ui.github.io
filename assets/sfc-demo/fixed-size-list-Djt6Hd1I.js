@@ -1,6 +1,0 @@
-import{Ft as e}from"./vue.esm-bundler-5NdF0u5k.js";import{d as t,r as n,t as r}from"./defaults-Bi1CAxTT.js";import{a as i}from"./scrollbar-9fSy6YNe.js";import{t as a}from"./build-list-B3CJKBDu.js";import{G as o}from"./sfc-demo.js";var s=a({name:`ElFixedSizeList`,getItemOffset:({itemSize:e},t)=>t*e,getItemSize:({itemSize:e})=>e,getEstimatedTotalSize:({total:e,itemSize:t})=>t*e,getOffset:({height:a,total:s,itemSize:c,layout:l,width:u},d,f,p)=>{let m=i(l)?u:a;e(m)&&o(`[ElVirtualList]`,`
-        You should set
-          width/height
-        to number when your layout is
-          horizontal/vertical
-      `);let h=Math.max(0,s*c-m),g=Math.min(h,d*c),_=Math.max(0,(d+1)*c-m);switch(f===`smart`&&(f=p>=_-m&&p<=g+m?r:n),f){case t:return g;case`end`:return _;case n:{let e=Math.round(_+(g-_)/2);return e<Math.ceil(m/2)?0:e>h+Math.floor(m/2)?h:e}case r:default:return p>=_&&p<=g?p:p<_?_:g}},getStartIndexForOffset:({total:e,itemSize:t},n)=>Math.max(0,Math.min(e-1,Math.floor(n/t))),getStopIndexForStartIndex:({height:e,total:t,itemSize:n,layout:r,width:a},o,s)=>{let c=o*n,l=i(r)?a:e,u=Math.ceil((l+s-c)/n);return Math.max(0,Math.min(t-1,o+u-1))},initCache(){},clearCache:!0,validateProps(){}});export{s as t};

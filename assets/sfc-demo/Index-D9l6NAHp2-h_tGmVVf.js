@@ -1,0 +1,1 @@
+import"./sfc-demo.js";import{t as e}from"./fixed-size-list-BzaRzwsj.js";var t=Object.assign({},e,{install(e){e.component(`AsamFixedSizeList`,t)}});export{t};

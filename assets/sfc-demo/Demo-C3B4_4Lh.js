@@ -1,0 +1,1 @@
+import{$ as e,Pt as t,k as n}from"./sfc-demo.js";import{t as r}from"./Index-BaqEmWKo-Cc5wl1VX.js";var i=Object.assign({name:`AsamEmptyCapBasicUsageDemo`},{__name:`Demo`,setup(i){return(i,a)=>(e(),n(t(r),{description:`说明`}))}});export{i as default};

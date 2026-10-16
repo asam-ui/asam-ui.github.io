@@ -1,1 +1,0 @@
-import"./vue.esm-bundler-5NdF0u5k.js";import{a as e}from"./Index-C28mQpT2-BN77icFy.js";var t=Object.assign({},e,{install(e){e.component(`AsamHeader`,t)}});export{t};

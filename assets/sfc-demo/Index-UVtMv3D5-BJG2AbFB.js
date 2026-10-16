@@ -1,0 +1,1 @@
+import"./sfc-demo.js";import{t as e}from"./icon-Bj-_e5M3.js";var t=Object.assign({},e,{install(e){e.component(`AsamIcon`,t)}});export{t};

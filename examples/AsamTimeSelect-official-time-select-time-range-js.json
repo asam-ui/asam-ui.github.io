@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "0dea4fac3b349586d4dd15b5b4bbc5cd4d85e3ef",
+	"sourceSha": "e8aeefd5ffe1fade708fbde720dd7f9d81b6769b",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTimeSelect/official-time-select-time-range/js/Demo.vue",
-			"sha256": "30ddd572cf95ac85ee6f521a1574f91f7f99a81f2411fa0275c8e03975acf75f",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841.txt\n-->\n<template>\n\t<div class=\"demo-time-range flex flex-wrap gap-4\">\n\t\t<AsamTimeSelect\n\t\t\tv-model=\"startTime\"\n\t\t\tstyle=\"width: 240px\"\n\t\t\t:max-time=\"typeof endTime === 'string' ? endTime : undefined\"\n\t\t\tplaceholder=\"开始时间\"\n\t\t\tstart=\"08:30\"\n\t\t\tstep=\"00:15\"\n\t\t\tend=\"18:30\"\n\t\t/>\n\t\t<AsamTimeSelect\n\t\t\tv-model=\"endTime\"\n\t\t\tstyle=\"width: 240px\"\n\t\t\t:min-time=\"typeof startTime === 'string' ? startTime : undefined\"\n\t\t\tplaceholder=\"结束时间\"\n\t\t\tstart=\"08:30\"\n\t\t\tstep=\"00:15\"\n\t\t\tend=\"18:30\"\n\t\t/>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamTimeSelect } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamTimeSelectofficialtimeselecttimerangeExample' });\nimport { ref } from 'vue';\nconst startTime = ref('');\nconst endTime = ref('');\n</script>\n",
-			"originalSourceSha256": "729d4b9f0eda8ddb494cd4ebcf7c62330566835a96d7c9f52e8ad92e7c920b77",
+			"sha256": "389d8afc0ddbb90748b8a2f5ba2cccfabc9b308b38e81974d6a59318a80a92f0",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841.txt\n-->\n<template>\n\t<div class=\"demo-time-range flex flex-wrap gap-4\">\n\t\t<AsamTimeSelect\n\t\t\tv-model=\"startTime\"\n\t\t\tstyle=\"width: 240px\"\n\t\t\t:max-time=\"typeof endTime === 'string' ? endTime : undefined\"\n\t\t\tplaceholder=\"开始时间\"\n\t\t\tstart=\"08:30\"\n\t\t\tstep=\"00:15\"\n\t\t\tend=\"18:30\"\n\t\t/>\n\t\t<AsamTimeSelect\n\t\t\tv-model=\"endTime\"\n\t\t\tstyle=\"width: 240px\"\n\t\t\t:min-time=\"typeof startTime === 'string' ? startTime : undefined\"\n\t\t\tplaceholder=\"结束时间\"\n\t\t\tstart=\"08:30\"\n\t\t\tstep=\"00:15\"\n\t\t\tend=\"18:30\"\n\t\t/>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamTimeSelect } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamTimeSelectofficialtimeselecttimerangeExample' });\nimport { ref } from 'vue';\nconst startTime = ref('');\nconst endTime = ref('');\n</script>\n\n<style scoped>\n/* Keep layout utilities local so the downloaded SFC needs no CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n.flex-wrap {\n\tflex-wrap: wrap;\n}\n.gap-4 {\n\tgap: var(--asam-space-lg);\n}\n</style>\n",
+			"originalSourceSha256": "3432a0ef6602a8b4200a5a1c427aac9e5949213aee950a90270cac44105e5803",
 			"notice": {
 				"id": "ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841",
 				"url": "/licenses/source-notices/ef3b71c576537f65261710ff314dc4bec43ce398abac755f1e16ae951471c841.txt",

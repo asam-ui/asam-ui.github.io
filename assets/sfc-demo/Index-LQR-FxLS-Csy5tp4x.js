@@ -1,1 +1,0 @@
-import"./vue.esm-bundler-5NdF0u5k.js";import{i as e}from"./Index-CnBY3x4a2-C4AVpaTG.js";var t=Object.assign({},e,{install(e){e.component(`AsamMenuItemGroup`,t)}});export{t};

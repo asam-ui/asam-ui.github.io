@@ -1,0 +1,1 @@
+import"./sfc-demo.js";import{t as e}from"./repeat-click-CFLVz0Gu.js";var t=Object.assign({},e,{install(e){e.directive(`asam-repeat-click`,t)}});export{t};
