@@ -1,0 +1,1 @@
+import"./vue.esm-bundler-5NdF0u5k.js";import{t as e}from"./dynamic-size-list-ci28EqXn.js";var t=Object.assign({},e,{install(e){e.component(`AsamDynamicSizeList`,t)}});export{t};

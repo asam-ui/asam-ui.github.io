@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTree/native-draggable/ts/Demo.vue",
+			"sha256": "f9cbe7682e5d22729aa821d75e82a0a74894ae051b50ddbbf4d8b5d061f89a5c",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\nNotice resource: /licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\n-->\n<template>\n\t<AsamTree\n\t\tstyle=\"max-width: 600px\"\n\t\t:allow-drop=\"allowDrop\"\n\t\t:allow-drag=\"allowDrag\"\n\t\t:data=\"data\"\n\t\tdraggable\n\t\tdefault-expand-all\n\t\tnode-key=\"id\"\n\t\t@node-drag-start=\"handleDragStart\"\n\t\t@node-drag-enter=\"handleDragEnter\"\n\t\t@node-drag-leave=\"handleDragLeave\"\n\t\t@node-drag-over=\"handleDragOver\"\n\t\t@node-drag-end=\"handleDragEnd\"\n\t\t@node-drop=\"handleDrop\"\n\t/>\n</template>\n\n<script lang=\"ts\" setup>\n\n\nimport { AsamTree } from '@asam-ui/ui';\n// Adapted from the fixed upstream MIT example: tree/draggable.vue\n\nimport type {\n\tAsamTreeAllowDropType,\n\tAsamTreeNodeDropType,\n\tAsamTreeRenderContentContext\n} from '@asam-ui/ui';\n\ntype Node = AsamTreeRenderContentContext['node'];\n\nconst handleDragStart = (node: Node, _event: DragEvent) => {\n\tconsole.log('drag start', node);\n};\nconst handleDragEnter = (draggingNode: Node, dropNode: Node, _event: DragEvent) => {\n\tconsole.log('tree drag enter:', dropNode.label);\n};\nconst handleDragLeave = (draggingNode: Node, dropNode: Node, _event: DragEvent) => {\n\tconsole.log('tree drag leave:', dropNode.label);\n};\nconst handleDragOver = (draggingNode: Node, dropNode: Node, _event: DragEvent) => {\n\tconsole.log('tree drag over:', dropNode.label);\n};\nconst handleDragEnd = (\n\tdraggingNode: Node,\n\tdropNode: Node | null,\n\tdropType: AsamTreeNodeDropType,\n\t_event: DragEvent\n) => {\n\tconsole.log('tree drag end:', dropNode && dropNode.label, dropType);\n};\nconst handleDrop = (\n\tdraggingNode: Node,\n\tdropNode: Node,\n\tdropType: Exclude<AsamTreeNodeDropType, 'none'>,\n\t_event: DragEvent\n) => {\n\tconsole.log('tree drop:', dropNode.label, dropType);\n};\nconst allowDrop = (draggingNode: Node, dropNode: Node, type: AsamTreeAllowDropType) => {\n\tif (dropNode.data.label === '二级节点 3-1') {\n\t\treturn type !== 'inner';\n\t} else {\n\t\treturn true;\n\t}\n};\nconst allowDrag = (draggingNode: Node) => {\n\treturn !draggingNode.data.label.includes('三级节点 3-1-1');\n};\n\nconst data = [\n\t{\n\t\tlabel: '一级节点 1',\n\t\tchildren: [\n\t\t\t{\n\t\t\t\tlabel: '二级节点 1-1',\n\t\t\t\tchildren: [\n\t\t\t\t\t{\n\t\t\t\t\t\tlabel: '三级节点 1-1-1'\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}\n\t\t]\n\t},\n\t{\n\t\tlabel: '一级节点 2',\n\t\tchildren: [\n\t\t\t{\n\t\t\t\tlabel: '二级节点 2-1',\n\t\t\t\tchildren: [\n\t\t\t\t\t{\n\t\t\t\t\t\tlabel: '三级节点 2-1-1'\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},\n\t\t\t{\n\t\t\t\tlabel: '二级节点 2-2',\n\t\t\t\tchildren: [\n\t\t\t\t\t{\n\t\t\t\t\t\tlabel: '三级节点 2-2-1'\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}\n\t\t]\n\t},\n\t{\n\t\tlabel: '一级节点 3',\n\t\tchildren: [\n\t\t\t{\n\t\t\t\tlabel: '二级节点 3-1',\n\t\t\t\tchildren: [\n\t\t\t\t\t{\n\t\t\t\t\t\tlabel: '三级节点 3-1-1'\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},\n\t\t\t{\n\t\t\t\tlabel: '二级节点 3-2',\n\t\t\t\tchildren: [\n\t\t\t\t\t{\n\t\t\t\t\t\tlabel: '三级节点 3-2-1'\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}\n\t\t]\n\t}\n];\n</script>\n",
+			"originalSourceSha256": "bc2dea6e7d37f24f53979c2dd29089901e45f26f4a38bb3fd2023678accf761c",
+			"notice": {
+				"id": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+				"url": "/licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"licenseFilename": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0"
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+			"source": "MIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+			"noticeId": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27"
+		}
+	]
+}

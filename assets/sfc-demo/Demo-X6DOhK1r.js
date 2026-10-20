@@ -1,1 +1,0 @@
-import{$ as e,P as t,Pt as n,j as r}from"./sfc-demo.js";import{t as i}from"./Index-DFGXF048-AeaQMoO5.js";var a={style:{"max-width":`600px`}},o=Object.assign({name:`AsamAlertCapDescriptionDemo`},{__name:`Demo`,setup(o){return(o,s)=>(e(),r(`div`,a,[t(n(i),{title:`带说明`,type:`success`,description:`这是一段说明。`})]))}});export{o as default};

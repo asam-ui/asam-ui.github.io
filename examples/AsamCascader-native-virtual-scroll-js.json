@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamCascader/native-virtual-scroll/js/Demo.vue",
+			"sha256": "ff233ab36a7b408c73192a48595c3c1b1efb6afa96b5c8d366056e18bad4fad3",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\nNotice resource: /licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\n-->\n<template>\n\t<AsamCascader\n\t\tvalue-mode=\"native\"\n\t\tv-model=\"value\"\n\t\t:options=\"options\"\n\t\t:filter-method=\"filterMethod\"\n\t\tfilterable\n\t\tvirtual-scroll\n\t\tclearable\n\t\tplaceholder=\"大数据量选择器\"\n\t/>\n</template>\n\n<script setup>\n\n\nimport { AsamCascader } from '@asam-ui/ui';\n// Adapted from the fixed upstream MIT example: cascader/virtual-scroll.vue\nimport { ref } from 'vue';\nconst value = ref([]);\nconst filterMethod = (node, keyword) => {\n\treturn node.text.toLowerCase().includes(keyword.toLowerCase());\n};\nconst generateOptions = (count) => {\n\treturn Array.from({ length: count }).map((_, index) => ({\n\t\tvalue: `option-${index}`,\n\t\tlabel: `Option ${index + 1}`,\n\t\tchildren: [\n\t\t\t{\n\t\t\t\tvalue: `child-${index}-1`,\n\t\t\t\tlabel: `Child ${index + 1}-1`,\n\t\t\t\tchildren: [\n\t\t\t\t\t{\n\t\t\t\t\t\tvalue: `grandchild-${index}-1-1`,\n\t\t\t\t\t\tlabel: `Grandchild ${index + 1}-1-1`\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\tvalue: `grandchild-${index}-1-2`,\n\t\t\t\t\t\tlabel: `Grandchild ${index + 1}-1-2`\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},\n\t\t\t{\n\t\t\t\tvalue: `child-${index}-2`,\n\t\t\t\tlabel: `Child ${index + 1}-2`\n\t\t\t}\n\t\t]\n\t}));\n};\nconst options = ref(generateOptions(20000));\n</script>\n",
+			"originalSourceSha256": "b2bf09066a096fe8867894d2707917a9b98b5250166aa2fe9c757cd7705dc926",
+			"notice": {
+				"id": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+				"url": "/licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"licenseFilename": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0"
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+			"source": "MIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+			"noticeId": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27"
+		}
+	]
+}

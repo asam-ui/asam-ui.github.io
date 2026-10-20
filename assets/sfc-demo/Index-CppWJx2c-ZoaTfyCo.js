@@ -1,1 +1,0 @@
-import"./sfc-demo.js";import{t as e}from"./dynamic-size-list-Dtz5OF6m.js";var t=Object.assign({},e,{install(e){e.component(`AsamDynamicSizeList`,t)}});export{t};

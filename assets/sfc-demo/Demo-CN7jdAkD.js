@@ -1,1 +1,0 @@
-import{$ as e,F as t,Pt as n,k as r}from"./sfc-demo.js";import{a as i}from"./Index-CHaVy6uF.js";var a=t({__name:`Demo`,setup(t){let a=0,o={lazy:!0,lazyLoad(e,t){let{level:n}=e;setTimeout(()=>{t(Array.from({length:n+1}).map(()=>({value:++a,label:`Option - ${a}`,leaf:n>=2})))},1e3)}};return(t,a)=>(e(),r(n(i),{"value-mode":`native`,props:o}))}});export{a as default};

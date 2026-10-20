@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "581f8531694852fd15aec5dcf65a7208b553e5fe",
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamCard/cap-simple/ts/Demo.vue",
-			"sha256": "6d34dd8c296d036e7cb52134957099cc5c14e665232d254594179459369c315d",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f36ea2be03e7e1d8da811a3d50ac3585ab6ec288bbc09b6e0ca5426610fe3b2e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f36ea2be03e7e1d8da811a3d50ac3585ab6ec288bbc09b6e0ca5426610fe3b2e.txt\n-->\n<template>\n\t<AsamCard style=\"max-width: 480px\">\n\t\t<p v-for=\"o in 4\" :key=\"o\" class=\"text item\">{{ '列表项 ' + o }}</p>\n\t</AsamCard>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamCardCapSimpleDemo' });\nimport { AsamCard } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "1fcb09efb84502911402e13d96377a01a4605dbfcbfe575575eaae26921b50ce",
+			"sha256": "3691640421c6939c9710e4c3889f49e5476294c39e26118c7968790d22ba6873",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f36ea2be03e7e1d8da811a3d50ac3585ab6ec288bbc09b6e0ca5426610fe3b2e.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f36ea2be03e7e1d8da811a3d50ac3585ab6ec288bbc09b6e0ca5426610fe3b2e.txt\n-->\n<template>\n\t<AsamCard style=\"max-width: 480px\">\n\t\t<p v-for=\"o in 4\" :key=\"o\" class=\"text item example-paragraph\">{{ '列表项 ' + o }}</p>\n\t</AsamCard>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamCardCapSimpleDemo' });\nimport { AsamCard } from '@asam-ui/ui';\n</script>\n\n<style scoped>\np:where(.example-paragraph) {\n\tmargin-block: 16px;\n\tline-height: 1.8;\n\toverflow-wrap: anywhere;\n}\n</style>\n",
+			"originalSourceSha256": "de5d836cce407e6a4664ab63c64a2dc7b55ebd88e5bc3b197126984c99c4a772",
 			"notice": {
 				"id": "f36ea2be03e7e1d8da811a3d50ac3585ab6ec288bbc09b6e0ca5426610fe3b2e",
 				"url": "/licenses/source-notices/f36ea2be03e7e1d8da811a3d50ac3585ab6ec288bbc09b6e0ca5426610fe3b2e.txt",

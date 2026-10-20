@@ -1,1 +1,0 @@
-import{t as e}from"./isObjectLike-2s8xzH_y.js";import{i as t,n,r}from"./_flatRest-B3Ut0qQb.js";import{g as i}from"./_Uint8Array-Ck0hg3ZL.js";function a(e,i){return r(n(e,i,t),e+``)}function o(t){return e(t)&&i(t)}export{a as n,o as t};

@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTreeV2/native-disabled/ts/Demo.vue",
+			"sha256": "c5e9bc827e9dc193455f7b8a7eba310b0d218a40b183f12048b5a8112cd27950",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\nNotice resource: /licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\n-->\n<template>\n\t<AsamTreeV2 style=\"max-width: 600px\" :data=\"data\" :props=\"props\" show-checkbox :height=\"200\" />\n</template>\n\n<script lang=\"ts\" setup>\n\n\nimport { AsamTreeV2 } from '@asam-ui/ui';\n// Adapted from the fixed upstream MIT example: tree-v2/disabled.vue\n\ninterface Tree {\n\tid: string;\n\tlabel: string;\n\tchildren?: Tree[];\n\tdisabled: boolean;\n}\n\nconst getKey = (prefix: string, id: number) => {\n\treturn `${prefix}-${id}`;\n};\n\nconst createData = (\n\tmaxDeep: number,\n\tmaxChildren: number,\n\tminNodesNumber: number,\n\tdeep = 1,\n\tkey = 'node'\n): Tree[] => {\n\tlet id = 0;\n\treturn Array.from({ length: minNodesNumber })\n\t\t.fill(deep)\n\t\t.map(() => {\n\t\t\tconst childrenNumber = deep === maxDeep ? 0 : Math.round(Math.random() * maxChildren);\n\t\t\tconst nodeKey = getKey(key, ++id);\n\t\t\treturn {\n\t\t\t\tid: nodeKey,\n\t\t\t\tlabel: nodeKey.replace(/^node/, '节点'),\n\t\t\t\tchildren: childrenNumber\n\t\t\t\t\t? createData(maxDeep, maxChildren, childrenNumber, deep + 1, nodeKey)\n\t\t\t\t\t: undefined,\n\t\t\t\tdisabled: nodeKey.includes('2')\n\t\t\t};\n\t\t});\n};\n\nconst props = {\n\tvalue: 'id',\n\tlabel: 'label',\n\tchildren: 'children',\n\tdisabled: 'disabled'\n};\nconst data = createData(4, 30, 40);\n</script>\n",
+			"originalSourceSha256": "94ab23fa6da4995364d71c805e4f10390016ed05396999951abaca7b9813caf2",
+			"notice": {
+				"id": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+				"url": "/licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"licenseFilename": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0"
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+			"source": "MIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+			"noticeId": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27"
+		}
+	]
+}

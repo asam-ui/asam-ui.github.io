@@ -1,1 +1,0 @@
-import{t as e}from"./runtime-D51j5G5D.js";import{B as t,D as n,Pt as r}from"./sfc-demo.js";import{t as i}from"./size-6b9Z1xWQ.js";var a=e({type:String,values:i,required:!1}),o=Symbol(`size`),s=()=>{let e=t(o,{});return n(()=>r(e.size)||``)};export{s as n,a as r,o as t};

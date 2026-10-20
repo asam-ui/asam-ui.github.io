@@ -1,0 +1,1 @@
+import{_t as e,g as t,mt as n}from"./vue.esm-bundler-5NdF0u5k.js";import{k as r}from"./sfc-demo.js";function i(){let i=e(),a=n(0),o=t(()=>({minWidth:`${Math.max(a.value,11)}px`}));return r(i,()=>{a.value=i.value?.getBoundingClientRect().width??0}),{calculatorRef:i,calculatorWidth:a,inputStyle:o}}export{i as t};

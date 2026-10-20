@@ -1,0 +1,1 @@
+import"./vue.esm-bundler-5NdF0u5k.js";import{t as e}from"./collapse-transition-DV2onPG2.js";var t=Object.assign({},e,{install(e){e.component(`AsamCollapseTransition`,t)}});export{t};

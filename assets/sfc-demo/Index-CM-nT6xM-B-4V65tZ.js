@@ -1,1 +1,0 @@
-import"./sfc-demo.js";import{t as e}from"./divider-C3qQSESb.js";var t=Object.assign({},e,{install(e){e.component(`AsamDivider`,t)}});export{t};

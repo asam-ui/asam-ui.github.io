@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "status": "ACCEPTED_MAINTENANCE_WEBSITE_COMPOSITE",
-  "source": "581f8531694852fd15aec5dcf65a7208b553e5fe",
+  "source": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
   "acceptedSource": "f9acdb7f623de5346d26b60475e89b1b9f158c37",
   "website": "https://asam-ui.github.io/",
   "publicRepository": "asam-ui/asam-ui.github.io",
-  "expectedPublicBaseRef": "69dd15d10882d29cb19b82af61ab1e1034a60ef0",
+  "expectedPublicBaseRef": "9bbf8a496cf89e0075fd477aeae5b7d210196bdc",
   "componentVersion": "0.1.0-alpha.1",
   "componentProductSource": "4110356ba3d9cb669de5c4d9d22ab72f7d1d6a4a",
   "skillSource": "1ae352ba18ffd6198d47e1a55430b9080de0c2eb",
@@ -14,107 +14,107 @@
   "files": [
     {
       "path": "ai/index.html",
-      "bytes": 15112,
-      "sha256": "745c9ace7f90f2327cdedfe6433532317a73b580916033d1910afcfb90a95def",
-      "origin": "accepted-normal-public-581f8531694852fd15aec5dcf65a7208b553e5fe",
-      "source": "581f8531694852fd15aec5dcf65a7208b553e5fe"
+      "bytes": 15215,
+      "sha256": "0feba81dbc1ca3e7bb888540179181bde17afa8ac72efdbdc52babbbe0bf8ef4",
+      "origin": "ci-public-eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
+      "source": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf"
     },
     {
       "path": "ai/skill.html",
-      "bytes": 18702,
-      "sha256": "65770b80363ab7f7d6e395a5da401be5405cbd9be1f5fce423107227e330e386",
-      "origin": "accepted-normal-public-581f8531694852fd15aec5dcf65a7208b553e5fe",
-      "source": "581f8531694852fd15aec5dcf65a7208b553e5fe"
+      "bytes": 18805,
+      "sha256": "db8a3bcb294f6b202206f02380dc785a9cdad36e19713bbb7b6542cbc8ed03dd",
+      "origin": "ci-public-eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
+      "source": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf"
     },
     {
       "path": "ai/mcp.html",
-      "bytes": 19410,
-      "sha256": "0d211ef3202604f8d55b823a5d0bc00afbf738af6dea99a74b8d6f585d2b3aaf",
-      "origin": "accepted-normal-public-581f8531694852fd15aec5dcf65a7208b553e5fe",
-      "source": "581f8531694852fd15aec5dcf65a7208b553e5fe"
+      "bytes": 19513,
+      "sha256": "0dbdc723630a9309d50cce56acd377491bd7369037779158fa78c9517fa651c4",
+      "origin": "ci-public-eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
+      "source": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf"
     },
     {
       "path": "skills/asam-ui-usage/SKILL.md",
       "bytes": 3570,
       "sha256": "53f249ffcafb989dd2cbffb462c5dfc223778b3f602617b619ae4d28aac21a23",
-      "origin": "unchanged-published-material-from-public-69dd15d10882d29cb19b82af61ab1e1034a60ef0",
+      "origin": "unchanged-published-material-from-public-9bbf8a496cf89e0075fd477aeae5b7d210196bdc",
       "source": "accepted-skill:asam-ui-usage/SKILL.md"
     },
     {
       "path": "skills/asam-ui-usage/references/api-pairing.md",
       "bytes": 2858,
       "sha256": "305584548aad5043646eba4ae8d0f6bbb441e319171a955369a091cfd4675d14",
-      "origin": "unchanged-published-material-from-public-69dd15d10882d29cb19b82af61ab1e1034a60ef0",
+      "origin": "unchanged-published-material-from-public-9bbf8a496cf89e0075fd477aeae5b7d210196bdc",
       "source": "accepted-skill:asam-ui-usage/references/api-pairing.md"
     },
     {
       "path": "skills/asam-ui-usage/references/imports.md",
       "bytes": 4406,
       "sha256": "0ec6310ac64f285a73a0dc64c9a57ec1f8965dcec1822ff819cf96096d3bf4e1",
-      "origin": "unchanged-published-material-from-public-69dd15d10882d29cb19b82af61ab1e1034a60ef0",
+      "origin": "unchanged-published-material-from-public-9bbf8a496cf89e0075fd477aeae5b7d210196bdc",
       "source": "accepted-skill:asam-ui-usage/references/imports.md"
     },
     {
       "path": "skills/asam-ui-usage/references/integration.md",
       "bytes": 4447,
       "sha256": "1ea095b4ea22d285f413abc26f1f2a5578565d92dd174c4b3201a408f13b49de",
-      "origin": "unchanged-published-material-from-public-69dd15d10882d29cb19b82af61ab1e1034a60ef0",
+      "origin": "unchanged-published-material-from-public-9bbf8a496cf89e0075fd477aeae5b7d210196bdc",
       "source": "accepted-skill:asam-ui-usage/references/integration.md"
     },
     {
       "path": "skills/asam-ui-usage/references/migration.md",
       "bytes": 5788,
       "sha256": "5ba257aab602a7fabf50c4431c9567b84e8f3b68c5a19008cb6427fc38c492ff",
-      "origin": "unchanged-published-material-from-public-69dd15d10882d29cb19b82af61ab1e1034a60ef0",
+      "origin": "unchanged-published-material-from-public-9bbf8a496cf89e0075fd477aeae5b7d210196bdc",
       "source": "accepted-skill:asam-ui-usage/references/migration.md"
     },
     {
       "path": "skills/asam-ui-usage/references/package-contract.json",
       "bytes": 787123,
       "sha256": "19e67837c7fad1fd9cd722f192641c3e3febab62829878b7a73acd7e3e7b9574",
-      "origin": "unchanged-published-material-from-public-69dd15d10882d29cb19b82af61ab1e1034a60ef0",
+      "origin": "unchanged-published-material-from-public-9bbf8a496cf89e0075fd477aeae5b7d210196bdc",
       "source": "accepted-skill:asam-ui-usage/references/package-contract.json"
     },
     {
       "path": "skills/asam-ui-usage/references/resources.md",
       "bytes": 3145,
       "sha256": "aa7c32be814aa5d57f6cf25b92458f46d19f6e47d2efd3d1726c40120c8ea4d3",
-      "origin": "unchanged-published-material-from-public-69dd15d10882d29cb19b82af61ab1e1034a60ef0",
+      "origin": "unchanged-published-material-from-public-9bbf8a496cf89e0075fd477aeae5b7d210196bdc",
       "source": "accepted-skill:asam-ui-usage/references/resources.md"
     },
     {
       "path": "skills/asam-ui-usage/scripts/inspect-contract.mjs",
       "bytes": 5891,
       "sha256": "07c9621a10818cc98a8c6526148e46ab9f2dcf0106ecb28ff0008ad8c49b5369",
-      "origin": "unchanged-published-material-from-public-69dd15d10882d29cb19b82af61ab1e1034a60ef0",
+      "origin": "unchanged-published-material-from-public-9bbf8a496cf89e0075fd477aeae5b7d210196bdc",
       "source": "accepted-skill:asam-ui-usage/scripts/inspect-contract.mjs"
     },
     {
       "path": "skills/asam-ui-usage/scripts/inspect-project.mjs",
       "bytes": 3314,
       "sha256": "aebb66989267b7af04e6956ff20e5a569ea28d93805a404860462253a3cb0610",
-      "origin": "unchanged-published-material-from-public-69dd15d10882d29cb19b82af61ab1e1034a60ef0",
+      "origin": "unchanged-published-material-from-public-9bbf8a496cf89e0075fd477aeae5b7d210196bdc",
       "source": "accepted-skill:asam-ui-usage/scripts/inspect-project.mjs"
     },
     {
       "path": "downloads/asam-ui-usage.tgz",
       "bytes": 164564,
       "sha256": "b59a00254be77d898c7f12a052327c96f72315c89756d3108f2e55cfcbeb164c",
-      "origin": "unchanged-published-material-from-public-69dd15d10882d29cb19b82af61ab1e1034a60ef0",
+      "origin": "unchanged-published-material-from-public-9bbf8a496cf89e0075fd477aeae5b7d210196bdc",
       "source": "accepted-Skill-b59a0025"
     },
     {
       "path": "downloads/asam-ui-usage.manifest.json",
       "bytes": 1722,
       "sha256": "eb7fa29905d31aa9fbf891c67ea3afb25acf73aa9314ced05e4cd28134bac2e4",
-      "origin": "unchanged-published-material-from-public-69dd15d10882d29cb19b82af61ab1e1034a60ef0",
+      "origin": "unchanged-published-material-from-public-9bbf8a496cf89e0075fd477aeae5b7d210196bdc",
       "source": "accepted-Skill-manifest"
     },
     {
       "path": "licenses/asam-ui-mcp.txt",
       "bytes": 6907,
       "sha256": "abb2ea987d278ab9b0689bf6a77a5609e32d8e8277804d00c2c429b5acd470ae",
-      "origin": "unchanged-published-material-from-public-69dd15d10882d29cb19b82af61ab1e1034a60ef0",
+      "origin": "unchanged-published-material-from-public-9bbf8a496cf89e0075fd477aeae5b7d210196bdc",
       "source": "approved-MCP-license-6907B"
     }
   ],
@@ -165,15 +165,20 @@
       "source": "581f8531694852fd15aec5dcf65a7208b553e5fe",
       "parentPublic": "69dd15d10882d29cb19b82af61ab1e1034a60ef0",
       "scope": "MAINT-DEP-002：已验全组件文档表格修复上线，保全固定发表资料；HTTPS及真实浏览器结论独立记录。"
+    },
+    {
+      "source": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
+      "parentPublic": "9bbf8a496cf89e0075fd477aeae5b7d210196bdc",
+      "scope": "CI官网发布；既有12项发表资料保持原字节和原来源"
     }
   ],
   "mcpVersion": "0.1.0-alpha.1",
   "mcpArtifactSHA256": "8207ebe920b98b35d4b544d5c8fa8b5b0319954152561e88c3ca0dfc1ab17d80",
-  "websiteArtifactSource": "581f8531694852fd15aec5dcf65a7208b553e5fe",
+  "websiteArtifactSource": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
   "rootAcceptedMain": "28e502401482506cd795a6921e949541a0299445",
-  "currentPublicApiSfcSource": "581f8531694852fd15aec5dcf65a7208b553e5fe",
+  "currentPublicApiSfcSource": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
   "offlineCandidateSource": "61f2550bfcbd07ec8af8c172fe3f4f3ce0cb1ee5",
-  "rootIntegratedSourceMain": "581f8531694852fd15aec5dcf65a7208b553e5fe",
+  "rootIntegratedSourceMain": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
   "candidateAcceptance": {
     "product": "af33dc1a7791cc77cb3e3e40a201f612dcfbd434",
     "tests": "2679fa05762afd3bdc931aa19b7bc0b7545681d6",

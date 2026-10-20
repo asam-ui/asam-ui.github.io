@@ -1,0 +1,1 @@
+import{Ct as e,H as t,v as n,w as r}from"./vue.esm-bundler-5NdF0u5k.js";import{t as i}from"./Index-7hdqx8Df-DYP-SxZ-.js";var a=r({name:`AsamPaginationCapNumberOfPagersDemo`,__name:`Demo`,setup(r){return(r,a)=>(t(),n(e(i),{"page-size":20,"pager-count":11,layout:`prev, pager, next`,total:1e3}))}});export{a as default};

@@ -170,8 +170,8 @@
 	overflow-wrap: anywhere;
 }
 
-.site-doc-layout h2,
-.site-doc-layout h3 {
+.site-doc-layout h2:not(.cd-demo-preview *),
+.site-doc-layout h3:not(.cd-demo-preview *) {
 	scroll-margin-top: 110px;
 }
 

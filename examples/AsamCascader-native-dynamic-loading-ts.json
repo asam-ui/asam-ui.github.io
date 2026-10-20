@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamCascader/native-dynamic-loading/ts/Demo.vue",
+			"sha256": "8a8e897a9a184e64b11682f624588b0b438e3cb2e78b2fdc940a3cd0b106ae83",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\nNotice resource: /licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\n-->\n<template>\n\t<AsamCascader value-mode=\"native\" :props=\"props\" />\n</template>\n\n<script lang=\"ts\" setup>\n\n\nimport { AsamCascader } from '@asam-ui/ui';\n// Adapted from the fixed upstream MIT example: cascader/dynamic-loading.vue\n\nimport type { AsamCascaderNativeConfig } from '@asam-ui/ui';\n\nlet id = 0;\nconst props: AsamCascaderNativeConfig = {\n\tlazy: true,\n\tlazyLoad(node, resolve) {\n\t\tconst { level } = node;\n\t\tsetTimeout(() => {\n\t\t\tconst nodes = Array.from({ length: level + 1 }).map(() => ({\n\t\t\t\tvalue: ++id,\n\t\t\t\tlabel: `Option - ${id}`,\n\t\t\t\tleaf: level >= 2\n\t\t\t}));\n\t\t\t// Invoke `resolve` callback to return the child nodes data and indicate the loading is finished.\n\t\t\tresolve(nodes);\n\t\t}, 1000);\n\t}\n};\n</script>\n",
+			"originalSourceSha256": "5c8a1e53514fec0b503a6b54e8fc31cc68bcd6938f5fd2711dc78f36425915e1",
+			"notice": {
+				"id": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+				"url": "/licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"licenseFilename": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0"
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+			"source": "MIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+			"noticeId": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27"
+		}
+	]
+}

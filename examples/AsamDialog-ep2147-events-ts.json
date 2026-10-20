@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "581f8531694852fd15aec5dcf65a7208b553e5fe",
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDialog/ep2147-events/ts/Demo.vue",
-			"sha256": "83fa34de51085c712f51c843e06948510772f21067ff078049cafa383f204b27",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-621a703a69d3c87536726f6f2f7616ac555fea6c485b43ef7984ce81cd19fa58.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/621a703a69d3c87536726f6f2f7616ac555fea6c485b43ef7984ce81cd19fa58.txt\n-->\n<template>\n\t<AsamButton type=\"default\" plain @click=\"dialogVisible = true\"> 打开事件演示对话框 </AsamButton>\n\n\t<AsamDialog\n\t\tv-model=\"dialogVisible\"\n\t\tmodal-class=\"overide-animation\"\n\t\t:before-close=\"\n\t\t\t(doneFn) => {\n\t\t\t\t(console.log('before-close'), doneFn());\n\t\t\t}\n\t\t\"\n\t\t@open=\"console.log('open')\"\n\t\t@open-auto-focus=\"console.log('open-auto-focus')\"\n\t\t@opened=\"console.log('opened')\"\n\t\t@close=\"console.log('close')\"\n\t\t@close-auto-focus=\"console.log('close-auto-focus')\"\n\t\t@closed=\"console.log('closed')\"\n\t>\n\t\t<span>事件演示对话框</span>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton type=\"default\" @click=\"dialogVisible = false\">取消</AsamButton>\n\t\t\t\t<AsamButton type=\"default\" @click=\"dialogVisible = false\"> 确认 </AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDialog } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst dialogVisible = ref(false);\n</script>\n",
-			"originalSourceSha256": "2eddbe8d4460b8107b2fb4d7eed8f568e2e5ebb6f824167d70d11477c64d263f",
+			"sha256": "ee315afa58a6a51249e16f4741863714a163069cbae56b626faae2908a9c511b",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-621a703a69d3c87536726f6f2f7616ac555fea6c485b43ef7984ce81cd19fa58.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/621a703a69d3c87536726f6f2f7616ac555fea6c485b43ef7984ce81cd19fa58.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"dialogVisible = true\"> 打开事件演示对话框 </AsamButton>\n\n\t<AsamDialog\n\t\tv-model=\"dialogVisible\"\n\t\tmodal-class=\"overide-animation\"\n\t\t:before-close=\"\n\t\t\t(doneFn) => {\n\t\t\t\t(console.log('before-close'), doneFn());\n\t\t\t}\n\t\t\"\n\t\t@open=\"console.log('open')\"\n\t\t@open-auto-focus=\"console.log('open-auto-focus')\"\n\t\t@opened=\"console.log('opened')\"\n\t\t@close=\"console.log('close')\"\n\t\t@close-auto-focus=\"console.log('close-auto-focus')\"\n\t\t@closed=\"console.log('closed')\"\n\t>\n\t\t<span>事件演示对话框</span>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton type=\"default\" @click=\"dialogVisible = false\">取消</AsamButton>\n\t\t\t\t<AsamButton type=\"default\" @click=\"dialogVisible = false\"> 确认 </AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDialog } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst dialogVisible = ref(false);\n</script>\n",
+			"originalSourceSha256": "f6333e12ba1055ad5119b5d83608fc9e375a05603f9a614bfd0e738c881ef9e4",
 			"notice": {
 				"id": "621a703a69d3c87536726f6f2f7616ac555fea6c485b43ef7984ce81cd19fa58",
 				"url": "/licenses/source-notices/621a703a69d3c87536726f6f2f7616ac555fea6c485b43ef7984ce81cd19fa58.txt",

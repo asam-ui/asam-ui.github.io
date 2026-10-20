@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "581f8531694852fd15aec5dcf65a7208b553e5fe",
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamMessageBox/ep2147-confirm/js/Demo.vue",
-			"sha256": "2f1466e9411406c6cac702fea787fe58f32c98b81eda46cd154b756bc65418fa",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-3e881208759c306ae07d0e8d6731666e47a4b87468fc189e37e156ed06bb9311.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/3e881208759c306ae07d0e8d6731666e47a4b87468fc189e37e156ed06bb9311.txt\n-->\n<template>\n\t<AsamButton type=\"default\" plain @click=\"open\">点击打开消息框</AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamMessage, AsamMessageBox } from '@asam-ui/ui';\nimport { onBeforeUnmount } from 'vue';\nconst open = () => {\n\tAsamMessageBox.confirm('此操作将永久删除文件，确定继续吗？', '警告', {\n\t\tconfirmButtonText: '确认',\n\t\tcancelButtonText: '取消',\n\t\ttype: 'warning'\n\t})\n\t\t.then(() => {\n\t\t\ttrackAsamMessage(\n\t\t\t\tAsamMessage({\n\t\t\t\t\ttype: 'success',\n\t\t\t\t\tmessage: '删除成功'\n\t\t\t\t})\n\t\t\t);\n\t\t})\n\t\t.catch(() => {\n\t\t\ttrackAsamMessage(\n\t\t\t\tAsamMessage({\n\t\t\t\t\ttype: 'info',\n\t\t\t\t\tmessage: '已取消删除'\n\t\t\t\t})\n\t\t\t);\n\t\t});\n};\nconst ownedAsamMessage = new Set();\nlet mountedAsamMessage = true;\nconst trackAsamMessage = (handle) => {\n\tif (mountedAsamMessage) ownedAsamMessage.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamMessage = false;\n\tfor (const handle of ownedAsamMessage) handle.close();\n\townedAsamMessage.clear();\n});\n</script>\n",
-			"originalSourceSha256": "f28fd11eace9a7b1c79f9ce43f79aaf61d38a6cd1c29a57a1ae612b7bba93d2b",
+			"sha256": "32bce4a832ac71c369a64b0a64f3eba8836a4b33f2b883f3daee9b0e888dd82a",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-3e881208759c306ae07d0e8d6731666e47a4b87468fc189e37e156ed06bb9311.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/3e881208759c306ae07d0e8d6731666e47a4b87468fc189e37e156ed06bb9311.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"open\">点击打开消息框</AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamMessage, AsamMessageBox } from '@asam-ui/ui';\nimport { onBeforeUnmount } from 'vue';\nconst open = () => {\n\tAsamMessageBox.confirm('此操作将永久删除文件，确定继续吗？', '警告', {\n\t\tconfirmButtonText: '确认',\n\t\tcancelButtonText: '取消',\n\t\ttype: 'warning'\n\t})\n\t\t.then(() => {\n\t\t\ttrackAsamMessage(\n\t\t\t\tAsamMessage({\n\t\t\t\t\ttype: 'success',\n\t\t\t\t\tmessage: '删除成功'\n\t\t\t\t})\n\t\t\t);\n\t\t})\n\t\t.catch(() => {\n\t\t\ttrackAsamMessage(\n\t\t\t\tAsamMessage({\n\t\t\t\t\ttype: 'info',\n\t\t\t\t\tmessage: '已取消删除'\n\t\t\t\t})\n\t\t\t);\n\t\t});\n};\nconst ownedAsamMessage = new Set();\nlet mountedAsamMessage = true;\nconst trackAsamMessage = (handle) => {\n\tif (mountedAsamMessage) ownedAsamMessage.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamMessage = false;\n\tfor (const handle of ownedAsamMessage) handle.close();\n\townedAsamMessage.clear();\n});\n</script>\n",
+			"originalSourceSha256": "f2a785f741923fb7eb776f5d412eefe063423c66595b9acc824603bf8a1b6934",
 			"notice": {
 				"id": "3e881208759c306ae07d0e8d6731666e47a4b87468fc189e37e156ed06bb9311",
 				"url": "/licenses/source-notices/3e881208759c306ae07d0e8d6731666e47a4b87468fc189e37e156ed06bb9311.txt",

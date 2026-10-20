@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "581f8531694852fd15aec5dcf65a7208b553e5fe",
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDialog/ep2147-fullscreen/ts/Demo.vue",
-			"sha256": "024ba63101c1009440879a0df18532b502eac85a83001ea81da8f72ecb0dc82b",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-119261af903c97d54a114022185a1e943f7aee870c25496644d5385761260375.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/119261af903c97d54a114022185a1e943f7aee870c25496644d5385761260375.txt\n-->\n<template>\n\t<AsamButton type=\"default\" plain @click=\"dialogVisible = true\"> 打开全屏对话框 </AsamButton>\n\n\t<AsamDialog v-model=\"dialogVisible\" fullscreen>\n\t\t<span>全屏对话框</span>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton type=\"default\" @click=\"dialogVisible = false\">取消</AsamButton>\n\t\t\t\t<AsamButton type=\"default\" @click=\"dialogVisible = false\"> 确认 </AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDialog } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst dialogVisible = ref(false);\n</script>\n",
-			"originalSourceSha256": "868111fd6e0fdc943d3ac22c74bfecb88972351a3da74f51c5c2ff77ea1d79d7",
+			"sha256": "784622237980a08d4014a7db93d95e219d3096a47a300092924bc8b519a0f9f5",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-119261af903c97d54a114022185a1e943f7aee870c25496644d5385761260375.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/119261af903c97d54a114022185a1e943f7aee870c25496644d5385761260375.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"dialogVisible = true\"> 打开全屏对话框 </AsamButton>\n\n\t<AsamDialog v-model=\"dialogVisible\" fullscreen>\n\t\t<span>全屏对话框</span>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton type=\"default\" @click=\"dialogVisible = false\">取消</AsamButton>\n\t\t\t\t<AsamButton type=\"default\" @click=\"dialogVisible = false\"> 确认 </AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDialog } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst dialogVisible = ref(false);\n</script>\n",
+			"originalSourceSha256": "9b079dd13ffa3bcbd6eec2fee9e854a117623b2edf7b1af1ed909917b1285871",
 			"notice": {
 				"id": "119261af903c97d54a114022185a1e943f7aee870c25496644d5385761260375",
 				"url": "/licenses/source-notices/119261af903c97d54a114022185a1e943f7aee870c25496644d5385761260375.txt",

@@ -1,1 +1,0 @@
-import{$ as e,F as t,O as n,j as r}from"./sfc-demo.js";var i={width:`1em`,height:`1em`,xmlns:`http://www.w3.org/2000/svg`,viewBox:`0 0 1024 1024`},a=t({name:`CaretRight`,__name:`caret-right`,setup(t){return(t,a)=>(e(),r(`svg`,i,[...a[0]||=[n(`path`,{fill:`currentColor`,d:`M384 192v640l384-320.064z`},null,-1)]]))}});export{a as t};

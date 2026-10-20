@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTreeV2/native-default-state/js/Demo.vue",
+			"sha256": "f9908959082d031fb8ae130d957908df6c652da1fd36b9ddf20563cf5eb9c480",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\nNotice resource: /licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\n-->\n<template>\n\t<AsamTreeV2\n\t\tstyle=\"max-width: 600px\"\n\t\t:data=\"data\"\n\t\t:height=\"200\"\n\t\t:props=\"props\"\n\t\tshow-checkbox\n\t\t:default-checked-keys=\"defaultCheckedKeys\"\n\t\t:default-expanded-keys=\"defaultExpandedKeys\"\n\t/>\n</template>\n\n<script setup>\n\n\nimport { AsamTreeV2 } from '@asam-ui/ui';\n// Adapted from the fixed upstream MIT example: tree-v2/default-state.vue\nimport { ref } from 'vue';\nconst getKey = (prefix, id) => {\n\treturn `${prefix}-${id}`;\n};\nconst createData = (maxDeep, maxChildren, minNodesNumber, deep = 1, key = 'node') => {\n\tlet id = 0;\n\treturn Array.from({ length: minNodesNumber })\n\t\t.fill(deep)\n\t\t.map(() => {\n\t\t\tconst childrenNumber = deep === maxDeep ? 0 : Math.round(Math.random() * maxChildren);\n\t\t\tconst nodeKey = getKey(key, ++id);\n\t\t\treturn {\n\t\t\t\tid: nodeKey,\n\t\t\t\tlabel: nodeKey.replace(/^node/, '节点'),\n\t\t\t\tchildren: childrenNumber\n\t\t\t\t\t? createData(maxDeep, maxChildren, childrenNumber, deep + 1, nodeKey)\n\t\t\t\t\t: undefined\n\t\t\t};\n\t\t});\n};\nconst props = {\n\tvalue: 'id',\n\tlabel: 'label',\n\tchildren: 'children'\n};\nconst data = createData(4, 30, 40);\nconst checkedKeys = [];\nconst expanedKeys = [];\nfor (const datum of data) {\n\tconst children = datum.children;\n\tif (children) {\n\t\texpanedKeys.push(datum.id);\n\t\tcheckedKeys.push(children[0].id);\n\t\tbreak;\n\t}\n}\nconst defaultCheckedKeys = ref(checkedKeys);\nconst defaultExpandedKeys = ref(expanedKeys);\n</script>\n",
+			"originalSourceSha256": "39cb0aee70837fd5ad8e67f9fcda56b97d70b33f930a7a9b7e873490c4d266fd",
+			"notice": {
+				"id": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+				"url": "/licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"licenseFilename": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0"
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+			"source": "MIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+			"noticeId": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27"
+		}
+	]
+}

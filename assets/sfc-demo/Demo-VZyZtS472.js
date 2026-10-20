@@ -1,1 +1,0 @@
-import{$ as e,N as t,P as n,Pt as r,ht as i,k as a}from"./sfc-demo.js";import{t as o}from"./Index-hH24A5tL.js";import{t as s}from"./Index-DkT4Bz-t-lKkStLZa.js";var c={__name:`Demo`,setup(c){return(c,l)=>(e(),a(r(s),{content:`这是一条文字提示`,transition:`slide-fade`},{default:i(()=>[n(r(o),{type:`default`},{default:i(()=>[...l[0]||=[t(`触发操作`,-1)]]),_:1})]),_:1}))}};export{c as default};

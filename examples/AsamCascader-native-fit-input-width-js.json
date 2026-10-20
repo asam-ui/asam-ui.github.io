@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamCascader/native-fit-input-width/js/Demo.vue",
+			"sha256": "3ddf4cebd440fbbb7f33b93deb7a356f25def2a990f1949b935aa80e85ec1299",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\nNotice resource: /licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\n-->\n<template>\n\t<div class=\"flex flex-wrap gap-4 items-center\">\n\t\t<AsamCascader\n\t\t\tvalue-mode=\"native\"\n\t\t\tv-model=\"value\"\n\t\t\t:options=\"options\"\n\t\t\tplaceholder=\"默认展开面板\"\n\t\t\tfilterable\n\t\t/>\n\n\t\t<AsamCascader\n\t\t\tvalue-mode=\"native\"\n\t\t\tv-model=\"value\"\n\t\t\t:options=\"options\"\n\t\t\tplaceholder=\"匹配输入框宽度\"\n\t\t\tfilterable\n\t\t\tfit-input-width\n\t\t/>\n\n\t\t<AsamCascader\n\t\t\tvalue-mode=\"native\"\n\t\t\tv-model=\"value\"\n\t\t\t:options=\"options\"\n\t\t\tplaceholder=\"固定宽度（400px）\"\n\t\t\tfilterable\n\t\t\t:fit-input-width=\"400\"\n\t\t>\n\t\t\t<template #suggestion-item=\"{ item }\">\n\t\t\t\t<div>{{ item.text }} （较长的自定义内容）</div>\n\t\t\t</template>\n\t\t</AsamCascader>\n\t</div>\n</template>\n\n<script setup>\n\n\nimport { AsamCascader } from '@asam-ui/ui';\n// Adapted from the fixed upstream MIT example: cascader/fit-input-width.vue\nimport { ref } from 'vue';\nconst value = ref();\nconst options = [\n\t{\n\t\tvalue: 'guide',\n\t\tlabel: '指南',\n\t\tchildren: [\n\t\t\t{\n\t\t\t\tvalue: 'disciplines',\n\t\t\t\tlabel: 'Disciplines',\n\t\t\t\tchildren: [\n\t\t\t\t\t{\n\t\t\t\t\t\tvalue: 'consistency',\n\t\t\t\t\t\tlabel: '一致性'\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\tvalue: 'feedback',\n\t\t\t\t\t\tlabel: '反馈'\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\tvalue: 'efficiency',\n\t\t\t\t\t\tlabel: '效率'\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\tvalue: 'controllability',\n\t\t\t\t\t\tlabel: '可控性'\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},\n\t\t\t{\n\t\t\t\tvalue: 'navigation',\n\t\t\t\tlabel: 'Navigation',\n\t\t\t\tchildren: [\n\t\t\t\t\t{\n\t\t\t\t\t\tvalue: 'side nav',\n\t\t\t\t\t\tlabel: 'Side Navigation'\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\tvalue: 'top nav',\n\t\t\t\t\t\tlabel: 'Top Navigation'\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}\n\t\t]\n\t}\n];\n</script>\n\n<style scoped>\n/* Keep layout utilities local so the downloaded SFC needs no CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n.flex-wrap {\n\tflex-wrap: wrap;\n}\n.items-center {\n\talign-items: center;\n}\n.gap-4 {\n\tgap: var(--asam-space-lg);\n}\n</style>\n",
+			"originalSourceSha256": "b41f732d685f6919695fabfe7540118e7b31eb12a50373daba660be4052c2476",
+			"notice": {
+				"id": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+				"url": "/licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"licenseFilename": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0"
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+			"source": "MIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+			"noticeId": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27"
+		}
+	]
+}

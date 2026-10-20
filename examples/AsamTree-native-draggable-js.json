@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTree/native-draggable/js/Demo.vue",
+			"sha256": "d4b8178c24641021781247ce794fe2ccba330c5da04f222042fc92e7a899cc31",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\nNotice resource: /licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\n-->\n<template>\n\t<AsamTree\n\t\tstyle=\"max-width: 600px\"\n\t\t:allow-drop=\"allowDrop\"\n\t\t:allow-drag=\"allowDrag\"\n\t\t:data=\"data\"\n\t\tdraggable\n\t\tdefault-expand-all\n\t\tnode-key=\"id\"\n\t\t@node-drag-start=\"handleDragStart\"\n\t\t@node-drag-enter=\"handleDragEnter\"\n\t\t@node-drag-leave=\"handleDragLeave\"\n\t\t@node-drag-over=\"handleDragOver\"\n\t\t@node-drag-end=\"handleDragEnd\"\n\t\t@node-drop=\"handleDrop\"\n\t/>\n</template>\n\n<script setup>\n\n\nimport { AsamTree } from '@asam-ui/ui';\nconst handleDragStart = (node, _event) => {\n\tconsole.log('drag start', node);\n};\nconst handleDragEnter = (draggingNode, dropNode, _event) => {\n\tconsole.log('tree drag enter:', dropNode.label);\n};\nconst handleDragLeave = (draggingNode, dropNode, _event) => {\n\tconsole.log('tree drag leave:', dropNode.label);\n};\nconst handleDragOver = (draggingNode, dropNode, _event) => {\n\tconsole.log('tree drag over:', dropNode.label);\n};\nconst handleDragEnd = (draggingNode, dropNode, dropType, _event) => {\n\tconsole.log('tree drag end:', dropNode && dropNode.label, dropType);\n};\nconst handleDrop = (draggingNode, dropNode, dropType, _event) => {\n\tconsole.log('tree drop:', dropNode.label, dropType);\n};\nconst allowDrop = (draggingNode, dropNode, type) => {\n\tif (dropNode.data.label === '二级节点 3-1') {\n\t\treturn type !== 'inner';\n\t} else {\n\t\treturn true;\n\t}\n};\nconst allowDrag = (draggingNode) => {\n\treturn !draggingNode.data.label.includes('三级节点 3-1-1');\n};\nconst data = [\n\t{\n\t\tlabel: '一级节点 1',\n\t\tchildren: [\n\t\t\t{\n\t\t\t\tlabel: '二级节点 1-1',\n\t\t\t\tchildren: [\n\t\t\t\t\t{\n\t\t\t\t\t\tlabel: '三级节点 1-1-1'\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}\n\t\t]\n\t},\n\t{\n\t\tlabel: '一级节点 2',\n\t\tchildren: [\n\t\t\t{\n\t\t\t\tlabel: '二级节点 2-1',\n\t\t\t\tchildren: [\n\t\t\t\t\t{\n\t\t\t\t\t\tlabel: '三级节点 2-1-1'\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},\n\t\t\t{\n\t\t\t\tlabel: '二级节点 2-2',\n\t\t\t\tchildren: [\n\t\t\t\t\t{\n\t\t\t\t\t\tlabel: '三级节点 2-2-1'\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}\n\t\t]\n\t},\n\t{\n\t\tlabel: '一级节点 3',\n\t\tchildren: [\n\t\t\t{\n\t\t\t\tlabel: '二级节点 3-1',\n\t\t\t\tchildren: [\n\t\t\t\t\t{\n\t\t\t\t\t\tlabel: '三级节点 3-1-1'\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},\n\t\t\t{\n\t\t\t\tlabel: '二级节点 3-2',\n\t\t\t\tchildren: [\n\t\t\t\t\t{\n\t\t\t\t\t\tlabel: '三级节点 3-2-1'\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}\n\t\t]\n\t}\n];\n</script>\n",
+			"originalSourceSha256": "cd9bc29d2e0af55b3317e1069074d0358add4d4a1197639a0b97c83f4cf3dbb3",
+			"notice": {
+				"id": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+				"url": "/licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"licenseFilename": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0"
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+			"source": "MIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+			"noticeId": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27"
+		}
+	]
+}

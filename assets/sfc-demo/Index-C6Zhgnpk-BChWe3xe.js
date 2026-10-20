@@ -1,1 +1,0 @@
-import"./sfc-demo.js";import{i as e}from"./Index-C28mQpT2-CjTQ1-tQ.js";var t=Object.assign({},e,{install(e){e.component(`AsamFooter`,t)}});export{t};

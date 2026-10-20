@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamCascader/native-virtual-scroll/ts/Demo.vue",
+			"sha256": "836b47c8f2251718b5088e7d6c7e1129707b3c975e00ac807417fc03cddcff1c",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\nNotice resource: /licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\n-->\n<template>\n\t<AsamCascader\n\t\tvalue-mode=\"native\"\n\t\tv-model=\"value\"\n\t\t:options=\"options\"\n\t\t:filter-method=\"filterMethod\"\n\t\tfilterable\n\t\tvirtual-scroll\n\t\tclearable\n\t\tplaceholder=\"大数据量选择器\"\n\t/>\n</template>\n\n<script lang=\"ts\" setup>\n\n\nimport { AsamCascader } from '@asam-ui/ui';\n// Adapted from the fixed upstream MIT example: cascader/virtual-scroll.vue\n\nimport { ref } from 'vue';\n\nimport type { AsamCascaderNode, AsamCascaderNativeProps } from '@asam-ui/ui';\n\ninterface CascaderExampleOption {\n\tvalue: string;\n\tlabel: string;\n\tchildren?: CascaderExampleOption[];\n}\n\nconst value = ref<AsamCascaderNativeProps['modelValue']>([]);\n\nconst filterMethod = (node: AsamCascaderNode, keyword: string) => {\n\treturn node.text.toLowerCase().includes(keyword.toLowerCase());\n};\n\nconst generateOptions = (count: number): CascaderExampleOption[] => {\n\treturn Array.from({ length: count }).map((_, index) => ({\n\t\tvalue: `option-${index}`,\n\t\tlabel: `Option ${index + 1}`,\n\t\tchildren: [\n\t\t\t{\n\t\t\t\tvalue: `child-${index}-1`,\n\t\t\t\tlabel: `Child ${index + 1}-1`,\n\t\t\t\tchildren: [\n\t\t\t\t\t{\n\t\t\t\t\t\tvalue: `grandchild-${index}-1-1`,\n\t\t\t\t\t\tlabel: `Grandchild ${index + 1}-1-1`\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\tvalue: `grandchild-${index}-1-2`,\n\t\t\t\t\t\tlabel: `Grandchild ${index + 1}-1-2`\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},\n\t\t\t{\n\t\t\t\tvalue: `child-${index}-2`,\n\t\t\t\tlabel: `Child ${index + 1}-2`\n\t\t\t}\n\t\t]\n\t}));\n};\n\nconst options = ref<CascaderExampleOption[]>(generateOptions(20000));\n</script>\n",
+			"originalSourceSha256": "11edb81901e342aa5fa7b17c8c737129c7c0715a9a4a119e849f649bc5b9472a",
+			"notice": {
+				"id": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+				"url": "/licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"licenseFilename": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0"
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+			"source": "MIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+			"noticeId": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27"
+		}
+	]
+}

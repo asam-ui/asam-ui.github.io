@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTreeSelect/native-lazy/ts/Demo.vue",
+			"sha256": "4e518b5a79f4ffe131c5263e28b66faeef6c055ec1177a519f469faaca7c2e58",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\nNotice resource: /licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\n-->\n<template>\n\t<AsamTreeSelect\n\t\t:check-strictly=\"false\"\n\t\tvalue-mode=\"native\"\n\t\tv-model=\"value\"\n\t\tlazy\n\t\t:load=\"load\"\n\t\t:props=\"props\"\n\t\tstyle=\"width: 240px\"\n\t/>\n\t<AsamDivider />\n\t<span>缓存回填</span> 显示懒加载标签：\n\t<AsamTreeSelect\n\t\t:check-strictly=\"false\"\n\t\tvalue-mode=\"native\"\n\t\tv-model=\"value2\"\n\t\tlazy\n\t\t:load=\"load\"\n\t\t:props=\"props\"\n\t\t:cache-data=\"cacheData\"\n\t\tstyle=\"width: 240px\"\n\t/>\n</template>\n\n<script lang=\"ts\" setup>\n\n\nimport { AsamTreeSelect, AsamDivider } from '@asam-ui/ui';\n// Adapted from the fixed upstream MIT example: tree-select/lazy.vue\n\nimport { ref } from 'vue';\n\nconst value = ref<AsamTreeSelectNativeProps['modelValue']>();\nconst value2 = ref<AsamTreeSelectNativeProps['modelValue']>(5);\n\nconst cacheData = [{ value: 5, label: '节点五（懒加载）' }];\n\nconst props = {\n\tlabel: 'label',\n\tchildren: 'children',\n\tisLeaf: 'isLeaf'\n};\n\nlet id = 0;\n\nimport type { AsamTreeSelectNativeProps } from '@asam-ui/ui';\nconst load: NonNullable<AsamTreeSelectNativeProps['load']> = (node, resolve) => {\n\tif (node.isLeaf) return resolve([]);\n\n\tsetTimeout(() => {\n\t\tresolve([\n\t\t\t{\n\t\t\t\tvalue: ++id,\n\t\t\t\tlabel: `懒加载节点${id}`\n\t\t\t},\n\t\t\t{\n\t\t\t\tvalue: ++id,\n\t\t\t\tlabel: `懒加载节点${id}`,\n\t\t\t\tisLeaf: true\n\t\t\t}\n\t\t]);\n\t}, 400);\n};\n</script>\n",
+			"originalSourceSha256": "e97b94f39ebda58dea93a7d0322488081f88690d2014fbeaf4e10a97d3348fc9",
+			"notice": {
+				"id": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+				"url": "/licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"licenseFilename": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0"
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+			"source": "MIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+			"noticeId": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27"
+		}
+	]
+}

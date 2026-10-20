@@ -1,1 +1,0 @@
-import{$ as e,Jt as t,L as n,Pt as r,k as i}from"./sfc-demo.js";import{t as a}from"./Index-Bu71rnYy2-DKrUA5uX.js";var o=Object.assign({name:`AsamStatisticBasicDemo`},{__name:`Demo`,setup(o){return(o,s)=>(e(),i(r(a),t(n({title:`本地示例数量`,value:12345.67,precision:2,suffix:`条`})),null,16))}});export{o as default};

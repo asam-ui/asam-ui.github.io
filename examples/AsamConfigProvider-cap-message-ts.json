@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "581f8531694852fd15aec5dcf65a7208b553e5fe",
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamConfigProvider/cap-message/ts/Demo.vue",
-			"sha256": "5ca6b582df76ca1bab12667f56f2f53b9fc5afc6dcc397db498968d38f392efe",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bed44c8af1d348440fbb1fd11d7d34268e9317a610b86df2f81f2aa91baf20ff.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bed44c8af1d348440fbb1fd11d7d34268e9317a610b86df2f81f2aa91baf20ff.txt\n-->\n<template>\n\t<div>\n\t\t<AsamConfigProvider :message=\"config\">\n\t\t\t<AsamButton @click=\"open\">打开</AsamButton>\n\t\t</AsamConfigProvider>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamConfigProviderCapMessageDemo' });\nimport { AsamConfigProvider, AsamButton } from '@asam-ui/ui';\n\nimport { reactive } from 'vue';\nimport { AsamMessage } from '@asam-ui/ui';\n\nconst config = reactive({\n\tmax: 3,\n\tplain: true,\n\tplacement: 'bottom'\n});\n\nconst open = () => {\n\tAsamMessage('这是一条显示在底部的消息。');\n};\n</script>\n",
-			"originalSourceSha256": "e1f1601ded0e17a9d07d0a533eb2507957de6de67690867ddb18584d4d1b6359",
+			"sha256": "3db37908ad3e66c76f7469a2a2437184d9e7d2edb61f2a5ff56c28e76218e036",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bed44c8af1d348440fbb1fd11d7d34268e9317a610b86df2f81f2aa91baf20ff.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bed44c8af1d348440fbb1fd11d7d34268e9317a610b86df2f81f2aa91baf20ff.txt\n-->\n<template>\n\t<div>\n\t\t<AsamConfigProvider :message=\"config\">\n\t\t\t<AsamButton type=\"default\" @click=\"open\">打开</AsamButton>\n\t\t</AsamConfigProvider>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamConfigProviderCapMessageDemo' });\nimport { AsamConfigProvider, AsamButton } from '@asam-ui/ui';\n\nimport { reactive } from 'vue';\nimport { AsamMessage } from '@asam-ui/ui';\n\nconst config = reactive({\n\tmax: 3,\n\tplain: true,\n\tplacement: 'bottom'\n});\n\nconst open = () => {\n\tAsamMessage('这是一条显示在底部的消息。');\n};\n</script>\n",
+			"originalSourceSha256": "a0ea963b8c7c7ca7a47c973669c38e77d5d12e71e68beb2d9ce4a3cae1127247",
 			"notice": {
 				"id": "bed44c8af1d348440fbb1fd11d7d34268e9317a610b86df2f81f2aa91baf20ff",
 				"url": "/licenses/source-notices/bed44c8af1d348440fbb1fd11d7d34268e9317a610b86df2f81f2aa91baf20ff.txt",

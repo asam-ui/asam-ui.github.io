@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "581f8531694852fd15aec5dcf65a7208b553e5fe",
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamCard/cap-basic/ts/Demo.vue",
-			"sha256": "0ede72085f5d83d5ad162f18633bf4229f927368a9f5bc58b0ae744271b456de",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319.txt\n-->\n<template>\n\t<AsamCard style=\"max-width: 480px\">\n\t\t<template #header>\n\t\t\t<div class=\"card-header\">\n\t\t\t\t<span>卡片名称</span>\n\t\t\t</div>\n\t\t</template>\n\n\t\t<p v-for=\"o in 4\" :key=\"o\" class=\"text item\">{{ '列表项 ' + o }}</p>\n\t\t<template #footer>底部内容</template>\n\t</AsamCard>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamCardCapBasicDemo' });\nimport { AsamCard } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "fb1a3550e3f89b168d1604341d9a9d6a5561199567b2b839f1e172cac005404c",
+			"sha256": "0e5e67e89119cd473e6a24f4f742d9a8069413278f878e732d3886dc2a8a2baa",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319.txt\n-->\n<template>\n\t<AsamCard style=\"max-width: 480px\">\n\t\t<template #header>\n\t\t\t<div class=\"card-header\">\n\t\t\t\t<span>卡片名称</span>\n\t\t\t</div>\n\t\t</template>\n\n\t\t<p v-for=\"o in 4\" :key=\"o\" class=\"text item example-paragraph\">{{ '列表项 ' + o }}</p>\n\t\t<template #footer>底部内容</template>\n\t</AsamCard>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamCardCapBasicDemo' });\nimport { AsamCard } from '@asam-ui/ui';\n</script>\n\n<style scoped>\np:where(.example-paragraph) {\n\tmargin-block: 16px;\n\tline-height: 1.8;\n\toverflow-wrap: anywhere;\n}\n</style>\n",
+			"originalSourceSha256": "11b9ac158d08c2d08168a5b120bab40be872a891a77eeb1e7d99356cf6effd44",
 			"notice": {
 				"id": "845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319",
 				"url": "/licenses/source-notices/845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319.txt",

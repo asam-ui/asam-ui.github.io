@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "581f8531694852fd15aec5dcf65a7208b553e5fe",
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamCalendar/official-calendar-customize/ts/Demo.vue",
-			"sha256": "45a9e3dc39a68333aac40ed9d5b2d49fd1b962c1f1a6b91772e6ee2da5088dc2",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f3da9241a57802e758859acea56250acf8548d1ca4098f012af3a5f480dba94f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f3da9241a57802e758859acea56250acf8548d1ca4098f012af3a5f480dba94f.txt\n-->\n<template>\n\t<AsamCalendar>\n\t\t<template #date-cell=\"{ data }\">\n\t\t\t<p :class=\"data.isSelected ? 'is-selected' : ''\">\n\t\t\t\t{{ data.day.split('-').slice(1).join('-') }}\n\t\t\t\t{{ data.isSelected ? '✔️' : '' }}\n\t\t\t</p>\n\t\t</template>\n\t</AsamCalendar>\n</template>\n<script lang=\"ts\" setup>\nimport { AsamCalendar } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamCalendarofficialcalendarcustomizeExample' });\n</script>\n\n<style scoped>\n/* stylelint-disable selector-pseudo-class-no-unknown, selector-class-pattern, no-descending-specificity -- Vue deep/native BEM selectors and equivalent media selector groups retained from the fixed official example. */\n.is-selected {\n\tcolor: var(--asam-color-primary);\n}\n</style>\n",
-			"originalSourceSha256": "4c718c2e4ff513bb3bc0c398a3edf2ee67fc83bcaa5a188cd32ab6e5756d2b43",
+			"sha256": "d06e50140f03239cecf19204656e057d310323711d23fc6f0ebd28d95af8944a",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-f3da9241a57802e758859acea56250acf8548d1ca4098f012af3a5f480dba94f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/f3da9241a57802e758859acea56250acf8548d1ca4098f012af3a5f480dba94f.txt\n-->\n<template>\n\t<AsamCalendar>\n\t\t<template #date-cell=\"{ data }\">\n\t\t\t<p class=\"example-paragraph\" :class=\"data.isSelected ? 'is-selected' : ''\">\n\t\t\t\t{{ data.day.split('-').slice(1).join('-') }}\n\t\t\t\t{{ data.isSelected ? '✔️' : '' }}\n\t\t\t</p>\n\t\t</template>\n\t</AsamCalendar>\n</template>\n<script lang=\"ts\" setup>\nimport { AsamCalendar } from '@asam-ui/ui';\ndefineOptions({ name: 'AsamCalendarofficialcalendarcustomizeExample' });\n</script>\n\n<style scoped>\n/* stylelint-disable selector-pseudo-class-no-unknown, selector-class-pattern, no-descending-specificity -- Vue deep/native BEM selectors and equivalent media selector groups retained from the fixed official example. */\n.is-selected {\n\tcolor: var(--asam-color-primary);\n}\n</style>\n\n<style scoped>\np:where(.example-paragraph) {\n\tmargin-block: 16px;\n\tline-height: 1.8;\n\toverflow-wrap: anywhere;\n}\n</style>\n",
+			"originalSourceSha256": "a32d044753f1fd6ace300b3a4a10c44e27ac7abbd6c0d42f777b48871c08b758",
 			"notice": {
 				"id": "f3da9241a57802e758859acea56250acf8548d1ca4098f012af3a5f480dba94f",
 				"url": "/licenses/source-notices/f3da9241a57802e758859acea56250acf8548d1ca4098f012af3a5f480dba94f.txt",

@@ -1,1 +1,0 @@
-import{$ as e,F as t,N as n,P as r,Pt as i,ht as a,k as o}from"./sfc-demo.js";import{t as s}from"./Index-BL9Q0qcw-CRkZCwNr.js";import{t as c}from"./Index-hH24A5tL.js";var l=t({__name:`Demo`,setup(t){return(t,l)=>(e(),o(i(s),{title:`确定删除此项吗？`},{reference:a(()=>[r(i(c),{type:`default`},{default:a(()=>[...l[0]||=[n(`删除`,-1)]]),_:1})]),_:1}))}});export{l as default};

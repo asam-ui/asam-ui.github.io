@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "581f8531694852fd15aec5dcf65a7208b553e5fe",
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamNotification/ep2147-raw-html/js/Demo.vue",
-			"sha256": "3c65e67e9536d29bf34da1c30eea2a00d0a8d53c53b386a80fe40b9889c08087",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-93d96a8ef309af3c20561fd686fb528ef8f26618c2afd012d669669359040c71.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/93d96a8ef309af3c20561fd686fb528ef8f26618c2afd012d669669359040c71.txt\n-->\n<template>\n\t<AsamButton type=\"default\" plain @click=\"open\"> 使用 HTML 字符串 </AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamNotification } from '@asam-ui/ui';\nimport { onBeforeUnmount } from 'vue';\nconst open = () => {\n\ttrackAsamNotification(\n\t\tAsamNotification({\n\t\t\ttitle: 'HTML 内容',\n\t\t\tdangerouslyUseHTMLString: true,\n\t\t\tmessage: '<strong>这是一段 <i>HTML</i> 内容</strong>'\n\t\t})\n\t);\n};\nconst ownedAsamNotification = new Set();\nlet mountedAsamNotification = true;\nconst trackAsamNotification = (handle) => {\n\tif (mountedAsamNotification) ownedAsamNotification.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamNotification = false;\n\tfor (const handle of ownedAsamNotification) handle.close();\n\townedAsamNotification.clear();\n});\n</script>\n",
-			"originalSourceSha256": "f1bbcffb90cfab2b521b1676b04fe48e7f8c104cdd496bf8d61cf6863b641c4f",
+			"sha256": "901809bfb6303cc895e98ef04e681159d0edd02afa6df5fed6344ca5d7f36c89",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-93d96a8ef309af3c20561fd686fb528ef8f26618c2afd012d669669359040c71.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/93d96a8ef309af3c20561fd686fb528ef8f26618c2afd012d669669359040c71.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"open\"> 使用 HTML 字符串 </AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamNotification } from '@asam-ui/ui';\nimport { onBeforeUnmount } from 'vue';\nconst open = () => {\n\ttrackAsamNotification(\n\t\tAsamNotification({\n\t\t\ttitle: 'HTML 内容',\n\t\t\tdangerouslyUseHTMLString: true,\n\t\t\tmessage: '<strong>这是一段 <i>HTML</i> 内容</strong>'\n\t\t})\n\t);\n};\nconst ownedAsamNotification = new Set();\nlet mountedAsamNotification = true;\nconst trackAsamNotification = (handle) => {\n\tif (mountedAsamNotification) ownedAsamNotification.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamNotification = false;\n\tfor (const handle of ownedAsamNotification) handle.close();\n\townedAsamNotification.clear();\n});\n</script>\n",
+			"originalSourceSha256": "1a5397fcac180b21418866f3d96a795cdf3ae8522b7e10f54d18b5f5d6b16306",
 			"notice": {
 				"id": "93d96a8ef309af3c20561fd686fb528ef8f26618c2afd012d669669359040c71",
 				"url": "/licenses/source-notices/93d96a8ef309af3c20561fd686fb528ef8f26618c2afd012d669669359040c71.txt",

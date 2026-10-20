@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "581f8531694852fd15aec5dcf65a7208b553e5fe",
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamMessageBox/ep2147-use-html/ts/Demo.vue",
-			"sha256": "576bcf3a10892ea50412b352f7e192b79ce1f7adc4c2851204bc6fcd0a5fb45a",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9.txt\n-->\n<template>\n\t<AsamButton type=\"default\" plain @click=\"open\">点击打开消息框</AsamButton>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamMessageBox } from '@asam-ui/ui';\n\nconst open = () => {\n\tAsamMessageBox.alert('<strong>这是一段 <i>HTML</i> 内容</strong>', 'HTML 内容', {\n\t\tdangerouslyUseHTMLString: true\n\t}).catch((action) => {\n\t\tif (action !== 'cancel' && action !== 'close') throw action;\n\t});\n};\n</script>\n",
-			"originalSourceSha256": "3ff6ffde664623de38eae5b8fa10772aa264f3b522c0ee2a9b8beaec5275426e",
+			"sha256": "6080a233dbeec4b2150f425c11b97314f1046107ed0a54f393cf5f660fcc84be",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"open\">点击打开消息框</AsamButton>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamMessageBox } from '@asam-ui/ui';\n\nconst open = () => {\n\tAsamMessageBox.alert('<strong>这是一段 <i>HTML</i> 内容</strong>', 'HTML 内容', {\n\t\tdangerouslyUseHTMLString: true\n\t}).catch((action) => {\n\t\tif (action !== 'cancel' && action !== 'close') throw action;\n\t});\n};\n</script>\n",
+			"originalSourceSha256": "55a245927c99fe55d0c7f2657d56bb74fd1e32b6a10d01322d483d3d8be78df2",
 			"notice": {
 				"id": "00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9",
 				"url": "/licenses/source-notices/00e53caa81831a69dc6b4482646fa6ba00bc97af77bc86e8c8d9ff797441a6f9.txt",

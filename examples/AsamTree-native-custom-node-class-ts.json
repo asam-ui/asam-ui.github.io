@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTree/native-custom-node-class/ts/Demo.vue",
+			"sha256": "74436932a391b004ce01e86a12bf93f10dd3293d46dcebd320addb6e018a078f",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\nNotice resource: /licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\n-->\n<template>\n\t<div class=\"custom-tree-node-container\">\n\t\t<AsamTree\n\t\t\tstyle=\"max-width: 600px\"\n\t\t\t:data=\"data\"\n\t\t\tshow-checkbox\n\t\t\tnode-key=\"id\"\n\t\t\tdefault-expand-all\n\t\t\t:expand-on-click-node=\"false\"\n\t\t\t:props=\"{ class: customNodeClass }\"\n\t\t/>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\n\n\nimport { AsamTree } from '@asam-ui/ui';\n// Adapted from the fixed upstream MIT example: tree/custom-node-class.vue\n\nimport type { AsamTreeNodeData } from '@asam-ui/ui';\n\ninterface Tree {\n\tid: number;\n\tlabel: string;\n\tisPenultimate?: boolean;\n\tchildren?: Tree[];\n}\n\nconst customNodeClass = ({ isPenultimate }: AsamTreeNodeData) =>\n\tisPenultimate ? 'is-penultimate' : '';\n\nconst data: Tree[] = [\n\t{\n\t\tid: 1,\n\t\tlabel: '一级节点 1',\n\t\tchildren: [\n\t\t\t{\n\t\t\t\tid: 4,\n\t\t\t\tlabel: '二级节点 1-1',\n\t\t\t\tisPenultimate: true,\n\t\t\t\tchildren: [\n\t\t\t\t\t{\n\t\t\t\t\t\tid: 9,\n\t\t\t\t\t\tlabel: '三级节点 1-1-1'\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\tid: 10,\n\t\t\t\t\t\tlabel: '三级节点 1-1-2'\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}\n\t\t]\n\t},\n\t{\n\t\tid: 2,\n\t\tlabel: '一级节点 2',\n\t\tisPenultimate: true,\n\t\tchildren: [\n\t\t\t{\n\t\t\t\tid: 5,\n\t\t\t\tlabel: '二级节点 2-1'\n\t\t\t},\n\t\t\t{\n\t\t\t\tid: 6,\n\t\t\t\tlabel: '二级节点 2-2'\n\t\t\t}\n\t\t]\n\t},\n\t{\n\t\tid: 3,\n\t\tlabel: '一级节点 3',\n\t\tisPenultimate: true,\n\t\tchildren: [\n\t\t\t{\n\t\t\t\tid: 7,\n\t\t\t\tlabel: '二级节点 3-1'\n\t\t\t},\n\t\t\t{\n\t\t\t\tid: 8,\n\t\t\t\tlabel: '二级节点 3-2'\n\t\t\t}\n\t\t]\n\t}\n];\n</script>\n\n<style>\n.is-penultimate > .el-tree-node__content .el-tree-node__label {\n\tcolor: #626aef;\n}\n\n.is-penultimate > .el-tree-node__children > div {\n\tdisplay: inline-block;\n\tmargin-right: 4px;\n\n\t.el-tree-node__content {\n\t\tpadding-right: 16px;\n\t}\n\n\t&:not(:first-child) .el-tree-node__content {\n\t\tpadding-left: 0 !important;\n\t}\n}\n</style>\n",
+			"originalSourceSha256": "a55526db4ffa3e137636da1fde5ffe85969c0a6f545590a1d71ca85a0f97cd0c",
+			"notice": {
+				"id": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+				"url": "/licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"licenseFilename": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0"
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+			"source": "MIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+			"noticeId": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27"
+		}
+	]
+}

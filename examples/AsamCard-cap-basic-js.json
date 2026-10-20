@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "581f8531694852fd15aec5dcf65a7208b553e5fe",
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamCard/cap-basic/js/Demo.vue",
-			"sha256": "ba11b26f10c7468c6d259081e2138ba91e413517fc3c1db03fc67927bd66c317",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319.txt\n-->\n<template>\n\t<AsamCard style=\"max-width: 480px\">\n\t\t<template #header>\n\t\t\t<div class=\"card-header\">\n\t\t\t\t<span>卡片名称</span>\n\t\t\t</div>\n\t\t</template>\n\n\t\t<p v-for=\"o in 4\" :key=\"o\" class=\"text item\">{{ '列表项 ' + o }}</p>\n\t\t<template #footer>底部内容</template>\n\t</AsamCard>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamCardCapBasicDemo' });\nimport { AsamCard } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "432e41b0cb2746e29312399b82d80e85edd150e0d0b002cd5a25d7c4887904d9",
+			"sha256": "9b8b8735507b12880cf3dcba7d2b2dcdcd74ec497f3cab2a68cbc9ae9e58a758",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319.txt\n-->\n<template>\n\t<AsamCard style=\"max-width: 480px\">\n\t\t<template #header>\n\t\t\t<div class=\"card-header\">\n\t\t\t\t<span>卡片名称</span>\n\t\t\t</div>\n\t\t</template>\n\n\t\t<p v-for=\"o in 4\" :key=\"o\" class=\"text item example-paragraph\">{{ '列表项 ' + o }}</p>\n\t\t<template #footer>底部内容</template>\n\t</AsamCard>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamCardCapBasicDemo' });\nimport { AsamCard } from '@asam-ui/ui';\n</script>\n\n<style scoped>\np:where(.example-paragraph) {\n\tmargin-block: 16px;\n\tline-height: 1.8;\n\toverflow-wrap: anywhere;\n}\n</style>\n",
+			"originalSourceSha256": "67530f029dd91213faafbccdcfd41d61132b2a2a11b55fbd021088f2983a2cca",
 			"notice": {
 				"id": "845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319",
 				"url": "/licenses/source-notices/845f77a8e154f13ecbc87422911229bbfba1ea99165f441cf895d9aecf7aa319.txt",

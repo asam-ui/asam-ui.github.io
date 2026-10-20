@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "581f8531694852fd15aec5dcf65a7208b553e5fe",
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDrawer/ep2147-nested-drawer/ts/Demo.vue",
-			"sha256": "790aab34ce1a0e7e77770594e41eddc7e8f0a808643c1f38663c1790417d785c",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e0cd301052e8e5e2f75d28419201f24a4f8b04732f418989e6f381eaf0230403.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e0cd301052e8e5e2f75d28419201f24a4f8b04732f418989e6f381eaf0230403.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"drawer = true\"> 打开 </AsamButton>\n\n\t<AsamDrawer v-model=\"drawer\" title=\"外层抽屉\" size=\"50%\">\n\t\t<div>\n\t\t\t<AsamButton type=\"default\" @click=\"innerDrawer = true\">点击按钮</AsamButton>\n\t\t\t<AsamDrawer\n\t\t\t\tv-model=\"innerDrawer\"\n\t\t\t\ttitle=\"内层抽屉\"\n\t\t\t\t:append-to-body=\"true\"\n\t\t\t\t:before-close=\"handleClose\"\n\t\t\t>\n\t\t\t\t<p>_(:зゝ∠)_</p>\n\t\t\t</AsamDrawer>\n\t\t</div>\n\t</AsamDrawer>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDrawer, AsamMessageBox } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst drawer = ref(false);\nconst innerDrawer = ref(false);\n\nconst handleClose = (done: () => void) => {\n\tAsamMessageBox.confirm('仍有未保存的数据，确定继续吗？')\n\t\t.then(() => {\n\t\t\tdone();\n\t\t})\n\t\t.catch(() => {\n\t\t\t// catch error\n\t\t});\n};\n</script>\n",
-			"originalSourceSha256": "cf1f6d6c1ecd78100b5e1880d424f3dd6d37239c86d3762a13c8e2fc38982e4e",
+			"sha256": "e1216ff9af29344893327c18cef29714d8a95b1a86d400a2364999858a264f48",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e0cd301052e8e5e2f75d28419201f24a4f8b04732f418989e6f381eaf0230403.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e0cd301052e8e5e2f75d28419201f24a4f8b04732f418989e6f381eaf0230403.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"drawer = true\"> 打开 </AsamButton>\n\n\t<AsamDrawer v-model=\"drawer\" title=\"外层抽屉\" size=\"50%\">\n\t\t<div>\n\t\t\t<AsamButton type=\"default\" @click=\"innerDrawer = true\">点击按钮</AsamButton>\n\t\t\t<AsamDrawer\n\t\t\t\tv-model=\"innerDrawer\"\n\t\t\t\ttitle=\"内层抽屉\"\n\t\t\t\t:append-to-body=\"true\"\n\t\t\t\t:before-close=\"handleClose\"\n\t\t\t>\n\t\t\t\t<p class=\"example-paragraph\">_(:зゝ∠)_</p>\n\t\t\t</AsamDrawer>\n\t\t</div>\n\t</AsamDrawer>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDrawer, AsamMessageBox } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst drawer = ref(false);\nconst innerDrawer = ref(false);\n\nconst handleClose = (done: () => void) => {\n\tAsamMessageBox.confirm('仍有未保存的数据，确定继续吗？')\n\t\t.then(() => {\n\t\t\tdone();\n\t\t})\n\t\t.catch(() => {\n\t\t\t// catch error\n\t\t});\n};\n</script>\n\n<style scoped>\np:where(.example-paragraph) {\n\tmargin-block: 16px;\n\tline-height: 1.8;\n\toverflow-wrap: anywhere;\n}\n</style>\n",
+			"originalSourceSha256": "0e3583e3bc3cb40ec09872ea599146b32f02beeb87eec51c1695439db3a0c076",
 			"notice": {
 				"id": "e0cd301052e8e5e2f75d28419201f24a4f8b04732f418989e6f381eaf0230403",
 				"url": "/licenses/source-notices/e0cd301052e8e5e2f75d28419201f24a4f8b04732f418989e6f381eaf0230403.txt",

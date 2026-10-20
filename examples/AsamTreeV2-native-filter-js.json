@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"sourceSha": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
+	"entry": "Demo.vue",
+	"files": [
+		{
+			"name": "Demo.vue",
+			"sourcePath": "apps/website/examples/AsamTreeV2/native-filter/js/Demo.vue",
+			"sha256": "35019c4e3755884f43196cf98b648574d6d67dc5d9838d71e0feece13e580f47",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\nNotice resource: /licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt\n-->\n<template>\n\t<div class=\"demo-root-layout\">\n\t\t<AsamInput\n\t\t\t:model-value=\"query\"\n\t\t\tstyle=\"width: 240px\"\n\t\t\tplaceholder=\"请输入关键字\"\n\t\t\t@update:model-value=\"onQueryChanged\"\n\t\t/>\n\t\t<AsamTreeV2\n\t\t\tref=\"treeRef\"\n\t\t\tstyle=\"max-width: 600px\"\n\t\t\t:data=\"data\"\n\t\t\t:props=\"props\"\n\t\t\t:filter-method=\"filterMethod\"\n\t\t\t:height=\"200\"\n\t\t/>\n\t</div>\n</template>\n\n<script setup>\n\n\nimport { AsamInput, AsamTreeV2 } from '@asam-ui/ui';\n// Adapted from the fixed upstream MIT example: tree-v2/filter.vue\nimport { ref } from 'vue';\nconst getKey = (prefix, id) => `${prefix}-${id}`;\nconst createData = (maxDeep, maxChildren, minNodesNumber, deep = 1, key = 'node') => {\n\tlet id = 0;\n\treturn Array.from({ length: minNodesNumber })\n\t\t.fill(deep)\n\t\t.map(() => {\n\t\t\tconst childrenNumber = deep === maxDeep ? 0 : Math.round(Math.random() * maxChildren);\n\t\t\tconst nodeKey = getKey(key, ++id);\n\t\t\treturn {\n\t\t\t\tid: nodeKey,\n\t\t\t\tlabel: nodeKey.replace(/^node/, '节点'),\n\t\t\t\tchildren: childrenNumber\n\t\t\t\t\t? createData(maxDeep, maxChildren, childrenNumber, deep + 1, nodeKey)\n\t\t\t\t\t: undefined\n\t\t\t};\n\t\t});\n};\nconst query = ref('');\nconst treeRef = ref();\nconst data = createData(4, 30, 5);\nconst props = {\n\tvalue: 'id',\n\tlabel: 'label',\n\tchildren: 'children'\n};\nconst onQueryChanged = (value) => {\n\tquery.value = String(value);\n\ttreeRef.value.filter(query.value);\n};\nconst filterMethod = (query, node) => node.label.includes(query);\n</script>\n\n<style scoped>\n.demo-root-layout {\n\tdisplay: grid;\n\tgap: var(--asam-space-md);\n\tjustify-items: start;\n}\n.demo-root-layout > :is(p, pre, output) {\n\tmargin-block: 0;\n}\n</style>\n",
+			"originalSourceSha256": "ab2da25daf3e1aac71257b87c292dd80934cfc56a19ad2064d57ec881ccfe3c3",
+			"notice": {
+				"id": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+				"url": "/licenses/source-notices/0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"licenseFilename": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+				"upstreamVersion": "2.14.7",
+				"upstreamSha": "77d5c32c4ebcfffde67e51f6325c6d350ca668a0"
+			}
+		}
+	],
+	"licenseFiles": [
+		{
+			"name": "LICENSE-0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27.txt",
+			"source": "MIT License\n\nCopyright (c) 2020-PRESENT Element Plus\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"sha256": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27",
+			"noticeId": "0790118bb4d66681db1d63181f72ef68e632d632f6db0373ef87cf328561af27"
+		}
+	]
+}
