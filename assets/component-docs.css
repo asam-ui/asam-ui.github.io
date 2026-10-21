@@ -455,7 +455,8 @@
 	outline-offset: 3px;
 }
 
-/* Select draws focus on its wrapper; the editable child must not gain a second ring. */
+/* These controls draw focus on their wrapper, not on the editable child. */
+.cd-page .el-input-tag__input:focus-visible,
 .cd-page .el-select__input:focus-visible,
 .cd-page .el-select-v2__combobox-input:focus-visible {
 	outline: none;
