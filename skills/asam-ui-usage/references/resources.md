@@ -4,6 +4,8 @@
 
 新契约的迁移规则见本 Skill 的 [迁移指南](migration.md)。消费接入按实际安装产物；公网官网独立提供文档/API/原生 SFC，不依赖 Storybook。独立文档 MCP 是可选查询入口，安装状态和固定资料版本见 https://asam-ui.github.io/ai/mcp.html；未发布的包不当作可用服务。
 
+国内官网 https://asam-ui.cn/ 与国际官网 https://asam-ui.github.io/ 提供同一版本资料及相同 Skill 归档。按用户当前所选站点读取对应路径（含 /ai/mcp.html），不要为了安装国内版 Skill 再转到国际域名。
+
 产品包、Skill 与网站资料分别按 [固定包与 API/SFC 配对](api-pairing.md) 核对。旧聚合、有限声明 audit 或 sourceSha 相同的少量演示都只描述各自覆盖范围，不自动证明新整库一致。
 
 | 需要的信息                  | 入口                                                             |

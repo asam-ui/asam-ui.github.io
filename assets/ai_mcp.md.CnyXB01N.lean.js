@@ -1,1 +1,0 @@
-import{_ as a,o as i,c as e,a2 as t}from"./chunks/framework.XLDuFJDd.js";const k=JSON.parse('{"title":"文档查询 MCP","description":"","frontmatter":{},"headers":[],"relativePath":"ai/mcp.md","filePath":"ai/mcp.md"}'),n={name:"ai/mcp.md"};function p(l,s,o,h,d,r){return i(),e("div",null,[...s[0]||(s[0]=[t("",16)])])}const E=a(n,[["render",p]]);export{k as __pageData,E as default};

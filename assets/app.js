@@ -40,6 +40,36 @@
 		copy(button.hasAttribute('data-copy-value') ? button.dataset.copyValue : document.getElementById(button.dataset.copy)?.textContent || '');
 	});
 	const themeToggle = $('.theme-toggle');
+	let requestedTheme = document.documentElement.dataset.theme;
+	let themeTransition;
+	let themeTimer;
+	function applyTheme(theme) {
+		requestedTheme = theme;
+		themeTransition?.skipTransition();
+		clearTimeout(themeTimer);
+		const root = document.documentElement;
+		delete root.dataset.themeChanging;
+		delete root.dataset.themeAnimating;
+		const update = () => { root.dataset.theme = requestedTheme; reflectTheme(); };
+		if (reduce.matches) { update(); return; }
+		if (typeof document.startViewTransition === 'function') {
+			root.dataset.themeAnimating = 'true';
+			const transition = document.startViewTransition(update);
+			themeTransition = transition;
+			transition.ready.catch(() => {});
+			transition.finished.catch(() => {}).then(() => {
+				if (themeTransition !== transition) return;
+				themeTransition = undefined;
+				delete root.dataset.themeAnimating;
+			});
+		} else {
+			getComputedStyle(document.body).backgroundColor;
+			root.dataset.themeChanging = 'true';
+			getComputedStyle(document.body).backgroundColor;
+			update();
+			themeTimer = setTimeout(() => { delete root.dataset.themeChanging; }, 700);
+		}
+	}
 	function reflectTheme() {
 		const dark = document.documentElement.dataset.theme === 'dark';
 		const heroImage = $('.hero-art img');
@@ -48,8 +78,8 @@
 		themeToggle.setAttribute('aria-pressed', String(dark));
 	}
 	themeToggle.addEventListener('click', () => {
-		const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-		document.documentElement.dataset.theme = theme;
+		const theme = requestedTheme === 'dark' ? 'light' : 'dark';
+		applyTheme(theme);
 		try {
 			localStorage.setItem('asam-prototype-theme', theme);
 		} catch {
@@ -66,7 +96,7 @@
 			/* Use system preference. */
 		}
 		if (!saved) {
-			document.documentElement.dataset.theme = event.matches ? 'dark' : 'light';
+			applyTheme(event.matches ? 'dark' : 'light');
 			reflectTheme();
 		}
 	});

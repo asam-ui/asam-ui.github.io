@@ -1,6 +1,6 @@
 {
-	"version": "0.1.0-alpha.1",
-	"docsVersion": "eab89db2b142ea71d9c0ac73c5700e084e6b01cf",
+	"version": "1.0.0",
+	"docsVersion": "281c9734cc502432e7665cfcf9a528ae09d5af1a",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
@@ -2017,7 +2017,7 @@
 			"kind": "component",
 			"category": "基础输入与操作",
 			"input": "apps/website/content/components/AsamInput.json",
-			"bodySha256": "a9b199d86724ec78bd3ec302fb67280d125dacfa3da36425d0492314661c62c3",
+			"bodySha256": "4175864f4c8d179a63e5c934e6a540efb545bc42c95f36e4453794f948995adb",
 			"api": [
 				{
 					"kind": "props",

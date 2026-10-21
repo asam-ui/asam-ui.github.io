@@ -1,8 +1,8 @@
 {
-  "sourceCommit": "1ae352ba18ffd6198d47e1a55430b9080de0c2eb",
-  "packageVersion": "0.1.0-alpha.1",
+  "sourceCommit": "281c9734cc502432e7665cfcf9a528ae09d5af1a",
+  "packageVersion": "1.0.0",
   "archive": "asam-ui-usage.tgz",
-  "sha256": "b59a00254be77d898c7f12a052327c96f72315c89756d3108f2e55cfcbeb164c",
+  "sha256": "bc1adb29dd6235d6ce6ef94b69809894a82e0bd3e6ef025075f23ad93daf7fde",
   "files": [
     {
       "path": "asam-ui-usage/SKILL.md",
@@ -26,11 +26,11 @@
     },
     {
       "path": "asam-ui-usage/references/package-contract.json",
-      "sha256": "19e67837c7fad1fd9cd722f192641c3e3febab62829878b7a73acd7e3e7b9574"
+      "sha256": "cf8ef8f396ba90a761bad1e9f131100245f0cd8dfa6911ffdb2ba4658ac668da"
     },
     {
       "path": "asam-ui-usage/references/resources.md",
-      "sha256": "aa7c32be814aa5d57f6cf25b92458f46d19f6e47d2efd3d1726c40120c8ea4d3"
+      "sha256": "76d2c77de3a73f25622d472b2b25c028cac5e9e3f23ff52c644d140690395a72"
     },
     {
       "path": "asam-ui-usage/scripts/inspect-contract.mjs",
