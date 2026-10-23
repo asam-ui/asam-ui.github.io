@@ -1,8 +1,8 @@
 {
-  "sourceCommit": "bb83859f98583534c5a39cd449d6881ddf1f3239",
+  "sourceCommit": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
   "packageVersion": "1.0.0",
   "archive": "asam-ui-usage.tgz",
-  "sha256": "4531292bcdaeb3f00fa9a90d70ef58cf2f46337583caf097679ad0c6c8a34086",
+  "sha256": "f1ac617dd2d5eb4d2c5dbfcbcad9392ab3ebf55ab11203094fd68d1df2124e68",
   "files": [
     {
       "path": "asam-ui-usage/SKILL.md",
@@ -26,7 +26,7 @@
     },
     {
       "path": "asam-ui-usage/references/package-contract.json",
-      "sha256": "2334e5b3ebcd6e96b55294cdbfbf2dac46568251ba2b8e3279a05bac4d7c1667"
+      "sha256": "3065a62013617e9bd3e5e68dc741ffc29eccd8aa7c54dcaae333174bc7f2bdeb"
     },
     {
       "path": "asam-ui-usage/references/resources.md",
