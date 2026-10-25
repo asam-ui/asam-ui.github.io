@@ -1,0 +1,62 @@
+.type-dictionary .cd-api table {
+	table-layout: fixed;
+	width: 100%;
+}
+.type-dictionary .cd-api :is(th, td):nth-child(1) {
+	width: 27%;
+}
+.type-dictionary .cd-api :is(th, td):nth-child(2) {
+	width: 35%;
+}
+.type-dictionary .cd-api :is(th, td):nth-child(3) {
+	width: 18%;
+}
+.type-dictionary .cd-api :is(th, td):nth-child(4) {
+	width: 20%;
+}
+.type-filter-row {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-block: 24px;
+	flex-wrap: wrap;
+}
+.type-filter-row .asam-input {
+	width: min(100%, 360px);
+}
+.type-filter-row [role='status'] {
+	color: var(--muted);
+	font-size: 13px;
+}
+.type-definitions details {
+	padding: 12px 0;
+	border-bottom: 1px solid var(--border);
+	scroll-margin-top: 96px;
+}
+.type-definitions details pre {
+	max-width: 100%;
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+}
+
+.type-dictionary-search {
+	width: min(100%, 420px);
+	padding: 10px 12px;
+	border: 1px solid var(--border);
+	border-radius: 6px;
+	color: var(--ink);
+	background: var(--page);
+}
+.type-dictionary-search:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+.type-dictionary-page [hidden] {
+	display: none !important;
+}
+.type-dictionary-page .type-packages {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin-block: 20px;
+}

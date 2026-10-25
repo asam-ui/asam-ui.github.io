@@ -232,7 +232,7 @@
 				const sourceUrl = new URL(script.getAttribute('src'), url);
 				if (
 					sourceUrl.origin === location.origin &&
-					/^\/assets\/(?:catalog-page|home-interactive|home-motion|sfc-demo\/sfc-demo|home-scene\/home-scene)\.js$/.test(
+					/^\/assets\/(?:catalog-page|type-dictionary|home-interactive|home-motion|sfc-demo\/sfc-demo|home-scene\/home-scene)\.js$/.test(
 						sourceUrl.pathname
 					)
 				) {

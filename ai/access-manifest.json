@@ -1,146 +1,184 @@
 {
   "schemaVersion": 1,
   "status": "ACCEPTED_MAINTENANCE_WEBSITE_COMPOSITE",
-  "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-  "acceptedSource": "f9acdb7f623de5346d26b60475e89b1b9f158c37",
+  "source": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
   "website": "https://asam-ui.github.io/",
   "publicRepository": "asam-ui/asam-ui.github.io",
-  "expectedPublicBaseRef": "7132765b0d2bebe497d2d38869d1308e4438c3dd",
-  "componentVersion": "0.1.0-alpha.1",
-  "componentProductSource": "4110356ba3d9cb669de5c4d9d22ab72f7d1d6a4a",
-  "skillSource": "1ae352ba18ffd6198d47e1a55430b9080de0c2eb",
-  "skillArchiveSHA256": "b59a00254be77d898c7f12a052327c96f72315c89756d3108f2e55cfcbeb164c",
+  "expectedPublicBaseRef": "217de31d2876b07c3621c027c3b95b0d5ecf29b3",
+  "websiteArtifactSource": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+  "currentPublicApiSfcSource": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+  "rootIntegratedSourceMain": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+  "componentVersion": "1.0.0",
+  "componentContractSource": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+  "skillSource": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+  "skillArchiveSHA256": "49aa17ab7923a6a93ddab9a388f85204a1f1f46a492a56b7ca7ea43e6c4b6681",
   "mcpPublished": true,
+  "mcpVersion": "0.1.0-alpha.1",
+  "mcpArtifactSHA256": "8207ebe920b98b35d4b544d5c8fa8b5b0319954152561e88c3ca0dfc1ab17d80",
+  "mcpMetadataOrigin": "unchanged-public-217de31d2876b07c3621c027c3b95b0d5ecf29b3",
   "files": [
     {
       "path": "ai/index.html",
-      "bytes": 16264,
-      "sha256": "7cf7691e7ffc76fcc8fa01caf6bd50f8f29957e707fe77af291e3afbb4740f7e",
-      "origin": "ci-public-5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1"
+      "bytes": 16360,
+      "sha256": "b542b7fabab2e737817c399e52a0163cbc25c88f81d1c1104073418ce0cf7cea",
+      "origin": "ci-public-bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "source": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55"
     },
     {
       "path": "ai/skill.html",
-      "bytes": 19893,
-      "sha256": "6b14de96d3128d3668d5a90539b56725d438c5be3a40af64b1a27aee7261d421",
-      "origin": "ci-public-5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1"
+      "bytes": 19989,
+      "sha256": "93da368782d7a5056367c94ed92a9187db115a7e28baef223552c890f7e1f442",
+      "origin": "ci-public-bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "source": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55"
     },
     {
       "path": "ai/mcp.html",
-      "bytes": 24718,
-      "sha256": "5f1f93e21d1e16eb9bc97dc752ba743ca2219b34160e3d57a83ce68af120aa5d",
-      "origin": "ci-public-5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1"
+      "bytes": 24814,
+      "sha256": "9e8aa82b3ea86c5ea51fb73874ca75e8a77a3188be5a077c7146dfe6fd4487ee",
+      "origin": "ci-public-bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "source": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55"
     },
     {
       "path": "skills/asam-ui-usage/SKILL.md",
       "bytes": 3570,
       "sha256": "53f249ffcafb989dd2cbffb462c5dfc223778b3f602617b619ae4d28aac21a23",
-      "origin": "ci-public-5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "previousPublic": "7132765b0d2bebe497d2d38869d1308e4438c3dd",
+      "origin": "ci-public-bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "source": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "previousPublic": "217de31d2876b07c3621c027c3b95b0d5ecf29b3",
       "previousSha256": "53f249ffcafb989dd2cbffb462c5dfc223778b3f602617b619ae4d28aac21a23"
     },
     {
       "path": "skills/asam-ui-usage/references/api-pairing.md",
       "bytes": 2858,
       "sha256": "305584548aad5043646eba4ae8d0f6bbb441e319171a955369a091cfd4675d14",
-      "origin": "ci-public-5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "previousPublic": "7132765b0d2bebe497d2d38869d1308e4438c3dd",
+      "origin": "ci-public-bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "source": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "previousPublic": "217de31d2876b07c3621c027c3b95b0d5ecf29b3",
       "previousSha256": "305584548aad5043646eba4ae8d0f6bbb441e319171a955369a091cfd4675d14"
     },
     {
       "path": "skills/asam-ui-usage/references/imports.md",
       "bytes": 4406,
       "sha256": "0ec6310ac64f285a73a0dc64c9a57ec1f8965dcec1822ff819cf96096d3bf4e1",
-      "origin": "ci-public-5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "previousPublic": "7132765b0d2bebe497d2d38869d1308e4438c3dd",
+      "origin": "ci-public-bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "source": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "previousPublic": "217de31d2876b07c3621c027c3b95b0d5ecf29b3",
       "previousSha256": "0ec6310ac64f285a73a0dc64c9a57ec1f8965dcec1822ff819cf96096d3bf4e1"
     },
     {
       "path": "skills/asam-ui-usage/references/integration.md",
       "bytes": 4447,
       "sha256": "1ea095b4ea22d285f413abc26f1f2a5578565d92dd174c4b3201a408f13b49de",
-      "origin": "ci-public-5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "previousPublic": "7132765b0d2bebe497d2d38869d1308e4438c3dd",
+      "origin": "ci-public-bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "source": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "previousPublic": "217de31d2876b07c3621c027c3b95b0d5ecf29b3",
       "previousSha256": "1ea095b4ea22d285f413abc26f1f2a5578565d92dd174c4b3201a408f13b49de"
     },
     {
       "path": "skills/asam-ui-usage/references/migration.md",
       "bytes": 5788,
       "sha256": "5ba257aab602a7fabf50c4431c9567b84e8f3b68c5a19008cb6427fc38c492ff",
-      "origin": "ci-public-5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "previousPublic": "7132765b0d2bebe497d2d38869d1308e4438c3dd",
+      "origin": "ci-public-bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "source": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "previousPublic": "217de31d2876b07c3621c027c3b95b0d5ecf29b3",
       "previousSha256": "5ba257aab602a7fabf50c4431c9567b84e8f3b68c5a19008cb6427fc38c492ff"
     },
     {
       "path": "skills/asam-ui-usage/references/package-contract.json",
       "bytes": 788011,
-      "sha256": "3065a62013617e9bd3e5e68dc741ffc29eccd8aa7c54dcaae333174bc7f2bdeb",
-      "origin": "ci-public-5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "previousPublic": "7132765b0d2bebe497d2d38869d1308e4438c3dd",
-      "previousSha256": "2334e5b3ebcd6e96b55294cdbfbf2dac46568251ba2b8e3279a05bac4d7c1667"
+      "sha256": "32952f5f72aca8b6d2c5bcbb069c34a99340483becd53573fa50cbba0ce0c998",
+      "origin": "ci-public-bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "source": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "previousPublic": "217de31d2876b07c3621c027c3b95b0d5ecf29b3",
+      "previousSha256": "3065a62013617e9bd3e5e68dc741ffc29eccd8aa7c54dcaae333174bc7f2bdeb"
     },
     {
       "path": "skills/asam-ui-usage/references/resources.md",
       "bytes": 3400,
       "sha256": "76d2c77de3a73f25622d472b2b25c028cac5e9e3f23ff52c644d140690395a72",
-      "origin": "ci-public-5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "previousPublic": "7132765b0d2bebe497d2d38869d1308e4438c3dd",
+      "origin": "ci-public-bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "source": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "previousPublic": "217de31d2876b07c3621c027c3b95b0d5ecf29b3",
       "previousSha256": "76d2c77de3a73f25622d472b2b25c028cac5e9e3f23ff52c644d140690395a72"
     },
     {
       "path": "skills/asam-ui-usage/scripts/inspect-contract.mjs",
       "bytes": 5891,
       "sha256": "07c9621a10818cc98a8c6526148e46ab9f2dcf0106ecb28ff0008ad8c49b5369",
-      "origin": "ci-public-5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "previousPublic": "7132765b0d2bebe497d2d38869d1308e4438c3dd",
+      "origin": "ci-public-bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "source": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "previousPublic": "217de31d2876b07c3621c027c3b95b0d5ecf29b3",
       "previousSha256": "07c9621a10818cc98a8c6526148e46ab9f2dcf0106ecb28ff0008ad8c49b5369"
     },
     {
       "path": "skills/asam-ui-usage/scripts/inspect-project.mjs",
       "bytes": 3314,
       "sha256": "aebb66989267b7af04e6956ff20e5a569ea28d93805a404860462253a3cb0610",
-      "origin": "ci-public-5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "previousPublic": "7132765b0d2bebe497d2d38869d1308e4438c3dd",
+      "origin": "ci-public-bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "source": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "previousPublic": "217de31d2876b07c3621c027c3b95b0d5ecf29b3",
       "previousSha256": "aebb66989267b7af04e6956ff20e5a569ea28d93805a404860462253a3cb0610"
     },
     {
       "path": "downloads/asam-ui-usage.tgz",
-      "bytes": 164751,
-      "sha256": "f1ac617dd2d5eb4d2c5dbfcbcad9392ab3ebf55ab11203094fd68d1df2124e68",
-      "origin": "ci-public-5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "previousPublic": "7132765b0d2bebe497d2d38869d1308e4438c3dd",
-      "previousSha256": "4531292bcdaeb3f00fa9a90d70ef58cf2f46337583caf097679ad0c6c8a34086"
+      "bytes": 164817,
+      "sha256": "49aa17ab7923a6a93ddab9a388f85204a1f1f46a492a56b7ca7ea43e6c4b6681",
+      "origin": "ci-public-bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "source": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "previousPublic": "217de31d2876b07c3621c027c3b95b0d5ecf29b3",
+      "previousSha256": "f1ac617dd2d5eb4d2c5dbfcbcad9392ab3ebf55ab11203094fd68d1df2124e68"
     },
     {
       "path": "downloads/asam-ui-usage.manifest.json",
       "bytes": 1714,
-      "sha256": "69407f93d31b9826df2943ff3ca7a61940923788fd11494dddaa537e038fc7bf",
-      "origin": "ci-public-5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-      "previousPublic": "7132765b0d2bebe497d2d38869d1308e4438c3dd",
-      "previousSha256": "ca8c1b42b8c85609cbb01a245a4b320d03429899560ca3260793438c40094f2f"
+      "sha256": "d8c061d550f1abffb4be7294b918f9a427cee66289903570732fdcd2165a111c",
+      "origin": "ci-public-bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "source": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "previousPublic": "217de31d2876b07c3621c027c3b95b0d5ecf29b3",
+      "previousSha256": "69407f93d31b9826df2943ff3ca7a61940923788fd11494dddaa537e038fc7bf"
     },
     {
       "path": "licenses/asam-ui-mcp.txt",
       "bytes": 6907,
       "sha256": "abb2ea987d278ab9b0689bf6a77a5609e32d8e8277804d00c2c429b5acd470ae",
-      "origin": "unchanged-published-material-from-public-7132765b0d2bebe497d2d38869d1308e4438c3dd",
+      "origin": "unchanged-published-material-from-public-217de31d2876b07c3621c027c3b95b0d5ecf29b3",
       "source": "approved-MCP-license-6907B"
     }
   ],
-  "applyPolicy": "MAINT-DEP-002发布已完整QA/ACC及main新包有限回归通过的581f不可变官网制品；含已验共享Form修复，12项既有发表资料及原组件/MCP/Skill离线来源逐字节保留。不含Pro专属产品，无npm发布。真实上线验证另留独立回执。",
+  "publicationHistory": [
+    {
+      "publicRef": "217de31d2876b07c3621c027c3b95b0d5ecf29b3",
+      "metadata": {
+        "schemaVersion": 1,
+        "status": "ACCEPTED_MAINTENANCE_WEBSITE_COMPOSITE",
+        "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
+        "acceptedSource": "f9acdb7f623de5346d26b60475e89b1b9f158c37",
+        "website": "https://asam-ui.github.io/",
+        "publicRepository": "asam-ui/asam-ui.github.io",
+        "expectedPublicBaseRef": "7132765b0d2bebe497d2d38869d1308e4438c3dd",
+        "componentVersion": "0.1.0-alpha.1",
+        "componentProductSource": "4110356ba3d9cb669de5c4d9d22ab72f7d1d6a4a",
+        "skillSource": "1ae352ba18ffd6198d47e1a55430b9080de0c2eb",
+        "skillArchiveSHA256": "b59a00254be77d898c7f12a052327c96f72315c89756d3108f2e55cfcbeb164c",
+        "mcpPublished": true,
+        "applyPolicy": "MAINT-DEP-002发布已完整QA/ACC及main新包有限回归通过的581f不可变官网制品；含已验共享Form修复，12项既有发表资料及原组件/MCP/Skill离线来源逐字节保留。不含Pro专属产品，无npm发布。真实上线验证另留独立回执。",
+        "mcpVersion": "0.1.0-alpha.1",
+        "mcpArtifactSHA256": "8207ebe920b98b35d4b544d5c8fa8b5b0319954152561e88c3ca0dfc1ab17d80",
+        "websiteArtifactSource": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
+        "rootAcceptedMain": "28e502401482506cd795a6921e949541a0299445",
+        "currentPublicApiSfcSource": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
+        "offlineCandidateSource": "61f2550bfcbd07ec8af8c172fe3f4f3ce0cb1ee5",
+        "rootIntegratedSourceMain": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
+        "candidateAcceptance": {
+          "product": "af33dc1a7791cc77cb3e3e40a201f612dcfbd434",
+          "tests": "2679fa05762afd3bdc931aa19b7bc0b7545681d6",
+          "qa": "4f400af215e2a1b3449c9e3f5d9c03b13169a152",
+          "acc": "f9acdb7f623de5346d26b60475e89b1b9f158c37",
+          "integrationReport": "dc953ea37266b907231d80433bb39faf66e580ec"
+        }
+      }
+    }
+  ],
   "sourceCorrections": [
     {
       "source": "7b61ffb6c5c346a7a92de007c65a295e4c78638b",
@@ -207,20 +245,11 @@
       "source": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
       "parentPublic": "7132765b0d2bebe497d2d38869d1308e4438c3dd",
       "scope": "双站发行：Skill资料来自本次CI，保全旧哈希；独立MCP许可保留原来源"
+    },
+    {
+      "source": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+      "parentPublic": "217de31d2876b07c3621c027c3b95b0d5ecf29b3",
+      "scope": "双站发行：当前组件/Skill身份取本次CI资料；旧发表身份归历史，MCP保留独立来源"
     }
-  ],
-  "mcpVersion": "0.1.0-alpha.1",
-  "mcpArtifactSHA256": "8207ebe920b98b35d4b544d5c8fa8b5b0319954152561e88c3ca0dfc1ab17d80",
-  "websiteArtifactSource": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-  "rootAcceptedMain": "28e502401482506cd795a6921e949541a0299445",
-  "currentPublicApiSfcSource": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-  "offlineCandidateSource": "61f2550bfcbd07ec8af8c172fe3f4f3ce0cb1ee5",
-  "rootIntegratedSourceMain": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
-  "candidateAcceptance": {
-    "product": "af33dc1a7791cc77cb3e3e40a201f612dcfbd434",
-    "tests": "2679fa05762afd3bdc931aa19b7bc0b7545681d6",
-    "qa": "4f400af215e2a1b3449c9e3f5d9c03b13169a152",
-    "acc": "f9acdb7f623de5346d26b60475e89b1b9f158c37",
-    "integrationReport": "dc953ea37266b907231d80433bb39faf66e580ec"
-  }
+  ]
 }

@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"validation": {
+		"status": "complete",
+		"diagnostics": []
+	},
+	"package": {
+		"name": "@asam-ui/icons-vue",
+		"version": "1.0.0",
+		"entrySHA256": "6336e83742fb0320cf005ce1461c5cc27f6fae495c3528200f1572af0e31fc40",
+		"declarationTreeSHA256": "8ef5e3a7122f3e11e9ee658289887a9f7250b18365fd590cf9ac1580fb460496",
+		"declarationFiles": 295,
+		"registryMetadata": "https://registry.npmjs.org/%40asam-ui%2Ficons-vue/1.0.0"
+	},
+	"types": [
+		{
+			"name": "AsamIconComponent",
+			"kind": "type",
+			"definition": "export type AsamIconComponent = (typeof Icons)[AsamIconName];",
+			"description": "可传给 AsamIcon 等消费组件的 Vue 图标组件类型",
+			"definitionSHA256": "8c417f0049204a32e65e2f1757c02ad0778b3bdfa9e34d0cfbcabbfb00e69ed8",
+			"references": [
+				"AsamIconName"
+			],
+			"components": [],
+			"dependencies": [],
+			"route": "/type-dictionary.html#type-icons-vue-AsamIconComponent"
+		},
+		{
+			"name": "AsamIconName",
+			"kind": "type",
+			"definition": "export type AsamIconName = keyof typeof Icons;",
+			"description": "所有公开图标组件的 PascalCase 名称，不包含类型出口",
+			"definitionSHA256": "961eb4c369a48ea04b49280ee2ea8ddf27e1f93d4ba51a415d6ce865a494b75a",
+			"references": [],
+			"components": [],
+			"dependencies": [],
+			"route": "/type-dictionary.html#type-icons-vue-AsamIconName"
+		}
+	],
+	"embeddedTypes": []
+}

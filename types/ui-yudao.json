@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"validation": {
+		"status": "complete",
+		"diagnostics": []
+	},
+	"package": {
+		"name": "@asam-ui/ui-yudao",
+		"version": "1.0.0",
+		"entrySHA256": "8e09a33a11db43c439b432cbc2d8eddd35b540177f2e72260d801e76bbe0c930",
+		"declarationTreeSHA256": "40c72a626aa311379690b90be30c58ca10bcf1d1cd0ff1dd1489dd9d0e6b3920",
+		"declarationFiles": 1,
+		"registryMetadata": "https://registry.npmjs.org/%40asam-ui%2Fui-yudao/1.0.0"
+	},
+	"types": [
+		{
+			"name": "AsamYudaoBridge",
+			"kind": "interface",
+			"definition": "export interface AsamYudaoBridge {\n    readonly request?: NonNullable<AsamDataProvider['request']>;\n    readonly upload?: NonNullable<AsamDataProvider['upload']>;\n    readonly dict?: AsamYudaoDictionaryBridge;\n    readonly isErrorNotified?: NonNullable<AsamDataProvider['isErrorNotified']>;\n    readonly onError?: NonNullable<AsamDataProvider['onError']>;\n}",
+			"description": "The only integration seam for a Yudao application. The application owns Axios, authentication, Pinia",
+			"definitionSHA256": "de1f1f4d8c20068dc16f355f083283bfe34d2e139d93d858c1c772b8521be1af",
+			"references": [
+				"AsamYudaoDictionaryBridge"
+			],
+			"components": [],
+			"dependencies": [],
+			"route": "/type-dictionary.html#type-ui-yudao-AsamYudaoBridge"
+		},
+		{
+			"name": "AsamYudaoDictionaryBridge",
+			"kind": "interface",
+			"definition": "export interface AsamYudaoDictionaryBridge {\n    /**\n     * Ensures the host cache is ready. Concurrent readers in one scope/epoch share\n     * an operation signal; cancelling one reader does not abort its active peers.\n     */\n    readonly ensure: (context: AsamRequestContext) => Promise<void>;\n    /** Reads a dictionary from the host-owned cache after `ensure` has settled. */\n    readonly get: (dictType: string) => readonly AsamDictEntry[];\n    /** Invalidates or refreshes the host-owned dictionary cache when it supports that action. */\n    readonly refresh?: (context: AsamRequestContext) => Promise<void>;\n}",
+			"description": "",
+			"definitionSHA256": "cfadfea763fc0166d24ab36904948a024f74bc2f78fec964c8440f65ba238561",
+			"references": [],
+			"components": [],
+			"dependencies": [],
+			"route": "/type-dictionary.html#type-ui-yudao-AsamYudaoDictionaryBridge"
+		}
+	],
+	"embeddedTypes": []
+}

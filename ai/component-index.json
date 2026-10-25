@@ -1,6 +1,6 @@
 {
 	"version": "1.0.0",
-	"docsVersion": "5ac800fcd5d7636bea895df3ab84f8bd60d548e1",
+	"docsVersion": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
@@ -11569,6 +11569,7 @@
 		}
 	],
 	"types": "node_modules/@asam-ui/ui/dist/index.d.ts",
+	"typeDictionary": "/types/index.json",
 	"api": "/ai/component-api.json",
 	"examples": "/ai/component-examples.json"
 }
