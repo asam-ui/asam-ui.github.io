@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamLink/cap-with-icon/ts/Demo.vue",
-			"sha256": "8d81a557d2901ca848ede051758a2ea408e01e8b41cd2253aac03353ee49c29a",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e881889a995bfd8181a06e49e12da3a7a0b8ff9ae7708939fb7bfcf8e2043f6d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e881889a995bfd8181a06e49e12da3a7a0b8ff9ae7708939fb7bfcf8e2043f6d.txt\n-->\n<template>\n\t<div>\n\t\t<AsamLink :icon=\"Edit\">编辑</AsamLink>\n\t\t<AsamLink>\n\t\t\t检查<AsamIcon class=\"el-icon--right\"><icon-view /></AsamIcon>\n\t\t</AsamLink>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamLinkCapWithIconDemo' });\nimport { AsamLink, AsamIcon } from '@asam-ui/ui';\n\nimport { Edit, View as IconView } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.el-link {\n\tmargin-right: 8px;\n}\n</style>\n",
-			"originalSourceSha256": "7dcb2014fbdf04d6dc5bd4bbd1666199e14d1cf4cdf90486940afbe368f351ab",
+			"sha256": "e21cdbb91f86297fe47dee462280be61d49f5516dc72de5d4132835cd44daa14",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e881889a995bfd8181a06e49e12da3a7a0b8ff9ae7708939fb7bfcf8e2043f6d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e881889a995bfd8181a06e49e12da3a7a0b8ff9ae7708939fb7bfcf8e2043f6d.txt\n-->\n<template>\n\t<div>\n\t\t<AsamLink :icon=\"Edit\">编辑</AsamLink>\n\t\t<AsamLink>\n\t\t\t检查\n\t\t\t<AsamIcon class=\"el-icon--right\"><icon-view /></AsamIcon>\n\t\t</AsamLink>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamLinkCapWithIconDemo' });\nimport { AsamLink, AsamIcon } from '@asam-ui/ui';\n\nimport { Edit, View as IconView } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.el-link {\n\tmargin-right: 8px;\n}\n</style>\n",
+			"originalSourceSha256": "21c5adeacc1013103e143784b39569a40d7213c120ca08fc00bfcdc3eebef57a",
 			"notice": {
 				"id": "e881889a995bfd8181a06e49e12da3a7a0b8ff9ae7708939fb7bfcf8e2043f6d",
 				"url": "/licenses/source-notices/e881889a995bfd8181a06e49e12da3a7a0b8ff9ae7708939fb7bfcf8e2043f6d.txt",

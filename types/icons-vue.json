@@ -9,6 +9,7 @@
 		"version": "1.0.0",
 		"entrySHA256": "6336e83742fb0320cf005ce1461c5cc27f6fae495c3528200f1572af0e31fc40",
 		"declarationTreeSHA256": "8ef5e3a7122f3e11e9ee658289887a9f7250b18365fd590cf9ac1580fb460496",
+		"manifestSHA256": "394e34cd9df353a535a58efb62fa260f421ca84fac2afb71130b7895296533ae",
 		"declarationFiles": 295,
 		"registryMetadata": "https://registry.npmjs.org/%40asam-ui%2Ficons-vue/1.0.0"
 	},

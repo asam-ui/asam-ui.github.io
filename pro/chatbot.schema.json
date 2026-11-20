@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "chatbot",
+	"productRoute": "/chatbot",
+	"task": "V2-046",
+	"components": [
+		"SessionList",
+		"MessageHistory",
+		"Composer",
+		"AsamAvatar",
+		"AsamCollapse",
+		"AsamDialog",
+		"AsamDrawer",
+		"AsamTable",
+		"AsamEmpty",
+		"AsamButton"
+	],
+	"shared": [
+		"Original createChatController/useChatPage and ChatService",
+		"Normal public renderAsamMarkdown for explicit assistant presentation only"
+	],
+	"host": [
+		"scope/service/readonly/disabled follow original contract",
+		"Optional local createSession checks signal/isCurrent before adding a session",
+		"Public summary and allowed related project snapshots are supplied by the host"
+	],
+	"states": [
+		"session loading/error/empty",
+		"new conversation/cancel/timeout",
+		"send/stop/explicit retry/partial error",
+		"welcome suggestions and independent drafts",
+		"management and related project return"
+	],
+	"limitations": [
+		"Local synthetic content; no model provider, key collection, upload, SSE parser or remote persistence."
+	]
+}

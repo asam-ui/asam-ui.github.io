@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamCard/cap-shadow/ts/Demo.vue",
-			"sha256": "40017b8a4f71a2c6605d1fc2cd30b940fdccbd9d29061611cc458b7077b9a5e8",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-dc792b2ba3ead07859071309484f83ba3699987eb0ef7d10f36d0428a5961d4f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/dc792b2ba3ead07859071309484f83ba3699987eb0ef7d10f36d0428a5961d4f.txt\n-->\n<template>\n\t<div class=\"flex flex-wrap gap-4\">\n\t\t<AsamCard style=\"width: 480px\" shadow=\"always\">始终显示</AsamCard>\n\t\t<AsamCard style=\"width: 480px\" shadow=\"hover\">悬停</AsamCard>\n\t\t<AsamCard style=\"width: 480px\" shadow=\"never\">不显示</AsamCard>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamCardCapShadowDemo' });\nimport { AsamCard } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.flex-wrap {\n\tflex-wrap: wrap;\n}\n\n.gap-4 {\n\tgap: 1rem;\n}\n</style>\n",
-			"originalSourceSha256": "0f85c6cd1bd7d4114429f4a73f29d86558a90fe5994a98668bf64e4925cc88b1",
+			"sha256": "1c0b3dbb9a8e2ad9ba4ea58fe8c02a35640747b686b70e7d45f37ce6e507b37c",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-dc792b2ba3ead07859071309484f83ba3699987eb0ef7d10f36d0428a5961d4f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/dc792b2ba3ead07859071309484f83ba3699987eb0ef7d10f36d0428a5961d4f.txt\n-->\n<template>\n\t<div class=\"flex flex-wrap gap-4\">\n\t\t<AsamCard style=\"width: min(480px, 100%)\" shadow=\"always\">始终显示</AsamCard>\n\t\t<AsamCard style=\"width: min(480px, 100%)\" shadow=\"hover\">悬停</AsamCard>\n\t\t<AsamCard style=\"width: min(480px, 100%)\" shadow=\"never\">不显示</AsamCard>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamCardCapShadowDemo' });\nimport { AsamCard } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.flex-wrap {\n\tflex-wrap: wrap;\n}\n\n.gap-4 {\n\tgap: 1rem;\n}\n</style>\n",
+			"originalSourceSha256": "dc2ccf4154024a1ca3297d82170e3037e603e6e04e2557a489ba72feca9ad6df",
 			"notice": {
 				"id": "dc792b2ba3ead07859071309484f83ba3699987eb0ef7d10f36d0428a5961d4f",
 				"url": "/licenses/source-notices/dc792b2ba3ead07859071309484f83ba3699987eb0ef7d10f36d0428a5961d4f.txt",

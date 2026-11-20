@@ -1,0 +1,1 @@
+import{a as e,c as t,d as n,i as r,l as i,n as a,o,r as s,s as c,t as l,u}from"./installSVGRenderer-DhI-CQhc.js";u([i,t,c,o,e,r,s,a,l]);export{n as init};

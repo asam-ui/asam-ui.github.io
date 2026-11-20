@@ -1,0 +1,279 @@
+{
+	"schemaVersion": 1,
+	"projects": [
+		{
+			"language": "ts",
+			"source": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/maps-source.zip",
+			"project": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/maps.zip",
+			"files": [
+				{
+					"path": "package.json",
+					"bytes": 1134,
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45"
+				},
+				{
+					"path": "pnpm-lock.yaml",
+					"bytes": 68309,
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf"
+				},
+				{
+					"path": "vendor/ui-158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88.tgz",
+					"bytes": 1282110,
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				},
+				{
+					"path": "vendor/pro-f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e.tgz",
+					"bytes": 483458,
+					"sha256": "f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e"
+				},
+				{
+					"path": "vendor/yudao-6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c.tgz",
+					"bytes": 5208,
+					"sha256": "6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c"
+				},
+				{
+					"path": "vendor/icons-feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84.tgz",
+					"bytes": 114588,
+					"sha256": "feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84"
+				},
+				{
+					"path": "vendor/maps-96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892.tgz",
+					"bytes": 105688,
+					"sha256": "96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892"
+				},
+				{
+					"path": "pnpm-workspace.yaml",
+					"bytes": 237,
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728"
+				},
+				{
+					"path": "patches/element-plus-2.14.7.patch",
+					"bytes": 69876,
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4"
+				},
+				{
+					"path": "main.ts",
+					"bytes": 1785,
+					"sha256": "d5c57a1f6af643171a2fb4445c40415da8fcb14e142e5c66648bb42306c5e363"
+				},
+				{
+					"path": "index.html",
+					"bytes": 284,
+					"sha256": "c26bfe69b5d67341954d759297c611e7c2690fe52eff99f24359d8fde96f54fd"
+				},
+				{
+					"path": "vite.config.ts",
+					"bytes": 179,
+					"sha256": "262fa4fbf2b978036a772e97f0035d81679224e88fd81ac21692fc73ee530891"
+				},
+				{
+					"path": "tsconfig.json",
+					"bytes": 501,
+					"sha256": "3c13ffb522863436eba82b195fd6584253154b32249158422ccbce96623f3bec"
+				},
+				{
+					"path": "README.md",
+					"bytes": 535,
+					"sha256": "fc661fbb6378f90a2ddebb890644c72475fd68e23157a5fd5bee1d5285e83a36"
+				},
+				{
+					"path": "templates/maps/I18n.ts",
+					"bytes": 315,
+					"sha256": "7177195697e3e6312a98f7f40f60bdfcffe2fb0860f89756b30061256bf2fef0"
+				},
+				{
+					"path": "templates/maps/I18nEn.ts",
+					"bytes": 6078,
+					"sha256": "15db21a82e80455fab6cf52d9353475cf2ac5821e17ec11bd97db0b22cd279de"
+				},
+				{
+					"path": "templates/maps/I18nParameters.ts",
+					"bytes": 5535,
+					"sha256": "54b6678ce02f33fe3bcb3197f08a26a4608be7530b84b7318a9ea512c405b8e3"
+				},
+				{
+					"path": "templates/maps/I18nZh.ts",
+					"bytes": 5766,
+					"sha256": "859a582b4c0c032066af7d5113dafff637b7b52ddffeed68c6548f5d8e171a97"
+				},
+				{
+					"path": "templates/maps/examples/App.vue",
+					"bytes": 8086,
+					"sha256": "3dab2f308f60ee7ba480bc344c30e5bfc76864e274fce6f5cafe062dc3974702"
+				},
+				{
+					"path": "templates/maps/examples/Isolation.vue",
+					"bytes": 3572,
+					"sha256": "3d0a70dce7c0530e73f0ede70831dfbc8abae5dc6379af4f027e45e44cf62841"
+				},
+				{
+					"path": "templates/maps/examples/main.ts",
+					"bytes": 291,
+					"sha256": "20969e83ced6214f6839e682553ca8c1cbf17788a20fec191d75ccd6318c7929"
+				},
+				{
+					"path": "website-hosts/maps.ts",
+					"bytes": 929,
+					"sha256": "6e02fb2766b35ab257de9996019df49bc96adde760d61c5ae7f0d2af7d26eb7e"
+				},
+				{
+					"path": "templates/maps/LEAFLET-LICENSE.md",
+					"bytes": 1369,
+					"sha256": "bbc959aaef7488b38942e7f05cfd1244351f8bce54261951ea17dd7cf60f894b"
+				},
+				{
+					"path": "templates/maps/THIRD_PARTY_NOTICES.md",
+					"bytes": 1215,
+					"sha256": "437f6d0b2e07aafa4d83f0f7a31d264a3f56fbdbd6f09b03e1ecba54a3313331"
+				},
+				{
+					"path": "LICENSE",
+					"bytes": 3139,
+					"sha256": "af998569465ec6ffcfe60b1689276c9c9b91856d852a0fbca808f6e2e3b271b5"
+				},
+				{
+					"path": "THIRD_PARTY_NOTICES.md",
+					"bytes": 1010,
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9"
+				}
+			]
+		},
+		{
+			"language": "js",
+			"source": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/maps-js-source.zip",
+			"project": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/maps-js.zip",
+			"files": [
+				{
+					"path": "package.json",
+					"bytes": 1134,
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45"
+				},
+				{
+					"path": "pnpm-lock.yaml",
+					"bytes": 68309,
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf"
+				},
+				{
+					"path": "vendor/ui-158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88.tgz",
+					"bytes": 1282110,
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				},
+				{
+					"path": "vendor/pro-f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e.tgz",
+					"bytes": 483458,
+					"sha256": "f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e"
+				},
+				{
+					"path": "vendor/yudao-6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c.tgz",
+					"bytes": 5208,
+					"sha256": "6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c"
+				},
+				{
+					"path": "vendor/icons-feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84.tgz",
+					"bytes": 114588,
+					"sha256": "feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84"
+				},
+				{
+					"path": "vendor/maps-96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892.tgz",
+					"bytes": 105688,
+					"sha256": "96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892"
+				},
+				{
+					"path": "pnpm-workspace.yaml",
+					"bytes": 237,
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728"
+				},
+				{
+					"path": "patches/element-plus-2.14.7.patch",
+					"bytes": 69876,
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4"
+				},
+				{
+					"path": "main.js",
+					"bytes": 1741,
+					"sha256": "7871eb57b5067c9806a83454221e74c91e3064d0f8b07cc12bb1c90296585945"
+				},
+				{
+					"path": "index.html",
+					"bytes": 284,
+					"sha256": "f0fd86c14cdefc210ab18dcd75cd8796a69ace028ebc593b1487ca8e05fa3a00"
+				},
+				{
+					"path": "vite.config.ts",
+					"bytes": 179,
+					"sha256": "262fa4fbf2b978036a772e97f0035d81679224e88fd81ac21692fc73ee530891"
+				},
+				{
+					"path": "tsconfig.json",
+					"bytes": 501,
+					"sha256": "3c13ffb522863436eba82b195fd6584253154b32249158422ccbce96623f3bec"
+				},
+				{
+					"path": "README.md",
+					"bytes": 535,
+					"sha256": "c65d53f2dd252727587f8f481817dd647ed125e85fb08287a23774d4de662387"
+				},
+				{
+					"path": "templates/maps/I18n.js",
+					"bytes": 315,
+					"sha256": "7177195697e3e6312a98f7f40f60bdfcffe2fb0860f89756b30061256bf2fef0"
+				},
+				{
+					"path": "templates/maps/I18nEn.js",
+					"bytes": 5855,
+					"sha256": "9e1378f5802bd93dc61ed51a92dd2dda883d90b30f1c0e4b96fe3f30238a1c5f"
+				},
+				{
+					"path": "templates/maps/I18nParameters.js",
+					"bytes": 11,
+					"sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+				},
+				{
+					"path": "templates/maps/I18nZh.js",
+					"bytes": 5543,
+					"sha256": "6d9d30d8ffe28893261d93f73cd0f50bdb75fbd7f1129a029ed20d79d40e663e"
+				},
+				{
+					"path": "templates/maps/examples/App.vue",
+					"bytes": 7790,
+					"sha256": "88e84446279bcf098ae314a8524867610eb0f6754a3f1d506876109b48a70b43"
+				},
+				{
+					"path": "templates/maps/examples/Isolation.vue",
+					"bytes": 3384,
+					"sha256": "a708f2b238fc14a31063c1e7f9fe6f250684bd2d132d8d420e79f5a8007a8378"
+				},
+				{
+					"path": "templates/maps/examples/main.js",
+					"bytes": 291,
+					"sha256": "20969e83ced6214f6839e682553ca8c1cbf17788a20fec191d75ccd6318c7929"
+				},
+				{
+					"path": "website-hosts/maps.js",
+					"bytes": 766,
+					"sha256": "5918c3b8fed779d0e0f0ea6c9c1eacfaeedf1d01e240133afe09f8bcd92f044f"
+				},
+				{
+					"path": "templates/maps/LEAFLET-LICENSE.md",
+					"bytes": 1369,
+					"sha256": "bbc959aaef7488b38942e7f05cfd1244351f8bce54261951ea17dd7cf60f894b"
+				},
+				{
+					"path": "templates/maps/THIRD_PARTY_NOTICES.md",
+					"bytes": 1215,
+					"sha256": "437f6d0b2e07aafa4d83f0f7a31d264a3f56fbdbd6f09b03e1ecba54a3313331"
+				},
+				{
+					"path": "LICENSE",
+					"bytes": 3139,
+					"sha256": "af998569465ec6ffcfe60b1689276c9c9b91856d852a0fbca808f6e2e3b271b5"
+				},
+				{
+					"path": "THIRD_PARTY_NOTICES.md",
+					"bytes": 1010,
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9"
+				}
+			]
+		}
+	]
+}

@@ -1,1 +1,0 @@
-import"./vue.esm-bundler-5NdF0u5k.js";import{t as e}from"./table-v2-C9QSuau3.js";var t=Object.assign({},e,{install(e){e.component(`AsamAutoResizer`,t)}});export{t};

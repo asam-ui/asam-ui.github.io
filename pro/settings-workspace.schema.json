@@ -1,0 +1,47 @@
+{
+	"schemaVersion": 1,
+	"id": "settings-workspace",
+	"title": "个人设置",
+	"documentation": "/pro/settings-workspace.html",
+	"components": [
+		"AsamCard",
+		"AsamTabs",
+		"AsamForm",
+		"AsamFormItem",
+		"AsamInput",
+		"AsamTextarea",
+		"AsamSelect",
+		"AsamCheckboxItem",
+		"AsamAvatar",
+		"AsamUpload",
+		"AsamButton",
+		"AsamEmpty"
+	],
+	"sections": [
+		"基本资料",
+		"安全设置",
+		"账号绑定",
+		"消息通知"
+	],
+	"host": [
+		"AccountHost原资料保存与unknown核实协议",
+		"显式可选profileFields启用个人简介与宿主办公区域选项；原六字段保持兼容",
+		"带owner的安全显示投影及显式宿主流程",
+		"真实头像上传持久化与未知写入核实；模板仅选择/预览与显式提交"
+	],
+	"states": [
+		"加载/失败/恢复",
+		"资料脏值/撤回/离开确认",
+		"保存成功/失败/字段错误/结果未知/只读核实",
+		"头像选择/保存/撤回/失效取消",
+		"会话与身份切换"
+	],
+	"languages": [
+		"ts",
+		"js"
+	],
+	"limitations": [
+		"示例不连接真实账号、上传或安全服务；不表示完整个人中心已验收。",
+		"个人简介与办公区域是宿主显式选择的前端扩展字段；原六字段宿主无需修改。宿主自行映射真实DTO、区域选项和字段规则，示例不新增真实服务。"
+	]
+}

@@ -1,0 +1,534 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+				<meta name="viewport" content="width=device-width,initial-scale=1">
+				<meta name="description" content="Administration template · ASAM UI English documentation">
+				<title>Administration template · ASAM UI</title><link rel="stylesheet" href="/assets/style.css?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><link rel="stylesheet" href="/assets/ai-guide.css"><link rel="stylesheet" href="/assets/website-layout.css?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><link rel="stylesheet" href="/assets/component-docs.css?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><script src="/assets/theme-init.js"></script><script src="/assets/website-layout.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"></script><script src="/assets/vendor/gsap.min.js" defer></script><script src="/assets/vendor/ScrollTrigger.min.js" defer></script><script src="/assets/catalog.js" defer></script><script src="/assets/app.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7" defer></script><script src="/assets/site-navigation.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7" defer></script><script src="/assets/site-language.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7" defer></script><script src="/assets/site-region.js" defer></script><meta name="asam-site-build" content="8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><link rel="alternate" hreflang="zh-CN" href="/pro/v2-043.html"><link rel="stylesheet" href="/assets/document-controls/document-controls.css?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><script type="module" src="/assets/document-controls/document-controls.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"></script><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a"><link rel="canonical" href="https://asam-ui.cn/en/pro/v2-043.html"></head><body>
+				<a class="skip-link" href="#main">Skip to content</a>
+				<header class="site-header" data-site-component="header">
+			<div class="nav-shell">
+				<a class="brand" href="/en/index.html" aria-label="ASAM UI home"
+					><span class="brand-mark" aria-hidden="true"><img class="brand-image brand-image-light" src="/assets/brand/mark-light.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="40" height="40" alt="" aria-hidden="true" decoding="async"><img class="brand-image brand-image-dark" src="/assets/brand/mark-dark.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="40" height="40" alt="" aria-hidden="true" decoding="async"></span><strong>ASAM<span class="brand-ui"> UI</span></strong></a
+				>
+				<nav class="primary-nav" aria-label="Main navigation"><a href="/en/getting-started.html">Getting started</a><a href="/en/component-catalog.html">Components</a><a href="/en/design-system.html">Design system</a><a href="/en/pro/index.html" aria-current="page">Pro</a><a href="/en/ai/index.html">AI</a></nav>
+				<div class="nav-actions"><details class="site-version-disclosure" data-site-versions>
+			<summary><span data-site-version-label>Pro v2.0.1</span><span class="site-version-arrow" aria-hidden="true">▾</span></summary>
+			<section class="site-version-panel" aria-label="Documentation versions">
+				<p class="site-version-heading">Packages used by this website</p>
+				<ul><li><strong>UI v2.0.1</strong><span>Version available on npm</span><a href="/en/guide/ui-changelog.html">View changelog</a></li><li><strong>Pro v2.0.1</strong><span>Version available on npm</span><a href="/en/guide/pro-changelog.html">View changelog</a></li></ul>
+				<p>Pair Pro with the UI version declared by its package. The verified stable installation is UI 2.0.1, Vue 3.5.34, and Element Plus 2.14.7.</p>
+				<nav aria-label="Release documentation"><a href="/en/guide/compatibility.html">Versions and compatibility</a><a href="/en/guide/upgrade.html">Upgrade guide</a></nav>
+			</section>
+		</details>
+					<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;\n\t\t\t\t\t\t&lt;span class=\&quot;icon-wrap\&quot;\n\t\t\t\t\t\t\t&gt;&lt;svg\n\t\t\t\t\t\t\t\tclass=\&quot;icon\&quot;\n\t\t\t\t\t\t\t\taria-hidden=\&quot;true\&quot;\n\t\t\t\t\t\t\t\tfocusable=\&quot;false\&quot;\n\t\t\t\t\t\t\t\txmlns=\&quot;http://www.w3.org/2000/svg\&quot;\n\t\t\t\t\t\t\t\tviewBox=\&quot;0 0 256 256\&quot;\n\t\t\t\t\t\t\t\tfill=\&quot;currentColor\&quot;\n\t\t\t\t\t\t\t&gt;\n\t\t\t\t\t\t\t\t&lt;path\n\t\t\t\t\t\t\t\t\td=\&quot;M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z\&quot;\n\t\t\t\t\t\t\t\t/&gt;&lt;/svg&gt;&lt;/span\n\t\t\t\t\t\t&gt;&lt;span&gt;Search docs&lt;/span&gt;&lt;kbd&gt;Ctrl K&lt;/kbd&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;search-trigger&quot;,&quot;type&quot;:&quot;default&quot;,&quot;data-open-search&quot;:true,&quot;aria-haspopup&quot;:&quot;dialog&quot;,&quot;aria-controls&quot;:&quot;search-dialog&quot;,&quot;aria-expanded&quot;:&quot;false&quot;,&quot;aria-label&quot;:&quot;Search documentation, shortcut Control K&quot;},&quot;idPrefix&quot;:&quot;document-0&quot;,&quot;injectionPrefix&quot;:10000}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default search-trigger asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-open-search="true" aria-haspopup="dialog" aria-controls="search-dialog" aria-expanded="false" aria-label="Search documentation, shortcut Control K" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+								/></svg></span
+						><span>Search docs</span><kbd>Ctrl K</kbd></span><!--]--></span></button></span><div class="site-action-icons"><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;20\&quot; height=\&quot;20\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;rect x=\&quot;3\&quot; y=\&quot;4\&quot; width=\&quot;18\&quot; height=\&quot;16\&quot; rx=\&quot;2\&quot;/&gt;&lt;path d=\&quot;M8 4v16M16 4v16\&quot;/&gt;&lt;path class=\&quot;wide-expand\&quot; d=\&quot;m11 10-2 2 2 2m2-4 2 2-2 2\&quot;/&gt;&lt;path class=\&quot;wide-contract\&quot; d=\&quot;m9 10 2 2-2 2m6-4-2 2 2 2\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button website-wide-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;aria-pressed&quot;:&quot;false&quot;,&quot;aria-label&quot;:&quot;Enable wide layout&quot;,&quot;title&quot;:&quot;Enable wide layout&quot;},&quot;idPrefix&quot;:&quot;document-1&quot;,&quot;injectionPrefix&quot;:10001}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text icon-button website-wide-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" aria-pressed="false" aria-label="Enable wide layout" title="Enable wide layout" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 4v16M16 4v16"/><path class="wide-expand" d="m11 10-2 2 2 2m2-4 2 2-2 2"/><path class="wide-contract" d="m9 10 2 2-2 2m6-4-2 2 2 2"/></svg></span><!--]--></span></button></span><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;20\&quot; height=\&quot;20\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; stroke-linecap=\&quot;round\&quot; stroke-linejoin=\&quot;round\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;path d=\&quot;M3 6h10M8 3v3m3 0c0 5-3 8-7 10m1-7c0 3 3 5 5 6m3 5 4-10 4 10m-7-3h6\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button site-language-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;tag&quot;:&quot;a&quot;,&quot;href&quot;:&quot;/pro/v2-043.html&quot;,&quot;hreflang&quot;:&quot;zh-CN&quot;,&quot;data-site-language-toggle&quot;:&quot;&quot;,&quot;data-site-language-route&quot;:&quot;/pro/v2-043.html&quot;,&quot;data-site-language-match&quot;:&quot;true&quot;,&quot;data-native-navigation&quot;:&quot;&quot;,&quot;aria-label&quot;:&quot;切换为简体中文&quot;,&quot;title&quot;:&quot;切换为简体中文&quot;},&quot;idPrefix&quot;:&quot;document-2&quot;,&quot;injectionPrefix&quot;:10002}"><a class="el-button el-button--default el-button--default is-text icon-button site-language-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" href="/pro/v2-043.html" hreflang="zh-CN" data-site-language-toggle data-site-language-route="/pro/v2-043.html" data-site-language-match="true" data-native-navigation aria-label="切换为简体中文" title="切换为简体中文" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h10M8 3v3m3 0c0 5-3 8-7 10m1-7c0 3 3 5 5 6m3 5 4-10 4 10m-7-3h6"/></svg></span><!--]--></span></a></span><div class="site-region-switch"><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;20\&quot; height=\&quot;20\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;circle cx=\&quot;12\&quot; cy=\&quot;12\&quot; r=\&quot;9\&quot;/&gt;&lt;ellipse cx=\&quot;12\&quot; cy=\&quot;12\&quot; rx=\&quot;4\&quot; ry=\&quot;9\&quot;/&gt;&lt;path d=\&quot;M3 12h18M5 6h14M5 18h14\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button site-region-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;data-site-region-toggle&quot;:&quot;&quot;,&quot;aria-label&quot;:&quot;Switch website region&quot;,&quot;aria-expanded&quot;:&quot;false&quot;,&quot;aria-controls&quot;:&quot;site-region-options&quot;,&quot;title&quot;:&quot;Switch website region&quot;},&quot;idPrefix&quot;:&quot;document-3&quot;,&quot;injectionPrefix&quot;:10003}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text icon-button site-region-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-site-region-toggle aria-label="Switch website region" aria-expanded="false" aria-controls="site-region-options" title="Switch website region" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6h14M5 18h14"/></svg></span><!--]--></span></button></span><nav id="site-region-options" class="site-regions" aria-label="Website region" hidden><a data-site-region="cn" href="https://asam-ui.cn/en/pro/v2-043.html">China</a><a data-site-region="international" href="https://asam-ui.github.io/en/pro/v2-043.html">Global</a></nav></div><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;\n\t\t\t\t\t\t&lt;span class=\&quot;icon-wrap\&quot;\n\t\t\t\t\t\t\t&gt;&lt;svg\n\t\t\t\t\t\t\t\tclass=\&quot;icon\&quot;\n\t\t\t\t\t\t\t\taria-hidden=\&quot;true\&quot;\n\t\t\t\t\t\t\t\tfocusable=\&quot;false\&quot;\n\t\t\t\t\t\t\t\txmlns=\&quot;http://www.w3.org/2000/svg\&quot;\n\t\t\t\t\t\t\t\tviewBox=\&quot;0 0 256 256\&quot;\n\t\t\t\t\t\t\t\tfill=\&quot;currentColor\&quot;\n\t\t\t\t\t\t\t&gt;\n\t\t\t\t\t\t\t\t&lt;path\n\t\t\t\t\t\t\t\t\td=\&quot;M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z\&quot;\n\t\t\t\t\t\t\t\t/&gt;&lt;/svg\n\t\t\t\t\t\t&gt;&lt;/span&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button theme-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;aria-label&quot;:&quot;Switch color theme&quot;},&quot;idPrefix&quot;:&quot;document-4&quot;,&quot;injectionPrefix&quot;:10004}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text icon-button theme-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" aria-label="Switch color theme" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z"
+								/></svg
+						></span></span><!--]--></span></button></span><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;\n\t\t\t\t\t\t&lt;span class=\&quot;icon-wrap\&quot;\n\t\t\t\t\t\t\t&gt;&lt;svg\n\t\t\t\t\t\t\t\tclass=\&quot;icon\&quot;\n\t\t\t\t\t\t\t\taria-hidden=\&quot;true\&quot;\n\t\t\t\t\t\t\t\tfocusable=\&quot;false\&quot;\n\t\t\t\t\t\t\t\txmlns=\&quot;http://www.w3.org/2000/svg\&quot;\n\t\t\t\t\t\t\t\tviewBox=\&quot;0 0 256 256\&quot;\n\t\t\t\t\t\t\t\tfill=\&quot;currentColor\&quot;\n\t\t\t\t\t\t\t&gt;\n\t\t\t\t\t\t\t\t&lt;path\n\t\t\t\t\t\t\t\t\td=\&quot;M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z\&quot;\n\t\t\t\t\t\t\t\t/&gt;&lt;/svg\n\t\t\t\t\t\t&gt;&lt;/span&gt;\n\t\t\t\t\t&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button menu-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;aria-label&quot;:&quot;Open navigation&quot;,&quot;aria-controls&quot;:&quot;mobile-nav&quot;,&quot;aria-expanded&quot;:&quot;false&quot;},&quot;idPrefix&quot;:&quot;document-5&quot;,&quot;injectionPrefix&quot;:10005}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text icon-button menu-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" aria-label="Open navigation" aria-controls="mobile-nav" aria-expanded="false" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+								/></svg
+						></span>
+					</span><!--]--></span></button></span></div>
+				</div>
+			</div>
+			<nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="/en/getting-started.html">Getting started</a><a href="/en/component-catalog.html">Components</a><a href="/en/design-system.html">Design system</a><a href="/en/pro/index.html" aria-current="page">Pro</a><a href="/en/ai/index.html">AI</a><details class="mobile-section-nav"><summary>Documentation menu</summary><div class="docs-sidebar mobile-sidebar-content" data-site-component="sidebar" data-site-section="english" aria-label="Documentation index"><nav class="docs-primary-navigation" aria-label="Documentation"><span class="sidebar-heading">Documentation</span><a href="/en/getting-started.html">Getting started</a><a href="/en/component-catalog.html">Components</a><a href="/en/design-system.html">Design system</a><a href="/en/pro/index.html">Pro</a><a href="/en/ai/index.html">AI</a><span class="sidebar-heading">Releases</span><a href="/en/guide/compatibility.html">Versions and compatibility</a><a href="/en/guide/upgrade.html">Upgrade guide</a><a href="/en/guide/ui-changelog.html">UI changelog</a><a href="/en/guide/pro-changelog.html">Pro changelog</a><span class="sidebar-heading">Guides</span><a href="/en/guide/installation.html">Installation</a><a href="/en/guide/architecture.html">Architecture</a><a href="/en/guide/provider.html">Data providers</a><a href="/en/guide/data-driven.html">Data-driven components</a><a href="/en/guide/theme.html">Theme and CSS variables</a></nav></div></details><details class="mobile-section-nav"><summary>On this page</summary><div class="mobile-page-toc"><span>On this page</span><nav><a href="#api">Use and API</a><a href="#examples">Examples</a><a class="toc-sub" href="#demo-heading-template-administration">Administration preview</a><a href="#heading-1">Continue integration</a><a href="#reference">Reference</a><a class="toc-sub" href="#heading-2">API and behavior</a><a class="toc-sub" href="#heading-3">Migration (Chinese)</a><a class="toc-sub" href="#heading-4">Usage</a><a class="toc-sub" href="#types">Full type source</a></nav></div></details></nav>
+		</header><div id="site-view">
+				<div class="docs-layout wrap site-doc-layout" data-site-component="layout"><aside class="docs-sidebar" data-site-component="sidebar" data-site-section="english" aria-label="Documentation index"><nav class="docs-primary-navigation" aria-label="Documentation"><span class="sidebar-heading">Documentation</span><a href="/en/getting-started.html">Getting started</a><a href="/en/component-catalog.html">Components</a><a href="/en/design-system.html">Design system</a><a href="/en/pro/index.html">Pro</a><a href="/en/ai/index.html">AI</a><span class="sidebar-heading">Releases</span><a href="/en/guide/compatibility.html">Versions and compatibility</a><a href="/en/guide/upgrade.html">Upgrade guide</a><a href="/en/guide/ui-changelog.html">UI changelog</a><a href="/en/guide/pro-changelog.html">Pro changelog</a><span class="sidebar-heading">Guides</span><a href="/en/guide/installation.html">Installation</a><a href="/en/guide/architecture.html">Architecture</a><a href="/en/guide/provider.html">Data providers</a><a href="/en/guide/data-driven.html">Data-driven components</a><a href="/en/guide/theme.html">Theme and CSS variables</a></nav></aside><article id="main" tabindex="-1" class="docs-content ai-content"><h1 id="administration-template" tabindex="-1">Administration template <a class="header-anchor" href="#administration-template" aria-label="Permalink to &quot;Administration template&quot;">&ZeroWidthSpace;</a></h1>
+<p>Use the administration template for user, role, and menu management. The three pages share the security and CRUD services supplied by the host. The grant editor works with direct grants.</p>
+<h2 id="api" tabindex="-1">Use and API <a class="header-anchor" href="#api" aria-label="Permalink to &quot;Use and API {#api}&quot;">&ZeroWidthSpace;</a></h2>
+<p>Copy <code>templates/administration</code> with the same-release navigation and security dependencies. Keep their relative imports and replace the example host with your adapters. The <a href="#reference">usage and API reference</a> describes what the host must supply.</p>
+<h2 id="examples" tabindex="-1">Examples <a class="header-anchor" href="#examples" aria-label="Permalink to &quot;Examples {#examples}&quot;">&ZeroWidthSpace;</a></h2>
+<div id="demo-template-administration"></div>
+<h3 id="demo-heading-template-administration" tabindex="-1">Administration preview <a class="header-anchor" href="#demo-heading-template-administration" aria-label="Permalink to &quot;Administration preview {#demo-heading-template-administration}&quot;">&ZeroWidthSpace;</a></h3>
+<p>The interactive preview uses local demonstration data. All three styles share the same routes and operations.</p>
+<p><a href="/pro/template-preview.html?example=administration&amp;language=ts&amp;locale=en">Open TypeScript preview</a> · <a href="/pro/template-preview.html?example=administration&amp;language=js&amp;locale=en">Open JavaScript preview</a></p>
+<div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><table tabindex="0">
+<thead>
+<tr>
+<th>Language</th>
+<th>Source files</th>
+<th>Complete project</th>
+<th>File manifest</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TypeScript</td>
+<td><a href="https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/administration-source.zip" hreflang="zh-CN">Source ZIP <small>(Chinese)</small></a></td>
+<td><a href="https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/administration.zip" hreflang="zh-CN">Project ZIP <small>(Chinese)</small></a></td>
+<td><a href="/pro/examples/administration.json" hreflang="zh-CN">Manifest <small>(Chinese)</small></a></td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td><a href="https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/administration-js-source.zip" hreflang="zh-CN">Source ZIP <small>(Chinese)</small></a></td>
+<td><a href="https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/administration-js.zip" hreflang="zh-CN">Project ZIP <small>(Chinese)</small></a></td>
+<td><a href="/pro/examples/administration-js.json" hreflang="zh-CN">Manifest <small>(Chinese)</small></a></td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div></div></div><h2 id="heading-1">Continue integration</h2>
+<p><a href="/en/pro/installation.html">Pro quick start</a> · <a href="/en/pro/versions.html">Versions and migration</a> · <a href="/en/ai/recipes/administration.html">AI development recipe</a></p>
+<h2 id="reference" tabindex="-1">Reference <a class="header-anchor" href="#reference" aria-label="Permalink to &quot;Reference {#reference}&quot;">&ZeroWidthSpace;</a></h2>
+<section id="reference-api"><h3 id="heading-2">API and behavior</h3><p>Use <code>Types.ts</code> as the source of truth for types. Copy the Vue files, recipes, and documentation from the same release.</p>
+<p><code>Edit</code>, <code>Query</code>, <code>GrantNode</code>, and the sample DTOs enforce complete field allowlists at runtime. A missing field, extra field, invalid type, accessor, duplicate ID, or sparse ID array rejects the entire input. The version has no zero default. Set <code>parentId</code> explicitly to <code>null</code> or a valid typed ID. Use <code>queryProjectionCodec</code> for list queries. It restores only the empty query values that the list controller deliberately omits, then validates the full <code>Query</code>. Project <code>Row</code> to <code>Edit</code> in the host so that the row ID and private backend fields stay out of the edit payload.</p>
+<p>A receipt verified by another instance advances the confirmed baseline and preserves the local dirty draft. The operation snapshot can update the selection only when this instance issued the original operation and no later edits exist. The example implements logout. Bootstrap waits for the router's first navigation before setting up the bridge so that deep links work.</p>
+<div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><table tabindex="0">
+<thead>
+<tr>
+<th>Contract</th>
+<th>Input, output, and responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AdministrationHost</code></td>
+<td>Supplies borrowed <code>security</code>, <code>runtime</code>, <code>writes</code>, <code>operations</code>, <code>receipts</code>, <code>services</code>, <code>size</code>, <code>confirm</code>, and <code>unknownRoles</code>.</td>
+</tr>
+<tr>
+<td><code>AdministrationServices</code></td>
+<td>Supplies <code>version</code>, three <code>AsamCrudServices</code> groups, <code>roleOptions</code>, <code>menuNodes</code>, and <code>grants</code>. The host chooses the service endpoints.</td>
+</tr>
+<tr>
+<td><code>Query</code></td>
+<td><code>keyword</code>, <code>status</code>, <code>role</code>, and <code>context</code>. Set <code>role</code> to a typed ID or <code>null</code>.</td>
+</tr>
+<tr>
+<td><code>UserEdit</code> / <code>UserRow</code></td>
+<td><code>name</code>, <code>account</code>, <code>status</code>, <code>roleIds</code>, <code>context</code>, <code>note</code>, and <code>version</code>. The row adds <code>id</code>.</td>
+</tr>
+<tr>
+<td><code>RoleEdit</code> / <code>RoleRow</code></td>
+<td><code>name</code>, <code>code</code>, <code>enabled</code>, <code>members</code>, <code>note</code>, <code>context</code>, and <code>version</code>. The host defines the semantics of the read-only row <code>members</code> value.</td>
+</tr>
+<tr>
+<td><code>MenuEdit</code> / <code>MenuRow</code></td>
+<td><code>parentId</code>, <code>title</code>, <code>kind</code>, <code>permissionCode</code>, <code>enabled</code>, <code>grantable</code>, and <code>version</code>. The row adds <code>id</code>.</td>
+</tr>
+<tr>
+<td><code>GrantNode</code></td>
+<td>A typed <code>id</code> and <code>parentId</code>, plus <code>title</code>, <code>kind</code>, <code>permissionCode</code>, <code>enabled</code>, <code>grantable</code>, and <code>version</code>.</td>
+</tr>
+<tr>
+<td><code>GrantSnapshot</code></td>
+<td>Complete read-only input with <code>subject</code>, <code>scope</code>, <code>version</code>, <code>nodes</code>, <code>direct</code>, and <code>unavailable</code>.</td>
+</tr>
+<tr>
+<td><code>GrantOperation</code></td>
+<td>Immutable record with <code>operationId</code>, <code>subject</code>, <code>scope</code>, <code>serviceVersion</code>, <code>version</code>, and <code>direct</code>.</td>
+</tr>
+<tr>
+<td><code>GrantService</code></td>
+<td><code>load(subject, Request)</code>, <code>save(operation, Request)</code>, and <code>verify(operation, Request)</code>.</td>
+</tr>
+<tr>
+<td><code>Request</code></td>
+<td><code>signal</code>, <code>isCurrent</code>, and <code>scope</code>. Reauthorize writes on the host backend before applying side effects.</td>
+</tr>
+<tr>
+<td><code>GrantResult</code></td>
+<td>Success with a version, confirmed failure with a reason of <code>conflict</code>, <code>validation</code>, or <code>denied</code>, or <code>unknown</code>.</td>
+</tr>
+<tr>
+<td><code>GrantReceipt</code></td>
+<td>The original operation, status of <code>sending</code>, <code>success</code>, <code>failure</code>, or <code>unknown</code>, and the result. The host retains the map across unmounts.</td>
+</tr>
+<tr>
+<td><code>GrantEditor</code> expose</td>
+<td><code>open(typedId)</code> and <code>editor</code>. Emits <code>closed</code> on close and clears only its local state on unmount.</td>
+</tr>
+<tr>
+<td><code>createGrantEditor</code></td>
+<td>Refs <code>snapshot</code>, <code>selected</code>, <code>filter</code>, <code>status</code>, <code>message</code>, <code>dirty</code>, <code>tree</code>, <code>visible</code>, and <code>writable</code>. Methods <code>open</code>, <code>toggle</code>, <code>selectVisible</code>, <code>save</code>, <code>verify</code>, <code>close</code>, <code>reload</code>, <code>invalidate</code>, and <code>dispose</code>.</td>
+</tr>
+<tr>
+<td><code>AdministrationApp</code></td>
+<td>Props <code>host</code>, <code>family</code> (<code>minimal</code>, <code>brand</code>, or <code>technology</code>), and <code>mode</code> (<code>light</code> or <code>dark</code>). Provides <code>controls</code> and <code>recovery</code> slots and exposes <code>navigation</code>.</td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div></div></div><p>Use the <a href="/en/pro/v2-024.html#reference">CRUD controller's public contract</a> for CRUD operations. Read current details from the service and discard stale rows as edit targets. Use explicit codecs to project service DTOs into fields safe to display. Carry the version in the hidden edit payload and let the host map it to its backend version or ETag. The example uses string statuses. Use an explicit codec when the backend uses booleans, enums, or numbers.</p>
+<p><code>GrantEditor</code> moves from <code>closed</code> to <code>loading</code>, then to <code>ready</code> or <code>error</code>. From <code>ready</code>, a save moves through <code>saving</code> and returns to <code>ready</code> or <code>unknown</code>. Verification moves from <code>unknown</code> through <code>verifying</code> and returns to <code>ready</code> or <code>unknown</code>.</p>
+<p>Invalidation closes the editor immediately. A failed read leaves the tree empty. Confirm before refreshing a dirty draft. A save confirms the submitted snapshot and preserves later edits. Correct a confirmed failure before resubmitting. For an unknown result, verify the original operation.</p>
+</section><section id="reference-migration"><h3 id="heading-3">Migration (Chinese)</h3><div lang="zh-CN"><p>这是新增模板，没有删除既有包接口。复制模板目录及 导航模板/会话与权限模板 的相对依赖；保留正常包 import。
+从旧管理页迁入时逐项替换：</p>
+<ol>
+<li>将 Row/Edit/Query 映射到 Types.ts；使用明确 codec 保留原 typed ID、版本与原始服务映射。</li>
+<li>注入三组 AsamCrudServices 和应用持有的 writes/operations，不把各页未决写放到临时组件内。</li>
+<li>接入宿主 SecurityAdapter 与 scopeKey。给每个 route 明确读取规则，写前单独检查权限；禁用通配超级角色推导。</li>
+<li>将后端授权模型转换为 direct 集合，明确全量/差额、不可授保留/拒绝、版本与 unknown 核实策略。</li>
+<li>服务替换更改 version 和服务引用；失效优先清数据。普通离开可以询问丢弃，安全失效不能让确认保留旧主体。</li>
+<li>删除旧“失败自动重试写”的流程；对 unknown 使用原 operationId 核实。</li>
+</ol>
+<p>Directory/Catalog 的真实可运行合成映射见 Codecs.ts 与 Fixture.ts。
+真实后端授权引擎、认证服务器、租户平台及真实 CL 页面不属于本模板，接入方保留这些职责。</p>
+<p>Edit/Query/GrantNode 与示例 DTO 的字段必须完整且无额外字段；service.load 显式返回 Edit，不把含 id 的 Row 直接传给 Edit codec。新增字段同时更新 Types、字段定义、codec 白名单和 DTO adapter。列表控制器 空查询省略只经 <code>queryProjectionCodec</code> 适配，不把缺失 Edit/parentId/version 默认为合法值。保留目标工程的依赖检查配置与有效锁。</p>
+</div></section><section id="reference-usage"><h3 id="heading-4">Usage</h3><p>The administration template is an editable Vue 3 application for users, roles, and menus. Its entry point is <code>AdministrationApp.vue</code>. It includes <code>UsersPage.vue</code>, <code>RolesPage.vue</code>, <code>MenusPage.vue</code>, and the <code>GrantEditor.vue</code> grant editor. It uses the standard <code>@asam-ui/ui</code> and <code>@asam-ui/pro</code> packages. The host supplies authentication and backend authorization.</p>
+<p>Copy the template directory and same-release <code>app/security</code> and <code>app/navigation</code> dependencies, preserving their relative paths. Install compatible versions of UI, Pro, Vue, Element Plus, and Vue Router. Start from <code>examples/main.ts</code> and load the Element Plus, UI, and Pro styles in that order. The example <code>App.vue</code> provides a local synthetic host. Replace its adapters when you integrate the template.</p>
+<h4 id="同源应用与设计" tabindex="-1">Application and design variants <a class="header-anchor" href="#同源应用与设计" aria-label="Permalink to &quot;Application and design variants {#同源应用与设计}&quot;">&ZeroWidthSpace;</a></h4>
+<p>Use the <code>minimal.html</code>, <code>brand.html</code>, and <code>technology.html</code> production entry points or select the corresponding family with <code>?family=minimal</code>, <code>?family=brand</code>, or <code>?family=technology</code>. All three application shells share <code>/users</code>, <code>/roles</code>, and <code>/menus</code>. The public recovery route is <code>/safe</code>. They support the host's light and dark themes, a 390 px viewport, keyboard focus, and control sizes of 40, 36, 32, and 28 px. Buttons use color and movement for feedback. Reduced motion disables movement, and operations are available immediately.</p>
+<h4 id="布局与主题" tabindex="-1">Layout and theme <a class="header-anchor" href="#布局与主题" aria-label="Permalink to &quot;Layout and theme {#布局与主题}&quot;">&ZeroWidthSpace;</a></h4>
+<p>The minimal layout uses a horizontal shell and subtle dividers. The brand layout uses a sidebar to emphasize identity and content hierarchy. The technology layout uses a narrow rail and strong tone contrast. All three styles share the same data, operations, and permission contract. Follow the project's Vue, ASAM, token, accessibility, and immediate interaction requirements when styling the template.</p>
+<h4 id="宿主职责" tabindex="-1">Host responsibilities <a class="header-anchor" href="#宿主职责" aria-label="Permalink to &quot;Host responsibilities {#宿主职责}&quot;">&ZeroWidthSpace;</a></h4>
+<p><code>Types.ts</code> defines the contract. The host owns <code>security</code>, <code>runtime</code>, <code>writes</code>, <code>operations</code>, <code>receipts</code>, <code>services</code>, and <code>size</code>. Pages release the watchers, read requests, subscriptions, and controllers they create. <code>AdministrationApp</code> releases its own navigation bridge and guard. Disposal of borrowed security, router, runtime, and write coordination belongs to their owner. The example app creates and disposes these resources. Each instance uses its own router and runtime and can share security and host receipts.</p>
+<p>Use <code>security.check</code> and <code>permission</code> from the <a href="/en/pro/v2-033.html#reference">security adapter</a>. Set a separate read rule for each protected route. Hiding menu items controls visibility. Before a write, synchronously check <code>read</code>, <code>write</code>, and <code>readOnly</code>. Pending access, errors, and invalidation close restricted pages. Invalidation immediately clears drafts and trees. Switch the runtime scope before mounting a new page. Confirm service replacement in the host. Both service identity and <code>version</code> identify the page generation and prevent an earlier read from overwriting a new page, even if the service ignores cancellation.</p>
+<p>The example uses synthetic local data: 100 users, 30 roles, 50 nodes, 20 rows per page, four query inputs, six edit fields, and reads delayed by 100 ms. The host supplies real accounts, endpoints, and access rules. Return display-safe messages and field errors from adapters so that sensitive errors and credentials stay out of the UI.</p>
+<h4 id="写入与恢复" tabindex="-1">Writes and recovery <a class="header-anchor" href="#写入与恢复" aria-label="Permalink to &quot;Writes and recovery {#写入与恢复}&quot;">&ZeroWidthSpace;</a></h4>
+<p>CRUD uses <code>useAsamCrudController</code>, <code>AsamCrudPage</code>, and <code>AsamCrudServices</code> from <a href="/en/pro/v2-024.html#reference">CRUD pages</a>. Freeze the version with the edit payload or delete target. Report failure only when the service confirms it did not apply the write. Otherwise record an unknown result and retain its original <code>operationId</code> for verification. Keep a result per delete target. If a write succeeds and the list refresh fails, retry the refresh.</p>
+<p>The grant editor works with <strong>direct grants</strong>. The tree uses <code>check-strictly</code> and excludes structural parents and disabled nodes from new grants. Filtering preserves hidden selections. Use the <code>unavailable</code> preserve or reject policy returned by the load service for old grants that are unknown or can no longer be assigned. Preserve entries appear in the summary and survive clearing visible selections. A pending receipt for the same scope and subject prevents a new operation ID from resending the write.</p>
+<p>Users can edit the tree while a save is in progress. Success confirms the submitted snapshot while later edits remain dirty. Check the current generation before confirmation, before the service call, and after the asynchronous result. The host retains <code>host.receipts</code> when leaving the scope and can verify the original operation using its <code>serviceVersion</code>.</p>
+<p>Validate an entire menu tree for duplicate nodes, orphans, cycles, and invalid typed IDs before showing it. The UI uses typed JSON tuples as keys and returns the original typed ID. Number <code>0</code>, string <code>'0'</code>, and root <code>null</code> have distinct meanings. Tree behavior comes from <code>AsamTree</code>.</p>
+<h4 id="两种宿主适配" tabindex="-1">Host adapter examples <a class="header-anchor" href="#两种宿主适配" aria-label="Permalink to &quot;Host adapter examples {#两种宿主适配}&quot;">&ZeroWidthSpace;</a></h4>
+<p><code>Codecs.ts</code> defines <code>DirectoryUserDTO</code> and <code>CatalogUserDTO</code> with different field shapes. <code>examples/Fixture.ts</code> uses both mappings for reads and writes. The Directory adapter saves the whole grant set. The Catalog adapter computes set differences. Both use the same set contract in the UI.</p>
+<p>Implement <code>AdministrationServices</code> and handle DTOs, versions, service authorization, and reference constraints in the host. The host chooses endpoint URLs and authorization rules. <code>roleOptions</code> supplies candidates, and the host's <code>unknownRoles</code> policy determines whether to preserve or reject unknown user roles. A missing candidate never grants new access.</p>
+<p>See the <a href="/en/ai/recipes/administration.html">AI development recipe</a>, <a href="#reference-api">API reference</a>, and <a href="#reference-migration">migration guide</a> for integration and verification.</p>
+</section><h3 id="types">Full type source</h3><details><summary>Types.ts · Type source</summary><div data-asam-code-block data-code-single-line="false" class="language-ts vp-adaptive-theme"><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;18\&quot; height=\&quot;18\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;rect x=\&quot;8\&quot; y=\&quot;3\&quot; width=\&quot;12\&quot; height=\&quot;14\&quot; rx=\&quot;2\&quot;/&gt;&lt;path d=\&quot;M16 17v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;asam-code-copy&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;size&quot;:&quot;small&quot;,&quot;title&quot;:&quot;Copy code&quot;,&quot;aria-label&quot;:&quot;Copy code&quot;,&quot;data-copy-value&quot;:&quot;import type { InjectionKey, Ref } from 'vue';\nimport type { AsamControlSize, AsamDataRuntime } from '@asam-ui/ui';\nimport type {\n\tAsamCrudServices,\n\tAsamWriteCoordinator,\n\tAsamTableOperationCoordinator\n} from '@asam-ui/pro';\nimport type { createSecurity } from '@asam-ui/pro/application/security';\ntype SecurityController = ReturnType&lt;typeof createSecurity&gt;;\n\nexport type Id = string | number;\nexport type Entity = 'users' | 'roles' | 'menus';\nexport interface Query {\n\tkeyword: string;\n\tstatus: string;\n\trole: Id | null;\n\tcontext: string;\n}\nexport interface UserEdit {\n\tname: string;\n\taccount: string;\n\tstatus: string;\n\troleIds: Id[];\n\tcontext: string;\n\tnote: string;\n\tversion: number;\n}\nexport interface UserRow extends UserEdit {\n\tid: Id;\n}\nexport interface RoleEdit {\n\tname: string;\n\tcode: string;\n\tenabled: string;\n\tmembers: string;\n\tnote: string;\n\tcontext: string;\n\tversion: number;\n}\nexport interface RoleRow extends RoleEdit {\n\tid: Id;\n}\nexport interface MenuEdit {\n\tparentId: Id | null;\n\ttitle: string;\n\tkind: string;\n\tpermissionCode: string;\n\tenabled: string;\n\tgrantable: string;\n\tversion: number;\n}\nexport interface MenuRow extends MenuEdit {\n\tid: Id;\n}\nexport interface RoleOption {\n\tid: Id;\n\tname: string;\n\tenabled: boolean;\n}\nexport interface GrantNode {\n\tid: Id;\n\tparentId: Id | null;\n\ttitle: string;\n\tkind: string;\n\tpermissionCode: string;\n\tenabled: boolean;\n\tgrantable: boolean;\n\tversion: number;\n}\nexport interface GrantSnapshot {\n\tsubject: Id;\n\tscope: string;\n\tversion: string;\n\tnodes: readonly GrantNode[];\n\tdirect: readonly Id[];\n\tunavailable: 'preserve' | 'reject';\n}\nexport interface Request {\n\tsignal: AbortSignal;\n\tisCurrent(): boolean;\n\tscope: string;\n}\nexport interface GrantOperation {\n\treadonly operationId: string;\n\treadonly subject: Id;\n\treadonly scope: string;\n\treadonly serviceVersion: string;\n\treadonly version: string;\n\treadonly direct: readonly Id[];\n}\nexport type GrantResult =\n\t| { status: 'success'; version: string }\n\t| { status: 'failure'; reason: 'conflict' | 'validation' | 'denied' }\n\t| { status: 'unknown' };\nexport interface GrantReceipt {\n\treadonly operation: GrantOperation;\n\tstatus: 'confirming' | 'sending' | 'success' | 'failure' | 'unknown';\n\tresult?: GrantResult;\n}\nexport interface GrantService {\n\tload(subject: Id, request: Request): Promise&lt;GrantSnapshot&gt;;\n\tsave(operation: GrantOperation, request: Request): Promise&lt;GrantResult&gt;;\n\tverify(operation: GrantOperation, request: Request): Promise&lt;GrantResult&gt;;\n}\nexport interface EntityServices&lt;Row extends object, Edit extends object&gt; {\n\tcrud: AsamCrudServices&lt;Row, Query, Edit, Id&gt;;\n}\nexport interface AdministrationServices {\n\tversion: string;\n\tusers: EntityServices&lt;UserRow, UserEdit&gt;;\n\troles: EntityServices&lt;RoleRow, RoleEdit&gt;;\n\tmenus: EntityServices&lt;MenuRow, MenuEdit&gt;;\n\troleOptions(request: Request): Promise&lt;readonly RoleOption[]&gt;;\n\tmenuNodes(request: Request): Promise&lt;readonly GrantNode[]&gt;;\n\tgrants: GrantService;\n}\nexport interface AdministrationHost {\n\tsecurity: Pick&lt;SecurityController, 'state' | 'check' | 'permission' | 'onInvalidate'&gt;;\n\truntime: AsamDataRuntime;\n\twrites: AsamWriteCoordinator;\n\toperations: AsamTableOperationCoordinator;\n\t/** Host owned, retained across page removal and security invalidation. */\n\treceipts: Map&lt;string, GrantReceipt&gt;;\n\tservices: Ref&lt;AdministrationServices&gt;;\n\tsize: Ref&lt;AsamControlSize&gt;;\n\tconfirm(message: string): Promise&lt;boolean&gt;;\n\tunknownRoles: 'preserve' | 'reject';\n\tleaves?: Set&lt;() =&gt; Promise&lt;boolean&gt;&gt;;\n}\nexport const administrationKey: InjectionKey&lt;AdministrationHost&gt; = Symbol('asam-administration');\n\n&quot;},&quot;idPrefix&quot;:&quot;document-6&quot;,&quot;injectionPrefix&quot;:10006}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--small is-text asam-code-copy asam-button asam-button-default asam-button-small asam-button-press-feedback" style="--asam-button-icon-size:16px;" title="Copy code" aria-label="Copy code" data-copy-value="import type { InjectionKey, Ref } from &#39;vue&#39;;
+import type { AsamControlSize, AsamDataRuntime } from &#39;@asam-ui/ui&#39;;
+import type {
+	AsamCrudServices,
+	AsamWriteCoordinator,
+	AsamTableOperationCoordinator
+} from &#39;@asam-ui/pro&#39;;
+import type { createSecurity } from &#39;@asam-ui/pro/application/security&#39;;
+type SecurityController = ReturnType&lt;typeof createSecurity&gt;;
+
+export type Id = string | number;
+export type Entity = &#39;users&#39; | &#39;roles&#39; | &#39;menus&#39;;
+export interface Query {
+	keyword: string;
+	status: string;
+	role: Id | null;
+	context: string;
+}
+export interface UserEdit {
+	name: string;
+	account: string;
+	status: string;
+	roleIds: Id[];
+	context: string;
+	note: string;
+	version: number;
+}
+export interface UserRow extends UserEdit {
+	id: Id;
+}
+export interface RoleEdit {
+	name: string;
+	code: string;
+	enabled: string;
+	members: string;
+	note: string;
+	context: string;
+	version: number;
+}
+export interface RoleRow extends RoleEdit {
+	id: Id;
+}
+export interface MenuEdit {
+	parentId: Id | null;
+	title: string;
+	kind: string;
+	permissionCode: string;
+	enabled: string;
+	grantable: string;
+	version: number;
+}
+export interface MenuRow extends MenuEdit {
+	id: Id;
+}
+export interface RoleOption {
+	id: Id;
+	name: string;
+	enabled: boolean;
+}
+export interface GrantNode {
+	id: Id;
+	parentId: Id | null;
+	title: string;
+	kind: string;
+	permissionCode: string;
+	enabled: boolean;
+	grantable: boolean;
+	version: number;
+}
+export interface GrantSnapshot {
+	subject: Id;
+	scope: string;
+	version: string;
+	nodes: readonly GrantNode[];
+	direct: readonly Id[];
+	unavailable: &#39;preserve&#39; | &#39;reject&#39;;
+}
+export interface Request {
+	signal: AbortSignal;
+	isCurrent(): boolean;
+	scope: string;
+}
+export interface GrantOperation {
+	readonly operationId: string;
+	readonly subject: Id;
+	readonly scope: string;
+	readonly serviceVersion: string;
+	readonly version: string;
+	readonly direct: readonly Id[];
+}
+export type GrantResult =
+	| { status: &#39;success&#39;; version: string }
+	| { status: &#39;failure&#39;; reason: &#39;conflict&#39; | &#39;validation&#39; | &#39;denied&#39; }
+	| { status: &#39;unknown&#39; };
+export interface GrantReceipt {
+	readonly operation: GrantOperation;
+	status: &#39;confirming&#39; | &#39;sending&#39; | &#39;success&#39; | &#39;failure&#39; | &#39;unknown&#39;;
+	result?: GrantResult;
+}
+export interface GrantService {
+	load(subject: Id, request: Request): Promise&lt;GrantSnapshot&gt;;
+	save(operation: GrantOperation, request: Request): Promise&lt;GrantResult&gt;;
+	verify(operation: GrantOperation, request: Request): Promise&lt;GrantResult&gt;;
+}
+export interface EntityServices&lt;Row extends object, Edit extends object&gt; {
+	crud: AsamCrudServices&lt;Row, Query, Edit, Id&gt;;
+}
+export interface AdministrationServices {
+	version: string;
+	users: EntityServices&lt;UserRow, UserEdit&gt;;
+	roles: EntityServices&lt;RoleRow, RoleEdit&gt;;
+	menus: EntityServices&lt;MenuRow, MenuEdit&gt;;
+	roleOptions(request: Request): Promise&lt;readonly RoleOption[]&gt;;
+	menuNodes(request: Request): Promise&lt;readonly GrantNode[]&gt;;
+	grants: GrantService;
+}
+export interface AdministrationHost {
+	security: Pick&lt;SecurityController, &#39;state&#39; | &#39;check&#39; | &#39;permission&#39; | &#39;onInvalidate&#39;&gt;;
+	runtime: AsamDataRuntime;
+	writes: AsamWriteCoordinator;
+	operations: AsamTableOperationCoordinator;
+	/** Host owned, retained across page removal and security invalidation. */
+	receipts: Map&lt;string, GrantReceipt&gt;;
+	services: Ref&lt;AdministrationServices&gt;;
+	size: Ref&lt;AsamControlSize&gt;;
+	confirm(message: string): Promise&lt;boolean&gt;;
+	unknownRoles: &#39;preserve&#39; | &#39;reject&#39;;
+	leaves?: Set&lt;() =&gt; Promise&lt;boolean&gt;&gt;;
+}
+export const administrationKey: InjectionKey&lt;AdministrationHost&gt; = Symbol(&#39;asam-administration&#39;);
+
+" data-asam-size="small" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="8" y="3" width="12" height="14" rx="2"/><path d="M16 17v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3"/></svg></span><!--]--></span></button></span><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { InjectionKey, Ref } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'vue'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { AsamControlSize, AsamDataRuntime } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	AsamCrudServices,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	AsamWriteCoordinator,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	AsamTableOperationCoordinator</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">} </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/pro'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { createSecurity } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/pro/application/security'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> SecurityController</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ReturnType</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">typeof</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> createSecurity>;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Id</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Entity</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'users'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'roles'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'menus'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Query</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	keyword</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	status</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	role</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Id</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	context</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> UserEdit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	name</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	account</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	status</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	roleIds</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[];</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	context</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	note</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	version</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> UserRow</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> extends</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> UserEdit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	id</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> RoleEdit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	name</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	code</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	enabled</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	members</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	note</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	context</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	version</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> RoleRow</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> extends</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> RoleEdit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	id</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> MenuEdit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	parentId</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Id</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	title</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	kind</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	permissionCode</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	enabled</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	grantable</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	version</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> MenuRow</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> extends</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> MenuEdit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	id</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> RoleOption</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	id</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	name</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	enabled</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> boolean</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> GrantNode</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	id</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	parentId</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Id</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	title</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	kind</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	permissionCode</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	enabled</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> boolean</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	grantable</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> boolean</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	version</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> GrantSnapshot</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	subject</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	scope</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	version</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	nodes</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> readonly</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> GrantNode</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[];</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	direct</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> readonly</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[];</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	unavailable</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'preserve'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'reject'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Request</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	signal</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AbortSignal</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	isCurrent</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> boolean</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	scope</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> GrantOperation</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> operationId</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> subject</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> scope</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> serviceVersion</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> version</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> direct</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> readonly</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[];</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> GrantResult</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	|</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">status</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'success'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">version</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	|</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">status</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'failure'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">reason</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'conflict'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'validation'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'denied'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	|</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">status</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'unknown'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> };</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> GrantReceipt</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> operation</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> GrantOperation</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	status</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'confirming'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'sending'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'success'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'failure'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'unknown'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	result</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> GrantResult</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> GrantService</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	load</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">subject</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">request</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Request</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">GrantSnapshot</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	save</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">operation</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> GrantOperation</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">request</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Request</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">GrantResult</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	verify</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">operation</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> GrantOperation</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">request</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Request</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">GrantResult</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> EntityServices</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Row</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> extends</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> object</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Edit</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> extends</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> object</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	crud</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamCrudServices</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Row</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Query</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Edit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AdministrationServices</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	version</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	users</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> EntityServices</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">UserRow</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">UserEdit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	roles</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> EntityServices</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">RoleRow</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">RoleEdit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	menus</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> EntityServices</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">MenuRow</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">MenuEdit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	roleOptions</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">request</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Request</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">readonly</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> RoleOption</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[]>;</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	menuNodes</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">request</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Request</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">readonly</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> GrantNode</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[]>;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	grants</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> GrantService</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AdministrationHost</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	security</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Pick</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">SecurityController</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'state'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'check'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'permission'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'onInvalidate'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	runtime</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamDataRuntime</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	writes</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamWriteCoordinator</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	operations</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamTableOperationCoordinator</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">	/** Host owned, retained across page removal and security invalidation. */</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	receipts</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Map</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">GrantReceipt</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	services</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">AdministrationServices</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	size</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">AsamControlSize</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	confirm</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">message</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">boolean</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	unknownRoles</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'preserve'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'reject'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	leaves</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Set</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">boolean</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>>;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> administrationKey</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> InjectionKey</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">AdministrationHost</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">> </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Symbol</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'asam-administration'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span></code></pre>
+</div></details>
+</article><aside class="page-toc" data-site-component="outline" aria-label="On this page"><span>On this page</span><nav><a href="#api">Use and API</a><a href="#examples">Examples</a><a class="toc-sub" href="#demo-heading-template-administration">Administration preview</a><a href="#heading-1">Continue integration</a><a href="#reference">Reference</a><a class="toc-sub" href="#heading-2">API and behavior</a><a class="toc-sub" href="#heading-3">Migration (Chinese)</a><a class="toc-sub" href="#heading-4">Usage</a><a class="toc-sub" href="#types">Full type source</a></nav></aside></div>
+				<footer class="site-footer wrap" data-site-component="footer"><div><a class="footer-brand" href="/en/index.html"><span class="footer-brand-mark" aria-hidden="true"><img class="brand-image brand-image-light" src="/assets/brand/mark-light.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="32" height="32" alt="" aria-hidden="true" decoding="async"><img class="brand-image brand-image-dark" src="/assets/brand/mark-dark.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="32" height="32" alt="" aria-hidden="true" decoding="async"></span><span>ASAM UI</span></a><span>Consistent components for Vue 3.</span></div><div class="footer-links"><a href="/en/getting-started.html#release">Installation</a><a href="/en/design-system.html">Design system</a></div></footer></div><dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
+	<header class="site-search-top">
+		<h2 id="search-title">Search documentation</h2>
+		<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;Close &lt;kbd&gt;Esc&lt;/kbd&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;data-close-dialog&quot;:true,&quot;aria-label&quot;:&quot;Close search&quot;},&quot;idPrefix&quot;:&quot;document-7&quot;,&quot;injectionPrefix&quot;:10007}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-close-dialog="true" aria-label="Close search" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">Close <kbd>Esc</kbd></span><!--]--></span></button></span>
+	</header>
+	<div class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;form&quot;,&quot;content&quot;:&quot;&quot;,&quot;props&quot;:{&quot;class&quot;:&quot;site-search-form&quot;,&quot;role&quot;:&quot;search&quot;},&quot;idPrefix&quot;:&quot;document-8&quot;,&quot;injectionPrefix&quot;:10008}"><form class="el-form el-form--default el-form--label-right site-search-form asam-base-form asam-control-default" role="search" data-asam-size="default"><!--[--><!--[--><div data-document-form-content>
+		<div class="site-search-field-slot">
+			<div class="search-field">
+				<div class="site-search-input">
+					<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"/></svg>
+					<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;input&quot;,&quot;content&quot;:&quot;&quot;,&quot;props&quot;:{&quot;id&quot;:&quot;global-search&quot;,&quot;type&quot;:&quot;search&quot;,&quot;placeholder&quot;:&quot;Search documentation&quot;,&quot;autocomplete&quot;:&quot;off&quot;,&quot;maxlength&quot;:120,&quot;aria-label&quot;:&quot;Search base components, Pro components and templates&quot;},&quot;idPrefix&quot;:&quot;document-10&quot;,&quot;injectionPrefix&quot;:10010}"><div class="el-input el-input--default asam-input asam-control-default" style=""><!-- input --><!--[--><!-- prepend slot --><!--v-if--><div class="el-input__wrapper"><!-- prefix slot --><!--v-if--><input class="el-input__inner" data-asam-size="default" maxlength="120" type="search" autocomplete="off" tabindex="0" aria-label="Search base components, Pro components and templates" placeholder="Search documentation" style=""><!-- suffix slot --><!--v-if--></div><!-- append slot --><!--v-if--><!--]--></div></span>
+				</div>
+				<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;Search&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;submit&quot;,&quot;type&quot;:&quot;primary&quot;},&quot;idPrefix&quot;:&quot;document-11&quot;,&quot;injectionPrefix&quot;:10011}"><button ariadisabled="false" type="submit" class="el-button el-button--primary el-button--default asam-button asam-button-primary asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-asam-size="default" data-asam-button-type="primary" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">Search</span><!--]--></span></button></span>
+			</div>
+		</div>
+	</div><!--]--><!--]--></form></div>
+	<div id="search-results" class="search-results">
+		<section class="site-search-history" data-search-history hidden>
+			<h3>Recent searches</h3>
+			<div data-search-queries></div>
+		</section>
+		<div class="site-search-columns">
+			<section aria-labelledby="search-group-base">
+				<div class="site-search-column-heading">
+					<h3 id="search-group-base">Base components</h3>
+					<span data-search-count="base"></span>
+					<a data-search-browse href="/en/component-catalog.html">Browse catalog</a>
+				</div>
+				<ul data-search-items="base"></ul>
+				<p class="site-search-empty" data-search-empty="base" hidden></p>
+				<section class="site-search-documents" data-search-documents hidden><h4>Related documentation</h4><ul></ul></section>
+			</section><section aria-labelledby="search-group-pro">
+				<div class="site-search-column-heading">
+					<h3 id="search-group-pro">Pro components</h3>
+					<span data-search-count="pro"></span>
+					<a data-search-browse href="/en/pro/components.html">Browse catalog</a>
+				</div>
+				<ul data-search-items="pro"></ul>
+				<p class="site-search-empty" data-search-empty="pro" hidden></p>
+				
+			</section><section aria-labelledby="search-group-templates">
+				<div class="site-search-column-heading">
+					<h3 id="search-group-templates">Page templates</h3>
+					<span data-search-count="templates"></span>
+					<a data-search-browse href="/en/pro/templates.html">Browse catalog</a>
+				</div>
+				<ul data-search-items="templates"></ul>
+				<p class="site-search-empty" data-search-empty="templates" hidden></p>
+				
+			</section>
+		</div>
+	</div>
+	<footer class="site-search-footer">
+		<p class="site-search-shortcuts"><kbd>↑</kbd><kbd>↓</kbd> Select <kbd>Enter</kbd> Open <kbd>Esc</kbd> Close</p>
+		<p class="sr-only" role="status" data-search-status></p>
+		<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;Clear history&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;data-search-clear-history&quot;:true,&quot;hidden&quot;:true},&quot;idPrefix&quot;:&quot;document-9&quot;,&quot;injectionPrefix&quot;:10009}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-search-clear-history="true" hidden data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">Clear history</span><!--]--></span></button></span>
+	</footer>
+</dialog><div class="toast" role="status" aria-live="polite"></div></body></html>

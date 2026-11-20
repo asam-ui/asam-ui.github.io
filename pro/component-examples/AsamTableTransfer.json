@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamTableTransfer",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "导入与预检",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<p>\n\t\t\t将两列 TSV\n\t\t\t文本导入当前表格：核对编号和名称的字段映射，预检后勾选确认，再应用到下方表格。\n\t\t</p>\n\t\t<AsamTableTransfer :controller=\"controller\" :fields=\"fields\" title=\"项目数据\" />\n\t\t<p role=\"status\">当前表格 {{ rows.length }} 条记录，确认导入后在这里查看结果。</p>\n\t\t<AsamTable :data=\"rows\" border>\n\t\t\t<AsamTableColumn prop=\"id\" label=\"编号\" :width=\"90\" />\n\t\t\t<AsamTableColumn prop=\"name\" label=\"项目名称\" />\n\t\t</AsamTable>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamTableTransfer } from '@asam-ui/pro/components';\nimport { AsamTable, AsamTableColumn } from '@asam-ui/ui';\nimport { onBeforeUnmount, ref } from 'vue';\nimport { createAsamFieldModes } from '@asam-ui/pro/components';\ntype Row = { id: number; name: string };\nconst rows = ref<Row[]>(\n\tArray.from({ length: 6 }, (_, i) => ({ id: i + 1, name: '项目 ' + (i + 1) }))\n);\nconst fields = [\n\t{ key: 'id', kind: 'text' as const, label: '编号' },\n\t{ key: 'name', kind: 'text' as const, label: '名称' }\n];\nconst modes = createAsamFieldModes({\n\tbindings: fields.map((field) => ({ field })),\n\tsubmit: fields.map((field) => ({ field: field.key, output: field.key }))\n});\nconst columns = [\n\t{ field: 'id', label: '编号', read: async (row: Row) => String(row.id) },\n\t{ field: 'name', label: '名称', read: async (row: Row) => row.name }\n] as const;\nimport { useAsamTableTransfer } from '@asam-ui/pro/components';\nlet sequence = 0;\nconst ids = new WeakMap<object, string>();\nconst controller = useAsamTableTransfer<Row>({\n\tmodes,\n\tscope: () => 'projects',\n\tidentity: () => 'visitor',\n\trequired: ['id', 'name'],\n\tkeyOfInput: (model) => Number(model.id),\n\toperationId: (row) => {\n\t\tlet id = ids.get(row);\n\t\tif (!id) {\n\t\t\tid = 'import-' + ++sequence;\n\t\t\tids.set(row, id);\n\t\t}\n\t\treturn id;\n\t},\n\trefresh: async () => {},\n\texport: { current: () => rows.value, selected: () => [], keyOf: (row) => row.id, columns },\n\texternal: {\n\t\tprepare: async (operation, context) => async () => {\n\t\t\tif (!context.canCommit()) return { status: 'not-applied', message: '操作已取消' };\n\t\t\tconst record = {\n\t\t\t\tid: Number(operation.row.model.id),\n\t\t\t\tname: String(operation.row.model.name ?? '')\n\t\t\t};\n\t\t\tconst existing = rows.value.find((row) => row.id === record.id);\n\t\t\tif (existing) Object.assign(existing, record);\n\t\t\telse rows.value.push(record);\n\t\t\treturn { status: 'success' };\n\t\t}\n\t}\n});\ncontroller.setInput({\n\ttext: 'id\\tname\\n7\\t新项目',\n\tformat: 'tsv',\n\theader: true,\n\tmapping: ['id', 'name'],\n\tmode: 'external'\n});\nonBeforeUnmount(() => controller.dispose());\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<p>\n\t\t\t将两列 TSV\n\t\t\t文本导入当前表格：核对编号和名称的字段映射，预检后勾选确认，再应用到下方表格。\n\t\t</p>\n\t\t<AsamTableTransfer :controller=\"controller\" :fields=\"fields\" title=\"项目数据\" />\n\t\t<p role=\"status\">当前表格 {{ rows.length }} 条记录，确认导入后在这里查看结果。</p>\n\t\t<AsamTable :data=\"rows\" border>\n\t\t\t<AsamTableColumn prop=\"id\" label=\"编号\" :width=\"90\" />\n\t\t\t<AsamTableColumn prop=\"name\" label=\"项目名称\" />\n\t\t</AsamTable>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamTableTransfer } from '@asam-ui/pro/components';\nimport { AsamTable, AsamTableColumn } from '@asam-ui/ui';\nimport { onBeforeUnmount, ref } from 'vue';\nimport { createAsamFieldModes } from '@asam-ui/pro/components';\nconst rows = ref(Array.from({ length: 6 }, (_, i) => ({ id: i + 1, name: '项目 ' + (i + 1) })));\nconst fields = [\n\t{ key: 'id', kind: 'text', label: '编号' },\n\t{ key: 'name', kind: 'text', label: '名称' }\n];\nconst modes = createAsamFieldModes({\n\tbindings: fields.map((field) => ({ field })),\n\tsubmit: fields.map((field) => ({ field: field.key, output: field.key }))\n});\nconst columns = [\n\t{ field: 'id', label: '编号', read: async (row) => String(row.id) },\n\t{ field: 'name', label: '名称', read: async (row) => row.name }\n];\nimport { useAsamTableTransfer } from '@asam-ui/pro/components';\nlet sequence = 0;\nconst ids = new WeakMap();\nconst controller = useAsamTableTransfer({\n\tmodes,\n\tscope: () => 'projects',\n\tidentity: () => 'visitor',\n\trequired: ['id', 'name'],\n\tkeyOfInput: (model) => Number(model.id),\n\toperationId: (row) => {\n\t\tlet id = ids.get(row);\n\t\tif (!id) {\n\t\t\tid = 'import-' + ++sequence;\n\t\t\tids.set(row, id);\n\t\t}\n\t\treturn id;\n\t},\n\trefresh: async () => {},\n\texport: { current: () => rows.value, selected: () => [], keyOf: (row) => row.id, columns },\n\texternal: {\n\t\tprepare: async (operation, context) => async () => {\n\t\t\tif (!context.canCommit()) return { status: 'not-applied', message: '操作已取消' };\n\t\t\tconst record = {\n\t\t\t\tid: Number(operation.row.model.id),\n\t\t\t\tname: String(operation.row.model.name ?? '')\n\t\t\t};\n\t\t\tconst existing = rows.value.find((row) => row.id === record.id);\n\t\t\tif (existing) Object.assign(existing, record);\n\t\t\telse rows.value.push(record);\n\t\t\treturn { status: 'success' };\n\t\t}\n\t}\n});\ncontroller.setInput({\n\ttext: 'id\\tname\\n7\\t新项目',\n\tformat: 'tsv',\n\theader: true,\n\tmapping: ['id', 'name'],\n\tmode: 'external'\n});\nonBeforeUnmount(() => controller.dispose());\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "readonly",
+			"title": "只读导出",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamTableTransfer :controller=\"controller\" :fields=\"fields\" readonly title=\"项目数据\" />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamTableTransfer } from '@asam-ui/pro/components';\nimport { onBeforeUnmount, ref } from 'vue';\nimport { createAsamFieldModes } from '@asam-ui/pro/components';\ntype Row = { id: number; name: string };\nconst rows = ref<Row[]>([\n\t{ id: 1, name: '设计项目' },\n\t{ id: 2, name: '开发项目' }\n]);\nconst fields = [\n\t{ key: 'id', kind: 'text' as const, label: '编号' },\n\t{ key: 'name', kind: 'text' as const, label: '名称' }\n];\nconst modes = createAsamFieldModes({\n\tbindings: fields.map((field) => ({ field })),\n\tsubmit: fields.map((field) => ({ field: field.key, output: field.key }))\n});\nconst columns = [\n\t{ field: 'id', label: '编号', read: async (row: Row) => String(row.id) },\n\t{ field: 'name', label: '名称', read: async (row: Row) => row.name }\n] as const;\nimport { useAsamTableTransfer } from '@asam-ui/pro/components';\nlet sequence = 0;\nconst ids = new WeakMap<object, string>();\nconst controller = useAsamTableTransfer<Row>({\n\tmodes,\n\tscope: () => 'projects',\n\tidentity: () => 'visitor',\n\treadonly: () => true,\n\trequired: ['id', 'name'],\n\tkeyOfInput: (model) => Number(model.id),\n\toperationId: (row) => {\n\t\tlet id = ids.get(row);\n\t\tif (!id) {\n\t\t\tid = 'import-' + ++sequence;\n\t\t\tids.set(row, id);\n\t\t}\n\t\treturn id;\n\t},\n\trefresh: async () => {},\n\texport: { current: () => rows.value, selected: () => [], keyOf: (row) => row.id, columns },\n\texternal: {\n\t\tprepare: async (operation, context) => async () => {\n\t\t\tif (!context.canCommit()) return { status: 'not-applied', message: '操作已取消' };\n\t\t\tconst record = {\n\t\t\t\tid: Number(operation.row.model.id),\n\t\t\t\tname: String(operation.row.model.name ?? '')\n\t\t\t};\n\t\t\tconst existing = rows.value.find((row) => row.id === record.id);\n\t\t\tif (existing) Object.assign(existing, record);\n\t\t\telse rows.value.push(record);\n\t\t\treturn { status: 'success' };\n\t\t}\n\t}\n});\nonBeforeUnmount(() => controller.dispose());\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamTableTransfer :controller=\"controller\" :fields=\"fields\" readonly title=\"项目数据\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamTableTransfer } from '@asam-ui/pro/components';\nimport { onBeforeUnmount, ref } from 'vue';\nimport { createAsamFieldModes } from '@asam-ui/pro/components';\nconst rows = ref([\n\t{ id: 1, name: '设计项目' },\n\t{ id: 2, name: '开发项目' }\n]);\nconst fields = [\n\t{ key: 'id', kind: 'text', label: '编号' },\n\t{ key: 'name', kind: 'text', label: '名称' }\n];\nconst modes = createAsamFieldModes({\n\tbindings: fields.map((field) => ({ field })),\n\tsubmit: fields.map((field) => ({ field: field.key, output: field.key }))\n});\nconst columns = [\n\t{ field: 'id', label: '编号', read: async (row) => String(row.id) },\n\t{ field: 'name', label: '名称', read: async (row) => row.name }\n];\nimport { useAsamTableTransfer } from '@asam-ui/pro/components';\nlet sequence = 0;\nconst ids = new WeakMap();\nconst controller = useAsamTableTransfer({\n\tmodes,\n\tscope: () => 'projects',\n\tidentity: () => 'visitor',\n\treadonly: () => true,\n\trequired: ['id', 'name'],\n\tkeyOfInput: (model) => Number(model.id),\n\toperationId: (row) => {\n\t\tlet id = ids.get(row);\n\t\tif (!id) {\n\t\t\tid = 'import-' + ++sequence;\n\t\t\tids.set(row, id);\n\t\t}\n\t\treturn id;\n\t},\n\trefresh: async () => {},\n\texport: { current: () => rows.value, selected: () => [], keyOf: (row) => row.id, columns },\n\texternal: {\n\t\tprepare: async (operation, context) => async () => {\n\t\t\tif (!context.canCommit()) return { status: 'not-applied', message: '操作已取消' };\n\t\t\tconst record = {\n\t\t\t\tid: Number(operation.row.model.id),\n\t\t\t\tname: String(operation.row.model.name ?? '')\n\t\t\t};\n\t\t\tconst existing = rows.value.find((row) => row.id === record.id);\n\t\t\tif (existing) Object.assign(existing, record);\n\t\t\telse rows.value.push(record);\n\t\t\treturn { status: 'success' };\n\t\t}\n\t}\n});\nonBeforeUnmount(() => controller.dispose());\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamGuidedTour",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "定位目标元素",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<div ref=\"target\">\n\t\t\t<AsamButton type=\"primary\" @click=\"open = true\">开始引导</AsamButton>\n\t\t</div>\n\t\t<AsamGuidedTour v-model=\"open\" :steps=\"steps\" />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamGuidedTour } from '@asam-ui/pro/components';\nimport { computed, ref } from 'vue';\nconst open = ref(false);\nconst target = ref<HTMLElement | null>(null);\n\nconst steps = computed(() => [\n\t{\n\t\tkey: 'start',\n\t\ttitle: '项目操作',\n\t\tdescription: '从这里开始管理项目。',\n\t\ttarget: () => target.value\n\t}\n]);\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<div ref=\"target\">\n\t\t\t<AsamButton type=\"primary\" @click=\"open = true\">开始引导</AsamButton>\n\t\t</div>\n\t\t<AsamGuidedTour v-model=\"open\" :steps=\"steps\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamGuidedTour } from '@asam-ui/pro/components';\nimport { computed, ref } from 'vue';\nconst open = ref(false);\nconst target = ref(null);\nconst steps = computed(() => [\n\t{\n\t\tkey: 'start',\n\t\ttitle: '项目操作',\n\t\tdescription: '从这里开始管理项目。',\n\t\ttarget: () => target.value\n\t}\n]);\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "steps",
+			"title": "多步骤引导",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<div ref=\"target\">\n\t\t\t<AsamButton type=\"primary\" @click=\"open = true\">开始引导</AsamButton>\n\t\t</div>\n\t\t<div ref=\"next\">这里展示项目进度。</div>\n\t\t<AsamGuidedTour v-model=\"open\" :steps=\"steps\" />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamGuidedTour } from '@asam-ui/pro/components';\nimport { computed, ref } from 'vue';\nconst open = ref(false);\nconst target = ref<HTMLElement | null>(null);\nconst next = ref<HTMLElement | null>(null);\nconst steps = computed(() => [\n\t{\n\t\tkey: 'start',\n\t\ttitle: '项目操作',\n\t\tdescription: '从这里开始管理项目。',\n\t\ttarget: () => target.value\n\t},\n\t{ key: 'progress', title: '项目进度', target: () => next.value }\n]);\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<div ref=\"target\">\n\t\t\t<AsamButton type=\"primary\" @click=\"open = true\">开始引导</AsamButton>\n\t\t</div>\n\t\t<div ref=\"next\">这里展示项目进度。</div>\n\t\t<AsamGuidedTour v-model=\"open\" :steps=\"steps\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamGuidedTour } from '@asam-ui/pro/components';\nimport { computed, ref } from 'vue';\nconst open = ref(false);\nconst target = ref(null);\nconst next = ref(null);\nconst steps = computed(() => [\n\t{\n\t\tkey: 'start',\n\t\ttitle: '项目操作',\n\t\tdescription: '从这里开始管理项目。',\n\t\ttarget: () => target.value\n\t},\n\t{ key: 'progress', title: '项目进度', target: () => next.value }\n]);\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

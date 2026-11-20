@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"entry": "src/main.ts",
+	"files": [
+		{
+			"path": "src/App.vue",
+			"source": "<template>\n\t<h1>布尔切换</h1>\n\t<p>创建布尔ref与切换函数；可显式传入下一状态。</p>\n\t<AsamButton @click=\"mounted = !mounted\">卸载 / 重新挂载</AsamButton><Minimal v-if=\"mounted\" />\n</template>\n<script setup lang=\"ts\">\nimport { ref } from 'vue';\nimport { AsamButton } from '@asam-ui/ui';\nimport Minimal from './MinimalExample.vue';\nconst mounted = ref(true);\n</script>\n"
+		},
+		{
+			"path": "src/main.ts",
+			"source": "import { createApp } from 'vue';\nimport type { App, Component } from 'vue';\nimport 'element-plus/dist/index.css';\nimport '@asam-ui/ui/style.css';\nimport '@asam-ui/pro/style.css';\nimport * as entry from './inline-entry';\nconst demo: {\n\tdefault: Component;\n\tscoped?: boolean;\n\tconfigure?: (app: App) => void | (() => void) | Promise<void | (() => void)>;\n} = entry;\nconst app = createApp(\n\tdemo.default,\n\tdemo.scoped ? { scopeId: 'composable/use-toggle:demo-composable-use-toggle' } : undefined\n);\nconst cleanup = await demo.configure?.(app);\nif (typeof cleanup === 'function') app.onUnmount(cleanup);\napp.mount('#app');\nwindow.addEventListener('pagehide', () => app.unmount(), { once: true });\n"
+		},
+		{
+			"path": "src/MinimalExample.vue",
+			"source": "<template>\n\t<p role=\"status\">{{ visible ? '已打开' : '已关闭' }}</p>\n\t<AsamButton @click=\"toggle()\">切换</AsamButton\n\t><AsamButton @click=\"toggle(false)\">关闭</AsamButton>\n</template>\n<script setup lang=\"ts\">\nimport { AsamButton } from '@asam-ui/ui';\nimport { useToggle } from '@asam-ui/pro/application/composables/use-toggle';\nconst [visible, toggle] = useToggle(false);\n</script>\n"
+		},
+		{
+			"path": "src/inline-entry.ts",
+			"source": "export { default } from './MinimalExample.vue';\n"
+		}
+	]
+}

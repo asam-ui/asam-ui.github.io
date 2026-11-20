@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDropdown/ep2147-menu-hiding-behavior/ts/Demo.vue",
-			"sha256": "3db298bbd403f8e9beca6aeadfefa275bc2855a07b95f239d217c2989f2d2585",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0f62aa50b3bd1bb3017d9b79c5619e2f0cfd62332f70f27c77ce7518747f4485.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/0f62aa50b3bd1bb3017d9b79c5619e2f0cfd62332f70f27c77ce7518747f4485.txt\n-->\n<template>\n\t<AsamDropdown trigger=\"hover\" placement=\"bottom\" :wrap-menu=\"false\" :hide-on-click=\"false\">\n\t\t<span class=\"el-dropdown-link\">\n\t\t\t下拉列表<AsamIcon class=\"el-icon--right\"><arrow-down /></AsamIcon>\n\t\t</span>\n\t\t<template #dropdown>\n\t\t\t<AsamDropdownMenu>\n\t\t\t\t<AsamDropdownItem>操作 1</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>操作 2</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>操作 3</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem disabled>操作 4</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem divided>操作 5</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem divided>操作 6</AsamDropdownItem>\n\t\t\t</AsamDropdownMenu>\n\t\t</template>\n\t</AsamDropdown>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamDropdown, AsamDropdownItem, AsamDropdownMenu, AsamIcon } from '@asam-ui/ui';\n\nimport { ArrowDown } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.example-showcase .el-dropdown + .el-dropdown {\n\tmargin-left: 15px;\n}\n\n.example-showcase .el-dropdown-link {\n\tcursor: pointer;\n\tcolor: var(--el-color-primary);\n\tdisplay: flex;\n\talign-items: center;\n}\n</style>\n",
-			"originalSourceSha256": "a95e1b929679fecb4b56f87790b080b72328ce34f98bfa4edfb8546a84609d58",
+			"sha256": "e7244e6400fa6cae882875e40ead89c26d01713ee2dd286e09e0d989b08edf52",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0f62aa50b3bd1bb3017d9b79c5619e2f0cfd62332f70f27c77ce7518747f4485.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/0f62aa50b3bd1bb3017d9b79c5619e2f0cfd62332f70f27c77ce7518747f4485.txt\n-->\n<template>\n\t<AsamDropdown trigger=\"hover\" placement=\"bottom\" :wrap-menu=\"false\" :hide-on-click=\"false\">\n\t\t<span class=\"el-dropdown-link\">\n\t\t\t下拉列表\n\t\t\t<AsamIcon class=\"el-icon--right\"><arrow-down /></AsamIcon>\n\t\t</span>\n\t\t<template #dropdown>\n\t\t\t<AsamDropdownMenu>\n\t\t\t\t<AsamDropdownItem>操作 1</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>操作 2</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem>操作 3</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem disabled>操作 4</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem divided>操作 5</AsamDropdownItem>\n\t\t\t\t<AsamDropdownItem divided>操作 6</AsamDropdownItem>\n\t\t\t</AsamDropdownMenu>\n\t\t</template>\n\t</AsamDropdown>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamDropdown, AsamDropdownItem, AsamDropdownMenu, AsamIcon } from '@asam-ui/ui';\n\nimport { ArrowDown } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.example-showcase .el-dropdown + .el-dropdown {\n\tmargin-left: 15px;\n}\n\n.example-showcase .el-dropdown-link {\n\tcursor: pointer;\n\tcolor: var(--el-color-primary);\n\tdisplay: flex;\n\talign-items: center;\n}\n</style>\n",
+			"originalSourceSha256": "557a989f7866341fcd41e8a9412d4104e24b956e016c1e4b22f8ed392674982c",
 			"notice": {
 				"id": "0f62aa50b3bd1bb3017d9b79c5619e2f0cfd62332f70f27c77ce7518747f4485",
 				"url": "/licenses/source-notices/0f62aa50b3bd1bb3017d9b79c5619e2f0cfd62332f70f27c77ce7518747f4485.txt",

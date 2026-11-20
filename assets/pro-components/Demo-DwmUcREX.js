@@ -1,0 +1,1 @@
+import{Mn as e,On as t,Yn as n,yr as r}from"./i18n-CJTJI6vg-3Uas6tNN.js";import{nt as i}from"./components-ST0i0Wqf-D8-NR95E.js";var a={class:`pro-example-stack`},o={__name:`Demo`,setup(o){return(o,s)=>(n(),t(`div`,a,[e(r(i),{text:`这是项目介绍`,max:20,label:`说明字数`})]))}};export{o as default};

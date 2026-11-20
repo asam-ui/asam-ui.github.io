@@ -1,0 +1,778 @@
+[
+	{
+		"id": "monitor-workspace",
+		"example": "monitor-workspace",
+		"family": null,
+		"title": "监控页",
+		"category": "数据分析",
+		"description": "业务实时概览、目标进度、区域分布与热点任务",
+		"documentation": "/pro/monitor-workspace.html",
+		"preview": "/pro/monitor-workspace-preview.html?example=monitor-workspace",
+		"image": "/assets/template-previews/monitor-workspace.png",
+		"devices": [
+			"desktop"
+		],
+		"limitations": [],
+		"titleEn": "Monitoring dashboard",
+		"anchorEn": "heading-1"
+	},
+	{
+		"id": "analysis-workspace",
+		"example": "analysis-workspace",
+		"family": null,
+		"title": "分析页",
+		"category": "数据分析",
+		"description": "四指标卡、增长趋势、团队排名、渠道与热门指标",
+		"documentation": "/pro/analysis-workspace.html",
+		"preview": "/pro/analysis-workspace-preview.html?example=analysis-workspace",
+		"image": "/assets/template-previews/analysis-workspace.png",
+		"devices": [
+			"desktop"
+		],
+		"limitations": [],
+		"titleEn": "Analytics dashboard",
+		"anchorEn": "heading-2"
+	},
+	{
+		"id": "administration",
+		"example": "administration",
+		"family": null,
+		"title": "管理页面",
+		"category": "业务页面",
+		"description": "管理列表与编辑操作",
+		"documentation": "/pro/v2-043.html",
+		"preview": "/pro/template-preview.html?example=administration",
+		"image": "/assets/template-previews/administration.png",
+		"devices": [
+			"desktop"
+		],
+		"limitations": [
+			"示例使用本地演示数据，不连接真实管理后端"
+		],
+		"titleEn": "Administration",
+		"anchorEn": "heading-3"
+	},
+	{
+		"id": "social",
+		"example": "social",
+		"family": null,
+		"title": "动态与评论页面",
+		"category": "内容协作",
+		"description": "动态、内容与互动场景",
+		"documentation": "/pro/v2-047.html",
+		"preview": "/pro/template-preview.html?example=social",
+		"image": "/assets/template-previews/social.png",
+		"devices": [
+			"desktop"
+		],
+		"limitations": [
+			"示例使用本地合成服务，不提供真实社交后端"
+		],
+		"titleEn": "Activity feed and comments",
+		"anchorEn": "heading-4"
+	},
+	{
+		"id": "crud",
+		"example": "crud",
+		"family": null,
+		"title": "增删改查页面",
+		"category": "业务页面",
+		"description": "查询、数据列表、详情与新增编辑",
+		"documentation": "/pro/v2-024.html",
+		"preview": "/pro/template-preview.html?example=crud",
+		"image": "/assets/template-previews/crud.png",
+		"devices": [
+			"desktop"
+		],
+		"limitations": [],
+		"titleEn": "CRUD page",
+		"anchorEn": "heading-5"
+	},
+	{
+		"id": "welcome",
+		"example": "welcome",
+		"family": null,
+		"title": "应用欢迎页",
+		"category": "工作空间",
+		"description": "欢迎入口、开始指南与应用偏好",
+		"documentation": "/pro/welcome.html",
+		"preview": "/pro/welcome-preview.html?example=welcome",
+		"image": "/assets/template-previews/welcome.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Welcome page",
+		"anchorEn": "heading-6"
+	},
+	{
+		"id": "visualization",
+		"example": "visualization",
+		"family": null,
+		"title": "图表与实时监控",
+		"category": "数据分析",
+		"description": "分析图表与本地合成数据",
+		"documentation": "/pro/v2-037.html",
+		"preview": "/pro/cards-preview.html?example=visualization",
+		"image": "/assets/template-previews/visualization.png",
+		"devices": [
+			"desktop"
+		],
+		"limitations": [
+			"静态官网不提供SSE或轮询接口；实时页保持未连接，显式连接展示真实失败；在消费工程配置同源接口后使用实时数据"
+		],
+		"titleEn": "Charts and live monitoring",
+		"anchorEn": "heading-7"
+	},
+	{
+		"id": "workbench",
+		"example": "workbench",
+		"family": null,
+		"title": "任务工作台",
+		"category": "工作空间",
+		"description": "工作台、任务和常用入口",
+		"documentation": "/pro/v2-038.html",
+		"preview": "/pro/template-preview.html?example=workbench",
+		"image": "/assets/template-previews/workbench.png",
+		"devices": [
+			"desktop"
+		],
+		"limitations": [],
+		"titleEn": "Task workbench",
+		"anchorEn": "heading-8"
+	},
+	{
+		"id": "forms",
+		"example": "forms",
+		"family": null,
+		"title": "录入与分步页面",
+		"category": "业务页面",
+		"description": "表单填写与分步操作",
+		"documentation": "/pro/v2-039.html",
+		"preview": "/pro/template-preview.html?example=forms",
+		"image": "/assets/template-previews/forms.png",
+		"devices": [
+			"desktop"
+		],
+		"limitations": [],
+		"titleEn": "Data entry and step-by-step form",
+		"anchorEn": "heading-9"
+	},
+	{
+		"id": "details",
+		"example": "details",
+		"family": null,
+		"title": "协作记录查询与详情",
+		"titleEn": "Collaboration Records and Details",
+		"category": "业务页面",
+		"description": "筛选协作记录，查看基础详情和处理流程",
+		"documentation": "/pro/v2-040.html",
+		"preview": "/pro/template-preview.html?example=details",
+		"image": "/assets/template-previews/details.png",
+		"devices": [
+			"desktop"
+		],
+		"limitations": [],
+		"anchorEn": "heading-10"
+	},
+	{
+		"id": "search",
+		"example": "search",
+		"family": null,
+		"title": "搜索页面",
+		"category": "业务页面",
+		"description": "条件检索与结果浏览",
+		"documentation": "/pro/v2-041.html",
+		"preview": "/pro/cards-preview.html?example=search",
+		"image": "/assets/template-previews/search.png",
+		"devices": [
+			"desktop"
+		],
+		"limitations": [],
+		"titleEn": "Search page",
+		"anchorEn": "heading-11"
+	},
+	{
+		"id": "search-cards",
+		"example": "search",
+		"family": null,
+		"title": "卡片列表",
+		"category": "业务页面",
+		"description": "自适应卡片布局、网格与瀑布流",
+		"documentation": "/pro/v2-041.html",
+		"preview": "/pro/cards-preview.html?example=search&kind=cards",
+		"image": "/assets/template-previews/search-cards.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Card list",
+		"anchorEn": "heading-12"
+	},
+	{
+		"id": "search-projects",
+		"example": "search",
+		"family": null,
+		"title": "项目搜索",
+		"category": "业务页面",
+		"description": "自适应卡片布局、网格与瀑布流",
+		"documentation": "/pro/v2-041.html",
+		"preview": "/pro/cards-preview.html?example=search&kind=projects",
+		"image": "/assets/template-previews/search-projects.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Project search",
+		"anchorEn": "heading-13"
+	},
+	{
+		"id": "search-applications",
+		"example": "search",
+		"family": null,
+		"title": "应用搜索",
+		"category": "业务页面",
+		"description": "自适应卡片布局、网格与瀑布流",
+		"documentation": "/pro/v2-041.html",
+		"preview": "/pro/cards-preview.html?example=search&kind=applications",
+		"image": "/assets/template-previews/search-applications.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Application search",
+		"anchorEn": "heading-14"
+	},
+	{
+		"id": "account-minimal",
+		"example": "account",
+		"family": "minimal",
+		"title": "账号与设置页面 · 克制简约",
+		"category": "账户与结果",
+		"description": "登录、注册、个人资料和账户设置",
+		"documentation": "/pro/v2-042.html",
+		"preview": "/pro/template-preview.html?example=account&family=minimal",
+		"image": "/assets/template-previews/account-minimal.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Account and settings · Minimal",
+		"anchorEn": "heading-15"
+	},
+	{
+		"id": "account-brand",
+		"example": "account",
+		"family": "brand",
+		"title": "账号与设置页面 · 品牌分栏",
+		"category": "账户与结果",
+		"description": "登录、注册、个人资料和账户设置",
+		"documentation": "/pro/v2-042.html",
+		"preview": "/pro/template-preview.html?example=account&family=brand",
+		"image": "/assets/template-previews/account-brand.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Account and settings · Brand panel",
+		"anchorEn": "heading-16"
+	},
+	{
+		"id": "account-tech",
+		"example": "account",
+		"family": "tech",
+		"title": "账号与设置页面 · 深色科技",
+		"category": "账户与结果",
+		"description": "登录、注册、个人资料和账户设置",
+		"documentation": "/pro/v2-042.html",
+		"preview": "/pro/template-preview.html?example=account&family=tech",
+		"image": "/assets/template-previews/account-tech.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Account and settings · Dark technology",
+		"anchorEn": "heading-17"
+	},
+	{
+		"id": "login-workspace",
+		"example": "login-workspace",
+		"family": null,
+		"title": "登录工作区",
+		"category": "账户与结果",
+		"description": "账号密码与可选手机验证码登录",
+		"documentation": "/pro/login-workspace.html",
+		"preview": "/pro/login-workspace-preview.html?example=login-workspace",
+		"image": "/assets/template-previews/login-workspace.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Sign-in workspace",
+		"anchorEn": "heading-18"
+	},
+	{
+		"id": "settings-workspace",
+		"example": "settings-workspace",
+		"family": null,
+		"title": "个人设置",
+		"category": "账户与结果",
+		"description": "个人资料、安全、绑定与通知偏好",
+		"documentation": "/pro/settings-workspace.html",
+		"preview": "/pro/settings-workspace-preview.html?example=settings-workspace",
+		"image": "/assets/template-previews/settings-workspace.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Personal settings",
+		"anchorEn": "heading-19"
+	},
+	{
+		"id": "registration-result",
+		"example": "registration-result",
+		"family": null,
+		"title": "注册结果",
+		"category": "账户与结果",
+		"description": "注册邮箱确认、重发与过期回执",
+		"documentation": "/pro/registration-result.html",
+		"preview": "/pro/registration-result-preview.html?example=registration-result",
+		"image": "/assets/template-previews/registration-result.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Registration result",
+		"anchorEn": "heading-20"
+	},
+	{
+		"id": "results-minimal",
+		"example": "results",
+		"family": "minimal",
+		"title": "结果与异常页面 · 克制简约",
+		"category": "账户与结果",
+		"description": "操作结果与异常状态",
+		"documentation": "/pro/v2-044.html",
+		"preview": "/pro/results-preview.html?example=results&family=minimal",
+		"image": "/assets/template-previews/results-minimal.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Result and exception pages · Minimal",
+		"anchorEn": "heading-21"
+	},
+	{
+		"id": "results-brand",
+		"example": "results",
+		"family": "brand",
+		"title": "结果与异常页面 · 品牌分栏",
+		"category": "账户与结果",
+		"description": "操作结果与异常状态",
+		"documentation": "/pro/v2-044.html",
+		"preview": "/pro/results-preview.html?example=results&family=brand",
+		"image": "/assets/template-previews/results-brand.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Result and exception pages · Brand panel",
+		"anchorEn": "heading-22"
+	},
+	{
+		"id": "results-tech",
+		"example": "results",
+		"family": "tech",
+		"title": "结果与异常页面 · 深色科技",
+		"category": "账户与结果",
+		"description": "操作结果与异常状态",
+		"documentation": "/pro/v2-044.html",
+		"preview": "/pro/results-preview.html?example=results&family=tech",
+		"image": "/assets/template-previews/results-tech.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Result and exception pages · Dark technology",
+		"anchorEn": "heading-23"
+	},
+	{
+		"id": "editor-pages",
+		"example": "editor-pages",
+		"family": null,
+		"title": "文档编辑页面",
+		"category": "内容协作",
+		"description": "编辑、预览与内容管理",
+		"documentation": "/pro/v2-045.html",
+		"preview": "/pro/template-preview.html?example=editor-pages",
+		"image": "/assets/template-previews/editor-pages.png",
+		"devices": [
+			"desktop"
+		],
+		"limitations": [],
+		"titleEn": "Document editing",
+		"anchorEn": "heading-24"
+	},
+	{
+		"id": "maps",
+		"example": "maps",
+		"family": null,
+		"title": "地图页面",
+		"category": "数据分析",
+		"description": "地图、图层与空间信息",
+		"documentation": "/pro/v2-048.html",
+		"preview": "/pro/template-preview.html?example=maps",
+		"image": "/assets/template-previews/maps.png",
+		"devices": [
+			"desktop"
+		],
+		"limitations": [
+			"默认只用本地示意 GeoJSON，无商业底图、账号、Key 或外网；主动定位需要浏览器权限，失败状态须由用户显式选择"
+		],
+		"titleEn": "Maps",
+		"anchorEn": "heading-25"
+	},
+	{
+		"id": "desktop",
+		"example": "desktop",
+		"family": null,
+		"title": "浏览器桌面三族",
+		"category": "工作空间",
+		"description": "浏览器桌面与多任务工作区",
+		"documentation": "/pro/v2-049.html",
+		"preview": "/pro/template-preview.html?example=desktop",
+		"image": "/assets/template-previews/desktop.png",
+		"devices": [
+			"desktop"
+		],
+		"limitations": [
+			"运行源码来自已验049冻结资料；官网内存路由与运行包组合单独验证，不重签原普通包或操作系统桌面能力"
+		],
+		"titleEn": "Browser desktop layouts",
+		"anchorEn": "heading-26"
+	},
+	{
+		"id": "workplace-workspace",
+		"example": "workplace-workspace",
+		"family": null,
+		"title": "团队工作台",
+		"category": "工作空间",
+		"description": "问候待办、项目进度、团队动态、周柱图、快捷与团队",
+		"documentation": "/pro/workplace-workspace.html",
+		"preview": "/pro/workplace-workspace-preview.html?example=workplace-workspace",
+		"image": "/assets/template-previews/workplace-workspace.png",
+		"devices": [
+			"desktop"
+		],
+		"limitations": [],
+		"titleEn": "Team workbench",
+		"anchorEn": "heading-27"
+	},
+	{
+		"id": "basic-profile",
+		"example": "basic-profile",
+		"family": null,
+		"title": "基础详情",
+		"category": "详情与记录",
+		"description": "基础单据、字段明细、同数据合计、编辑回读与三页签",
+		"documentation": "/pro/basic-profile.html",
+		"preview": "/pro/basic-profile-preview.html?example=basic-profile",
+		"image": "/assets/template-previews/basic-profile.png",
+		"devices": [
+			"desktop"
+		],
+		"limitations": [],
+		"titleEn": "Basic details",
+		"anchorEn": "heading-28"
+	},
+	{
+		"id": "advanced-profile",
+		"example": "advanced-profile",
+		"family": null,
+		"title": "高级详情",
+		"category": "详情与记录",
+		"description": "五步流程、申请字段、同源采购合计与本地编辑回读",
+		"documentation": "/pro/advanced-profile.html",
+		"preview": "/pro/advanced-profile-preview.html?example=advanced-profile",
+		"image": "/assets/template-previews/advanced-profile.png",
+		"devices": [
+			"desktop"
+		],
+		"limitations": [],
+		"titleEn": "Advanced details",
+		"anchorEn": "heading-29"
+	},
+	{
+		"id": "account-center",
+		"example": "account-center",
+		"family": null,
+		"title": "个人中心",
+		"category": "账户与结果",
+		"description": "个人资料与文章、项目、应用的只读工作空间",
+		"documentation": "/pro/account-center.html",
+		"preview": "/pro/account-center-preview.html?example=account-center",
+		"image": "/assets/template-previews/account-center.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Account center",
+		"anchorEn": "heading-30"
+	},
+	{
+		"id": "chatbot",
+		"example": "chatbot",
+		"family": null,
+		"title": "对话助手",
+		"category": "内容协作",
+		"description": "会话侧栏、欢迎建议、消息与公开处理摘要、相关项目",
+		"documentation": "/pro/chatbot.html",
+		"preview": "/pro/chatbot-preview.html?example=chatbot",
+		"image": "/assets/template-previews/chatbot.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Conversation assistant",
+		"anchorEn": "heading-31"
+	},
+	{
+		"id": "success-result",
+		"example": "success-result",
+		"family": null,
+		"title": "成功结果",
+		"category": "账户与结果",
+		"description": "四字段同源回执、三步进展、查看申请与打印预览",
+		"documentation": "/pro/success-result.html",
+		"preview": "/pro/success-result-preview.html?example=success-result",
+		"image": "/assets/template-previews/success-result.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Success result",
+		"anchorEn": "heading-32"
+	},
+	{
+		"id": "fail-result",
+		"example": "fail-result",
+		"family": null,
+		"title": "失败结果",
+		"category": "账户与结果",
+		"description": "失败原因定位、只读核验、返回修改与未知结果保护",
+		"documentation": "/pro/fail-result.html",
+		"preview": "/pro/fail-result-preview.html?example=fail-result",
+		"image": "/assets/template-previews/fail-result.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Failure result",
+		"anchorEn": "heading-33"
+	},
+	{
+		"id": "settings-complete",
+		"example": "settings-complete",
+		"family": null,
+		"title": "完整个人设置",
+		"category": "账户与结果",
+		"description": "完整资料、四项通知和明确本地草稿的设置工作空间",
+		"documentation": "/pro/settings-complete.html",
+		"preview": "/pro/settings-complete-preview.html?example=settings-complete",
+		"image": "/assets/template-previews/settings-complete.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Complete personal settings",
+		"anchorEn": "heading-34"
+	},
+	{
+		"id": "register-workspace",
+		"example": "register-workspace",
+		"family": null,
+		"title": "注册",
+		"category": "账户与结果",
+		"description": "账号与可选手机验证码注册、密码强度和确认结果衔接",
+		"documentation": "/pro/register.html",
+		"preview": "/pro/register-preview.html?example=register-workspace",
+		"image": "/assets/template-previews/register-workspace.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Registration",
+		"anchorEn": "heading-35"
+	},
+	{
+		"id": "admin-access",
+		"example": "admin-access",
+		"family": null,
+		"title": "管理员专属页",
+		"category": "工作空间",
+		"description": "管理员专属目录、授权入口与最近管理记录",
+		"documentation": "/pro/admin-access.html",
+		"preview": "/pro/admin-access-preview.html?example=admin-access",
+		"image": "/assets/template-previews/admin-access.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Administrator-only page",
+		"anchorEn": "heading-36"
+	},
+	{
+		"id": "articles",
+		"example": "articles",
+		"family": null,
+		"title": "搜索列表·文章",
+		"category": "内容协作",
+		"description": "文章指标、稳定记录键、加载更多与共享编辑详情",
+		"documentation": "/pro/articles.html",
+		"preview": "/pro/articles-preview.html?example=articles",
+		"image": "/assets/template-previews/articles.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Article search results",
+		"anchorEn": "heading-37"
+	},
+	{
+		"id": "projects",
+		"example": "projects",
+		"family": null,
+		"title": "搜索列表·项目",
+		"category": "团队项目",
+		"description": "项目摘要、进度、成员与共享创建编辑详情",
+		"documentation": "/pro/projects.html",
+		"preview": "/pro/projects-preview.html?example=projects",
+		"image": "/assets/template-previews/projects.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Project search results",
+		"anchorEn": "heading-38"
+	},
+	{
+		"id": "applications",
+		"example": "applications",
+		"family": null,
+		"title": "搜索列表·应用",
+		"category": "内容协作",
+		"description": "应用图标、显式使用统计、可用性与本地管理工作空间",
+		"documentation": "/pro/applications.html",
+		"preview": "/pro/applications-preview.html?example=applications",
+		"image": "/assets/template-previews/applications.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Application search results",
+		"anchorEn": "heading-39"
+	},
+	{
+		"id": "basic-list",
+		"example": "basic-list",
+		"family": null,
+		"title": "标准列表",
+		"category": "团队项目",
+		"description": "状态Tab、进度行与完整新增编辑删除同源回读",
+		"documentation": "/pro/basic-list.html",
+		"preview": "/pro/basic-list-preview.html?example=basic-list",
+		"image": "/assets/template-previews/basic-list.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Standard list",
+		"anchorEn": "heading-40"
+	},
+	{
+		"id": "table-list",
+		"example": "table-list",
+		"family": null,
+		"title": "查询表格",
+		"category": "团队项目",
+		"description": "六项查询、项目表格与同源抽屉详情",
+		"documentation": "/pro/table-list.html",
+		"preview": "/pro/table-list-preview.html?example=table-list",
+		"image": "/assets/template-previews/table-list.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Query table",
+		"anchorEn": "heading-41"
+	},
+	{
+		"id": "card-list",
+		"example": "card-list",
+		"family": null,
+		"title": "卡片列表",
+		"category": "团队项目",
+		"description": "卡片封面、集合与完整新增编辑删除同源回读",
+		"documentation": "/pro/card-list.html",
+		"preview": "/pro/card-list-preview.html?example=card-list",
+		"image": "/assets/template-previews/card-list.png",
+		"devices": [
+			"desktop",
+			"tablet",
+			"mobile"
+		],
+		"limitations": [],
+		"titleEn": "Card list",
+		"anchorEn": "heading-42"
+	}
+]

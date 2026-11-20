@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "registration-result",
+	"title": "注册结果",
+	"documentation": "/pro/registration-result.html",
+	"components": [
+		"AsamResult",
+		"AsamCard",
+		"AsamDescriptions",
+		"AsamDescriptionsItem",
+		"AsamButton"
+	],
+	"host": [
+		"已确认注册成功的回执、允许展示的邮箱、验证链接状态",
+		"邮件发送授权、频率、signal/isCurrent核验与发送副作用",
+		"login/register意图映射真实路由"
+	],
+	"states": [
+		"已创建",
+		"链接过期",
+		"发送中",
+		"已发送与60秒冷却",
+		"失败后手动重试"
+	],
+	"languages": [
+		"ts",
+		"js"
+	],
+	"limitations": [
+		"本地合成宿主不创建真实账户或发送邮件；重发不等于邮箱已验证。"
+	]
+}

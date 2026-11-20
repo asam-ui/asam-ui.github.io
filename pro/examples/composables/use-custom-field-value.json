@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"entry": "src/main.ts",
+	"files": [
+		{
+			"path": "src/App.vue",
+			"source": "<template>\n\t<h1>自定义字段桥接</h1>\n\t<p>把自定义值读取和交互校验接入真实ASAM表单；注入key仅作高级兼容接口。</p>\n\t<AsamButton @click=\"mounted = !mounted\">卸载 / 重新挂载</AsamButton><Minimal v-if=\"mounted\" />\n</template>\n<script setup lang=\"ts\">\nimport { ref } from 'vue';\nimport { AsamButton } from '@asam-ui/ui';\nimport Minimal from './MinimalExample.vue';\nconst mounted = ref(true);\n</script>\n"
+		},
+		{
+			"path": "src/CustomInput.vue",
+			"source": "<template>\n\t<AsamInput\n\t\t:model-value=\"modelValue\"\n\t\t:validate-event=\"false\"\n\t\taria-label=\"自定义姓名\"\n\t\t@update:model-value=\"emit('update:modelValue', String($event))\"\n\t\t@blur=\"emit('blur')\"\n\t/>\n</template>\n<script setup lang=\"ts\">\nimport { AsamInput } from '@asam-ui/ui';\nimport { useCustomFieldValue } from '@asam-ui/pro/application/composables/use-custom-field-value';\nconst props = defineProps<{ modelValue: string }>();\nconst emit = defineEmits<{ 'update:modelValue': [value: string]; blur: [] }>();\nuseCustomFieldValue(() => props.modelValue);\n</script>\n"
+		},
+		{
+			"path": "src/main.ts",
+			"source": "import { createApp } from 'vue';\nimport type { App, Component } from 'vue';\nimport 'element-plus/dist/index.css';\nimport '@asam-ui/ui/style.css';\nimport '@asam-ui/pro/style.css';\nimport * as entry from './inline-entry';\nconst demo: {\n\tdefault: Component;\n\tscoped?: boolean;\n\tconfigure?: (app: App) => void | (() => void) | Promise<void | (() => void)>;\n} = entry;\nconst app = createApp(\n\tdemo.default,\n\tdemo.scoped\n\t\t? { scopeId: 'composable/use-custom-field-value:demo-composable-use-custom-field-value' }\n\t\t: undefined\n);\nconst cleanup = await demo.configure?.(app);\nif (typeof cleanup === 'function') app.onUnmount(cleanup);\napp.mount('#app');\nwindow.addEventListener('pagehide', () => app.unmount(), { once: true });\n"
+		},
+		{
+			"path": "src/MinimalExample.vue",
+			"source": "<template>\n\t<AsamBaseForm ref=\"form\" :model=\"model\">\n\t\t<AsamCustomField\n\t\t\tv-slot=\"scope\"\n\t\t\tv-model=\"model.name\"\n\t\t\tprop=\"name\"\n\t\t\tlabel=\"姓名\"\n\t\t\t:rules=\"[{ required: true, message: '请输入姓名', trigger: 'change' }]\"\n\t\t>\n\t\t\t<CustomInput\n\t\t\t\t:model-value=\"String(scope.value ?? '')\"\n\t\t\t\t@update:model-value=\"scope.update\"\n\t\t\t\t@blur=\"scope.blur\"\n\t\t\t/> </AsamCustomField\n\t\t><AsamButton @click=\"validate()\">校验</AsamButton\n\t\t><AsamButton @click=\"form?.resetFields()\">重置</AsamButton> </AsamBaseForm\n\t><output>{{ status }}</output>\n</template>\n<script setup lang=\"ts\">\nimport { reactive, ref } from 'vue';\nimport { AsamBaseForm, AsamButton } from '@asam-ui/ui';\nimport type { AsamBaseFormExpose } from '@asam-ui/ui';\nimport { AsamCustomField } from '@asam-ui/pro/application/composables/use-custom-field-value';\nimport CustomInput from './CustomInput.vue';\nconst model = reactive({ name: '' });\nconst form = ref<AsamBaseFormExpose>();\nconst status = ref('');\nasync function validate() {\n\tstatus.value =\n\t\t(await form.value?.validate().then(\n\t\t\t() => '通过',\n\t\t\t() => '请检查字段'\n\t\t)) ?? '表单尚未挂载';\n}\n</script>\n"
+		},
+		{
+			"path": "src/inline-entry.ts",
+			"source": "export { default } from './MinimalExample.vue';\n"
+		}
+	]
+}

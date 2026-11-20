@@ -1,0 +1,614 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+				<meta name="viewport" content="width=device-width,initial-scale=1">
+				<meta name="description" content="Data entry and step-by-step forms · ASAM UI English documentation">
+				<title>Data entry and step-by-step forms · ASAM UI</title><link rel="stylesheet" href="/assets/style.css?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><link rel="stylesheet" href="/assets/ai-guide.css"><link rel="stylesheet" href="/assets/website-layout.css?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><link rel="stylesheet" href="/assets/component-docs.css?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><script src="/assets/theme-init.js"></script><script src="/assets/website-layout.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"></script><script src="/assets/vendor/gsap.min.js" defer></script><script src="/assets/vendor/ScrollTrigger.min.js" defer></script><script src="/assets/catalog.js" defer></script><script src="/assets/app.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7" defer></script><script src="/assets/site-navigation.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7" defer></script><script src="/assets/site-language.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7" defer></script><script src="/assets/site-region.js" defer></script><meta name="asam-site-build" content="8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><link rel="alternate" hreflang="zh-CN" href="/pro/v2-039.html"><link rel="stylesheet" href="/assets/document-controls/document-controls.css?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><script type="module" src="/assets/document-controls/document-controls.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"></script><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a"><link rel="canonical" href="https://asam-ui.cn/en/pro/v2-039.html"></head><body>
+				<a class="skip-link" href="#main">Skip to content</a>
+				<header class="site-header" data-site-component="header">
+			<div class="nav-shell">
+				<a class="brand" href="/en/index.html" aria-label="ASAM UI home"
+					><span class="brand-mark" aria-hidden="true"><img class="brand-image brand-image-light" src="/assets/brand/mark-light.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="40" height="40" alt="" aria-hidden="true" decoding="async"><img class="brand-image brand-image-dark" src="/assets/brand/mark-dark.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="40" height="40" alt="" aria-hidden="true" decoding="async"></span><strong>ASAM<span class="brand-ui"> UI</span></strong></a
+				>
+				<nav class="primary-nav" aria-label="Main navigation"><a href="/en/getting-started.html">Getting started</a><a href="/en/component-catalog.html">Components</a><a href="/en/design-system.html">Design system</a><a href="/en/pro/index.html" aria-current="page">Pro</a><a href="/en/ai/index.html">AI</a></nav>
+				<div class="nav-actions"><details class="site-version-disclosure" data-site-versions>
+			<summary><span data-site-version-label>Pro v2.0.1</span><span class="site-version-arrow" aria-hidden="true">▾</span></summary>
+			<section class="site-version-panel" aria-label="Documentation versions">
+				<p class="site-version-heading">Packages used by this website</p>
+				<ul><li><strong>UI v2.0.1</strong><span>Version available on npm</span><a href="/en/guide/ui-changelog.html">View changelog</a></li><li><strong>Pro v2.0.1</strong><span>Version available on npm</span><a href="/en/guide/pro-changelog.html">View changelog</a></li></ul>
+				<p>Pair Pro with the UI version declared by its package. The verified stable installation is UI 2.0.1, Vue 3.5.34, and Element Plus 2.14.7.</p>
+				<nav aria-label="Release documentation"><a href="/en/guide/compatibility.html">Versions and compatibility</a><a href="/en/guide/upgrade.html">Upgrade guide</a></nav>
+			</section>
+		</details>
+					<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;\n\t\t\t\t\t\t&lt;span class=\&quot;icon-wrap\&quot;\n\t\t\t\t\t\t\t&gt;&lt;svg\n\t\t\t\t\t\t\t\tclass=\&quot;icon\&quot;\n\t\t\t\t\t\t\t\taria-hidden=\&quot;true\&quot;\n\t\t\t\t\t\t\t\tfocusable=\&quot;false\&quot;\n\t\t\t\t\t\t\t\txmlns=\&quot;http://www.w3.org/2000/svg\&quot;\n\t\t\t\t\t\t\t\tviewBox=\&quot;0 0 256 256\&quot;\n\t\t\t\t\t\t\t\tfill=\&quot;currentColor\&quot;\n\t\t\t\t\t\t\t&gt;\n\t\t\t\t\t\t\t\t&lt;path\n\t\t\t\t\t\t\t\t\td=\&quot;M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z\&quot;\n\t\t\t\t\t\t\t\t/&gt;&lt;/svg&gt;&lt;/span\n\t\t\t\t\t\t&gt;&lt;span&gt;Search docs&lt;/span&gt;&lt;kbd&gt;Ctrl K&lt;/kbd&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;search-trigger&quot;,&quot;type&quot;:&quot;default&quot;,&quot;data-open-search&quot;:true,&quot;aria-haspopup&quot;:&quot;dialog&quot;,&quot;aria-controls&quot;:&quot;search-dialog&quot;,&quot;aria-expanded&quot;:&quot;false&quot;,&quot;aria-label&quot;:&quot;Search documentation, shortcut Control K&quot;},&quot;idPrefix&quot;:&quot;document-0&quot;,&quot;injectionPrefix&quot;:10000}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default search-trigger asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-open-search="true" aria-haspopup="dialog" aria-controls="search-dialog" aria-expanded="false" aria-label="Search documentation, shortcut Control K" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+								/></svg></span
+						><span>Search docs</span><kbd>Ctrl K</kbd></span><!--]--></span></button></span><div class="site-action-icons"><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;20\&quot; height=\&quot;20\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;rect x=\&quot;3\&quot; y=\&quot;4\&quot; width=\&quot;18\&quot; height=\&quot;16\&quot; rx=\&quot;2\&quot;/&gt;&lt;path d=\&quot;M8 4v16M16 4v16\&quot;/&gt;&lt;path class=\&quot;wide-expand\&quot; d=\&quot;m11 10-2 2 2 2m2-4 2 2-2 2\&quot;/&gt;&lt;path class=\&quot;wide-contract\&quot; d=\&quot;m9 10 2 2-2 2m6-4-2 2 2 2\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button website-wide-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;aria-pressed&quot;:&quot;false&quot;,&quot;aria-label&quot;:&quot;Enable wide layout&quot;,&quot;title&quot;:&quot;Enable wide layout&quot;},&quot;idPrefix&quot;:&quot;document-1&quot;,&quot;injectionPrefix&quot;:10001}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text icon-button website-wide-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" aria-pressed="false" aria-label="Enable wide layout" title="Enable wide layout" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 4v16M16 4v16"/><path class="wide-expand" d="m11 10-2 2 2 2m2-4 2 2-2 2"/><path class="wide-contract" d="m9 10 2 2-2 2m6-4-2 2 2 2"/></svg></span><!--]--></span></button></span><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;20\&quot; height=\&quot;20\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; stroke-linecap=\&quot;round\&quot; stroke-linejoin=\&quot;round\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;path d=\&quot;M3 6h10M8 3v3m3 0c0 5-3 8-7 10m1-7c0 3 3 5 5 6m3 5 4-10 4 10m-7-3h6\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button site-language-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;tag&quot;:&quot;a&quot;,&quot;href&quot;:&quot;/pro/v2-039.html&quot;,&quot;hreflang&quot;:&quot;zh-CN&quot;,&quot;data-site-language-toggle&quot;:&quot;&quot;,&quot;data-site-language-route&quot;:&quot;/pro/v2-039.html&quot;,&quot;data-site-language-match&quot;:&quot;true&quot;,&quot;data-native-navigation&quot;:&quot;&quot;,&quot;aria-label&quot;:&quot;切换为简体中文&quot;,&quot;title&quot;:&quot;切换为简体中文&quot;},&quot;idPrefix&quot;:&quot;document-2&quot;,&quot;injectionPrefix&quot;:10002}"><a class="el-button el-button--default el-button--default is-text icon-button site-language-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" href="/pro/v2-039.html" hreflang="zh-CN" data-site-language-toggle data-site-language-route="/pro/v2-039.html" data-site-language-match="true" data-native-navigation aria-label="切换为简体中文" title="切换为简体中文" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h10M8 3v3m3 0c0 5-3 8-7 10m1-7c0 3 3 5 5 6m3 5 4-10 4 10m-7-3h6"/></svg></span><!--]--></span></a></span><div class="site-region-switch"><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;20\&quot; height=\&quot;20\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;circle cx=\&quot;12\&quot; cy=\&quot;12\&quot; r=\&quot;9\&quot;/&gt;&lt;ellipse cx=\&quot;12\&quot; cy=\&quot;12\&quot; rx=\&quot;4\&quot; ry=\&quot;9\&quot;/&gt;&lt;path d=\&quot;M3 12h18M5 6h14M5 18h14\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button site-region-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;data-site-region-toggle&quot;:&quot;&quot;,&quot;aria-label&quot;:&quot;Switch website region&quot;,&quot;aria-expanded&quot;:&quot;false&quot;,&quot;aria-controls&quot;:&quot;site-region-options&quot;,&quot;title&quot;:&quot;Switch website region&quot;},&quot;idPrefix&quot;:&quot;document-3&quot;,&quot;injectionPrefix&quot;:10003}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text icon-button site-region-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-site-region-toggle aria-label="Switch website region" aria-expanded="false" aria-controls="site-region-options" title="Switch website region" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6h14M5 18h14"/></svg></span><!--]--></span></button></span><nav id="site-region-options" class="site-regions" aria-label="Website region" hidden><a data-site-region="cn" href="https://asam-ui.cn/en/pro/v2-039.html">China</a><a data-site-region="international" href="https://asam-ui.github.io/en/pro/v2-039.html">Global</a></nav></div><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;\n\t\t\t\t\t\t&lt;span class=\&quot;icon-wrap\&quot;\n\t\t\t\t\t\t\t&gt;&lt;svg\n\t\t\t\t\t\t\t\tclass=\&quot;icon\&quot;\n\t\t\t\t\t\t\t\taria-hidden=\&quot;true\&quot;\n\t\t\t\t\t\t\t\tfocusable=\&quot;false\&quot;\n\t\t\t\t\t\t\t\txmlns=\&quot;http://www.w3.org/2000/svg\&quot;\n\t\t\t\t\t\t\t\tviewBox=\&quot;0 0 256 256\&quot;\n\t\t\t\t\t\t\t\tfill=\&quot;currentColor\&quot;\n\t\t\t\t\t\t\t&gt;\n\t\t\t\t\t\t\t\t&lt;path\n\t\t\t\t\t\t\t\t\td=\&quot;M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z\&quot;\n\t\t\t\t\t\t\t\t/&gt;&lt;/svg\n\t\t\t\t\t\t&gt;&lt;/span&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button theme-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;aria-label&quot;:&quot;Switch color theme&quot;},&quot;idPrefix&quot;:&quot;document-4&quot;,&quot;injectionPrefix&quot;:10004}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text icon-button theme-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" aria-label="Switch color theme" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z"
+								/></svg
+						></span></span><!--]--></span></button></span><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;\n\t\t\t\t\t\t&lt;span class=\&quot;icon-wrap\&quot;\n\t\t\t\t\t\t\t&gt;&lt;svg\n\t\t\t\t\t\t\t\tclass=\&quot;icon\&quot;\n\t\t\t\t\t\t\t\taria-hidden=\&quot;true\&quot;\n\t\t\t\t\t\t\t\tfocusable=\&quot;false\&quot;\n\t\t\t\t\t\t\t\txmlns=\&quot;http://www.w3.org/2000/svg\&quot;\n\t\t\t\t\t\t\t\tviewBox=\&quot;0 0 256 256\&quot;\n\t\t\t\t\t\t\t\tfill=\&quot;currentColor\&quot;\n\t\t\t\t\t\t\t&gt;\n\t\t\t\t\t\t\t\t&lt;path\n\t\t\t\t\t\t\t\t\td=\&quot;M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z\&quot;\n\t\t\t\t\t\t\t\t/&gt;&lt;/svg\n\t\t\t\t\t\t&gt;&lt;/span&gt;\n\t\t\t\t\t&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button menu-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;aria-label&quot;:&quot;Open navigation&quot;,&quot;aria-controls&quot;:&quot;mobile-nav&quot;,&quot;aria-expanded&quot;:&quot;false&quot;},&quot;idPrefix&quot;:&quot;document-5&quot;,&quot;injectionPrefix&quot;:10005}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text icon-button menu-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" aria-label="Open navigation" aria-controls="mobile-nav" aria-expanded="false" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+								/></svg
+						></span>
+					</span><!--]--></span></button></span></div>
+				</div>
+			</div>
+			<nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="/en/getting-started.html">Getting started</a><a href="/en/component-catalog.html">Components</a><a href="/en/design-system.html">Design system</a><a href="/en/pro/index.html" aria-current="page">Pro</a><a href="/en/ai/index.html">AI</a><details class="mobile-section-nav"><summary>Documentation menu</summary><div class="docs-sidebar mobile-sidebar-content" data-site-component="sidebar" data-site-section="english" aria-label="Documentation index"><nav class="docs-primary-navigation" aria-label="Documentation"><span class="sidebar-heading">Documentation</span><a href="/en/getting-started.html">Getting started</a><a href="/en/component-catalog.html">Components</a><a href="/en/design-system.html">Design system</a><a href="/en/pro/index.html">Pro</a><a href="/en/ai/index.html">AI</a><span class="sidebar-heading">Releases</span><a href="/en/guide/compatibility.html">Versions and compatibility</a><a href="/en/guide/upgrade.html">Upgrade guide</a><a href="/en/guide/ui-changelog.html">UI changelog</a><a href="/en/guide/pro-changelog.html">Pro changelog</a><span class="sidebar-heading">Guides</span><a href="/en/guide/installation.html">Installation</a><a href="/en/guide/architecture.html">Architecture</a><a href="/en/guide/provider.html">Data providers</a><a href="/en/guide/data-driven.html">Data-driven components</a><a href="/en/guide/theme.html">Theme and CSS variables</a></nav></div></details><details class="mobile-section-nav"><summary>On this page</summary><div class="mobile-page-toc"><span>On this page</span><nav><a href="#examples">Preview and downloads</a><a class="toc-sub" href="#demo-heading-template-forms">Try the template</a><a href="#api">Use and API</a><a href="#reference">Reference</a><a class="toc-sub" href="#heading-1">API and behavior</a><a class="toc-sub" href="#heading-2">Usage</a><a class="toc-sub" href="#types">Full type source</a></nav></div></details></nav>
+		</header><div id="site-view">
+				<div class="docs-layout wrap site-doc-layout" data-site-component="layout"><aside class="docs-sidebar" data-site-component="sidebar" data-site-section="english" aria-label="Documentation index"><nav class="docs-primary-navigation" aria-label="Documentation"><span class="sidebar-heading">Documentation</span><a href="/en/getting-started.html">Getting started</a><a href="/en/component-catalog.html">Components</a><a href="/en/design-system.html">Design system</a><a href="/en/pro/index.html">Pro</a><a href="/en/ai/index.html">AI</a><span class="sidebar-heading">Releases</span><a href="/en/guide/compatibility.html">Versions and compatibility</a><a href="/en/guide/upgrade.html">Upgrade guide</a><a href="/en/guide/ui-changelog.html">UI changelog</a><a href="/en/guide/pro-changelog.html">Pro changelog</a><span class="sidebar-heading">Guides</span><a href="/en/guide/installation.html">Installation</a><a href="/en/guide/architecture.html">Architecture</a><a href="/en/guide/provider.html">Data providers</a><a href="/en/guide/data-driven.html">Data-driven components</a><a href="/en/guide/theme.html">Theme and CSS variables</a></nav></aside><article id="main" tabindex="-1" class="docs-content ai-content"><h1 id="data-entry-and-step-by-step-forms" tabindex="-1">Data entry and step-by-step forms <a class="header-anchor" href="#data-entry-and-step-by-step-forms" aria-label="Permalink to &quot;Data entry and step-by-step forms&quot;">&ZeroWidthSpace;</a></h1>
+<p>Choose a single-page application form, a three-step form, or a grouped form with nested rows. Each template is a complete editable Vue page with local examples of validation, saving, and recovery.</p>
+<h2 id="examples" tabindex="-1">Preview and downloads <a class="header-anchor" href="#examples" aria-label="Permalink to &quot;Preview and downloads {#examples}&quot;">&ZeroWidthSpace;</a></h2>
+<p><a id="demo-template-forms"></a></p>
+<h3 id="demo-heading-template-forms" tabindex="-1">Try the template <a class="header-anchor" href="#demo-heading-template-forms" aria-label="Permalink to &quot;Try the template {#demo-heading-template-forms}&quot;">&ZeroWidthSpace;</a></h3>
+<div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><table tabindex="0">
+<thead>
+<tr>
+<th>View</th>
+<th>TypeScript preview</th>
+<th>JavaScript preview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Form selector</td>
+<td><a href="/pro/template-preview.html?example=forms&amp;language=ts&amp;locale=en">Open TypeScript preview</a></td>
+<td><a href="/pro/template-preview.html?example=forms&amp;language=js&amp;locale=en">Open JavaScript preview</a></td>
+</tr>
+<tr>
+<td>Step-by-step form</td>
+<td><a href="/pro/template-preview.html?example=forms&amp;form=P07&amp;language=ts&amp;locale=en">Open TypeScript preview</a></td>
+<td><a href="/pro/template-preview.html?example=forms&amp;form=P07&amp;language=js&amp;locale=en">Open JavaScript preview</a></td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div></div></div><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><table tabindex="0">
+<thead>
+<tr>
+<th>Language</th>
+<th>Editable source</th>
+<th>Complete project</th>
+<th>File manifest</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TypeScript</td>
+<td><a download href="https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/forms-source.zip">Source ZIP</a></td>
+<td><a download href="https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/forms.zip">Project ZIP</a></td>
+<td><a download href="/pro/examples/forms.json">Manifest</a></td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td><a download href="https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/forms-js-source.zip">Source ZIP</a></td>
+<td><a download href="https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/forms-js.zip">Project ZIP</a></td>
+<td><a download href="/pro/examples/forms-js.json">Manifest</a></td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div></div></div><p>In the step-by-step preview, check the current step before advancing, then try returning to a previous step or saving a draft. The sample draft lives in the current page session.</p>
+<h2 id="api" tabindex="-1">Use and API <a class="header-anchor" href="#api" aria-label="Permalink to &quot;Use and API {#api}&quot;">&ZeroWidthSpace;</a></h2>
+<p>Start with <code>BasicFormPage.vue</code>, <code>StepsFormPage.vue</code>, or <code>AdvancedFormPage.vue</code> and their shared source. Supply a typed <code>identity</code> and <code>FormServices</code> for reads, validation, writes, and verification. Keep one operation ID when the outcome of a write is unknown. The host can provide a <code>DraftAdapter</code> for persistence across reloads.</p>
+<p>See <a href="#reference-usage">usage and customization</a> and the <a href="#reference-api">page and service API</a>. The source archive preserves the original code and comments.</p>
+<p><a href="/en/pro/templates.html">Template gallery</a> · <a href="/en/pro/component-AsamSchemaForm.html">Schema form</a> · <a href="/en/pro/component-AsamStepsForm.html">Steps form</a></p>
+<h2 id="reference" tabindex="-1">Reference <a class="header-anchor" href="#reference" aria-label="Permalink to &quot;Reference {#reference}&quot;">&ZeroWidthSpace;</a></h2>
+<section id="reference-api"><h3 id="heading-1">API and behavior</h3><h5 id="page-props-events-and-methods" tabindex="-1">Page props, events, and methods <a class="header-anchor" href="#page-props-events-and-methods" aria-label="Permalink to &quot;Page props, events, and methods&quot;">&ZeroWidthSpace;</a></h5>
+<p><code>FormPageProps</code> requires <code>identity: { scope, entity, version }</code> and <code>services: FormServices</code>. Optional props are <code>disabled</code>, <code>readonly</code>, <code>size</code>, <code>configurationVersion</code>, and <code>session</code>. The step-by-step page also accepts <code>draftAdapter</code>. Both access flags default to false. Size defaults to <code>default</code> and the configuration version to <code>'1'</code>.</p>
+<p>Changing identity or configuration version invalidates the old session. Replacing services retains the active coordinator and pending operation ID where applicable. A borrowed session must match the page, identity, and services. Supply a replacement borrowed session after a configuration change. The host owns disposal.</p>
+<p>The <code>saved(receipt: FormReceipt)</code> event fires once for a confirmed outcome of the current operation, whether confirmed by submission or verification. <code>cancel()</code> closes the current display. Edit the SFC directly to customize its layout. The page exposes <code>reload(): Promise&lt;void&gt;</code>, <code>submit(): Promise&lt;boolean&gt;</code>, <code>verify(): Promise&lt;void&gt;</code>, and <code>cancel(): void</code>. Submit resolves to true only when the service confirms the write for the current session.</p>
+<h5 id="services" tabindex="-1">Services <a class="header-anchor" href="#services" aria-label="Permalink to &quot;Services&quot;">&ZeroWidthSpace;</a></h5>
+<div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><table tabindex="0">
+<thead>
+<tr>
+<th>Method</th>
+<th>Input</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>load</code></td>
+<td><code>FormRequest</code> with page, scope, entity, version, and signal</td>
+<td>A found model or an empty state. On error, offer retry.</td>
+</tr>
+<tr>
+<td><code>validate</code></td>
+<td>Converted DTO and <code>FormRequest</code></td>
+<td>Read-only <code>AsamEditIssue[]</code></td>
+</tr>
+<tr>
+<td><code>submit</code></td>
+<td>DTO and <code>FormWrite</code> with operation ID</td>
+<td><code>success</code>, <code>failure</code>, or <code>unknown</code></td>
+</tr>
+<tr>
+<td><code>verify</code></td>
+<td>Original <code>FormWrite</code></td>
+<td><code>success</code>, <code>not-applied</code>, or <code>unknown</code></td>
+</tr>
+<tr>
+<td><code>departments</code></td>
+<td>Region and <code>FormRequest</code></td>
+<td>Departments for the active region and identity</td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div></div></div><p>A receipt must match the original operation ID, entity, and version. An invalid or mismatched receipt is treated as unknown. Services receive independent request snapshots. The session rechecks the active identity and write permission immediately before calling the service, and ignores late results that target another entity. The coordinator retains the outcome of an already dispatched write. Read-only access allows reading and verification. Both read-only and disabled access prevent a new write.</p>
+<h5 id="form-models-and-session" tabindex="-1">Form models and session <a class="header-anchor" href="#form-models-and-session" aria-label="Permalink to &quot;Form models and session&quot;">&ZeroWidthSpace;</a></h5>
+<ul>
+<li>The basic form uses <code>BasicInputModel</code> and <code>BasicSubmitDto</code>. The step-by-step form uses <code>StepsInputModel</code> and <code>StepsSubmitDto</code>. Convert and validate input before calling the service. Resource values map to stable IDs. Preserve explicit empty values and missing properties.</li>
+<li>The step-by-step form validates the current step to advance and validates all steps before submission. A field error returns the user to its step. An unkeyed error appears in the summary. Draft reads and writes happen only through the explicit controls.</li>
+<li>The advanced form uses <code>AdvancedModel</code> and <code>AsamSchemaSubmitModel&lt;AdvancedModel&gt;</code>. Keep row keys stable and allow numeric zero and string zero to coexist. The department follows the clear-on-change policy. A hidden contact note is retained locally and omitted from submission, a hidden <code>keepNote</code> is retained and submitted, and a hidden <code>clearNote</code> is cleared and omitted.</li>
+<li><code>createFormPageSession(config)</code> exposes session state, an editor view, receipt and operation identity, and methods for opening, updating, submitting, verifying, cancelling, reloading, and restoring a draft. Calling <code>dispose()</code> releases session-owned state and listeners. The host retains borrowed coordinators and services. A registered page validator is removed when that page exits.</li>
+<li>Explicitly retry an unknown write only after verification reports <code>not-applied</code>. The session checks authorization immediately before calling the service, including when invoking a page method directly.</li>
+</ul>
+</section><section id="reference-usage"><h3 id="heading-2">Usage</h3><p><code>BasicFormPage.vue</code>, <code>StepsFormPage.vue</code>, and <code>AdvancedFormPage.vue</code> are complete editable pages. <code>App.vue</code> provides three hash routes and local scenarios. The example loads the Element Plus, UI, Pro, and page styles in that order.</p>
+<div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><table tabindex="0">
+<thead>
+<tr>
+<th>Page</th>
+<th>Structure</th>
+<th>Initial fields</th>
+<th>Shared building blocks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basic</td>
+<td>Single-column application with a summary and a confirmed result</td>
+<td>12 fields</td>
+<td>Field modes, DTO conversion, and write coordination</td>
+</tr>
+<tr>
+<td>Step-by-step</td>
+<td>Three steps with a persistent summary and draft guidance</td>
+<td>5 fields per step</td>
+<td><code>AsamStepsForm</code>, field conversion, and coordinated saving</td>
+</tr>
+<tr>
+<td>Advanced</td>
+<td>Profile, finance, contact, policy, and line-item groups</td>
+<td>20 fields plus 5 rows of 2 fields</td>
+<td><code>AsamSchemaForm</code>, nested schema, and write coordination</td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div></div></div><p>The local service simulates a 100 ms read, 40 ms validation, and 100 ms save or verification. Each session has its own in-memory state. The scenario preserves distinct values such as numeric zero, string zero, false, an empty string, null, and a missing optional property. CNY amounts use yuan with two decimal places, dates use calendar strings, and resources submit stable IDs.</p>
+<h5 id="run-a-downloaded-project" tabindex="-1">Run a downloaded project <a class="header-anchor" href="#run-a-downloaded-project" aria-label="Permalink to &quot;Run a downloaded project&quot;">&ZeroWidthSpace;</a></h5>
+<p>Keep the relative files, package versions, patches, and lockfile. From the complete project, run:</p>
+<div data-asam-code-block data-code-single-line="false" class="language-sh vp-adaptive-theme"><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;18\&quot; height=\&quot;18\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;rect x=\&quot;8\&quot; y=\&quot;3\&quot; width=\&quot;12\&quot; height=\&quot;14\&quot; rx=\&quot;2\&quot;/&gt;&lt;path d=\&quot;M16 17v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;asam-code-copy&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;size&quot;:&quot;small&quot;,&quot;title&quot;:&quot;Copy code&quot;,&quot;aria-label&quot;:&quot;Copy code&quot;,&quot;data-copy-value&quot;:&quot;pnpm install --frozen-lockfile\npnpm run typecheck\npnpm run build\npnpm run preview\n&quot;},&quot;idPrefix&quot;:&quot;document-6&quot;,&quot;injectionPrefix&quot;:10006}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--small is-text asam-code-copy asam-button asam-button-default asam-button-small asam-button-press-feedback" style="--asam-button-icon-size:16px;" title="Copy code" aria-label="Copy code" data-copy-value="pnpm install --frozen-lockfile
+pnpm run typecheck
+pnpm run build
+pnpm run preview
+" data-asam-size="small" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="8" y="3" width="12" height="14" rx="2"/><path d="M16 17v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3"/></svg></span><!--]--></span></button></span><span class="lang">sh</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">pnpm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --frozen-lockfile</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">pnpm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> run</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> typecheck</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">pnpm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> run</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> build</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">pnpm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> run</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> preview</span></span></code></pre>
+</div><h5 id="customize-a-form" tabindex="-1">Customize a form <a class="header-anchor" href="#customize-a-form" aria-label="Permalink to &quot;Customize a form&quot;">&ZeroWidthSpace;</a></h5>
+<ol>
+<li>Edit the basic layout in <code>BasicFormPage.vue</code>. Adjust <code>basicBindings</code> and <code>modesFor</code> in <code>Models.ts</code> to change field and DTO mappings, and use <code>Validation.ts</code> for rules.</li>
+<li>Define each step using stable IDs and field keys in <code>Models.ts</code>. Assign a field to one step and validate it with <code>validateCurrent</code> in <code>StepsFormPage.vue</code>. Final submission goes through <code>createFormPageSession</code>.</li>
+<li>Define nested fields with <code>createAsamNestedSchema&lt;Model&gt;().field</code> in <code>AdvancedSchema.ts</code>. For repeated rows, use a stable business key and update the model and initial values in <code>Types.ts</code> and <code>Models.ts</code>.</li>
+<li>Implement <code>FormServices</code> for loading, validation, submission, verification, and department lookup. Verify an unknown write with the original operation ID. Use the example's save-error and unknown scenarios to see the recovery flow.</li>
+<li>Add an explicit <code>DraftAdapter</code> for persisted drafts. Validate the <code>asam-forms-draft-v1</code> format, page, scope, entity, and version, and honor the abort signal. The default draft stays in the current session.</li>
+<li>If you pass a host-owned session, create it through <code>createFormPageSession</code> and match the page, identity, and services. The host owns permissions and eventual disposal.</li>
+</ol>
+<p>The three pages use distinct layouts and share ASAM controls and tokens. Reduced motion disables the short result transition.</p>
+</section><h3 id="types">Full type source</h3><details><summary>Types.ts · Type source</summary><div data-asam-code-block data-code-single-line="false" class="language-ts vp-adaptive-theme"><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;18\&quot; height=\&quot;18\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;rect x=\&quot;8\&quot; y=\&quot;3\&quot; width=\&quot;12\&quot; height=\&quot;14\&quot; rx=\&quot;2\&quot;/&gt;&lt;path d=\&quot;M16 17v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;asam-code-copy&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;size&quot;:&quot;small&quot;,&quot;title&quot;:&quot;Copy code&quot;,&quot;aria-label&quot;:&quot;Copy code&quot;,&quot;data-copy-value&quot;:&quot;import type { createFormPageSession } from './Session.js';\nimport type { AsamControlSize } from '@asam-ui/ui';\nimport type { AsamValue } from '@asam-ui/ui';\nimport type {\n\tAsamEditIssue,\n\tAsamFieldModel,\n\tAsamWriteCoordinator,\n\tAsamFieldViewBinding\n} from '@asam-ui/pro';\nimport type { AsamMoneyInputValue, AsamMoneyPayload, AsamResourceValue } from '@asam-ui/pro';\n\nexport interface BasicInputModel {\n\tname: string;\n\tcode: string;\n\tquantity: number | null;\n\tbudget: AsamMoneyInputValue;\n\tdate: string | null;\n\tcategory: AsamValue | null;\n\tenabled: boolean | null;\n\ttags: readonly AsamValue[];\n\tnote: string;\n\tnullable: string | null;\n\toptional?: string;\n\tresource: AsamResourceValue;\n}\nexport interface BasicSubmitDto extends Omit&lt;BasicInputModel, 'budget' | 'resource'&gt; {\n\tbudget: AsamMoneyPayload | null;\n\tresourceId: string | number | null;\n}\nexport interface StepsInputModel extends Omit&lt;BasicInputModel, 'resource' | 'optional'&gt; {\n\tregion: string;\n\tdepartment: string | null;\n\tcontact: string;\n\temail: string;\n\tconfirmed: boolean;\n}\nexport interface StepsSubmitDto extends Omit&lt;StepsInputModel, 'budget'&gt; {\n\tbudget: AsamMoneyPayload | null;\n}\n\nexport type FormPage = 'P06' | 'P07' | 'P08';\nexport interface FormIdentity {\n\treadonly scope: string;\n\treadonly entity: string;\n\t/** 不推断后端版本；变化即开始新会话。 */\n\treadonly version: string;\n}\nexport interface FormRequest extends FormIdentity {\n\treadonly page: FormPage;\n\treadonly signal: AbortSignal;\n}\nexport interface FormWrite extends FormRequest {\n\treadonly operationId: string;\n}\nexport interface FormReceipt {\n\treadonly operationId: string;\n\treadonly entity: string;\n\treadonly version: string;\n\treadonly summary: string;\n}\nexport type FormLoad =\n\t{ readonly status: 'found'; readonly model: AsamFieldModel } | { readonly status: 'empty' };\nexport type FormSubmit =\n\t| { readonly status: 'success'; readonly receipt: FormReceipt }\n\t| {\n\t\t\treadonly status: 'failure';\n\t\t\treadonly message: string;\n\t\t\treadonly issues?: readonly AsamEditIssue[];\n\t  }\n\t| { readonly status: 'unknown'; readonly message: string };\nexport type FormVerify =\n\t| { readonly status: 'success'; readonly receipt: FormReceipt }\n\t| { readonly status: 'not-applied' | 'unknown' };\nexport interface FormServices {\n\tload(request: FormRequest): Promise&lt;FormLoad&gt;;\n\tvalidate(\n\t\tdto: Readonly&lt;AsamFieldModel&gt;,\n\t\trequest: FormRequest\n\t): Promise&lt;readonly AsamEditIssue[]&gt;;\n\tsubmit(dto: Readonly&lt;AsamFieldModel&gt;, request: FormWrite): Promise&lt;FormSubmit&gt;;\n\tverify(request: FormWrite): Promise&lt;FormVerify&gt;;\n\t/** P07 的真实异步依赖读取；不向库注入业务 URL。 */\n\tdepartments(\n\t\tregion: string,\n\t\trequest: FormRequest\n\t): Promise&lt;readonly { value: string; label: string }[]&gt;;\n}\nexport interface VersionedDraft {\n\treadonly format: 'asam-forms-draft-v1';\n\treadonly identity: FormIdentity;\n\treadonly page: FormPage;\n\treadonly model: AsamFieldModel;\n}\nexport interface DraftAdapter {\n\tread(request: FormRequest): Promise&lt;VersionedDraft | undefined&gt;;\n\twrite(draft: VersionedDraft, request: FormRequest): Promise&lt;void&gt;;\n}\nexport interface FormPageProps {\n\treadonly identity: FormIdentity;\n\treadonly services: FormServices;\n\treadonly disabled?: boolean;\n\treadonly readonly?: boolean;\n\treadonly size?: AsamControlSize;\n\treadonly configurationVersion?: string;\n\t/** 宿主借入会话由宿主销毁；其 page/services/identity 必须匹配。 */\n\treadonly session?: FormPageSession;\n\treadonly draftAdapter?: DraftAdapter;\n}\nexport interface FormPageEvents {\n\tsaved: [receipt: FormReceipt];\n\tcancel: [];\n}\nexport interface FormPageExpose {\n\treload(): Promise&lt;void&gt;;\n\tsubmit(): Promise&lt;boolean&gt;;\n\tverify(): Promise&lt;void&gt;;\n\tcancel(): void;\n}\nexport interface FormSessionConfig {\n\treadonly page: FormPage;\n\treadonly services: FormServices;\n\treadonly identity: FormIdentity;\n\treadonly bindings: readonly AsamFieldViewBinding[];\n\treadonly coordinator?: AsamWriteCoordinator;\n\t/** 与借入协调器一起跨服务配置替换保留原operationId。 */\n\treadonly pendingOperations?: Map&lt;string, string&gt;;\n\treadonly canWrite?: () =&gt; boolean;\n\treadonly validate?: (\n\t\tmodel: Readonly&lt;AsamFieldModel&gt;,\n\t\tsignal: AbortSignal\n\t) =&gt; Promise&lt;readonly AsamEditIssue[]&gt;;\n\treadonly onSaved?: (receipt: FormReceipt) =&gt; void;\n}\nexport type FormPageSession = ReturnType&lt;typeof createFormPageSession&gt;;\n\nexport interface AdvancedRow {\n\trowKey: string | number;\n\tname: string;\n\tquantity: number;\n}\nexport interface AdvancedModel {\n\tprofile: { name: string; code: string; enabled: boolean; region: string; department: string };\n\tfinance: {\n\t\tamount: number;\n\t\tcurrency: string;\n\t\tcostCode: string;\n\t\tinvoice: boolean;\n\t\ttaxNote: string;\n\t};\n\tcontact: {\n\t\tname: string;\n\t\tphone: string;\n\t\temail: string;\n\t\tshowPrivate: boolean;\n\t\tprivateNote: string;\n\t};\n\tpolicy: {\n\t\tpublish: boolean;\n\t\tkeepNote: string;\n\t\tclearNote: string;\n\t\tdate: string;\n\t\tresourceId: string | null;\n\t};\n\titems: AdvancedRow[];\n}\n\n&quot;},&quot;idPrefix&quot;:&quot;document-7&quot;,&quot;injectionPrefix&quot;:10007}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--small is-text asam-code-copy asam-button asam-button-default asam-button-small asam-button-press-feedback" style="--asam-button-icon-size:16px;" title="Copy code" aria-label="Copy code" data-copy-value="import type { createFormPageSession } from &#39;./Session.js&#39;;
+import type { AsamControlSize } from &#39;@asam-ui/ui&#39;;
+import type { AsamValue } from &#39;@asam-ui/ui&#39;;
+import type {
+	AsamEditIssue,
+	AsamFieldModel,
+	AsamWriteCoordinator,
+	AsamFieldViewBinding
+} from &#39;@asam-ui/pro&#39;;
+import type { AsamMoneyInputValue, AsamMoneyPayload, AsamResourceValue } from &#39;@asam-ui/pro&#39;;
+
+export interface BasicInputModel {
+	name: string;
+	code: string;
+	quantity: number | null;
+	budget: AsamMoneyInputValue;
+	date: string | null;
+	category: AsamValue | null;
+	enabled: boolean | null;
+	tags: readonly AsamValue[];
+	note: string;
+	nullable: string | null;
+	optional?: string;
+	resource: AsamResourceValue;
+}
+export interface BasicSubmitDto extends Omit&lt;BasicInputModel, &#39;budget&#39; | &#39;resource&#39;&gt; {
+	budget: AsamMoneyPayload | null;
+	resourceId: string | number | null;
+}
+export interface StepsInputModel extends Omit&lt;BasicInputModel, &#39;resource&#39; | &#39;optional&#39;&gt; {
+	region: string;
+	department: string | null;
+	contact: string;
+	email: string;
+	confirmed: boolean;
+}
+export interface StepsSubmitDto extends Omit&lt;StepsInputModel, &#39;budget&#39;&gt; {
+	budget: AsamMoneyPayload | null;
+}
+
+export type FormPage = &#39;P06&#39; | &#39;P07&#39; | &#39;P08&#39;;
+export interface FormIdentity {
+	readonly scope: string;
+	readonly entity: string;
+	/** 不推断后端版本；变化即开始新会话。 */
+	readonly version: string;
+}
+export interface FormRequest extends FormIdentity {
+	readonly page: FormPage;
+	readonly signal: AbortSignal;
+}
+export interface FormWrite extends FormRequest {
+	readonly operationId: string;
+}
+export interface FormReceipt {
+	readonly operationId: string;
+	readonly entity: string;
+	readonly version: string;
+	readonly summary: string;
+}
+export type FormLoad =
+	{ readonly status: &#39;found&#39;; readonly model: AsamFieldModel } | { readonly status: &#39;empty&#39; };
+export type FormSubmit =
+	| { readonly status: &#39;success&#39;; readonly receipt: FormReceipt }
+	| {
+			readonly status: &#39;failure&#39;;
+			readonly message: string;
+			readonly issues?: readonly AsamEditIssue[];
+	  }
+	| { readonly status: &#39;unknown&#39;; readonly message: string };
+export type FormVerify =
+	| { readonly status: &#39;success&#39;; readonly receipt: FormReceipt }
+	| { readonly status: &#39;not-applied&#39; | &#39;unknown&#39; };
+export interface FormServices {
+	load(request: FormRequest): Promise&lt;FormLoad&gt;;
+	validate(
+		dto: Readonly&lt;AsamFieldModel&gt;,
+		request: FormRequest
+	): Promise&lt;readonly AsamEditIssue[]&gt;;
+	submit(dto: Readonly&lt;AsamFieldModel&gt;, request: FormWrite): Promise&lt;FormSubmit&gt;;
+	verify(request: FormWrite): Promise&lt;FormVerify&gt;;
+	/** P07 的真实异步依赖读取；不向库注入业务 URL。 */
+	departments(
+		region: string,
+		request: FormRequest
+	): Promise&lt;readonly { value: string; label: string }[]&gt;;
+}
+export interface VersionedDraft {
+	readonly format: &#39;asam-forms-draft-v1&#39;;
+	readonly identity: FormIdentity;
+	readonly page: FormPage;
+	readonly model: AsamFieldModel;
+}
+export interface DraftAdapter {
+	read(request: FormRequest): Promise&lt;VersionedDraft | undefined&gt;;
+	write(draft: VersionedDraft, request: FormRequest): Promise&lt;void&gt;;
+}
+export interface FormPageProps {
+	readonly identity: FormIdentity;
+	readonly services: FormServices;
+	readonly disabled?: boolean;
+	readonly readonly?: boolean;
+	readonly size?: AsamControlSize;
+	readonly configurationVersion?: string;
+	/** 宿主借入会话由宿主销毁；其 page/services/identity 必须匹配。 */
+	readonly session?: FormPageSession;
+	readonly draftAdapter?: DraftAdapter;
+}
+export interface FormPageEvents {
+	saved: [receipt: FormReceipt];
+	cancel: [];
+}
+export interface FormPageExpose {
+	reload(): Promise&lt;void&gt;;
+	submit(): Promise&lt;boolean&gt;;
+	verify(): Promise&lt;void&gt;;
+	cancel(): void;
+}
+export interface FormSessionConfig {
+	readonly page: FormPage;
+	readonly services: FormServices;
+	readonly identity: FormIdentity;
+	readonly bindings: readonly AsamFieldViewBinding[];
+	readonly coordinator?: AsamWriteCoordinator;
+	/** 与借入协调器一起跨服务配置替换保留原operationId。 */
+	readonly pendingOperations?: Map&lt;string, string&gt;;
+	readonly canWrite?: () =&gt; boolean;
+	readonly validate?: (
+		model: Readonly&lt;AsamFieldModel&gt;,
+		signal: AbortSignal
+	) =&gt; Promise&lt;readonly AsamEditIssue[]&gt;;
+	readonly onSaved?: (receipt: FormReceipt) =&gt; void;
+}
+export type FormPageSession = ReturnType&lt;typeof createFormPageSession&gt;;
+
+export interface AdvancedRow {
+	rowKey: string | number;
+	name: string;
+	quantity: number;
+}
+export interface AdvancedModel {
+	profile: { name: string; code: string; enabled: boolean; region: string; department: string };
+	finance: {
+		amount: number;
+		currency: string;
+		costCode: string;
+		invoice: boolean;
+		taxNote: string;
+	};
+	contact: {
+		name: string;
+		phone: string;
+		email: string;
+		showPrivate: boolean;
+		privateNote: string;
+	};
+	policy: {
+		publish: boolean;
+		keepNote: string;
+		clearNote: string;
+		date: string;
+		resourceId: string | null;
+	};
+	items: AdvancedRow[];
+}
+
+" data-asam-size="small" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="8" y="3" width="12" height="14" rx="2"/><path d="M16 17v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3"/></svg></span><!--]--></span></button></span><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { createFormPageSession } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> './Session.js'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { AsamControlSize } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { AsamValue } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	AsamEditIssue,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	AsamFieldModel,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	AsamWriteCoordinator,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	AsamFieldViewBinding</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">} </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/pro'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { AsamMoneyInputValue, AsamMoneyPayload, AsamResourceValue } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/pro'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> BasicInputModel</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	name</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	code</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	quantity</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> number</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	budget</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamMoneyInputValue</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	date</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	category</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamValue</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	enabled</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> boolean</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	tags</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> readonly</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamValue</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[];</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	note</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	nullable</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	optional</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	resource</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamResourceValue</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> BasicSubmitDto</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> extends</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Omit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">BasicInputModel</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'budget'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'resource'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	budget</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamMoneyPayload</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	resourceId</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> number</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> StepsInputModel</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> extends</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Omit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">BasicInputModel</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'resource'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'optional'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	region</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	department</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	contact</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	email</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	confirmed</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> boolean</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> StepsSubmitDto</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> extends</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Omit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">StepsInputModel</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'budget'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	budget</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamMoneyPayload</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormPage</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'P06'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'P07'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'P08'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormIdentity</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> scope</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> entity</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">	/** 不推断后端版本；变化即开始新会话。 */</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> version</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormRequest</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> extends</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormIdentity</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> page</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormPage</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> signal</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AbortSignal</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormWrite</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> extends</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormRequest</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> operationId</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormReceipt</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> operationId</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> entity</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> version</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> summary</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormLoad</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	{ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> status</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'found'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> model</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamFieldModel</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> status</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'empty'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> };</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormSubmit</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	|</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> status</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'success'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> receipt</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormReceipt</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	|</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">			readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> status</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'failure'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">			readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> message</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">			readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> issues</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?:</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> readonly</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamEditIssue</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[];</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	  }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	|</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> status</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'unknown'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> message</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> };</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormVerify</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	|</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> status</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'success'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> receipt</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormReceipt</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	|</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> status</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'not-applied'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'unknown'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> };</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormServices</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	load</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">request</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormRequest</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">FormLoad</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	validate</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		dto</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Readonly</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">AsamFieldModel</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>,</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		request</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormRequest</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">readonly</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamEditIssue</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[]>;</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	submit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">dto</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Readonly</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">AsamFieldModel</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">request</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormWrite</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">FormSubmit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	verify</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">request</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormWrite</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">FormVerify</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">	/** P07 的真实异步依赖读取；不向库注入业务 URL。 */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	departments</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		region</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		request</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormRequest</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">readonly</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">value</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">label</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }[]>;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> VersionedDraft</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> format</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'asam-forms-draft-v1'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> identity</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormIdentity</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> page</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormPage</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> model</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamFieldModel</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> DraftAdapter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	read</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">request</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormRequest</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">VersionedDraft</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> undefined</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	write</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">draft</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> VersionedDraft</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">request</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormRequest</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">void</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormPageProps</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> identity</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormIdentity</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> services</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormServices</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> disabled</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> boolean</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> readonly</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> boolean</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> size</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamControlSize</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> configurationVersion</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">	/** 宿主借入会话由宿主销毁；其 page/services/identity 必须匹配。 */</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> session</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormPageSession</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> draftAdapter</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> DraftAdapter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormPageEvents</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	saved</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> [</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">receipt</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">FormReceipt</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">];</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	cancel</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> [];</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormPageExpose</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	reload</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">void</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	submit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">boolean</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	verify</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">void</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	cancel</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> void</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormSessionConfig</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> page</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormPage</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> services</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormServices</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> identity</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormIdentity</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> bindings</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> readonly</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamFieldViewBinding</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[];</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> coordinator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamWriteCoordinator</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">	/** 与借入协调器一起跨服务配置替换保留原operationId。 */</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> pendingOperations</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Map</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> canWrite</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> boolean</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> validate</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		model</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Readonly</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">AsamFieldModel</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>,</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		signal</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AbortSignal</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Promise</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">readonly</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AsamEditIssue</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[]>;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	readonly</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> onSaved</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">receipt</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormReceipt</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> void</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormPageSession</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ReturnType</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">typeof</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> createFormPageSession>;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AdvancedRow</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	rowKey</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	name</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	quantity</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AdvancedModel</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	profile</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">name</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">code</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">enabled</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> boolean</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">region</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">department</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> };</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	finance</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		amount</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		currency</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		costCode</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		invoice</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> boolean</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		taxNote</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	};</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	contact</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		name</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		phone</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		email</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		showPrivate</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> boolean</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		privateNote</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	};</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	policy</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		publish</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> boolean</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		keepNote</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		clearNote</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		date</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">		resourceId</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	};</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">	items</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> AdvancedRow</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[];</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div></details>
+</article><aside class="page-toc" data-site-component="outline" aria-label="On this page"><span>On this page</span><nav><a href="#examples">Preview and downloads</a><a class="toc-sub" href="#demo-heading-template-forms">Try the template</a><a href="#api">Use and API</a><a href="#reference">Reference</a><a class="toc-sub" href="#heading-1">API and behavior</a><a class="toc-sub" href="#heading-2">Usage</a><a class="toc-sub" href="#types">Full type source</a></nav></aside></div>
+				<footer class="site-footer wrap" data-site-component="footer"><div><a class="footer-brand" href="/en/index.html"><span class="footer-brand-mark" aria-hidden="true"><img class="brand-image brand-image-light" src="/assets/brand/mark-light.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="32" height="32" alt="" aria-hidden="true" decoding="async"><img class="brand-image brand-image-dark" src="/assets/brand/mark-dark.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="32" height="32" alt="" aria-hidden="true" decoding="async"></span><span>ASAM UI</span></a><span>Consistent components for Vue 3.</span></div><div class="footer-links"><a href="/en/getting-started.html#release">Installation</a><a href="/en/design-system.html">Design system</a></div></footer></div><dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
+	<header class="site-search-top">
+		<h2 id="search-title">Search documentation</h2>
+		<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;Close &lt;kbd&gt;Esc&lt;/kbd&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;data-close-dialog&quot;:true,&quot;aria-label&quot;:&quot;Close search&quot;},&quot;idPrefix&quot;:&quot;document-8&quot;,&quot;injectionPrefix&quot;:10008}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-close-dialog="true" aria-label="Close search" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">Close <kbd>Esc</kbd></span><!--]--></span></button></span>
+	</header>
+	<div class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;form&quot;,&quot;content&quot;:&quot;&quot;,&quot;props&quot;:{&quot;class&quot;:&quot;site-search-form&quot;,&quot;role&quot;:&quot;search&quot;},&quot;idPrefix&quot;:&quot;document-9&quot;,&quot;injectionPrefix&quot;:10009}"><form class="el-form el-form--default el-form--label-right site-search-form asam-base-form asam-control-default" role="search" data-asam-size="default"><!--[--><!--[--><div data-document-form-content>
+		<div class="site-search-field-slot">
+			<div class="search-field">
+				<div class="site-search-input">
+					<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"/></svg>
+					<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;input&quot;,&quot;content&quot;:&quot;&quot;,&quot;props&quot;:{&quot;id&quot;:&quot;global-search&quot;,&quot;type&quot;:&quot;search&quot;,&quot;placeholder&quot;:&quot;Search documentation&quot;,&quot;autocomplete&quot;:&quot;off&quot;,&quot;maxlength&quot;:120,&quot;aria-label&quot;:&quot;Search base components, Pro components and templates&quot;},&quot;idPrefix&quot;:&quot;document-11&quot;,&quot;injectionPrefix&quot;:10011}"><div class="el-input el-input--default asam-input asam-control-default" style=""><!-- input --><!--[--><!-- prepend slot --><!--v-if--><div class="el-input__wrapper"><!-- prefix slot --><!--v-if--><input class="el-input__inner" data-asam-size="default" maxlength="120" type="search" autocomplete="off" tabindex="0" aria-label="Search base components, Pro components and templates" placeholder="Search documentation" style=""><!-- suffix slot --><!--v-if--></div><!-- append slot --><!--v-if--><!--]--></div></span>
+				</div>
+				<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;Search&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;submit&quot;,&quot;type&quot;:&quot;primary&quot;},&quot;idPrefix&quot;:&quot;document-12&quot;,&quot;injectionPrefix&quot;:10012}"><button ariadisabled="false" type="submit" class="el-button el-button--primary el-button--default asam-button asam-button-primary asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-asam-size="default" data-asam-button-type="primary" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">Search</span><!--]--></span></button></span>
+			</div>
+		</div>
+	</div><!--]--><!--]--></form></div>
+	<div id="search-results" class="search-results">
+		<section class="site-search-history" data-search-history hidden>
+			<h3>Recent searches</h3>
+			<div data-search-queries></div>
+		</section>
+		<div class="site-search-columns">
+			<section aria-labelledby="search-group-base">
+				<div class="site-search-column-heading">
+					<h3 id="search-group-base">Base components</h3>
+					<span data-search-count="base"></span>
+					<a data-search-browse href="/en/component-catalog.html">Browse catalog</a>
+				</div>
+				<ul data-search-items="base"></ul>
+				<p class="site-search-empty" data-search-empty="base" hidden></p>
+				<section class="site-search-documents" data-search-documents hidden><h4>Related documentation</h4><ul></ul></section>
+			</section><section aria-labelledby="search-group-pro">
+				<div class="site-search-column-heading">
+					<h3 id="search-group-pro">Pro components</h3>
+					<span data-search-count="pro"></span>
+					<a data-search-browse href="/en/pro/components.html">Browse catalog</a>
+				</div>
+				<ul data-search-items="pro"></ul>
+				<p class="site-search-empty" data-search-empty="pro" hidden></p>
+				
+			</section><section aria-labelledby="search-group-templates">
+				<div class="site-search-column-heading">
+					<h3 id="search-group-templates">Page templates</h3>
+					<span data-search-count="templates"></span>
+					<a data-search-browse href="/en/pro/templates.html">Browse catalog</a>
+				</div>
+				<ul data-search-items="templates"></ul>
+				<p class="site-search-empty" data-search-empty="templates" hidden></p>
+				
+			</section>
+		</div>
+	</div>
+	<footer class="site-search-footer">
+		<p class="site-search-shortcuts"><kbd>↑</kbd><kbd>↓</kbd> Select <kbd>Enter</kbd> Open <kbd>Esc</kbd> Close</p>
+		<p class="sr-only" role="status" data-search-status></p>
+		<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;Clear history&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;data-search-clear-history&quot;:true,&quot;hidden&quot;:true},&quot;idPrefix&quot;:&quot;document-10&quot;,&quot;injectionPrefix&quot;:10010}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-search-clear-history="true" hidden data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">Clear history</span><!--]--></span></button></span>
+	</footer>
+</dialog><div class="toast" role="status" aria-live="polite"></div></body></html>

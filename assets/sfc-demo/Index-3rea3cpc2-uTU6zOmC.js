@@ -1,0 +1,1 @@
+import"./vue.esm-bundler-5NdF0u5k.js";import{t as e}from"./scrollbar-CHHgxpZn.js";var t=Object.assign({},e,{install(e){e.component(`AsamScrollbar`,t)}});export{t};

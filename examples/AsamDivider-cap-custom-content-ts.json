@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDivider/cap-custom-content/ts/Demo.vue",
-			"sha256": "70544113ba2bc3828dd62a0cea7b3c2d1e26ee667f910b1e34a7ac54d9d6fa66",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-4736700fad27526acb49e7152ebaf3ee625ff6b3e94536d560e612be8f65d24d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/4736700fad27526acb49e7152ebaf3ee625ff6b3e94536d560e612be8f65d24d.txt\n-->\n<template>\n\t<div>\n\t\t<span>你看不见真实的自己，看到的只是影子。 </span>\n\t\t<AsamDivider content-position=\"left\">泰戈尔</AsamDivider>\n\t\t<span> 我的愿望喧闹地打断你的歌声，请让我静静聆听。 </span>\n\t\t<AsamDivider>\n\t\t\t<AsamIcon><star-filled /></AsamIcon>\n\t\t</AsamDivider>\n\t\t<span>我无法选择最好的，最好的选择了我。</span>\n\t\t<AsamDivider content-position=\"right\">泰戈尔</AsamDivider>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamDividerCapCustomContentDemo' });\nimport { AsamDivider, AsamIcon } from '@asam-ui/ui';\n\nimport { StarFilled } from '@asam-ui/icons-vue';\n</script>\n",
-			"originalSourceSha256": "faa4d9c28dd0aa64d42b479d02bc15a361c911c9cd3607ea53524a20e50bcc52",
+			"sha256": "bd762a9e2dc99459b1de06fd42d716e0283bbaf8539d0e6ac3c56d5a27d3641f",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-4736700fad27526acb49e7152ebaf3ee625ff6b3e94536d560e612be8f65d24d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/4736700fad27526acb49e7152ebaf3ee625ff6b3e94536d560e612be8f65d24d.txt\n-->\n<template>\n\t<div>\n\t\t<span>你看不见真实的自己，看到的只是影子。</span>\n\t\t<AsamDivider content-position=\"left\">泰戈尔</AsamDivider>\n\t\t<span>我的愿望喧闹地打断你的歌声，请让我静静聆听。</span>\n\t\t<AsamDivider>\n\t\t\t<AsamIcon><star-filled /></AsamIcon>\n\t\t</AsamDivider>\n\t\t<span>我无法选择最好的，最好的选择了我。</span>\n\t\t<AsamDivider content-position=\"right\">泰戈尔</AsamDivider>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamDividerCapCustomContentDemo' });\nimport { AsamDivider, AsamIcon } from '@asam-ui/ui';\n\nimport { StarFilled } from '@asam-ui/icons-vue';\n</script>\n",
+			"originalSourceSha256": "fd949a4bae10f1a15bfaf920baea5bb714394ea2b82bcac606a29cc52c12006b",
 			"notice": {
 				"id": "4736700fad27526acb49e7152ebaf3ee625ff6b3e94536d560e612be8f65d24d",
 				"url": "/licenses/source-notices/4736700fad27526acb49e7152ebaf3ee625ff6b3e94536d560e612be8f65d24d.txt",

@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "applications",
+	"productRoute": "/list/search/applications",
+	"components": [
+		"AsamCard",
+		"AsamProList",
+		"AsamInput",
+		"AsamCheckTag",
+		"AsamButton",
+		"AsamTag",
+		"AsamAvatar",
+		"AsamSelect",
+		"AsamOption",
+		"AsamFormDialog",
+		"AsamDetailDrawer"
+	],
+	"host": [
+		"original SearchSession/ListController",
+		"existing AsamProList/CardGroup geometry",
+		"shared original Editor/Detail workflow"
+	],
+	"limits": [
+		"Local synthetic records and metrics only; no new DTO/API",
+		"JS checkJs=false;strictTemplates=true;skipLibCheck=false"
+	]
+}

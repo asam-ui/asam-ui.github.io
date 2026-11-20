@@ -76,4 +76,6 @@ function configureAsam(provider: AsamDataProvider) {
 }
 ```
 
-这里 `app` 表示宿主已有的 Vue App 实例。全量模式把相同选项传给 `AsamUIFull`。已用 `provideAsamData(app, provider, options)` 的项目保留原初始化，不重复覆盖；已有插件带 theme/provider 参数时合并原参数。退出登录/租户切换由业务层调用 `setAsamDataScope`，scope 不包含凭据。芋道适配从同批 `@asam-ui/ui-yudao` 的真实类型取签名，不把 CL store 或 API 写进 Skill。
+这里 `app` 表示宿主已有的 Vue App 实例。全量模式把相同选项传给 `AsamUIFull`。已用 `provideAsamData(app, provider, options)` 的项目保留原初始化，不重复覆盖；已有插件带 theme/provider 参数时合并原参数。退出登录/租户切换由业务层调用 `setAsamDataScope`，scope 不包含凭据。芋道适配从实际安装的 `@asam-ui/ui-yudao` 类型取签名，不把 CL store 或 API 写进 Skill。
+
+平台应用需要桥接时，从 `@asam-ui/platform-provider` 根入口导入 `createPlatformProvider` 和 `AsamPlatformBridge`。由宿主提供所需的 `request`、`upload` 或 `dict`，调用 `createPlatformProvider(bridge)`，将返回值交给上述初始化入口。`dict` 由宿主实现缓存就绪与读取，使用 `ensure` 和 `get`，支持失效时再提供 `refresh`。接入前核对所装版本的声明和 UI peer。

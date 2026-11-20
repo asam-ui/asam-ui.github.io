@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamCountTo",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "更新目标值",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamCountTo :value=\"value\" :duration=\"500\" />\n\t\t<AsamButton type=\"primary\" @click=\"value += 100\">增加数值</AsamButton>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamCountTo } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst value = ref(1200);\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamCountTo :value=\"value\" :duration=\"500\" />\n\t\t<AsamButton type=\"primary\" @click=\"value += 100\">增加数值</AsamButton>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamCountTo } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst value = ref(1200);\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "motion",
+			"title": "减少动态效果",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamCountTo :value=\"2400\" reduced-motion unit=\"项\" />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamCountTo } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamCountTo :value=\"2400\" reduced-motion unit=\"项\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamCountTo } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

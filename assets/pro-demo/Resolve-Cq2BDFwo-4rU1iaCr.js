@@ -1,0 +1,1 @@
+import{v as e}from"./chunk-DmhlhrBa-BoWoli-h.js";function t(t,n){return t?.enabled.value?t.t(n):e[n]}export{t};

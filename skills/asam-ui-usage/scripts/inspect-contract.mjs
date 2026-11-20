@@ -9,7 +9,15 @@ const digest = (file) => createHash('sha256').update(readFileSync(file)).digest(
 export async function inspectContract(directory, { runtime = false } = {}) {
 	const root = resolve(directory);
 	const pkg = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8'));
-	if (!['@asam-ui/ui', '@asam-ui/ui-yudao', '@asam-ui/icons-vue'].includes(pkg.name))
+	if (
+		![
+			'@asam-ui/ui',
+			'@asam-ui/pro',
+			'@asam-ui/ui-yudao',
+			'@asam-ui/platform-provider',
+			'@asam-ui/icons-vue'
+		].includes(pkg.name)
+	)
 		throw new Error(`Unsupported ASAM package: ${pkg.name}`);
 	const files = new Map();
 	const collectTarget = (target) => {

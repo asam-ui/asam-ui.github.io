@@ -1,0 +1,1 @@
+import{En as e,Mn as t,Nn as n,Yn as r,ar as i,yr as a}from"./i18n-CJTJI6vg-3Uas6tNN.js";import{G as o,I as s}from"./components-ST0i0Wqf-D8-NR95E.js";var c=n({__name:`Demo`,setup(n){return(n,c)=>(r(),e(a(s),{label:`空状态卡片`},{default:i(()=>[t(a(o),{title:`暂无数据`,status:`empty`})]),_:1}))}});export{c as default};

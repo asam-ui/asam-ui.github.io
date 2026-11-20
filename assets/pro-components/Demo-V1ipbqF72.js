@@ -1,0 +1,1 @@
+import{Mn as e,Nn as t,On as n,Yn as r,ar as i,jn as a,yr as o}from"./i18n-CJTJI6vg-3Uas6tNN.js";import{y as s}from"./components-ST0i0Wqf-D8-NR95E.js";var c={class:`pro-example-stack`},l=t({__name:`Demo`,setup(t){return(t,l)=>(r(),n(`div`,c,[e(o(s),{label:`项目页脚`},{default:i(()=>[...l[0]||=[a(`© ASAM UI · 项目工作台`,-1)]]),_:1})]))}});export{l as default};

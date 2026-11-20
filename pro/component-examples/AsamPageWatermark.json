@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamPageWatermark",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "区域水印",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamPageWatermark :watermark=\"{ content: 'ASAM UI' }\">\n\t\t\t<div style=\"min-height: 180px; padding: 24px\">项目资料</div>\n\t\t</AsamPageWatermark>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamPageWatermark } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamPageWatermark :watermark=\"{ content: 'ASAM UI' }\">\n\t\t\t<div style=\"min-height: 180px; padding: 24px\">项目资料</div>\n\t\t</AsamPageWatermark>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamPageWatermark } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "visible",
+			"title": "受控显示",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamCheckboxItem v-model=\"visible\">显示水印</AsamCheckboxItem>\n\t\t<AsamPageWatermark :visible=\"visible\" :watermark=\"{ content: ['ASAM UI', '内部资料'] }\">\n\t\t\t<div style=\"min-height: 180px; padding: 24px\">设计说明</div>\n\t\t</AsamPageWatermark>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamCheckboxItem } from '@asam-ui/ui';\nimport { AsamPageWatermark } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst visible = ref(true);\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamCheckboxItem v-model=\"visible\">显示水印</AsamCheckboxItem>\n\t\t<AsamPageWatermark :visible=\"visible\" :watermark=\"{ content: ['ASAM UI', '内部资料'] }\">\n\t\t\t<div style=\"min-height: 180px; padding: 24px\">设计说明</div>\n\t\t</AsamPageWatermark>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamCheckboxItem } from '@asam-ui/ui';\nimport { AsamPageWatermark } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst visible = ref(true);\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

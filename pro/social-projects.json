@@ -1,0 +1,449 @@
+{
+	"schemaVersion": 1,
+	"projects": [
+		{
+			"language": "ts",
+			"source": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/social-source.zip",
+			"project": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/social.zip",
+			"files": [
+				{
+					"path": "package.json",
+					"bytes": 1134,
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45"
+				},
+				{
+					"path": "pnpm-lock.yaml",
+					"bytes": 68309,
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf"
+				},
+				{
+					"path": "vendor/ui-158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88.tgz",
+					"bytes": 1282110,
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				},
+				{
+					"path": "vendor/pro-f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e.tgz",
+					"bytes": 483458,
+					"sha256": "f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e"
+				},
+				{
+					"path": "vendor/yudao-6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c.tgz",
+					"bytes": 5208,
+					"sha256": "6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c"
+				},
+				{
+					"path": "vendor/icons-feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84.tgz",
+					"bytes": 114588,
+					"sha256": "feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84"
+				},
+				{
+					"path": "vendor/maps-96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892.tgz",
+					"bytes": 105688,
+					"sha256": "96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892"
+				},
+				{
+					"path": "pnpm-workspace.yaml",
+					"bytes": 237,
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728"
+				},
+				{
+					"path": "patches/element-plus-2.14.7.patch",
+					"bytes": 69876,
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4"
+				},
+				{
+					"path": "main.ts",
+					"bytes": 1787,
+					"sha256": "83f9fbe20fc71006b8734806465ab45925c60a188cdb26ea8a61d3730fe08b7e"
+				},
+				{
+					"path": "index.html",
+					"bytes": 284,
+					"sha256": "c26bfe69b5d67341954d759297c611e7c2690fe52eff99f24359d8fde96f54fd"
+				},
+				{
+					"path": "vite.config.ts",
+					"bytes": 179,
+					"sha256": "262fa4fbf2b978036a772e97f0035d81679224e88fd81ac21692fc73ee530891"
+				},
+				{
+					"path": "tsconfig.json",
+					"bytes": 501,
+					"sha256": "3c13ffb522863436eba82b195fd6584253154b32249158422ccbce96623f3bec"
+				},
+				{
+					"path": "README.md",
+					"bytes": 537,
+					"sha256": "ed5c4424af50f8b36ea3e515681edee64a31e27e710bf1933d319d61893d2198"
+				},
+				{
+					"path": "templates/shared/Id.ts",
+					"bytes": 974,
+					"sha256": "67a03eb6638e2f1d083653d269fd2dca18fcbc9f853df48c2316459ca8c198c5"
+				},
+				{
+					"path": "templates/shared/ListSurfaces.css",
+					"bytes": 422,
+					"sha256": "9093bdee0e0585c455d01eb376c4d822ee306d10b913e04acf5adcce28ef5ffa"
+				},
+				{
+					"path": "templates/shared/ListToolbar.vue",
+					"bytes": 3919,
+					"sha256": "ec648bb260331ffe4bbb70178fcb547a42dc2d00353be1e7cddb0d69a49f43ca"
+				},
+				{
+					"path": "templates/shared/ListToolbarTypes.ts",
+					"bytes": 277,
+					"sha256": "ebf19c04e4500d7ac4e9c9361f6328921904e956edb34ffc0cc4e80454363176"
+				},
+				{
+					"path": "templates/social/Adapter.ts",
+					"bytes": 1660,
+					"sha256": "3c072914fdf174a2558c6bf22d1a63703b5dafedba398dcdf474905de78e6583"
+				},
+				{
+					"path": "templates/social/BrandSocialPage.vue",
+					"bytes": 1919,
+					"sha256": "b843f16efc0c239c1730a27ff8c68892977cbe30c01bd4ff4ab9d3f6596713f2"
+				},
+				{
+					"path": "templates/social/I18n.ts",
+					"bytes": 338,
+					"sha256": "c205304ed77679ee66c9ee340d139cc989aabadbb897048d029081ae596bd0e7"
+				},
+				{
+					"path": "templates/social/I18nEn.ts",
+					"bytes": 7289,
+					"sha256": "e048ed49c531ef87d8e6469a413c450ed88793a500ac1db743cc4446eea8d68b"
+				},
+				{
+					"path": "templates/social/I18nParameters.ts",
+					"bytes": 6748,
+					"sha256": "6b681c3d4933476e798ad9edb56cd53d4b98178552fb788e0ca1fa8ea8acd809"
+				},
+				{
+					"path": "templates/social/I18nZh.ts",
+					"bytes": 6893,
+					"sha256": "f601be41175f5d467629522ad01f0eb05e72d9ecd69c6b33550be17e28d41efc"
+				},
+				{
+					"path": "templates/social/MinimalSocialPage.vue",
+					"bytes": 1610,
+					"sha256": "590601b47550f3beff07dff98fd6b7abee91ea290efc817d6d566044b1eac533"
+				},
+				{
+					"path": "templates/social/Social.css",
+					"bytes": 9603,
+					"sha256": "7da80b69d4b5e213eec1c7c883b38ac9c89783d5732e02796f8e3f9a8581f0ec"
+				},
+				{
+					"path": "templates/social/Social.ts",
+					"bytes": 14257,
+					"sha256": "346dfe5993c54e7a5164aa84bc0a1276848b806abaa7bbcea1185aedf87e51dd"
+				},
+				{
+					"path": "templates/social/TechSocialPage.vue",
+					"bytes": 2550,
+					"sha256": "ecb53d58263f94df1eadeb244273477e18d28e242de75cea52324a8450b1293e"
+				},
+				{
+					"path": "templates/social/Types.ts",
+					"bytes": 2588,
+					"sha256": "682016d8269871e6ff67dc5f914b4b5bb9a814b96d0ee30afa95d996330dd5ec"
+				},
+				{
+					"path": "templates/social/Validation.ts",
+					"bytes": 3313,
+					"sha256": "1380db804e8e9ad18e4f0c6a8e8d4e6668fe1db6495ac53ea8c2aabb4e8fde3a"
+				},
+				{
+					"path": "templates/social/assets/avatar.svg",
+					"bytes": 241,
+					"sha256": "010b7389e7a739bad6a5225091c4040e1fccab9e26e4e0124d0a06066b221994"
+				},
+				{
+					"path": "templates/social/assets/cover.svg",
+					"bytes": 316,
+					"sha256": "b2b5db024fcdb0650a87c40c6de718c06a443cbcde5b48ba7c2cde8f640563dd"
+				},
+				{
+					"path": "templates/social/config.ts",
+					"bytes": 3557,
+					"sha256": "90e707842a8ca2c30c5e9d69004d09a68a3f858742ad54b997675c9752e61dfd"
+				},
+				{
+					"path": "templates/social/examples/App.vue",
+					"bytes": 9444,
+					"sha256": "ccee8d37bf730c22ac059865afba72289bc5f6c191ca8e69375056ebd8311e37"
+				},
+				{
+					"path": "templates/social/examples/Fixture.ts",
+					"bytes": 9855,
+					"sha256": "c4f14ff5f7083435edb2701e83187da1b7b7c52ba59c710ab2a791679e883d92"
+				},
+				{
+					"path": "templates/social/examples/main.ts",
+					"bytes": 358,
+					"sha256": "6da5d3f0e5f0b23308267b1e98d32d0ae5271a6dbc2763ddfec7485af9085ae5"
+				},
+				{
+					"path": "templates/social/parts/SocialDetail.vue",
+					"bytes": 5988,
+					"sha256": "dd711440895fbcdbb66b29d2606608bebbe48a8648510782e93480649e39574e"
+				},
+				{
+					"path": "templates/social/parts/SocialFeed.vue",
+					"bytes": 9864,
+					"sha256": "79cab344d9512e1e07b2b6f814e9ce5604763bcbf1a6c9790627ebb550a93d95"
+				},
+				{
+					"path": "templates/social/parts/SocialImage.vue",
+					"bytes": 580,
+					"sha256": "16995af7119b2ed7187db3beecbefaeb444d3c275f97bc9ac7b286b980f15446"
+				},
+				{
+					"path": "templates/social/useSocialPage.ts",
+					"bytes": 380,
+					"sha256": "7817151f0a0ec49bbb449861afc4b69e2786c4859107a6ac60bee8f5d18866dc"
+				},
+				{
+					"path": "website-hosts/social.ts",
+					"bytes": 1001,
+					"sha256": "1baf92b8dfc22de7d81a63eba7b3abf0e24782bf74127d44d29dd64d581568c6"
+				},
+				{
+					"path": "LICENSE",
+					"bytes": 3139,
+					"sha256": "af998569465ec6ffcfe60b1689276c9c9b91856d852a0fbca808f6e2e3b271b5"
+				},
+				{
+					"path": "THIRD_PARTY_NOTICES.md",
+					"bytes": 1010,
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9"
+				}
+			]
+		},
+		{
+			"language": "js",
+			"source": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/social-js-source.zip",
+			"project": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/social-js.zip",
+			"files": [
+				{
+					"path": "package.json",
+					"bytes": 1134,
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45"
+				},
+				{
+					"path": "pnpm-lock.yaml",
+					"bytes": 68309,
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf"
+				},
+				{
+					"path": "vendor/ui-158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88.tgz",
+					"bytes": 1282110,
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				},
+				{
+					"path": "vendor/pro-f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e.tgz",
+					"bytes": 483458,
+					"sha256": "f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e"
+				},
+				{
+					"path": "vendor/yudao-6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c.tgz",
+					"bytes": 5208,
+					"sha256": "6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c"
+				},
+				{
+					"path": "vendor/icons-feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84.tgz",
+					"bytes": 114588,
+					"sha256": "feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84"
+				},
+				{
+					"path": "vendor/maps-96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892.tgz",
+					"bytes": 105688,
+					"sha256": "96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892"
+				},
+				{
+					"path": "pnpm-workspace.yaml",
+					"bytes": 237,
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728"
+				},
+				{
+					"path": "patches/element-plus-2.14.7.patch",
+					"bytes": 69876,
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4"
+				},
+				{
+					"path": "main.js",
+					"bytes": 1743,
+					"sha256": "2668136964076744307a687f3176edf8837a5e422ad8ff0695d0f5a3e8a31675"
+				},
+				{
+					"path": "index.html",
+					"bytes": 284,
+					"sha256": "f0fd86c14cdefc210ab18dcd75cd8796a69ace028ebc593b1487ca8e05fa3a00"
+				},
+				{
+					"path": "vite.config.ts",
+					"bytes": 179,
+					"sha256": "262fa4fbf2b978036a772e97f0035d81679224e88fd81ac21692fc73ee530891"
+				},
+				{
+					"path": "tsconfig.json",
+					"bytes": 501,
+					"sha256": "3c13ffb522863436eba82b195fd6584253154b32249158422ccbce96623f3bec"
+				},
+				{
+					"path": "README.md",
+					"bytes": 537,
+					"sha256": "593f3fd9cae62c08e12e4d02fcead08ae3e4c3d3c6d2fd04386cfaf6524f692a"
+				},
+				{
+					"path": "templates/shared/Id.js",
+					"bytes": 943,
+					"sha256": "7ee1c9566996f23d695bf8ef551480cd9cc8d4839008da38723327158ec90f06"
+				},
+				{
+					"path": "templates/shared/ListSurfaces.css",
+					"bytes": 422,
+					"sha256": "9093bdee0e0585c455d01eb376c4d822ee306d10b913e04acf5adcce28ef5ffa"
+				},
+				{
+					"path": "templates/shared/ListToolbar.vue",
+					"bytes": 3831,
+					"sha256": "039ae43d8e12920b71a4fba593cd734148849627fe0fb365eaefc19f81f1d2f5"
+				},
+				{
+					"path": "templates/shared/ListToolbarTypes.js",
+					"bytes": 11,
+					"sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+				},
+				{
+					"path": "templates/social/Adapter.js",
+					"bytes": 714,
+					"sha256": "dd74407c69f99ae9b0475865e7c40a67b4207b0d7228a0e460360e8cbad34e3d"
+				},
+				{
+					"path": "templates/social/BrandSocialPage.vue",
+					"bytes": 1925,
+					"sha256": "667160ba5f7226a170fee84beaae5e2ba00b52522e621ee891b2f649bbb58a01"
+				},
+				{
+					"path": "templates/social/I18n.js",
+					"bytes": 338,
+					"sha256": "c205304ed77679ee66c9ee340d139cc989aabadbb897048d029081ae596bd0e7"
+				},
+				{
+					"path": "templates/social/I18nEn.js",
+					"bytes": 7057,
+					"sha256": "36d43842a9d1e1bdd60e765d560f62c223b64f8a2f40f248de2f03804fe5f849"
+				},
+				{
+					"path": "templates/social/I18nParameters.js",
+					"bytes": 11,
+					"sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+				},
+				{
+					"path": "templates/social/I18nZh.js",
+					"bytes": 6661,
+					"sha256": "421c58933ca6f35ca619324bc4fe5e7265ad75d648997b6f1b2f9ef746533686"
+				},
+				{
+					"path": "templates/social/MinimalSocialPage.vue",
+					"bytes": 1617,
+					"sha256": "fd218b490e08b3add0b2d243be75517ac813ff1e841c435a73c3badcfb950fc8"
+				},
+				{
+					"path": "templates/social/Social.css",
+					"bytes": 9603,
+					"sha256": "7da80b69d4b5e213eec1c7c883b38ac9c89783d5732e02796f8e3f9a8581f0ec"
+				},
+				{
+					"path": "templates/social/Social.js",
+					"bytes": 13545,
+					"sha256": "ab449d03c00f0e2347e4ab0692bebc7bd3550006e285222f97613190acfee027"
+				},
+				{
+					"path": "templates/social/TechSocialPage.vue",
+					"bytes": 2547,
+					"sha256": "00d406450203f84ec565a948de5e5ce21dd111de6eae7eaceb2d81282a2563f9"
+				},
+				{
+					"path": "templates/social/Types.js",
+					"bytes": 194,
+					"sha256": "e974875d374a4cc8c492e8a3d485e1184a84e8e3d22a440dbc87d03de03cd931"
+				},
+				{
+					"path": "templates/social/Validation.js",
+					"bytes": 2861,
+					"sha256": "95f340f8caaa63e6be665d582571e5d0f80bf6a6fa68d343d80aa012e76aca62"
+				},
+				{
+					"path": "templates/social/assets/avatar.svg",
+					"bytes": 241,
+					"sha256": "010b7389e7a739bad6a5225091c4040e1fccab9e26e4e0124d0a06066b221994"
+				},
+				{
+					"path": "templates/social/assets/cover.svg",
+					"bytes": 316,
+					"sha256": "b2b5db024fcdb0650a87c40c6de718c06a443cbcde5b48ba7c2cde8f640563dd"
+				},
+				{
+					"path": "templates/social/config.js",
+					"bytes": 3226,
+					"sha256": "8acc9cd8d13f977f5240d5577e1ad1f78fbf7dfcf08005b09797dccec69fa2c0"
+				},
+				{
+					"path": "templates/social/examples/App.vue",
+					"bytes": 9095,
+					"sha256": "a30d12762470002a78357fc0becc80800537d7080d7d3a634526a3535246a96a"
+				},
+				{
+					"path": "templates/social/examples/Fixture.js",
+					"bytes": 8518,
+					"sha256": "06ccfdde5fab98277187544577780463274b60040f284344ac055071a45b035c"
+				},
+				{
+					"path": "templates/social/examples/main.js",
+					"bytes": 358,
+					"sha256": "6da5d3f0e5f0b23308267b1e98d32d0ae5271a6dbc2763ddfec7485af9085ae5"
+				},
+				{
+					"path": "templates/social/parts/SocialDetail.vue",
+					"bytes": 5835,
+					"sha256": "11dd64477ce2d5dfb8f1340003c74bb3621117dc0e4433f3b9514f63a52caa1d"
+				},
+				{
+					"path": "templates/social/parts/SocialFeed.vue",
+					"bytes": 9157,
+					"sha256": "2f8eae39e2a61b1e713299b71a1d5d4125efb9b171c3cde2f7a90f415eadfbb2"
+				},
+				{
+					"path": "templates/social/parts/SocialImage.vue",
+					"bytes": 573,
+					"sha256": "e1f8669d6647f458e99ccddad0bf6efd642744ec6a51c7c6a94d9fd387b0f38b"
+				},
+				{
+					"path": "templates/social/useSocialPage.js",
+					"bytes": 312,
+					"sha256": "ee8648eeea9b2f9134db7505445edcb733e99be76441c1cfd81c987d1814a03d"
+				},
+				{
+					"path": "website-hosts/social.js",
+					"bytes": 838,
+					"sha256": "0ed0863acbb37c2c73c7eb3e7317dd27b021287301973c003a0bc1b41ccea63e"
+				},
+				{
+					"path": "LICENSE",
+					"bytes": 3139,
+					"sha256": "af998569465ec6ffcfe60b1689276c9c9b91856d852a0fbca808f6e2e3b271b5"
+				},
+				{
+					"path": "THIRD_PARTY_NOTICES.md",
+					"bytes": 1010,
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"entry": "src/main.ts",
+	"files": [
+		{
+			"path": "src/App.vue",
+			"source": "<template>\n\t<h1>挂载或重新激活</h1>\n\t<p>首次挂载执行一次，KeepAlive重新激活时再次执行。</p>\n\t<AsamButton @click=\"mounted = !mounted\">卸载 / 重新挂载</AsamButton><Minimal v-if=\"mounted\" />\n</template>\n<script setup lang=\"ts\">\nimport { ref } from 'vue';\nimport { AsamButton } from '@asam-ui/ui';\nimport Minimal from './MinimalExample.vue';\nconst mounted = ref(true);\n</script>\n"
+		},
+		{
+			"path": "src/LifecycleActivity.vue",
+			"source": "<template>\n\t<p>缓存中的内容</p>\n</template>\n<script setup lang=\"ts\">\nimport { onMountedOrActivated } from '@asam-ui/pro/application/composables/on-mounted-or-activated';\nconst emit = defineEmits<{ active: [] }>();\nonMountedOrActivated(() => emit('active'));\n</script>\n"
+		},
+		{
+			"path": "src/main.ts",
+			"source": "import { createApp } from 'vue';\nimport type { App, Component } from 'vue';\nimport 'element-plus/dist/index.css';\nimport '@asam-ui/ui/style.css';\nimport '@asam-ui/pro/style.css';\nimport * as entry from './inline-entry';\nconst demo: {\n\tdefault: Component;\n\tscoped?: boolean;\n\tconfigure?: (app: App) => void | (() => void) | Promise<void | (() => void)>;\n} = entry;\nconst app = createApp(\n\tdemo.default,\n\tdemo.scoped\n\t\t? { scopeId: 'composable/on-mounted-or-activated:demo-composable-on-mounted-or-activated' }\n\t\t: undefined\n);\nconst cleanup = await demo.configure?.(app);\nif (typeof cleanup === 'function') app.onUnmount(cleanup);\napp.mount('#app');\nwindow.addEventListener('pagehide', () => app.unmount(), { once: true });\n"
+		},
+		{
+			"path": "src/MinimalExample.vue",
+			"source": "<template>\n\t<AsamButton @click=\"shown = !shown\">切换缓存区域</AsamButton\n\t><KeepAlive><Activity v-if=\"shown\" @active=\"count++\" /></KeepAlive\n\t><output>执行次数：{{ count }}</output>\n</template>\n<script setup lang=\"ts\">\nimport { ref } from 'vue';\nimport { AsamButton } from '@asam-ui/ui';\nimport Activity from './LifecycleActivity.vue';\nconst shown = ref(true);\nconst count = ref(0);\n</script>\n"
+		},
+		{
+			"path": "src/inline-entry.ts",
+			"source": "export { default } from './MinimalExample.vue';\n"
+		}
+	]
+}

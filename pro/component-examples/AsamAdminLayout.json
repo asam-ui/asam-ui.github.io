@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamAdminLayout",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "页面区域",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamAdminLayout v-model:settings=\"settings\">\n\t\t\t<template #header><strong>项目工作台</strong></template>\n\t\t\t<template #sidebar>\n\t\t\t\t<p>项目概览</p>\n\t\t\t\t<p>协作成员</p>\n\t\t\t</template>\n\t\t\t<AsamPageContainer title=\"项目概览\"><p>当前项目进度为 65%。</p></AsamPageContainer>\n\t\t\t<template #footer><AsamFooter>ASAM UI</AsamFooter></template>\n\t\t</AsamAdminLayout>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamAdminLayout, AsamPageContainer, AsamFooter } from '@asam-ui/pro/components';\nimport { resolveAsamLayoutSettings } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst settings = ref(resolveAsamLayoutSettings());\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamAdminLayout v-model:settings=\"settings\">\n\t\t\t<template #header><strong>项目工作台</strong></template>\n\t\t\t<template #sidebar>\n\t\t\t\t<p>项目概览</p>\n\t\t\t\t<p>协作成员</p>\n\t\t\t</template>\n\t\t\t<AsamPageContainer title=\"项目概览\"><p>当前项目进度为 65%。</p></AsamPageContainer>\n\t\t\t<template #footer><AsamFooter>ASAM UI</AsamFooter></template>\n\t\t</AsamAdminLayout>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamAdminLayout, AsamPageContainer, AsamFooter } from '@asam-ui/pro/components';\nimport { resolveAsamLayoutSettings } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst settings = ref(resolveAsamLayoutSettings());\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "settings",
+			"title": "布局密度",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamAdminLayout :settings=\"settings\">\n\t\t\t<template #header><strong>紧凑工作台</strong></template>\n\t\t\t<AsamPageContainer title=\"项目内容\"><p>内容区域随容器宽度变化。</p></AsamPageContainer>\n\t\t</AsamAdminLayout>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamAdminLayout, AsamPageContainer } from '@asam-ui/pro/components';\nimport { resolveAsamLayoutSettings } from '@asam-ui/pro/components';\nconst settings = resolveAsamLayoutSettings({ density: 'compact' });\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamAdminLayout :settings=\"settings\">\n\t\t\t<template #header><strong>紧凑工作台</strong></template>\n\t\t\t<AsamPageContainer title=\"项目内容\"><p>内容区域随容器宽度变化。</p></AsamPageContainer>\n\t\t</AsamAdminLayout>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamAdminLayout, AsamPageContainer } from '@asam-ui/pro/components';\nimport { resolveAsamLayoutSettings } from '@asam-ui/pro/components';\nconst settings = resolveAsamLayoutSettings({ density: 'compact' });\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamMessageBox/ep2147-alert/js/Demo.vue",
-			"sha256": "fb91d901683f3a6a687206d649a306be08c2640c5873a6eef50c37ae57dcee04",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-7a2f37de2f4da99f2640e45637ed85c72b03862bd2c0287f4a8c8bdd64887f69.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/7a2f37de2f4da99f2640e45637ed85c72b03862bd2c0287f4a8c8bdd64887f69.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"open\">点击打开消息框</AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamMessage, AsamMessageBox } from '@asam-ui/ui';\nimport { onBeforeUnmount } from 'vue';\nconst open = () => {\n\tAsamMessageBox.alert('这是一条消息。', '标题', {\n\t\t// if you want to disable its autofocus\n\t\t// autofocus: false,\n\t\tconfirmButtonText: '确认',\n\t\tcallback: (action) => {\n\t\t\ttrackAsamMessage(\n\t\t\t\tAsamMessage({\n\t\t\t\t\ttype: 'info',\n\t\t\t\t\tmessage: `操作结果：${action}`\n\t\t\t\t})\n\t\t\t);\n\t\t}\n\t}).catch((action) => {\n\t\tif (action !== 'cancel' && action !== 'close') throw action;\n\t});\n};\nconst ownedAsamMessage = new Set();\nlet mountedAsamMessage = true;\nconst trackAsamMessage = (handle) => {\n\tif (mountedAsamMessage) ownedAsamMessage.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamMessage = false;\n\tfor (const handle of ownedAsamMessage) handle.close();\n\townedAsamMessage.clear();\n});\n</script>\n",
-			"originalSourceSha256": "686fbfb47413a810eb585428cb8c5c5d3a8606365b23f1601f0b0cc26a3aad3c",
+			"sha256": "b40fd80068c9fc0a06e8a53de6f5fe739731cb5e9dda5736cd17faba0923cf38",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-7a2f37de2f4da99f2640e45637ed85c72b03862bd2c0287f4a8c8bdd64887f69.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/7a2f37de2f4da99f2640e45637ed85c72b03862bd2c0287f4a8c8bdd64887f69.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" @click=\"open\">点击打开消息框</AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamMessage, AsamMessageBox } from '@asam-ui/ui';\nimport { onBeforeUnmount } from 'vue';\nconst open = () => {\n\tAsamMessageBox.alert('这是一条消息。', '标题', {\n\t\t// if you want to disable its autofocus\n\t\t// autofocus: false,\n\t\tconfirmButtonText: '确认',\n\t\tcallback: (action) => {\n\t\t\ttrackAsamMessage(\n\t\t\t\tAsamMessage({\n\t\t\t\t\ttype: 'info',\n\t\t\t\t\tmessage: `操作结果：${action}`\n\t\t\t\t})\n\t\t\t);\n\t\t}\n\t}).catch((action) => {\n\t\tif (action !== 'cancel' && action !== 'close') throw action;\n\t});\n};\nconst ownedAsamMessage = new Set();\nlet mountedAsamMessage = true;\nconst trackAsamMessage = (handle) => {\n\tif (mountedAsamMessage) ownedAsamMessage.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamMessage = false;\n\tfor (const handle of ownedAsamMessage) handle.close();\n\townedAsamMessage.clear();\n});\n</script>\n",
+			"originalSourceSha256": "91a93d08ede9859244b46ac64ed7135c5e5e5e5ca4d92fb06085e4cce3f4cc11",
 			"notice": {
 				"id": "7a2f37de2f4da99f2640e45637ed85c72b03862bd2c0287f4a8c8bdd64887f69",
 				"url": "/licenses/source-notices/7a2f37de2f4da99f2640e45637ed85c72b03862bd2c0287f4a8c8bdd64887f69.txt",

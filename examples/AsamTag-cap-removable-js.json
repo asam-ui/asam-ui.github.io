@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTag/cap-removable/js/Demo.vue",
-			"sha256": "2df77039d9438c93a2198253c53710a82acde5377ab5564d9f873404b5f812de",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25.txt\n-->\n<template>\n\t<div class=\"flex gap-2\">\n\t\t<AsamTag v-for=\"tag in tags\" :key=\"tag.name\" closable :type=\"tag.type\">\n\t\t\t{{ tag.name }}\n\t\t</AsamTag>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTagCapRemovableDemo' });\nimport { AsamTag } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst tags = ref([\n\t{ name: '标签一', type: 'primary' },\n\t{ name: '标签二', type: 'success' },\n\t{ name: '标签三', type: 'info' },\n\t{ name: '标签四', type: 'warning' },\n\t{ name: '标签五', type: 'danger' }\n]);\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.gap-2 {\n\tgap: 0.5rem;\n}\n</style>\n",
-			"originalSourceSha256": "42cb3a1182e8c5c3a98becd5e915a3d12074fa903c04d2a2967de779add48e32",
+			"sha256": "b05aa44ae64f1ca9038db228e3e49a6f74460f5178f500bf330df02a3f07016f",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25.txt\n-->\n<template>\n\t<div class=\"flex gap-2\">\n\t\t<AsamTag\n\t\t\tv-for=\"tag in tags\"\n\t\t\t:key=\"tag.name\"\n\t\t\tclosable\n\t\t\t:type=\"tag.type\"\n\t\t\t@close=\"removeTag(tag.name)\"\n\t\t>\n\t\t\t{{ tag.name }}\n\t\t</AsamTag>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTagCapRemovableDemo' });\nimport { AsamTag } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst tags = ref([\n\t{ name: '标签一', type: 'primary' },\n\t{ name: '次要', type: 'secondary' },\n\t{ name: '渐变', type: 'gradient' },\n\t{ name: '标签二', type: 'success' },\n\t{ name: '标签三', type: 'info' },\n\t{ name: '标签四', type: 'warning' },\n\t{ name: '标签五', type: 'danger' }\n]);\n\nfunction removeTag(name) {\n\ttags.value = tags.value.filter((tag) => tag.name !== name);\n}\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n\tflex-wrap: wrap;\n}\n\n.gap-2 {\n\tgap: 0.5rem;\n}\n</style>\n",
+			"originalSourceSha256": "638336a58e235260708c42df3d27f24133d81c73862b28ea4c8f22aedea22da5",
 			"notice": {
 				"id": "bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25",
 				"url": "/licenses/source-notices/bdd8bd15339c35f76866da98d40a45788591cfbab00a6b7621f80c4976bcde25.txt",

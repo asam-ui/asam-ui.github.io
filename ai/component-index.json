@@ -1,6 +1,6 @@
 {
-	"version": "1.0.0",
-	"docsVersion": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+	"version": "2.0.1",
+	"docsVersion": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
@@ -589,6 +589,18 @@
 		"./components/vAsamRepeatClick/Index": {
 			"types": "./dist/components/vAsamRepeatClick/Index.d.ts",
 			"import": "./dist/components/vAsamRepeatClick/Index.js"
+		},
+		"./i18n": {
+			"types": "./dist/i18n/index.d.ts",
+			"import": "./dist/i18n/index.js"
+		},
+		"./i18n/en": {
+			"types": "./dist/i18n/en.d.ts",
+			"import": "./dist/i18n/en.js"
+		},
+		"./i18n/zh-CN": {
+			"types": "./dist/i18n/zh-CN.d.ts",
+			"import": "./dist/i18n/zh-CN.js"
 		}
 	},
 	"peerDependencies": {
@@ -603,7 +615,7 @@
 			"kind": "component",
 			"category": "配置",
 			"input": "apps/website/content/components/AsamConfigProvider.json",
-			"bodySha256": "a3aed1fa5bb43986bafb544583f991d65d0209e2cbd1f93aedbeb17874ff96b5",
+			"bodySha256": "a14db9a8393af0e74f3fadcef303088039495cebbcc56c8064532da0dbaf59c6",
 			"api": [
 				{
 					"kind": "props",
@@ -677,6 +689,10 @@
 					"key": "AsamConfigProvider/basic"
 				},
 				{
+					"id": "semantic-colors",
+					"key": "AsamConfigProvider/semantic-colors"
+				},
+				{
 					"id": "cap-usage",
 					"key": "AsamConfigProvider/cap-usage"
 				},
@@ -715,12 +731,23 @@
 			]
 		},
 		{
+			"name": "AsamI18nKey",
+			"documentation": "/component-AsamI18nKey.html",
+			"kind": "component",
+			"category": "组件",
+			"bodySha256": "b7fc7a28ebcff71efd4b3f1c7cefb530b2e7bb50491f42181663c4548f4a8df2",
+			"api": [],
+			"inherits": [],
+			"related": [],
+			"demos": []
+		},
+		{
 			"name": "AsamButton",
 			"documentation": "/component-AsamButton.html",
 			"kind": "component",
 			"category": "基础输入与操作",
 			"input": "apps/website/content/components/AsamButton.json",
-			"bodySha256": "04084d1a37a67a7f2e5ecece4ef8c946711823203c9c46dd415bb7c150281801",
+			"bodySha256": "045e820fa6b477e8600d16e9bb7a5d61240f094226da0c690b6ad0660359e2e7",
 			"api": [
 				{
 					"kind": "props",
@@ -787,7 +814,7 @@
 			"kind": "service",
 			"category": "复合组件",
 			"input": "apps/website/content/components/AsamEditor.json",
-			"bodySha256": "272e4120384ccd2ee8558671589f2e5d0db26d0c559887454e012147be165435",
+			"bodySha256": "ecbd18725b265b860ffe3867e9e26475eecd9d7bd45630dbd735d11506f9cb60",
 			"api": [
 				{
 					"kind": "props",
@@ -799,6 +826,11 @@
 					"kind": "events",
 					"source": "packages/ui/src/components/AsamEditor/Types.ts",
 					"symbol": "AsamEditorEmits"
+				},
+				{
+					"kind": "slots",
+					"source": "packages/ui/src/components/AsamEditor/Types.ts",
+					"symbol": "AsamEditorSlots"
 				},
 				{
 					"kind": "expose",
@@ -829,6 +861,16 @@
 					"kind": "types",
 					"source": "packages/ui/src/components/AsamEditor/Types.ts",
 					"symbol": "AsamEditorImageResource"
+				},
+				{
+					"kind": "types",
+					"source": "packages/ui/src/components/AsamEditor/Types.ts",
+					"symbol": "AsamEditorAttachmentResource"
+				},
+				{
+					"kind": "types",
+					"source": "packages/ui/src/components/AsamEditor/Types.ts",
+					"symbol": "AsamEditorResourcePicker"
 				},
 				{
 					"kind": "types",
@@ -991,7 +1033,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamCard.json",
-			"bodySha256": "b251be4b281c013857c1844099e96c042dcf5c0c804893eb11f6b78512e4f5cf",
+			"bodySha256": "9722fddb6e496a316e10f6ed608f3a73e21d6a4c570c6bbb3abfe0159bcbb6f2",
 			"api": [
 				{
 					"kind": "props",
@@ -1054,7 +1096,7 @@
 			"kind": "component",
 			"category": "复合组件",
 			"input": "apps/website/content/components/AsamCardList.json",
-			"bodySha256": "74dd9a162e725fc480f88a66bcbf36d6ca40015a16a29f488eec35d6a3756fef",
+			"bodySha256": "fc29adedac40a48f4c79ddf47b77cc27844e0769d1130407126f04977167de8b",
 			"api": [
 				{
 					"kind": "props",
@@ -1076,6 +1118,26 @@
 					"kind": "types",
 					"source": "packages/ui/src/components/AsamCardList/Types.ts",
 					"symbol": "AsamCardListAlign"
+				},
+				{
+					"kind": "types",
+					"source": "packages/ui/src/components/AsamCardList/Types.ts",
+					"symbol": "AsamCardLayout"
+				},
+				{
+					"kind": "types",
+					"source": "packages/ui/src/components/AsamCardList/Types.ts",
+					"symbol": "AsamCardPreset"
+				},
+				{
+					"kind": "types",
+					"source": "packages/ui/src/components/AsamCardList/Types.ts",
+					"symbol": "AsamCardSize"
+				},
+				{
+					"kind": "types",
+					"source": "packages/ui/src/components/AsamCardList/Types.ts",
+					"symbol": "AsamCustomCardSize"
 				}
 			],
 			"inherits": [],
@@ -1091,6 +1153,10 @@
 				{
 					"id": "boundaries",
 					"key": "AsamCardList/boundaries"
+				},
+				{
+					"id": "geometry",
+					"key": "AsamCardList/geometry"
 				}
 			]
 		},
@@ -1100,7 +1166,7 @@
 			"kind": "component",
 			"category": "浮层",
 			"input": "apps/website/content/components/AsamDialog.json",
-			"bodySha256": "4788480e4d6673450437b557b387d3fe3ff934c9dd1a367e8c291efb821a6aaa",
+			"bodySha256": "c231520f700ad9058b2f6ea7f556887a9cdbc2ad3ce5a09213c74ec5c9871525",
 			"api": [
 				{
 					"kind": "props",
@@ -1217,7 +1283,7 @@
 			"kind": "component",
 			"category": "浮层",
 			"input": "apps/website/content/components/AsamDrawer.json",
-			"bodySha256": "eedc73217b9c51e96854579f513f630c594044906cea38056b870e8b8e865e13",
+			"bodySha256": "d68d4a59bd611048cca6e60c770f258282702656163c627103a94e3ed2ab67eb",
 			"api": [
 				{
 					"kind": "props",
@@ -1300,7 +1366,7 @@
 			"kind": "component",
 			"category": "浮层",
 			"input": "apps/website/content/components/AsamPopover.json",
-			"bodySha256": "dd8ade37f94bdcba391ada0841b7c32af529773261f70fbac3ac5eb9f923143f",
+			"bodySha256": "2ea5b7893428bba9d92e2f8c54d03010a980b8e23105712e70b57561a591f8d3",
 			"api": [
 				{
 					"kind": "props",
@@ -1384,7 +1450,7 @@
 			"kind": "component",
 			"category": "菜单",
 			"input": "apps/website/content/components/AsamDropdown.json",
-			"bodySha256": "eee270d0bfd2a8aa51f95ddde686d79f9026cf51046ffe1b997f73bc7f24c82a",
+			"bodySha256": "78339be91f1605c185442e53c0fe04ac4f55c5bf425b059378c6dcb17908f024",
 			"api": [
 				{
 					"kind": "props",
@@ -1422,6 +1488,10 @@
 				{
 					"id": "basic",
 					"key": "AsamDropdown/basic"
+				},
+				{
+					"id": "semantic-colors",
+					"key": "AsamDropdown/semantic-colors"
 				},
 				{
 					"id": "sizes",
@@ -1475,7 +1545,7 @@
 			"kind": "component",
 			"category": "导航",
 			"input": "apps/website/content/components/AsamPagination.json",
-			"bodySha256": "8f171bb977612ea38f34d254052e33589bc4582d07e05b3418cbfeb498cdf9fd",
+			"bodySha256": "743ed35e5c3a80c8f0dedf85b2dc68a27c3b102a71e2798ab4dc33bab91f6e3f",
 			"api": [
 				{
 					"kind": "props",
@@ -1544,7 +1614,7 @@
 			"kind": "component",
 			"category": "数据展示",
 			"input": "apps/website/content/components/AsamTable.json",
-			"bodySha256": "e85c25862b7442e0fb3446c4e4b5f1372d975e2967b2230ee651a7ebb8428cab",
+			"bodySha256": "3e28568895e05bfd2a79fca2c232d50d32e2a2d182a093cddf010c3f17004c3c",
 			"api": [
 				{
 					"kind": "types",
@@ -1566,6 +1636,11 @@
 					"source": "packages/ui/src/components/AsamTable/Types.ts",
 					"symbol": "AsamTableProps",
 					"runtime": "packages/ui/src/components/AsamTable/AsamTable.vue"
+				},
+				{
+					"kind": "types",
+					"source": "packages/ui/src/components/AsamTable/Types.ts",
+					"symbol": "AsamTableSize"
 				},
 				{
 					"kind": "events",
@@ -1754,6 +1829,10 @@
 					"key": "AsamTable/usage-striped"
 				},
 				{
+					"id": "usage-no-stripe",
+					"key": "AsamTable/usage-no-stripe"
+				},
+				{
 					"id": "usage-summary",
 					"key": "AsamTable/usage-summary"
 				},
@@ -1785,7 +1864,7 @@
 			"kind": "component",
 			"category": "复合组件",
 			"input": "apps/website/content/components/AsamTaskCard.json",
-			"bodySha256": "0d9ca2ddcc54d6e1266420f1f2ec7b02aa997cd93bbccb5760c80de31fe1b93d",
+			"bodySha256": "7f1e7789e98fd6ff3bb7f0927279c6f93cac495a2355f03ec5cb9dd5f97d0971",
 			"api": [
 				{
 					"kind": "props",
@@ -1831,6 +1910,10 @@
 					"key": "AsamTaskCard/basic"
 				},
 				{
+					"id": "action-colors",
+					"key": "AsamTaskCard/action-colors"
+				},
+				{
 					"id": "slots",
 					"key": "AsamTaskCard/slots"
 				},
@@ -1846,7 +1929,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamTabs.json",
-			"bodySha256": "0c7530f8a7d3ebff3f738a3901439d5b83340eda99c7b725db018d7074f391b2",
+			"bodySha256": "03f1d59fbc8d11e334ed68fe613ef408f4657ca09a9b3e4c0fcb09eb32d9ef7d",
 			"api": [
 				{
 					"kind": "types",
@@ -1968,6 +2051,10 @@
 				{
 					"id": "basic",
 					"key": "AsamTabs/basic"
+				},
+				{
+					"id": "sizes",
+					"key": "AsamTabs/sizes"
 				},
 				{
 					"id": "cap-basic",
@@ -2182,7 +2269,7 @@
 			"kind": "component",
 			"category": "基础输入与操作",
 			"input": "apps/website/content/components/AsamTextarea.json",
-			"bodySha256": "eb937c110a23250743f4ee2a05c9435d6cd9b5c3d8aff2a5a04224b4086f54b4",
+			"bodySha256": "2cb49f145144b40d9dc3214599e265a26164d5e647eccf2113af231da601fc97",
 			"api": [
 				{
 					"kind": "props",
@@ -2253,7 +2340,7 @@
 			"kind": "component",
 			"category": "基础输入与操作",
 			"input": "apps/website/content/components/AsamInputNumber.json",
-			"bodySha256": "ece355cc7aa7a6710d0613b4b8ca7eafb50575c3e01e278faf81e1b01befe7f8",
+			"bodySha256": "bd2a8b91b1d111410b1ab4079d1250381a60f6211fa1cafb4d71f43ebefad12a",
 			"api": [
 				{
 					"kind": "props",
@@ -2332,7 +2419,7 @@
 			"kind": "component",
 			"category": "基础输入与操作",
 			"input": "apps/website/content/components/AsamPassword.json",
-			"bodySha256": "e8e0c2ca182e80f85ed86ee4aab2722c020836df7814471e68ccd11ce12be668",
+			"bodySha256": "5aea53ea7091c42d949d5a28227be45d7f39b197fca7bd84b62eb53b96405893",
 			"api": [
 				{
 					"kind": "props",
@@ -2407,7 +2494,7 @@
 			"kind": "component",
 			"category": "基础输入与操作",
 			"input": "apps/website/content/components/AsamAutocomplete.json",
-			"bodySha256": "cc9a12fae4c03f1726b802931a9aff2fbd398639aaa553fa0b18f88aae0defb4",
+			"bodySha256": "c4a1e649bc2e90f46cabd2a0652207a6bd723060bdabbe5a9d985e2b948f4265",
 			"api": [
 				{
 					"kind": "props",
@@ -2505,7 +2592,7 @@
 			"kind": "component",
 			"category": "数据组件",
 			"input": "apps/website/content/components/AsamRemoteAutocomplete.json",
-			"bodySha256": "c867dee607622e5d70cd6e092bcee3dc1d0635b383fe1cececa922323cbb8219",
+			"bodySha256": "7886e7bf91802b39c9f6018090c17110dc6fb0aee64dc9d5329b8c61ef16b8c5",
 			"api": [
 				{
 					"kind": "props",
@@ -2558,7 +2645,7 @@
 			"kind": "component",
 			"category": "数据组件",
 			"input": "apps/website/content/components/AsamDataTable.json",
-			"bodySha256": "83d6850fedff019a84f60774c331144e32b328f02f1bef6a8212bc8b11b66966",
+			"bodySha256": "fb3d5ad7c8c1df0add07f768170c44c91a5bacb58aabd2cd9db7e18ff020ede4",
 			"api": [
 				{
 					"kind": "props",
@@ -2628,7 +2715,7 @@
 			"kind": "component",
 			"category": "数据组件",
 			"input": "apps/website/content/components/AsamForm.json",
-			"bodySha256": "cf348799570ff7c49a6275ce742f5d3dabd7e60c7c1099a6c8e3259e494fef63",
+			"bodySha256": "399d637bf9d1d1a331167278e8880d2a440db2ab627070b240991c6a19d87f35",
 			"api": [
 				{
 					"kind": "props",
@@ -2740,7 +2827,7 @@
 			"kind": "component",
 			"category": "基础输入与操作",
 			"input": "apps/website/content/components/AsamButtonGroup.json",
-			"bodySha256": "a08f01bf08d51db8a879559732bc98f7d282db8f4b7f045dfbfe4d4727177d62",
+			"bodySha256": "2ad7769b5a98844b084415904e34716c7b30ea88c028adf1e5edcda90905f9f1",
 			"api": [
 				{
 					"kind": "props",
@@ -2765,6 +2852,10 @@
 					"key": "AsamButtonGroup/basic"
 				},
 				{
+					"id": "semantic-colors",
+					"key": "AsamButtonGroup/semantic-colors"
+				},
+				{
 					"id": "direction",
 					"key": "AsamButtonGroup/direction"
 				},
@@ -2780,7 +2871,7 @@
 			"kind": "component",
 			"category": "基础输入与操作",
 			"input": "apps/website/content/components/AsamInputTag.json",
-			"bodySha256": "86ab8914f3c5abbddc4dff8fc71ffe0685ef7aecbba5e8ad3655aa86901f2c05",
+			"bodySha256": "6ece4eb3a78980b973f729198abf7a7b45f949cf8b50fbac7167accc32c5cf35",
 			"api": [
 				{
 					"kind": "props",
@@ -2816,6 +2907,10 @@
 					"key": "AsamInputTag/basic"
 				},
 				{
+					"id": "tag-colors",
+					"key": "AsamInputTag/tag-colors"
+				},
+				{
 					"id": "delimiter",
 					"key": "AsamInputTag/delimiter"
 				},
@@ -2847,7 +2942,7 @@
 			"kind": "component",
 			"category": "基础输入与操作",
 			"input": "apps/website/content/components/AsamMention.json",
-			"bodySha256": "557f0e5e36b35aa261446fd096e63cccd99561223c4624d84042bd6446d848dc",
+			"bodySha256": "b1ef70c88a191d93c2bfda5f2fe6768c33904981e7e0462530291e73d0d8b264",
 			"api": [
 				{
 					"kind": "props",
@@ -2935,7 +3030,7 @@
 			"kind": "component",
 			"category": "虚拟滚动",
 			"input": "apps/website/content/components/AsamDynamicSizeGrid.json",
-			"bodySha256": "5f65d96c0d595d07ac8da4ec32326d9e6948fc04f8c6150e95ed5f91cf851467",
+			"bodySha256": "eb253149066b6cfd54abd1c1909a504b52d0a9ad856093d88f48223e309c0c41",
 			"api": [
 				{
 					"kind": "props",
@@ -3215,7 +3310,7 @@
 			"kind": "component",
 			"category": "虚拟滚动",
 			"input": "apps/website/content/components/AsamDynamicSizeList.json",
-			"bodySha256": "39562f759eb2d8903b3ea9b472be9c9c582be18ea4151cd0806ad554c37570da",
+			"bodySha256": "5ab9a52a51ac23d31c02aef41831ed2ec1a41ca77e0e38d1586a110d9d9e2169",
 			"api": [
 				{
 					"kind": "props",
@@ -3265,7 +3360,7 @@
 			"kind": "component",
 			"category": "导航",
 			"input": "apps/website/content/components/AsamAffix.json",
-			"bodySha256": "980b6887bfe9d923fbda70aea7af6bd8174a2e077ca532c0eac8dc7428c62fb4",
+			"bodySha256": "f4d577a935c6c86010fa21e63626373cb360c78c5c00031a08e0cb596664bf99",
 			"api": [
 				{
 					"kind": "props",
@@ -3486,7 +3581,7 @@
 			"kind": "component",
 			"category": "布局",
 			"input": "apps/website/content/components/AsamAutoResizer.json",
-			"bodySha256": "77d7875c4a920e319901f1f155b2e8793d4a9bba204ba14c8a316266ae1b9c88",
+			"bodySha256": "cdde71a426616338032d561c91bd6073a991b75501fc63f05252ad5c4eaf35d2",
 			"api": [
 				{
 					"kind": "props",
@@ -3611,7 +3706,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamAvatarGroup.json",
-			"bodySha256": "a38553defb53665c364e74fd9da47233d119f0f53e3d93be80f0a1e45d4f6f03",
+			"bodySha256": "6522fb6c3a7a737df9e277b24e6cb00950f4e347e399a85214c9db7f2627a9fa",
 			"api": [
 				{
 					"kind": "props",
@@ -3709,7 +3804,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamBadge.json",
-			"bodySha256": "a9529fd332b22bfa082f18ab789d2207edf5af6ebf43f5f5e2eac76e7d16f2db",
+			"bodySha256": "5673f15d101340e82386f4b2aa08eacc67000cfd3ab2cd9aae634a6ad447cb16",
 			"api": [
 				{
 					"kind": "props",
@@ -3745,6 +3840,10 @@
 				{
 					"id": "basic",
 					"key": "AsamBadge/basic"
+				},
+				{
+					"id": "semantic-colors",
+					"key": "AsamBadge/semantic-colors"
 				},
 				{
 					"id": "cap-basic",
@@ -3872,7 +3971,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamCalendar.json",
-			"bodySha256": "d32530f5a41b62bb6096369404d4a10ac26f9944bfb36042e0ba31b41d66de49",
+			"bodySha256": "66623ed46f7342bd4485291f21a266dc6598752ebc626d4d04abde4f9a2b09ab",
 			"api": [
 				{
 					"kind": "props",
@@ -3960,7 +4059,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamCarousel.json",
-			"bodySha256": "3439ee857395a2eeafc117dfe3f7d8a2c6f773c3aae84810ca230be11e3f5ef4",
+			"bodySha256": "5b5dd4d0f0d8331e3e16afa23498830b0073432ff8df3954558a081ddd9f484f",
 			"api": [
 				{
 					"kind": "props",
@@ -4098,7 +4197,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamCheckTag.json",
-			"bodySha256": "2dcd7ab44be397c1846d4c5472b74875e761ca841ad8dded0019d50f30fbd9ea",
+			"bodySha256": "42a7f38b692d8d3f0e9b5beabb3128eab22c3b10974b044b404ff230c049a231",
 			"api": [
 				{
 					"kind": "props",
@@ -4139,6 +4238,10 @@
 				{
 					"id": "basic",
 					"key": "AsamCheckTag/basic"
+				},
+				{
+					"id": "semantic-colors",
+					"key": "AsamCheckTag/semantic-colors"
 				}
 			]
 		},
@@ -4498,7 +4601,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamCountdown.json",
-			"bodySha256": "271d95df8740e9fe01d9aabbbc32c538a4b85fa248bbdf8f432c87f0418fd85e",
+			"bodySha256": "119cae91d078fcf523c6125338a5e6cf72aa957bcd5bfb4e7c40bad76e8d9f97",
 			"api": [
 				{
 					"kind": "props",
@@ -4648,7 +4751,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamDescriptionsItem.json",
-			"bodySha256": "5fc9412e0ebdf7c84d01f45ff8b813b2cb0b13cd01e3c084c1c734195ba2803d",
+			"bodySha256": "90b5378cf14eda3851245551523aa9cfe4ebb4ed8acc8a4d4be0653367267b74",
 			"api": [
 				{
 					"kind": "props",
@@ -4754,7 +4857,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamEmpty.json",
-			"bodySha256": "01c05ec13aab143effdd4423bf7842f95a86fad23195a6b0cba1eaa8e6d0d620",
+			"bodySha256": "2f1733cad5c0c8ed32a5b60179fc032b6e5570d3d4aa40111061484680ce1a54",
 			"api": [
 				{
 					"kind": "props",
@@ -4958,7 +5061,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamImage.json",
-			"bodySha256": "fa26f550ce80e851eaf5d297ba30e4d258edee9296adc50fc048a8c24fe33285",
+			"bodySha256": "e421b414f865a7c5f4d04665c01e7857ed510ed80284b4df0bd42498354a9149",
 			"api": [
 				{
 					"kind": "props",
@@ -5050,7 +5153,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamImageViewer.json",
-			"bodySha256": "9fd66583ae2ec8e94cc11df05686b8eb9db26dfdb4f0c41875145e6adef9aa55",
+			"bodySha256": "0de5d021e6ea13496ee07775c556b1d11742f998f0d23e2e7034c22a6002d422",
 			"api": [
 				{
 					"kind": "props",
@@ -5123,7 +5226,7 @@
 			"kind": "component",
 			"category": "导航",
 			"input": "apps/website/content/components/AsamLink.json",
-			"bodySha256": "0120fcbe7efc712af140496a9d6208041b2ed6b5ef4a8617c7ac966c869afb8b",
+			"bodySha256": "885ba11646ba3c6bae9f7fce7bcc0cad6664f5defb16101b6db9ef3a410c6201",
 			"api": [
 				{
 					"kind": "props",
@@ -5236,7 +5339,7 @@
 			"kind": "component",
 			"category": "导航",
 			"input": "apps/website/content/components/AsamMenu.json",
-			"bodySha256": "63faf570d18b3fbc3f1490f5285253894cb5f19cc8fc7b319e40c5144f569965",
+			"bodySha256": "d6bc7671236bcbd2ca697b927748ee09c7df592a9173f3de6c1b242d3e0c98c8",
 			"api": [
 				{
 					"kind": "props",
@@ -5527,7 +5630,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamProgress.json",
-			"bodySha256": "2387b037edd81242ed62a6d44bba5a811bbf2ed7713007a6a0d8a1238dac09d2",
+			"bodySha256": "b02e77aade0db76b1d9b45e5a9a2cd0aadf2175aea82077884bd924dbf90d4eb",
 			"api": [
 				{
 					"kind": "props",
@@ -5716,7 +5819,7 @@
 			"kind": "component",
 			"category": "布局",
 			"input": "apps/website/content/components/AsamScrollbar.json",
-			"bodySha256": "2a9571275f511ce923628150f41c7b5ad7cafb3b20bbd2a365c4be4b1f608a17",
+			"bodySha256": "d8f8458ca353c3268a9d0531064fb0f1865ea1bc57c51c2c27786212bce4dfab",
 			"api": [
 				{
 					"kind": "props",
@@ -5885,7 +5988,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamSkeletonItem.json",
-			"bodySha256": "fab83e76cacfe45b6d7ae98238d0ad772dbd3000c0c40c3ccc924a66fe575e11",
+			"bodySha256": "c54f17593cc40968ccfc1647dc7a4722a025b2fe8d0c038e603eeafc37899a27",
 			"api": [
 				{
 					"kind": "props",
@@ -6215,7 +6318,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamStep.json",
-			"bodySha256": "2c7f115dd9b2437416f93374a4955c3b251ea043939f3184d326bca1a2275ea8",
+			"bodySha256": "aad2f7c83cad6b2c22f8dc83ab202d65f8a3e9f6583a2ae36ad5a3e5d9629552",
 			"api": [
 				{
 					"kind": "props",
@@ -6246,6 +6349,10 @@
 				{
 					"id": "basic",
 					"key": "AsamStep/basic"
+				},
+				{
+					"id": "semantic-status",
+					"key": "AsamStep/semantic-status"
 				}
 			]
 		},
@@ -6255,7 +6362,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamSteps.json",
-			"bodySha256": "537d1da49a72fabe3082bcd6ef545069cba816a48d93c7286f234e3332888605",
+			"bodySha256": "095a1518ca17cd24a97e28b0cb71ee48d9445516a0fe14d1ab156aa8c5e39107",
 			"api": [
 				{
 					"kind": "props",
@@ -6316,6 +6423,10 @@
 				{
 					"id": "basic",
 					"key": "AsamSteps/basic"
+				},
+				{
+					"id": "semantic-status",
+					"key": "AsamSteps/semantic-status"
 				},
 				{
 					"id": "cap-basic",
@@ -6438,7 +6549,7 @@
 			"kind": "component",
 			"category": "数据展示",
 			"input": "apps/website/content/components/AsamTableColumn.json",
-			"bodySha256": "9fbaeccabf7cf4d1e972b8c02c22234b3678b29ade523e1e24b570e613850c18",
+			"bodySha256": "8f341b932b8c93f9b01692692523b0462768a10a185be649377d9bae7b4a848a",
 			"api": [
 				{
 					"kind": "props",
@@ -6482,7 +6593,7 @@
 			"kind": "component",
 			"category": "数据展示",
 			"input": "apps/website/content/components/AsamTableV2.json",
-			"bodySha256": "d7ddd6f65e63079cc4e57fd3126f6d40e839312a6427288c2e015b396d74f0c2",
+			"bodySha256": "2471def5caadcc53e679b864ebba5c3acb1a49a87757f101d8d61f07a3d974cd",
 			"api": [
 				{
 					"kind": "props",
@@ -6729,8 +6840,18 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamTag.json",
-			"bodySha256": "621bea7e4f720f5000f8a02e79f1ff387c60450948600b5a1be1f9a13cc09055",
+			"bodySha256": "4a8ecc2e8dcd76880b2b74d8629cead015c2fc08b959db467ade4455a6a0201e",
 			"api": [
+				{
+					"kind": "types",
+					"source": "packages/ui/src/components/AsamTag/Types.ts",
+					"symbol": "AsamTagType"
+				},
+				{
+					"kind": "types",
+					"source": "packages/ui/src/components/AsamTag/Types.ts",
+					"symbol": "AsamTagSize"
+				},
 				{
 					"kind": "props",
 					"source": "packages/ui/src/components/AsamTag/Types.ts",
@@ -6788,6 +6909,10 @@
 				{
 					"id": "cap-sizes",
 					"key": "AsamTag/cap-sizes"
+				},
+				{
+					"id": "explicit-mini",
+					"key": "AsamTag/explicit-mini"
 				},
 				{
 					"id": "cap-theme",
@@ -6884,7 +7009,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamTimeline.json",
-			"bodySha256": "4065548525ec8a3a937439cfa3d778ae9bfb3e05a5f30d529fdd547d495fce7c",
+			"bodySha256": "40cbb1767b7bef73243b6cb349bb26cfc5235ef3baea3b475f7b1724efdfd890",
 			"api": [
 				{
 					"kind": "props",
@@ -6932,6 +7057,10 @@
 					"key": "AsamTimeline/basic"
 				},
 				{
+					"id": "semantic-colors",
+					"key": "AsamTimeline/semantic-colors"
+				},
+				{
 					"id": "cap-basic",
 					"key": "AsamTimeline/cap-basic"
 				},
@@ -6963,7 +7092,7 @@
 			"kind": "component",
 			"category": "展示",
 			"input": "apps/website/content/components/AsamTimelineItem.json",
-			"bodySha256": "ae906d5022263ebca62f08a0f72ea34050c0930d2e142382bdb2ad8ed182bceb",
+			"bodySha256": "aaa365816231a662007622763017b160ac7f0610581997a1a283ee22015799b1",
 			"api": [
 				{
 					"kind": "props",
@@ -6994,6 +7123,10 @@
 				{
 					"id": "basic",
 					"key": "AsamTimelineItem/basic"
+				},
+				{
+					"id": "semantic-colors",
+					"key": "AsamTimelineItem/semantic-colors"
 				}
 			]
 		},
@@ -7003,7 +7136,7 @@
 			"kind": "component",
 			"category": "数据展示",
 			"input": "apps/website/content/components/AsamTree.json",
-			"bodySha256": "2d26ef7a4f598db757d748a796fe23ac4464aacd972210f762a60ee29942523e",
+			"bodySha256": "7a71f0c98206906fa035f36522307b5e3d15cc8819b670a3c8b8d59c68bab075",
 			"api": [
 				{
 					"kind": "props",
@@ -7211,7 +7344,7 @@
 			"kind": "component",
 			"category": "数据展示",
 			"input": "apps/website/content/components/AsamTreeV2.json",
-			"bodySha256": "8fa928c2a4a3e1a4c2f03a0e5bf2bcd0ccaf39d6c449fa9835643487eaec31c1",
+			"bodySha256": "7989b210edfab34667b181296416fcbb14ef92a30bf6ddae8107614d81714bbd",
 			"api": [
 				{
 					"kind": "props",
@@ -7359,7 +7492,7 @@
 			"kind": "component",
 			"category": "虚拟滚动",
 			"input": "apps/website/content/components/AsamFixedSizeGrid.json",
-			"bodySha256": "7a5ec07f6a2afd5daf11ddfb0a06a9dae93f119d91ed9cfb3b825ec2b4d2e894",
+			"bodySha256": "124f777d1e8c7c4f133fadf81f607649f672fb966a355cac8e8a142cb96bc01f",
 			"api": [
 				{
 					"kind": "props",
@@ -7409,7 +7542,7 @@
 			"kind": "component",
 			"category": "虚拟滚动",
 			"input": "apps/website/content/components/AsamFixedSizeList.json",
-			"bodySha256": "df3df120c09cf63f878e18a9f8d9432723eb14e1263ef0db475b4de62914928a",
+			"bodySha256": "49967beaa212ecfee114a15f6577c33da617b42f2af9d59ea7c9c0bb2348a1f2",
 			"api": [
 				{
 					"kind": "props",
@@ -7500,7 +7633,7 @@
 			"kind": "component",
 			"category": "反馈",
 			"input": "apps/website/content/components/AsamAlert.json",
-			"bodySha256": "064b3bb3e3c2e72e798c8e17bd1056f438722cf44c06d073647b4658bfe0aca8",
+			"bodySha256": "cdf8a78c090408f674a24ce59f86392a52997f224950661132f6b7f93329d405",
 			"api": [
 				{
 					"kind": "props",
@@ -7653,7 +7786,7 @@
 			"kind": "directive",
 			"category": "指令",
 			"input": "apps/website/content/components/AsamInfiniteScroll.json",
-			"bodySha256": "dcf7010643fefa73bf6ec6a01cc02f976ea23f7f4276c2f038de9e2020e64ae3",
+			"bodySha256": "09fe1c910890bb8dbab6e35fc2ec5b794cc8fbfd707a423c34e420a168c29591",
 			"api": [
 				{
 					"kind": "directive",
@@ -7724,7 +7857,7 @@
 			"kind": "directive",
 			"category": "指令",
 			"input": "apps/website/content/components/AsamLoadingDirective.json",
-			"bodySha256": "1f6ce06257ea723a5717aeac648357851658510d432c9accb3b880d1d6a26eef",
+			"bodySha256": "2a8801dbe2df895f10b6f212004deabba85bea7ee63985805d21c756f37d457e",
 			"api": [
 				{
 					"kind": "directive",
@@ -7792,7 +7925,7 @@
 			"kind": "service",
 			"category": "服务",
 			"input": "apps/website/content/components/AsamLoadingService.json",
-			"bodySha256": "d163676ce2f377462d878fdd424cdf3b081d6d07b5e1f3c50ffcc6ff91a2ff35",
+			"bodySha256": "ea0fbf6086629e488f3cb90fa8ba0ec384a464f2d56e933e9afbdd22013e953f",
 			"api": [
 				{
 					"kind": "service",
@@ -7847,7 +7980,7 @@
 			"kind": "service",
 			"category": "服务",
 			"input": "apps/website/content/components/AsamMessage.json",
-			"bodySha256": "d415dc477f12e5bb36d09542130cc8f13a3f0a25bba440f6f6bdadeab951c3c4",
+			"bodySha256": "387321e5087f6182f2b7771b90d618230423608164ca314dda001f0ef95f2871",
 			"api": [
 				{
 					"kind": "service",
@@ -7946,7 +8079,7 @@
 			"kind": "service",
 			"category": "服务",
 			"input": "apps/website/content/components/AsamMessageBox.json",
-			"bodySha256": "85e1453f313470cfc98672dc391e8b605eae363d030bd213875c8fb786eef59b",
+			"bodySha256": "ab30a96ab56cc3eacaf680d99b7642946bf36012b1509f445b89ee931fee9105",
 			"api": [
 				{
 					"kind": "service",
@@ -8020,6 +8153,10 @@
 					"key": "AsamMessageBox/basic"
 				},
 				{
+					"id": "semantic-colors",
+					"key": "AsamMessageBox/semantic-colors"
+				},
+				{
 					"id": "ep2147-alert",
 					"key": "AsamMessageBox/ep2147-alert"
 				},
@@ -8075,7 +8212,7 @@
 			"kind": "service",
 			"category": "服务",
 			"input": "apps/website/content/components/AsamNotification.json",
-			"bodySha256": "f3be5b598920b2484e4f581bc783ab143896ea27d2ca45137b3a91fff42d8caf",
+			"bodySha256": "7091671dfbe8c7a66efe6b645cf3ab435b73dbd696a8525191c37ca6579da520",
 			"api": [
 				{
 					"kind": "service",
@@ -8127,6 +8264,10 @@
 				{
 					"id": "basic",
 					"key": "AsamNotification/basic"
+				},
+				{
+					"id": "progress-colors",
+					"key": "AsamNotification/progress-colors"
 				},
 				{
 					"id": "service-context",
@@ -8217,7 +8358,7 @@
 			"kind": "component",
 			"category": "反馈",
 			"input": "apps/website/content/components/AsamPopconfirm.json",
-			"bodySha256": "1bb9230b6819c63c2b461649795b025ad9daf7347647e12ad566b4bfd1a31efd",
+			"bodySha256": "dc61d539ea598d447fbb8c9822014b30447309b91c6ff64f8462afc75826c6fe",
 			"api": [
 				{
 					"kind": "props",
@@ -8252,6 +8393,10 @@
 					"key": "AsamPopconfirm/basic"
 				},
 				{
+					"id": "button-colors",
+					"key": "AsamPopconfirm/button-colors"
+				},
+				{
 					"id": "actions",
 					"key": "AsamPopconfirm/actions"
 				},
@@ -8283,7 +8428,7 @@
 			"kind": "directive",
 			"category": "指令",
 			"input": "apps/website/content/components/AsamPopoverDirective.json",
-			"bodySha256": "5f84653ca926a3c27902479701ff70bf19a0681ef726f91781d5e39b7b04e05c",
+			"bodySha256": "b708b3745d9e9819f2d6799c3eb75b166f12b8d25275a70df3057576fb03580d",
 			"api": [
 				{
 					"kind": "directive",
@@ -8404,7 +8549,7 @@
 			"kind": "component",
 			"category": "浮层基础",
 			"input": "apps/website/content/components/AsamPopperContent.json",
-			"bodySha256": "529357f18b3bf2ebaad4683fc061b3a7957c4be19d52bbc8c45a660e2c4aa24e",
+			"bodySha256": "9768305e8484e686bc985007f493b8a1b20048d17646da0234ae309efa48d2b3",
 			"api": [
 				{
 					"kind": "props",
@@ -8447,7 +8592,7 @@
 			"kind": "component",
 			"category": "浮层基础",
 			"input": "apps/website/content/components/AsamPopperTrigger.json",
-			"bodySha256": "8b0a0e38848226128e134f91da15c9ff542f206f50c38a78621cce2f0b6f4056",
+			"bodySha256": "05bd11fcbf8b216d0a42c3aab36e3c6e76a2a8cd59833209568ce79c6a8e823d",
 			"api": [
 				{
 					"kind": "props",
@@ -8490,7 +8635,7 @@
 			"kind": "component",
 			"category": "浮层",
 			"input": "apps/website/content/components/AsamTooltip.json",
-			"bodySha256": "7a2b86f42e4ee974b70d4e49dc97700eaf3e9bc8b71296183a7a487fc02485b9",
+			"bodySha256": "57114824dd370e9a47ebd2c2d35f3f5bb65d34ecbebfc3a8d68a43255fe294ea",
 			"api": [
 				{
 					"kind": "props",
@@ -8576,7 +8721,7 @@
 			"kind": "component",
 			"category": "浮层",
 			"input": "apps/website/content/components/AsamTour.json",
-			"bodySha256": "e2ff2d88896252e50872cd40f838412ba439d1fef118cef2b1a541e6e0e9e62d",
+			"bodySha256": "674f5e303b3bb23789ce5c4c82e17f3442b20b925c25b40cba24c523795d0061",
 			"api": [
 				{
 					"kind": "props",
@@ -8608,6 +8753,10 @@
 				{
 					"id": "basic",
 					"key": "AsamTour/basic"
+				},
+				{
+					"id": "semantic-colors",
+					"key": "AsamTour/semantic-colors"
 				},
 				{
 					"id": "ep2147-basic",
@@ -8649,7 +8798,7 @@
 			"kind": "component",
 			"category": "浮层",
 			"input": "apps/website/content/components/AsamTourStep.json",
-			"bodySha256": "b0d6464916344b61e2bda5f2897ba296d4f407a3e459ac8276f4841d851c75fd",
+			"bodySha256": "096a9c6582ddc483754bb4a074b5aaa2609407e1d2ee46f1bb8d0636e42c41a0",
 			"api": [
 				{
 					"kind": "props",
@@ -8676,6 +8825,10 @@
 				{
 					"id": "basic",
 					"key": "AsamTourStep/basic"
+				},
+				{
+					"id": "semantic-colors",
+					"key": "AsamTourStep/semantic-colors"
 				}
 			]
 		},
@@ -8839,7 +8992,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamRadioItem.json",
-			"bodySha256": "daa2e825bb58acdf739b1f8328c5a800ed0a6ea7ba4774d48df1ada0b6905fd4",
+			"bodySha256": "9099b802498aae51f5c050c1778a7f2f9097e9d4f18f7227634b387c41541998",
 			"api": [
 				{
 					"kind": "props",
@@ -8890,7 +9043,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamRadioButton.json",
-			"bodySha256": "1a0c1eac5b609f163fb396dfa3471336ce29a7fb67645ef3c7278c5607f192cc",
+			"bodySha256": "7a05076d4b36592da3c7e3a9ab03367d6922d5fa47f0617558690efdb6ca9d29",
 			"api": [
 				{
 					"kind": "props",
@@ -8936,7 +9089,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamRadioGroup.json",
-			"bodySha256": "995cfe1d96a579126036542d269ebd754a21fcabcfde3d0320dd8c7710fde37d",
+			"bodySha256": "bbb58e1df5068653c3811262e06462c5ca97d2dff846aa5d8c996394413f7778",
 			"api": [
 				{
 					"kind": "props",
@@ -8991,7 +9144,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamCheckboxItem.json",
-			"bodySha256": "5764ae2bf11956bd7d432b03eeb37d096eaf290fb2dae3ee1845160cb9f2f6d6",
+			"bodySha256": "6c6bce7cf0e3a220b4dc72dd98a742814862a9f96c2fa62c1d6a58faf3bc4acb",
 			"api": [
 				{
 					"kind": "props",
@@ -9046,7 +9199,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamCheckboxButton.json",
-			"bodySha256": "bed1439e53ae32a0e1ebe14a888279c7ff6ef59cf7e3a54076bb1b5f04fb1d52",
+			"bodySha256": "8148b66baef08090b00ee161ce074dcb5bc850e774e509fd7b2e38e3952d55c1",
 			"api": [
 				{
 					"kind": "props",
@@ -9097,7 +9250,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamCheckboxGroup.json",
-			"bodySha256": "73106c99f6002719c7a389d0315fcf20208df4f48950678e5911ec535de435b4",
+			"bodySha256": "faacc2f8945a5aa4e731319c17a43c05b92c3240d811a8ddd35672c8eec5e516",
 			"api": [
 				{
 					"kind": "props",
@@ -9198,7 +9351,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamCascaderPanel.json",
-			"bodySha256": "11a1cde605f0947c0101ba66b40f6d0782ba97ff50f516f4e56a6eddc36af939",
+			"bodySha256": "b9dceb812e91bc1f4a9f143f3315eaa5571e4849db9135a91cdf8f5f8d464748",
 			"api": [
 				{
 					"kind": "props",
@@ -9298,7 +9451,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamDatePickerPanel.json",
-			"bodySha256": "92f98321dcd4f07a36043f7df91a20518818cca8a7612b7101aad4958f29f410",
+			"bodySha256": "bec17b13caebdae4d662a93cd3eabc73cba132ccc86ddaa899199f0e3dd2ed8a",
 			"api": [
 				{
 					"kind": "props",
@@ -9385,7 +9538,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamBaseForm.json",
-			"bodySha256": "cf9ed0dfb637f6aa3efefec9ac098f4cd05843d39982e8c7de1f6d8fd0592166",
+			"bodySha256": "543a2c5b3c3efa12c29ce199276c5f0ed22dcb4450d7a867b36b5dff0cb55ee3",
 			"api": [
 				{
 					"kind": "props",
@@ -9502,7 +9655,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamFormItem.json",
-			"bodySha256": "ff40db5048c17debb48ceb88f52830550d9854db3e27da18eadfa136abc4fdfa",
+			"bodySha256": "3cea8ad2ff42116c66b1a8150398e747b1aa5d1aa68e0751bdd36d36e9855138",
 			"api": [
 				{
 					"kind": "props",
@@ -9556,7 +9709,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamSlider.json",
-			"bodySha256": "330ea7928196dc5cc9886d0b718ad7ad1b49d276d0fff7b374e8ab29259b2465",
+			"bodySha256": "900b5196e1d0b1900646a22566dd21dfa273552aa94b199cd83928828e95e4a4",
 			"api": [
 				{
 					"kind": "props",
@@ -9611,7 +9764,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamRate.json",
-			"bodySha256": "ad72e939c98a5b4f66496c425df0074287f05e953453a22c2e31d8be56fa8d9c",
+			"bodySha256": "2f88e2a877b2c57ce29aa243cec4273d86750bddb54fb7e82c9c437c695bd7af",
 			"api": [
 				{
 					"kind": "props",
@@ -9723,7 +9876,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamDatePicker.json",
-			"bodySha256": "ef5150f50fb263a5b45fb0fc3a9089090629c1aefa669c9452af4d55b5bccfaa",
+			"bodySha256": "29830037583df492311da85cf192c40a4c8cef1ff1265bedb73f7bc0a6e87448",
 			"api": [
 				{
 					"kind": "props",
@@ -9894,7 +10047,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamTimePicker.json",
-			"bodySha256": "c12aa1f9f9d86407987920b4566cf23dde4e31ccf52fe58cab13ca2e2f4d1793",
+			"bodySha256": "20fbb8484e635dc602b77a15d8118948728057327b05017de13e2adcea814425",
 			"api": [
 				{
 					"kind": "props",
@@ -9977,7 +10130,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamTimeSelect.json",
-			"bodySha256": "6d72c0ab5464420a7d000c200fdd58cdb0de741cce6c8f62a3782db462d91bf5",
+			"bodySha256": "2967616881c59b4f97bb8ae00387f4e19fbb744bc9537fd8230f1402cacd7448",
 			"api": [
 				{
 					"kind": "props",
@@ -10105,7 +10258,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamDateTimeRangePicker.json",
-			"bodySha256": "8d28081ed32b690e2c9eb8f10d94d9155a4343628b67e0df1e484d8f50d6bf58",
+			"bodySha256": "5f33e53357976fa142491152c183516e4123dfa2b44fc02a2372855c746c95fb",
 			"api": [
 				{
 					"kind": "props",
@@ -10172,7 +10325,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamUpload.json",
-			"bodySha256": "ae839dd878a882dd631d25c04b2aa7db3699f6cc33f3462695201197fc7d7579",
+			"bodySha256": "7f1d718571573761286c3cad0a7c3673b514fc1aacf578af5602df427eabfaa3",
 			"api": [
 				{
 					"kind": "props",
@@ -10252,7 +10405,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamSelect.json",
-			"bodySha256": "d553a4730dab507df94f2ced477a18f97ab641e29ee847bb78572c60069e09ce",
+			"bodySha256": "68facc3709e4ca5e4de38119952ef86b9233afb3caadcb47ead71516febec9ec",
 			"api": [
 				{
 					"kind": "props",
@@ -10287,6 +10440,10 @@
 				{
 					"id": "basic",
 					"key": "AsamSelect/basic"
+				},
+				{
+					"id": "tag-colors",
+					"key": "AsamSelect/tag-colors"
 				},
 				{
 					"id": "policies",
@@ -10332,7 +10489,7 @@
 			"kind": "component",
 			"category": "数据组件",
 			"input": "apps/website/content/components/AsamRemoteSelect.json",
-			"bodySha256": "d98c23d0c1bf2ab6bad88efdb9e1d193084ec90321c4a3ab6b8e86be3300384b",
+			"bodySha256": "677450ba18b8823a59eccee8dd05a2a305acf8d7c7b2248cf0bda812af1a5834",
 			"api": [
 				{
 					"kind": "props",
@@ -10368,6 +10525,10 @@
 					"key": "AsamRemoteSelect/basic"
 				},
 				{
+					"id": "tag-colors",
+					"key": "AsamRemoteSelect/tag-colors"
+				},
+				{
 					"id": "local-creation",
 					"key": "AsamRemoteSelect/local-creation"
 				},
@@ -10391,7 +10552,7 @@
 			"kind": "component",
 			"category": "数据组件",
 			"input": "apps/website/content/components/AsamDictSelect.json",
-			"bodySha256": "43a9ebd48676b0ea29aae5a332ba58a45e5b853ad0600d29d90a3254e303a429",
+			"bodySha256": "e8d5b3c05f6ada3df2554695f5f636f180e0f2cd42ea57cef2409e0e31c0597e",
 			"api": [
 				{
 					"kind": "props",
@@ -10427,6 +10588,10 @@
 					"key": "AsamDictSelect/basic"
 				},
 				{
+					"id": "tag-colors",
+					"key": "AsamDictSelect/tag-colors"
+				},
+				{
 					"id": "local-creation",
 					"key": "AsamDictSelect/local-creation"
 				},
@@ -10450,7 +10615,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamSelectV2.json",
-			"bodySha256": "e01565bba4e94ce712ca37d02dea5f5b9d6fd696908f4b0c8aee0ba3ea32383a",
+			"bodySha256": "aead57e5c5c4e7164160200b6930aa3fbb8ffd33530a769f91fc6ee670078ac4",
 			"api": [
 				{
 					"kind": "props",
@@ -10485,6 +10650,10 @@
 				{
 					"id": "basic",
 					"key": "AsamSelectV2/basic"
+				},
+				{
+					"id": "tag-colors",
+					"key": "AsamSelectV2/tag-colors"
 				},
 				{
 					"id": "policies",
@@ -10550,7 +10719,7 @@
 			"kind": "component",
 			"category": "数据组件",
 			"input": "apps/website/content/components/AsamRemoteSelectV2.json",
-			"bodySha256": "30bab22117df7d6807f752d8d577ca20679a8ad8574e93238c2061de1186bb29",
+			"bodySha256": "fef4d4cc5c14f31b6672be6610f966dcad82db68c4733cda52d0ff66f9ff5f8c",
 			"api": [
 				{
 					"kind": "props",
@@ -10586,6 +10755,10 @@
 					"key": "AsamRemoteSelectV2/basic"
 				},
 				{
+					"id": "tag-colors",
+					"key": "AsamRemoteSelectV2/tag-colors"
+				},
+				{
 					"id": "local-creation",
 					"key": "AsamRemoteSelectV2/local-creation"
 				},
@@ -10605,7 +10778,7 @@
 			"kind": "component",
 			"category": "数据组件",
 			"input": "apps/website/content/components/AsamDictSelectV2.json",
-			"bodySha256": "828d59d92d6fa7466951cb8262061c08e11c28f30ce7e1ebb0c31e7d6e6f546b",
+			"bodySha256": "70525daf3360aa5a326b4cd4a1075343b13569dbd51d70dfc3591dd43592fa05",
 			"api": [
 				{
 					"kind": "props",
@@ -10641,6 +10814,10 @@
 					"key": "AsamDictSelectV2/basic"
 				},
 				{
+					"id": "tag-colors",
+					"key": "AsamDictSelectV2/tag-colors"
+				},
+				{
 					"id": "local-creation",
 					"key": "AsamDictSelectV2/local-creation"
 				},
@@ -10660,7 +10837,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamRadio.json",
-			"bodySha256": "ec6165490d57d414eb835cbf309ab32b4180c9b7bba785060dad452c0f6fad0b",
+			"bodySha256": "9ded6b3179f594cd944df2a27d45485bbcf2cd3dedefbc4da56ced6c5b122757",
 			"api": [
 				{
 					"kind": "props",
@@ -10709,7 +10886,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamCheckbox.json",
-			"bodySha256": "e750d2df78c11242aa782d6428599b93dc9ac1b83d59706c9b450d7e8f20f31f",
+			"bodySha256": "c029eac2e59e85c99db1adc7afbcc2b5c34ed2dba0f1aa8df9b290cba66036d6",
 			"api": [
 				{
 					"kind": "props",
@@ -10762,7 +10939,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamSwitch.json",
-			"bodySha256": "b7e0f15b1d1d4b8946a08c3199f9dc6b6e34651c639edab65dc8d9fc3051eb01",
+			"bodySha256": "b155ada59992da274dae0d334ca66f8a5cb62aa81464c4744dd62265f899f4ee",
 			"api": [
 				{
 					"kind": "props",
@@ -10816,7 +10993,7 @@
 			"kind": "component",
 			"category": "数据组件",
 			"input": "apps/website/content/components/AsamRemoteRadio.json",
-			"bodySha256": "f4fe8f358b91e51cbc9bbfdf91cd7f8cd207d0ac3c798e3f2f0217258e0e0880",
+			"bodySha256": "14e1e15a811f1e095dda2d46a2918840eb37bd58abf2498b9bc2eec591e8e43d",
 			"api": [
 				{
 					"kind": "props",
@@ -10867,7 +11044,7 @@
 			"kind": "component",
 			"category": "数据组件",
 			"input": "apps/website/content/components/AsamDictRadio.json",
-			"bodySha256": "34ae414d71d813df2fb38444b30ca820eda53491855465b586c3e0e21a21545e",
+			"bodySha256": "b4f0984ee7c79f5db49a3d12e5b3ca6bf7832c12b71a01b2d878d2b109b3afc3",
 			"api": [
 				{
 					"kind": "props",
@@ -10918,7 +11095,7 @@
 			"kind": "component",
 			"category": "数据组件",
 			"input": "apps/website/content/components/AsamRemoteCheckbox.json",
-			"bodySha256": "f59eb513d7e83f416e6efb5a3adf83886b750abb84fb88d977732751bf75bdbd",
+			"bodySha256": "5281cf6c404c9cb7e82053e55e66df8e4275059c42a1ecad810f3d3303fa8c60",
 			"api": [
 				{
 					"kind": "props",
@@ -10969,7 +11146,7 @@
 			"kind": "component",
 			"category": "数据组件",
 			"input": "apps/website/content/components/AsamDictCheckbox.json",
-			"bodySha256": "0128b9272c558217230a8ec371b0f3f77684239b125083629c297f3b7cfc1626",
+			"bodySha256": "14844a6d4be72970cc0608c028462290790eed24986090566afd327a119d9be0",
 			"api": [
 				{
 					"kind": "props",
@@ -11020,7 +11197,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamCascader.json",
-			"bodySha256": "e21c550cfeba3f6f951645eee9df81bd079f4e22f6d88c1ac3003404d984fa02",
+			"bodySha256": "21d2307f853bd89ce852a9ed8e6031397d84a6f93f41711f6191bf20888db832",
 			"api": [
 				{
 					"kind": "props",
@@ -11074,6 +11251,10 @@
 				{
 					"id": "basic",
 					"key": "AsamCascader/basic"
+				},
+				{
+					"id": "tag-colors",
+					"key": "AsamCascader/tag-colors"
 				},
 				{
 					"id": "policies",
@@ -11171,7 +11352,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamTreeSelect.json",
-			"bodySha256": "46871c5a57bdcc122c47665e0c539b0c11b196407a98afdfa727340847653cc3",
+			"bodySha256": "efd9ea39b6c6ae9c76d777b9dcabcaa941e1d51380c53a80b4f90927aed8471c",
 			"api": [
 				{
 					"kind": "props",
@@ -11226,6 +11407,10 @@
 				{
 					"id": "basic",
 					"key": "AsamTreeSelect/basic"
+				},
+				{
+					"id": "tag-colors",
+					"key": "AsamTreeSelect/tag-colors"
 				},
 				{
 					"id": "policies",
@@ -11291,7 +11476,7 @@
 			"kind": "component",
 			"category": "选择与表单",
 			"input": "apps/website/content/components/AsamTransfer.json",
-			"bodySha256": "142474ddd19ecb12f792bf618e0f941c39dac7062a54044239f15779309467a1",
+			"bodySha256": "a2455ba49476c34d434245ffdff81fa48e0efc685fd8573a6518b29fdaed218b",
 			"api": [
 				{
 					"kind": "props",
@@ -11353,7 +11538,7 @@
 			"kind": "component",
 			"category": "数据组件",
 			"input": "apps/website/content/components/AsamRemoteCascader.json",
-			"bodySha256": "7cf51024b13b2af96554dd6b3e0837a085d2ff01e6f56b5df826afb4708410fa",
+			"bodySha256": "946700df51eb823581273456d9e504bd1e7ad619b8b3031bc9bb68cd6a8efd15",
 			"api": [
 				{
 					"kind": "props",
@@ -11389,6 +11574,10 @@
 					"key": "AsamRemoteCascader/basic"
 				},
 				{
+					"id": "tag-colors",
+					"key": "AsamRemoteCascader/tag-colors"
+				},
+				{
 					"id": "complete-tree",
 					"key": "AsamRemoteCascader/complete-tree"
 				},
@@ -11408,7 +11597,7 @@
 			"kind": "component",
 			"category": "数据组件",
 			"input": "apps/website/content/components/AsamRemoteTreeSelect.json",
-			"bodySha256": "6250b291f6d2ec0ceb71b1a40cb1e3c1eaa959a011f77393d7d82a6d72f10a64",
+			"bodySha256": "d0eef8d08aaad1e0a323aabde54f44897d052f1229590a27f156373c01eec4e6",
 			"api": [
 				{
 					"kind": "props",
@@ -11444,6 +11633,10 @@
 					"key": "AsamRemoteTreeSelect/basic"
 				},
 				{
+					"id": "tag-colors",
+					"key": "AsamRemoteTreeSelect/tag-colors"
+				},
+				{
 					"id": "complete-tree",
 					"key": "AsamRemoteTreeSelect/complete-tree"
 				},
@@ -11463,7 +11656,7 @@
 			"kind": "component",
 			"category": "数据组件",
 			"input": "apps/website/content/components/AsamDictCascader.json",
-			"bodySha256": "5eedbb3f29db4d785704d7be7323c66e2deed2fb3d4361a9d4a0bed0d1ec7b60",
+			"bodySha256": "db7e6ff31ab2375063595c3f9514bb2358e31645725cf80b0e2393ce62872bf0",
 			"api": [
 				{
 					"kind": "props",
@@ -11499,6 +11692,10 @@
 					"key": "AsamDictCascader/basic"
 				},
 				{
+					"id": "tag-colors",
+					"key": "AsamDictCascader/tag-colors"
+				},
+				{
 					"id": "complete-tree",
 					"key": "AsamDictCascader/complete-tree"
 				},
@@ -11518,7 +11715,7 @@
 			"kind": "component",
 			"category": "数据组件",
 			"input": "apps/website/content/components/AsamDictTreeSelect.json",
-			"bodySha256": "733c69f1b3ea02fc060f40cf0cd3d74746e75c0d608b74cbedafc8ec17481fcc",
+			"bodySha256": "e6a01674caa4d3f4017ed1909a19aec0f4c311b97b3320385b62d856296894ae",
 			"api": [
 				{
 					"kind": "props",
@@ -11552,6 +11749,10 @@
 				{
 					"id": "basic",
 					"key": "AsamDictTreeSelect/basic"
+				},
+				{
+					"id": "tag-colors",
+					"key": "AsamDictTreeSelect/tag-colors"
 				},
 				{
 					"id": "complete-tree",

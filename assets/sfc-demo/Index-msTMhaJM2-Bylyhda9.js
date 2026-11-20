@@ -1,0 +1,1 @@
+import"./vue.esm-bundler-5NdF0u5k.js";import{n as e}from"./AsamTable-CETQdlcw-CWp-APHE.js";var t=Object.assign({},e,{install(e){e.component(`AsamTableColumn`,t)}});export{t};

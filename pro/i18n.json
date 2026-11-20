@@ -1,0 +1,101 @@
+{
+	"schemaVersion": 1,
+	"id": "pro.i18n",
+	"package": "@asam-ui/pro",
+	"version": "2.0.1",
+	"imports": [
+		"@asam-ui/ui/i18n",
+		"@asam-ui/ui/i18n/en",
+		"@asam-ui/ui/i18n/zh-CN",
+		"@asam-ui/pro/i18n",
+		"@asam-ui/pro/i18n/en",
+		"@asam-ui/pro/i18n/zh-CN"
+	],
+	"exports": [
+		{
+			"name": "createAsamProI18n",
+			"from": "@asam-ui/pro/i18n",
+			"availableInInstalledPackage": true
+		},
+		{
+			"name": "useAsamProI18n",
+			"from": "@asam-ui/pro/i18n",
+			"availableInInstalledPackage": true
+		},
+		{
+			"name": "asamProMessagesEn",
+			"from": "@asam-ui/pro/i18n/en",
+			"availableInInstalledPackage": true
+		},
+		{
+			"name": "asamProMessagesZhCn",
+			"from": "@asam-ui/pro/i18n/zh-CN",
+			"availableInInstalledPackage": true
+		},
+		{
+			"name": "formatFieldError",
+			"from": "@asam-ui/pro/i18n",
+			"availableInInstalledPackage": true
+		},
+		{
+			"name": "formatFieldIssue",
+			"from": "@asam-ui/pro/i18n",
+			"availableInInstalledPackage": true
+		},
+		{
+			"name": "createAsamMessageIssue",
+			"from": "@asam-ui/pro/i18n",
+			"availableInInstalledPackage": true
+		},
+		{
+			"name": "createAsamMessageError",
+			"from": "@asam-ui/pro/i18n",
+			"availableInInstalledPackage": true
+		},
+		{
+			"name": "createAsamMessageRuleMessage",
+			"from": "@asam-ui/pro/i18n",
+			"availableInInstalledPackage": true
+		}
+	],
+	"types": [
+		{
+			"name": "AsamProMessages",
+			"from": "@asam-ui/pro/i18n",
+			"dictionary": "/pro/i18n-api.html#type-AsamProMessages"
+		},
+		{
+			"name": "AsamProMessageParameters",
+			"from": "@asam-ui/pro/i18n",
+			"dictionary": "/pro/i18n-api.html#type-AsamProMessageParameters"
+		},
+		{
+			"name": "AsamFieldMessageDisplayContext",
+			"from": "@asam-ui/pro/i18n",
+			"dictionary": "/pro/i18n-api.html#type-AsamFieldMessageDisplayContext"
+		}
+	],
+	"context": "shared UI scope, explicit per-owner lifetime, no mutable global locale",
+	"hostText": "ordinary host/remote strings are preserved; no implicit key guessing",
+	"guide": "/pro/i18n.html",
+	"agent": "/ai/recipes/i18n.html",
+	"api": "/pro/i18n-api.json",
+	"typeDictionary": "/pro/i18n-types.json",
+	"examples": "/pro/i18n-examples.json",
+	"builtinLocales": [
+		"zh-CN",
+		"en"
+	],
+	"responsibilities": {
+		"componentMessages": "UI/Pro scope",
+		"businessTranslation": "host dictionaries/framework",
+		"languagePreference": "host preferences owner/storage",
+		"regionalFormat": "explicit format/locale first; no DTO/currency/time-zone changes"
+	},
+	"limits": {
+		"rtl": "not fully supported",
+		"thirdLanguages": "explicit partial registration with fallback; not builtin full translations",
+		"native": "existing Element Plus locale precedence and upstream behavior retained; host loads required Day.js modules",
+		"ssr": "per-request core scope; no full hydration claim"
+	}
+}

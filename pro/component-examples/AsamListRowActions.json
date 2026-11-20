@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamListRowActions",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "独立行操作与溢出",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<p>同一行四个动作，空间足够时显示两项和更多；只传当前成功结果的原行。</p>\n\t\t<div v-if=\"row\" style=\"width: 260px\">\n\t\t\t<AsamListRowActions :controller=\"list\" :row=\"row\" :actions=\"actions\" />\n\t\t</div>\n\t\t<p role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n<script setup lang=\"ts\">\nimport { computed, onBeforeUnmount, ref } from 'vue';\nimport { createAsamDataRuntime } from '@asam-ui/ui';\nimport { AsamListRowActions, useAsamListController } from '@asam-ui/pro/components';\nimport type { AsamListAction } from '@asam-ui/pro/components';\ndefineOptions({ name: 'ListRowActionsExample' });\ntype Row = { id: number; name: string };\nconst runtime = createAsamDataRuntime();\nconst message = ref('尚未执行动作');\nconst list = useAsamListController<Row>({\n\truntime,\n\trowKey: 'id',\n\tinitial: {},\n\tfields: [],\n\tapi: async () => ({ list: [{ id: 0, name: '合成项目' }], total: 1 })\n});\nconst row = computed(() => list.page.data.value.list[0]);\nconst actions: readonly AsamListAction<Row>[] = ['详情', '编辑', '授权', '删除'].map(\n\t(label, index) => ({\n\t\tid: `action-${index}`,\n\t\tlabel,\n\t\tbutton: { type: index === 3 ? 'danger' : 'primary', plain: true },\n\t\trun: async ({ row }) => {\n\t\t\tmessage.value = `${label}：${row?.name}`;\n\t\t}\n\t})\n);\nonBeforeUnmount(() => runtime.invalidate());\nvoid list.submit();\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<p>同一行四个动作，空间足够时显示两项和更多；只传当前成功结果的原行。</p>\n\t\t<div v-if=\"row\" style=\"width: 260px\">\n\t\t\t<AsamListRowActions :controller=\"list\" :row=\"row\" :actions=\"actions\" />\n\t\t</div>\n\t\t<p role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n<script setup>\nimport { computed, onBeforeUnmount, ref } from 'vue';\nimport { createAsamDataRuntime } from '@asam-ui/ui';\nimport { AsamListRowActions, useAsamListController } from '@asam-ui/pro/components';\ndefineOptions({ name: 'ListRowActionsExample' });\nconst runtime = createAsamDataRuntime();\nconst message = ref('尚未执行动作');\nconst list = useAsamListController({\n\truntime,\n\trowKey: 'id',\n\tinitial: {},\n\tfields: [],\n\tapi: async () => ({ list: [{ id: 0, name: '合成项目' }], total: 1 })\n});\nconst row = computed(() => list.page.data.value.list[0]);\nconst actions = ['详情', '编辑', '授权', '删除'].map((label, index) => ({\n\tid: `action-${index}`,\n\tlabel,\n\tbutton: { type: index === 3 ? 'danger' : 'primary', plain: true },\n\trun: async ({ row }) => {\n\t\tmessage.value = `${label}：${row?.name}`;\n\t}\n}));\nonBeforeUnmount(() => runtime.invalidate());\nvoid list.submit();\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "structured",
+			"title": "树表格映射当前原行",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<p>树投影通过 typed key 回到列表原行，保留层级和独立行操作。</p>\n\t\t<AsamStructuredTable mode=\"tree\" :controller=\"tree\" :columns=\"columns\">\n\t\t\t<template #cell=\"{ row, column }\">\n\t\t\t\t<template v-if=\"column.key === 'actions'\">\n\t\t\t\t\t<AsamListRowActions\n\t\t\t\t\t\tv-if=\"canonical.get(row.id)\"\n\t\t\t\t\t\t:controller=\"list\"\n\t\t\t\t\t\t:row=\"canonicalRow(row.id)\"\n\t\t\t\t\t\t:actions=\"actions\"\n\t\t\t\t\t/>\n\t\t\t\t</template>\n\t\t\t\t<span v-else>{{ row.name }}</span>\n\t\t\t</template>\n\t\t</AsamStructuredTable>\n\t\t<p role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n<script setup lang=\"ts\">\nimport { computed, onBeforeUnmount, ref } from 'vue';\nimport { createAsamDataRuntime } from '@asam-ui/ui';\nimport {\n\tAsamListRowActions,\n\tAsamStructuredTable,\n\tuseAsamListController,\n\tuseAsamStructuredTable\n} from '@asam-ui/pro/components';\nimport type { AsamListAction, AsamStructuredColumn } from '@asam-ui/pro/components';\ntype Row = { id: string | number; name: string; parent?: string | number };\ndefineOptions({ name: 'StructuredRowActionsExample' });\ntype Node = Row & { children?: Node[]; actions?: never };\nconst runtime = createAsamDataRuntime();\nconst message = ref('尚未执行动作');\nconst list = useAsamListController<Row>({\n\truntime,\n\trowKey: 'id',\n\tinitial: {},\n\tfields: [],\n\tapi: async () => ({\n\t\tlist: [\n\t\t\t{ id: 0, name: '父节点' },\n\t\t\t{ id: '0', parent: 0, name: '子节点（字符串键）' }\n\t\t],\n\t\ttotal: 2\n\t})\n});\nconst canonical = computed(() => new Map(list.page.data.value.list.map((row) => [row.id, row])));\n// 模板保留运行表达式；类型断言放在脚本内，使 TS/JS 投影共享同一取行逻辑。\nconst canonicalRow = (id: Row['id']) => canonical.value.get(id)!;\nconst nodes = computed<Node[]>(() =>\n\tlist.page.data.value.list\n\t\t.filter((row) => row.parent === undefined)\n\t\t.map((row) => ({\n\t\t\t...row,\n\t\t\tchildren: list.page.data.value.list\n\t\t\t\t.filter((child) => Object.is(child.parent, row.id))\n\t\t\t\t.map((child) => ({ ...child }))\n\t\t}))\n);\nconst tree = useAsamStructuredTable<Node>({\n\trows: nodes,\n\tscope: () => String(list.session.value),\n\trowKey: 'id',\n\tmode: 'tree',\n\tchildren: 'children',\n\tinitialExpandedKeys: [0]\n});\nconst columns: readonly AsamStructuredColumn<Node>[] = [\n\t{ key: 'name', label: '名称' },\n\t{ key: 'actions', label: '操作', width: 260 }\n];\nconst actions: readonly AsamListAction<Row>[] = ['详情', '编辑', '添加子项', '删除'].map(\n\t(label, index) => ({\n\t\tid: `action-${index}`,\n\t\tlabel,\n\t\tbutton: { type: index === 3 ? 'danger' : 'primary', plain: true },\n\t\trun: async ({ row }) => {\n\t\t\tconst current = row && canonical.value.get(row.id);\n\t\t\tif (current) message.value = `${label}：${current.name}`;\n\t\t}\n\t})\n);\nonBeforeUnmount(() => runtime.invalidate());\nvoid list.submit();\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<p>树投影通过 typed key 回到列表原行，保留层级和独立行操作。</p>\n\t\t<AsamStructuredTable mode=\"tree\" :controller=\"tree\" :columns=\"columns\">\n\t\t\t<template #cell=\"{ row, column }\">\n\t\t\t\t<template v-if=\"column.key === 'actions'\">\n\t\t\t\t\t<AsamListRowActions\n\t\t\t\t\t\tv-if=\"canonical.get(row.id)\"\n\t\t\t\t\t\t:controller=\"list\"\n\t\t\t\t\t\t:row=\"canonicalRow(row.id)\"\n\t\t\t\t\t\t:actions=\"actions\"\n\t\t\t\t\t/>\n\t\t\t\t</template>\n\t\t\t\t<span v-else>{{ row.name }}</span>\n\t\t\t</template>\n\t\t</AsamStructuredTable>\n\t\t<p role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n<script setup>\nimport { computed, onBeforeUnmount, ref } from 'vue';\nimport { createAsamDataRuntime } from '@asam-ui/ui';\nimport {\n\tAsamListRowActions,\n\tAsamStructuredTable,\n\tuseAsamListController,\n\tuseAsamStructuredTable\n} from '@asam-ui/pro/components';\ndefineOptions({ name: 'StructuredRowActionsExample' });\nconst runtime = createAsamDataRuntime();\nconst message = ref('尚未执行动作');\nconst list = useAsamListController({\n\truntime,\n\trowKey: 'id',\n\tinitial: {},\n\tfields: [],\n\tapi: async () => ({\n\t\tlist: [\n\t\t\t{ id: 0, name: '父节点' },\n\t\t\t{ id: '0', parent: 0, name: '子节点（字符串键）' }\n\t\t],\n\t\ttotal: 2\n\t})\n});\nconst canonical = computed(() => new Map(list.page.data.value.list.map((row) => [row.id, row])));\n// 模板保留运行表达式；类型断言放在脚本内，使 TS/JS 投影共享同一取行逻辑。\nconst canonicalRow = (id) => canonical.value.get(id);\nconst nodes = computed(() =>\n\tlist.page.data.value.list\n\t\t.filter((row) => row.parent === undefined)\n\t\t.map((row) => ({\n\t\t\t...row,\n\t\t\tchildren: list.page.data.value.list\n\t\t\t\t.filter((child) => Object.is(child.parent, row.id))\n\t\t\t\t.map((child) => ({ ...child }))\n\t\t}))\n);\nconst tree = useAsamStructuredTable({\n\trows: nodes,\n\tscope: () => String(list.session.value),\n\trowKey: 'id',\n\tmode: 'tree',\n\tchildren: 'children',\n\tinitialExpandedKeys: [0]\n});\nconst columns = [\n\t{ key: 'name', label: '名称' },\n\t{ key: 'actions', label: '操作', width: 260 }\n];\nconst actions = ['详情', '编辑', '添加子项', '删除'].map((label, index) => ({\n\tid: `action-${index}`,\n\tlabel,\n\tbutton: { type: index === 3 ? 'danger' : 'primary', plain: true },\n\trun: async ({ row }) => {\n\t\tconst current = row && canonical.value.get(row.id);\n\t\tif (current) message.value = `${label}：${current.name}`;\n\t}\n}));\nonBeforeUnmount(() => runtime.invalidate());\nvoid list.submit();\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}
