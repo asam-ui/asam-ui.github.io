@@ -1,0 +1,238 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+				<meta name="viewport" content="width=device-width,initial-scale=1">
+				<meta name="description" content="Documentation MCP · ASAM UI English documentation">
+				<title>Documentation MCP · ASAM UI</title><link rel="stylesheet" href="/assets/style.css?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><link rel="stylesheet" href="/assets/ai-guide.css"><link rel="stylesheet" href="/assets/website-layout.css?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><link rel="stylesheet" href="/assets/component-docs.css?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><script src="/assets/theme-init.js"></script><script src="/assets/website-layout.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"></script><script src="/assets/vendor/gsap.min.js" defer></script><script src="/assets/vendor/ScrollTrigger.min.js" defer></script><script src="/assets/catalog.js" defer></script><script src="/assets/app.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7" defer></script><script src="/assets/site-navigation.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7" defer></script><script src="/assets/site-language.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7" defer></script><script src="/assets/site-region.js" defer></script><meta name="asam-site-build" content="8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><link rel="alternate" hreflang="zh-CN" href="/ai/mcp.html"><link rel="stylesheet" href="/assets/document-controls/document-controls.css?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><script type="module" src="/assets/document-controls/document-controls.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"></script><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a"><link rel="canonical" href="https://asam-ui.cn/en/ai/mcp.html"></head><body>
+				<a class="skip-link" href="#main">Skip to content</a>
+				<header class="site-header" data-site-component="header">
+			<div class="nav-shell">
+				<a class="brand" href="/en/index.html" aria-label="ASAM UI home"
+					><span class="brand-mark" aria-hidden="true"><img class="brand-image brand-image-light" src="/assets/brand/mark-light.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="40" height="40" alt="" aria-hidden="true" decoding="async"><img class="brand-image brand-image-dark" src="/assets/brand/mark-dark.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="40" height="40" alt="" aria-hidden="true" decoding="async"></span><strong>ASAM<span class="brand-ui"> UI</span></strong></a
+				>
+				<nav class="primary-nav" aria-label="Main navigation"><a href="/en/getting-started.html">Getting started</a><a href="/en/component-catalog.html">Components</a><a href="/en/design-system.html">Design system</a><a href="/en/pro/index.html">Pro</a><a href="/en/ai/index.html" aria-current="page">AI</a></nav>
+				<div class="nav-actions"><details class="site-version-disclosure" data-site-versions>
+			<summary><span data-site-version-label>Versions</span><span class="site-version-arrow" aria-hidden="true">▾</span></summary>
+			<section class="site-version-panel" aria-label="Documentation versions">
+				<p class="site-version-heading">Packages used by this website</p>
+				<ul><li><strong>UI v2.0.1</strong><span>Version available on npm</span><a href="/en/guide/ui-changelog.html">View changelog</a></li><li><strong>Pro v2.0.1</strong><span>Version available on npm</span><a href="/en/guide/pro-changelog.html">View changelog</a></li></ul>
+				<p>Pair Pro with the UI version declared by its package. The verified stable installation is UI 2.0.1, Vue 3.5.34, and Element Plus 2.14.7.</p>
+				<nav aria-label="Release documentation"><a href="/en/guide/compatibility.html">Versions and compatibility</a><a href="/en/guide/upgrade.html">Upgrade guide</a></nav>
+			</section>
+		</details>
+					<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;\n\t\t\t\t\t\t&lt;span class=\&quot;icon-wrap\&quot;\n\t\t\t\t\t\t\t&gt;&lt;svg\n\t\t\t\t\t\t\t\tclass=\&quot;icon\&quot;\n\t\t\t\t\t\t\t\taria-hidden=\&quot;true\&quot;\n\t\t\t\t\t\t\t\tfocusable=\&quot;false\&quot;\n\t\t\t\t\t\t\t\txmlns=\&quot;http://www.w3.org/2000/svg\&quot;\n\t\t\t\t\t\t\t\tviewBox=\&quot;0 0 256 256\&quot;\n\t\t\t\t\t\t\t\tfill=\&quot;currentColor\&quot;\n\t\t\t\t\t\t\t&gt;\n\t\t\t\t\t\t\t\t&lt;path\n\t\t\t\t\t\t\t\t\td=\&quot;M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z\&quot;\n\t\t\t\t\t\t\t\t/&gt;&lt;/svg&gt;&lt;/span\n\t\t\t\t\t\t&gt;&lt;span&gt;Search docs&lt;/span&gt;&lt;kbd&gt;Ctrl K&lt;/kbd&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;search-trigger&quot;,&quot;type&quot;:&quot;default&quot;,&quot;data-open-search&quot;:true,&quot;aria-haspopup&quot;:&quot;dialog&quot;,&quot;aria-controls&quot;:&quot;search-dialog&quot;,&quot;aria-expanded&quot;:&quot;false&quot;,&quot;aria-label&quot;:&quot;Search documentation, shortcut Control K&quot;},&quot;idPrefix&quot;:&quot;document-0&quot;,&quot;injectionPrefix&quot;:10000}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default search-trigger asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-open-search="true" aria-haspopup="dialog" aria-controls="search-dialog" aria-expanded="false" aria-label="Search documentation, shortcut Control K" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+								/></svg></span
+						><span>Search docs</span><kbd>Ctrl K</kbd></span><!--]--></span></button></span><div class="site-action-icons"><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;20\&quot; height=\&quot;20\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;rect x=\&quot;3\&quot; y=\&quot;4\&quot; width=\&quot;18\&quot; height=\&quot;16\&quot; rx=\&quot;2\&quot;/&gt;&lt;path d=\&quot;M8 4v16M16 4v16\&quot;/&gt;&lt;path class=\&quot;wide-expand\&quot; d=\&quot;m11 10-2 2 2 2m2-4 2 2-2 2\&quot;/&gt;&lt;path class=\&quot;wide-contract\&quot; d=\&quot;m9 10 2 2-2 2m6-4-2 2 2 2\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button website-wide-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;aria-pressed&quot;:&quot;false&quot;,&quot;aria-label&quot;:&quot;Enable wide layout&quot;,&quot;title&quot;:&quot;Enable wide layout&quot;},&quot;idPrefix&quot;:&quot;document-1&quot;,&quot;injectionPrefix&quot;:10001}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text icon-button website-wide-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" aria-pressed="false" aria-label="Enable wide layout" title="Enable wide layout" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 4v16M16 4v16"/><path class="wide-expand" d="m11 10-2 2 2 2m2-4 2 2-2 2"/><path class="wide-contract" d="m9 10 2 2-2 2m6-4-2 2 2 2"/></svg></span><!--]--></span></button></span><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;20\&quot; height=\&quot;20\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; stroke-linecap=\&quot;round\&quot; stroke-linejoin=\&quot;round\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;path d=\&quot;M3 6h10M8 3v3m3 0c0 5-3 8-7 10m1-7c0 3 3 5 5 6m3 5 4-10 4 10m-7-3h6\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button site-language-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;tag&quot;:&quot;a&quot;,&quot;href&quot;:&quot;/ai/mcp.html&quot;,&quot;hreflang&quot;:&quot;zh-CN&quot;,&quot;data-site-language-toggle&quot;:&quot;&quot;,&quot;data-site-language-route&quot;:&quot;/ai/mcp.html&quot;,&quot;data-site-language-match&quot;:&quot;true&quot;,&quot;data-native-navigation&quot;:&quot;&quot;,&quot;aria-label&quot;:&quot;切换为简体中文&quot;,&quot;title&quot;:&quot;切换为简体中文&quot;},&quot;idPrefix&quot;:&quot;document-2&quot;,&quot;injectionPrefix&quot;:10002}"><a class="el-button el-button--default el-button--default is-text icon-button site-language-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" href="/ai/mcp.html" hreflang="zh-CN" data-site-language-toggle data-site-language-route="/ai/mcp.html" data-site-language-match="true" data-native-navigation aria-label="切换为简体中文" title="切换为简体中文" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h10M8 3v3m3 0c0 5-3 8-7 10m1-7c0 3 3 5 5 6m3 5 4-10 4 10m-7-3h6"/></svg></span><!--]--></span></a></span><div class="site-region-switch"><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;20\&quot; height=\&quot;20\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;circle cx=\&quot;12\&quot; cy=\&quot;12\&quot; r=\&quot;9\&quot;/&gt;&lt;ellipse cx=\&quot;12\&quot; cy=\&quot;12\&quot; rx=\&quot;4\&quot; ry=\&quot;9\&quot;/&gt;&lt;path d=\&quot;M3 12h18M5 6h14M5 18h14\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button site-region-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;data-site-region-toggle&quot;:&quot;&quot;,&quot;aria-label&quot;:&quot;Switch website region&quot;,&quot;aria-expanded&quot;:&quot;false&quot;,&quot;aria-controls&quot;:&quot;site-region-options&quot;,&quot;title&quot;:&quot;Switch website region&quot;},&quot;idPrefix&quot;:&quot;document-3&quot;,&quot;injectionPrefix&quot;:10003}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text icon-button site-region-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-site-region-toggle aria-label="Switch website region" aria-expanded="false" aria-controls="site-region-options" title="Switch website region" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6h14M5 18h14"/></svg></span><!--]--></span></button></span><nav id="site-region-options" class="site-regions" aria-label="Website region" hidden><a data-site-region="cn" href="https://asam-ui.cn/en/ai/mcp.html">China</a><a data-site-region="international" href="https://asam-ui.github.io/en/ai/mcp.html">Global</a></nav></div><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;\n\t\t\t\t\t\t&lt;span class=\&quot;icon-wrap\&quot;\n\t\t\t\t\t\t\t&gt;&lt;svg\n\t\t\t\t\t\t\t\tclass=\&quot;icon\&quot;\n\t\t\t\t\t\t\t\taria-hidden=\&quot;true\&quot;\n\t\t\t\t\t\t\t\tfocusable=\&quot;false\&quot;\n\t\t\t\t\t\t\t\txmlns=\&quot;http://www.w3.org/2000/svg\&quot;\n\t\t\t\t\t\t\t\tviewBox=\&quot;0 0 256 256\&quot;\n\t\t\t\t\t\t\t\tfill=\&quot;currentColor\&quot;\n\t\t\t\t\t\t\t&gt;\n\t\t\t\t\t\t\t\t&lt;path\n\t\t\t\t\t\t\t\t\td=\&quot;M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z\&quot;\n\t\t\t\t\t\t\t\t/&gt;&lt;/svg\n\t\t\t\t\t\t&gt;&lt;/span&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button theme-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;aria-label&quot;:&quot;Switch color theme&quot;},&quot;idPrefix&quot;:&quot;document-4&quot;,&quot;injectionPrefix&quot;:10004}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text icon-button theme-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" aria-label="Switch color theme" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z"
+								/></svg
+						></span></span><!--]--></span></button></span><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;\n\t\t\t\t\t\t&lt;span class=\&quot;icon-wrap\&quot;\n\t\t\t\t\t\t\t&gt;&lt;svg\n\t\t\t\t\t\t\t\tclass=\&quot;icon\&quot;\n\t\t\t\t\t\t\t\taria-hidden=\&quot;true\&quot;\n\t\t\t\t\t\t\t\tfocusable=\&quot;false\&quot;\n\t\t\t\t\t\t\t\txmlns=\&quot;http://www.w3.org/2000/svg\&quot;\n\t\t\t\t\t\t\t\tviewBox=\&quot;0 0 256 256\&quot;\n\t\t\t\t\t\t\t\tfill=\&quot;currentColor\&quot;\n\t\t\t\t\t\t\t&gt;\n\t\t\t\t\t\t\t\t&lt;path\n\t\t\t\t\t\t\t\t\td=\&quot;M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z\&quot;\n\t\t\t\t\t\t\t\t/&gt;&lt;/svg\n\t\t\t\t\t\t&gt;&lt;/span&gt;\n\t\t\t\t\t&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button menu-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;aria-label&quot;:&quot;Open navigation&quot;,&quot;aria-controls&quot;:&quot;mobile-nav&quot;,&quot;aria-expanded&quot;:&quot;false&quot;},&quot;idPrefix&quot;:&quot;document-5&quot;,&quot;injectionPrefix&quot;:10005}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text icon-button menu-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" aria-label="Open navigation" aria-controls="mobile-nav" aria-expanded="false" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">
+						<span class="icon-wrap"
+							><svg
+								class="icon"
+								aria-hidden="true"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 256 256"
+								fill="currentColor"
+							>
+								<path
+									d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+								/></svg
+						></span>
+					</span><!--]--></span></button></span></div>
+				</div>
+			</div>
+			<nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="/en/getting-started.html">Getting started</a><a href="/en/component-catalog.html">Components</a><a href="/en/design-system.html">Design system</a><a href="/en/pro/index.html">Pro</a><a href="/en/ai/index.html" aria-current="page">AI</a><details class="mobile-section-nav"><summary>Documentation menu</summary><div class="docs-sidebar mobile-sidebar-content" data-site-component="sidebar" data-site-section="english" aria-label="Documentation index"><nav class="docs-primary-navigation" aria-label="Documentation"><span class="sidebar-heading">Documentation</span><a href="/en/getting-started.html">Getting started</a><a href="/en/component-catalog.html">Components</a><a href="/en/design-system.html">Design system</a><a href="/en/pro/index.html">Pro</a><a href="/en/ai/index.html">AI</a><span class="sidebar-heading">Releases</span><a href="/en/guide/compatibility.html">Versions and compatibility</a><a href="/en/guide/upgrade.html">Upgrade guide</a><a href="/en/guide/ui-changelog.html">UI changelog</a><a href="/en/guide/pro-changelog.html">Pro changelog</a><span class="sidebar-heading">Guides</span><a href="/en/guide/installation.html">Installation</a><a href="/en/guide/architecture.html">Architecture</a><a href="/en/guide/provider.html">Data providers</a><a href="/en/guide/data-driven.html">Data-driven components</a><a href="/en/guide/theme.html">Theme and CSS variables</a></nav></div></details><details class="mobile-section-nav"><summary>On this page</summary><div class="mobile-page-toc"><span>On this page</span><nav><a href="#通用-json-配置">Generic JSON configuration</a><a href="#codex">Codex</a><a href="#vs-code">VS Code</a><a href="#验证一次查询">Verify a query</a><a href="#版本与使用范围">Versions and scope</a><a class="toc-sub" href="#配对来源与固定快照">Paired release sources and snapshot</a></nav></div></details></nav>
+		</header><div id="site-view">
+				<div class="docs-layout wrap site-doc-layout" data-site-component="layout"><aside class="docs-sidebar" data-site-component="sidebar" data-site-section="english" aria-label="Documentation index"><nav class="docs-primary-navigation" aria-label="Documentation"><span class="sidebar-heading">Documentation</span><a href="/en/getting-started.html">Getting started</a><a href="/en/component-catalog.html">Components</a><a href="/en/design-system.html">Design system</a><a href="/en/pro/index.html">Pro</a><a href="/en/ai/index.html">AI</a><span class="sidebar-heading">Releases</span><a href="/en/guide/compatibility.html">Versions and compatibility</a><a href="/en/guide/upgrade.html">Upgrade guide</a><a href="/en/guide/ui-changelog.html">UI changelog</a><a href="/en/guide/pro-changelog.html">Pro changelog</a><span class="sidebar-heading">Guides</span><a href="/en/guide/installation.html">Installation</a><a href="/en/guide/architecture.html">Architecture</a><a href="/en/guide/provider.html">Data providers</a><a href="/en/guide/data-driven.html">Data-driven components</a><a href="/en/guide/theme.html">Theme and CSS variables</a></nav></aside><article id="main" tabindex="-1" class="docs-content ai-content"><h1 id="文档查询-mcp" tabindex="-1">Documentation MCP <a class="header-anchor" href="#文档查询-mcp" aria-label="Permalink to &quot;Documentation MCP {#文档查询-mcp}&quot;">&ZeroWidthSpace;</a></h1>
+<p><code>@asam-ui/mcp</code> is an optional stdio service for base component documentation. It provides the component catalog, public API, TypeScript and JavaScript examples, and integration guides. You can use it separately from the integration Skill.</p>
+<p>These examples use the published <code>@asam-ui/mcp@1.0.1</code>, which bundles the UI <code>1.0.0</code> documentation snapshot. Make Node.js <code>&gt;=22.19.0</code> and pnpm available to your host.</p>
+<h2 id="通用-json-配置" tabindex="-1">Generic JSON configuration <a class="header-anchor" href="#通用-json-配置" aria-label="Permalink to &quot;Generic JSON configuration {#通用-json-配置}&quot;">&ZeroWidthSpace;</a></h2>
+<p>Merge this service into the existing <code>mcpServers</code> object.</p>
+<div data-asam-code-block data-code-single-line="false" class="language-json vp-adaptive-theme"><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;18\&quot; height=\&quot;18\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;rect x=\&quot;8\&quot; y=\&quot;3\&quot; width=\&quot;12\&quot; height=\&quot;14\&quot; rx=\&quot;2\&quot;/&gt;&lt;path d=\&quot;M16 17v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;asam-code-copy&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;size&quot;:&quot;small&quot;,&quot;title&quot;:&quot;Copy code&quot;,&quot;aria-label&quot;:&quot;Copy code&quot;,&quot;data-copy-value&quot;:&quot;{\n\t\&quot;mcpServers\&quot;: {\n\t\t\&quot;asam-ui\&quot;: {\n\t\t\t\&quot;command\&quot;: \&quot;pnpm\&quot;,\n\t\t\t\&quot;args\&quot;: [\&quot;dlx\&quot;, \&quot;@asam-ui/mcp@1.0.1\&quot;]\n\t\t}\n\t}\n}\n&quot;},&quot;idPrefix&quot;:&quot;document-6&quot;,&quot;injectionPrefix&quot;:10006}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--small is-text asam-code-copy asam-button asam-button-default asam-button-small asam-button-press-feedback" style="--asam-button-icon-size:16px;" title="Copy code" aria-label="Copy code" data-copy-value="{
+	&quot;mcpServers&quot;: {
+		&quot;asam-ui&quot;: {
+			&quot;command&quot;: &quot;pnpm&quot;,
+			&quot;args&quot;: [&quot;dlx&quot;, &quot;@asam-ui/mcp@1.0.1&quot;]
+		}
+	}
+}
+" data-asam-size="small" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="8" y="3" width="12" height="14" rx="2"/><path d="M16 17v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3"/></svg></span><!--]--></span></button></span><span class="lang">json</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">	"mcpServers"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">		"asam-ui"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">			"command"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"pnpm"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">			"args"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"dlx"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"@asam-ui/mcp@1.0.1"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p>If the host cannot resolve pnpm on Windows, set the command to <code>pnpm.cmd</code>.</p>
+<h2 id="codex" tabindex="-1">Codex <a class="header-anchor" href="#codex" aria-label="Permalink to &quot;Codex {#codex}&quot;">&ZeroWidthSpace;</a></h2>
+<p>Add the service to <code>~/.codex/config.toml</code> or the project's <code>.codex/config.toml</code>, then reload Codex and confirm that the service is available. See the <a href="https://developers.openai.com/codex/mcp" target="_blank" rel="noreferrer">Codex MCP documentation</a>.</p>
+<div data-asam-code-block data-code-single-line="false" class="language-toml vp-adaptive-theme"><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;18\&quot; height=\&quot;18\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;rect x=\&quot;8\&quot; y=\&quot;3\&quot; width=\&quot;12\&quot; height=\&quot;14\&quot; rx=\&quot;2\&quot;/&gt;&lt;path d=\&quot;M16 17v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;asam-code-copy&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;size&quot;:&quot;small&quot;,&quot;title&quot;:&quot;Copy code&quot;,&quot;aria-label&quot;:&quot;Copy code&quot;,&quot;data-copy-value&quot;:&quot;[mcp_servers.asam_ui]\ncommand = \&quot;pnpm\&quot;\nargs = [\&quot;dlx\&quot;, \&quot;@asam-ui/mcp@1.0.1\&quot;]\nstartup_timeout_sec = 60\n&quot;},&quot;idPrefix&quot;:&quot;document-7&quot;,&quot;injectionPrefix&quot;:10007}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--small is-text asam-code-copy asam-button asam-button-default asam-button-small asam-button-press-feedback" style="--asam-button-icon-size:16px;" title="Copy code" aria-label="Copy code" data-copy-value="[mcp_servers.asam_ui]
+command = &quot;pnpm&quot;
+args = [&quot;dlx&quot;, &quot;@asam-ui/mcp@1.0.1&quot;]
+startup_timeout_sec = 60
+" data-asam-size="small" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="8" y="3" width="12" height="14" rx="2"/><path d="M16 17v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3"/></svg></span><!--]--></span></button></span><span class="lang">toml</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">mcp_servers</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">asam_ui</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">command = </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"pnpm"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">args = [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"dlx"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"@asam-ui/mcp@1.0.1"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">startup_timeout_sec = </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">60</span></span></code></pre>
+</div><h2 id="vs-code" tabindex="-1">VS Code <a class="header-anchor" href="#vs-code" aria-label="Permalink to &quot;VS Code {#vs-code}&quot;">&ZeroWidthSpace;</a></h2>
+<p>Add the service in the project's <code>.vscode/mcp.json</code> and start it from the MCP services list. VS Code uses <code>servers</code>. See the <a href="https://code.visualstudio.com/docs/copilot/customization/mcp-servers" target="_blank" rel="noreferrer">VS Code MCP documentation</a>.</p>
+<div data-asam-code-block data-code-single-line="false" class="language-json vp-adaptive-theme"><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;18\&quot; height=\&quot;18\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;rect x=\&quot;8\&quot; y=\&quot;3\&quot; width=\&quot;12\&quot; height=\&quot;14\&quot; rx=\&quot;2\&quot;/&gt;&lt;path d=\&quot;M16 17v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;asam-code-copy&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;size&quot;:&quot;small&quot;,&quot;title&quot;:&quot;Copy code&quot;,&quot;aria-label&quot;:&quot;Copy code&quot;,&quot;data-copy-value&quot;:&quot;{\n\t\&quot;servers\&quot;: {\n\t\t\&quot;asam-ui\&quot;: {\n\t\t\t\&quot;type\&quot;: \&quot;stdio\&quot;,\n\t\t\t\&quot;command\&quot;: \&quot;pnpm\&quot;,\n\t\t\t\&quot;args\&quot;: [\&quot;dlx\&quot;, \&quot;@asam-ui/mcp@1.0.1\&quot;]\n\t\t}\n\t}\n}\n&quot;},&quot;idPrefix&quot;:&quot;document-8&quot;,&quot;injectionPrefix&quot;:10008}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--small is-text asam-code-copy asam-button asam-button-default asam-button-small asam-button-press-feedback" style="--asam-button-icon-size:16px;" title="Copy code" aria-label="Copy code" data-copy-value="{
+	&quot;servers&quot;: {
+		&quot;asam-ui&quot;: {
+			&quot;type&quot;: &quot;stdio&quot;,
+			&quot;command&quot;: &quot;pnpm&quot;,
+			&quot;args&quot;: [&quot;dlx&quot;, &quot;@asam-ui/mcp@1.0.1&quot;]
+		}
+	}
+}
+" data-asam-size="small" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="8" y="3" width="12" height="14" rx="2"/><path d="M16 17v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3"/></svg></span><!--]--></span></button></span><span class="lang">json</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">	"servers"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">		"asam-ui"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">			"type"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"stdio"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">			"command"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"pnpm"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">			"args"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"dlx"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"@asam-ui/mcp@1.0.1"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><h2 id="验证一次查询" tabindex="-1">Verify a query <a class="header-anchor" href="#验证一次查询" aria-label="Permalink to &quot;Verify a query {#验证一次查询}&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>Use <code>list_components</code> to find Button and confirm its public name.</li>
+<li>Call <code>get_component_api</code> with component <code>AsamButton</code>, section <code>props</code>, and member <code>size</code>.</li>
+<li>Call <code>get_component_example</code> with component <code>AsamButton</code>, demo <code>basic</code>, and language <code>ts</code>.</li>
+</ol>
+<p>The service should report component version <code>1.0.0</code>. API results can paginate. Omitting the demo lists the available examples. A selected demo returns the complete files and applicable notices. Use <code>get_guide</code> with <code>installation</code>, <code>provider</code>, <code>theme</code>, or <code>skill</code> for longer guidance.</p>
+<h2 id="版本与使用范围" tabindex="-1">Versions and scope <a class="header-anchor" href="#版本与使用范围" aria-label="Permalink to &quot;Versions and scope {#版本与使用范围}&quot;">&ZeroWidthSpace;</a></h2>
+<p>The installed service reads a fixed documentation snapshot. The snapshot describes base components and does not update when this website changes. Use <a href="/en/ai/pro.html">Pro resources</a> for Pro workflows or <a href="/en/ai/resources.html">component references</a> to browse the documentation without MCP.</p>
+<h3 id="配对来源与固定快照" tabindex="-1">Paired release sources and snapshot <a class="header-anchor" href="#配对来源与固定快照" aria-label="Permalink to &quot;Paired release sources and snapshot {#配对来源与固定快照}&quot;">&ZeroWidthSpace;</a></h3>
+<p>The hashes below belong to the fixed published snapshot. The files currently served by this website can change.</p>
+<div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><table tabindex="0">
+<thead>
+<tr>
+<th>Source</th>
+<th>Commit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MCP package</td>
+<td><code>ad747a7d4931075dd187eef64a3851ebb184c5d2</code></td>
+</tr>
+<tr>
+<td>Base component product</td>
+<td><code>95d210547399a367f54d2e4a8cb14592900a9b7b</code></td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td><code>1be15fe9f6716d9e813ce33d3541b9129eeb21fe</code></td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div></div></div><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><table tabindex="0">
+<thead>
+<tr>
+<th>Snapshot artifact</th>
+<th>SHA256</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Compressed catalog</td>
+<td><code>c6a1862c0455a2429371f186b289a2d27918899ce9ba810c2d27cbe98c5174e8</code></td>
+</tr>
+<tr>
+<td>Package manifest</td>
+<td><code>19f704f934b65b5bca85a564886eb0b827f06045e18b84207ad3270524812675</code></td>
+</tr>
+<tr>
+<td>Guide snapshot</td>
+<td><code>b56a66c9e2ffd1e6deda1d4b09b32bf3e20bdfc1e6725dde138c8585663b1262</code></td>
+</tr>
+<tr>
+<td>Input snapshot</td>
+<td><code>767faeef297abd04fc686850d4a61da5218a08f948c5b15dad7d83fb1d0f49df</code></td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div></div></div><h4 id="五项公开输入" tabindex="-1">Public inputs <a class="header-anchor" href="#五项公开输入" aria-label="Permalink to &quot;Public inputs {#五项公开输入}&quot;">&ZeroWidthSpace;</a></h4>
+<p>The five inputs were captured from the component API, component index, component examples, content manifest, and source notices. The <a href="/en/ai/resources.html#结构化资料">structured references</a> take you to the corresponding live resources. The catalog hash is calculated on the original <code>catalog.json.gz</code> bytes.</p>
+<p>The service reads documentation and has no project write tools. Verify a query in the intended host and test types, build, and rendering in the consuming application. See the <a href="/licenses/asam-ui-mcp.txt" hreflang="zh-CN">license and source usage appendix <small>(Chinese)</small></a>.</p>
+</article><aside class="page-toc" data-site-component="outline" aria-label="On this page"><span>On this page</span><nav><a href="#通用-json-配置">Generic JSON configuration</a><a href="#codex">Codex</a><a href="#vs-code">VS Code</a><a href="#验证一次查询">Verify a query</a><a href="#版本与使用范围">Versions and scope</a><a class="toc-sub" href="#配对来源与固定快照">Paired release sources and snapshot</a></nav></aside></div>
+				<footer class="site-footer wrap" data-site-component="footer"><div><a class="footer-brand" href="/en/index.html"><span class="footer-brand-mark" aria-hidden="true"><img class="brand-image brand-image-light" src="/assets/brand/mark-light.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="32" height="32" alt="" aria-hidden="true" decoding="async"><img class="brand-image brand-image-dark" src="/assets/brand/mark-dark.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="32" height="32" alt="" aria-hidden="true" decoding="async"></span><span>ASAM UI</span></a><span>Consistent components for Vue 3.</span></div><div class="footer-links"><a href="/en/getting-started.html#release">Installation</a><a href="/en/design-system.html">Design system</a></div></footer></div><dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
+	<header class="site-search-top">
+		<h2 id="search-title">Search documentation</h2>
+		<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;Close &lt;kbd&gt;Esc&lt;/kbd&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;data-close-dialog&quot;:true,&quot;aria-label&quot;:&quot;Close search&quot;},&quot;idPrefix&quot;:&quot;document-9&quot;,&quot;injectionPrefix&quot;:10009}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-close-dialog="true" aria-label="Close search" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">Close <kbd>Esc</kbd></span><!--]--></span></button></span>
+	</header>
+	<div class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;form&quot;,&quot;content&quot;:&quot;&quot;,&quot;props&quot;:{&quot;class&quot;:&quot;site-search-form&quot;,&quot;role&quot;:&quot;search&quot;},&quot;idPrefix&quot;:&quot;document-10&quot;,&quot;injectionPrefix&quot;:10010}"><form class="el-form el-form--default el-form--label-right site-search-form asam-base-form asam-control-default" role="search" data-asam-size="default"><!--[--><!--[--><div data-document-form-content>
+		<div class="site-search-field-slot">
+			<div class="search-field">
+				<div class="site-search-input">
+					<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"/></svg>
+					<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;input&quot;,&quot;content&quot;:&quot;&quot;,&quot;props&quot;:{&quot;id&quot;:&quot;global-search&quot;,&quot;type&quot;:&quot;search&quot;,&quot;placeholder&quot;:&quot;Search documentation&quot;,&quot;autocomplete&quot;:&quot;off&quot;,&quot;maxlength&quot;:120,&quot;aria-label&quot;:&quot;Search base components, Pro components and templates&quot;},&quot;idPrefix&quot;:&quot;document-12&quot;,&quot;injectionPrefix&quot;:10012}"><div class="el-input el-input--default asam-input asam-control-default" style=""><!-- input --><!--[--><!-- prepend slot --><!--v-if--><div class="el-input__wrapper"><!-- prefix slot --><!--v-if--><input class="el-input__inner" data-asam-size="default" maxlength="120" type="search" autocomplete="off" tabindex="0" aria-label="Search base components, Pro components and templates" placeholder="Search documentation" style=""><!-- suffix slot --><!--v-if--></div><!-- append slot --><!--v-if--><!--]--></div></span>
+				</div>
+				<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;Search&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;submit&quot;,&quot;type&quot;:&quot;primary&quot;},&quot;idPrefix&quot;:&quot;document-13&quot;,&quot;injectionPrefix&quot;:10013}"><button ariadisabled="false" type="submit" class="el-button el-button--primary el-button--default asam-button asam-button-primary asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-asam-size="default" data-asam-button-type="primary" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">Search</span><!--]--></span></button></span>
+			</div>
+		</div>
+	</div><!--]--><!--]--></form></div>
+	<div id="search-results" class="search-results">
+		<section class="site-search-history" data-search-history hidden>
+			<h3>Recent searches</h3>
+			<div data-search-queries></div>
+		</section>
+		<div class="site-search-columns">
+			<section aria-labelledby="search-group-base">
+				<div class="site-search-column-heading">
+					<h3 id="search-group-base">Base components</h3>
+					<span data-search-count="base"></span>
+					<a data-search-browse href="/en/component-catalog.html">Browse catalog</a>
+				</div>
+				<ul data-search-items="base"></ul>
+				<p class="site-search-empty" data-search-empty="base" hidden></p>
+				<section class="site-search-documents" data-search-documents hidden><h4>Related documentation</h4><ul></ul></section>
+			</section><section aria-labelledby="search-group-pro">
+				<div class="site-search-column-heading">
+					<h3 id="search-group-pro">Pro components</h3>
+					<span data-search-count="pro"></span>
+					<a data-search-browse href="/en/pro/components.html">Browse catalog</a>
+				</div>
+				<ul data-search-items="pro"></ul>
+				<p class="site-search-empty" data-search-empty="pro" hidden></p>
+				
+			</section><section aria-labelledby="search-group-templates">
+				<div class="site-search-column-heading">
+					<h3 id="search-group-templates">Page templates</h3>
+					<span data-search-count="templates"></span>
+					<a data-search-browse href="/en/pro/templates.html">Browse catalog</a>
+				</div>
+				<ul data-search-items="templates"></ul>
+				<p class="site-search-empty" data-search-empty="templates" hidden></p>
+				
+			</section>
+		</div>
+	</div>
+	<footer class="site-search-footer">
+		<p class="site-search-shortcuts"><kbd>↑</kbd><kbd>↓</kbd> Select <kbd>Enter</kbd> Open <kbd>Esc</kbd> Close</p>
+		<p class="sr-only" role="status" data-search-status></p>
+		<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;Clear history&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;data-search-clear-history&quot;:true,&quot;hidden&quot;:true},&quot;idPrefix&quot;:&quot;document-11&quot;,&quot;injectionPrefix&quot;:10011}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-search-clear-history="true" hidden data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">Clear history</span><!--]--></span></button></span>
+	</footer>
+</dialog><div class="toast" role="status" aria-live="polite"></div></body></html>

@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamNumberDisplay",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "精度与单位",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamNumberDisplay :value=\"12345.678\" :precision=\"2\" prefix=\"¥\" unit=\"元\" />\n\t\t<AsamNumberDisplay :value=\"0.126\" :precision=\"3\" />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamNumberDisplay } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamNumberDisplay :value=\"12345.678\" :precision=\"2\" prefix=\"¥\" unit=\"元\" />\n\t\t<AsamNumberDisplay :value=\"0.126\" :precision=\"3\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamNumberDisplay } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "empty",
+			"title": "零值与占位",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamNumberDisplay :value=\"0\" unit=\"项\" />\n\t\t<AsamNumberDisplay :value=\"null\" placeholder=\"暂无数据\" />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamNumberDisplay } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamNumberDisplay :value=\"0\" unit=\"项\" />\n\t\t<AsamNumberDisplay :value=\"null\" placeholder=\"暂无数据\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamNumberDisplay } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1 @@
+import{Mn as e,On as t,Yn as n,yr as r}from"./i18n-CJTJI6vg-3Uas6tNN.js";import{it as i}from"./components-ST0i0Wqf-D8-NR95E.js";var a={class:`pro-example-stack`},o={__name:`Demo`,setup(o){return(o,s)=>(n(),t(`div`,a,[e(r(i),{value:0,unit:`项`}),e(r(i),{value:null,placeholder:`暂无数据`})]))}};export{o as default};

@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamNotificationMenu",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "通知入口",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamNotificationMenu\n\t\t\tv-model=\"open\"\n\t\t\t:items=\"items\"\n\t\t\t:categories=\"categories\"\n\t\t\t:unread-total=\"unread\"\n\t\t\tv-model:category=\"category\"\n\t\t\t@request=\"handleRequest\"\n\t\t\tlabel=\"项目通知\"\n\t\t/>\n\t\t<p v-if=\"message\" role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamNotificationMenu } from '@asam-ui/pro/components';\nimport type { NotificationItem, NotificationPanelEmits } from '@asam-ui/pro/components';\nimport { computed, ref } from 'vue';\nconst categories = [\n\t{ key: 'project', label: '项目' },\n\t{ key: 'system', label: '系统' }\n];\nconst items = ref<NotificationItem[]>([\n\t{\n\t\tkey: 1,\n\t\ttitle: '设计评审已通过',\n\t\tdescription: '可以开始下一步工作。',\n\t\tcategory: 'project',\n\t\tunread: true\n\t},\n\t{ key: 2, title: '工作台已更新', category: 'system', unread: false }\n]);\nconst open = ref(false);\nconst category = ref<string | null>(null);\nconst unread = computed(() => items.value.filter((item) => item.unread).length);\nconst message = ref('');\nfunction handleRequest(operation: NotificationPanelEmits['request'][0]) {\n\tif (operation.action === 'activate') {\n\t\tmessage.value =\n\t\t\t'正在查看：' +\n\t\t\t(items.value.find((item) => item.key === operation.keys[0])?.title || '通知');\n\t} else {\n\t\titems.value = items.value.map((item) =>\n\t\t\toperation.keys.includes(item.key) ? { ...item, unread: false } : item\n\t\t);\n\t\tmessage.value = '已更新通知状态';\n\t}\n}\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamNotificationMenu\n\t\t\tv-model=\"open\"\n\t\t\t:items=\"items\"\n\t\t\t:categories=\"categories\"\n\t\t\t:unread-total=\"unread\"\n\t\t\tv-model:category=\"category\"\n\t\t\t@request=\"handleRequest\"\n\t\t\tlabel=\"项目通知\"\n\t\t/>\n\t\t<p v-if=\"message\" role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamNotificationMenu } from '@asam-ui/pro/components';\nimport { computed, ref } from 'vue';\nconst categories = [\n\t{ key: 'project', label: '项目' },\n\t{ key: 'system', label: '系统' }\n];\nconst items = ref([\n\t{\n\t\tkey: 1,\n\t\ttitle: '设计评审已通过',\n\t\tdescription: '可以开始下一步工作。',\n\t\tcategory: 'project',\n\t\tunread: true\n\t},\n\t{ key: 2, title: '工作台已更新', category: 'system', unread: false }\n]);\nconst open = ref(false);\nconst category = ref(null);\nconst unread = computed(() => items.value.filter((item) => item.unread).length);\nconst message = ref('');\nfunction handleRequest(operation) {\n\tif (operation.action === 'activate') {\n\t\tmessage.value =\n\t\t\t'正在查看：' +\n\t\t\t(items.value.find((item) => item.key === operation.keys[0])?.title || '通知');\n\t} else {\n\t\titems.value = items.value.map((item) =>\n\t\t\toperation.keys.includes(item.key) ? { ...item, unread: false } : item\n\t\t);\n\t\tmessage.value = '已更新通知状态';\n\t}\n}\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "readonly",
+			"title": "只读通知",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamNotificationMenu\n\t\t\tv-model=\"open\"\n\t\t\t:items=\"items\"\n\t\t\t:categories=\"categories\"\n\t\t\t:unread-total=\"1\"\n\t\t\treadonly\n\t\t\tlabel=\"只读通知\"\n\t\t/>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamNotificationMenu } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst categories = [\n\t{ key: 'project', label: '项目' },\n\t{ key: 'system', label: '系统' }\n];\nconst items = [\n\t{\n\t\tkey: 1,\n\t\ttitle: '设计评审已通过',\n\t\tdescription: '可以开始下一步工作。',\n\t\tcategory: 'project',\n\t\tunread: true\n\t},\n\t{ key: 2, title: '工作台已更新', category: 'system', unread: false }\n];\nconst open = ref(false);\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamNotificationMenu\n\t\t\tv-model=\"open\"\n\t\t\t:items=\"items\"\n\t\t\t:categories=\"categories\"\n\t\t\t:unread-total=\"1\"\n\t\t\treadonly\n\t\t\tlabel=\"只读通知\"\n\t\t/>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamNotificationMenu } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst categories = [\n\t{ key: 'project', label: '项目' },\n\t{ key: 'system', label: '系统' }\n];\nconst items = [\n\t{\n\t\tkey: 1,\n\t\ttitle: '设计评审已通过',\n\t\tdescription: '可以开始下一步工作。',\n\t\tcategory: 'project',\n\t\tunread: true\n\t},\n\t{ key: 2, title: '工作台已更新', category: 'system', unread: false }\n];\nconst open = ref(false);\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1 @@
+import{Ct as e,H as t,v as n,w as r}from"./vue.esm-bundler-5NdF0u5k.js";import{t as i}from"./Index-DVDX4GlM-BT_50m-6.js";var a=r({name:`AsamCalendarofficialcalendarrangeExample`,__name:`Demo`,setup(r){return(r,a)=>(t(),n(e(i),{range:[new Date(2019,2,4),new Date(2019,2,24)]},null,8,[`range`]))}});export{a as default};

@@ -1,0 +1,1 @@
+import{In as e,Ln as t}from"./chunk-DmhlhrBa-BoWoli-h.js";var n=Object.assign({},e,{install(e){e.component(`AsamCollapse`,n)}}),r=Object.assign({},t,{install(e){e.component(`AsamCollapseItem`,r)}});export{n,r as t};

@@ -1,0 +1,84 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamContentEditor",
+	"demos": [
+		{
+			"id": "markdown",
+			"title": "Markdown 编辑",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamContentEditor kind=\"markdown\" v-model=\"value\" label=\"项目说明\" />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamContentEditor } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst value = ref('# 项目说明\\n记录目标与进度。');\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamContentEditor kind=\"markdown\" v-model=\"value\" label=\"项目说明\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamContentEditor } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst value = ref('# 项目说明\\n记录目标与进度。');\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "readonly",
+			"title": "只读内容",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamContentEditor\n\t\t\tkind=\"markdown\"\n\t\t\tmodel-value=\"# 项目说明\n本项目已发布。\"\n\t\t\tlabel=\"项目说明\"\n\t\t\treadonly\n\t\t/>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamContentEditor } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamContentEditor\n\t\t\tkind=\"markdown\"\n\t\t\tmodel-value=\"# 项目说明\n本项目已发布。\"\n\t\t\tlabel=\"项目说明\"\n\t\t\treadonly\n\t\t/>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamContentEditor } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "disabled",
+			"title": "禁用编辑",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamContentEditor kind=\"markdown\" v-model=\"value\" label=\"项目说明\" disabled />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamContentEditor } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst value = ref('# 项目说明\\n记录目标与进度。');\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamContentEditor kind=\"markdown\" v-model=\"value\" label=\"项目说明\" disabled />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamContentEditor } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst value = ref('# 项目说明\\n记录目标与进度。');\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

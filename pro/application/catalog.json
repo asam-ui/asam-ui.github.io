@@ -1,0 +1,162 @@
+[
+	{
+		"id": "use-toggle",
+		"title": "布尔切换",
+		"exports": [
+			"useToggle"
+		],
+		"description": "创建布尔ref与切换函数；可显式传入下一状态。",
+		"limitations": "无DOM依赖。每次调用创建独立状态。",
+		"entry": "packages/pro/src/application/composables/use-toggle/examples/main.ts",
+		"route": "/pro/application/composables/use-toggle.html"
+	},
+	{
+		"id": "use-rect",
+		"title": "元素矩形",
+		"exports": [
+			"useRect"
+		],
+		"description": "读取元素或元素ref当前的DOM矩形。",
+		"limitations": "同步快照；挂载后测量，尺寸变化后按需再次调用。空目标返回上游零矩形，不代表真实尺寸。",
+		"entry": "packages/pro/src/application/composables/use-rect/examples/main.ts",
+		"route": "/pro/application/composables/use-rect.html"
+	},
+	{
+		"id": "use-count-down",
+		"title": "倒计时",
+		"exports": [
+			"useCountDown"
+		],
+		"description": "按剩余毫秒倒计时，可开始、暂停、重置并监听完成。",
+		"limitations": "time为毫秒；current是计算ref，示例显式清理暂停。KeepAlive由上游维护适用的激活/停用行为。",
+		"entry": "packages/pro/src/application/composables/use-count-down/examples/main.ts",
+		"route": "/pro/application/composables/use-count-down.html"
+	},
+	{
+		"id": "use-click-away",
+		"title": "区域外点击",
+		"exports": [
+			"useClickAway"
+		],
+		"description": "监听一个或多个目标区域之外的事件。",
+		"limitations": "在setup调用；目标使用元素ref，支持空目标与卸载清理。eventName可选，默认click。",
+		"entry": "packages/pro/src/application/composables/use-click-away/examples/main.ts",
+		"route": "/pro/application/composables/use-click-away.html"
+	},
+	{
+		"id": "use-window-size",
+		"title": "窗口尺寸",
+		"exports": [
+			"useWindowSize"
+		],
+		"description": "读取响应式窗口宽高。",
+		"limitations": "模块级共享ref/监听；重复实例不重复创建整套监听，不承诺最后组件卸载时移除共享监听。服务端值不表示实际窗口。",
+		"entry": "packages/pro/src/application/composables/use-window-size/examples/main.ts",
+		"route": "/pro/application/composables/use-window-size.html"
+	},
+	{
+		"id": "use-scroll-parent",
+		"title": "滚动父容器",
+		"exports": [
+			"useScrollParent",
+			"getScrollParent"
+		],
+		"description": "挂载后获取最近可滚动父元素，或同步查询指定元素。",
+		"limitations": "useScrollParent在挂载时确定父容器；DOM结构变化后应按实际契约重新查询。服务端和空目标不能提供真实DOM结果。",
+		"entry": "packages/pro/src/application/composables/use-scroll-parent/examples/main.ts",
+		"route": "/pro/application/composables/use-scroll-parent.html"
+	},
+	{
+		"id": "use-event-listener",
+		"title": "事件监听",
+		"exports": [
+			"useEventListener"
+		],
+		"description": "在组件生命周期内监听事件，返回可提前调用的停止函数。",
+		"limitations": "target可用响应式ref，切换时解除旧目标；capture/passive按选项传入。非浏览器返回安全空停止函数；须在setup建立生命周期。",
+		"entry": "packages/pro/src/application/composables/use-event-listener/examples/main.ts",
+		"route": "/pro/application/composables/use-event-listener.html"
+	},
+	{
+		"id": "use-page-visibility",
+		"title": "页面可见性",
+		"exports": [
+			"usePageVisibility"
+		],
+		"description": "读取页面visible或hidden状态的响应式ref。",
+		"limitations": "共享页面级状态与监听；浏览器切页或最小化可触发变化。服务端不提供真实页面可见性，也不是组件v-if状态。",
+		"entry": "packages/pro/src/application/composables/use-page-visibility/examples/main.ts",
+		"route": "/pro/application/composables/use-page-visibility.html"
+	},
+	{
+		"id": "use-raf",
+		"title": "动画帧循环",
+		"exports": [
+			"useRaf"
+		],
+		"description": "在浏览器帧中执行回调并返回停止函数，可配置interval/isLoop。",
+		"limitations": "调用者拥有停止函数；在卸载时真实调用。停止后不会自动重新开始，重新挂载会创建新循环。服务端不执行DOM帧。",
+		"entry": "packages/pro/src/application/composables/use-raf/examples/main.ts",
+		"route": "/pro/application/composables/use-raf.html"
+	},
+	{
+		"id": "raf",
+		"title": "单帧与双帧工具",
+		"exports": [
+			"raf",
+			"cancelRaf",
+			"doubleRaf"
+		],
+		"description": "预约单帧、取消句柄或在连续两帧后执行。",
+		"limitations": "raf返回句柄，用cancelRaf取消。doubleRaf不返回取消句柄；示例通过存活标记保护卸载后写入。服务端raf返回-1。",
+		"entry": "packages/pro/src/application/composables/raf/examples/main.ts",
+		"route": "/pro/application/composables/raf.html"
+	},
+	{
+		"id": "environment",
+		"title": "浏览器环境",
+		"exports": [
+			"inBrowser"
+		],
+		"description": "导入时判断是否存在浏览器环境。",
+		"limitations": "这是模块求值时的boolean，不是实时响应式状态；不代表所有浏览器API可用，不承诺原生App或完整SSR hydration。",
+		"entry": "packages/pro/src/application/composables/environment/examples/main.ts",
+		"route": "/pro/application/composables/environment.html"
+	},
+	{
+		"id": "use-relation",
+		"title": "父子组件关联",
+		"exports": [
+			"useParent",
+			"useChildren"
+		],
+		"description": "使用同一InjectionKey建立复合组件的父子关系并读取顺序索引。",
+		"limitations": "高级组件作者能力，使用Vue实例关系，固定Vue3.5.34兼容基线。不能将该能力当普通业务页面依赖；不公开两个上游实例树辅助函数。",
+		"entry": "packages/pro/src/application/composables/use-relation/examples/main.ts",
+		"route": "/pro/application/composables/use-relation.html"
+	},
+	{
+		"id": "on-mounted-or-activated",
+		"title": "挂载或重新激活",
+		"exports": [
+			"onMountedOrActivated"
+		],
+		"description": "首次挂载执行一次，KeepAlive重新激活时再次执行。",
+		"limitations": "在setup调用，首次激活不重复执行。非KeepAlive组件只会首次挂载执行；卸载后新实例重新计数。",
+		"entry": "packages/pro/src/application/composables/on-mounted-or-activated/examples/main.ts",
+		"route": "/pro/application/composables/on-mounted-or-activated.html"
+	},
+	{
+		"id": "use-custom-field-value",
+		"title": "自定义字段桥接",
+		"exports": [
+			"useCustomFieldValue",
+			"AsamCustomField",
+			"CUSTOM_FIELD_INJECTION_KEY"
+		],
+		"description": "把自定义值读取和交互校验接入真实ASAM表单；注入key仅作高级兼容接口。",
+		"limitations": "子组件中调用Hook，父桥接透传FormItem公开属性。内层ASAM/EP控件关闭validate-event以避免重复校验；slot.update表示用户变更，程序化模型更改需按需显式validate。无provider时不会自动接入普通表单。",
+		"entry": "packages/pro/src/application/composables/use-custom-field-value/examples/main.ts",
+		"route": "/pro/application/composables/use-custom-field-value.html"
+	}
+]

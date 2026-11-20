@@ -1,0 +1,1560 @@
+{
+	"schemaVersion": 1,
+	"files": [
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/welcome.zip",
+			"bytes": 2036901,
+			"sha256": "7b98a28ea59dccfdc3024fae648aaa339ea1804faa0dcdff4f587936231fd48d"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/welcome-source.zip",
+			"bytes": 21036,
+			"sha256": "6788ae52feb4877b33268a09535ceb47bd6d545429c81f9625e97554877e0d61"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/welcome-js.zip",
+			"bytes": 2034977,
+			"sha256": "59d896f10aaae62f9b30be03cabd2235f9a4de94171676643182a5df43c1174f"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/welcome-js-source.zip",
+			"bytes": 19128,
+			"sha256": "6d7de1985065c6421114225e43170fad5f9e369ce6e8705c9e63e9d558174637"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/table-list.zip",
+			"bytes": 2082448,
+			"sha256": "54a35b8405d23a46a093a571d7adedff36edb78c5b01ec0044784ed41504605f"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/table-list-source.zip",
+			"bytes": 64613,
+			"sha256": "bf42a31f8066fe1679dc2a1f0ee0c6f11019c41bcd98e623d85147edb59afad6"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/table-list-js.zip",
+			"bytes": 2073786,
+			"sha256": "b4c76e068090b841564a94f48cad4cc000a4abf868666f0bea980b747da1b513"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/table-list-js-source.zip",
+			"bytes": 56075,
+			"sha256": "7bf7d93ad55b667f29f01304879c066be3721c52d3749bde4322204f2383316c"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/crud-source.zip",
+			"bytes": 14732,
+			"sha256": "c1a7e0c61a85c0cd9f223a647bdc793add5335ea51e2ce641a426b32f76e17b2"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/crud.zip",
+			"bytes": 2029516,
+			"sha256": "b1884a139c50ef70917ef99fc91cde722f1dd124457eda5702388e02538ffc1b"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/crud-js-source.zip",
+			"bytes": 13862,
+			"sha256": "0597951f8ad9354b8f0a90bd37cec9a73e740ce7643d620b9e10a7ca266b7925"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/crud-js.zip",
+			"bytes": 2028620,
+			"sha256": "d546e40aaf09ef8d6d29d338917331803733b992283438b02cace437531553c4"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/basic-list.zip",
+			"bytes": 2073658,
+			"sha256": "f292845d09755194e14bc0decfdb0732c11f3714a0da53b8a6d6dd1bb17bb0b4"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/basic-list-source.zip",
+			"bytes": 55780,
+			"sha256": "4c84b16af558225b8281785b0fe76589d3d873ed3aef7cdd85f1561ed002faa7"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/basic-list-js.zip",
+			"bytes": 2065590,
+			"sha256": "26feda6a972fc8f9d9fdeed3e92c284ab71e0a7893ed122da20f322e47dabf7e"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/basic-list-js-source.zip",
+			"bytes": 47842,
+			"sha256": "ce84a90b1d59ce99d6294592f067303c516509845bf3a4a31fb109cf58b3556e"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/card-list.zip",
+			"bytes": 2082676,
+			"sha256": "5a8f775cd6009b7c337ba6238f2280c55d48683779d9f76fb1596afaad95df50"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/card-list-source.zip",
+			"bytes": 64706,
+			"sha256": "3241bd091494b9e1c9cd3aa64514385215e115de7dbaad5fa787eab1825cdfb2"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/card-list-js.zip",
+			"bytes": 2073874,
+			"sha256": "c0985f6866b8eabf9309d93a268b09c7f0860deca75f10f0b28743e583021f8a"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/card-list-js-source.zip",
+			"bytes": 56038,
+			"sha256": "83f1d39ca1e89b0f4cf802de1dee85f732cacbce8ddbaf8b1e56de30c532ea29"
+		},
+		{
+			"path": "pro/examples/application/navigation.zip",
+			"bytes": 2023224,
+			"sha256": "619ae42ff272d50d3630887badde60f43610a301214042e1277d222b5a5d44b6"
+		},
+		{
+			"path": "pro/examples/application/navigation-source.zip",
+			"bytes": 26898,
+			"sha256": "c52236b1725de761c7d53cca862683995638d5980e6609088b66d7457513cda7"
+		},
+		{
+			"path": "pro/examples/application/navigation/src/App.vue",
+			"bytes": 4564,
+			"sha256": "44e1249602c329d2a270eb4cbb113ac50662ff05093c41ec76f2647277ea20bd"
+		},
+		{
+			"path": "pro/examples/application/navigation/src/EmbeddedExample.vue",
+			"bytes": 879,
+			"sha256": "b6498615a9800be152125743e238773720124ba11aeca5bf4e518e16a5681a4c"
+		},
+		{
+			"path": "pro/examples/application/navigation/src/Lifecycle.ts",
+			"bytes": 150,
+			"sha256": "138f350b61efba941fb70be3c187ecd9eb67d23165bb702e7cb6e4c3695f6263"
+		},
+		{
+			"path": "pro/examples/application/navigation/src/StatePage.vue",
+			"bytes": 1423,
+			"sha256": "4f93acb9006530bf06a585733967e239b075def43939930a5f53ebcda6ea1354"
+		},
+		{
+			"path": "pro/examples/application/navigation/src/Texts.ts",
+			"bytes": 1620,
+			"sha256": "4e0aae1a5cd324fec3495cf2bc1ca84f902160cfd6134afc68c80fce7d0728d5"
+		},
+		{
+			"path": "pro/examples/application/navigation/src/TrackedPage.vue",
+			"bytes": 335,
+			"sha256": "5f164f139db811b010d859fb12c60cc19ec59af44dbe6663d6d9482861363429"
+		},
+		{
+			"path": "pro/examples/application/navigation/src/main.ts",
+			"bytes": 871,
+			"sha256": "7e796e0886fcd93086395626122361b3db7b143272679a0007568fcf48cff032"
+		},
+		{
+			"path": "pro/examples/application/navigation/src/mount.ts",
+			"bytes": 1492,
+			"sha256": "aaef38a5e50fa34087cec95259e786df6b1a9c39893c4b92916302ff11408a00"
+		},
+		{
+			"path": "pro/examples/application/navigation/src/MinimalExample.vue",
+			"bytes": 775,
+			"sha256": "ed39577ba567d9d0a7ad90756eeddd9f489e87e79a826c51710c6777d89315b6"
+		},
+		{
+			"path": "pro/examples/application/navigation/package.json",
+			"bytes": 1134,
+			"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45"
+		},
+		{
+			"path": "pro/examples/application/navigation/main.ts",
+			"bytes": 699,
+			"sha256": "9030a829ab2fefd7df8456d26a2933f2ec1a8f6e46bd74b457ad5175dc468694"
+		},
+		{
+			"path": "pro/examples/application/navigation/vite.config.ts",
+			"bytes": 155,
+			"sha256": "57b65d4d13406778d7e314093b7c42aa6ddf64f6464cc92a99ac815f9a57d992"
+		},
+		{
+			"path": "pro/examples/application/navigation/tsconfig.json",
+			"bytes": 340,
+			"sha256": "9861140c7cbfcceb2e40c0a6469761d14acfccf01a36681459d2532ba184d33b"
+		},
+		{
+			"path": "pro/examples/application/navigation/README.md",
+			"bytes": 1058,
+			"sha256": "4795a3d620439fbdbe531b95dbf676af1536964a9270638fc3c0c0db90efdd8b"
+		},
+		{
+			"path": "pro/examples/application/navigation/src/inline-entry.ts",
+			"bytes": 602,
+			"sha256": "48615238a402b2d1f7dd15d7fc3ff4a3d6b0e90d6ed0348b756d2284401ebfa9"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/admin-access.zip",
+			"bytes": 2029938,
+			"sha256": "8c26726d70f12c098fc1f85c4dfa794af90dd7504eeeb0e63538fb693756c771"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/admin-access-source.zip",
+			"bytes": 13852,
+			"sha256": "beab41c12deb188aa1224e844f48a728900c836eda1807f9127c767d610c6d7a"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/admin-access-js.zip",
+			"bytes": 2028662,
+			"sha256": "53ce6caafc8c909a4bcd3fea8e6b864116abb732fb2a45ab887b1ea540473298"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/admin-access-js-source.zip",
+			"bytes": 12595,
+			"sha256": "25aa6bffc2443c5897cfc42315e9ca6b33afa7be30942e091e5561c2acaa402c"
+		},
+		{
+			"path": "pro/examples/application/security.zip",
+			"bytes": 2024071,
+			"sha256": "202ab5b6d8333c413d279e5cc28fc482faab2cc4cf1d514d99e64edcae40635c"
+		},
+		{
+			"path": "pro/examples/application/security-source.zip",
+			"bytes": 22370,
+			"sha256": "f5908d8fbd02ae733a247793e682cc9ec255d8ee161d36182631c5419b7cdab8"
+		},
+		{
+			"path": "pro/examples/application/security/src/App.vue",
+			"bytes": 7577,
+			"sha256": "c72d02687e8207369fe7c00db7d556f8d3eca1b44719ab28c5d8946e10729458"
+		},
+		{
+			"path": "pro/examples/application/security/src/Context.ts",
+			"bytes": 365,
+			"sha256": "4793d980d6e6954b6e8ec03ba53c7fad6bf834ffa527402af08c1696000656af"
+		},
+		{
+			"path": "pro/examples/application/security/src/DataPage.vue",
+			"bytes": 2935,
+			"sha256": "57d5fed671167555c8012ba4c344323d9fc37a693d741882a478df3d137d6223"
+		},
+		{
+			"path": "pro/examples/application/security/src/Fixture.ts",
+			"bytes": 2744,
+			"sha256": "0f212292b65e8293b26d19b910b5c15d4c23ef8b25a6175b4ead09d5662357d8"
+		},
+		{
+			"path": "pro/examples/application/security/src/Texts.ts",
+			"bytes": 2623,
+			"sha256": "4426487ba35e51c0d8b33e4fc944d787e040590dae101be864f7686ccc460536"
+		},
+		{
+			"path": "pro/examples/application/security/src/main.ts",
+			"bytes": 802,
+			"sha256": "d4fe820b6cb11cf6acd1d289943b988017c76654c9f36b6a0d794dd4e9bf8930"
+		},
+		{
+			"path": "pro/examples/application/security/src/mount.ts",
+			"bytes": 1436,
+			"sha256": "62da15785f36f0aa2d1fb2334946b068b6025f310646cb47fde9746f0b0f072a"
+		},
+		{
+			"path": "pro/examples/application/security/src/MinimalExample.vue",
+			"bytes": 804,
+			"sha256": "cff4fe0fd93646bc0d7b0513479c31b77dbc38312dd700adcd961d2b220da496"
+		},
+		{
+			"path": "pro/examples/application/security/package.json",
+			"bytes": 1134,
+			"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45"
+		},
+		{
+			"path": "pro/examples/application/security/main.ts",
+			"bytes": 695,
+			"sha256": "f131f53315be53554d5d294487c6765d7bfd32253f65df6b3db56fe8dbbe1051"
+		},
+		{
+			"path": "pro/examples/application/security/vite.config.ts",
+			"bytes": 155,
+			"sha256": "57b65d4d13406778d7e314093b7c42aa6ddf64f6464cc92a99ac815f9a57d992"
+		},
+		{
+			"path": "pro/examples/application/security/tsconfig.json",
+			"bytes": 340,
+			"sha256": "9861140c7cbfcceb2e40c0a6469761d14acfccf01a36681459d2532ba184d33b"
+		},
+		{
+			"path": "pro/examples/application/security/README.md",
+			"bytes": 1056,
+			"sha256": "d6dcf2231891c4685847b0d1f78d2a95aec30d35c88b3dc1a67054db194e91f1"
+		},
+		{
+			"path": "pro/examples/application/security/src/inline-entry.ts",
+			"bytes": 48,
+			"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2"
+		},
+		{
+			"path": "pro/examples/application/preferences.zip",
+			"bytes": 2026541,
+			"sha256": "d614f2c48ebc64e2583c98d152ec4ae7fdfb5e91360a6db296d25ac3a6d77656"
+		},
+		{
+			"path": "pro/examples/application/preferences-source.zip",
+			"bytes": 21878,
+			"sha256": "8c1aea6b01109181c02afefbef89760ab9c63bd7144325b6af57142859a4a983"
+		},
+		{
+			"path": "pro/examples/application/preferences/src/App.vue",
+			"bytes": 12388,
+			"sha256": "d48802827a0c841bac669192b4507a2dc517a628b499cb4da6834ddaa7036da8"
+		},
+		{
+			"path": "pro/examples/application/preferences/src/BusinessPage.vue",
+			"bytes": 808,
+			"sha256": "b74bd56c604bc8a487e3fd4db016063d8d6c3e2c710eba551ca97ddb7927cd3e"
+		},
+		{
+			"path": "pro/examples/application/preferences/src/context.ts",
+			"bytes": 211,
+			"sha256": "28185838a532ebab147a2e435c9682533c362efcfc99e9cdb00d8ef1ae8158ff"
+		},
+		{
+			"path": "pro/examples/application/preferences/src/dictionaries.ts",
+			"bytes": 4429,
+			"sha256": "1de0575bfb49a6e07b7940096791663b1d2e8b225733caf5d9d299237ca82750"
+		},
+		{
+			"path": "pro/examples/application/preferences/src/main.ts",
+			"bytes": 604,
+			"sha256": "7609a8a3f1323ea54701c4ff3c7950b369031724a8c81241d3c8ab80105b1462"
+		},
+		{
+			"path": "pro/examples/application/preferences/src/mount.ts",
+			"bytes": 1212,
+			"sha256": "50f41280c7dc0484c504fccddf4d8233f7e7bb689175ce21489246d080def2e7"
+		},
+		{
+			"path": "pro/examples/application/preferences/src/MinimalExample.vue",
+			"bytes": 861,
+			"sha256": "7f28d08950db413b5795b3e34c21782b3e884490cd8bb40744d1a1851acea4cc"
+		},
+		{
+			"path": "pro/examples/application/preferences/package.json",
+			"bytes": 1134,
+			"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45"
+		},
+		{
+			"path": "pro/examples/application/preferences/main.ts",
+			"bytes": 701,
+			"sha256": "ef254da509a7eb07b57dbe8d0eb002c5f72ccf018a5f016876212c080ee8c226"
+		},
+		{
+			"path": "pro/examples/application/preferences/vite.config.ts",
+			"bytes": 155,
+			"sha256": "57b65d4d13406778d7e314093b7c42aa6ddf64f6464cc92a99ac815f9a57d992"
+		},
+		{
+			"path": "pro/examples/application/preferences/tsconfig.json",
+			"bytes": 340,
+			"sha256": "9861140c7cbfcceb2e40c0a6469761d14acfccf01a36681459d2532ba184d33b"
+		},
+		{
+			"path": "pro/examples/application/preferences/README.md",
+			"bytes": 1059,
+			"sha256": "9932d33becafa6e57c425d14d38792fd07892c568ff998001e5a80b410377237"
+		},
+		{
+			"path": "pro/examples/application/preferences/src/inline-entry.ts",
+			"bytes": 75,
+			"sha256": "94dad5248b68d23344a6fc856b9dfa07e237dbc194fba3c14fa1901e24c1ed28"
+		},
+		{
+			"path": "pro/examples/application/preferences/src/InlineExample.vue",
+			"bytes": 763,
+			"sha256": "857b1a48c5a1180e4479dc3b44d56465e346c1ab5c6b0df7126fcefeec844710"
+		},
+		{
+			"path": "pro/examples/application/preferences/src/PreferencePanel.vue",
+			"bytes": 2255,
+			"sha256": "42fe92420ab6a6ba33e03ea7667b8510991e63b2c9ddde3a2786a30a8c78a12f"
+		},
+		{
+			"path": "pro/examples/application/preferences/src/preferences-session.ts",
+			"bytes": 2476,
+			"sha256": "e5f38ff28980cf5e5de5d62c9ceeb486071ae59384dda3c69a57bbd431d6ba64"
+		},
+		{
+			"path": "pro/examples/application/transport.zip",
+			"bytes": 2021144,
+			"sha256": "c492d80d33afe8245f0d29a29823cce62f6d793ae8fe2f873707c2b207c3098c"
+		},
+		{
+			"path": "pro/examples/application/transport-source.zip",
+			"bytes": 17899,
+			"sha256": "01fe49af329ddad184679e7aa4af734479c5b627f076cd8acd302a3a614416e1"
+		},
+		{
+			"path": "pro/examples/application/transport/src/Texts.ts",
+			"bytes": 2103,
+			"sha256": "5115f96cdaa5be32d1b5bdd185f689124713e567f69fd60984d79ed7113cc4b6"
+		},
+		{
+			"path": "pro/examples/application/transport/src/TransportDemo.vue",
+			"bytes": 3262,
+			"sha256": "4dd327266f863446968d113b037e4b373f536e2b7c56116ab83277f329e72dd4"
+		},
+		{
+			"path": "pro/examples/application/transport/src/application.ts",
+			"bytes": 1655,
+			"sha256": "9ac45b0e6d3200564f702ddcf6fe04b544fbd5aea05033b09948743880951cd0"
+		},
+		{
+			"path": "pro/examples/application/transport/src/context.ts",
+			"bytes": 459,
+			"sha256": "f55895a5c16c7f94820c209fe9888740503730c39320a72fccc1846b3d111519"
+		},
+		{
+			"path": "pro/examples/application/transport/src/mock.ts",
+			"bytes": 1638,
+			"sha256": "b110581760fc0d8d44070bb7ee384f113d5bc661370a13c6d05b68c155fb0b7e"
+		},
+		{
+			"path": "pro/examples/application/transport/src/mount.ts",
+			"bytes": 294,
+			"sha256": "2664fa930492c060eea455d5b1d0d46de53d8ca395a3e4584c7f08ad82de92c0"
+		},
+		{
+			"path": "pro/examples/application/transport/src/MinimalExample.vue",
+			"bytes": 1186,
+			"sha256": "1a69369ba8d5b5e4f37d1ea6ed4dc645517aba46c6b83092b7a4a35d3c4e247e"
+		},
+		{
+			"path": "pro/examples/application/transport/package.json",
+			"bytes": 1134,
+			"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45"
+		},
+		{
+			"path": "pro/examples/application/transport/main.ts",
+			"bytes": 697,
+			"sha256": "2464c843f5f1a4eecf406f888f568de6327a0584ab0aad260db13886aaf4c693"
+		},
+		{
+			"path": "pro/examples/application/transport/vite.config.ts",
+			"bytes": 155,
+			"sha256": "57b65d4d13406778d7e314093b7c42aa6ddf64f6464cc92a99ac815f9a57d992"
+		},
+		{
+			"path": "pro/examples/application/transport/tsconfig.json",
+			"bytes": 340,
+			"sha256": "9861140c7cbfcceb2e40c0a6469761d14acfccf01a36681459d2532ba184d33b"
+		},
+		{
+			"path": "pro/examples/application/transport/README.md",
+			"bytes": 1057,
+			"sha256": "fb9ca02764536d71331c675919c20e96d38e9877331824dc4f0ac09300deec6a"
+		},
+		{
+			"path": "pro/examples/application/transport/src/inline-entry.ts",
+			"bytes": 48,
+			"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/visualization.zip",
+			"bytes": 2054705,
+			"sha256": "3608b4a23b3899d76338106a175e1cc857e893600728bb6720820e49e39fe845"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/visualization-source.zip",
+			"bytes": 38360,
+			"sha256": "d90617b17b77b081a1f752822099e317218333c2ba80dbb03d3975edb3069f99"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/visualization-js.zip",
+			"bytes": 2050247,
+			"sha256": "c38955439c21fbb774acd23922a9e769cebac0b220fce563fee5a7ef0389f13a"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/visualization-js-source.zip",
+			"bytes": 33961,
+			"sha256": "64cac9acbb601b224a984e9601cdafd79105a665a3a7720819e959281c16f62c"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/monitor-workspace.zip",
+			"bytes": 2052797,
+			"sha256": "fb24a95da9e31e69bf9481c34b6482e09d935d71df5e40ff97cc875c7927738e"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/monitor-workspace-source.zip",
+			"bytes": 35385,
+			"sha256": "ae70ee1be2f8a11445881e2e5334f31a61ffae00363100949b3392b01a44b1de"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/monitor-workspace-js.zip",
+			"bytes": 2048373,
+			"sha256": "1d16c4523fb841b13e72ff02a36e8f21ae1d6b6da5f2ae4a11b1133967ca66f2"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/monitor-workspace-js-source.zip",
+			"bytes": 31026,
+			"sha256": "31ed8bc924b366026dfd36a37e671092653fd96a987aca59594e87e9cf139aa4"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/analysis-workspace.zip",
+			"bytes": 2050043,
+			"sha256": "a7f0938d0a5e72f36e34eb017343cf54a91ba6aac22169cc63536e55db8cd7a2"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/analysis-workspace-source.zip",
+			"bytes": 33020,
+			"sha256": "1dfb7c5dd95ce8a2bac821108ed4901cad6480f1a694abce2afa904f621e672e"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/analysis-workspace-js.zip",
+			"bytes": 2045465,
+			"sha256": "61ebae2fc22174b10cf92afc23cb34fa3c7d9a194ba70f0cd43d80a619261670"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/analysis-workspace-js-source.zip",
+			"bytes": 28540,
+			"sha256": "f0dd9857e9f97b328d1eed856b96358858b447ad48c594474c5cfed5d6c415ce"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/workplace-workspace.zip",
+			"bytes": 2063523,
+			"sha256": "39662d5f808bc5cb4606616309850cecdc8effa97d32b1ba62d4e30e13d6bbfd"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/workplace-workspace-source.zip",
+			"bytes": 46515,
+			"sha256": "846ba30d332d0d4d7dc6ee73e8f3c4808d3b2179dd6c0047fcf9e7c378a38099"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/workplace-workspace-js.zip",
+			"bytes": 2056630,
+			"sha256": "6e75533b975de97a3f54ff8402c1c6e3eefcc73493c0b7e3f0fc0c58352467e5"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/workplace-workspace-js-source.zip",
+			"bytes": 39790,
+			"sha256": "035e74ee5a980e57973716e870711475011f7a517bf406bf2cc88d81d6a1d33b"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/workbench-source.zip",
+			"bytes": 37031,
+			"sha256": "9b2a090a1242f3a38a816950ce0eae908c5e7796c56ddd80c81b65a82f42f5ee"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/workbench.zip",
+			"bytes": 2052745,
+			"sha256": "e9d4fca339cb1e8a0f4ee41757f6116b275c9e8a1aed1485b9559b75c7dd04b4"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/workbench-js-source.zip",
+			"bytes": 33699,
+			"sha256": "87a4aed9eba32b0f82d81ff4e9dd13378c7190f1840c445903bc53157a450919"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/workbench-js.zip",
+			"bytes": 2049307,
+			"sha256": "855f6bbe96306069e95778b66e8a90f45475581c12438fffa32557d48c200f45"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/forms-source.zip",
+			"bytes": 45926,
+			"sha256": "370df2dc12120fb9dcd74af81d14a7b604fd549d11a36f7406a518e1e0407242"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/forms.zip",
+			"bytes": 2061497,
+			"sha256": "dda94feca7cc4e132e1b374b903387c218199473a52887a33ad42b67d7231cc7"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/forms-js-source.zip",
+			"bytes": 40721,
+			"sha256": "0629290b05e11c13e92874678327cbcf2cd465cd205119b46eee1f17e3af0f0f"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/forms-js.zip",
+			"bytes": 2056230,
+			"sha256": "8dcea691f362d590ad5ffec1a203e7c802e5988bd4d568baa3bd09877b74ef84"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/basic-profile.zip",
+			"bytes": 2057258,
+			"sha256": "7fd555868612cb31baf8d45d84ae9a576a88b8657b6739ae07e0694be1880b5d"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/basic-profile-source.zip",
+			"bytes": 40137,
+			"sha256": "ebff2c1e657f8a95a9d19f89e36dc8f3d9df3d62ccebd06f06b8ef370f618e2a"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/basic-profile-js.zip",
+			"bytes": 2051778,
+			"sha256": "71ff693cc17fd346e474278903ba641974ac69cf5f869d96c975cf0dcb37efd4"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/basic-profile-js-source.zip",
+			"bytes": 34707,
+			"sha256": "ec0942f723b74d0073bd19f9db2dfdd0850ffcf0d685d8d5b377a78a2c66dd60"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/advanced-profile.zip",
+			"bytes": 2066973,
+			"sha256": "960b0c38d24611cf3324119cba47afd7167cc056fe1da5e7e393810f1e727eb2"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/advanced-profile-source.zip",
+			"bytes": 49994,
+			"sha256": "9346074d2e16a8368ed62f366fe10b94f1f932315b9c5f8c5a4ce4a2812cd1fd"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/advanced-profile-js.zip",
+			"bytes": 2060664,
+			"sha256": "9f516f98fd308a7aeb9d91be3e689443099070784d4396c367fb615a7824da43"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/advanced-profile-js-source.zip",
+			"bytes": 43773,
+			"sha256": "ea250e46688ce50b8e31119b3e0064f3c7a893ef3189f2ac2bb618b75990e598"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/details-source.zip",
+			"bytes": 42963,
+			"sha256": "631f3208bb9a25c5affbf18a04d82b52c0d80ef54b0d69e89a20cb6efa9a175a"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/details.zip",
+			"bytes": 2058681,
+			"sha256": "ee7bc5cb024134151e80ae0ec0e8ca29e8bb6052a629b9b36b4bee1a1aef04c7"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/details-js-source.zip",
+			"bytes": 39195,
+			"sha256": "f50f6af8c286b01fec41d5a8e882d7293f305d087c852dfafc1b0c1d26376a04"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/details-js.zip",
+			"bytes": 2054885,
+			"sha256": "13eb5f2bbe900885cfc4e9442b19f5658a746a29dc4898231292a67150e91629"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/search.zip",
+			"bytes": 2069472,
+			"sha256": "a5a944517eb81f6178c434d6fb5d23ce9d5b14280526336a82ac9ae28cf91b29"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/search-source.zip",
+			"bytes": 52538,
+			"sha256": "c22604fc709896cba28e59e92fd81d306531635f08af4eadb44236f0a12fe2f2"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/search-js.zip",
+			"bytes": 2064597,
+			"sha256": "b1497faf47d6d051403f20ab0a8e1bd8bf9a91766f55d7b4b79b04004ae67c29"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/search-js-source.zip",
+			"bytes": 47713,
+			"sha256": "237872b6f91bbb7210d9e674cb8b87977363e5bc64bed940150aa0ee2d4db448"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/articles.zip",
+			"bytes": 2058472,
+			"sha256": "d54a169edb645e48c732eecf2404863518d2397072d4894aab80ec2d6136f999"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/articles-source.zip",
+			"bytes": 41215,
+			"sha256": "2c295735915ac0d2d69083b24595a8b7ef32115257d5ab7c2ada9c94623f3998"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/articles-js.zip",
+			"bytes": 2052469,
+			"sha256": "eac4daca48c6b71336dc481c2b9dc3d6e817bc84dd2ab41bee85c595cfa9f546"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/articles-js-source.zip",
+			"bytes": 35316,
+			"sha256": "4cf40cd1edcefe7f362e44ac8cbf4a018253015436bd9df16b57120a3a58c0c4"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/projects.zip",
+			"bytes": 2061299,
+			"sha256": "3084c469a335487533190a00637c82d78119fa2ab3a9929fad539f5876152e16"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/projects-source.zip",
+			"bytes": 44075,
+			"sha256": "1aa45635236b08d698cb0a58adf35089c71f50429b433d6689f6ed1555811c08"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/projects-js.zip",
+			"bytes": 2055002,
+			"sha256": "47a42519397d088efd566d7e1a5c04c64e72adee967fed5be568e8c989afbcb4"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/projects-js-source.zip",
+			"bytes": 37880,
+			"sha256": "557af9bf8a1f598942ec31bca8543710ff46bcded5ea2b96ace703627643164f"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/applications.zip",
+			"bytes": 2060020,
+			"sha256": "cc97e1013fddddac9a18df0a7a9d5dc26bbce2b66433c22f299bc576c2086634"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/applications-source.zip",
+			"bytes": 42694,
+			"sha256": "bc925a916cfa8dc8c9b65fb0182dca6ecda1fea6f4474667b42a07b7736b0723"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/applications-js.zip",
+			"bytes": 2053725,
+			"sha256": "434298105254ffbad0b13492dcfaf37ee3ebf62590a882791af961642c4d3350"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/applications-js-source.zip",
+			"bytes": 36493,
+			"sha256": "91ec69742fdd53903d57400a01c656c4c74ae4dd0d92817f66995be6e06dd8df"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/register.zip",
+			"bytes": 2061465,
+			"sha256": "0e595940111cdeb6ddfafe6a86bbb27843bee8ec272a296b6be4298b3234197d"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/register-source.zip",
+			"bytes": 43459,
+			"sha256": "35df45f9f686d1dcc07400a6589da51f3858b27cef133223e0ef8b52e83a5743"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/register-js.zip",
+			"bytes": 2054096,
+			"sha256": "fae796b7206deb92aef35272447ea5d54f82fadf02eaa5b36dd81bc02501356f"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/register-js-source.zip",
+			"bytes": 36274,
+			"sha256": "e00c292190d8c465af9f0e4f54b7dbb40e4f2c87bf426f112e8c63b77c7c60a4"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/settings-complete.zip",
+			"bytes": 2070691,
+			"sha256": "db80f843d689b8f6e79e49b818ee7a262d661d5b2eed352ec625ef27f19abd0a"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/settings-complete-source.zip",
+			"bytes": 52767,
+			"sha256": "c8a3003b32c5c8295d5b2b75664c250e01a8bcb6b48d956eee0930ecf255975d"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/settings-complete-js.zip",
+			"bytes": 2063486,
+			"sha256": "3773f029c5c1d80ea1b4247e86087e0f55ec0250e6a2ddaa9373c77013874cf5"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/settings-complete-js-source.zip",
+			"bytes": 45660,
+			"sha256": "98f7b68e4b6f6c664fd1d41da0efb79133852cd5f930d34df2a5d41125c3a508"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/account-center.zip",
+			"bytes": 2053397,
+			"sha256": "6e38efca86ea0210ee3b08a358bf826f818f33d6004ff3a16aea6e7570be8cd4"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/account-center-source.zip",
+			"bytes": 36437,
+			"sha256": "a3410c9492e061ae00df59c2ba6079a6bd66eb5cbd8611d94e5290ebd54fe01a"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/account-center-js.zip",
+			"bytes": 2048061,
+			"sha256": "f5ba0c2145960f02f3f2bca567303f6ab3d422081049fdf6138b824ccce2f157"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/account-center-js-source.zip",
+			"bytes": 31208,
+			"sha256": "f4e851e8390cc99ff3949284afb230a6e550e8785fd61e65fe81c45dd5d94c9e"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/login-workspace.zip",
+			"bytes": 2046272,
+			"sha256": "4c346204bed62fc7bade300e89430c4016942beec39c3788f0d01138e9136a64"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/login-workspace-source.zip",
+			"bytes": 29937,
+			"sha256": "474030966711fbeee2024cda3e4d4a73a3c7f0be1f8ba5cd3fa0b72c73acdbe3"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/login-workspace-js.zip",
+			"bytes": 2041080,
+			"sha256": "1fbdbe69239f1410bafe4fba9797940ecca36366b57628a45cc5f87f20133e7c"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/login-workspace-js-source.zip",
+			"bytes": 24840,
+			"sha256": "3224215e8ec2fa78e0678c3762ee2e64a1fbf299e000d7bc9e3dff85c8833ea4"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/settings-workspace.zip",
+			"bytes": 2059430,
+			"sha256": "cbc3aaceec63194c3e88faa0c91543a8ada5b52fd5f636613c00febc6ceb8abd"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/settings-workspace-source.zip",
+			"bytes": 42174,
+			"sha256": "bbdaf9192bb2110e87b154718ebeccffe09fc6aac8b8232f3b424fa41ad3ec33"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/settings-workspace-js.zip",
+			"bytes": 2053439,
+			"sha256": "a1f0c0786a61cee99c537994ab4c4ad764d557535eeeb1708ff00310f52c7f88"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/settings-workspace-js-source.zip",
+			"bytes": 36277,
+			"sha256": "99c136d92d965720aa4aa385953f15d2ef68e1dac32f00c0cdecaea59e00b326"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/registration-result.zip",
+			"bytes": 2025763,
+			"sha256": "144aa05737bd094b999cb132547bcc8b8e2e4c258ca7a711b7e7cb81ca91f791"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/registration-result-source.zip",
+			"bytes": 10289,
+			"sha256": "ea930546b034b6a5bb05f0135be67d160cdd67df68b6fbe989facc2b07953313"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/registration-result-js.zip",
+			"bytes": 2024730,
+			"sha256": "52174cb2fadea4a34b59bfa203ced9354c3a8c2253c5bc8af50658ac99fd6c53"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/registration-result-js-source.zip",
+			"bytes": 9281,
+			"sha256": "d5010431ac39abe364e15813c74b614ff748664eeb06bee995a947b477f66d91"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/account.zip",
+			"bytes": 2091023,
+			"sha256": "a9587093084c3209da25d162c0adb8c7d61169468f39267149cec40705a2470c"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/account-source.zip",
+			"bytes": 173243,
+			"sha256": "7468234924c5fc8471cfd7a85ebfd396cd73b217f41c258c5fe68ebd477ecaa3"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/account-js.zip",
+			"bytes": 2086750,
+			"sha256": "1d606ada4fee2f95a26868182e9e380be50cc2fe7cf73210058a42790696182f"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/account-js-source.zip",
+			"bytes": 70357,
+			"sha256": "7bf91df2ac4c7cabdb9a209079d5abc4723c4e1417c0f6d19fc9aee750e6e1bb"
+		},
+		{
+			"path": "pro/examples/templates/account/minimal/Login.vue",
+			"bytes": 18541,
+			"sha256": "df57f6a9d8577b1d8d7fb5eb14e2450820677f86a0c66de0e37cbc10791b6bbe"
+		},
+		{
+			"path": "pro/examples/templates/account/brand/Login.vue",
+			"bytes": 19284,
+			"sha256": "0760f117852d5e60043b570aec3771a07c7ae946e541e291be24e55acfa0057e"
+		},
+		{
+			"path": "pro/examples/templates/account/tech/Login.vue",
+			"bytes": 19113,
+			"sha256": "6c8779ffb60db16ef4e783b77c764991cb5827c9192f75dedaf462ee51389461"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/administration-source.zip",
+			"bytes": 55773,
+			"sha256": "9b2d4c2e40500b612499a946d730ba2f18a4ddad85f80909156ad1604fe37ac6"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/administration.zip",
+			"bytes": 2071580,
+			"sha256": "ae80a3515b6a5ee397508e6d188d5dd744eaf6f1679bde06d7ce0e91995e0fab"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/administration-js-source.zip",
+			"bytes": 49796,
+			"sha256": "2598a3a6c1cb6683fccac69df666387d35ea266364690aefaaa0539e5782909b"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/administration-js.zip",
+			"bytes": 2065585,
+			"sha256": "7b7c6810eefac7dd94569de5b8e4a6aa5a4cab6dd450e945c6531656dcfbce8f"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/fail-result.zip",
+			"bytes": 2066898,
+			"sha256": "7817424fa1018edfab291fbba323d98e01f27229417406053926722a777cbbcf"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/fail-result-source.zip",
+			"bytes": 49521,
+			"sha256": "458179f78805a2927b70f853559d1549d1044179550092e24fe5a40de1401443"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/fail-result-js.zip",
+			"bytes": 2059767,
+			"sha256": "01804944a3014f56925b24496a8ab6d326349aa184f4d497965dc56f641c2310"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/fail-result-js-source.zip",
+			"bytes": 42626,
+			"sha256": "51ee678a40f2359d91805a64b6a49c75ab197d00db53bc7315186bac3a2fd5e5"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/success-result.zip",
+			"bytes": 2063491,
+			"sha256": "e0eae8ad1784a35e9faed916deaff8a562ce79cc3aa934dca14ceb85bbf7450c"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/success-result-source.zip",
+			"bytes": 45800,
+			"sha256": "58a700fd808f336b3f3099c5e23f7e948db09eca909ffa5516574247c8d12675"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/success-result-js.zip",
+			"bytes": 2056837,
+			"sha256": "984741efb819c7c8db8891a6844cde89b9fb8655472370373fe86c2c27f3febd"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/success-result-js-source.zip",
+			"bytes": 39337,
+			"sha256": "8284ecc9f530000dd69de56b99493233e8a8505c50a1e9a88a606be128acf8ba"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/results.zip",
+			"bytes": 2051499,
+			"sha256": "7c4495e6f96fc5071a16c24aa416e6d35e63bd731b36efa0da7bc8585a0f4dfb"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/results-source.zip",
+			"bytes": 36945,
+			"sha256": "19d8c102bade1cbbb7b412ac176a9cc9ef3f6cc0b46986b589c42642c4955729"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/results-js.zip",
+			"bytes": 2046919,
+			"sha256": "1fc41311868846d504d7adc86327d072b987247c6f4ecc0fe96cc868d66c6b1e"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/results-js-source.zip",
+			"bytes": 32446,
+			"sha256": "fe7c1f519f09a304490ffd097678f54c936bb0becae0086adf197c4ceb673251"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/editor-pages-source.zip",
+			"bytes": 31285,
+			"sha256": "0906df5bfb912889178736287a31de8543ffd2114f321ecaed3d84beb22faaf0"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/editor-pages.zip",
+			"bytes": 2046576,
+			"sha256": "2c9dda93977085799a8cff71213bf2e6a564765ddbfeeb5d3b34617e58643287"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/editor-pages-js-source.zip",
+			"bytes": 27954,
+			"sha256": "fe5c8e358d39660a5f1daf522e53b3f965d89f22685c54b431210f487f283761"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/editor-pages-js.zip",
+			"bytes": 2043179,
+			"sha256": "41a12f4248f8cc690487ef76ca8952bdfd363e666e4ad4b5ea1077c68ef806fc"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/chatbot.zip",
+			"bytes": 2072257,
+			"sha256": "1c1ceb87d1556e82d07b59b460357786684de28b85be064e92ee95032da28722"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/chatbot-source.zip",
+			"bytes": 55975,
+			"sha256": "1fbe96023e34a3c1de7c2cbb37b1a8c43f523281f4314b1e766e3fe126a3144f"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/chatbot-js.zip",
+			"bytes": 2067062,
+			"sha256": "fd458813bb5475e560b05b64323cca1684e71e52d9b00bb55206a6408259fc0d"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/chatbot-js-source.zip",
+			"bytes": 50916,
+			"sha256": "9369f772299ce9f7ce8a04d7c2d38ea4deb5a74de941cf3867cae4bfe6a40133"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/social-source.zip",
+			"bytes": 39500,
+			"sha256": "31d7016f52a75cf58718f598c5d3dec7b8d0807160d30295f6b04bf6f25f0c46"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/social.zip",
+			"bytes": 2055340,
+			"sha256": "b54c02d5062bd2046db33ab55b8d0b33b13430ef8d186676e3c62ae3683476ca"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/social-js-source.zip",
+			"bytes": 35776,
+			"sha256": "28cc1d21da58470f25a36ac6a11577c37025c2a872604101e56ad9a1e2fd8232"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/social-js.zip",
+			"bytes": 2051559,
+			"sha256": "4c9269d1ea7e2ac4db0bdb901eda49e60e152c529e7ecc3e8f5e31455ff1e60e"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/maps-source.zip",
+			"bytes": 14481,
+			"sha256": "81e9c76741222d6aa5a22d8b39e93fc88a231309c54a82a63f3ee77c7115a1ab"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/maps.zip",
+			"bytes": 2029448,
+			"sha256": "41c6d6e08ec1e49171a9489897330d7dca1760b7153f3e2e276d4ec3666da627"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/maps-js-source.zip",
+			"bytes": 13254,
+			"sha256": "b55be45aae9c7fd715d74f65d9f6677a1827e6bc339f6a64fa501dd487e43126"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/maps-js.zip",
+			"bytes": 2028198,
+			"sha256": "94a6a66019d770efdf890e7ad2ecc299d40d6a522c43248698c051ab95372735"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/desktop-source.zip",
+			"bytes": 28003,
+			"sha256": "7446279f22e573b3940cf8cdcf36c5b6f4eb42f1b9c0e36b17b454889a9eba0d"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/desktop.zip",
+			"bytes": 2043137,
+			"sha256": "d00f5ebb639a482a5f8d80c670d7b1d8977ce5746ef0743af63ee75ea567bab6"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/desktop-js-source.zip",
+			"bytes": 26083,
+			"sha256": "cfe7377335974d8b90f629945d685587c1abfad81266a2390c4fbdbd4daffab3"
+		},
+		{
+			"path": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/desktop-js.zip",
+			"bytes": 2041194,
+			"sha256": "9c3e96a0757b47da43b9c28be38b0851fb66dceb4bcd1571aaddd6bc1ef96a3c"
+		},
+		{
+			"path": "pro/examples/composables/use-toggle.zip",
+			"bytes": 2016262,
+			"sha256": "87f9ae88ad1f286d245189355f49ebc3bde74ec19ff4b8019ab0472f964c733d"
+		},
+		{
+			"path": "pro/examples/composables/use-toggle-source.zip",
+			"bytes": 5065,
+			"sha256": "8b7b5b3d80c8e9ab3c55dbcbe0b2a8b8c0a62caa717b8ac952eb9b7a5d5b95a4"
+		},
+		{
+			"path": "pro/examples/composables/use-toggle/src/App.vue",
+			"bytes": 395,
+			"sha256": "e7f064ee6bdab039079edd4487eb333712f965a13544c656d166dd64f6c98ff8"
+		},
+		{
+			"path": "pro/examples/composables/use-toggle/src/main.ts",
+			"bytes": 693,
+			"sha256": "e5a81d4e0b1ce79b2ab6cfd358b0d9c9389c4aee8d005a73968270e7ace84415"
+		},
+		{
+			"path": "pro/examples/composables/use-toggle/src/MinimalExample.vue",
+			"bytes": 392,
+			"sha256": "dd2b9bfaf7d8705493341bf09dcff3a38ea6d31dd761302ec79b01e7b1a341d8"
+		},
+		{
+			"path": "pro/examples/composables/use-toggle/src/inline-entry.ts",
+			"bytes": 48,
+			"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2"
+		},
+		{
+			"path": "pro/examples/composables/use-toggle.json",
+			"bytes": 1881,
+			"sha256": "58e7aa09ab33ef1a86813edb7c5ed1670f9122330f9fe9a3ec3497210ae6bb3a"
+		},
+		{
+			"path": "pro/examples/composables/use-rect.zip",
+			"bytes": 2016411,
+			"sha256": "be65531eae095ac7e84d7a2e55215a86a5686431629de6ca5c2c0e79f6617237"
+		},
+		{
+			"path": "pro/examples/composables/use-rect-source.zip",
+			"bytes": 5205,
+			"sha256": "bf15e321b1e2e5b9d92db7f37fe0faa405988f1d11ae47a9a05ae0d08c18bdf0"
+		},
+		{
+			"path": "pro/examples/composables/use-rect/src/App.vue",
+			"bytes": 377,
+			"sha256": "033d895a18e795a4895cdee7b04e177058d4774af9cd50bf9c957182dfb97ed3"
+		},
+		{
+			"path": "pro/examples/composables/use-rect/src/main.ts",
+			"bytes": 689,
+			"sha256": "c8c5d469e9abb240ed821b78d796d5cc4e6788f04570bcce799097c6cb6172dd"
+		},
+		{
+			"path": "pro/examples/composables/use-rect/src/MinimalExample.vue",
+			"bytes": 597,
+			"sha256": "20629e8cc071f006ac0cf918ad4c0a238620a43a22f2696cec2d770c04cb37f2"
+		},
+		{
+			"path": "pro/examples/composables/use-rect/src/inline-entry.ts",
+			"bytes": 48,
+			"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2"
+		},
+		{
+			"path": "pro/examples/composables/use-rect.json",
+			"bytes": 2074,
+			"sha256": "dbff4a15de4d95b5a5391da59b844ed281671a8a2e0168d3a1f60920b4f6e22d"
+		},
+		{
+			"path": "pro/examples/composables/use-count-down.zip",
+			"bytes": 2016486,
+			"sha256": "0dd1a314f3b0e66a088d1a7f107f175e5ffddf8cc96165f277ee5d3d78e09066"
+		},
+		{
+			"path": "pro/examples/composables/use-count-down-source.zip",
+			"bytes": 5469,
+			"sha256": "04e1a136be422d8aa81310b570a115c9d30e45b612a9d686c7f16a83b9e7be35"
+		},
+		{
+			"path": "pro/examples/composables/use-count-down/src/App.vue",
+			"bytes": 401,
+			"sha256": "c6cd87ac4321e93276d02f0baa27d61e745f1e5d748d4444ab16049e89886fa0"
+		},
+		{
+			"path": "pro/examples/composables/use-count-down/src/main.ts",
+			"bytes": 705,
+			"sha256": "3e88dd82f7aa5c2fd2ba372372ed11c044a345e3be50ccb5412337cbd632db3f"
+		},
+		{
+			"path": "pro/examples/composables/use-count-down/src/MinimalExample.vue",
+			"bytes": 680,
+			"sha256": "f65c4e04991f14a43c1fc30ad4fdbdb9540ab3e3076c2291f00e03076187214f"
+		},
+		{
+			"path": "pro/examples/composables/use-count-down/src/inline-entry.ts",
+			"bytes": 48,
+			"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2"
+		},
+		{
+			"path": "pro/examples/composables/use-count-down.json",
+			"bytes": 2210,
+			"sha256": "6997fc41cb08e88f96dd92cf742769a1019a8cb1280febe22919284339c4b1a6"
+		},
+		{
+			"path": "pro/examples/composables/use-click-away.zip",
+			"bytes": 2016409,
+			"sha256": "a861d01fa17bc084f67f2c28936b7f02ad44af167fad50e5a2e79a63b8d4639a"
+		},
+		{
+			"path": "pro/examples/composables/use-click-away-source.zip",
+			"bytes": 5283,
+			"sha256": "75b9f6487705857dd82425cce0974396353ee83819835c92f3af372acf49354a"
+		},
+		{
+			"path": "pro/examples/composables/use-click-away/src/App.vue",
+			"bytes": 386,
+			"sha256": "aab1fcf7fd0cbed7e901bbd7dd94adab8f2e888e2ff3284b8bebb66b61403230"
+		},
+		{
+			"path": "pro/examples/composables/use-click-away/src/main.ts",
+			"bytes": 705,
+			"sha256": "618258113bbae9e51747d542bcaad3e72c78457082d208a5b203a8f33d18ae2e"
+		},
+		{
+			"path": "pro/examples/composables/use-click-away/src/MinimalExample.vue",
+			"bytes": 581,
+			"sha256": "6a33345349c21a0039de478ee0a6617cb2ac369b96bad53a70a197bfd8844474"
+		},
+		{
+			"path": "pro/examples/composables/use-click-away/src/inline-entry.ts",
+			"bytes": 48,
+			"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2"
+		},
+		{
+			"path": "pro/examples/composables/use-click-away.json",
+			"bytes": 2102,
+			"sha256": "95ac4e09e88e0c2b8efeff64ae8d1574e49345bde4944e190b84ae6beeeb3a17"
+		},
+		{
+			"path": "pro/examples/composables/use-window-size.zip",
+			"bytes": 2016240,
+			"sha256": "74e6aec4109851ef9e6363d0d6cb264e782b17961ecd1f16b2754f5da36e949b"
+		},
+		{
+			"path": "pro/examples/composables/use-window-size-source.zip",
+			"bytes": 5000,
+			"sha256": "c8e781755e95c6846be03938cb0dc3dcc44293f2ba9784acfadead0f9902f5ec"
+		},
+		{
+			"path": "pro/examples/composables/use-window-size/src/App.vue",
+			"bytes": 362,
+			"sha256": "db2c62b68a508598ebe23502edf8ffbaee47a7b6f97bddbe5ce6ed0840da8c59"
+		},
+		{
+			"path": "pro/examples/composables/use-window-size/src/main.ts",
+			"bytes": 707,
+			"sha256": "eb6199a072526c90f7fe976eeff6e79fb70cf7e783f32e6dcc9d6016a8453deb"
+		},
+		{
+			"path": "pro/examples/composables/use-window-size/src/MinimalExample.vue",
+			"bytes": 252,
+			"sha256": "94338a8ddfe183d43efccc370310edfe495ebc72484ceea9013f7d9a2c3daa30"
+		},
+		{
+			"path": "pro/examples/composables/use-window-size/src/inline-entry.ts",
+			"bytes": 48,
+			"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2"
+		},
+		{
+			"path": "pro/examples/composables/use-window-size.json",
+			"bytes": 1719,
+			"sha256": "ce74cec051024a8782d60a2eb080643f02105083d76f8216e988466d403a630b"
+		},
+		{
+			"path": "pro/examples/composables/use-scroll-parent.zip",
+			"bytes": 2016541,
+			"sha256": "997d64a38b152b207a4d05c17b6e04fe167aa88e93175ecd7eb5f2dc0fb1a9f7"
+		},
+		{
+			"path": "pro/examples/composables/use-scroll-parent-source.zip",
+			"bytes": 5393,
+			"sha256": "a67a7080179a9327abf2a686fa92e23fc7455484ea5bf694be16e2f4fbf69982"
+		},
+		{
+			"path": "pro/examples/composables/use-scroll-parent/src/App.vue",
+			"bytes": 407,
+			"sha256": "ff284210440e10d373394c5f7f94ae7f4f3ba0e6c71c76eacd3fd01045df3a7f"
+		},
+		{
+			"path": "pro/examples/composables/use-scroll-parent/src/main.ts",
+			"bytes": 711,
+			"sha256": "269cb2d72c587204fb17deb8a252fd617af2d87c6d14adbdccf19846018347f5"
+		},
+		{
+			"path": "pro/examples/composables/use-scroll-parent/src/MinimalExample.vue",
+			"bytes": 754,
+			"sha256": "c1f280308901b05c247e636a1751e00c63083432756a009726745a94232a8c48"
+		},
+		{
+			"path": "pro/examples/composables/use-scroll-parent/src/inline-entry.ts",
+			"bytes": 48,
+			"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2"
+		},
+		{
+			"path": "pro/examples/composables/use-scroll-parent.json",
+			"bytes": 2301,
+			"sha256": "3c41a44a6fe63059e62fe00500b26939ed5a187c638d256361067e740c1ef050"
+		},
+		{
+			"path": "pro/examples/composables/use-event-listener.zip",
+			"bytes": 2016489,
+			"sha256": "62ebd6821d148a3b088b862f5ee0ecd2d0ec9e935a48d7697834f219065f6d2a"
+		},
+		{
+			"path": "pro/examples/composables/use-event-listener-source.zip",
+			"bytes": 5692,
+			"sha256": "54dddc3ed2977b8f929c331f4952dc260bf445de4210561783713fb6374c4a89"
+		},
+		{
+			"path": "pro/examples/composables/use-event-listener/src/App.vue",
+			"bytes": 410,
+			"sha256": "a71d7259fbd7b3e58a566928ea85b1cc1a5a44192ee61e7f93867cbdbc8ff309"
+		},
+		{
+			"path": "pro/examples/composables/use-event-listener/src/main.ts",
+			"bytes": 713,
+			"sha256": "7aec64930abd1541cbaef86a822bd3cc9f107d62212744f864dd8e405c219cc5"
+		},
+		{
+			"path": "pro/examples/composables/use-event-listener/src/MinimalExample.vue",
+			"bytes": 560,
+			"sha256": "d63834a3fe55353ae687f04f6a72eed541511deee50b586d70b92433309d4abf"
+		},
+		{
+			"path": "pro/examples/composables/use-event-listener/src/inline-entry.ts",
+			"bytes": 48,
+			"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2"
+		},
+		{
+			"path": "pro/examples/composables/use-event-listener.json",
+			"bytes": 2103,
+			"sha256": "d58d208cb66f200bf394bcf7c21151605e1e82282b1be661c03f8d13b53d44d7"
+		},
+		{
+			"path": "pro/examples/composables/use-page-visibility.zip",
+			"bytes": 2016280,
+			"sha256": "a59a24f9ea758aca1df69134a6979ff7d6178013fa8431818c7c43588a2c0731"
+		},
+		{
+			"path": "pro/examples/composables/use-page-visibility-source.zip",
+			"bytes": 5055,
+			"sha256": "ba9a9855c05b26cfa111b5bc5a4ffc0c71b1d12842e96f0c3a3233d872a7ca1c"
+		},
+		{
+			"path": "pro/examples/composables/use-page-visibility/src/App.vue",
+			"bytes": 387,
+			"sha256": "2d37a6e4e0018d1e34b0ebd21f8fe34564c4621872d4aaddce4ba24273e63184"
+		},
+		{
+			"path": "pro/examples/composables/use-page-visibility/src/main.ts",
+			"bytes": 715,
+			"sha256": "2e789583db6053c69685cddfe94779a4e0fe17a3c26940d18303bdd57dc2aa47"
+		},
+		{
+			"path": "pro/examples/composables/use-page-visibility/src/MinimalExample.vue",
+			"bytes": 261,
+			"sha256": "4238d6036cd5577c51f3444e88e617296275921799509926341450c9681a1308"
+		},
+		{
+			"path": "pro/examples/composables/use-page-visibility/src/inline-entry.ts",
+			"bytes": 48,
+			"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2"
+		},
+		{
+			"path": "pro/examples/composables/use-page-visibility.json",
+			"bytes": 1761,
+			"sha256": "1cdeba686878bed55b7d80f900380ab08527bec74c3db5398fc0c1a3d7543ab4"
+		},
+		{
+			"path": "pro/examples/composables/use-raf.zip",
+			"bytes": 2016430,
+			"sha256": "52d875a1ac7ab84d437e8f088556e5912da38635193b9a2b05fa4e1d6fd54f21"
+		},
+		{
+			"path": "pro/examples/composables/use-raf-source.zip",
+			"bytes": 5275,
+			"sha256": "c311a0d9040c11418ef15a16bd184546e8c842b5200f1863917bb75877ca374f"
+		},
+		{
+			"path": "pro/examples/composables/use-raf/src/App.vue",
+			"bytes": 416,
+			"sha256": "e596b35aed43bb732410a9599bb1cf803c467ca49d2952a598b8dc48f782aff3"
+		},
+		{
+			"path": "pro/examples/composables/use-raf/src/main.ts",
+			"bytes": 687,
+			"sha256": "2e814210c4dc0e5a0a18d4f9c12837091b59af1ed266fd221ed2222f023b2b23"
+		},
+		{
+			"path": "pro/examples/composables/use-raf/src/MinimalExample.vue",
+			"bytes": 489,
+			"sha256": "fdac21c220a2f3fca31cabefd3c189ae33827635468ed94664bd374a1dbcd9b6"
+		},
+		{
+			"path": "pro/examples/composables/use-raf/src/inline-entry.ts",
+			"bytes": 48,
+			"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2"
+		},
+		{
+			"path": "pro/examples/composables/use-raf.json",
+			"bytes": 2006,
+			"sha256": "633e706e0ff53b33bd47315edc0bd6e3698f096b59ceca4b6172fe19d2b6b02c"
+		},
+		{
+			"path": "pro/examples/composables/raf.zip",
+			"bytes": 2016541,
+			"sha256": "becb9ae309a9ee6a58896ac1ca3eb6a865b5e192a0d17a546a779e886a84a4e3"
+		},
+		{
+			"path": "pro/examples/composables/raf-source.zip",
+			"bytes": 5361,
+			"sha256": "34f22fa69a3c8779168b261a73ba28fece146f070db13ef89eaae8e9ff67147a"
+		},
+		{
+			"path": "pro/examples/composables/raf/src/App.vue",
+			"bytes": 398,
+			"sha256": "b51beb2ed7ced2298b12d6500e9a8a3d2ad2e88830d1e96444289a1e1e68dce5"
+		},
+		{
+			"path": "pro/examples/composables/raf/src/main.ts",
+			"bytes": 679,
+			"sha256": "f3cd2346d031d38aa17763051c79d631d8429a1f66eff8b92a9b0705393e41ff"
+		},
+		{
+			"path": "pro/examples/composables/raf/src/MinimalExample.vue",
+			"bytes": 944,
+			"sha256": "6e17f4d3f87bd9e61e8925bf9de80a50d6587a57b613a76988f463229ba4c41d"
+		},
+		{
+			"path": "pro/examples/composables/raf/src/inline-entry.ts",
+			"bytes": 48,
+			"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2"
+		},
+		{
+			"path": "pro/examples/composables/raf.json",
+			"bytes": 2473,
+			"sha256": "0d245f6fc4f43806bc380b327eafcfda2a987dcd435e36e886dcd860c0010a25"
+		},
+		{
+			"path": "pro/examples/composables/environment.zip",
+			"bytes": 2016231,
+			"sha256": "7a7185d54abe9903b83f90ddb70b7730d976705858a4a9658a932f09a0641a24"
+		},
+		{
+			"path": "pro/examples/composables/environment-source.zip",
+			"bytes": 4941,
+			"sha256": "5da9968c36ca27a451854e4673437a3c6452acc9701ddba08e6d7c79f897d076"
+		},
+		{
+			"path": "pro/examples/composables/environment/src/App.vue",
+			"bytes": 380,
+			"sha256": "6fb31ca2d804168a556c2a4cbfcd5a37ddb9810d59671d7a7ae565cb0e58276f"
+		},
+		{
+			"path": "pro/examples/composables/environment/src/main.ts",
+			"bytes": 695,
+			"sha256": "b8fbdb1a0e370c1985fa7081bc892b513f763177ac4e14563e62f7429302f1ab"
+		},
+		{
+			"path": "pro/examples/composables/environment/src/MinimalExample.vue",
+			"bytes": 213,
+			"sha256": "4ec6e72007170d93b2b1ce467b757a9d4fb4c5ba00776d73879c4a550894abaf"
+		},
+		{
+			"path": "pro/examples/composables/environment/src/inline-entry.ts",
+			"bytes": 48,
+			"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2"
+		},
+		{
+			"path": "pro/examples/composables/environment.json",
+			"bytes": 1677,
+			"sha256": "748ce3849e18a3ed3546182549464f8346054b231cc851d46bee99f7e9828c83"
+		},
+		{
+			"path": "pro/examples/composables/use-relation.zip",
+			"bytes": 2017101,
+			"sha256": "8ff33b4364c25be1936e2a033c3b762e2367ee0811eea753c00570f198d8e998"
+		},
+		{
+			"path": "pro/examples/composables/use-relation-source.zip",
+			"bytes": 6742,
+			"sha256": "e10dd1ce5d14d3b4cdbeb92e2157521531e9294f0caad794ac755e0cb0a57f48"
+		},
+		{
+			"path": "pro/examples/composables/use-relation/src/App.vue",
+			"bytes": 419,
+			"sha256": "4242b2e6cf829dab82a9274168749eccfce01f4a72c2ef26cdde1eac9bb11b97"
+		},
+		{
+			"path": "pro/examples/composables/use-relation/src/main.ts",
+			"bytes": 697,
+			"sha256": "7c427da77d81d1726923a9ee67845090f79d33200b5fbb7a2f94fbbe7e5135ef"
+		},
+		{
+			"path": "pro/examples/composables/use-relation/src/MinimalExample.vue",
+			"bytes": 626,
+			"sha256": "98b9c694a6e3de0acd3dee0bea58d4621a36915d1bfcc6ccd63d4fa6db9cee67"
+		},
+		{
+			"path": "pro/examples/composables/use-relation/src/relation.ts",
+			"bytes": 121,
+			"sha256": "3c20ab54180a28d1bfc3fa83242f48b3fc541c341680e952b1ae1cc22c48b7b5"
+		},
+		{
+			"path": "pro/examples/composables/use-relation/src/RelationChild.vue",
+			"bytes": 286,
+			"sha256": "73938e5df0c5bf410bc11ee72a94900fff5e5a086fa748b18b3c89b5a0a576d7"
+		},
+		{
+			"path": "pro/examples/composables/use-relation/src/inline-entry.ts",
+			"bytes": 48,
+			"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2"
+		},
+		{
+			"path": "pro/examples/composables/use-relation.json",
+			"bytes": 2691,
+			"sha256": "6a4461a17c6781ad296ba2aa6eb7c709429f29e9aaf8e9008d8b35e4b0758ec1"
+		},
+		{
+			"path": "pro/examples/composables/on-mounted-or-activated.zip",
+			"bytes": 2016757,
+			"sha256": "39af792c3d6eb0678fe090913770063a553e256dcd0bec7a81dd1271e38a4647"
+		},
+		{
+			"path": "pro/examples/composables/on-mounted-or-activated-source.zip",
+			"bytes": 5439,
+			"sha256": "7e8d85d9246f0018036796a15fa0ac007b42f490258cea25946e9986ea3f93d6"
+		},
+		{
+			"path": "pro/examples/composables/on-mounted-or-activated/src/App.vue",
+			"bytes": 407,
+			"sha256": "9405a93e7c32ce73dd2675e67bce0bde98b5cd80003e1a708ff2ce84bc9e6145"
+		},
+		{
+			"path": "pro/examples/composables/on-mounted-or-activated/src/LifecycleActivity.vue",
+			"bytes": 274,
+			"sha256": "dbb2547595a2937a877b0a03d5e51fc6325ad4a32fee230610e8bbc1a4b458a0"
+		},
+		{
+			"path": "pro/examples/composables/on-mounted-or-activated/src/main.ts",
+			"bytes": 723,
+			"sha256": "0a663d0201ecb597678a639a35a02739e562eebbec1435f6f2a26c7f14fb5e28"
+		},
+		{
+			"path": "pro/examples/composables/on-mounted-or-activated/src/MinimalExample.vue",
+			"bytes": 404,
+			"sha256": "e674fef03bacb6dd0d4e02ca39da438f75b721e95fe5eb89171eba807fa96e5a"
+		},
+		{
+			"path": "pro/examples/composables/on-mounted-or-activated/src/inline-entry.ts",
+			"bytes": 48,
+			"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2"
+		},
+		{
+			"path": "pro/examples/composables/on-mounted-or-activated.json",
+			"bytes": 2293,
+			"sha256": "80f8bc4873153be88726caa7b3cb72e03ed37a3a9ffe0534a79a7ae88453a77e"
+		},
+		{
+			"path": "pro/examples/composables/use-custom-field-value.zip",
+			"bytes": 2017354,
+			"sha256": "6b042f12bb37900c0b632913cf6f92c267d7cf0223c6a498b5b8a021c2de3754"
+		},
+		{
+			"path": "pro/examples/composables/use-custom-field-value-source.zip",
+			"bytes": 8919,
+			"sha256": "6f6c2abb738ed5b65753505112293ad963a7f14cbb547ca092b4accf5de810a7"
+		},
+		{
+			"path": "pro/examples/composables/use-custom-field-value/src/App.vue",
+			"bytes": 438,
+			"sha256": "6791db2571ca1372dbb2b63052e248effc89549237f5cf1050d8d081c538d9df"
+		},
+		{
+			"path": "pro/examples/composables/use-custom-field-value/src/CustomInput.vue",
+			"bytes": 566,
+			"sha256": "0c4e13b3c0a59051a1ee3b202eb3b7a3a3a0e637ed8c42f7dce0d11db5db0565"
+		},
+		{
+			"path": "pro/examples/composables/use-custom-field-value/src/main.ts",
+			"bytes": 721,
+			"sha256": "de1d729c9e93a4eb3dad6707c72c43c76e43ab03ef3c65f6da623505dc9d8e36"
+		},
+		{
+			"path": "pro/examples/composables/use-custom-field-value/src/MinimalExample.vue",
+			"bytes": 1140,
+			"sha256": "d55b51d4ea76065a96cc53b507a40fcd77a0c96406fb76a3d7bfdf26ce70564f"
+		},
+		{
+			"path": "pro/examples/composables/use-custom-field-value/src/inline-entry.ts",
+			"bytes": 48,
+			"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2"
+		},
+		{
+			"path": "pro/examples/composables/use-custom-field-value.json",
+			"bytes": 3465,
+			"sha256": "c83a2568744b8c3fcb8679f46d50028494db880a6f0564098626755e2f919297"
+		}
+	]
+}

@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamDetailPanel",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "页内资料详情",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<AsamDetailPanel :controller=\"controller\" title=\"项目资料\" appearance=\"grouped\" :columns=\"3\" />\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamDetailPanel, useAsamDetail } from '@asam-ui/pro/components';\nimport type { AsamFieldDefinition } from '@asam-ui/pro/components';\nimport { createAsamDataRuntime } from '@asam-ui/ui';\n\nconst overview = { detail: { layout: { group: '基本信息' } } };\nconst schedule = { detail: { layout: { group: '项目进度' } } };\nconst delivery = { detail: { layout: { group: '交付信息' } } };\nconst fields: readonly AsamFieldDefinition[] = [\n\t{ key: 'name', kind: 'text', label: '项目名称', modes: overview },\n\t{ key: 'reference', kind: 'text', label: '项目编号', modes: overview },\n\t{ key: 'category', kind: 'text', label: '项目类型', modes: overview },\n\t{ key: 'status', kind: 'text', label: '当前阶段', modes: schedule },\n\t{ key: 'startDate', kind: 'text', label: '启动日期', modes: schedule },\n\t{ key: 'dueDate', kind: 'text', label: '计划验收', modes: schedule },\n\t{ key: 'owner', kind: 'text', label: '项目负责人', modes: delivery },\n\t{ key: 'team', kind: 'text', label: '交付团队', modes: delivery },\n\t{ key: 'updatedAt', kind: 'text', label: '最近更新', modes: delivery },\n\t{ key: 'note', kind: 'textarea', label: '交付说明', modes: delivery }\n];\n\nconst controller = useAsamDetail({ fields, runtime: createAsamDataRuntime() });\nvoid controller.open({\n\tmode: 'direct',\n\tid: 'PRJ-2026-042',\n\tstatus: 'ready',\n\tdata: {\n\t\tname: '园区设备巡检',\n\t\treference: 'PRJ-2026-042',\n\t\tcategory: '设备运维',\n\t\tstatus: '试点运行',\n\t\tstartDate: '2026-10-12',\n\t\tdueDate: '2026-11-27',\n\t\towner: '陈晨',\n\t\tteam: '设施运营组',\n\t\tupdatedAt: '2026-11-10',\n\t\tnote: '在一号园区试点移动巡检，覆盖空调机房、配电柜和消防设施。验收时核对巡检记录完整性、异常派单结果和周报导出。'\n\t}\n});\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<AsamDetailPanel :controller=\"controller\" title=\"项目资料\" appearance=\"grouped\" :columns=\"3\" />\n</template>\n\n<script setup>\nimport { AsamDetailPanel, useAsamDetail } from '@asam-ui/pro/components';\nimport { createAsamDataRuntime } from '@asam-ui/ui';\nconst overview = { detail: { layout: { group: '基本信息' } } };\nconst schedule = { detail: { layout: { group: '项目进度' } } };\nconst delivery = { detail: { layout: { group: '交付信息' } } };\nconst fields = [\n\t{ key: 'name', kind: 'text', label: '项目名称', modes: overview },\n\t{ key: 'reference', kind: 'text', label: '项目编号', modes: overview },\n\t{ key: 'category', kind: 'text', label: '项目类型', modes: overview },\n\t{ key: 'status', kind: 'text', label: '当前阶段', modes: schedule },\n\t{ key: 'startDate', kind: 'text', label: '启动日期', modes: schedule },\n\t{ key: 'dueDate', kind: 'text', label: '计划验收', modes: schedule },\n\t{ key: 'owner', kind: 'text', label: '项目负责人', modes: delivery },\n\t{ key: 'team', kind: 'text', label: '交付团队', modes: delivery },\n\t{ key: 'updatedAt', kind: 'text', label: '最近更新', modes: delivery },\n\t{ key: 'note', kind: 'textarea', label: '交付说明', modes: delivery }\n];\nconst controller = useAsamDetail({ fields, runtime: createAsamDataRuntime() });\nvoid controller.open({\n\tmode: 'direct',\n\tid: 'PRJ-2026-042',\n\tstatus: 'ready',\n\tdata: {\n\t\tname: '园区设备巡检',\n\t\treference: 'PRJ-2026-042',\n\t\tcategory: '设备运维',\n\t\tstatus: '试点运行',\n\t\tstartDate: '2026-10-12',\n\t\tdueDate: '2026-11-27',\n\t\towner: '陈晨',\n\t\tteam: '设施运营组',\n\t\tupdatedAt: '2026-11-10',\n\t\tnote: '在一号园区试点移动巡检，覆盖空调机房、配电柜和消防设施。验收时核对巡检记录完整性、异常派单结果和周报导出。'\n\t}\n});\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "empty",
+			"title": "字段为空",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<AsamDetailPanel\n\t\t:controller=\"controller\"\n\t\ttitle=\"项目资料\"\n\t\tappearance=\"grouped\"\n\t\tempty-text=\"尚未填写\"\n\t/>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamDetailPanel, useAsamDetail } from '@asam-ui/pro/components';\nimport type { AsamFieldDefinition } from '@asam-ui/pro/components';\nimport { createAsamDataRuntime } from '@asam-ui/ui';\n\nconst fields: readonly AsamFieldDefinition[] = [\n\t{ key: 'name', kind: 'text', label: '项目名称' },\n\t{ key: 'owner', kind: 'text', label: '项目负责人' }\n];\n\nconst controller = useAsamDetail({ fields, runtime: createAsamDataRuntime() });\nvoid controller.open({\n\tmode: 'direct',\n\tid: 'PRJ-2026-043',\n\tstatus: 'ready',\n\tdata: { name: '园区访客预约', owner: null }\n});\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<AsamDetailPanel\n\t\t:controller=\"controller\"\n\t\ttitle=\"项目资料\"\n\t\tappearance=\"grouped\"\n\t\tempty-text=\"尚未填写\"\n\t/>\n</template>\n\n<script setup>\nimport { AsamDetailPanel, useAsamDetail } from '@asam-ui/pro/components';\nimport { createAsamDataRuntime } from '@asam-ui/ui';\nconst fields = [\n\t{ key: 'name', kind: 'text', label: '项目名称' },\n\t{ key: 'owner', kind: 'text', label: '项目负责人' }\n];\nconst controller = useAsamDetail({ fields, runtime: createAsamDataRuntime() });\nvoid controller.open({\n\tmode: 'direct',\n\tid: 'PRJ-2026-043',\n\tstatus: 'ready',\n\tdata: { name: '园区访客预约', owner: null }\n});\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

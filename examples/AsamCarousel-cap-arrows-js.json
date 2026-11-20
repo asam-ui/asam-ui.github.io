@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamCarousel/cap-arrows/js/Demo.vue",
-			"sha256": "2b0bfe760a7adc6f8345d42b68c87e17268deb2ddab78365c4da75a721b02fff",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-8432179338c59459797aebddb65f8827ef860daff24ed61da64028d41c507af1.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/8432179338c59459797aebddb65f8827ef860daff24ed61da64028d41c507af1.txt\n-->\n<template>\n\t<AsamCarousel :interval=\"5000\" arrow=\"always\">\n\t\t<AsamCarouselItem v-for=\"item in 4\" :key=\"item\">\n\t\t\t<h3 class=\"ui032-text-2xl ui032-justify-center\">{{ item }}</h3>\n\t\t</AsamCarouselItem>\n\t</AsamCarousel>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamCarouselCapArrowsDemo' });\nimport { AsamCarousel, AsamCarouselItem } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.el-carousel__item h3 {\n\tcolor: #475669;\n\topacity: 0.75;\n\tline-height: 300px;\n\tmargin: 0;\n\ttext-align: center;\n}\n\n.el-carousel__item:nth-child(2n) {\n\tbackground-color: #99a9bf;\n}\n\n.el-carousel__item:nth-child(2n + 1) {\n\tbackground-color: #d3dce6;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n\n<style scoped>\n.ui032-text-2xl {\n\tfont-size: 1.5rem;\n}\n\n.ui032-justify-center {\n\tjustify-content: center;\n}\n</style>\n",
-			"originalSourceSha256": "83d0433275a27f1115152be8d3f1ea8a58c730703a21881138929f47172b19b6",
+			"sha256": "399dc977f7ebdbecb0df5dbf6b3e14959eccef4197006e930541d2e4e720a11d",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-8432179338c59459797aebddb65f8827ef860daff24ed61da64028d41c507af1.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/8432179338c59459797aebddb65f8827ef860daff24ed61da64028d41c507af1.txt\n-->\n<template>\n\t<AsamCarousel :interval=\"5000\" arrow=\"always\">\n\t\t<AsamCarouselItem v-for=\"item in 4\" :key=\"item\">\n\t\t\t<h3 class=\"ui032-text-2xl ui032-justify-center\">{{ item }}</h3>\n\t\t</AsamCarouselItem>\n\t</AsamCarousel>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamCarouselCapArrowsDemo' });\nimport { AsamCarousel, AsamCarouselItem } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.el-carousel__item h3 {\n\tcolor: var(--asam-color-text-regular);\n\topacity: 0.75;\n\tline-height: 300px;\n\tmargin: 0;\n\ttext-align: center;\n}\n\n.el-carousel__item:nth-child(2n) {\n\tbackground-color: var(--asam-color-surface-muted);\n}\n\n.el-carousel__item:nth-child(2n + 1) {\n\tbackground-color: var(--asam-color-surface-soft);\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n\n<style scoped>\n.ui032-text-2xl {\n\tfont-size: 1.5rem;\n}\n\n.ui032-justify-center {\n\tjustify-content: center;\n}\n</style>\n",
+			"originalSourceSha256": "796fb3df463205fa772a5243b775cf96e2446b994970c7e31b122e09c68eb3df",
 			"notice": {
 				"id": "8432179338c59459797aebddb65f8827ef860daff24ed61da64028d41c507af1",
 				"url": "/licenses/source-notices/8432179338c59459797aebddb65f8827ef860daff24ed61da64028d41c507af1.txt",

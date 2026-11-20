@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "analysis-workspace",
+	"productRoute": "/dashboard/analysis",
+	"sections": [
+		"四指标卡",
+		"业务增长趋势",
+		"团队贡献排名",
+		"来源渠道占比",
+		"热门指标"
+	],
+	"components": [
+		"AsamCardGroup",
+		"AsamStatisticCard",
+		"AsamCard",
+		"AsamTabs",
+		"AsamButton",
+		"AsamLink",
+		"AsamTable",
+		"AsamTableColumn",
+		"AsamTag",
+		"AsamEmpty",
+		"ChartHost"
+	],
+	"host": [
+		"AnalysisHost.owner：身份或权限变化替换引用",
+		"AnalysisHost.client：现有正常包RequestClient，归宿主拥有",
+		"AnalysisPage.projectSearchHref：由宿主提供的项目检索入口",
+		"AnalysisFilter：days为7或30，locale为zh-CN或en",
+		"AnalysisSnapshot：四个唯一指标、当前与上期点、排名、渠道、热门指标、partial",
+		"读取复用createLatestRequest；替换宿主、筛选变化和卸载取消旧读取"
+	],
+	"limitations": [
+		"仅兼容前端展示与本地合成宿主，无真实业务DTO/API/SSE",
+		"原通用AnalyticsPage、服务及全部已验入口保留",
+		"ChartHost和图表引擎原样复用；Vite插件只解析既有引擎URL"
+	]
+}

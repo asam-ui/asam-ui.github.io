@@ -1,0 +1,23 @@
+{
+	"schemaVersion": 1,
+	"id": "admin-access",
+	"productRoute": "/admin/sub-page",
+	"components": [
+		"AsamCardGroup",
+		"AsamCard",
+		"AsamAlert",
+		"AsamTable",
+		"AsamTableColumn",
+		"AsamTag",
+		"AsamResult"
+	],
+	"host": [
+		"original SecurityController.check/state",
+		"scopeKey + epoch bound readonly AdminProjection",
+		"original createSecurityNavigation"
+	],
+	"limits": [
+		"Synthetic local reads; no credentials/API/CRUD",
+		"JS checkJs=false; strictTemplates=true; skipLibCheck=false"
+	]
+}

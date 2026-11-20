@@ -1,0 +1,647 @@
+{
+	"schemaVersion": 1,
+	"examples": [
+		{
+			"id": "ui-basic",
+			"title": "基础中英切换",
+			"version": "2.0",
+			"preview": "/pro/i18n-example.html?example=ui-basic",
+			"complete": "/pro/examples/i18n/ui-basic.zip",
+			"source": "/pro/examples/i18n/ui-basic-source.zip",
+			"packages": [
+				{
+					"name": "@asam-ui/ui",
+					"version": "2.0.1",
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				}
+			],
+			"files": [
+				{
+					"name": "App.vue",
+					"path": "/pro/examples/i18n/ui-basic/src/App.vue",
+					"bytes": 1134,
+					"sha256": "b01c2fe82f6052fa668152401949003ed3565f04869b1c1ea9ed928107ce6a5f"
+				},
+				{
+					"name": "main.ts",
+					"path": "/pro/examples/i18n/ui-basic/src/main.ts",
+					"bytes": 295,
+					"sha256": "4205f50f4d0203516881ba530cf74863a8ce8db715f88922504aebee502b3c3d"
+				}
+			]
+		},
+		{
+			"id": "ui-pro",
+			"title": "UI 与 Pro 同步切换",
+			"version": "2.0",
+			"preview": "/pro/i18n-example.html?example=ui-pro",
+			"complete": "/pro/examples/i18n/ui-pro.zip",
+			"source": "/pro/examples/i18n/ui-pro-source.zip",
+			"packages": [
+				{
+					"name": "@asam-ui/ui",
+					"version": "2.0.1",
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				},
+				{
+					"name": "@asam-ui/pro",
+					"version": "2.0.1",
+					"sha256": "f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e"
+				}
+			],
+			"files": [
+				{
+					"name": "App.vue",
+					"path": "/pro/examples/i18n/ui-pro/src/App.vue",
+					"bytes": 1160,
+					"sha256": "13fa517ee48d1c06e8a7d85e4fb725d08ba6205d8617513e1477386fff3889ec"
+				},
+				{
+					"name": "main.ts",
+					"path": "/pro/examples/i18n/ui-pro/src/main.ts",
+					"bytes": 287,
+					"sha256": "4aff19531f08705fe3044520bc88f358e31ab4919477e056aa34fa2f1c801fb3"
+				},
+				{
+					"name": "MinimalExample.vue",
+					"path": "/pro/examples/i18n/ui-pro/src/MinimalExample.vue",
+					"bytes": 1438,
+					"sha256": "8c5dc270238fa8e3daae649a79a5caeba71b57ba36548215e0d61d8ffc015300"
+				}
+			]
+		},
+		{
+			"id": "isolation",
+			"title": "嵌套与两个根隔离",
+			"version": "2.0",
+			"preview": "/pro/i18n-example.html?example=isolation",
+			"complete": "/pro/examples/i18n/isolation.zip",
+			"source": "/pro/examples/i18n/isolation-source.zip",
+			"packages": [
+				{
+					"name": "@asam-ui/ui",
+					"version": "2.0.1",
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				}
+			],
+			"files": [
+				{
+					"name": "App.vue",
+					"path": "/pro/examples/i18n/isolation/src/App.vue",
+					"bytes": 1123,
+					"sha256": "c065649d68aeb3d264fb9333d370ab886b6f16c51655b89167a2a4548fa705ce"
+				},
+				{
+					"name": "main.ts",
+					"path": "/pro/examples/i18n/isolation/src/main.ts",
+					"bytes": 295,
+					"sha256": "4205f50f4d0203516881ba530cf74863a8ce8db715f88922504aebee502b3c3d"
+				},
+				{
+					"name": "NestedScopes.vue",
+					"path": "/pro/examples/i18n/isolation/src/NestedScopes.vue",
+					"bytes": 543,
+					"sha256": "c7cc45f52231dadb94adc3c01600fac78085b116d7e755143bf69d4e74a73dca"
+				},
+				{
+					"name": "StandaloneRoot.vue",
+					"path": "/pro/examples/i18n/isolation/src/StandaloneRoot.vue",
+					"bytes": 433,
+					"sha256": "84fc064eda5644de5f8b0c3be4389fd246a4f03ad110372e1702e6a84dd50a0a"
+				}
+			]
+		},
+		{
+			"id": "override",
+			"title": "只覆盖一条文案",
+			"version": "2.0",
+			"preview": "/pro/i18n-example.html?example=override",
+			"complete": "/pro/examples/i18n/override.zip",
+			"source": "/pro/examples/i18n/override-source.zip",
+			"packages": [
+				{
+					"name": "@asam-ui/ui",
+					"version": "2.0.1",
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				},
+				{
+					"name": "@asam-ui/pro",
+					"version": "2.0.1",
+					"sha256": "f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e"
+				}
+			],
+			"files": [
+				{
+					"name": "App.vue",
+					"path": "/pro/examples/i18n/override/src/App.vue",
+					"bytes": 1010,
+					"sha256": "db41ea29906562bf0e4fabc597a662c25cd2d3c44f17fcdcc52d609fc56ea778"
+				},
+				{
+					"name": "main.ts",
+					"path": "/pro/examples/i18n/override/src/main.ts",
+					"bytes": 328,
+					"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe"
+				}
+			]
+		},
+		{
+			"id": "third-language",
+			"title": "注册第三语言",
+			"version": "2.0",
+			"preview": "/pro/i18n-example.html?example=third-language",
+			"complete": "/pro/examples/i18n/third-language.zip",
+			"source": "/pro/examples/i18n/third-language-source.zip",
+			"packages": [
+				{
+					"name": "@asam-ui/ui",
+					"version": "2.0.1",
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				},
+				{
+					"name": "@asam-ui/pro",
+					"version": "2.0.1",
+					"sha256": "f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e"
+				}
+			],
+			"files": [
+				{
+					"name": "App.vue",
+					"path": "/pro/examples/i18n/third-language/src/App.vue",
+					"bytes": 1370,
+					"sha256": "cfb14fa81516300db67d4c668ec2d9f2acaeb51f3969ecd0eab1f04a1ca65be4"
+				},
+				{
+					"name": "main.ts",
+					"path": "/pro/examples/i18n/third-language/src/main.ts",
+					"bytes": 328,
+					"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe"
+				}
+			]
+		},
+		{
+			"id": "host-bridge",
+			"title": "读取宿主业务语言",
+			"version": "2.0",
+			"preview": "/pro/i18n-example.html?example=host-bridge",
+			"complete": "/pro/examples/i18n/host-bridge.zip",
+			"source": "/pro/examples/i18n/host-bridge-source.zip",
+			"packages": [
+				{
+					"name": "@asam-ui/ui",
+					"version": "2.0.1",
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				},
+				{
+					"name": "@asam-ui/pro",
+					"version": "2.0.1",
+					"sha256": "f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e"
+				}
+			],
+			"files": [
+				{
+					"name": "App.vue",
+					"path": "/pro/examples/i18n/host-bridge/src/App.vue",
+					"bytes": 972,
+					"sha256": "bae9f1659f6436c128691451ad1807f09b39738e9822951c7c2cccf80bfd3a8a"
+				},
+				{
+					"name": "host.ts",
+					"path": "/pro/examples/i18n/host-bridge/src/host.ts",
+					"bytes": 374,
+					"sha256": "e8898db090788db6e13eee9bc49f7919184b96aa4772c9ce14d3c931ba41e9d9"
+				},
+				{
+					"name": "main.ts",
+					"path": "/pro/examples/i18n/host-bridge/src/main.ts",
+					"bytes": 328,
+					"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe"
+				}
+			]
+		},
+		{
+			"id": "preferences",
+			"title": "偏好持久化与恢复",
+			"version": "2.0",
+			"preview": "/pro/i18n-example.html?example=preferences",
+			"complete": "/pro/examples/i18n/preferences.zip",
+			"source": "/pro/examples/i18n/preferences-source.zip",
+			"packages": [
+				{
+					"name": "@asam-ui/ui",
+					"version": "2.0.1",
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				},
+				{
+					"name": "@asam-ui/pro",
+					"version": "2.0.1",
+					"sha256": "f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e"
+				}
+			],
+			"files": [
+				{
+					"name": "App.vue",
+					"path": "/pro/examples/i18n/preferences/src/App.vue",
+					"bytes": 1552,
+					"sha256": "6f4f76b77458d856228a7af2951c9e55a60d3e66186d5d038218f8808d2a2414"
+				},
+				{
+					"name": "main.ts",
+					"path": "/pro/examples/i18n/preferences/src/main.ts",
+					"bytes": 328,
+					"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe"
+				}
+			]
+		},
+		{
+			"id": "outside-message",
+			"title": "组件外已有消息",
+			"version": "2.0",
+			"preview": "/pro/i18n-example.html?example=outside-message",
+			"complete": "/pro/examples/i18n/outside-message.zip",
+			"source": "/pro/examples/i18n/outside-message-source.zip",
+			"packages": [
+				{
+					"name": "@asam-ui/ui",
+					"version": "2.0.1",
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				},
+				{
+					"name": "@asam-ui/pro",
+					"version": "2.0.1",
+					"sha256": "f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e"
+				}
+			],
+			"files": [
+				{
+					"name": "App.vue",
+					"path": "/pro/examples/i18n/outside-message/src/App.vue",
+					"bytes": 1072,
+					"sha256": "1f3697c626ca66b3b6b415dc86206b4a8057f26ed24453a1037fe11705ed739e"
+				},
+				{
+					"name": "feedback.ts",
+					"path": "/pro/examples/i18n/outside-message/src/feedback.ts",
+					"bytes": 724,
+					"sha256": "16f1cde48ab0a51c6cf8bdf59f7bd914ad53a47508b8de167c3d1de476f1a99a"
+				},
+				{
+					"name": "main.ts",
+					"path": "/pro/examples/i18n/outside-message/src/main.ts",
+					"bytes": 328,
+					"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe"
+				}
+			]
+		},
+		{
+			"id": "aria-long",
+			"title": "长英文与 ARIA",
+			"version": "2.0",
+			"preview": "/pro/i18n-example.html?example=aria-long",
+			"complete": "/pro/examples/i18n/aria-long.zip",
+			"source": "/pro/examples/i18n/aria-long-source.zip",
+			"packages": [
+				{
+					"name": "@asam-ui/ui",
+					"version": "2.0.1",
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				}
+			],
+			"files": [
+				{
+					"name": "App.vue",
+					"path": "/pro/examples/i18n/aria-long/src/App.vue",
+					"bytes": 1430,
+					"sha256": "8663ee25e6ca0224a6e3de6f42b54c505a5eee6f51129cad744959ce0e7c1704"
+				},
+				{
+					"name": "main.ts",
+					"path": "/pro/examples/i18n/aria-long/src/main.ts",
+					"bytes": 295,
+					"sha256": "4205f50f4d0203516881ba530cf74863a8ce8db715f88922504aebee502b3c3d"
+				}
+			]
+		},
+		{
+			"id": "ssr",
+			"title": "SSR 核心接入",
+			"version": "2.0",
+			"preview": "/pro/i18n-example.html?example=ssr",
+			"complete": "/pro/examples/i18n/ssr.zip",
+			"source": "/pro/examples/i18n/ssr-source.zip",
+			"packages": [
+				{
+					"name": "@asam-ui/ui",
+					"version": "2.0.1",
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				},
+				{
+					"name": "@asam-ui/pro",
+					"version": "2.0.1",
+					"sha256": "f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e"
+				}
+			],
+			"files": [
+				{
+					"name": "App.vue",
+					"path": "/pro/examples/i18n/ssr/src/App.vue",
+					"bytes": 915,
+					"sha256": "841bec7bb19a3d225a4cb129e9a73d2f011f480e14659082ff20a9d21e8af82e"
+				},
+				{
+					"name": "main.ts",
+					"path": "/pro/examples/i18n/ssr/src/main.ts",
+					"bytes": 328,
+					"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe"
+				},
+				{
+					"name": "ssr.mjs",
+					"path": "/pro/examples/i18n/ssr/src/ssr.mjs",
+					"bytes": 1034,
+					"sha256": "814473068088015e278659a7a5a1e6e86e9bdf16893d86adf060b4257a64b2c4"
+				}
+			]
+		},
+		{
+			"id": "ui-basic-v1",
+			"title": "1.0 基础中英切换",
+			"version": "1.0",
+			"preview": "/pro/i18n-v1-example.html",
+			"complete": "/pro/examples/i18n/ui-basic-v1.zip",
+			"source": "/pro/examples/i18n/ui-basic-v1-source.zip",
+			"packages": [
+				{
+					"name": "@asam-ui/ui",
+					"version": "1.0.0",
+					"sha256": "acf4dced780bcab21363110e401f6ebe83713da1527462147859bd81b3f05159"
+				}
+			],
+			"files": [
+				{
+					"name": "App.vue",
+					"path": "/pro/examples/i18n/ui-basic-v1/src/App.vue",
+					"bytes": 1134,
+					"sha256": "b01c2fe82f6052fa668152401949003ed3565f04869b1c1ea9ed928107ce6a5f"
+				},
+				{
+					"name": "main.ts",
+					"path": "/pro/examples/i18n/ui-basic-v1/src/main.ts",
+					"bytes": 295,
+					"sha256": "4205f50f4d0203516881ba530cf74863a8ce8db715f88922504aebee502b3c3d"
+				}
+			]
+		}
+	],
+	"downloads": [
+		{
+			"path": "pro/examples/i18n/ui-basic.zip",
+			"bytes": 1421031,
+			"sha256": "f074ae246a08eb0bfca7f0de9f0293968090434f01244c4be3cc537995672734"
+		},
+		{
+			"path": "pro/examples/i18n/ui-basic-source.zip",
+			"bytes": 6712,
+			"sha256": "bb9ce499eac7d5fbb0d6cdeada6d60a5b4e1413a83863bcd25b7f94904bebe1d"
+		},
+		{
+			"path": "pro/examples/i18n/ui-basic/src/App.vue",
+			"bytes": 1134,
+			"sha256": "b01c2fe82f6052fa668152401949003ed3565f04869b1c1ea9ed928107ce6a5f"
+		},
+		{
+			"path": "pro/examples/i18n/ui-basic/src/main.ts",
+			"bytes": 295,
+			"sha256": "4205f50f4d0203516881ba530cf74863a8ce8db715f88922504aebee502b3c3d"
+		},
+		{
+			"path": "pro/examples/i18n/ui-pro.zip",
+			"bytes": 2016490,
+			"sha256": "baa7dcbe7bdbbe4f1df64cb945f9205346d3780ec706af0f9fee9532764c2a88"
+		},
+		{
+			"path": "pro/examples/i18n/ui-pro-source.zip",
+			"bytes": 5150,
+			"sha256": "810a3f1b6bd6f58891bbde71a660b4d467fae088853d3eea630330ffe284ab2d"
+		},
+		{
+			"path": "pro/examples/i18n/ui-pro/src/App.vue",
+			"bytes": 1160,
+			"sha256": "13fa517ee48d1c06e8a7d85e4fb725d08ba6205d8617513e1477386fff3889ec"
+		},
+		{
+			"path": "pro/examples/i18n/ui-pro/src/main.ts",
+			"bytes": 287,
+			"sha256": "4aff19531f08705fe3044520bc88f358e31ab4919477e056aa34fa2f1c801fb3"
+		},
+		{
+			"path": "pro/examples/i18n/ui-pro/src/MinimalExample.vue",
+			"bytes": 1438,
+			"sha256": "8c5dc270238fa8e3daae649a79a5caeba71b57ba36548215e0d61d8ffc015300"
+		},
+		{
+			"path": "pro/examples/i18n/isolation.zip",
+			"bytes": 1421871,
+			"sha256": "cb3af93dfd13e2043501a9d30e86c3cf1830e76d400ac7b68c1b3ebb9fbefe48"
+		},
+		{
+			"path": "pro/examples/i18n/isolation-source.zip",
+			"bytes": 7418,
+			"sha256": "8e4b6fe0341a53a48c64f99c6fd7d3cbf704ad2fbb534a0a00823e241c856f35"
+		},
+		{
+			"path": "pro/examples/i18n/isolation/src/App.vue",
+			"bytes": 1123,
+			"sha256": "c065649d68aeb3d264fb9333d370ab886b6f16c51655b89167a2a4548fa705ce"
+		},
+		{
+			"path": "pro/examples/i18n/isolation/src/main.ts",
+			"bytes": 295,
+			"sha256": "4205f50f4d0203516881ba530cf74863a8ce8db715f88922504aebee502b3c3d"
+		},
+		{
+			"path": "pro/examples/i18n/isolation/src/NestedScopes.vue",
+			"bytes": 543,
+			"sha256": "c7cc45f52231dadb94adc3c01600fac78085b116d7e755143bf69d4e74a73dca"
+		},
+		{
+			"path": "pro/examples/i18n/isolation/src/StandaloneRoot.vue",
+			"bytes": 433,
+			"sha256": "84fc064eda5644de5f8b0c3be4389fd246a4f03ad110372e1702e6a84dd50a0a"
+		},
+		{
+			"path": "pro/examples/i18n/override.zip",
+			"bytes": 2015457,
+			"sha256": "c11a98a47179d9f655c0a34c657d1c22f61e0101ce9580a9fec299c9dc81da4e"
+		},
+		{
+			"path": "pro/examples/i18n/override-source.zip",
+			"bytes": 4176,
+			"sha256": "d1f2093903a1c644a2a4f00fb2f721ea0cf37f29313f6503ddba9acda810e058"
+		},
+		{
+			"path": "pro/examples/i18n/override/src/App.vue",
+			"bytes": 1010,
+			"sha256": "db41ea29906562bf0e4fabc597a662c25cd2d3c44f17fcdcc52d609fc56ea778"
+		},
+		{
+			"path": "pro/examples/i18n/override/src/main.ts",
+			"bytes": 328,
+			"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe"
+		},
+		{
+			"path": "pro/examples/i18n/third-language.zip",
+			"bytes": 2015633,
+			"sha256": "3a126806a9ea7479c2fe03b1a6a142578d1a9c2e813fcc7c7a3da850194c5f4f"
+		},
+		{
+			"path": "pro/examples/i18n/third-language-source.zip",
+			"bytes": 4351,
+			"sha256": "a0f42129db0aab982a7999e5f6e568f1ddd77d88e3aca13b7b344489e4312598"
+		},
+		{
+			"path": "pro/examples/i18n/third-language/src/App.vue",
+			"bytes": 1370,
+			"sha256": "cfb14fa81516300db67d4c668ec2d9f2acaeb51f3969ecd0eab1f04a1ca65be4"
+		},
+		{
+			"path": "pro/examples/i18n/third-language/src/main.ts",
+			"bytes": 328,
+			"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe"
+		},
+		{
+			"path": "pro/examples/i18n/host-bridge.zip",
+			"bytes": 2015867,
+			"sha256": "89e3b5cacf7eed067d3c100f7e25a8c10639161267ba19c911150cdb444274ee"
+		},
+		{
+			"path": "pro/examples/i18n/host-bridge-source.zip",
+			"bytes": 4522,
+			"sha256": "300beb40c570ef1d7b79072c0494a0b23d2d960cffc6c7004096073e65118c10"
+		},
+		{
+			"path": "pro/examples/i18n/host-bridge/src/App.vue",
+			"bytes": 972,
+			"sha256": "bae9f1659f6436c128691451ad1807f09b39738e9822951c7c2cccf80bfd3a8a"
+		},
+		{
+			"path": "pro/examples/i18n/host-bridge/src/host.ts",
+			"bytes": 374,
+			"sha256": "e8898db090788db6e13eee9bc49f7919184b96aa4772c9ce14d3c931ba41e9d9"
+		},
+		{
+			"path": "pro/examples/i18n/host-bridge/src/main.ts",
+			"bytes": 328,
+			"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe"
+		},
+		{
+			"path": "pro/examples/i18n/preferences.zip",
+			"bytes": 2015736,
+			"sha256": "e0238d807d6f67202e99611c8b7fc2eed79ec674be1a61beef8281ea111dc141"
+		},
+		{
+			"path": "pro/examples/i18n/preferences-source.zip",
+			"bytes": 4454,
+			"sha256": "47103b1aea3b218acbe9c3d288f28131b09c3eaf70e2ba785ca77b1a788f0cd7"
+		},
+		{
+			"path": "pro/examples/i18n/preferences/src/App.vue",
+			"bytes": 1552,
+			"sha256": "6f4f76b77458d856228a7af2951c9e55a60d3e66186d5d038218f8808d2a2414"
+		},
+		{
+			"path": "pro/examples/i18n/preferences/src/main.ts",
+			"bytes": 328,
+			"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe"
+		},
+		{
+			"path": "pro/examples/i18n/outside-message.zip",
+			"bytes": 2016071,
+			"sha256": "f32707b52af8f68a8f7c257b48b0e533794705b733aee5113701cd185d6cb857"
+		},
+		{
+			"path": "pro/examples/i18n/outside-message-source.zip",
+			"bytes": 4723,
+			"sha256": "e213e0af01a17e6ec33bc9e46efc6d65e4edd68712a46f1fc2a8db2c48688ac3"
+		},
+		{
+			"path": "pro/examples/i18n/outside-message/src/App.vue",
+			"bytes": 1072,
+			"sha256": "1f3697c626ca66b3b6b415dc86206b4a8057f26ed24453a1037fe11705ed739e"
+		},
+		{
+			"path": "pro/examples/i18n/outside-message/src/feedback.ts",
+			"bytes": 724,
+			"sha256": "16f1cde48ab0a51c6cf8bdf59f7bd914ad53a47508b8de167c3d1de476f1a99a"
+		},
+		{
+			"path": "pro/examples/i18n/outside-message/src/main.ts",
+			"bytes": 328,
+			"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe"
+		},
+		{
+			"path": "pro/examples/i18n/aria-long.zip",
+			"bytes": 1421237,
+			"sha256": "99530fefb416d63b8654a4a8ee3a08558ee94b583973183192130f9191d80243"
+		},
+		{
+			"path": "pro/examples/i18n/aria-long-source.zip",
+			"bytes": 6914,
+			"sha256": "34d1d3b5f2b9f23d35765d1dad033f9bd702c336f00151e701a9583e3b6dc84d"
+		},
+		{
+			"path": "pro/examples/i18n/aria-long/src/App.vue",
+			"bytes": 1430,
+			"sha256": "8663ee25e6ca0224a6e3de6f42b54c505a5eee6f51129cad744959ce0e7c1704"
+		},
+		{
+			"path": "pro/examples/i18n/aria-long/src/main.ts",
+			"bytes": 295,
+			"sha256": "4205f50f4d0203516881ba530cf74863a8ce8db715f88922504aebee502b3c3d"
+		},
+		{
+			"path": "pro/examples/i18n/ssr.zip",
+			"bytes": 2016158,
+			"sha256": "26714a9d107ad789693ef33d8510597174b04f4d4b2179e2955f7073dd65cb07"
+		},
+		{
+			"path": "pro/examples/i18n/ssr-source.zip",
+			"bytes": 4821,
+			"sha256": "4933e4229e119f5b0098dd756b69086bb8ff67a4b0fee042f2d9e015ce472b99"
+		},
+		{
+			"path": "pro/examples/i18n/ssr/src/App.vue",
+			"bytes": 915,
+			"sha256": "841bec7bb19a3d225a4cb129e9a73d2f011f480e14659082ff20a9d21e8af82e"
+		},
+		{
+			"path": "pro/examples/i18n/ssr/src/main.ts",
+			"bytes": 328,
+			"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe"
+		},
+		{
+			"path": "pro/examples/i18n/ssr/src/ssr.mjs",
+			"bytes": 1034,
+			"sha256": "814473068088015e278659a7a5a1e6e86e9bdf16893d86adf060b4257a64b2c4"
+		},
+		{
+			"path": "pro/examples/i18n/ui-basic-v1.zip",
+			"bytes": 852663,
+			"sha256": "7bed71c6ec55930d7c085049b26258afa30d86efe0b514f6f97ae678a771726f"
+		},
+		{
+			"path": "pro/examples/i18n/ui-basic-v1-source.zip",
+			"bytes": 6723,
+			"sha256": "5022d716484e84390fc638791ca4562fd09234a84694210589619253bdaae80a"
+		},
+		{
+			"path": "pro/examples/i18n/ui-basic-v1/src/App.vue",
+			"bytes": 1134,
+			"sha256": "b01c2fe82f6052fa668152401949003ed3565f04869b1c1ea9ed928107ce6a5f"
+		},
+		{
+			"path": "pro/examples/i18n/ui-basic-v1/src/main.ts",
+			"bytes": 295,
+			"sha256": "4205f50f4d0203516881ba530cf74863a8ce8db715f88922504aebee502b3c3d"
+		}
+	]
+}

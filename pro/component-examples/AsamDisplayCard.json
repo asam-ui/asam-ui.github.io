@@ -1,0 +1,110 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamDisplayCard",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "内容与插槽",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<AsamCardGroup label=\"项目进展卡片\">\n\t\t<AsamDisplayCard title=\"项目进展\" description=\"本周计划\">\n\t\t\t<p>完成交互设计与评审。</p>\n\t\t\t<template #footer>更新于今天</template>\n\t\t</AsamDisplayCard>\n\t</AsamCardGroup>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamCardGroup, AsamDisplayCard } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<AsamCardGroup label=\"项目进展卡片\">\n\t\t<AsamDisplayCard title=\"项目进展\" description=\"本周计划\">\n\t\t\t<p>完成交互设计与评审。</p>\n\t\t\t<template #footer>更新于今天</template>\n\t\t</AsamDisplayCard>\n\t</AsamCardGroup>\n</template>\n\n<script setup>\nimport { AsamCardGroup, AsamDisplayCard } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "loading",
+			"title": "加载中",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<AsamCardGroup label=\"加载状态卡片\">\n\t\t<AsamDisplayCard title=\"加载中\" status=\"loading\" />\n\t</AsamCardGroup>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamCardGroup, AsamDisplayCard } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<AsamCardGroup label=\"加载状态卡片\">\n\t\t<AsamDisplayCard title=\"加载中\" status=\"loading\" />\n\t</AsamCardGroup>\n</template>\n\n<script setup>\nimport { AsamCardGroup, AsamDisplayCard } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "empty",
+			"title": "暂无内容",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<AsamCardGroup label=\"空状态卡片\">\n\t\t<AsamDisplayCard title=\"暂无数据\" status=\"empty\" />\n\t</AsamCardGroup>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamCardGroup, AsamDisplayCard } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<AsamCardGroup label=\"空状态卡片\">\n\t\t<AsamDisplayCard title=\"暂无数据\" status=\"empty\" />\n\t</AsamCardGroup>\n</template>\n\n<script setup>\nimport { AsamCardGroup, AsamDisplayCard } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "error",
+			"title": "读取失败",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<AsamCardGroup label=\"错误状态卡片\">\n\t\t<AsamDisplayCard title=\"读取失败\" status=\"error\" error-text=\"请稍后重试\" />\n\t</AsamCardGroup>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamCardGroup, AsamDisplayCard } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<AsamCardGroup label=\"错误状态卡片\">\n\t\t<AsamDisplayCard title=\"读取失败\" status=\"error\" error-text=\"请稍后重试\" />\n\t</AsamCardGroup>\n</template>\n\n<script setup>\nimport { AsamCardGroup, AsamDisplayCard } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamLoginPage",
+	"demos": [
+		{
+			"id": "form",
+			"title": "模板 1 · 账号密码登录",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<AsamLoginPage :authenticate=\"signIn\" @authenticated=\"succeeded = true\">\n\t\t<template v-if=\"succeeded\" #help><span role=\"status\">演示登录成功</span></template>\n\t</AsamLoginPage>\n</template>\n\n<script setup lang=\"ts\">\nimport { ref } from 'vue';\nimport { AsamLoginPage } from '@asam-ui/pro/components';\n\nconst succeeded = ref(false);\nasync function signIn() {\n\t// 官网演示只运行本地交互，不提交账号或创建会话。\n\tsucceeded.value = false;\n}\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<AsamLoginPage :authenticate=\"signIn\" @authenticated=\"succeeded = true\">\n\t\t<template v-if=\"succeeded\" #help><span role=\"status\">演示登录成功</span></template>\n\t</AsamLoginPage>\n</template>\n\n<script setup>\nimport { ref } from 'vue';\nimport { AsamLoginPage } from '@asam-ui/pro/components';\nconst succeeded = ref(false);\nasync function signIn() {\n\t// 官网演示只运行本地交互，不提交账号或创建会话。\n\tsucceeded.value = false;\n}\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

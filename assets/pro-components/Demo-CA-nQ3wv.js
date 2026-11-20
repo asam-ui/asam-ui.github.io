@@ -1,0 +1,1 @@
+import{En as e,Mn as t,Yn as n,ar as r,yr as i}from"./i18n-CJTJI6vg-3Uas6tNN.js";import{G as a,I as o}from"./components-ST0i0Wqf-D8-NR95E.js";var s={__name:`Demo`,setup(s){return(s,c)=>(n(),e(i(o),{label:`错误状态卡片`},{default:r(()=>[t(i(a),{title:`读取失败`,status:`error`,"error-text":`请稍后重试`})]),_:1}))}};export{s as default};

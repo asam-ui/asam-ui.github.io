@@ -1,1 +1,0 @@
-import"./vue.esm-bundler-5NdF0u5k.js";import{n as e}from"./Index-DqfBC-_6-BoaCNB2g.js";var t=Object.assign({},e,{install(e){e.directive(`asam-popover`,t)}});export{t};

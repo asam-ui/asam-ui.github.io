@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamWordCount",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "当前字数",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamInput v-model=\"value\" aria-label=\"项目简介\" />\n\t\t<AsamWordCount :text=\"value\" label=\"项目简介字数\" />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamInput } from '@asam-ui/ui';\nimport { AsamWordCount } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst value = ref('项目简介');\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamInput v-model=\"value\" aria-label=\"项目简介\" />\n\t\t<AsamWordCount :text=\"value\" label=\"项目简介字数\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamInput } from '@asam-ui/ui';\nimport { AsamWordCount } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst value = ref('项目简介');\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "limit",
+			"title": "数量提示",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamWordCount text=\"这是项目介绍\" :max=\"20\" label=\"说明字数\" />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamWordCount } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamWordCount text=\"这是项目介绍\" :max=\"20\" label=\"说明字数\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamWordCount } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

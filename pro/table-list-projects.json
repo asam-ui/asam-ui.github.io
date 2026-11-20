@@ -1,0 +1,569 @@
+{
+	"schemaVersion": 1,
+	"projects": [
+		{
+			"language": "ts",
+			"project": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/table-list.zip",
+			"source": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/table-list-source.zip",
+			"files": [
+				{
+					"path": "templates/search/Content.ts",
+					"bytes": 4897,
+					"sha256": "2c4084a6b8971e8dc0e2cec993488d997adba51fe2291536ad3986b9303fcfa9"
+				},
+				{
+					"path": "templates/search/QueryController.ts",
+					"bytes": 1777,
+					"sha256": "3a668e9168c1307a12aa65127e8d84e072991312ef88256473ce8a99cb30b397"
+				},
+				{
+					"path": "templates/search/Service.ts",
+					"bytes": 5687,
+					"sha256": "b8ef67750a9008ddd9c78c49ac7bfa1b37b09019377df089b5acc451eb2435d7"
+				},
+				{
+					"path": "templates/search/Session.ts",
+					"bytes": 4033,
+					"sha256": "d05889848c69d60253782d831278f3df8e5066081189ffa7d88285aa213ff018"
+				},
+				{
+					"path": "templates/search/Types.ts",
+					"bytes": 4955,
+					"sha256": "0325e4a4f50429eeb472ae107acb85c9d534f13b00b15430cdcb0dc53ed4a94e"
+				},
+				{
+					"path": "templates/search/basic-list/App.vue",
+					"bytes": 7160,
+					"sha256": "b2f91a2fc7e3d60e3fccb047a9db5db9b3ac18fb69372442c989515ed39ca08d"
+				},
+				{
+					"path": "templates/search/basic-list/BasicListPage.vue",
+					"bytes": 11056,
+					"sha256": "46e86b25af7de0ae5b9c8acdfd8b5d64bb91ba72f42102ea1edffc3d19574351"
+				},
+				{
+					"path": "templates/search/basic-list/Fields.ts",
+					"bytes": 7105,
+					"sha256": "b3284400f8ccae3132732b3429a784085c16622dc0ff0f3236056ff3acbda129"
+				},
+				{
+					"path": "templates/search/basic-list/Fixture.ts",
+					"bytes": 2078,
+					"sha256": "1f7e977e8b5ce403e095ca595bf89654fe0b0d475ef4f0e2d4a21660ee1f7e6a"
+				},
+				{
+					"path": "templates/search/basic-list/I18n.ts",
+					"bytes": 15059,
+					"sha256": "0d014e35ed322c2cf50448c6490a7081382b5bad5827c659c1430b47eee4fe27"
+				},
+				{
+					"path": "templates/search/basic-list/Model.ts",
+					"bytes": 4759,
+					"sha256": "27dd986b6ce1b8a6003272e718b0560836d8f092b061a5c01b4a335497bcca36"
+				},
+				{
+					"path": "templates/search/basic-list/Models.ts",
+					"bytes": 494,
+					"sha256": "b7dc651c9629727d43c7e4e5f1b6c6fa94cf6ce38eb0e15423165a378eee85ff"
+				},
+				{
+					"path": "templates/search/basic-list/QueryForm.vue",
+					"bytes": 1462,
+					"sha256": "4033a5282922fb1c3e60b247992f583b0542f79ecf3accc7933a94cc24e44053"
+				},
+				{
+					"path": "templates/search/basic-list/Types.ts",
+					"bytes": 1285,
+					"sha256": "471e7af658a81a7cdd56f5334611492c0a1aff580ccac419fe5495a63eddf92a"
+				},
+				{
+					"path": "templates/search/basic-list/UploadField.vue",
+					"bytes": 1672,
+					"sha256": "a722c6b532dfa6020b5dc6eed2c46fd15e960676e1b7890ef021290c5cfaf41e"
+				},
+				{
+					"path": "templates/search/i18n/Parameters.ts",
+					"bytes": 10272,
+					"sha256": "59d1a476b12a30a47cad659c4866ccc281c094271a92dbf0690db09b3a3d2135"
+				},
+				{
+					"path": "templates/search/i18n/en.ts",
+					"bytes": 11583,
+					"sha256": "ebf745118acf6794dd0ead8980cecd2af2628f19a93fd5f2c9dae677c9fe2c27"
+				},
+				{
+					"path": "templates/search/i18n/index.ts",
+					"bytes": 321,
+					"sha256": "a215483f3a5d83e34fa8cc5009bffac8e31f634a668ce06047f3180b13e5e958"
+				},
+				{
+					"path": "templates/search/i18n/zh-CN.ts",
+					"bytes": 11013,
+					"sha256": "ab7c864e8e4e98cf828f911aeef83e50762842f0053405b8a32c2c1cac78419a"
+				},
+				{
+					"path": "templates/search/shared/ListTools.ts",
+					"bytes": 2109,
+					"sha256": "7f3fbeff5b8c2aaf841e150b15c67777894ac74c67f42d90362f8074a5787e8a"
+				},
+				{
+					"path": "templates/search/shared/ProjectFixture.ts",
+					"bytes": 19163,
+					"sha256": "cc99ddce4240f9dff67a5c562f2725bee979115a14c0d771122fd737ee385783"
+				},
+				{
+					"path": "templates/search/shared/ProjectModel.ts",
+					"bytes": 671,
+					"sha256": "33bd74eb828e4b16cca87471267525a99fab2edf0f7c5015c89ce0436bc9468a"
+				},
+				{
+					"path": "templates/search/shared/ProjectStatus.ts",
+					"bytes": 721,
+					"sha256": "d902b82712e7a2f833a635a603065cb429842fe55cf559c696c3e202c9f114fa"
+				},
+				{
+					"path": "templates/search/shared/RecordOverlays.vue",
+					"bytes": 1358,
+					"sha256": "900233a49fdd0c182e332721823ef59a0160847b5a2abe6994d14b8b2af58762"
+				},
+				{
+					"path": "templates/search/shared/RecordWorkflow.ts",
+					"bytes": 3271,
+					"sha256": "c5577e25ccc44c65ba994da544dc57fec552421f47fac16873abe438b49f68c9"
+				},
+				{
+					"path": "templates/search/shared/SearchPreviewStates.vue",
+					"bytes": 1491,
+					"sha256": "bcf62041e1a0053ccb347fe7e935ad2cb8a7ada5d2e285f7bff62bdcfe65eb50"
+				},
+				{
+					"path": "templates/search/table-list/App.vue",
+					"bytes": 644,
+					"sha256": "ba349339eca69b21c46131c20a5aa4441d2c9ee6fee19e0755cc2f853f08b80a"
+				},
+				{
+					"path": "templates/search/table-list/Fields.ts",
+					"bytes": 4701,
+					"sha256": "68cf5e8e21d8b272620c6751d3040217a871268f777914c86298d9cdd0a40216"
+				},
+				{
+					"path": "templates/search/table-list/Fixture.ts",
+					"bytes": 19199,
+					"sha256": "71836388c6c1530b80b4c5f488e71dbfb5dd4c915dde63078775d3249663a4ef"
+				},
+				{
+					"path": "templates/search/table-list/I18n.ts",
+					"bytes": 2554,
+					"sha256": "709ae149b47f03587c148b610e6514afc69d6145e4440d865e3d0f12fddd03fb"
+				},
+				{
+					"path": "templates/search/table-list/QueryController.ts",
+					"bytes": 1574,
+					"sha256": "5a8f212fe86d71a4659b24a3c8f7008d9686f7a245fa9d91ab3a74daefa31684"
+				},
+				{
+					"path": "templates/search/table-list/TableListPage.vue",
+					"bytes": 5298,
+					"sha256": "281bb145c66cf7727d2fbcd86e4eb97d23342721fe90cd4ae6be5da580505bf3"
+				},
+				{
+					"path": "templates/search/table-list/Types.ts",
+					"bytes": 452,
+					"sha256": "8ab4c997563056768804e27b7daa75ca865261de849fbc8cf0c670f4ecf3d42b"
+				},
+				{
+					"path": "templates/search/table-list/mount.ts",
+					"bytes": 1414,
+					"sha256": "1db613011fd1eab9119921508b0ac159b371f53a953432a7c874d44c7af32775"
+				},
+				{
+					"path": "templates/shared/ListSurfaces.css",
+					"bytes": 422,
+					"sha256": "9093bdee0e0585c455d01eb376c4d822ee306d10b913e04acf5adcce28ef5ffa"
+				},
+				{
+					"path": "templates/shared/ListToolbar.vue",
+					"bytes": 3919,
+					"sha256": "ec648bb260331ffe4bbb70178fcb547a42dc2d00353be1e7cddb0d69a49f43ca"
+				},
+				{
+					"path": "templates/shared/ListToolbarTypes.ts",
+					"bytes": 277,
+					"sha256": "ebf19c04e4500d7ac4e9c9361f6328921904e956edb34ffc0cc4e80454363176"
+				},
+				{
+					"path": "website-hosts/table-list.ts",
+					"bytes": 446,
+					"sha256": "8748e19fb196a17c5e25a611fa13774c884ef8ad61d07cfe74a8f183f155084c"
+				},
+				{
+					"path": "package.json",
+					"bytes": 1134,
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45"
+				},
+				{
+					"path": "pnpm-lock.yaml",
+					"bytes": 68309,
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf"
+				},
+				{
+					"path": "vendor/ui-158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88.tgz",
+					"bytes": 1282110,
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				},
+				{
+					"path": "vendor/pro-f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e.tgz",
+					"bytes": 483458,
+					"sha256": "f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e"
+				},
+				{
+					"path": "vendor/yudao-6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c.tgz",
+					"bytes": 5208,
+					"sha256": "6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c"
+				},
+				{
+					"path": "vendor/icons-feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84.tgz",
+					"bytes": 114588,
+					"sha256": "feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84"
+				},
+				{
+					"path": "vendor/maps-96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892.tgz",
+					"bytes": 105688,
+					"sha256": "96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892"
+				},
+				{
+					"path": "pnpm-workspace.yaml",
+					"bytes": 237,
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728"
+				},
+				{
+					"path": "patches/element-plus-2.14.7.patch",
+					"bytes": 69876,
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4"
+				},
+				{
+					"path": "global-dom.d.ts",
+					"bytes": 494,
+					"sha256": "b7dc651c9629727d43c7e4e5f1b6c6fa94cf6ce38eb0e15423165a378eee85ff"
+				},
+				{
+					"path": "main.ts",
+					"bytes": 622,
+					"sha256": "c2bdbca79abc83c40560ca239e77873ab4157c1bc9b1382854ffce50bc6cfe85"
+				},
+				{
+					"path": "index.html",
+					"bytes": 288,
+					"sha256": "a7e9f11e0c6f51372541be5090baed79b8034a208a3f21aaa131a9bf681a4c1b"
+				},
+				{
+					"path": "vite.config.ts",
+					"bytes": 155,
+					"sha256": "57b65d4d13406778d7e314093b7c42aa6ddf64f6464cc92a99ac815f9a57d992"
+				},
+				{
+					"path": "tsconfig.json",
+					"bytes": 665,
+					"sha256": "1bde480cfc70cbf96e1532591e66a23ea972867d9fbf7463106a39c543374afa"
+				},
+				{
+					"path": "README.md",
+					"bytes": 1500,
+					"sha256": "079b9c507ed32ac272dd7a52dadfd9795036a7834476ba51ecd065d7afbd29b9"
+				},
+				{
+					"path": "LICENSE",
+					"bytes": 3139,
+					"sha256": "af998569465ec6ffcfe60b1689276c9c9b91856d852a0fbca808f6e2e3b271b5"
+				},
+				{
+					"path": "THIRD_PARTY_NOTICES.md",
+					"bytes": 1010,
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9"
+				}
+			]
+		},
+		{
+			"language": "js",
+			"project": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/table-list-js.zip",
+			"source": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/table-list-js-source.zip",
+			"files": [
+				{
+					"path": "templates/search/Content.js",
+					"bytes": 4528,
+					"sha256": "1e8e923add2efb2e5489cf636482987d2f538574b7bde52b8cbed07cf024f0b0"
+				},
+				{
+					"path": "templates/search/QueryController.js",
+					"bytes": 1154,
+					"sha256": "f4b0efc71d1ec790119521d74f72ae71945c9fecc0aedad43e280e6ce12e2d27"
+				},
+				{
+					"path": "templates/search/Service.js",
+					"bytes": 5264,
+					"sha256": "0cf5c67a745515188c36267a963953eb8ac5e3677cd2405b8a3329330ac55dd2"
+				},
+				{
+					"path": "templates/search/Session.js",
+					"bytes": 3574,
+					"sha256": "ac033cf87e96071a46a2b86f62774fad527ffa46af279c353c25a9524738568a"
+				},
+				{
+					"path": "templates/search/Types.js",
+					"bytes": 830,
+					"sha256": "267912e8f0a46df36b7d7f846d9dd809b070ae984021a71afaa5751475517306"
+				},
+				{
+					"path": "templates/search/basic-list/App.vue",
+					"bytes": 6524,
+					"sha256": "b0a0da4b833acda8a5038e96ec12e9a3f2fe8bd6b7b7db6eb758777d8e56f7e3"
+				},
+				{
+					"path": "templates/search/basic-list/BasicListPage.vue",
+					"bytes": 10760,
+					"sha256": "38bac5da25f00be83fb2b39e65b6d8bff53632c88009a606b1866ff08ecf9a02"
+				},
+				{
+					"path": "templates/search/basic-list/Fields.js",
+					"bytes": 6200,
+					"sha256": "5958d772d0bca2ab8cea0b45de8db9d6cedfe4cb318bf2ce6711b5d300db5a85"
+				},
+				{
+					"path": "templates/search/basic-list/Fixture.js",
+					"bytes": 1734,
+					"sha256": "4a5fafaa0a3f170c4d364e991a80798e7b78ce2da116e6571985ef6c5b704963"
+				},
+				{
+					"path": "templates/search/basic-list/I18n.js",
+					"bytes": 14531,
+					"sha256": "d9983c8509e216f186719e5ff575aa305e145329c8f3525109992eeabeb52d74"
+				},
+				{
+					"path": "templates/search/basic-list/Model.js",
+					"bytes": 4103,
+					"sha256": "6001bb3a75c23963e4f09fba16e32989bd6888041e1e1c0c75e800109fe769ea"
+				},
+				{
+					"path": "templates/search/basic-list/Models.js",
+					"bytes": 11,
+					"sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+				},
+				{
+					"path": "templates/search/basic-list/QueryForm.vue",
+					"bytes": 1385,
+					"sha256": "1809d6e0f2cdfd2c4a3e1a722cc6137dbf0406e01dec1efd02a1227424cefe4b"
+				},
+				{
+					"path": "templates/search/basic-list/Types.js",
+					"bytes": 11,
+					"sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+				},
+				{
+					"path": "templates/search/basic-list/UploadField.vue",
+					"bytes": 1516,
+					"sha256": "5a66ddfcaae3a3fa2ed0357215b778bd3f2a0f0e61ae9d44d1727cbce9750fa7"
+				},
+				{
+					"path": "templates/search/i18n/Parameters.js",
+					"bytes": 11,
+					"sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+				},
+				{
+					"path": "templates/search/i18n/en.js",
+					"bytes": 11451,
+					"sha256": "336e868ff3048c5039064fd6a19894a8e7c36f6e7ce3d2c0f2c2aa24c5276694"
+				},
+				{
+					"path": "templates/search/i18n/index.js",
+					"bytes": 257,
+					"sha256": "ecf5fcfef54114978765dd8134e819d8d080b54c42a831d6baade766a16c3664"
+				},
+				{
+					"path": "templates/search/i18n/zh-CN.js",
+					"bytes": 10881,
+					"sha256": "51c8b5bd0a60a4f732b7f45467e204660698d92e960988eeb09f18c3fcd50bd1"
+				},
+				{
+					"path": "templates/search/shared/ListTools.js",
+					"bytes": 1831,
+					"sha256": "1a4728ca7a9e6159fbc089ee24f8fb30cb8c9253c13600a9aecad58afdbb612c"
+				},
+				{
+					"path": "templates/search/shared/ProjectFixture.js",
+					"bytes": 16990,
+					"sha256": "f232610631f1e361377b302c24f0e751966cb9e9759f126c1da28273729924ee"
+				},
+				{
+					"path": "templates/search/shared/ProjectModel.js",
+					"bytes": 437,
+					"sha256": "d05922e4ae9f8a2541ac099b8345be02aeffd08be153144beeac27dd9da05345"
+				},
+				{
+					"path": "templates/search/shared/ProjectStatus.js",
+					"bytes": 567,
+					"sha256": "ef63181508fbc06e36956f95a7331ccb0b47fcaf83cdc4bc83ebed8112538940"
+				},
+				{
+					"path": "templates/search/shared/RecordOverlays.vue",
+					"bytes": 1367,
+					"sha256": "74237835d07699defd3fb3607b854b5471c3abd2eed8a993129c42fe2a60add0"
+				},
+				{
+					"path": "templates/search/shared/RecordWorkflow.js",
+					"bytes": 2212,
+					"sha256": "918f68f9fac40c2311f032f7cf4c7a0bbddd1d0b17e1c32233cedf4be7ae25f1"
+				},
+				{
+					"path": "templates/search/shared/SearchPreviewStates.vue",
+					"bytes": 1691,
+					"sha256": "1c214aa23874c70b8f132ba9af441f77f14e9a1fbac20bdd91832c39bd179a76"
+				},
+				{
+					"path": "templates/search/table-list/App.vue",
+					"bytes": 602,
+					"sha256": "8c6eca4dab9a2b8fafdf925b5e861e033913f669eb4354e5ca9e0bffdbab83da"
+				},
+				{
+					"path": "templates/search/table-list/Fields.js",
+					"bytes": 4056,
+					"sha256": "630d0bd09fb489ddd494c357684f9bbcb0fbcf6d63a1d1429c06a44726e9d7fe"
+				},
+				{
+					"path": "templates/search/table-list/Fixture.js",
+					"bytes": 17737,
+					"sha256": "896f36e5555da0290d24572f3438b2decefa7be114a54b0c8d38fbe13533945b"
+				},
+				{
+					"path": "templates/search/table-list/I18n.js",
+					"bytes": 2183,
+					"sha256": "113dc34ea987e3925e8ba90d0e404a604aee2976b3b7704f91f47d33b1d5bef6"
+				},
+				{
+					"path": "templates/search/table-list/QueryController.js",
+					"bytes": 1155,
+					"sha256": "c515aac4ccc885c1644271972059a6a709543110bb7ee22473403a028a00c425"
+				},
+				{
+					"path": "templates/search/table-list/TableListPage.vue",
+					"bytes": 4983,
+					"sha256": "1e7a796cfc2b6b3c7caf16962e6ff363db73cf011a8c1dc9b370907f297ab94c"
+				},
+				{
+					"path": "templates/search/table-list/Types.js",
+					"bytes": 11,
+					"sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+				},
+				{
+					"path": "templates/search/table-list/mount.js",
+					"bytes": 1180,
+					"sha256": "67c0487be33b3d49f488916eecee31bf52f578030d17a5623e183ed7fdc008d4"
+				},
+				{
+					"path": "templates/shared/ListSurfaces.css",
+					"bytes": 422,
+					"sha256": "9093bdee0e0585c455d01eb376c4d822ee306d10b913e04acf5adcce28ef5ffa"
+				},
+				{
+					"path": "templates/shared/ListToolbar.vue",
+					"bytes": 3831,
+					"sha256": "039ae43d8e12920b71a4fba593cd734148849627fe0fb365eaefc19f81f1d2f5"
+				},
+				{
+					"path": "templates/shared/ListToolbarTypes.js",
+					"bytes": 11,
+					"sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+				},
+				{
+					"path": "website-hosts/table-list.js",
+					"bytes": 281,
+					"sha256": "5b77f515daf33e2bd82b4570b33985bfa46b184e23862f8e9b7d320c361c151f"
+				},
+				{
+					"path": "package.json",
+					"bytes": 1134,
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45"
+				},
+				{
+					"path": "pnpm-lock.yaml",
+					"bytes": 68309,
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf"
+				},
+				{
+					"path": "vendor/ui-158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88.tgz",
+					"bytes": 1282110,
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				},
+				{
+					"path": "vendor/pro-f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e.tgz",
+					"bytes": 483458,
+					"sha256": "f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e"
+				},
+				{
+					"path": "vendor/yudao-6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c.tgz",
+					"bytes": 5208,
+					"sha256": "6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c"
+				},
+				{
+					"path": "vendor/icons-feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84.tgz",
+					"bytes": 114588,
+					"sha256": "feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84"
+				},
+				{
+					"path": "vendor/maps-96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892.tgz",
+					"bytes": 105688,
+					"sha256": "96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892"
+				},
+				{
+					"path": "pnpm-workspace.yaml",
+					"bytes": 237,
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728"
+				},
+				{
+					"path": "patches/element-plus-2.14.7.patch",
+					"bytes": 69876,
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4"
+				},
+				{
+					"path": "global-dom.d.ts",
+					"bytes": 494,
+					"sha256": "b7dc651c9629727d43c7e4e5f1b6c6fa94cf6ce38eb0e15423165a378eee85ff"
+				},
+				{
+					"path": "main.js",
+					"bytes": 592,
+					"sha256": "a89fbb3473f0ee81a1e279b5934312d7ceaf281791a88b6763adfd5f7ed04c8b"
+				},
+				{
+					"path": "index.html",
+					"bytes": 288,
+					"sha256": "086a96b09035c1ef9b8101189c7fb70012dab7628cf7db85104b416d34340065"
+				},
+				{
+					"path": "vite.config.ts",
+					"bytes": 155,
+					"sha256": "57b65d4d13406778d7e314093b7c42aa6ddf64f6464cc92a99ac815f9a57d992"
+				},
+				{
+					"path": "tsconfig.json",
+					"bytes": 665,
+					"sha256": "13df5b852f8117dc1e4dd491c93e80ee19d293d7fbc06e4518c656dbbdca0ec6"
+				},
+				{
+					"path": "README.md",
+					"bytes": 1500,
+					"sha256": "079b9c507ed32ac272dd7a52dadfd9795036a7834476ba51ecd065d7afbd29b9"
+				},
+				{
+					"path": "LICENSE",
+					"bytes": 3139,
+					"sha256": "af998569465ec6ffcfe60b1689276c9c9b91856d852a0fbca808f6e2e3b271b5"
+				},
+				{
+					"path": "THIRD_PARTY_NOTICES.md",
+					"bytes": 1010,
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9"
+				}
+			]
+		}
+	]
+}

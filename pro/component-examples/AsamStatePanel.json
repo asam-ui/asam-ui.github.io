@@ -1,0 +1,84 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamStatePanel",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "状态说明",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamStatePanel title=\"暂时无法读取内容\" description=\"请检查连接后重试。\" tone=\"warning\" />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamStatePanel } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamStatePanel title=\"暂时无法读取内容\" description=\"请检查连接后重试。\" tone=\"warning\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamStatePanel } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "actions",
+			"title": "恢复操作",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamStatePanel title=\"读取失败\" :actions=\"actions\" />\n\t\t<p role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamStatePanel } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst message = ref('');\nconst actions = [\n\t{\n\t\tid: 'reload',\n\t\tlabel: '重新读取',\n\t\trun: async () => {\n\t\t\tmessage.value = '已重新读取';\n\t\t}\n\t}\n];\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamStatePanel title=\"读取失败\" :actions=\"actions\" />\n\t\t<p role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamStatePanel } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst message = ref('');\nconst actions = [\n\t{\n\t\tid: 'reload',\n\t\tlabel: '重新读取',\n\t\trun: async () => {\n\t\t\tmessage.value = '已重新读取';\n\t\t}\n\t}\n];\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "primary-action",
+			"title": "主操作与次操作",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamStatePanel\n\t\t\ttitle=\"处理完成\"\n\t\t\tdescription=\"本地演示主操作与默认次操作，业务导航由宿主提供。\"\n\t\t\ttone=\"success\"\n\t\t\t:actions=\"actions\"\n\t\t/>\n\t\t<p role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n<script setup lang=\"ts\">\nimport { ref } from 'vue';\nimport { AsamStatePanel } from '@asam-ui/pro/components';\nimport type { AsamStateAction } from '@asam-ui/pro/components';\ndefineOptions({ name: 'StatePanelPrimaryActionExample' });\nconst message = ref('');\nconst actions: readonly AsamStateAction[] = [\n\t{\n\t\tid: 'open',\n\t\tlabel: '查看记录',\n\t\tbutton: { type: 'primary', plain: false },\n\t\trun: async () => {\n\t\t\tmessage.value = '已选择查看记录';\n\t\t}\n\t},\n\t{\n\t\tid: 'back',\n\t\tlabel: '返回列表',\n\t\trun: async () => {\n\t\t\tmessage.value = '已选择返回列表';\n\t\t}\n\t}\n];\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamStatePanel\n\t\t\ttitle=\"处理完成\"\n\t\t\tdescription=\"本地演示主操作与默认次操作，业务导航由宿主提供。\"\n\t\t\ttone=\"success\"\n\t\t\t:actions=\"actions\"\n\t\t/>\n\t\t<p role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n<script setup>\nimport { ref } from 'vue';\nimport { AsamStatePanel } from '@asam-ui/pro/components';\ndefineOptions({ name: 'StatePanelPrimaryActionExample' });\nconst message = ref('');\nconst actions = [\n\t{\n\t\tid: 'open',\n\t\tlabel: '查看记录',\n\t\tbutton: { type: 'primary', plain: false },\n\t\trun: async () => {\n\t\t\tmessage.value = '已选择查看记录';\n\t\t}\n\t},\n\t{\n\t\tid: 'back',\n\t\tlabel: '返回列表',\n\t\trun: async () => {\n\t\t\tmessage.value = '已选择返回列表';\n\t\t}\n\t}\n];\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

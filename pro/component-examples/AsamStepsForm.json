@@ -1,0 +1,84 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamStepsForm",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "分步填写与提交",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamStepsForm\n\t\t\tv-model=\"model\"\n\t\t\t:fields=\"fields\"\n\t\t\t:steps=\"steps\"\n\t\t\t:submit-action=\"submit\"\n\t\t\t@finish=\"message = '已提交'\"\n\t\t/>\n\t\t<p role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamStepsForm } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst fields = [\n\t{ key: 'name', kind: 'text' as const, label: '项目名称' },\n\t{ key: 'note', kind: 'textarea' as const, label: '说明' }\n];\nconst model = ref<Record<string, unknown>>({ name: '设计工作台', note: '' });\nconst message = ref('');\nconst steps = [\n\t{ id: 'base', title: '基本信息', keys: ['name'] },\n\t{ id: 'notes', title: '补充说明', keys: ['note'] }\n];\nasync function submit() {}\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamStepsForm\n\t\t\tv-model=\"model\"\n\t\t\t:fields=\"fields\"\n\t\t\t:steps=\"steps\"\n\t\t\t:submit-action=\"submit\"\n\t\t\t@finish=\"message = '已提交'\"\n\t\t/>\n\t\t<p role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamStepsForm } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst fields = [\n\t{ key: 'name', kind: 'text', label: '项目名称' },\n\t{ key: 'note', kind: 'textarea', label: '说明' }\n];\nconst model = ref({ name: '设计工作台', note: '' });\nconst message = ref('');\nconst steps = [\n\t{ id: 'base', title: '基本信息', keys: ['name'] },\n\t{ id: 'notes', title: '补充说明', keys: ['note'] }\n];\nasync function submit() {}\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "readonly",
+			"title": "只读状态",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamStepsForm\n\t\t\tv-model=\"model\"\n\t\t\t:fields=\"fields\"\n\t\t\t:steps=\"steps\"\n\t\t\t:submit-action=\"submit\"\n\t\t\t@finish=\"message = '已提交'\"\n\t\t\treadonly\n\t\t/>\n\t\t<p role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamStepsForm } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst fields = [\n\t{ key: 'name', kind: 'text' as const, label: '项目名称' },\n\t{ key: 'note', kind: 'textarea' as const, label: '说明' }\n];\nconst model = ref<Record<string, unknown>>({ name: '设计工作台', note: '' });\nconst message = ref('');\nconst steps = [\n\t{ id: 'base', title: '基本信息', keys: ['name'] },\n\t{ id: 'notes', title: '补充说明', keys: ['note'] }\n];\nasync function submit() {}\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamStepsForm\n\t\t\tv-model=\"model\"\n\t\t\t:fields=\"fields\"\n\t\t\t:steps=\"steps\"\n\t\t\t:submit-action=\"submit\"\n\t\t\t@finish=\"message = '已提交'\"\n\t\t\treadonly\n\t\t/>\n\t\t<p role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamStepsForm } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst fields = [\n\t{ key: 'name', kind: 'text', label: '项目名称' },\n\t{ key: 'note', kind: 'textarea', label: '说明' }\n];\nconst model = ref({ name: '设计工作台', note: '' });\nconst message = ref('');\nconst steps = [\n\t{ id: 'base', title: '基本信息', keys: ['name'] },\n\t{ id: 'notes', title: '补充说明', keys: ['note'] }\n];\nasync function submit() {}\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "validation",
+			"title": "必填字段校验",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamStepsForm\n\t\t\tv-model=\"model\"\n\t\t\t:fields=\"fields\"\n\t\t\t:steps=\"steps\"\n\t\t\t:submit-action=\"submit\"\n\t\t\t@finish=\"message = '已提交'\"\n\t\t/>\n\t\t<p role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamStepsForm } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst fields = [\n\t{\n\t\tkey: 'name',\n\t\tkind: 'text' as const,\n\t\tlabel: '项目名称',\n\t\tmodes: { edit: { rules: [{ required: true, message: '请填写项目名称' }] } }\n\t},\n\t{ key: 'note', kind: 'textarea' as const, label: '说明' }\n];\nconst model = ref<Record<string, unknown>>({ name: '', note: '' });\nconst message = ref('');\nconst steps = [\n\t{ id: 'base', title: '基本信息', keys: ['name'] },\n\t{ id: 'notes', title: '补充说明', keys: ['note'] }\n];\nasync function submit() {}\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamStepsForm\n\t\t\tv-model=\"model\"\n\t\t\t:fields=\"fields\"\n\t\t\t:steps=\"steps\"\n\t\t\t:submit-action=\"submit\"\n\t\t\t@finish=\"message = '已提交'\"\n\t\t/>\n\t\t<p role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamStepsForm } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst fields = [\n\t{\n\t\tkey: 'name',\n\t\tkind: 'text',\n\t\tlabel: '项目名称',\n\t\tmodes: { edit: { rules: [{ required: true, message: '请填写项目名称' }] } }\n\t},\n\t{ key: 'note', kind: 'textarea', label: '说明' }\n];\nconst model = ref({ name: '', note: '' });\nconst message = ref('');\nconst steps = [\n\t{ id: 'base', title: '基本信息', keys: ['name'] },\n\t{ id: 'notes', title: '补充说明', keys: ['note'] }\n];\nasync function submit() {}\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "login-workspace",
+	"title": "登录工作区",
+	"documentation": "/pro/login-workspace.html",
+	"productRoute": "/user/login",
+	"modes": [
+		"账号密码",
+		"手机验证码"
+	],
+	"components": [
+		"AsamLoginForm",
+		"AsamTabs",
+		"AsamForm",
+		"AsamFormItem",
+		"AsamInput",
+		"AsamPassword",
+		"AsamButton"
+	],
+	"host": [
+		"AccountHost原账号密码协议",
+		"可选AccountPhoneLogin独立发送/只读核实/手机认证",
+		"owner必须是当前security控制器；外部身份失效清理"
+	],
+	"states": [
+		"验证/提交/取消/拒收迟到结果/一次完成",
+		"确认发送/冷却/明确失败手动重发/unknown原操作核实",
+		"not-sent明确后允许重试/跨tab保留未知和冷却/卸载清理"
+	],
+	"languages": [
+		"ts",
+		"js"
+	],
+	"limitations": [
+		"本地合成宿主，不连接真实账户、短信、DTO或后端API。",
+		"旧三族入口不变；本例只实现已确认登录页差额，不声明注册页或全部21页完成。"
+	]
+}

@@ -1,0 +1,1 @@
+import{t as e}from"./AsamLoadingService-Dmr4iLf8-GEJP0YZ4.js";import{t}from"./AsamLoadingDirective-BisE8Swc-B7IAYRF1.js";var n={service:e,directive:t,install(n){e._context=n._context,t.install(n),n.config.globalProperties.$asamLoading=e}};export{n as t};

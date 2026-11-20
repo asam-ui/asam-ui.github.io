@@ -1,0 +1,1 @@
+import"./vue.esm-bundler-5NdF0u5k.js";import{n as e}from"./Index-DeVGMgmG-WgcM9YR-.js";var t=Object.assign({},e,{install(e){e.component(`AsamSkeletonItem`,t)}});export{t};

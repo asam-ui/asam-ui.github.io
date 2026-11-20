@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"entry": "src/main.ts",
+	"files": [
+		{
+			"path": "src/App.vue",
+			"source": "<template>\n\t<h1>滚动父容器</h1>\n\t<p>挂载后获取最近可滚动父元素，或同步查询指定元素。</p>\n\t<AsamButton @click=\"mounted = !mounted\">卸载 / 重新挂载</AsamButton><Minimal v-if=\"mounted\" />\n</template>\n<script setup lang=\"ts\">\nimport { ref } from 'vue';\nimport { AsamButton } from '@asam-ui/ui';\nimport Minimal from './MinimalExample.vue';\nconst mounted = ref(true);\n</script>\n"
+		},
+		{
+			"path": "src/main.ts",
+			"source": "import { createApp } from 'vue';\nimport type { App, Component } from 'vue';\nimport 'element-plus/dist/index.css';\nimport '@asam-ui/ui/style.css';\nimport '@asam-ui/pro/style.css';\nimport * as entry from './inline-entry';\nconst demo: {\n\tdefault: Component;\n\tscoped?: boolean;\n\tconfigure?: (app: App) => void | (() => void) | Promise<void | (() => void)>;\n} = entry;\nconst app = createApp(\n\tdemo.default,\n\tdemo.scoped\n\t\t? { scopeId: 'composable/use-scroll-parent:demo-composable-use-scroll-parent' }\n\t\t: undefined\n);\nconst cleanup = await demo.configure?.(app);\nif (typeof cleanup === 'function') app.onUnmount(cleanup);\napp.mount('#app');\nwindow.addEventListener('pagehide', () => app.unmount(), { once: true });\n"
+		},
+		{
+			"path": "src/MinimalExample.vue",
+			"source": "<template>\n\t<div ref=\"container\" style=\"height: 120px; overflow: auto\">\n\t\t<div ref=\"target\" style=\"height: 300px\">滚动区域</div>\n\t</div>\n\t<p>挂载读取：{{ parent === container }}</p>\n\t<AsamButton @click=\"measure()\">同步查询</AsamButton><output>{{ matched }}</output>\n</template>\n<script setup lang=\"ts\">\nimport { ref } from 'vue';\nimport { AsamButton } from '@asam-ui/ui';\nimport {\n\tuseScrollParent,\n\tgetScrollParent\n} from '@asam-ui/pro/application/composables/use-scroll-parent';\nconst container = ref<HTMLElement>();\nconst target = ref<HTMLElement>();\nconst parent = useScrollParent(target);\nconst matched = ref(false);\nfunction measure() {\n\tmatched.value = !!target.value && getScrollParent(target.value) === container.value;\n}\n</script>\n"
+		},
+		{
+			"path": "src/inline-entry.ts",
+			"source": "export { default } from './MinimalExample.vue';\n"
+		}
+	]
+}

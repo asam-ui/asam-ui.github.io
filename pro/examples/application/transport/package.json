@@ -1,0 +1,32 @@
+{
+	"name": "asam-website-richtext-normal-consumer",
+	"private": true,
+	"type": "module",
+	"packageManager": "pnpm@11.9.0",
+	"scripts": {
+		"dev": "vite --host 127.0.0.1",
+		"build": "vite build",
+		"typecheck": "vue-tsc --noEmit"
+	},
+	"dependencies": {
+		"vue": "3.5.34",
+		"element-plus": "2.14.7",
+		"vue-router": "4.6.3",
+		"dayjs": "1.11.23",
+		"echarts": "6.1.0",
+		"three": "0.186.1",
+		"three-mesh-bvh": "0.9.15",
+		"@asam-ui/ui": "file:vendor/ui-158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88.tgz",
+		"@asam-ui/pro": "file:vendor/pro-f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e.tgz",
+		"@asam-ui/ui-yudao": "file:vendor/yudao-6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c.tgz",
+		"@asam-ui/icons-vue": "file:vendor/icons-feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84.tgz",
+		"@asam-ui/maps-template": "file:vendor/maps-96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892.tgz"
+	},
+	"devDependencies": {
+		"@types/node": "22.19.15",
+		"vite": "8.0.10",
+		"@vitejs/plugin-vue": "6.0.9",
+		"typescript": "6.0.3",
+		"vue-tsc": "3.3.11"
+	}
+}

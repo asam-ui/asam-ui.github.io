@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "register-workspace",
+	"productRoute": "/user/register",
+	"components": [
+		"AsamForm",
+		"AsamFormItem",
+		"AsamInput",
+		"AsamPassword",
+		"AsamButton",
+		"AsamTabs",
+		"AsamCheckboxItem",
+		"AsamProgress",
+		"AsamTag",
+		"RegistrationResult"
+	],
+	"host": [
+		"original AccountHost/createRegistration",
+		"optional owner-bound phone register protocol; code never password",
+		"confirmed original-operation RegistrationOutcome"
+	],
+	"states": [
+		"validation/strength",
+		"send failure/unknown/verify/cooldown",
+		"submit/failure/unknown/verify",
+		"confirmed receipt",
+		"identity/revision/cancel/dispose"
+	],
+	"limits": [
+		"synthetic demo only; no real SMS/email/account/backend",
+		"JS checkJs=false; strictTemplates=true; skipLibCheck=false"
+	]
+}

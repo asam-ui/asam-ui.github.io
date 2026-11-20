@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamEmpty/cap-bottom-content/ts/Demo.vue",
-			"sha256": "16251ae8cd5c5f5f0b329adf9d419a89b4a5ed328d41b1d6a489f049c3f31892",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt\n-->\n<template>\n\t<AsamEmpty>\n\t\t<AsamButton type=\"default\">按钮</AsamButton>\n\t</AsamEmpty>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamEmptyCapBottomContentDemo' });\nimport { AsamEmpty, AsamButton } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "b694e66326e31ae2c05c0411a0996b694e5313efda30d74d86f23ea099c8e09a",
+			"sha256": "a8eeb188b6f4d42d08415a2219f8b744a60a0fe9bc522cac328c60813d231701",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt\n-->\n<template>\n\t<AsamEmpty description=\"当前筛选条件下没有记录\">\n\t\t<AsamButton\n\t\t\ttype=\"primary\"\n\t\t\tnative-type=\"button\"\n\t\t\t:aria-expanded=\"showHelp\"\n\t\t\t@click=\"showHelp = !showHelp\"\n\t\t>\n\t\t\t{{ showHelp ? '收起筛选说明' : '查看筛选说明' }}\n\t\t</AsamButton>\n\t\t<p v-if=\"showHelp\" class=\"example-paragraph\">放宽筛选条件后可以再次查询。</p>\n\t</AsamEmpty>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamEmptyCapBottomContentDemo' });\nimport { ref } from 'vue';\nimport { AsamEmpty, AsamButton } from '@asam-ui/ui';\nconst showHelp = ref(false);\n</script>\n",
+			"originalSourceSha256": "049b7e87e1fa06751aecc7a755bafb3eaa4879ecd9c9178fd5a9d5685f68cba8",
 			"notice": {
 				"id": "78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f",
 				"url": "/licenses/source-notices/78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt",

@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamFilterPopover",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "应用筛选条件",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamFilterPopover v-model=\"model\" :fields=\"fields\" title=\"筛选项目\" />\n\t\t<p>当前名称：{{ model.name || '全部' }}</p>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamFilterPopover } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst fields = [\n\t{ key: 'name', kind: 'text' as const, label: '项目名称' },\n\t{ key: 'note', kind: 'textarea' as const, label: '说明' }\n];\nconst model = ref<Record<string, unknown>>({ name: '设计工作台', note: '' });\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamFilterPopover v-model=\"model\" :fields=\"fields\" title=\"筛选项目\" />\n\t\t<p>当前名称：{{ model.name || '全部' }}</p>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamFilterPopover } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst fields = [\n\t{ key: 'name', kind: 'text', label: '项目名称' },\n\t{ key: 'note', kind: 'textarea', label: '说明' }\n];\nconst model = ref({ name: '设计工作台', note: '' });\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "disabled",
+			"title": "禁用筛选",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamFilterPopover v-model=\"model\" :fields=\"fields\" title=\"筛选项目\" disabled />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamFilterPopover } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst fields = [\n\t{ key: 'name', kind: 'text' as const, label: '项目名称' },\n\t{ key: 'note', kind: 'textarea' as const, label: '说明' }\n];\nconst model = ref<Record<string, unknown>>({ name: '设计工作台', note: '' });\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamFilterPopover v-model=\"model\" :fields=\"fields\" title=\"筛选项目\" disabled />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamFilterPopover } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst fields = [\n\t{ key: 'name', kind: 'text', label: '项目名称' },\n\t{ key: 'note', kind: 'textarea', label: '说明' }\n];\nconst model = ref({ name: '设计工作台', note: '' });\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

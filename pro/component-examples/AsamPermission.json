@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamPermission",
+	"demos": [
+		{
+			"id": "hide",
+			"title": "按权限显示",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamApplicationProvider :config=\"config\">\n\t\t\t<div class=\"pro-example-stack\">\n\t\t\t\t<AsamPermission permission=\"project:view\"><p>可以查看项目。</p></AsamPermission>\n\t\t\t\t<AsamPermission permission=\"project:delete\">\n\t\t\t\t\t<AsamButton type=\"primary\">删除项目</AsamButton>\n\t\t\t\t\t<template #fallback><p>暂无删除权限。</p></template>\n\t\t\t\t</AsamPermission>\n\t\t\t</div>\n\t\t</AsamApplicationProvider>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamApplicationProvider, AsamPermission } from '@asam-ui/pro/components';\nconst config = { permission: { check: (permission: string) => permission === 'project:view' } };\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamApplicationProvider :config=\"config\">\n\t\t\t<div class=\"pro-example-stack\">\n\t\t\t\t<AsamPermission permission=\"project:view\"><p>可以查看项目。</p></AsamPermission>\n\t\t\t\t<AsamPermission permission=\"project:delete\">\n\t\t\t\t\t<AsamButton type=\"primary\">删除项目</AsamButton>\n\t\t\t\t\t<template #fallback><p>暂无删除权限。</p></template>\n\t\t\t\t</AsamPermission>\n\t\t\t</div>\n\t\t</AsamApplicationProvider>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamApplicationProvider, AsamPermission } from '@asam-ui/pro/components';\nconst config = { permission: { check: (permission) => permission === 'project:view' } };\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "disable",
+			"title": "禁用模式",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamApplicationProvider :config=\"config\">\n\t\t\t<AsamPermission permission=\"project:edit\" mode=\"disable\">\n\t\t\t\t<template #default=\"{ disabled }\">\n\t\t\t\t\t<AsamButton type=\"primary\" :disabled=\"disabled\">编辑项目</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamPermission>\n\t\t</AsamApplicationProvider>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamApplicationProvider, AsamPermission } from '@asam-ui/pro/components';\nconst config = { permission: { check: (permission: string) => permission === 'project:view' } };\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamApplicationProvider :config=\"config\">\n\t\t\t<AsamPermission permission=\"project:edit\" mode=\"disable\">\n\t\t\t\t<template #default=\"{ disabled }\">\n\t\t\t\t\t<AsamButton type=\"primary\" :disabled=\"disabled\">编辑项目</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamPermission>\n\t\t</AsamApplicationProvider>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamApplicationProvider, AsamPermission } from '@asam-ui/pro/components';\nconst config = { permission: { check: (permission) => permission === 'project:view' } };\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}
