@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamTrend",
+	"demos": [
+		{
+			"id": "direction",
+			"title": "方向",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamTrend direction=\"up\" :value=\"12\" suffix=\"%\" />\n\t\t<AsamTrend direction=\"down\" :value=\"3\" suffix=\"%\" />\n\t\t<AsamTrend direction=\"flat\" :value=\"0\" suffix=\"%\" />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamTrend } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamTrend direction=\"up\" :value=\"12\" suffix=\"%\" />\n\t\t<AsamTrend direction=\"down\" :value=\"3\" suffix=\"%\" />\n\t\t<AsamTrend direction=\"flat\" :value=\"0\" suffix=\"%\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamTrend } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "tone",
+			"title": "语义色调",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamTrend direction=\"down\" tone=\"positive\" :value=\"3\" unit=\"ms\" label=\"耗时减少\" />\n\t\t<AsamTrend direction=\"up\" tone=\"negative\" :value=\"2\" suffix=\"%\" label=\"错误增加\" />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamTrend } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamTrend direction=\"down\" tone=\"positive\" :value=\"3\" unit=\"ms\" label=\"耗时减少\" />\n\t\t<AsamTrend direction=\"up\" tone=\"negative\" :value=\"2\" suffix=\"%\" label=\"错误增加\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamTrend } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

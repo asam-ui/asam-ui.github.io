@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "fail-result",
+	"productRoute": "/result/fail",
+	"states": [
+		"explicit failure",
+		"unknown original write"
+	],
+	"fields": [
+		"subject",
+		"number",
+		"applicant",
+		"amountCents"
+	],
+	"reasons": [
+		"purpose",
+		"project"
+	],
+	"components": [
+		"MinimalResultPage",
+		"ResultController",
+		"AsamResult",
+		"AsamStatePanel",
+		"AsamDescriptions",
+		"AsamLink",
+		"AsamButton",
+		"AsamInput"
+	],
+	"host": [
+		"FailureReadHost initial receipt read uses shared ReceiptReader",
+		"Original ResultHost recovery remains read/verify only; no resend or success kind mutation",
+		"Reason and return targets use original032 allowlist, local editable draft only"
+	],
+	"limits": [
+		"Explicitly frozen unverified f5de8-source dependency; accepted base only e105",
+		"No live DTO/API/approval/procurement/write/upload/SMS/SSE/backend",
+		"JS checkJs=false, strictTemplates=true, skipLibCheck=false; normal UI2925/Pro6f9"
+	]
+}

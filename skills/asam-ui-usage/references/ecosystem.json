@@ -1,0 +1,548 @@
+{
+	"schemaVersion": 1,
+	"packages": {
+		"@asam-ui/ui": [
+			{
+				"version": "2.0.1",
+				"release": "published",
+				"archiveSHA256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88",
+				"integrity": "sha512-OHinRWBvcobQ9dtmTdGEKWAnGFth+iPgabdL8ieIlRN5L2wfgIlTxuBbGzwX13e7DpXugCfzVAhgYNnbFqggbQ==",
+				"registry": "https://registry.npmjs.org/%40asam-ui%2Fui/2.0.1",
+				"peers": {
+					"element-plus": "2.14.7",
+					"unplugin-vue-components": ">=32.1.0 <33",
+					"vue": ">=3.5.34 <3.6.0"
+				},
+				"optionalPeers": [
+					"unplugin-vue-components"
+				],
+				"exports": {
+					".": {
+						"files": [
+							{
+								"path": "./dist/index.js",
+								"sha256": "b2f77dc21f8ae7ca5924075bf715a0bae9d31e4be329e69cfc486dea82ce7b59"
+							},
+							{
+								"path": "./dist/index.d.ts",
+								"sha256": "e005c2e451568a8d2360afb91a3e9b250b0f131c31af78858295ee5ea523e585"
+							}
+						],
+						"symbols": [
+							"AsamButton",
+							"provideAsamData"
+						]
+					},
+					"./components/AsamSelect/Index": {
+						"files": [
+							{
+								"path": "./dist/components/AsamSelect/Index.js",
+								"sha256": "3054c3029236e3b0031986123bb216f5d1dbb95fa51fe8721ae0f065b7739367"
+							},
+							{
+								"path": "./dist/components/AsamSelect/Index.d.ts",
+								"sha256": "c14e4601fc88a0a154bfca542acc5a36aeebe40b08258e1252c8d99754ccc807"
+							}
+						],
+						"symbols": [
+							"AsamDictSelect"
+						]
+					}
+				}
+			},
+			{
+				"version": "2.0.0",
+				"release": "published",
+				"archiveSHA256": "0c1e318ad52f4c6f9d746c742009480868b94ec219985b195c33ebfc267fe91c",
+				"integrity": "sha512-8Tnd/PxriwQxWLUCXi4N9ZUCfkfd72WdhxJSAJz202b0C7sS1x8BLHgY4XJjwgnTfM6lQ1VYa0LOt0RJ/sBQPw==",
+				"registry": "https://registry.npmjs.org/%40asam-ui%2Fui/2.0.0",
+				"peers": {
+					"element-plus": "2.14.7",
+					"unplugin-vue-components": ">=32.1.0 <33",
+					"vue": ">=3.5.34 <3.6.0"
+				},
+				"optionalPeers": [
+					"unplugin-vue-components"
+				],
+				"exports": {
+					".": {
+						"files": [
+							{
+								"path": "./dist/index.js",
+								"sha256": "b2f77dc21f8ae7ca5924075bf715a0bae9d31e4be329e69cfc486dea82ce7b59"
+							},
+							{
+								"path": "./dist/index.d.ts",
+								"sha256": "e005c2e451568a8d2360afb91a3e9b250b0f131c31af78858295ee5ea523e585"
+							}
+						],
+						"symbols": [
+							"AsamButton",
+							"provideAsamData"
+						]
+					},
+					"./components/AsamSelect/Index": {
+						"files": [
+							{
+								"path": "./dist/components/AsamSelect/Index.js",
+								"sha256": "3054c3029236e3b0031986123bb216f5d1dbb95fa51fe8721ae0f065b7739367"
+							},
+							{
+								"path": "./dist/components/AsamSelect/Index.d.ts",
+								"sha256": "c14e4601fc88a0a154bfca542acc5a36aeebe40b08258e1252c8d99754ccc807"
+							}
+						],
+						"symbols": [
+							"AsamDictSelect"
+						]
+					}
+				}
+			},
+			{
+				"version": "1.0.0",
+				"release": "published",
+				"archiveSHA256": "45575da58e183b06b155ef0cdb0c57c0948c69762afe696888b5f32eb14257f3",
+				"integrity": "sha512-QRlTIh3Qe/hx5D9AZTj1Dcc1KQjsDoSIWRq23B5qXtfHRdlU45HY0NWqj2a2PYhS1q7URVyyoc60AfU5eBz8zg==",
+				"registry": "https://registry.npmjs.org/%40asam-ui%2Fui/1.0.0",
+				"peers": {
+					"element-plus": "2.14.7",
+					"unplugin-vue-components": ">=32.1.0 <33",
+					"vue": ">=3.5.34 <3.6.0"
+				},
+				"optionalPeers": [
+					"unplugin-vue-components"
+				],
+				"exports": {
+					".": {
+						"files": [
+							{
+								"path": "./dist/index.js",
+								"sha256": "d4c9ded9b04279607af9608b7fe857fc23a68c2eb73b5ac00bc8732d53242277"
+							},
+							{
+								"path": "./dist/index.d.ts",
+								"sha256": "ec4503fb39cb1a51c512efc0cd7fd83981cefb73aefc0d5081c0bd29987d2947"
+							}
+						],
+						"symbols": [
+							"AsamButton",
+							"provideAsamData"
+						]
+					},
+					"./components/AsamSelect/Index": {
+						"files": [
+							{
+								"path": "./dist/components/AsamSelect/Index.js",
+								"sha256": "b3be77b15cb956004a7f59b69a5d28958e038006a3a2e6e76e3acfead4ce4a64"
+							},
+							{
+								"path": "./dist/components/AsamSelect/Index.d.ts",
+								"sha256": "c14e4601fc88a0a154bfca542acc5a36aeebe40b08258e1252c8d99754ccc807"
+							}
+						],
+						"symbols": [
+							"AsamDictSelect"
+						]
+					}
+				}
+			}
+		],
+		"@asam-ui/pro": [
+			{
+				"version": "2.0.1",
+				"release": "published",
+				"archiveSHA256": "f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e",
+				"integrity": "sha512-U6ZWG022Ttrt7mZhGaOReIlsN7KnqPaGAACOoPHOiqTXjUBYt5zacB/CPc/zclPdDC2ehBpAAnx3IyIjEExK/Q==",
+				"registry": "https://registry.npmjs.org/%40asam-ui%2Fpro/2.0.1",
+				"peers": {
+					"@asam-ui/ui": "2.0.1",
+					"element-plus": "2.14.7",
+					"vue": ">=3.5.34 <3.6.0",
+					"vue-router": ">=4.6.3 <5",
+					"unplugin-vue-components": ">=32.1.0 <33",
+					"unplugin-auto-import": ">=21.1.0 <22"
+				},
+				"optionalPeers": [
+					"vue-router",
+					"unplugin-vue-components",
+					"unplugin-auto-import"
+				],
+				"exports": {
+					"./templates/crud": {
+						"files": [
+							{
+								"path": "./dist/templates/crud/Index.js",
+								"sha256": "e99ab4afdd49b2fdb632ac3cf067be70617c7dba6e5f059feb39e78dc7722b85"
+							},
+							{
+								"path": "./dist/templates/crud/Index.d.ts",
+								"sha256": "fcffce41b6afb50148255cb19461d44dfcdf2abc4d2ed4fd92d363cd7e16595e"
+							}
+						],
+						"symbols": [
+							"AsamCrudPage"
+						]
+					}
+				}
+			},
+			{
+				"version": "2.0.0",
+				"release": "published",
+				"archiveSHA256": "ed2f0a2b6d1d70f71fd6469b20507d65c24f3b6c071bf8629abbb9021eac7bd6",
+				"integrity": "sha512-b59K1RYmgf+XEOR2IY9xBtrFV4bRIQqV3fEfg5hDUbKGQLa1fsdQPWiFsQN29nXSFOLnz+2s3ENIFQ+NKqUUXg==",
+				"registry": "https://registry.npmjs.org/%40asam-ui%2Fpro/2.0.0",
+				"peers": {
+					"@asam-ui/ui": "2.0.0",
+					"element-plus": "2.14.7",
+					"vue": ">=3.5.34 <3.6.0",
+					"vue-router": ">=4.6.3 <5",
+					"unplugin-vue-components": ">=32.1.0 <33",
+					"unplugin-auto-import": ">=21.1.0 <22"
+				},
+				"optionalPeers": [
+					"vue-router",
+					"unplugin-vue-components",
+					"unplugin-auto-import"
+				],
+				"exports": {
+					"./templates/crud": {
+						"files": [
+							{
+								"path": "./dist/templates/crud/Index.js",
+								"sha256": "e99ab4afdd49b2fdb632ac3cf067be70617c7dba6e5f059feb39e78dc7722b85"
+							},
+							{
+								"path": "./dist/templates/crud/Index.d.ts",
+								"sha256": "fcffce41b6afb50148255cb19461d44dfcdf2abc4d2ed4fd92d363cd7e16595e"
+							}
+						],
+						"symbols": [
+							"AsamCrudPage"
+						]
+					}
+				}
+			}
+		],
+		"@asam-ui/icons-vue": [
+			{
+				"version": "1.0.1",
+				"release": "published",
+				"archiveSHA256": "1394ba7fe26c0ef4caa6efc43aba603394fa578fca131ff5b97d759dfb144fa1",
+				"integrity": "sha512-kQA0bEnQ7+wDGX21fgTmlznXYvZjZS7mJVtorb4nyGr+qZqFhTo/TQBOja+r3Alsc5yCbqf7Uc6XeZXoCNahqQ==",
+				"registry": "https://registry.npmjs.org/%40asam-ui%2Ficons-vue/1.0.1",
+				"peers": {
+					"vue": ">=3.5.34 <3.6.0"
+				},
+				"optionalPeers": [],
+				"exports": {
+					".": {
+						"files": [
+							{
+								"path": "./dist/index.js",
+								"sha256": "faa2f2acc006e616aba5c0f9875084b44c4ab5e31ff9d3869e16e0ddab53047f"
+							},
+							{
+								"path": "./dist/index.d.ts",
+								"sha256": "6336e83742fb0320cf005ce1461c5cc27f6fae495c3528200f1572af0e31fc40"
+							}
+						],
+						"symbols": [
+							"Search"
+						]
+					}
+				}
+			},
+			{
+				"version": "1.0.0",
+				"release": "published",
+				"archiveSHA256": "feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84",
+				"integrity": "sha512-2E/UegsTYCrMtUMFuwB34pNPcd5bO5ZiLhV4NRQNy5CPLeO4mlCgmaKteCoQoES55QO1tDaHFC8ei4GhcSx+JQ==",
+				"registry": "https://registry.npmjs.org/%40asam-ui%2Ficons-vue/1.0.0",
+				"peers": {
+					"vue": ">=3.5.34 <3.6.0"
+				},
+				"optionalPeers": [],
+				"exports": {
+					".": {
+						"files": [
+							{
+								"path": "./dist/index.js",
+								"sha256": "faa2f2acc006e616aba5c0f9875084b44c4ab5e31ff9d3869e16e0ddab53047f"
+							},
+							{
+								"path": "./dist/index.d.ts",
+								"sha256": "6336e83742fb0320cf005ce1461c5cc27f6fae495c3528200f1572af0e31fc40"
+							}
+						],
+						"symbols": [
+							"Search"
+						]
+					}
+				}
+			}
+		],
+		"@asam-ui/ui-yudao": [
+			{
+				"version": "2.0.1",
+				"release": "published",
+				"archiveSHA256": "6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c",
+				"integrity": "sha512-XYDBC9y64WGJQAt5QGIGVGICU37ZTglHyC0EmA36FRvGdhuJuKTR8JK3ClP4AsEw1S5vKyztxyCAGcJYWLtXtQ==",
+				"registry": "https://registry.npmjs.org/%40asam-ui%2Fui-yudao/2.0.1",
+				"peers": {
+					"@asam-ui/ui": "2.0.1",
+					"vue": ">=3.5.34 <3.6.0"
+				},
+				"optionalPeers": [],
+				"exports": {
+					".": {
+						"files": [
+							{
+								"path": "./dist/index.js",
+								"sha256": "1441b5186b93b5d6ff1de2802d6d678166058a1118457771c396518de6d26ea2"
+							},
+							{
+								"path": "./dist/index.d.ts",
+								"sha256": "8e09a33a11db43c439b432cbc2d8eddd35b540177f2e72260d801e76bbe0c930"
+							}
+						],
+						"symbols": [
+							"createYudaoProvider"
+						]
+					}
+				}
+			},
+			{
+				"version": "2.0.0",
+				"release": "published",
+				"archiveSHA256": "9b210308cd4e7d4abc1c1691b1d96877d2dac8242362985bafed4766f8460c93",
+				"integrity": "sha512-Re/X+SWQcmr3usuLZIHZq6hX3HMW7Iwj91kow/olrZtYzSsBbrajFXfvK2k+wDZXbGABLwaFlOCGWoe675EdRA==",
+				"registry": "https://registry.npmjs.org/%40asam-ui%2Fui-yudao/2.0.0",
+				"peers": {
+					"@asam-ui/ui": "2.0.0",
+					"vue": ">=3.5.34 <3.6.0"
+				},
+				"optionalPeers": [],
+				"exports": {
+					".": {
+						"files": [
+							{
+								"path": "./dist/index.js",
+								"sha256": "1441b5186b93b5d6ff1de2802d6d678166058a1118457771c396518de6d26ea2"
+							},
+							{
+								"path": "./dist/index.d.ts",
+								"sha256": "8e09a33a11db43c439b432cbc2d8eddd35b540177f2e72260d801e76bbe0c930"
+							}
+						],
+						"symbols": [
+							"createYudaoProvider"
+						]
+					}
+				}
+			},
+			{
+				"version": "1.0.0",
+				"release": "published",
+				"archiveSHA256": "56e107fc8bb247c303798ebd1113be1752a3f30f10ad6bfd23092f82d2aa7673",
+				"integrity": "sha512-5toiXPKcD2xvOhG/o6h6/KE1g6vjnGHlwdKgQ+hikQ5d0/yPo22DkFnrt8OOw3NWEY7Enmw6VlSe6i36BG/A4A==",
+				"registry": "https://registry.npmjs.org/%40asam-ui%2Fui-yudao/1.0.0",
+				"peers": {
+					"@asam-ui/ui": "1.0.0",
+					"vue": ">=3.5.34 <3.6.0"
+				},
+				"optionalPeers": [],
+				"exports": {
+					".": {
+						"files": [
+							{
+								"path": "./dist/index.js",
+								"sha256": "7d3723de5b8a870bbb872957ffc1e367485fe34ef4dc7253b597d1942c6154d1"
+							},
+							{
+								"path": "./dist/index.d.ts",
+								"sha256": "8e09a33a11db43c439b432cbc2d8eddd35b540177f2e72260d801e76bbe0c930"
+							}
+						],
+						"symbols": [
+							"createYudaoProvider"
+						]
+					}
+				}
+			}
+		],
+		"@asam-ui/platform-provider": [
+			{
+				"version": "2.0.2",
+				"release": "published",
+				"archiveSHA256": "14a65cade7a2f2edf80070865b4962ebfdb14b6feeef065203cdad8152a27d9c",
+				"integrity": "sha512-WlCQzmov8ktBxoYsfRmgxX203H1d5Tyrgig/oVVvztNem6L0dhId1RQ4eiRaN7r+fALucLJCgvKoi4R09cnuzg==",
+				"registry": "https://registry.npmjs.org/%40asam-ui%2Fplatform-provider/2.0.2",
+				"peers": {
+					"@asam-ui/ui": "2.0.1",
+					"vue": ">=3.5.34 <3.6.0"
+				},
+				"optionalPeers": [],
+				"exports": {
+					".": {
+						"files": [
+							{
+								"path": "./dist/index.js",
+								"sha256": "48f051ab46818c2246e11af2daf41e0c9913640866bcd02d541532eaa10ac99c"
+							},
+							{
+								"path": "./dist/index.d.ts",
+								"sha256": "61434a88ba2a3e77098634ca9f8488f5b864059c67f90986b69086bfc0171c9a"
+							}
+						],
+						"symbols": [
+							"createPlatformProvider"
+						]
+					}
+				}
+			},
+			{
+				"version": "2.0.0",
+				"release": "published",
+				"archiveSHA256": "c9bf3920f3f31104de628f6ac5ae4dca7ea4a0242d1438d364ad99f5ed6402f9",
+				"integrity": "sha512-9tDVGQruYJAtcckrJDZ70VZzvqCQO1puuxJSnM5ByzJNW9ZKcGdZ8Cl6IpqvEz9G52fl6oaPoAZBtLgzHDCpHw==",
+				"sourceSha": "499b2ab67b46c3b04278da9f728dfc223c503f92",
+				"peers": {
+					"@asam-ui/ui": "2.0.0",
+					"vue": ">=3.5.34 <3.6.0"
+				},
+				"optionalPeers": [],
+				"exports": {
+					".": {
+						"files": [
+							{
+								"path": "./dist/index.js",
+								"sha256": "48f051ab46818c2246e11af2daf41e0c9913640866bcd02d541532eaa10ac99c"
+							},
+							{
+								"path": "./dist/index.d.ts",
+								"sha256": "61434a88ba2a3e77098634ca9f8488f5b864059c67f90986b69086bfc0171c9a"
+							}
+						],
+						"symbols": [
+							"createPlatformProvider"
+						]
+					}
+				},
+				"registry": "https://registry.npmjs.org/%40asam-ui%2Fplatform-provider/2.0.0"
+			}
+		],
+		"@asam-ui/mcp": [
+			{
+				"version": "1.0.1",
+				"release": "published",
+				"archiveSHA256": "6b9405600b081b627ef8901309959585087743edf18d4d2c9141360d15fcdc7e",
+				"integrity": "sha512-8NxZbONuifR6hxEbaaGZVoeF4ipdkYfz6ERM44lg1AXiY+mFFZfV/4SC435wlVUBpzXwjF8MSjM6r0ABEc9FYg==",
+				"registry": "https://registry.npmjs.org/%40asam-ui%2Fmcp/1.0.1",
+				"peers": {},
+				"optionalPeers": [],
+				"exports": {},
+				"bin": {
+					"asam-ui-mcp": "src/server.mjs"
+				},
+				"engines": {
+					"node": ">=22.19.0"
+				}
+			}
+		]
+	},
+	"capabilities": [
+		{
+			"id": "ui.button",
+			"title": "基础按钮",
+			"tags": [
+				"按钮",
+				"button"
+			],
+			"package": "@asam-ui/ui",
+			"entry": ".",
+			"symbols": [
+				"AsamButton"
+			]
+		},
+		{
+			"id": "ui.dictionary-filter",
+			"title": "字典筛选",
+			"tags": [
+				"字典",
+				"dictionary",
+				"dict"
+			],
+			"package": "@asam-ui/ui",
+			"entry": "./components/AsamSelect/Index",
+			"symbols": [
+				"AsamDictSelect"
+			],
+			"provider": true
+		},
+		{
+			"id": "pro.crud",
+			"title": "CRUD 页面模板",
+			"tags": [
+				"crud",
+				"列表编辑",
+				"增删改查"
+			],
+			"package": "@asam-ui/pro",
+			"entry": "./templates/crud",
+			"symbols": [
+				"AsamCrudPage"
+			]
+		},
+		{
+			"id": "provider.yudao",
+			"title": "芋道字典与请求适配",
+			"tags": [
+				"芋道",
+				"yudao"
+			],
+			"package": "@asam-ui/ui-yudao",
+			"entry": ".",
+			"symbols": [
+				"createYudaoProvider"
+			],
+			"provider": true
+		},
+		{
+			"id": "provider.platform",
+			"title": "平台 Provider 桥接",
+			"tags": [
+				"平台",
+				"platform-provider",
+				"平台 provider"
+			],
+			"package": "@asam-ui/platform-provider",
+			"entry": ".",
+			"symbols": [
+				"createPlatformProvider"
+			],
+			"provider": true
+		},
+		{
+			"id": "icons.search",
+			"title": "独立搜索图标",
+			"tags": [
+				"图标",
+				"icon",
+				"search"
+			],
+			"package": "@asam-ui/icons-vue",
+			"entry": ".",
+			"symbols": [
+				"Search"
+			]
+		}
+	],
+	"latest": {
+		"@asam-ui/ui": "2.0.1",
+		"@asam-ui/pro": "2.0.1",
+		"@asam-ui/ui-yudao": "2.0.1",
+		"@asam-ui/platform-provider": "2.0.2",
+		"@asam-ui/icons-vue": "1.0.1",
+		"@asam-ui/mcp": "1.0.1"
+	}
+}

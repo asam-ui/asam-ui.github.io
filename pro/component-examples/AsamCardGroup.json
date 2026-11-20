@@ -1,0 +1,84 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamCardGroup",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "自适应分组",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamCardGroup label=\"项目分组\">\n\t\t\t<AsamDisplayCard title=\"设计\"><p>更新组件规范</p></AsamDisplayCard>\n\t\t\t<AsamDisplayCard title=\"开发\"><p>实现交互功能</p></AsamDisplayCard>\n\t\t</AsamCardGroup>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamCardGroup, AsamDisplayCard } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamCardGroup label=\"项目分组\">\n\t\t\t<AsamDisplayCard title=\"设计\"><p>更新组件规范</p></AsamDisplayCard>\n\t\t\t<AsamDisplayCard title=\"开发\"><p>实现交互功能</p></AsamDisplayCard>\n\t\t</AsamCardGroup>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamCardGroup, AsamDisplayCard } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "width",
+			"title": "最小卡片宽度",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamCardGroup label=\"指标分组\" :min-width=\"180\">\n\t\t\t<AsamStatisticCard label=\"项目\" :value=\"12\" />\n\t\t\t<AsamStatisticCard label=\"任务\" :value=\"48\" />\n\t\t\t<AsamStatisticCard label=\"成员\" :value=\"8\" />\n\t\t</AsamCardGroup>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamCardGroup, AsamStatisticCard } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamCardGroup label=\"指标分组\" :min-width=\"180\">\n\t\t\t<AsamStatisticCard label=\"项目\" :value=\"12\" />\n\t\t\t<AsamStatisticCard label=\"任务\" :value=\"48\" />\n\t\t\t<AsamStatisticCard label=\"成员\" :value=\"8\" />\n\t\t</AsamCardGroup>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamCardGroup, AsamStatisticCard } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "geometry",
+			"title": "卡片几何与瀑布流",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<section class=\"card-geometry-example\">\n\t\t<div class=\"card-geometry-controls\">\n\t\t\t<AsamButton\n\t\t\t\tv-for=\"preset in presets\"\n\t\t\t\t:key=\"preset\"\n\t\t\t\ttype=\"primary\"\n\t\t\t\t@click=\"cardSize = preset\"\n\t\t\t>\n\t\t\t\t{{ preset }}\n\t\t\t</AsamButton>\n\t\t\t<AsamButton type=\"primary\" @click=\"cardSize = custom\">自定义尺寸</AsamButton>\n\t\t\t<AsamButton type=\"primary\" @click=\"layout = layout === 'grid' ? 'masonry' : 'grid'\">\n\t\t\t\t切换网格与瀑布流\n\t\t\t</AsamButton>\n\t\t\t<AsamButton type=\"primary\" @click=\"columns = columns === 'auto' ? 3 : 'auto'\">\n\t\t\t\t切换自动与三列\n\t\t\t</AsamButton>\n\t\t\t<AsamButton type=\"primary\" @click=\"maxWidth = maxWidth ? undefined : 340\">\n\t\t\t\t切换最大宽度\n\t\t\t</AsamButton>\n\t\t\t<AsamButton type=\"primary\" @click=\"count += 4\">追加四项</AsamButton>\n\t\t\t<AsamButton type=\"primary\" @click=\"media = !media\">切换图片</AsamButton>\n\t\t</div>\n\t\t<p role=\"status\">\n\t\t\t{{ layout }} · {{ columns }} · {{ typeof cardSize === 'string' ? cardSize : '自定义' }}\n\t\t</p>\n\t\t<AsamCardGroup\n\t\t\tlabel=\"卡片几何与瀑布流\"\n\t\t\t:card-size=\"cardSize\"\n\t\t\t:columns=\"columns\"\n\t\t\t:layout=\"layout\"\n\t\t\t:max-width=\"maxWidth\"\n\t\t>\n\t\t\t<AsamDisplayCard\n\t\t\t\tv-for=\"index in count\"\n\t\t\t\t:key=\"index\"\n\t\t\t\t:title=\"`项目 ${index} · 随内容自然换行的标题`\"\n\t\t\t>\n\t\t\t\t<img v-if=\"media && index % 3 === 1\" :src=\"image\" alt=\"蓝色几何示意图\" />\n\t\t\t\t<p v-for=\"line in (index % 5) + 1\" :key=\"line\">\n\t\t\t\t\t内容 {{ line }}：卡片使用同一数据顺序，布局切换保留控件和选择。\n\t\t\t\t</p>\n\t\t\t\t<template #footer>\n\t\t\t\t\t<AsamButton type=\"primary\">查看项目 {{ index }}</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamDisplayCard>\n\t\t</AsamCardGroup>\n\t</section>\n</template>\n<script setup lang=\"ts\">\nimport { ref } from 'vue';\nimport { AsamButton } from '@asam-ui/ui';\nimport type { AsamCardLayout, AsamCardPreset, AsamCardSize } from '@asam-ui/ui';\nimport { AsamCardGroup, AsamDisplayCard } from '@asam-ui/pro/components';\n\ndefineOptions({ name: 'CardGeometryExample' });\n\nconst presets: AsamCardPreset[] = ['small', 'default', 'big', 'large'];\nconst custom = {\n\tminWidth: 270,\n\tminHeight: 120,\n\tpadding: 18,\n\ttitleFontSize: 17,\n\tbodyFontSize: 14,\n\tcontentGap: 12\n};\nconst cardSize = ref<AsamCardSize>('default');\nconst layout = ref<AsamCardLayout>('grid');\nconst columns = ref<'auto' | number>('auto');\nconst maxWidth = ref<number>();\nconst count = ref(8);\nconst media = ref(false);\nconst image =\n\t'data:image/svg+xml,' +\n\tencodeURIComponent(\n\t\t'<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"600\" height=\"320\"><rect width=\"600\" height=\"320\" fill=\"#dce8fb\"/><circle cx=\"300\" cy=\"160\" r=\"96\" fill=\"#2d6bd6\"/></svg>'\n\t);\n</script>\n<style scoped>\n.card-geometry-example {\n\tmin-width: 0;\n}\n\n.card-geometry-controls {\n\tdisplay: flex;\n\tflex-wrap: wrap;\n\tgap: 8px;\n}\n\nimg {\n\tdisplay: block;\n\tmax-width: 100%;\n\theight: auto;\n}\n</style>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<section class=\"card-geometry-example\">\n\t\t<div class=\"card-geometry-controls\">\n\t\t\t<AsamButton\n\t\t\t\tv-for=\"preset in presets\"\n\t\t\t\t:key=\"preset\"\n\t\t\t\ttype=\"primary\"\n\t\t\t\t@click=\"cardSize = preset\"\n\t\t\t>\n\t\t\t\t{{ preset }}\n\t\t\t</AsamButton>\n\t\t\t<AsamButton type=\"primary\" @click=\"cardSize = custom\">自定义尺寸</AsamButton>\n\t\t\t<AsamButton type=\"primary\" @click=\"layout = layout === 'grid' ? 'masonry' : 'grid'\">\n\t\t\t\t切换网格与瀑布流\n\t\t\t</AsamButton>\n\t\t\t<AsamButton type=\"primary\" @click=\"columns = columns === 'auto' ? 3 : 'auto'\">\n\t\t\t\t切换自动与三列\n\t\t\t</AsamButton>\n\t\t\t<AsamButton type=\"primary\" @click=\"maxWidth = maxWidth ? undefined : 340\">\n\t\t\t\t切换最大宽度\n\t\t\t</AsamButton>\n\t\t\t<AsamButton type=\"primary\" @click=\"count += 4\">追加四项</AsamButton>\n\t\t\t<AsamButton type=\"primary\" @click=\"media = !media\">切换图片</AsamButton>\n\t\t</div>\n\t\t<p role=\"status\">\n\t\t\t{{ layout }} · {{ columns }} · {{ typeof cardSize === 'string' ? cardSize : '自定义' }}\n\t\t</p>\n\t\t<AsamCardGroup\n\t\t\tlabel=\"卡片几何与瀑布流\"\n\t\t\t:card-size=\"cardSize\"\n\t\t\t:columns=\"columns\"\n\t\t\t:layout=\"layout\"\n\t\t\t:max-width=\"maxWidth\"\n\t\t>\n\t\t\t<AsamDisplayCard\n\t\t\t\tv-for=\"index in count\"\n\t\t\t\t:key=\"index\"\n\t\t\t\t:title=\"`项目 ${index} · 随内容自然换行的标题`\"\n\t\t\t>\n\t\t\t\t<img v-if=\"media && index % 3 === 1\" :src=\"image\" alt=\"蓝色几何示意图\" />\n\t\t\t\t<p v-for=\"line in (index % 5) + 1\" :key=\"line\">\n\t\t\t\t\t内容 {{ line }}：卡片使用同一数据顺序，布局切换保留控件和选择。\n\t\t\t\t</p>\n\t\t\t\t<template #footer>\n\t\t\t\t\t<AsamButton type=\"primary\">查看项目 {{ index }}</AsamButton>\n\t\t\t\t</template>\n\t\t\t</AsamDisplayCard>\n\t\t</AsamCardGroup>\n\t</section>\n</template>\n<script setup>\nimport { ref } from 'vue';\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamCardGroup, AsamDisplayCard } from '@asam-ui/pro/components';\ndefineOptions({ name: 'CardGeometryExample' });\nconst presets = ['small', 'default', 'big', 'large'];\nconst custom = {\n\tminWidth: 270,\n\tminHeight: 120,\n\tpadding: 18,\n\ttitleFontSize: 17,\n\tbodyFontSize: 14,\n\tcontentGap: 12\n};\nconst cardSize = ref('default');\nconst layout = ref('grid');\nconst columns = ref('auto');\nconst maxWidth = ref();\nconst count = ref(8);\nconst media = ref(false);\nconst image =\n\t'data:image/svg+xml,' +\n\tencodeURIComponent(\n\t\t'<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"600\" height=\"320\"><rect width=\"600\" height=\"320\" fill=\"#dce8fb\"/><circle cx=\"300\" cy=\"160\" r=\"96\" fill=\"#2d6bd6\"/></svg>'\n\t);\n</script>\n<style scoped>\n.card-geometry-example {\n\tmin-width: 0;\n}\n\n.card-geometry-controls {\n\tdisplay: flex;\n\tflex-wrap: wrap;\n\tgap: 8px;\n}\n\nimg {\n\tdisplay: block;\n\tmax-width: 100%;\n\theight: auto;\n}\n</style>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

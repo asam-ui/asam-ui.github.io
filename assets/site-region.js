@@ -4,10 +4,17 @@
 		? 'cn'
 		: 'international';
 	const origin = origins[region];
+	const expertRegion = region === 'cn' ? 'cn' : 'global';
 	const rewrite = (value) =>
 		value
-			.replaceAll('https://asam-ui.github.io/downloads/', origin + '/downloads/')
-			.replaceAll('https://asam-ui.cn/downloads/', origin + '/downloads/');
+			.replace(
+				/https:\/\/(?:asam-ui\.github\.io|asam-ui\.cn)\/downloads\/(?!releases\/[a-f0-9]{64}\/)/g,
+				origin + '/downloads/'
+			)
+			.replace(
+				/(\/asam-ui-expert\/preview\/(?:releases\/[^/]+\/)?)(?:cn|global)\//g,
+				'$1' + expertRegion + '/'
+			);
 	function rewriteCode(node) {
 		// Preserve syntax tokens and their theme colors when updating download origins.
 		if (node.nodeType === 3) node.data = rewrite(node.data);
@@ -24,7 +31,13 @@
 			else link.removeAttribute('aria-current');
 		}
 		for (const code of document.querySelectorAll('code'))
-			if (code.textContent.includes('/downloads/asam-ui-usage.tgz')) rewriteCode(code);
+			if (
+				code.textContent.includes('/downloads/asam-ui-usage.tgz') ||
+				code.textContent.includes('/downloads/asam-ui-expert/')
+			)
+				rewriteCode(code);
+		for (const label of document.querySelectorAll('[data-expert-site-name]'))
+			label.textContent = region === 'cn' ? '国内站' : 'Global 站';
 		for (const link of document.querySelectorAll('a[href*="/downloads/"]'))
 			link.href = rewrite(link.href);
 		for (const node of document.querySelectorAll('[data-copy-value]'))
@@ -35,6 +48,7 @@
 		if (og) og.content = origin + location.pathname;
 	}
 	document.addEventListener('DOMContentLoaded', reflect);
+	document.addEventListener('asam:document-controls-ready', reflect);
 	document.addEventListener('asam:page-enter', reflect);
 	window.addEventListener('hashchange', reflect);
 	window.addEventListener('popstate', reflect);

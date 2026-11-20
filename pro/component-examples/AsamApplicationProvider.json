@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamApplicationProvider",
+	"demos": [
+		{
+			"id": "size",
+			"title": "区域尺寸",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamApplicationProvider :config=\"{ size: 'small' }\">\n\t\t\t<div class=\"pro-example-row\">\n\t\t\t\t<AsamInput model-value=\"小尺寸输入\" />\n\t\t\t\t<AsamButton type=\"primary\">操作</AsamButton>\n\t\t\t</div>\n\t\t</AsamApplicationProvider>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamInput, AsamButton } from '@asam-ui/ui';\nimport { AsamApplicationProvider } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamApplicationProvider :config=\"{ size: 'small' }\">\n\t\t\t<div class=\"pro-example-row\">\n\t\t\t\t<AsamInput model-value=\"小尺寸输入\" />\n\t\t\t\t<AsamButton type=\"primary\">操作</AsamButton>\n\t\t\t</div>\n\t\t</AsamApplicationProvider>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamInput, AsamButton } from '@asam-ui/ui';\nimport { AsamApplicationProvider } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "nested",
+			"title": "嵌套配置",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamApplicationProvider :config=\"{ size: 'big' }\">\n\t\t\t<div class=\"pro-example-stack\">\n\t\t\t\t<AsamButton type=\"primary\">外层尺寸</AsamButton>\n\t\t\t\t<AsamApplicationProvider :config=\"{ size: 'small' }\">\n\t\t\t\t\t<AsamButton type=\"primary\">内层尺寸</AsamButton>\n\t\t\t\t</AsamApplicationProvider>\n\t\t\t</div>\n\t\t</AsamApplicationProvider>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamApplicationProvider } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamApplicationProvider :config=\"{ size: 'big' }\">\n\t\t\t<div class=\"pro-example-stack\">\n\t\t\t\t<AsamButton type=\"primary\">外层尺寸</AsamButton>\n\t\t\t\t<AsamApplicationProvider :config=\"{ size: 'small' }\">\n\t\t\t\t\t<AsamButton type=\"primary\">内层尺寸</AsamButton>\n\t\t\t\t</AsamApplicationProvider>\n\t\t\t</div>\n\t\t</AsamApplicationProvider>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamApplicationProvider } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

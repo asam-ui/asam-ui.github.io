@@ -6,11 +6,12 @@
 	},
 	"package": {
 		"name": "@asam-ui/ui-yudao",
-		"version": "1.0.0",
+		"version": "2.0.1",
 		"entrySHA256": "8e09a33a11db43c439b432cbc2d8eddd35b540177f2e72260d801e76bbe0c930",
 		"declarationTreeSHA256": "40c72a626aa311379690b90be30c58ca10bcf1d1cd0ff1dd1489dd9d0e6b3920",
+		"manifestSHA256": "2e862652f4fddf528452e3153f3b271e7e1ef217813cb489f971529ab38d05ed",
 		"declarationFiles": 1,
-		"registryMetadata": "https://registry.npmjs.org/%40asam-ui%2Fui-yudao/1.0.0"
+		"registryMetadata": "https://registry.npmjs.org/%40asam-ui%2Fui-yudao/2.0.1"
 	},
 	"types": [
 		{

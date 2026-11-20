@@ -11,9 +11,17 @@
 	const reflectWidth = () => {
 		document.documentElement.dataset.wide = String(wide);
 		for (const button of document.querySelectorAll('.website-wide-toggle')) {
+			const label =
+				document.documentElement.lang === 'en'
+					? wide
+						? 'Disable wide layout'
+						: 'Enable wide layout'
+					: wide
+						? '退出宽屏模式'
+						: '开启宽屏模式';
 			button.setAttribute('aria-pressed', String(wide));
-			button.setAttribute('aria-label', wide ? '退出宽屏模式' : '开启宽屏模式');
-			button.setAttribute('title', wide ? '退出宽屏模式' : '开启宽屏模式');
+			button.setAttribute('aria-label', label);
+			button.setAttribute('title', label);
 		}
 	};
 	reflectWidth();
@@ -30,8 +38,8 @@
 		} catch {
 			return;
 		}
-		if (!target?.closest('.cd-api-appendix')) return;
-		for (let parent = target.parentElement; parent; parent = parent.parentElement)
+		if (!target?.closest('details')) return;
+		for (let parent = target; parent; parent = parent.parentElement)
 			if (parent instanceof HTMLDetailsElement) parent.open = true;
 		target.scrollIntoView();
 	};
@@ -40,8 +48,73 @@
 		if (link) requestAnimationFrame(revealNote);
 	});
 	window.addEventListener('hashchange', revealNote);
+	const outlineSections = new Map();
+	let outlineCurrent;
+	let outlineFrame;
+	const setOutlineCurrent = (current) => {
+		if (current === outlineCurrent) return;
+		for (const link of outlineSections.get(outlineCurrent) ?? [])
+			link.removeAttribute('aria-current');
+		for (const link of outlineSections.get(current) ?? [])
+			link.setAttribute('aria-current', 'location');
+		outlineCurrent = current;
+	};
+	const scheduleOutlineUpdate = () => {
+		if (!outlineSections.size || outlineFrame) return;
+		outlineFrame = requestAnimationFrame(() => {
+			outlineFrame = undefined;
+			const scroller = document.scrollingElement;
+			const atBottom =
+				scrollY > 0 && Math.ceil(scrollY + innerHeight) >= scroller.scrollHeight;
+			const padding = parseFloat(getComputedStyle(scroller).scrollPaddingTop) || 0;
+			let current;
+			for (const heading of outlineSections.keys()) {
+				if (!heading.getClientRects().length) continue;
+				const top = heading.getBoundingClientRect().top;
+				const margin = parseFloat(getComputedStyle(heading).scrollMarginTop) || 0;
+				if (top > (atBottom ? innerHeight : padding + margin + 1)) break;
+				current = heading;
+			}
+			setOutlineCurrent(current);
+		});
+	};
+	const outlineResize = new ResizeObserver(scheduleOutlineUpdate);
+	const clearOutline = () => {
+		cancelAnimationFrame(outlineFrame);
+		outlineFrame = undefined;
+		setOutlineCurrent(undefined);
+		outlineResize.disconnect();
+		outlineSections.clear();
+	};
+	const initializeOutline = () => {
+		clearOutline();
+		const main = document.querySelector('.site-doc-layout > #main');
+		if (!main) return;
+		for (const link of document.querySelectorAll(
+			'.page-toc a[href^="#"], .mobile-page-toc a[href^="#"]'
+		)) {
+			const heading = document.getElementById(link.getAttribute('href').slice(1));
+			if (!main.contains(heading)) continue;
+			if (!outlineSections.has(heading)) outlineSections.set(heading, []);
+			outlineSections.get(heading).push(link);
+		}
+		if (outlineSections.size) outlineResize.observe(main);
+		scheduleOutlineUpdate();
+	};
+	window.addEventListener('scroll', scheduleOutlineUpdate, { passive: true });
+	window.addEventListener('resize', scheduleOutlineUpdate);
+	window.addEventListener('hashchange', scheduleOutlineUpdate);
+	document.addEventListener('asam:page-leave', clearOutline);
 	const initialize = () => {
+		try {
+			const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+			if (target instanceof HTMLDetailsElement) target.open = true;
+		} catch {
+			/* 无效片段不影响文档阅读。 */
+		}
+
 		revealNote();
+		initializeOutline();
 		for (const trigger of document.querySelectorAll('.cd-enum-trigger')) {
 			if (initialized.has(trigger)) continue;
 			initialized.add(trigger);
@@ -90,14 +163,13 @@
 				reflectWidth();
 			});
 		if (button) initialized.add(button);
-		for (const search of document.querySelectorAll('[data-component-search]')) {
+		for (const search of document.querySelectorAll('input[data-component-search]')) {
 			if (initialized.has(search)) continue;
+			const scope = search.closest('.cd-catalog, aside, main, .mobile-sidebar-content');
+			if (!scope) continue;
+			const groups = [...scope.querySelectorAll('nav details')];
+			if (!groups.length) continue;
 			initialized.add(search);
-			const groups = [
-				...search
-					.closest('aside, main, .mobile-sidebar-content')
-					.querySelectorAll('nav details')
-			];
 			const state = new Map(groups.map((group) => [group, group.open]));
 			search.addEventListener('input', () => {
 				const query = search.value.toLowerCase().trim();
@@ -106,7 +178,10 @@
 						link.hidden = !`${link.textContent} ${link.getAttribute('href') || ''}`
 							.toLowerCase()
 							.includes(query);
-					group.hidden = !group.querySelector('a:not([hidden])');
+					const visible = group.querySelectorAll('a:not([hidden])').length;
+					const count = group.querySelector('[data-catalog-count]');
+					if (count) count.textContent = String(visible);
+					group.hidden = visible === 0;
 					group.open = query
 						? !group.hidden
 						: state.get(group) ||

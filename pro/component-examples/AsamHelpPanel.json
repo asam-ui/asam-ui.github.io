@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamHelpPanel",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "上下文帮助",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamButton type=\"primary\" @click=\"open = true\">查看帮助</AsamButton>\n\t\t<AsamHelpPanel\n\t\t\tv-model=\"open\"\n\t\t\tcontext-key=\"project\"\n\t\t\t:content=\"{ title: '项目帮助', text: '填写名称后保存，即可创建项目。' }\"\n\t\t/>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamHelpPanel } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst open = ref(false);\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamButton type=\"primary\" @click=\"open = true\">查看帮助</AsamButton>\n\t\t<AsamHelpPanel\n\t\t\tv-model=\"open\"\n\t\t\tcontext-key=\"project\"\n\t\t\t:content=\"{ title: '项目帮助', text: '填写名称后保存，即可创建项目。' }\"\n\t\t/>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamHelpPanel } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst open = ref(false);\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "load",
+			"title": "异步加载",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamButton type=\"primary\" @click=\"open = true\">加载帮助</AsamButton>\n\t\t<AsamHelpPanel v-model=\"open\" context-key=\"members\" :load=\"load\" />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamHelpPanel } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst open = ref(false);\nasync function load() {\n\treturn { title: '成员帮助', text: '邀请团队成员一起协作。' };\n}\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamButton type=\"primary\" @click=\"open = true\">加载帮助</AsamButton>\n\t\t<AsamHelpPanel v-model=\"open\" context-key=\"members\" :load=\"load\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamHelpPanel } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst open = ref(false);\nasync function load() {\n\treturn { title: '成员帮助', text: '邀请团队成员一起协作。' };\n}\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

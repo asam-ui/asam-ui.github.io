@@ -1,0 +1,1 @@
+import{t as e}from"./MountProjectList-BXLYC698.js";import{c as t,t as n}from"./App-CpYt3FQz.js";function r(r,i,a){return e(n,t,r,i,a)}async function i(e,t,n){return await r(e,{i18n:n,inheritAppearance:!0},t)}export{i as mountWebsiteExample};

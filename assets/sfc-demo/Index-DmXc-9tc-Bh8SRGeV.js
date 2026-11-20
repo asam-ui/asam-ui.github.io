@@ -1,0 +1,1 @@
+import"./vue.esm-bundler-5NdF0u5k.js";import{t as e}from"./trap-focus-C5HRsW7T.js";var t=Object.assign({},e,{install(e){e.directive(`asam-trap-focus`,t)}});export{t};

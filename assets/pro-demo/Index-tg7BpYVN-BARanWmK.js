@@ -1,0 +1,1 @@
+import{Rn as e}from"./chunk-DmhlhrBa-BoWoli-h.js";var t=Object.assign({},e,{install(e){e.component(`AsamCheckTag`,t)}});export{t};

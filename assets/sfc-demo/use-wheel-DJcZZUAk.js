@@ -1,1 +1,0 @@
-import{n as e,t}from"./raf-BvCznZE0.js";import{v as n}from"./sfc-demo.js";var r=({atEndEdge:r,atStartEdge:i,layout:a},o)=>{let s,c=0,l=e=>e<0&&i.value||e>0&&r.value;return{hasReachedEdge:l,onWheel:r=>{t(s);let{deltaX:i,deltaY:u}=r;r.shiftKey&&u!==0&&(i=u,u=0);let d=a.value===`horizontal`?i:u;l(d)||(c+=d,!n()&&d!==0&&r.preventDefault(),s=e(()=>{o(c),c=0}))}}};export{r as t};

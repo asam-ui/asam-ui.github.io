@@ -1,0 +1,1 @@
+import{Mn as e,Nn as t,On as n,Tn as r,Yn as i,ar as a,yr as o}from"./i18n-CJTJI6vg-3Uas6tNN.js";import{F as s}from"./components-ST0i0Wqf-D8-NR95E.js";var c={class:`pro-example-stack`},l=t({__name:`Demo`,setup(t){return(t,l)=>(i(),n(`div`,c,[e(o(s),null,{default:a(()=>[...l[0]||=[r(`p`,null,`项目内容正常显示。`,-1)]]),_:1})]))}});export{l as default};

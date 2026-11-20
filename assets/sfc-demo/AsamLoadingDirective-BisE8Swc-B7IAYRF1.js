@@ -1,0 +1,1 @@
+import"./vue.esm-bundler-5NdF0u5k.js";import{t as e}from"./service-DzpdwFzl.js";import{t}from"./directive-vXeglePd.js";var n={...t,install(t){e._context=t._context,t.directive(`asam-loading`,n)}};export{n as t};

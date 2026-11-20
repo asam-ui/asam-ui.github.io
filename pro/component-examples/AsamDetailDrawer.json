@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamDetailDrawer",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "在抽屉中查看项目资料",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<AsamButton type=\"primary\" @click=\"open\">打开详情抽屉</AsamButton>\n\t<AsamDetailDrawer :controller=\"controller\" title=\"项目资料\" :columns=\"3\" resizable>\n\t\t<template #footer=\"{ close }\">\n\t\t\t<AsamButton type=\"default\" @click=\"close\">关闭详情</AsamButton>\n\t\t</template>\n\t</AsamDetailDrawer>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamDetailDrawer, useAsamDetail } from '@asam-ui/pro/components';\nimport type { AsamFieldDefinition } from '@asam-ui/pro/components';\nimport { AsamButton, createAsamDataRuntime } from '@asam-ui/ui';\n\nconst overview = { detail: { layout: { group: '基本信息' } } };\nconst schedule = { detail: { layout: { group: '项目进度' } } };\nconst delivery = { detail: { layout: { group: '交付信息' } } };\nconst fields: readonly AsamFieldDefinition[] = [\n\t{ key: 'name', kind: 'text', label: '项目名称', modes: overview },\n\t{ key: 'reference', kind: 'text', label: '项目编号', modes: overview },\n\t{ key: 'category', kind: 'text', label: '项目类型', modes: overview },\n\t{ key: 'status', kind: 'text', label: '当前阶段', modes: schedule },\n\t{ key: 'startDate', kind: 'text', label: '启动日期', modes: schedule },\n\t{ key: 'dueDate', kind: 'text', label: '计划验收', modes: schedule },\n\t{ key: 'owner', kind: 'text', label: '项目负责人', modes: delivery },\n\t{ key: 'team', kind: 'text', label: '交付团队', modes: delivery },\n\t{ key: 'updatedAt', kind: 'text', label: '最近更新', modes: delivery },\n\t{ key: 'note', kind: 'textarea', label: '交付说明', modes: delivery }\n];\n\nconst controller = useAsamDetail({ fields, runtime: createAsamDataRuntime() });\n\nfunction open() {\n\tvoid controller.open({\n\t\tmode: 'direct',\n\t\tid: 'PRJ-2026-042',\n\t\tstatus: 'ready',\n\t\tdata: {\n\t\t\tname: '园区设备巡检',\n\t\t\treference: 'PRJ-2026-042',\n\t\t\tcategory: '设备运维',\n\t\t\tstatus: '试点运行',\n\t\t\tstartDate: '2026-10-12',\n\t\t\tdueDate: '2026-11-27',\n\t\t\towner: '陈晨',\n\t\t\tteam: '设施运营组',\n\t\t\tupdatedAt: '2026-11-10',\n\t\t\tnote: '在一号园区试点移动巡检，覆盖空调机房、配电柜和消防设施。验收时核对巡检记录完整性、异常派单结果和周报导出。'\n\t\t}\n\t});\n}\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<AsamButton type=\"primary\" @click=\"open\">打开详情抽屉</AsamButton>\n\t<AsamDetailDrawer :controller=\"controller\" title=\"项目资料\" :columns=\"3\" resizable>\n\t\t<template #footer=\"{ close }\">\n\t\t\t<AsamButton type=\"default\" @click=\"close\">关闭详情</AsamButton>\n\t\t</template>\n\t</AsamDetailDrawer>\n</template>\n\n<script setup>\nimport { AsamDetailDrawer, useAsamDetail } from '@asam-ui/pro/components';\nimport { AsamButton, createAsamDataRuntime } from '@asam-ui/ui';\nconst overview = { detail: { layout: { group: '基本信息' } } };\nconst schedule = { detail: { layout: { group: '项目进度' } } };\nconst delivery = { detail: { layout: { group: '交付信息' } } };\nconst fields = [\n\t{ key: 'name', kind: 'text', label: '项目名称', modes: overview },\n\t{ key: 'reference', kind: 'text', label: '项目编号', modes: overview },\n\t{ key: 'category', kind: 'text', label: '项目类型', modes: overview },\n\t{ key: 'status', kind: 'text', label: '当前阶段', modes: schedule },\n\t{ key: 'startDate', kind: 'text', label: '启动日期', modes: schedule },\n\t{ key: 'dueDate', kind: 'text', label: '计划验收', modes: schedule },\n\t{ key: 'owner', kind: 'text', label: '项目负责人', modes: delivery },\n\t{ key: 'team', kind: 'text', label: '交付团队', modes: delivery },\n\t{ key: 'updatedAt', kind: 'text', label: '最近更新', modes: delivery },\n\t{ key: 'note', kind: 'textarea', label: '交付说明', modes: delivery }\n];\nconst controller = useAsamDetail({ fields, runtime: createAsamDataRuntime() });\nfunction open() {\n\tvoid controller.open({\n\t\tmode: 'direct',\n\t\tid: 'PRJ-2026-042',\n\t\tstatus: 'ready',\n\t\tdata: {\n\t\t\tname: '园区设备巡检',\n\t\t\treference: 'PRJ-2026-042',\n\t\t\tcategory: '设备运维',\n\t\t\tstatus: '试点运行',\n\t\t\tstartDate: '2026-10-12',\n\t\t\tdueDate: '2026-11-27',\n\t\t\towner: '陈晨',\n\t\t\tteam: '设施运营组',\n\t\t\tupdatedAt: '2026-11-10',\n\t\t\tnote: '在一号园区试点移动巡检，覆盖空调机房、配电柜和消防设施。验收时核对巡检记录完整性、异常派单结果和周报导出。'\n\t\t}\n\t});\n}\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

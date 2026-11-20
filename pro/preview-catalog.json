@@ -1,0 +1,203 @@
+[
+	{
+		"example": "monitor-workspace",
+		"title": "监控页",
+		"documentation": "/pro/monitor-workspace.html"
+	},
+	{
+		"example": "analysis-workspace",
+		"title": "分析页",
+		"documentation": "/pro/analysis-workspace.html"
+	},
+	{
+		"example": "administration",
+		"title": "页面模板",
+		"documentation": "/pro/v2-043.html"
+	},
+	{
+		"example": "social",
+		"title": "页面模板",
+		"documentation": "/pro/v2-047.html"
+	},
+	{
+		"example": "crud",
+		"title": "页面模板",
+		"documentation": "/pro/v2-024.html"
+	},
+	{
+		"example": "navigation",
+		"title": "应用导航",
+		"documentation": "/pro/v2-032.html"
+	},
+	{
+		"example": "security",
+		"title": "会话与权限",
+		"documentation": "/pro/v2-033.html"
+	},
+	{
+		"example": "preferences",
+		"title": "偏好设置",
+		"documentation": "/pro/v2-034.html"
+	},
+	{
+		"example": "transport",
+		"title": "请求与传输",
+		"documentation": "/pro/v2-035.html"
+	},
+	{
+		"example": "scaffold",
+		"title": "应用脚手架",
+		"documentation": "/pro/v2-036.html"
+	},
+	{
+		"example": "welcome",
+		"title": "应用欢迎页",
+		"documentation": "/pro/welcome.html"
+	},
+	{
+		"example": "visualization",
+		"title": "页面模板",
+		"documentation": "/pro/v2-037.html"
+	},
+	{
+		"example": "workbench",
+		"title": "页面模板",
+		"documentation": "/pro/v2-038.html"
+	},
+	{
+		"example": "forms",
+		"title": "页面模板",
+		"documentation": "/pro/v2-039.html"
+	},
+	{
+		"example": "details",
+		"title": "协作记录查询与详情",
+		"titleEn": "Collaboration Records and Details",
+		"documentation": "/pro/v2-040.html"
+	},
+	{
+		"example": "search",
+		"title": "页面模板",
+		"documentation": "/pro/v2-041.html"
+	},
+	{
+		"example": "account",
+		"title": "页面模板",
+		"documentation": "/pro/v2-042.html"
+	},
+	{
+		"example": "login-workspace",
+		"title": "登录工作区",
+		"documentation": "/pro/login-workspace.html"
+	},
+	{
+		"example": "settings-workspace",
+		"title": "个人设置",
+		"documentation": "/pro/settings-workspace.html"
+	},
+	{
+		"example": "registration-result",
+		"title": "注册结果",
+		"documentation": "/pro/registration-result.html"
+	},
+	{
+		"example": "results",
+		"title": "页面模板",
+		"documentation": "/pro/v2-044.html"
+	},
+	{
+		"example": "editor-pages",
+		"title": "页面模板",
+		"documentation": "/pro/v2-045.html"
+	},
+	{
+		"example": "maps",
+		"title": "页面模板",
+		"documentation": "/pro/v2-048.html"
+	},
+	{
+		"example": "desktop",
+		"title": "页面模板",
+		"documentation": "/pro/v2-049.html"
+	},
+	{
+		"example": "workplace-workspace",
+		"title": "工作台",
+		"documentation": "/pro/workplace-workspace.html"
+	},
+	{
+		"example": "basic-profile",
+		"title": "基础详情",
+		"documentation": "/pro/basic-profile.html"
+	},
+	{
+		"example": "advanced-profile",
+		"title": "高级详情",
+		"documentation": "/pro/advanced-profile.html"
+	},
+	{
+		"example": "account-center",
+		"title": "个人中心",
+		"documentation": "/pro/account-center.html"
+	},
+	{
+		"example": "chatbot",
+		"title": "对话助手",
+		"documentation": "/pro/chatbot.html"
+	},
+	{
+		"example": "success-result",
+		"title": "成功结果",
+		"documentation": "/pro/success-result.html"
+	},
+	{
+		"example": "fail-result",
+		"title": "失败结果",
+		"documentation": "/pro/fail-result.html"
+	},
+	{
+		"example": "settings-complete",
+		"title": "完整个人设置",
+		"documentation": "/pro/settings-complete.html"
+	},
+	{
+		"example": "register-workspace",
+		"title": "注册",
+		"documentation": "/pro/register.html"
+	},
+	{
+		"example": "admin-access",
+		"title": "管理员专属页",
+		"documentation": "/pro/admin-access.html"
+	},
+	{
+		"example": "articles",
+		"title": "搜索列表·文章",
+		"documentation": "/pro/articles.html"
+	},
+	{
+		"example": "projects",
+		"title": "搜索列表·项目",
+		"documentation": "/pro/projects.html"
+	},
+	{
+		"example": "applications",
+		"title": "搜索列表·应用",
+		"documentation": "/pro/applications.html"
+	},
+	{
+		"example": "basic-list",
+		"title": "标准列表",
+		"documentation": "/pro/basic-list.html"
+	},
+	{
+		"example": "table-list",
+		"title": "查询表格",
+		"documentation": "/pro/table-list.html"
+	},
+	{
+		"example": "card-list",
+		"title": "卡片列表",
+		"documentation": "/pro/card-list.html"
+	}
+]

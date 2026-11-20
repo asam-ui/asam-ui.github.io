@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamException",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "状态说明",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamException title=\"暂时无法读取内容\" description=\"请检查连接后重试。\" tone=\"warning\" />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamException } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamException title=\"暂时无法读取内容\" description=\"请检查连接后重试。\" tone=\"warning\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamException } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "actions",
+			"title": "恢复操作",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamException title=\"读取失败\" :actions=\"actions\" />\n\t\t<p role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamException } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst message = ref('');\nconst actions = [\n\t{\n\t\tid: 'reload',\n\t\tlabel: '重新读取',\n\t\trun: async () => {\n\t\t\tmessage.value = '已重新读取';\n\t\t}\n\t}\n];\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamException title=\"读取失败\" :actions=\"actions\" />\n\t\t<p role=\"status\">{{ message }}</p>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamException } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst message = ref('');\nconst actions = [\n\t{\n\t\tid: 'reload',\n\t\tlabel: '重新读取',\n\t\trun: async () => {\n\t\t\tmessage.value = '已重新读取';\n\t\t}\n\t}\n];\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

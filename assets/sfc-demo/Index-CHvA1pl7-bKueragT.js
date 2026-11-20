@@ -1,1 +1,0 @@
-import"./vue.esm-bundler-5NdF0u5k.js";import{n as e}from"./Index-D4t3TBEp-BHjlJ0W5.js";var t=Object.assign({},e,{install(e){e.component(`AsamAvatarGroup`,t)}});export{t};

@@ -1,0 +1,1 @@
+import{C as e,Ct as t,H as n,S as r,b as i,f as a}from"./vue.esm-bundler-5NdF0u5k.js";import{t as o}from"./Index-B6sZf-YD-C_FZ4noC.js";var s=Object.assign({name:`AsamBacktopCapBasicDemo`},{__name:`Demo`,setup(s){return(s,c)=>(n(),i(a,null,[c[0]||=r(` 向下滚动可看到右下角按钮。 `,-1),e(t(o),{right:100,bottom:100})],64))}});export{s as default};

@@ -1,0 +1,3787 @@
+{
+	"schemaVersion": 1,
+	"bundles": [
+		{
+			"id": "composable-use-toggle",
+			"key": "composable/use-toggle",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "e7f064ee6bdab039079edd4487eb333712f965a13544c656d166dd64f6c98ff8",
+					"bytes": 395
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "e5a81d4e0b1ce79b2ab6cfd358b0d9c9389c4aee8d005a73968270e7ace84415",
+					"bytes": 693
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "dd2b9bfaf7d8705493341bf09dcff3a38ea6d31dd761302ec79b01e7b1a341d8",
+					"bytes": 392
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "05b19655d212949c4cbce5e25a846c61cd9bc2e129489f6e9f846c379d4c4b73",
+					"bytes": 283
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "95ba17fdd3d16a7b2c9a6768554a41928faf4af3ed30685184fb687483395b98",
+					"bytes": 1274
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "e69f86be568d9315cb18e75c915bf58769105b1c88e4e43008963f073a19304f",
+					"bytes": 2935
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-toggle-js",
+			"key": "composable/use-toggle",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "18d5e187eb7b8c8f3b87cfe861c8ed31447252102b1a5c94a9635417b8d3ad0f",
+					"bytes": 385
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "418f628f0906353386e27843729ea5a50c662736b1373c263118c33887c52f01",
+					"bytes": 526
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "0ec4545d2ef8c713e6b510c46406ea9f7ebba10af6a87bb6c816388430357510",
+					"bytes": 382
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "3e56940a422b2edfcb24abb15c3a8484cf10c508f0a6d8f540f094cf9ebb1840",
+					"bytes": 283
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "dd0335f09bb2ae3aeb838a20ff35e89434cdb3de7aa4f47797bf9a0802862539",
+					"bytes": 383
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "a24b754b17d06f3f916e8144b5dd2e44f1b04019bc21b0a2eeb870914f758c5d",
+					"bytes": 1274
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "c1005ff98b755bf538dbbdd69c00a88b94a5cecd7a5211378bea95e6a1d8ddaf",
+					"bytes": 2954
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-rect",
+			"key": "composable/use-rect",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "033d895a18e795a4895cdee7b04e177058d4774af9cd50bf9c957182dfb97ed3",
+					"bytes": 377
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "c8c5d469e9abb240ed821b78d796d5cc4e6788f04570bcce799097c6cb6172dd",
+					"bytes": 689
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "20629e8cc071f006ac0cf918ad4c0a238620a43a22f2696cec2d770c04cb37f2",
+					"bytes": 597
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "31b0494c23934fa16e04d90cf07c5ce77251ecab6e49f6217cf7d20b38ef2fdb",
+					"bytes": 283
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "071c5dbc9a8dce78cc6ebd04724bf7aba44f2e8b122eef3ce2ec998c09cce2ca",
+					"bytes": 1352
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "eca3b447c4765ba694d96b9cbde90da277068eed85ddb8a3b23cedd3504e2525",
+					"bytes": 2933
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-rect-js",
+			"key": "composable/use-rect",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "2cb8657b5e69a38e027f617a9cfb842b48cfdcf1b8d9060aa189b6a10e57efbb",
+					"bytes": 367
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "46d45ad3c77b472635deb51b561475b672c05f0f51a075e8063189d08da8fbd1",
+					"bytes": 522
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "db141e6b502636f32f095672bc0de9ca12e66c5976ed7539f837274573d8baae",
+					"bytes": 574
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "d2cd5614736880c5f162ec66cbe8fae01ec485d307d8de3568dae1ddbcc0cbe9",
+					"bytes": 283
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "dd0335f09bb2ae3aeb838a20ff35e89434cdb3de7aa4f47797bf9a0802862539",
+					"bytes": 383
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "044933269bdad393f7301e4458e43b189d8ff0b86fa7f82b4a73dabca079ef3a",
+					"bytes": 1352
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "7d740cbd0fe94b2fe2e77cd2504b29c2747e6e3464c0ddbf4ca0d8656e7d7244",
+					"bytes": 2952
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-count-down",
+			"key": "composable/use-count-down",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "c6cd87ac4321e93276d02f0baa27d61e745f1e5d748d4444ab16049e89886fa0",
+					"bytes": 401
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "3e88dd82f7aa5c2fd2ba372372ed11c044a345e3be50ccb5412337cbd632db3f",
+					"bytes": 705
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "f65c4e04991f14a43c1fc30ad4fdbdb9540ab3e3076c2291f00e03076187214f",
+					"bytes": 680
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "ff9887e3c151eee1bb5bb8985499ccd654f5560e7e7864116a4055cada280494",
+					"bytes": 280
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "14a6d2f73835c5b5e6afd56a13736f502f54b2eba585a432494650b449f24b18",
+					"bytes": 1343
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "38fe332fdd39763403fd8b8aac25e5d6e07d03c1955756233279b1991c053b0e",
+					"bytes": 2939
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-count-down-js",
+			"key": "composable/use-count-down",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "2191f6e114fcea65783f270c48054e5fb5d7aac1d211b5883157721abf948bc0",
+					"bytes": 391
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "9c00d83a1bed5d4f723770cd1495c2535de85fc6334d2919db858ce1dcb481e1",
+					"bytes": 538
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "5600447b0a3377d52f5c0ab748ee1bd4c187442d61375fef79feaf87bad2fdce",
+					"bytes": 670
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "43aee329253f5ed7037c6be72a175603fe01c05414e949eceb78ec71890974a8",
+					"bytes": 280
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "dd0335f09bb2ae3aeb838a20ff35e89434cdb3de7aa4f47797bf9a0802862539",
+					"bytes": 383
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "bcbad03ecc624e6a9b297db5d9b59dfbd692b4d8feb44ed1089ec0c95fe3cb98",
+					"bytes": 1343
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "0f8dd5ef9a12c195e126b130f8065a212101887b750f3e4b6788e3072b85d09d",
+					"bytes": 2958
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-click-away",
+			"key": "composable/use-click-away",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "aab1fcf7fd0cbed7e901bbd7dd94adab8f2e888e2ff3284b8bebb66b61403230",
+					"bytes": 386
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "618258113bbae9e51747d542bcaad3e72c78457082d208a5b203a8f33d18ae2e",
+					"bytes": 705
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "6a33345349c21a0039de478ee0a6617cb2ac369b96bad53a70a197bfd8844474",
+					"bytes": 581
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "23c3a2cdf335936d9f7e36a95882f3194d80e443b9611de8eb5385e5eba9bcef",
+					"bytes": 286
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "e2ceb7e8638964013bea0047ddd0c5ab727d3bf0dae7a8cefadcc1e92a1cec99",
+					"bytes": 1335
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "d17a294ea26fdab2d1054add3da382653427e6b49c8a92139fc7311ab6ad3ed7",
+					"bytes": 2939
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-click-away-js",
+			"key": "composable/use-click-away",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "278eb82a6931582beb697332b8f0a7fa5186d56fca6f7e41b6f5e0fe8fdfa729",
+					"bytes": 376
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "14f05d9751d344506b03bd07def284e0a4840f9154d90e0a63054f5e297fae44",
+					"bytes": 538
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "4d6ace2ec67d438893fc8adf81cb3ac908fc5c89a0ff33522d1103f0848688f2",
+					"bytes": 558
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "3ece184cd982cef8d4a3b4ab447948a9c4b9e1301aadd21a0006ae9e571a70f9",
+					"bytes": 286
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "dd0335f09bb2ae3aeb838a20ff35e89434cdb3de7aa4f47797bf9a0802862539",
+					"bytes": 383
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "ad1425761fdd54660d388f9086e909338460d972dda9ccd44bb92f3eb6dc453f",
+					"bytes": 1335
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "62fca197f7cd64cd73a5986ee46e7a4b6033edacba8a944213fcb30b81a47873",
+					"bytes": 2958
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-window-size",
+			"key": "composable/use-window-size",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "db2c62b68a508598ebe23502edf8ffbaee47a7b6f97bddbe5ce6ed0840da8c59",
+					"bytes": 362
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "eb6199a072526c90f7fe976eeff6e79fb70cf7e783f32e6dcc9d6016a8453deb",
+					"bytes": 707
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "94338a8ddfe183d43efccc370310edfe495ebc72484ceea9013f7d9a2c3daa30",
+					"bytes": 252
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "21fb27c03e029556e77888e4f1df7f16fb839349b98afcede33da28ab60e184d",
+					"bytes": 283
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "c40d55b6ddbf31af3823950d1c3f2f31a5f45896c3e33b7d9c6a5bc27bd85e75",
+					"bytes": 1383
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "705d50bb10d072995b2e69863291754d5dd9e5bd6a21f541a497d0634720c723",
+					"bytes": 2940
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-window-size-js",
+			"key": "composable/use-window-size",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "6ca57537ea0d4abb1eb83f4819c1093a8b69d18c2476c429ca4d3fcabcd72454",
+					"bytes": 352
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "056f106aa1c3f385d544a487fe148d07696dddd231eca4282fee0c9a37fa1201",
+					"bytes": 540
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "399ff5a8870600da93411067b33c4360072c02c7cbc1c9c94277c9b1f9c348af",
+					"bytes": 242
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "2f049c7926ec7d6cf550ebcdfec34ead8caee2bff49fcf1a3b88e97f5da888ff",
+					"bytes": 283
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "dd0335f09bb2ae3aeb838a20ff35e89434cdb3de7aa4f47797bf9a0802862539",
+					"bytes": 383
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "b8df859d30beb85d8c52118046b3151bea47534513a80dfe08bda8b353fa631b",
+					"bytes": 1383
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "3cc625716e9d7f82a47f3ec35d928e0f750dbab0702d542a22896071c4ffee17",
+					"bytes": 2959
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-scroll-parent",
+			"key": "composable/use-scroll-parent",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "ff284210440e10d373394c5f7f94ae7f4f3ba0e6c71c76eacd3fd01045df3a7f",
+					"bytes": 407
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "269cb2d72c587204fb17deb8a252fd617af2d87c6d14adbdccf19846018347f5",
+					"bytes": 711
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "c1f280308901b05c247e636a1751e00c63083432756a009726745a94232a8c48",
+					"bytes": 754
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "b15f89ca603515eda3761fe65d3be8b38639095075377d745897390cd29d26d6",
+					"bytes": 286
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "10c47c0a1888fad2c5615cabdc81e8fd8f1dc3d30a0f5c3bc43704b89ca50747",
+					"bytes": 1376
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "26ce46b0b698ff41ec4aedd4fe67a8d66591de5de1c72561dc40fab3f983d7c5",
+					"bytes": 2942
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-scroll-parent-js",
+			"key": "composable/use-scroll-parent",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "d7458962c7a36a247ffd1cbf97ca6c18c67fe49c3a910ea94a79e8d060e7098d",
+					"bytes": 397
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "dbcb51371f5674db74a66f0032424ee4b196c18a6faf127b32b6c1e2f85156a2",
+					"bytes": 544
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "8134434296a241a82c8180a557a34dca9ac53a89923ab85a6a8a55cd72269729",
+					"bytes": 718
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "7517859f820b35d3c91f29bfdc26c1f7abdb1397b9366d55e65625973ee567b4",
+					"bytes": 286
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "dd0335f09bb2ae3aeb838a20ff35e89434cdb3de7aa4f47797bf9a0802862539",
+					"bytes": 383
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "cfd8b56791c10a87f14da6756045d3fc4b0fb2e56a9058f438c34a4b7907d758",
+					"bytes": 1376
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "c05f5a0ce4bc3717f966c6af2f17a5339cf6213c4764c10b0c89465cac4c73e3",
+					"bytes": 2961
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-event-listener",
+			"key": "composable/use-event-listener",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "a71d7259fbd7b3e58a566928ea85b1cc1a5a44192ee61e7f93867cbdbc8ff309",
+					"bytes": 410
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "7aec64930abd1541cbaef86a822bd3cc9f107d62212744f864dd8e405c219cc5",
+					"bytes": 713
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "d63834a3fe55353ae687f04f6a72eed541511deee50b586d70b92433309d4abf",
+					"bytes": 560
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "23e4835f3b1176fa07628e9429d68ef62f19235cf5028aec4bdf9075074da671",
+					"bytes": 283
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "b35c4f47ec0be80c5e360020e35507b9f492e47278867b3f00574d00bb4b70a4",
+					"bytes": 1387
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "0f7ef90aec97895974bbba23ae2b8b69b8d94818a7c2f6cfedfa29484d6cea72",
+					"bytes": 2943
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-event-listener-js",
+			"key": "composable/use-event-listener",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "ed16883de705a1b21d492a752fef86622b4ec7abba7a1930956d7221bc58a300",
+					"bytes": 400
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "f25f0ba07f8c0445332507111a07e6c79a95747273ddf26571d809eb339acb94",
+					"bytes": 546
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "042716d133e189b34a05de9eb6ddc6f0492c7ff279ebf63c0421d895e6f0fa80",
+					"bytes": 537
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "59697734b0efbf3f507f673a74b958939ece462612be2f89e628796d4b7215de",
+					"bytes": 283
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "dd0335f09bb2ae3aeb838a20ff35e89434cdb3de7aa4f47797bf9a0802862539",
+					"bytes": 383
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "0577c834fb72cc36d261d860ac8d70e11a6d3cd435014166008b47359ba68da3",
+					"bytes": 1387
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "53a59d56fc6026bf315f8dd9e26829a30303bebaad74cfca20a32482191e924a",
+					"bytes": 2962
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-page-visibility",
+			"key": "composable/use-page-visibility",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "2d37a6e4e0018d1e34b0ebd21f8fe34564c4621872d4aaddce4ba24273e63184",
+					"bytes": 387
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "2e789583db6053c69685cddfe94779a4e0fe17a3c26940d18303bdd57dc2aa47",
+					"bytes": 715
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "4238d6036cd5577c51f3444e88e617296275921799509926341450c9681a1308",
+					"bytes": 261
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "174783477293e6317aa1f7951a902331088964d3ae85aa735db9ca4647683d67",
+					"bytes": 286
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "01320773fd23e9a09dea076a2deea17d52abea8c23d89982b6fa95e9e4d0cdbb",
+					"bytes": 1377
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "5c73870f135a8c19d449cbc822b326809261d63a980cc056c65d961f0fe08c31",
+					"bytes": 2944
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-page-visibility-js",
+			"key": "composable/use-page-visibility",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "81f8b402588cc4703f4723564172380be28c271d710e8ad071b624b05f545f1b",
+					"bytes": 377
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "b337dd066b9f5a9675d88e26e45e59ba937f7686043e49c0be582dd0c96f1d16",
+					"bytes": 548
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "ea36813d4b673c41639731d5cec9bd1f45a5cbee03139e3628aa9b466a2f648a",
+					"bytes": 251
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "16f4262f89a08112e8d442dd436496ea277ec89f28441effa1e019599deaeba9",
+					"bytes": 286
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "dd0335f09bb2ae3aeb838a20ff35e89434cdb3de7aa4f47797bf9a0802862539",
+					"bytes": 383
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "c662d42efa95d18ebf3a84ac54dc825b93ea2fbd384177d426349bfb91eb4aee",
+					"bytes": 1377
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "3aa20c86d2ed6f3d98d4e8d7eb174ea78a39326f03c6b6b5d5448376bcaf73f2",
+					"bytes": 2963
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-raf",
+			"key": "composable/use-raf",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "e596b35aed43bb732410a9599bb1cf803c467ca49d2952a598b8dc48f782aff3",
+					"bytes": 416
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "2e814210c4dc0e5a0a18d4f9c12837091b59af1ed266fd221ed2222f023b2b23",
+					"bytes": 687
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "fdac21c220a2f3fca31cabefd3c189ae33827635468ed94664bd374a1dbcd9b6",
+					"bytes": 489
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "e8b2d5546b2c2ddeb9432a6cbf713e29c0516849641916748c85d3ecc636c698",
+					"bytes": 286
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "d569933de93e849e9842c7bb89a4da76038c7f2a83e9d7ad5a6afca2d695c7a7",
+					"bytes": 1382
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "6f7e5adbe8dcf1febb6db6421f1e6d39c491425ad3dda841310d10247d0816ee",
+					"bytes": 2932
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-raf-js",
+			"key": "composable/use-raf",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "b806fc2a9d4c3fbf0bef410aa2293c1afa5527943afc68fb91c886cd00f27e37",
+					"bytes": 406
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "45caef1031a81bdf5f9818541230cc50296e47b91c321dbe8b520898c0813fc0",
+					"bytes": 520
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "620691ad7239722af7e44cd76dd3edffc01a9dd2aa65eb3fc58ea6b990556227",
+					"bytes": 479
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "d06100f766e774b75c4cf4828f226ee0a42fdf53a0cd7d0c8e8beaff29402515",
+					"bytes": 286
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "dd0335f09bb2ae3aeb838a20ff35e89434cdb3de7aa4f47797bf9a0802862539",
+					"bytes": 383
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "bc6dc969cea5590c11380a189c1f39aaa7a218df52529b97ca39c51d382c1ada",
+					"bytes": 1382
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "6696eb3eb5f32450ab56df9e42d72483d6440ab2f8d474360cf2e83c903479ac",
+					"bytes": 2951
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-raf",
+			"key": "composable/raf",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "b51beb2ed7ced2298b12d6500e9a8a3d2ad2e88830d1e96444289a1e1e68dce5",
+					"bytes": 398
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "f3cd2346d031d38aa17763051c79d631d8429a1f66eff8b92a9b0705393e41ff",
+					"bytes": 679
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "6e17f4d3f87bd9e61e8925bf9de80a50d6587a57b613a76988f463229ba4c41d",
+					"bytes": 944
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "a30153bcb81ac65533071b0420fb7500876fc89149440013dfca4350a9767c1e",
+					"bytes": 292
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "9d051d231488ad64e95e42c1685386c59334a47cf6b7425bc5f2b45bfec3e77a",
+					"bytes": 1378
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "8065af243d3e3db79007cc66d7f27483d70b2485bb60c812d2a142953ad68229",
+					"bytes": 2928
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-raf-js",
+			"key": "composable/raf",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "9b15db679838616999cf778738e330e93005344dd6ea9a5b6a7b2a20bfdc8bb7",
+					"bytes": 388
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "9a647295673f3ae3c64be3ae53cb25f2699d21e0bbc6eb29571eed3bb9cbe2a4",
+					"bytes": 512
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "f0ecdaed2a04df328a651d8dea76c13ffc8deffaa342c9467346006da6ac0155",
+					"bytes": 934
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "886548b70cee03e81edf697d58f8b174abc8efcbdb42bd0ea859f9f0a804fe08",
+					"bytes": 292
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "dd0335f09bb2ae3aeb838a20ff35e89434cdb3de7aa4f47797bf9a0802862539",
+					"bytes": 383
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "954aa13361ef8b1d64f2314ac575a43587fa324e5f671856e5807931afdb530e",
+					"bytes": 1378
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "b4639d7204ab1a374f7ca54cbec231b1baa1f225f69e7dd55b73eccecff42ab3",
+					"bytes": 2947
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-environment",
+			"key": "composable/environment",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "6fb31ca2d804168a556c2a4cbfcd5a37ddb9810d59671d7a7ae565cb0e58276f",
+					"bytes": 380
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "b8fbdb1a0e370c1985fa7081bc892b513f763177ac4e14563e62f7429302f1ab",
+					"bytes": 695
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "4ec6e72007170d93b2b1ce467b757a9d4fb4c5ba00776d73879c4a550894abaf",
+					"bytes": 213
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "fab92d3c348d499e9094ac6d8836480e1126e4bb4c842988adb27d73fb6fb537",
+					"bytes": 286
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "6292371c0f27f3e5034196858e2beaea8273c3174c459ef94f4786c0690660f0",
+					"bytes": 1372
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "3a6493593a464460038724516e0b2035471c47af90c9d4ac38fc9ac301c781c2",
+					"bytes": 2936
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-environment-js",
+			"key": "composable/environment",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "3abcc07779ab70e22f7ca68c213a3ad6e3021f64dad78f9623fd7f465ca73501",
+					"bytes": 370
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "d158e35d7caaf8973790440c69443a2a906a6a31bfdf71c5f463f87498ea36fd",
+					"bytes": 528
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "6bd9f0da7c339759b4b357f9bc7e697e7a0545dda2b2d9caf1102011038a6e39",
+					"bytes": 203
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "eca6a143aff0ff12f79abcef07b67a40ac8b559fe261ceb95f591070fe9406ec",
+					"bytes": 286
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "dd0335f09bb2ae3aeb838a20ff35e89434cdb3de7aa4f47797bf9a0802862539",
+					"bytes": 383
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "3e15dc6ef0c18db5b0eed0518424dd6b97593eaaf16d169a31d373b9d56f45f6",
+					"bytes": 1372
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "9e5a4995335563b3974cccfeb21d1ec874d933b0a759ea4ce2a97737548328dc",
+					"bytes": 2955
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-relation",
+			"key": "composable/use-relation",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "4242b2e6cf829dab82a9274168749eccfce01f4a72c2ef26cdde1eac9bb11b97",
+					"bytes": 419
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "7c427da77d81d1726923a9ee67845090f79d33200b5fbb7a2f94fbbe7e5135ef",
+					"bytes": 697
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "98b9c694a6e3de0acd3dee0bea58d4621a36915d1bfcc6ccd63d4fa6db9cee67",
+					"bytes": 626
+				},
+				{
+					"name": "src/relation.ts",
+					"sha256": "3c20ab54180a28d1bfc3fa83242f48b3fc541c341680e952b1ae1cc22c48b7b5",
+					"bytes": 121
+				},
+				{
+					"name": "src/RelationChild.vue",
+					"sha256": "73938e5df0c5bf410bc11ee72a94900fff5e5a086fa748b18b3c89b5a0a576d7",
+					"bytes": 286
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "3859150c5b6e9cb54d2a7d11cb5d2d977af849f321c859e2c6fe0f86b2e24408",
+					"bytes": 289
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "d5315ad30df5ccbdcdc782abd3f03841e14c8c8f1a5282aee737a3950536c080",
+					"bytes": 1406
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "745db45389be6b074721b558d74d72a04792d2fd17a544d4464729daf5bb10c7",
+					"bytes": 3215
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-relation-js",
+			"key": "composable/use-relation",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "3cde31be4883512a96bd1613f8ba56e998ab41cee0f590f6801d163542ef792e",
+					"bytes": 409
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "56461f8d5e06d7b7a5dfd888389039c8cbe62f45d61d7febad84e8d2415deff6",
+					"bytes": 530
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "73e536cf9ae20d142a2761cb58e88810ce143e4d14affa7d6611de2a1b678916",
+					"bytes": 616
+				},
+				{
+					"name": "src/relation.js",
+					"sha256": "4c9a72482acc85bd80fee4d3338f4e3293e9b70a10db83f5d3a30627d61c8b8c",
+					"bytes": 57
+				},
+				{
+					"name": "src/RelationChild.vue",
+					"sha256": "db973c3529c472ef5d03f34925effd99a605ef3cf0b5bbd32c9439982d9e986d",
+					"bytes": 301
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "8030c54555a7f8532159894033f993af553783bd6a2eaefe869db5733a93253f",
+					"bytes": 289
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "dd0335f09bb2ae3aeb838a20ff35e89434cdb3de7aa4f47797bf9a0802862539",
+					"bytes": 383
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "b833b3c1281ed1b0e9028c7a63bbde1c1872bc7b1dd0473817b70a27ae7c03cc",
+					"bytes": 1406
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "3be3ba77166896bbdbdedfecc377a094bba6fc25110a8fc13db47c9c0ca95000",
+					"bytes": 3233
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-on-mounted-or-activated",
+			"key": "composable/on-mounted-or-activated",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "9405a93e7c32ce73dd2675e67bce0bde98b5cd80003e1a708ff2ce84bc9e6145",
+					"bytes": 407
+				},
+				{
+					"name": "src/LifecycleActivity.vue",
+					"sha256": "dbb2547595a2937a877b0a03d5e51fc6325ad4a32fee230610e8bbc1a4b458a0",
+					"bytes": 274
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "0a663d0201ecb597678a639a35a02739e562eebbec1435f6f2a26c7f14fb5e28",
+					"bytes": 723
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "e674fef03bacb6dd0d4e02ca39da438f75b721e95fe5eb89171eba807fa96e5a",
+					"bytes": 404
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "7735046bfb1c709a9d1f138bae96f3a982afa65ca94abb02058b033ec7cf2d90",
+					"bytes": 292
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "5e0b4a887c4212c686953481d38e1db29a1806a9e109a0f617b875e18dd9e3ee",
+					"bytes": 1360
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "3f397f2762031e6c43e3b1f9fe091a7057519e639a666329efbee74dc480deea",
+					"bytes": 3094
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-on-mounted-or-activated-js",
+			"key": "composable/on-mounted-or-activated",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "ead33dd8f5a683606d7ec187e6ca14c14526032f8c0dd319c42a53a0c6826620",
+					"bytes": 397
+				},
+				{
+					"name": "src/LifecycleActivity.vue",
+					"sha256": "13259b2579b1c3ead9306346270b9c79e69af3d0869a8e68d873963a2cddce58",
+					"bytes": 258
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "abf01102b4c41927e7c776e7aceac9b8fcce8a05c4405148a7eed5ff57b210bf",
+					"bytes": 556
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "5d067041e075898b0d6880c16f4ee125fc335c210c2b2a00ba41001d0d1fcfa9",
+					"bytes": 394
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "566aa4aeb305bb6019b23bd6900c5ec7fa5b1aed74136278b2c1cd8859bda253",
+					"bytes": 292
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "dd0335f09bb2ae3aeb838a20ff35e89434cdb3de7aa4f47797bf9a0802862539",
+					"bytes": 383
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "55141393da55b7b06435d7ff6bcfee16a522bf5400fd901fca4421d4764d273a",
+					"bytes": 1360
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "6a12cb67c6766e64a8c6caa9dad56372b4af537ec5456f72a537867371c5021e",
+					"bytes": 3113
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-custom-field-value",
+			"key": "composable/use-custom-field-value",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "6791db2571ca1372dbb2b63052e248effc89549237f5cf1050d8d081c538d9df",
+					"bytes": 438
+				},
+				{
+					"name": "src/CustomInput.vue",
+					"sha256": "0c4e13b3c0a59051a1ee3b202eb3b7a3a3a0e637ed8c42f7dce0d11db5db0565",
+					"bytes": 566
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "de1d729c9e93a4eb3dad6707c72c43c76e43ab03ef3c65f6da623505dc9d8e36",
+					"bytes": 721
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "d55b51d4ea76065a96cc53b507a40fcd77a0c96406fb76a3d7bfdf26ce70564f",
+					"bytes": 1140
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "253bb8aabb591f5d6699f10687353de9130922f7e985a9b0652d58b79eaaa4be",
+					"bytes": 292
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "88ea290579851ac27b2a5115422678eeb53084f3b5002126728054afbb7c2f79",
+					"bytes": 1487
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "b9fd93f222aa96cbb42f5b1a5555101e6be2212e4c04c7360b901a461129fdb9",
+					"bytes": 3088
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "composable-use-custom-field-value-js",
+			"key": "composable/use-custom-field-value",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "0622c8979a7a301d004887bf5aef4017c8b9b97e31defd42fbea0edd483382a3",
+					"bytes": 428
+				},
+				{
+					"name": "src/CustomInput.vue",
+					"sha256": "947d30ee0f7ea3e8d1bef5831314277f30ddc27d5320884d0ebb9a4bc14a3759",
+					"bytes": 558
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "48d446274765c1ae3e5037d16dbe7ccdbaae134e116319080b43aa2acc85c6cf",
+					"bytes": 554
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "a907a4c70c71b675d702c59fa72eaf2664ae8898f0e02471c411d109f0d009af",
+					"bytes": 1055
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "267fb9202fda81f64934a84ca82b743083c263f31643ab0b616de94f5d3edfd0",
+					"bytes": 292
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "dd0335f09bb2ae3aeb838a20ff35e89434cdb3de7aa4f47797bf9a0802862539",
+					"bytes": 383
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "44ce787d58f27f0bba8a9d09ffe82fc460d7b491ecb60cec4feb465cb67b5e19",
+					"bytes": 1487
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "185b0142261afb8a9538ba8e2565952b01e730ad2ced712e1bc1b9aad0463c40",
+					"bytes": 3107
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "application-navigation",
+			"key": "application/navigation",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "44e1249602c329d2a270eb4cbb113ac50662ff05093c41ec76f2647277ea20bd",
+					"bytes": 4564
+				},
+				{
+					"name": "src/EmbeddedExample.vue",
+					"sha256": "b6498615a9800be152125743e238773720124ba11aeca5bf4e518e16a5681a4c",
+					"bytes": 879
+				},
+				{
+					"name": "src/Lifecycle.ts",
+					"sha256": "138f350b61efba941fb70be3c187ecd9eb67d23165bb702e7cb6e4c3695f6263",
+					"bytes": 150
+				},
+				{
+					"name": "src/StatePage.vue",
+					"sha256": "4f93acb9006530bf06a585733967e239b075def43939930a5f53ebcda6ea1354",
+					"bytes": 1423
+				},
+				{
+					"name": "src/Texts.ts",
+					"sha256": "4e0aae1a5cd324fec3495cf2bc1ca84f902160cfd6134afc68c80fce7d0728d5",
+					"bytes": 1620
+				},
+				{
+					"name": "src/TrackedPage.vue",
+					"sha256": "5f164f139db811b010d859fb12c60cc19ec59af44dbe6663d6d9482861363429",
+					"bytes": 335
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "7e796e0886fcd93086395626122361b3db7b143272679a0007568fcf48cff032",
+					"bytes": 871
+				},
+				{
+					"name": "public/pro/embedded.html",
+					"sha256": "99e09a362d0833deb9afafa9aae765acbacab984fa924226161034b9734232fc",
+					"bytes": 601
+				},
+				{
+					"name": "src/mount.ts",
+					"sha256": "aaef38a5e50fa34087cec95259e786df6b1a9c39893c4b92916302ff11408a00",
+					"bytes": 1492
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "ed39577ba567d9d0a7ad90756eeddd9f489e87e79a826c51710c6777d89315b6",
+					"bytes": 775
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "main.ts",
+					"sha256": "9030a829ab2fefd7df8456d26a2933f2ec1a8f6e46bd74b457ad5175dc468694",
+					"bytes": 699
+				},
+				{
+					"name": "index.html",
+					"sha256": "b034266701005f8210ba5d392774dc3991fb533b5c0b1be9292d217c84738abe",
+					"bytes": 285
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "57b65d4d13406778d7e314093b7c42aa6ddf64f6464cc92a99ac815f9a57d992",
+					"bytes": 155
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "9861140c7cbfcceb2e40c0a6469761d14acfccf01a36681459d2532ba184d33b",
+					"bytes": 340
+				},
+				{
+					"name": "README.md",
+					"sha256": "4795a3d620439fbdbe531b95dbf676af1536964a9270638fc3c0c0db90efdd8b",
+					"bytes": 1058
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "f770f563e41e4e12513f05d2cfa9aecdc826ab0650917b5328d886e8483be4f1",
+					"bytes": 4034
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "48615238a402b2d1f7dd15d7fc3ff4a3d6b0e90d6ed0348b756d2284401ebfa9",
+					"bytes": 602
+				}
+			]
+		},
+		{
+			"id": "application-navigation-js",
+			"key": "application/navigation",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "1d9fef00a45258fcc821c747173a29c3864e8e209142e58c53c4767f28760b8f",
+					"bytes": 4316
+				},
+				{
+					"name": "src/EmbeddedExample.vue",
+					"sha256": "e7cc19aba1d7681b4052955dedc866452cf50ed25e2b034d11819090f0bde543",
+					"bytes": 869
+				},
+				{
+					"name": "src/Lifecycle.js",
+					"sha256": "cf10c3995e4b77d027df9080b3f68f9d34d67190eccf0f11e807ac36fc059f49",
+					"bytes": 68
+				},
+				{
+					"name": "src/StatePage.vue",
+					"sha256": "bf89d144eb41b6c7173fe8750ab22993e715dc218d71a3c4c5e08c15856abbc4",
+					"bytes": 1391
+				},
+				{
+					"name": "src/Texts.js",
+					"sha256": "1089f8b2e336fb6e9ec17a1de73dc1eeb9d027730a2a34570a7379968fd80d1b",
+					"bytes": 1619
+				},
+				{
+					"name": "src/TrackedPage.vue",
+					"sha256": "034367c2cfc83ade66e77bb5a440f302be3a0e4d987220f34ca2666cba8f155f",
+					"bytes": 317
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "7e796e0886fcd93086395626122361b3db7b143272679a0007568fcf48cff032",
+					"bytes": 871
+				},
+				{
+					"name": "public/pro/embedded.html",
+					"sha256": "99e09a362d0833deb9afafa9aae765acbacab984fa924226161034b9734232fc",
+					"bytes": 601
+				},
+				{
+					"name": "src/mount.js",
+					"sha256": "6445166ed3f93dca6a7ccce63754476fda1a02c5e58d0ccf1f0f2277bce41197",
+					"bytes": 1329
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "9d52d4063e690ab0ffde2737ecb3b5b200adc043236d0611094b7d2c9324c19c",
+					"bytes": 765
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "main.js",
+					"sha256": "f646d5dcf8ae3ce9d389b259cbbd68a0c88c047d47ee311dbc2c15e397ee6bcb",
+					"bytes": 532
+				},
+				{
+					"name": "index.html",
+					"sha256": "f3b745fb756ea844b2b3a4c4cb30a268f3dbf280da8c9fd5c073334b2d0e9782",
+					"bytes": 285
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "57b65d4d13406778d7e314093b7c42aa6ddf64f6464cc92a99ac815f9a57d992",
+					"bytes": 155
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "1ad466f66bd9edb63eb1cac7ada44a6b28ab1ad11ae18ccc119b8744b0088e55",
+					"bytes": 396
+				},
+				{
+					"name": "README.md",
+					"sha256": "3b34f1a4bcf329f709b3f603e8d3fe2e9d10d8bb599f1945a5d66bed6e2e0261",
+					"bytes": 1058
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "b9a89e672da0a202f1ead59240586705f6f282a55c4a8037cd19616554725c97",
+					"bytes": 4052
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "9134f17b90a21d19616ff0d77350aa9fa55ffb5c6740373cfd16f1a0ed9cd152",
+					"bytes": 565
+				}
+			]
+		},
+		{
+			"id": "application-security",
+			"key": "application/security",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "c72d02687e8207369fe7c00db7d556f8d3eca1b44719ab28c5d8946e10729458",
+					"bytes": 7577
+				},
+				{
+					"name": "src/Context.ts",
+					"sha256": "4793d980d6e6954b6e8ec03ba53c7fad6bf834ffa527402af08c1696000656af",
+					"bytes": 365
+				},
+				{
+					"name": "src/DataPage.vue",
+					"sha256": "57d5fed671167555c8012ba4c344323d9fc37a693d741882a478df3d137d6223",
+					"bytes": 2935
+				},
+				{
+					"name": "src/Fixture.ts",
+					"sha256": "0f212292b65e8293b26d19b910b5c15d4c23ef8b25a6175b4ead09d5662357d8",
+					"bytes": 2744
+				},
+				{
+					"name": "src/Texts.ts",
+					"sha256": "4426487ba35e51c0d8b33e4fc944d787e040590dae101be864f7686ccc460536",
+					"bytes": 2623
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "d4fe820b6cb11cf6acd1d289943b988017c76654c9f36b6a0d794dd4e9bf8930",
+					"bytes": 802
+				},
+				{
+					"name": "src/mount.ts",
+					"sha256": "62da15785f36f0aa2d1fb2334946b068b6025f310646cb47fde9746f0b0f072a",
+					"bytes": 1436
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "cff4fe0fd93646bc0d7b0513479c31b77dbc38312dd700adcd961d2b220da496",
+					"bytes": 804
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "main.ts",
+					"sha256": "f131f53315be53554d5d294487c6765d7bfd32253f65df6b3db56fe8dbbe1051",
+					"bytes": 695
+				},
+				{
+					"name": "index.html",
+					"sha256": "b034266701005f8210ba5d392774dc3991fb533b5c0b1be9292d217c84738abe",
+					"bytes": 285
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "57b65d4d13406778d7e314093b7c42aa6ddf64f6464cc92a99ac815f9a57d992",
+					"bytes": 155
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "9861140c7cbfcceb2e40c0a6469761d14acfccf01a36681459d2532ba184d33b",
+					"bytes": 340
+				},
+				{
+					"name": "README.md",
+					"sha256": "d6dcf2231891c4685847b0d1f78d2a95aec30d35c88b3dc1a67054db194e91f1",
+					"bytes": 1056
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "d9c584792d9c68d5286f50afd4efc918036ce84329b3497f88d0117e37d7965b",
+					"bytes": 3735
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "application-security-js",
+			"key": "application/security",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "b1a64e77fbcd8846add2b1e1b516e4c880cd2297d8ed6eadb3c2b69c75c58ac9",
+					"bytes": 7355
+				},
+				{
+					"name": "src/Context.js",
+					"sha256": "94ca681a9822c06d917d9e204386dd67a858010ab3a0998df9fd7d09ead2bbce",
+					"bytes": 57
+				},
+				{
+					"name": "src/DataPage.vue",
+					"sha256": "6436667ff648430b3dd7fbd76700cf3bb981b90ea3438717353f28b2ed0661bf",
+					"bytes": 2890
+				},
+				{
+					"name": "src/Fixture.js",
+					"sha256": "bbaea77b931b320af8abc742e9fa820cfc5ea9bd1cd8aa3e8eabb860207770d3",
+					"bytes": 2448
+				},
+				{
+					"name": "src/Texts.js",
+					"sha256": "4426487ba35e51c0d8b33e4fc944d787e040590dae101be864f7686ccc460536",
+					"bytes": 2623
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "d4fe820b6cb11cf6acd1d289943b988017c76654c9f36b6a0d794dd4e9bf8930",
+					"bytes": 802
+				},
+				{
+					"name": "src/mount.js",
+					"sha256": "79eed313df591764943d845eaed419329acd36c85f2eba30e7f8f01f90ac1801",
+					"bytes": 1273
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "92a6b7c887b145f907abd4b7b172da48a4f7df4b13645f983129ba36d5d249cf",
+					"bytes": 794
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "main.js",
+					"sha256": "447818fa4e1ea08c12c259b1bba5bb65321ce5831f9fbad57d751aa00661e917",
+					"bytes": 528
+				},
+				{
+					"name": "index.html",
+					"sha256": "f3b745fb756ea844b2b3a4c4cb30a268f3dbf280da8c9fd5c073334b2d0e9782",
+					"bytes": 285
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "57b65d4d13406778d7e314093b7c42aa6ddf64f6464cc92a99ac815f9a57d992",
+					"bytes": 155
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "1ad466f66bd9edb63eb1cac7ada44a6b28ab1ad11ae18ccc119b8744b0088e55",
+					"bytes": 396
+				},
+				{
+					"name": "README.md",
+					"sha256": "558fba07e6fa5aee58482d11eba82274b33e1c903d12f3eb35d8d1dc0063396c",
+					"bytes": 1056
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "3d6d2f20dfe9516c31f61b0968bb25d972a26dc28a244b9db65a565a652bef9d",
+					"bytes": 3753
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "application-preferences",
+			"key": "application/preferences",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "d48802827a0c841bac669192b4507a2dc517a628b499cb4da6834ddaa7036da8",
+					"bytes": 12388
+				},
+				{
+					"name": "src/BusinessPage.vue",
+					"sha256": "b74bd56c604bc8a487e3fd4db016063d8d6c3e2c710eba551ca97ddb7927cd3e",
+					"bytes": 808
+				},
+				{
+					"name": "src/context.ts",
+					"sha256": "28185838a532ebab147a2e435c9682533c362efcfc99e9cdb00d8ef1ae8158ff",
+					"bytes": 211
+				},
+				{
+					"name": "src/dictionaries.ts",
+					"sha256": "1de0575bfb49a6e07b7940096791663b1d2e8b225733caf5d9d299237ca82750",
+					"bytes": 4429
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "7609a8a3f1323ea54701c4ff3c7950b369031724a8c81241d3c8ab80105b1462",
+					"bytes": 604
+				},
+				{
+					"name": "src/mount.ts",
+					"sha256": "50f41280c7dc0484c504fccddf4d8233f7e7bb689175ce21489246d080def2e7",
+					"bytes": 1212
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "7f28d08950db413b5795b3e34c21782b3e884490cd8bb40744d1a1851acea4cc",
+					"bytes": 861
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "main.ts",
+					"sha256": "ef254da509a7eb07b57dbe8d0eb002c5f72ccf018a5f016876212c080ee8c226",
+					"bytes": 701
+				},
+				{
+					"name": "index.html",
+					"sha256": "b034266701005f8210ba5d392774dc3991fb533b5c0b1be9292d217c84738abe",
+					"bytes": 285
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "57b65d4d13406778d7e314093b7c42aa6ddf64f6464cc92a99ac815f9a57d992",
+					"bytes": 155
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "9861140c7cbfcceb2e40c0a6469761d14acfccf01a36681459d2532ba184d33b",
+					"bytes": 340
+				},
+				{
+					"name": "README.md",
+					"sha256": "9932d33becafa6e57c425d14d38792fd07892c568ff998001e5a80b410377237",
+					"bytes": 1059
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "c77c5caa840b82cf26ae9b6180b89ba3b51ee8b388b0e7b79e0a4f06e77380a1",
+					"bytes": 4048
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "94dad5248b68d23344a6fc856b9dfa07e237dbc194fba3c14fa1901e24c1ed28",
+					"bytes": 75
+				},
+				{
+					"name": "src/InlineExample.vue",
+					"sha256": "857b1a48c5a1180e4479dc3b44d56465e346c1ab5c6b0df7126fcefeec844710",
+					"bytes": 763
+				},
+				{
+					"name": "src/PreferencePanel.vue",
+					"sha256": "42fe92420ab6a6ba33e03ea7667b8510991e63b2c9ddde3a2786a30a8c78a12f",
+					"bytes": 2255
+				},
+				{
+					"name": "src/preferences-session.ts",
+					"sha256": "e5f38ff28980cf5e5de5d62c9ceeb486071ae59384dda3c69a57bbd431d6ba64",
+					"bytes": 2476
+				}
+			]
+		},
+		{
+			"id": "application-preferences-js",
+			"key": "application/preferences",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "8e8d733264bda7d6777dc6f3fe14ba48e6ea5b46d930906f7445e9b2aefe4e9f",
+					"bytes": 11881
+				},
+				{
+					"name": "src/BusinessPage.vue",
+					"sha256": "e2588bbedea8b74e496e3eb1d4781d79ac6f3bafdfa54b5eb345f2193b8191f3",
+					"bytes": 797
+				},
+				{
+					"name": "src/context.js",
+					"sha256": "d5d1ecb7198ce57a8cc86bd7112e33812f9cd73cc8ccbe73320a40ab94c90ad4",
+					"bytes": 52
+				},
+				{
+					"name": "src/dictionaries.js",
+					"sha256": "1de0575bfb49a6e07b7940096791663b1d2e8b225733caf5d9d299237ca82750",
+					"bytes": 4429
+				},
+				{
+					"name": "src/main.js",
+					"sha256": "7609a8a3f1323ea54701c4ff3c7950b369031724a8c81241d3c8ab80105b1462",
+					"bytes": 604
+				},
+				{
+					"name": "src/mount.js",
+					"sha256": "03ec724004ac552586cfd51fd764a04f4d300639f04e35b5e48ec7db27f6f356",
+					"bytes": 1049
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "454007677aa2c438794e089b581a071966ee56eb9be3d5b2c795b78b505e9388",
+					"bytes": 851
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "main.js",
+					"sha256": "18cb3ac14f65c9bc0fe5d7bc3cedf69f8cb4e8da8ca6d83a07339d96bba9a4d8",
+					"bytes": 534
+				},
+				{
+					"name": "index.html",
+					"sha256": "f3b745fb756ea844b2b3a4c4cb30a268f3dbf280da8c9fd5c073334b2d0e9782",
+					"bytes": 285
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "57b65d4d13406778d7e314093b7c42aa6ddf64f6464cc92a99ac815f9a57d992",
+					"bytes": 155
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "1ad466f66bd9edb63eb1cac7ada44a6b28ab1ad11ae18ccc119b8744b0088e55",
+					"bytes": 396
+				},
+				{
+					"name": "README.md",
+					"sha256": "eb269fe51235760c02c87738a46f9c2251746eea14016e9a8ffadea9009d964a",
+					"bytes": 1059
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "85fe1c9f065057f8e278b4aa66ac945b73c27a5eb5117d33f5dcc70378494597",
+					"bytes": 4066
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "94dad5248b68d23344a6fc856b9dfa07e237dbc194fba3c14fa1901e24c1ed28",
+					"bytes": 75
+				},
+				{
+					"name": "src/InlineExample.vue",
+					"sha256": "a8386f97463653e4573ebe10af7cb264f23bf5a9a34f17169f2e5a41199b2676",
+					"bytes": 778
+				},
+				{
+					"name": "src/PreferencePanel.vue",
+					"sha256": "38b62c433437f88d5d48c57cc35df1dc309434e73debe05b0fccbf7681174c97",
+					"bytes": 2288
+				},
+				{
+					"name": "src/preferences-session.js",
+					"sha256": "01984b0d8de1a5794a4d6096b23eed3f41a7550867c25df4dbbfd3f06eb31a4d",
+					"bytes": 2277
+				}
+			]
+		},
+		{
+			"id": "application-transport",
+			"key": "application/transport",
+			"entry": "src/inline-entry.ts",
+			"files": [
+				{
+					"name": "src/Texts.ts",
+					"sha256": "5115f96cdaa5be32d1b5bdd185f689124713e567f69fd60984d79ed7113cc4b6",
+					"bytes": 2103
+				},
+				{
+					"name": "src/TransportDemo.vue",
+					"sha256": "4dd327266f863446968d113b037e4b373f536e2b7c56116ab83277f329e72dd4",
+					"bytes": 3262
+				},
+				{
+					"name": "src/application.ts",
+					"sha256": "9ac45b0e6d3200564f702ddcf6fe04b544fbd5aea05033b09948743880951cd0",
+					"bytes": 1655
+				},
+				{
+					"name": "src/context.ts",
+					"sha256": "f55895a5c16c7f94820c209fe9888740503730c39320a72fccc1846b3d111519",
+					"bytes": 459
+				},
+				{
+					"name": "src/mock.ts",
+					"sha256": "b110581760fc0d8d44070bb7ee384f113d5bc661370a13c6d05b68c155fb0b7e",
+					"bytes": 1638
+				},
+				{
+					"name": "src/mount.ts",
+					"sha256": "2664fa930492c060eea455d5b1d0d46de53d8ca395a3e4584c7f08ad82de92c0",
+					"bytes": 294
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "1a69369ba8d5b5e4f37d1ea6ed4dc645517aba46c6b83092b7a4a35d3c4e247e",
+					"bytes": 1186
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "main.ts",
+					"sha256": "2464c843f5f1a4eecf406f888f568de6327a0584ab0aad260db13886aaf4c693",
+					"bytes": 697
+				},
+				{
+					"name": "index.html",
+					"sha256": "b034266701005f8210ba5d392774dc3991fb533b5c0b1be9292d217c84738abe",
+					"bytes": 285
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "57b65d4d13406778d7e314093b7c42aa6ddf64f6464cc92a99ac815f9a57d992",
+					"bytes": 155
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "9861140c7cbfcceb2e40c0a6469761d14acfccf01a36681459d2532ba184d33b",
+					"bytes": 340
+				},
+				{
+					"name": "README.md",
+					"sha256": "fb9ca02764536d71331c675919c20e96d38e9877331824dc4f0ac09300deec6a",
+					"bytes": 1057
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "3cdbde126a48cc5e1e1d1bfcbfde1bb5ac124e5c45ecff08a1154af24e77bc84",
+					"bytes": 3613
+				},
+				{
+					"name": "src/inline-entry.ts",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "application-transport-js",
+			"key": "application/transport",
+			"entry": "src/inline-entry.js",
+			"files": [
+				{
+					"name": "src/Texts.js",
+					"sha256": "dbd53bed8905f81d59324361064adc0d66a7f7c3aaa0e371aa04b525698ad296",
+					"bytes": 2042
+				},
+				{
+					"name": "src/TransportDemo.vue",
+					"sha256": "29e45faa654fc6d71f3180ffc1ae0a05fbb647d8a7ca3ff104fc14a21a4e5aea",
+					"bytes": 2981
+				},
+				{
+					"name": "src/application.js",
+					"sha256": "bbdfa7b885f5640306298d11e6dceaf7605fbf796bfbfb70374ac78f80ad11f6",
+					"bytes": 1445
+				},
+				{
+					"name": "src/context.js",
+					"sha256": "811a6e8d174489c41962f27d936d86ae550ebbe5cf51816f99ef0b5cfe39dbeb",
+					"bytes": 55
+				},
+				{
+					"name": "src/mock.js",
+					"sha256": "cf198b31cd666b292f304c5e79e221321cb9e8af916fceb4cce01cc2519e0a32",
+					"bytes": 1354
+				},
+				{
+					"name": "src/mount.js",
+					"sha256": "fd580c4c4f46ee2f785ac8586a33f3a5d2ff8cfe55feb64e2d26a174419e1048",
+					"bytes": 193
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "1b8d9a8ef03c013b12540cb15aebda989440f1cd0a81449f966d920b0f1ef75b",
+					"bytes": 1176
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "main.js",
+					"sha256": "f85cc6e91b205d6be074ea0e5bb51b314e9cff318e1e5217e0ec3e7aca13ce13",
+					"bytes": 530
+				},
+				{
+					"name": "index.html",
+					"sha256": "f3b745fb756ea844b2b3a4c4cb30a268f3dbf280da8c9fd5c073334b2d0e9782",
+					"bytes": 285
+				},
+				{
+					"name": "vite.config.js",
+					"sha256": "57b65d4d13406778d7e314093b7c42aa6ddf64f6464cc92a99ac815f9a57d992",
+					"bytes": 155
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "1ad466f66bd9edb63eb1cac7ada44a6b28ab1ad11ae18ccc119b8744b0088e55",
+					"bytes": 396
+				},
+				{
+					"name": "README.md",
+					"sha256": "bad0a3a32b018d317a0aa2dec0e840233f517d666281f019a4ed6afc2d4566b2",
+					"bytes": 1057
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "e1d49bf7d3feadb6b7481117ec5906eb53dfd073064e549d5d417fa5a14ffae2",
+					"bytes": 3631
+				},
+				{
+					"name": "src/inline-entry.js",
+					"sha256": "8bd3dbe8256925928f81b01f415661e27106dba12d9aa55383997db91cc22bf2",
+					"bytes": 48
+				}
+			]
+		},
+		{
+			"id": "i18n-ui-basic",
+			"key": "i18n/ui-basic",
+			"entry": "src/App.vue",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "b01c2fe82f6052fa668152401949003ed3565f04869b1c1ea9ed928107ce6a5f",
+					"bytes": 1134
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "4205f50f4d0203516881ba530cf74863a8ce8db715f88922504aebee502b3c3d",
+					"bytes": 295
+				},
+				{
+					"name": "package.json",
+					"sha256": "8a1cf32b2bb7b21cebf87a97f116a7b8bec3cc8a98761bb6018edd47c19102d5",
+					"bytes": 798
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "41a2adfad78f57294bca99000a9ca924cb8f30c757cee9db6ec3ec48a0d7aadc",
+					"bytes": 57871
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "ab8ecd1e6b8b082279cf35beab237a3429ca2576d2433c2f17147510ce3720a4",
+					"bytes": 289
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "945c2d470219444df950ca7627fd4e2f529808623f7322483e03a6d74b853096",
+					"bytes": 11794
+				},
+				{
+					"name": "README.md",
+					"sha256": "7126bc8e198047c10223923cc53de31938151a1f40c40c06c8d3dfd8490aac29",
+					"bytes": 771
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "99d79728c70ac5ed64823251dd80e2bda04c2eb68f8e4b396dc52f340e05da0b",
+					"bytes": 2038
+				}
+			]
+		},
+		{
+			"id": "i18n-ui-pro",
+			"key": "i18n/ui-pro",
+			"entry": "src/App.vue",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "13fa517ee48d1c06e8a7d85e4fb725d08ba6205d8617513e1477386fff3889ec",
+					"bytes": 1160
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "4aff19531f08705fe3044520bc88f358e31ab4919477e056aa34fa2f1c801fb3",
+					"bytes": 287
+				},
+				{
+					"name": "src/MinimalExample.vue",
+					"sha256": "8c5dc270238fa8e3daae649a79a5caeba71b57ba36548215e0d61d8ffc015300",
+					"bytes": 1438
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "6e78e6161bf35f15b1952fcc707a5ed62d4684a790c063f57484c77f349e1ec8",
+					"bytes": 294
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "4bdac625aeea5531e72fba10e56c8818043d55e2cc5105413b4834d1549280a7",
+					"bytes": 797
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "7762763be736a4fd8e5c8fa10d5914d91f42ccd365d50f91393dca1ab8bb0cf5",
+					"bytes": 2790
+				}
+			]
+		},
+		{
+			"id": "i18n-isolation",
+			"key": "i18n/isolation",
+			"entry": "src/App.vue",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "c065649d68aeb3d264fb9333d370ab886b6f16c51655b89167a2a4548fa705ce",
+					"bytes": 1123
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "4205f50f4d0203516881ba530cf74863a8ce8db715f88922504aebee502b3c3d",
+					"bytes": 295
+				},
+				{
+					"name": "src/NestedScopes.vue",
+					"sha256": "c7cc45f52231dadb94adc3c01600fac78085b116d7e755143bf69d4e74a73dca",
+					"bytes": 543
+				},
+				{
+					"name": "src/StandaloneRoot.vue",
+					"sha256": "84fc064eda5644de5f8b0c3be4389fd246a4f03ad110372e1702e6a84dd50a0a",
+					"bytes": 433
+				},
+				{
+					"name": "package.json",
+					"sha256": "8a1cf32b2bb7b21cebf87a97f116a7b8bec3cc8a98761bb6018edd47c19102d5",
+					"bytes": 798
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "41a2adfad78f57294bca99000a9ca924cb8f30c757cee9db6ec3ec48a0d7aadc",
+					"bytes": 57871
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "5ad1b32a74e823aeff4a5c4e1480f50a27c80af96d801d27c6b8e4de5315c372",
+					"bytes": 295
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "945c2d470219444df950ca7627fd4e2f529808623f7322483e03a6d74b853096",
+					"bytes": 11794
+				},
+				{
+					"name": "README.md",
+					"sha256": "edccb98d26e1e7229e999a8759819eeefa6b9e843d788e30f90247702e052c0c",
+					"bytes": 794
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "5f0b33103c322e6f9693a575d0319e3375b621975b824c3d5c7fe67bc613d801",
+					"bytes": 2323
+				}
+			]
+		},
+		{
+			"id": "i18n-override",
+			"key": "i18n/override",
+			"entry": "src/App.vue",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "db41ea29906562bf0e4fabc597a662c25cd2d3c44f17fcdcc52d609fc56ea778",
+					"bytes": 1010
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe",
+					"bytes": 328
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "d2ef3b4f494d0e90e4a1b88d0c490694d9bf53923b4ca2a6e767366f9876b9f3",
+					"bytes": 292
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "72502f46efca8d3aeff3036daf74b2350c154ee6504af345151d56eadbcf8841",
+					"bytes": 783
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "5debae371ecaa3447fb752526e11857a68350af3cccfcdf793f382d609ec11bf",
+					"bytes": 2648
+				}
+			]
+		},
+		{
+			"id": "i18n-third-language",
+			"key": "i18n/third-language",
+			"entry": "src/App.vue",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "cfb14fa81516300db67d4c668ec2d9f2acaeb51f3969ecd0eab1f04a1ca65be4",
+					"bytes": 1370
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe",
+					"bytes": 328
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "76dc45ca9f977fd591f4079f83b0984f71f7944f2a889d14fcdeb84f663d0f94",
+					"bytes": 289
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "03c3910671c5e0ed84435dd20b2b9bd724f7d17fc1c1165420cf2a6aa8eeab18",
+					"bytes": 792
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "53778c50805f9b8f538ddae636ef60b286e1105f923979b428cbbea26f0edb89",
+					"bytes": 2654
+				}
+			]
+		},
+		{
+			"id": "i18n-host-bridge",
+			"key": "i18n/host-bridge",
+			"entry": "src/App.vue",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "bae9f1659f6436c128691451ad1807f09b39738e9822951c7c2cccf80bfd3a8a",
+					"bytes": 972
+				},
+				{
+					"name": "src/host.ts",
+					"sha256": "e8898db090788db6e13eee9bc49f7919184b96aa4772c9ce14d3c931ba41e9d9",
+					"bytes": 374
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe",
+					"bytes": 328
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "2b14a05717650bf6cebea9863bf78b7a52c2cde117f0466494b50d0708c5c52f",
+					"bytes": 295
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "ee67025439842cae318f45b33f16b8869551556151b4e95c99d167a67cb6aa79",
+					"bytes": 797
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "d7d9cf01b87fabaf6b937fab45fbf5deb17d7a7dd6a47ede2304b86a057edfad",
+					"bytes": 2782
+				}
+			]
+		},
+		{
+			"id": "i18n-preferences",
+			"key": "i18n/preferences",
+			"entry": "src/App.vue",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "6f4f76b77458d856228a7af2951c9e55a60d3e66186d5d038218f8808d2a2414",
+					"bytes": 1552
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe",
+					"bytes": 328
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "33f178bc4a33439ef3f5e2d7490b69bb50ce40e8e873897f9686cea31061a8cf",
+					"bytes": 295
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "3286c9c3fe7751a50c02358340a76893bc8ca0c003e7458778fc93deee0bf68f",
+					"bytes": 796
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "347d9708f8ced640612b4ec77f640998befda0b0643772d08086019a95a9b3ee",
+					"bytes": 2651
+				}
+			]
+		},
+		{
+			"id": "i18n-outside-message",
+			"key": "i18n/outside-message",
+			"entry": "src/App.vue",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "1f3697c626ca66b3b6b415dc86206b4a8057f26ed24453a1037fe11705ed739e",
+					"bytes": 1072
+				},
+				{
+					"name": "src/feedback.ts",
+					"sha256": "16f1cde48ab0a51c6cf8bdf59f7bd914ad53a47508b8de167c3d1de476f1a99a",
+					"bytes": 724
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe",
+					"bytes": 328
+				},
+				{
+					"name": "package.json",
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45",
+					"bytes": 1134
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "f8d517e7ce880cb27ecb3a079e745d37a131f31b5dcb0cce84ea81b062f5d2f2",
+					"bytes": 292
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "2703adae010bbc29999bc16502dc6f2e27bf790f839e4d329152830c8bb05877",
+					"bytes": 806
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "f24d1e7cace30e5c2651220d54f141f504b818c25b4dfa58a81fb136b5c16221",
+					"bytes": 2791
+				}
+			]
+		},
+		{
+			"id": "i18n-aria-long",
+			"key": "i18n/aria-long",
+			"entry": "src/App.vue",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "8663ee25e6ca0224a6e3de6f42b54c505a5eee6f51129cad744959ce0e7c1704",
+					"bytes": 1430
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "4205f50f4d0203516881ba530cf74863a8ce8db715f88922504aebee502b3c3d",
+					"bytes": 295
+				},
+				{
+					"name": "package.json",
+					"sha256": "8a1cf32b2bb7b21cebf87a97f116a7b8bec3cc8a98761bb6018edd47c19102d5",
+					"bytes": 798
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "41a2adfad78f57294bca99000a9ca924cb8f30c757cee9db6ec3ec48a0d7aadc",
+					"bytes": 57871
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "bf44bf94d48d69f7390148c3608e37664593f313e5e251db601df9b0bf9565d1",
+					"bytes": 288
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "945c2d470219444df950ca7627fd4e2f529808623f7322483e03a6d74b853096",
+					"bytes": 11794
+				},
+				{
+					"name": "README.md",
+					"sha256": "f494ff52032917b492c70d1af7d9cde282b8e9e06d55c58e1825004b1d8b32da",
+					"bytes": 791
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "bc11555b4d0c5830bed0895acba01f9f1b1a80771bc36f775ba846d57d5e61b5",
+					"bytes": 2039
+				}
+			]
+		},
+		{
+			"id": "i18n-ssr",
+			"key": "i18n/ssr",
+			"entry": "src/App.vue",
+			"files": [
+				{
+					"name": "src/App.vue",
+					"sha256": "841bec7bb19a3d225a4cb129e9a73d2f011f480e14659082ff20a9d21e8af82e",
+					"bytes": 915
+				},
+				{
+					"name": "src/main.ts",
+					"sha256": "5279273022ccb1ee25825b84cf29ba0ab71fdf4385e1058c6f61425af35f94fe",
+					"bytes": 328
+				},
+				{
+					"name": "src/ssr.mjs",
+					"sha256": "814473068088015e278659a7a5a1e6e86e9bdf16893d86adf060b4257a64b2c4",
+					"bytes": 1034
+				},
+				{
+					"name": "package.json",
+					"sha256": "8d2e283e9ba2061052a2357bcbd96d84eb11b3b15e8a8c0c1792a1ab485d6697",
+					"bytes": 1163
+				},
+				{
+					"name": "pnpm-lock.yaml",
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf",
+					"bytes": 68309
+				},
+				{
+					"name": "pnpm-workspace.yaml",
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728",
+					"bytes": 237
+				},
+				{
+					"name": "patches/element-plus-2.14.7.patch",
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4",
+					"bytes": 69876
+				},
+				{
+					"name": "index.html",
+					"sha256": "8e1666e855a8aca9afce141a3505be3a0a4606b515ff667831784277c9978f5e",
+					"bytes": 287
+				},
+				{
+					"name": "vite.config.ts",
+					"sha256": "97133045dcb8a0a89896b48e2d6b3902573aa6ac879ee99dc8e0511e063f44e5",
+					"bytes": 126
+				},
+				{
+					"name": "tsconfig.json",
+					"sha256": "75e0909adda894937b26ddd3a71ae3d61b20ac71b083cf2f050c3c91e08af696",
+					"bytes": 329
+				},
+				{
+					"name": "THIRD_PARTY_NOTICES.md",
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9",
+					"bytes": 1010
+				},
+				{
+					"name": "README.md",
+					"sha256": "3e37649bfbd72f8e05bbaee10ead6519c5e5e9f9b97391fe7bf205d250bf39f2",
+					"bytes": 807
+				},
+				{
+					"name": "EXAMPLE.json",
+					"sha256": "19cc493d53b9c784f5dbf77adebdf38e6f24bf375886932ec1f92632fa65686f",
+					"bytes": 2775
+				}
+			]
+		}
+	]
+}

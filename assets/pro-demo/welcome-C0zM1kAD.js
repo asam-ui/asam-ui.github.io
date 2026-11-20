@@ -1,0 +1,1 @@
+import{n as e}from"./application-BM2RyioE.js";async function t(t,n,r){return await e(t,n,{i18n:r,onThemeChange:e=>document.dispatchEvent(new CustomEvent(`asam-preview-theme-request`,{detail:e}))})}export{t as mountWebsiteExample};

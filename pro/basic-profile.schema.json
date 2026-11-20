@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "basic-profile",
+	"productRoute": "/profile/basic",
+	"advanced": false,
+	"sections": [
+		"对象摘要状态金额",
+		"申请字段",
+		"采购明细与同数据合计",
+		"说明与本地附件",
+		"处理摘要与最近记录",
+		"详情/操作记录/相关对象三Tabs",
+		"公开FormDialog本地编辑回读"
+	],
+	"components": [
+		"AsamCard",
+		"AsamDetailPanel",
+		"FieldGroups",
+		"AsamFieldView",
+		"AsamFormDialog",
+		"AsamDescriptions",
+		"AsamTable",
+		"AsamTabs",
+		"AsamTimeline",
+		"AsamAvatar",
+		"AsamLink",
+		"AsamButton"
+	],
+	"host": [
+		"BasicProfileHost.context为原ReadIdentity，id为原RecordId，使用idKey保留类型",
+		"services为页面局部前端读/保存/核实，coordinator必须跨弹层稳定，换coordinator需重新挂载",
+		"AsamDetailPanel为embedded内容；public useAsamDetail/useAsamEditor拥有读取/写协调，未知只核实原operation",
+		"returnTo复用旧safeReturn白名单；navigate仅本地登记目标；宿主负责权限及异步副作用",
+		"采购单价使用CNY分，合计/预算/摘要均来自实际行；null未知不能当0"
+	],
+	"limits": [
+		"本地合成前端，无真实审批/采购DTO/API、上传存储/SSE/后台",
+		"原details三族和旧公共协议不变，无高级步骤条，无全页CRUD抽屉",
+		"正常UI2925/Pro6f9；真实安装来源独立记录，不消费后续popupOwner等未在6f9的能力",
+		"JS checkJs=false；strictTemplates=true；源Git/作者EOL/中央公开投影分列"
+	]
+}

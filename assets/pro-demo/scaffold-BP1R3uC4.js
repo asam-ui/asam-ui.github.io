@@ -1,0 +1,1 @@
+import{t as e}from"./application-BM2RyioE.js";async function t(t,n,r){return await e(t,n)}export{t as mountWebsiteExample};

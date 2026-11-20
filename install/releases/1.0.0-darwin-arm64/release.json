@@ -1,0 +1,420 @@
+{
+	"schemaVersion": 1,
+	"release": "1.0.0-darwin-arm64",
+	"productVersion": "1.0.0",
+	"installerVersion": "1.0.0",
+	"createdAt": "2026-11-20T03:36:07.754Z",
+	"installerSource": {
+		"sourceSha": "e777c2710f73f1eea0e02db130455a09875a0de4",
+		"state": "fixed-commit",
+		"files": [
+			{
+				"path": "integrations/agents/host-config.json",
+				"sha256": "67ff91b12c73b1d7af1451345b97bd84643753821aa96ba897c89b40aa7608e4",
+				"gitSHA256": "af80c92669c7aebf3e05fcfea58f90966bc2dd7026a7a454cd8e85758f5858b0",
+				"textEolOnly": true
+			},
+			{
+				"path": "integrations/agents/harness/plugin.mjs",
+				"sha256": "aa35462173ca425ca71b49eab53bde62cd2d27c3a2fa742b34e51240d9d3fa4f",
+				"gitSHA256": "47b6233e683f6362347502f5eaac23d471172dbb5a6e911ce2d26dcfd5aa3b82",
+				"textEolOnly": true
+			},
+			{
+				"path": "integrations/agents/harness/agent.mjs",
+				"sha256": "9a20e13c6093d9c71b612048e1bdd40d0038e29f527f793abb3f53b1d67f0a85",
+				"gitSHA256": "d5460ccb8cfb63ca7da7a68b927809347c7576acc326676b18544eaa0994cfe5",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/harness-compatibility.mjs",
+				"sha256": "6daabd0003c6f25491166e2880bf428b9209e1331858de914d747d1b4b2a55c0",
+				"gitSHA256": "cee5ea9e865d39191cd58f4a2d13022e977ff9184e8a63dab57f75bd41f7a93f",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/harness-package.mjs",
+				"sha256": "7e46aa1ab53fdffa04d02c83f44228a077281f36f5228e6ef60f95e288c59c7b",
+				"gitSHA256": "d8ed34ef8cd7daeb4860b3896364858e03381ab8be859f89215f1259671a7325",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/harness-install.mjs",
+				"sha256": "03d9318d362702eaa1e931d84c8c9d4d9d8eb2d511b3c772f2a17767fe0b386f",
+				"gitSHA256": "45b894a459cd4fd69ef76052071468220de3aa12bad91b7676cb353906c41dd6",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/appledouble.mjs",
+				"sha256": "f07905fa9f0e2fb3f27ac4a01714aa765d1424e1786bcbd3660f517aadec6dd5",
+				"gitSHA256": "46642d124c344d22be871becded3fcfb703a03e0cb8834c45cec6d94f71d547b",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/harness-environment.mjs",
+				"sha256": "ff043f7f71cdee8f186c12fd3f4ff6912195bf141827c5c3de842de120530bd1",
+				"gitSHA256": "66b726003e6a5652901696b89714cfeb5ab23faf73d192701de185cf15abbc30",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/harness-store-recovery.mjs",
+				"sha256": "e351fc2f5ec28a4fabef6cf6e69490992e240ed5927c42bc8a866b11caff0b92",
+				"gitSHA256": "738e283a7760d747c23f901abcd8a1aa5c07593f48a7fbbd574343452875b412",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/release-manifest.mjs",
+				"sha256": "fa912ae8d3a8ff60f512623b61c8000746ad4694270d2fff7c649f9a5fd5502a",
+				"gitSHA256": "aacdb641739e56e6da2a4608ac86a99146207b1d2c0075491425b69eb52e32b1",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/bootstrap-package.mjs",
+				"sha256": "8ad8d361722d8f5a15fded64daef1ec42626f3d648016aa77ffbe84c50ae52fa",
+				"gitSHA256": "d4c86136bd5c1be28d95ac7ba90513c371191ec1e934f3066b9a14a7f14c09d0",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/release-entrypoints.mjs",
+				"sha256": "df716446bc3e2abbcc03d790d3f3de4507728229d2c54f717b303bba55850ef6",
+				"gitSHA256": "11ed79128e4981a811af42b608ce39eb1ab57ac238b21216929d03cf5672a70b",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/online-install.mjs",
+				"sha256": "5ffc7e589261f496c21de036a4d828bf4ecf6e7ebcba70eee1bbe82edbb825ba",
+				"gitSHA256": "c50e6af7be041efbe2ca524cda33d82fbdbfdc49467186e3e0ac52baa7bdd03a",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/installer-log.mjs",
+				"sha256": "ed216e9ead80d863f9c8b677238e1e7a5273a7d4cbde2d14aaa69c82e7dd0bd0",
+				"gitSHA256": "4086ae21de35737e4fd8c9a2f7a0e843aa78149a3404751e84c113641acefb26",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/installer-message.mjs",
+				"sha256": "1f2a1166a37eeaf42e4cbf06227b9de2d1dc2f9ba425e98c533709389b8e415a",
+				"gitSHA256": "f099a3d2718430a79761780cbdb8f3c2e77433dccea58d5bb183e970e83272fc",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/ocr-tool.mjs",
+				"sha256": "9f14658b11da8b282438f192030ee7cae6ba89e62805604e34443e06d06f1e45",
+				"gitSHA256": "dd420afbe92c165c43142a54c63d9ed8864dcf8c300d1ffb922fb0fc7492c62a",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/download-paths.mjs",
+				"sha256": "9faca92cb29e70b8af216f2bed75543267e341903dda1e39c810aa78f708ef58",
+				"gitSHA256": "f5c6d8c6dba632383aa5e9b5823d1d5dcaacae242b892f070146a494373b648a",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/package.mjs",
+				"sha256": "0cd7f058904a320b2b1f2379463f1f7654bafb8417260b2126ba9f51d1df8b63",
+				"gitSHA256": "33da10f9c4774d411a899cc22b4e687cf42363cf4f54a2b6f9cd9d5ffdd20cf5",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/workbuddy-distribution.mjs",
+				"sha256": "aa884e20b37ab727c0f739b6aa22b725b7878840c8339dcb29eeedb0372f8f4e",
+				"gitSHA256": "1b5d0f2113ef83c701fabdd2acae002c7e26c389929c3f69c0034d380f0ab60e",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/process-capture.mjs",
+				"sha256": "9e6ea5799f285b4592f5f6771c3704714fdb271b2e318369db92cfbfa898a84d",
+				"gitSHA256": "48eb31cf850c48ad604e81c0a01d90a3b6e12ac6899c9ef591064b7cd7c05afb",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/codex-oneclick.mjs",
+				"sha256": "ad4302e5bb028e0a3149b989668fd48c2548d021dd97db4658d09e97265306ea",
+				"gitSHA256": "28253448f18e6766eac4a88375c6052f80412e6f9bac56d7032159b6fc647c95",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/safe-codex-remove.mjs",
+				"sha256": "df8c258678b310a65c8c3bf6eefd7fbc6cb4fdb2618d09349a1c5a9c3a8677e0",
+				"gitSHA256": "4ea3150b1507b7a7917ecc1a0aea9b5a6f63c688ff528fb7c0d9b84ec15d1115",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/oneclick.mjs",
+				"sha256": "a1ef9d97faa0223e3131f9cdd50630d97966d71222cbc5a79d1c9d0dbdad0933",
+				"gitSHA256": "25f55f75cef88e1ace7967913ac93f5ac571f71579650604ea7f08dca5f05bac",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/installation-choice.mjs",
+				"sha256": "839fae9d406ef0e65f065921b85810b80e3e82bddb490dd42f27adeabb0e8e0a",
+				"gitSHA256": "368d1f15afd50c0da081021d5e1c4289784bc0d001a4051fcfc70c7cffbbd744",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/workbuddy-upgrade.mjs",
+				"sha256": "48f407218cf52feb11a0e74f15dc5331e428e0416b8bd28736157c401ebad578",
+				"gitSHA256": "7bb47c1235b32e193fe919d4abd440f1d40c2a271d79cacfd78011ead01a1f6e",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/workbuddy-install.mjs",
+				"sha256": "1e4b976362effac83e781f04e8d8e12ded78abcdb04e530faeeea74beadd2d80",
+				"gitSHA256": "111a7dc53b1ceb6168568942c3a46628c4ccbd193effbb5bc442bcace9185352",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/workbuddy-cache.mjs",
+				"sha256": "cde55fe49d6c4623d6cc6f4fb82dff119136f188c4f425201c5dc4e1b033a379",
+				"gitSHA256": "880d9ed56681d10b3de320b3d0cb26de8c9969663d3811a794966ef34b51453f",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/workbuddy-mcp.mjs",
+				"sha256": "7dcf70454a91670f37fc156d9e28bdf43920317b778ab4bf0a4841f7272ea275",
+				"gitSHA256": "4c0c5bf06425673a6ec92c1985f65d712d1f57143ffa9f823c04ee2cc34b064c",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/installer-probes.mjs",
+				"sha256": "b40a8c326301d29a6f42070722eb40027f30a8cbd93cc0b91a73a919bf1448d5",
+				"gitSHA256": "1ea96bb917c3438a0693cb26e55bd14141801f70da331fe3eb96c276b97bac92",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/host-discovery.mjs",
+				"sha256": "6ebceb1d0a4facaa5a16a1eaeeb72416fbd745a60a470ef3fb7a4f328d541ed7",
+				"gitSHA256": "79d005c316ec20119e0825fe034597421b49f9dc0373a55e3d126db5395c15ac",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/online-install-entry.mjs",
+				"sha256": "1dbc023c43ba5ed04874cb1930a8ac17b738b948520facc6921118b7fe785c4c",
+				"gitSHA256": "d9c0effd47e3c53e8c9c2300e241ec27eadfcf6af8a3caf31e39a77fa3eebf65",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/installer-terminal.mjs",
+				"sha256": "d1753dc69bfeef7043bb6ec00d8cefb4c84bb38c96d215b27f08ea173dc4a9b6",
+				"gitSHA256": "334a8c0b910ff0a8f95c1888864b33a9f12c933ebfbb1647c5e3c763e508d021",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/installer-progress.mjs",
+				"sha256": "4b36e409a7e3130fb9e1139ae2ccf8fe6957120a02576d2686790ab7694a3c37",
+				"gitSHA256": "0a52c8c1f1c2401d5196b831338db736285f11a6c6a918108f0c9269f0e21873",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/expert-release-package.mjs",
+				"sha256": "ca6f354b2b44207530ef043fee2cc445a8261cdd29ef10cb74d00ffb87d01fc2",
+				"gitSHA256": "2409c857581e4f185e79027231acbbbd9c1f16b788d74568ad895e202ab3295b",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/spec-delivery-skill.mjs",
+				"sha256": "c2f416252cfb3e0d57ed5c220a260fddb9d819692a553086efe6d9c76b0663ed",
+				"gitSHA256": "55b3fdf5c7e69863996833e4efd6a26c168599010645a5ec12e5d3f925fd2196",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/files.mjs",
+				"sha256": "9b3bd623d0ac8be727ab7edfb1f42904259fd2ec586b7266bd11228a69365f9c",
+				"gitSHA256": "e0f0af46131da347d38a21eb61061f4d4807a3863679cba611fa15bf75328ae5",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/lifecycle.mjs",
+				"sha256": "6319076212525b4b88d0e0509660b883239099ca8dc441c88596069405b277f2",
+				"gitSHA256": "b4511c92d5d6f151833ecb1c7c295d8c15db577e799d004e5b240de56b2b9f88",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/installers/expert.ps1.template",
+				"sha256": "6051c7373faf36949a0cdba31d0e51eba65a738170fc5ee2039e5cb8d12b1e24",
+				"gitSHA256": "7cda3a1a32f8a22869f1a087fe64b6ccc72c0a2d73d7d78326db5df082e2f9d8",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/installers/expert.sh.template",
+				"sha256": "aa3080e0caf22a284914f7ac326fd4d58c450277269827a35000b22f397e8d22",
+				"gitSHA256": "a789ff058f2077470f9d8340a9ba91dac86319ca8b66ae7776ff44396587f28d",
+				"textEolOnly": true
+			},
+			{
+				"path": "tools/v2/hosts/installers/expert.cmd.template",
+				"sha256": "19b5b1953cd57b21ead6e5f623bcb09536c3a881198a5d1e9c09dc2197741f0a",
+				"gitSHA256": "19fae0d03641d3d43fc275efdc0d16a63610caae940b2da919dfa5bd88a67f8b",
+				"textEolOnly": true
+			}
+		]
+	},
+	"entrypoints": {
+		"windows": "https://asam-ui.cn/install/expert.ps1",
+		"windowsCmd": "https://asam-ui.cn/install/expert.cmd",
+		"shell": "https://asam-ui.cn/install/expert.sh",
+		"manifest": "https://asam-ui.cn/install/releases/1.0.0-darwin-arm64/release.json",
+		"offline": "https://asam-ui.cn/install/releases/1.0.0-darwin-arm64/offline-1.0.0-darwin-arm64.tgz",
+		"fixed": {
+			"windows": "https://asam-ui.cn/install/releases/1.0.0-darwin-arm64/expert.ps1",
+			"windowsCmd": "https://asam-ui.cn/install/releases/1.0.0-darwin-arm64/expert.cmd",
+			"shell": "https://asam-ui.cn/install/releases/1.0.0-darwin-arm64/expert.sh"
+		},
+		"commands": {
+			"powershell": "irm 'https://asam-ui.cn/install/expert.ps1' | iex",
+			"cmd": "powershell -NoProfile -Command \"$ErrorActionPreference='Stop'; irm 'https://asam-ui.cn/install/expert.ps1' | iex; exit $LASTEXITCODE\"",
+			"shell": "curl -fsSL 'https://asam-ui.cn/install/expert.sh' | bash"
+		},
+		"trust": "Obtain the bootstrap from the trusted HTTPS origin or inspect its independently supplied digest. The bootstrap verifies the signed manifest before executing the hash-checked local installer.",
+		"platformQualification": "Commands do not qualify a platform or host; use the signed release qualification and artifact platform/architecture records.",
+		"files": [
+			{
+				"name": "expert.ps1",
+				"url": "https://asam-ui.cn/install/releases/1.0.0-darwin-arm64/expert.ps1",
+				"bytes": 16087,
+				"sha256": "da58306a468fd46dbbe27dcaedb514002878144af1480b9b40d7ae1446b6c2c9"
+			},
+			{
+				"name": "expert.cmd",
+				"url": "https://asam-ui.cn/install/releases/1.0.0-darwin-arm64/expert.cmd",
+				"bytes": 869,
+				"sha256": "f5d5c7865c83d4fa8ea50dff32703077d7c46c5c1b6cb0849977308090e773c6"
+			},
+			{
+				"name": "expert.sh",
+				"url": "https://asam-ui.cn/install/releases/1.0.0-darwin-arm64/expert.sh",
+				"bytes": 7923,
+				"sha256": "67afe37b8f7116a34d33fa455ecdc0a492717bcb4177586e1637faad1479bdcf"
+			}
+		]
+	},
+	"core": {
+		"versions": {
+			"ui": "2.0.1",
+			"pro": "2.0.1",
+			"tool": "1.1.2-rc.2"
+		},
+		"contentDigest": "599e8b556a7fb006bc90c40e6c5347529e2b974daf0954d1727d10fc0dedd9ad"
+	},
+	"sharedSkillSHA256": "9fff7cc278137d8c1d8d9041a29787ee8223f0f4f35562880d742c8b1916acc2",
+	"specDeliverySkill": [
+		{
+			"path": "skills/asam-ui-spec-driven-delivery/SKILL.md",
+			"sha256": "f27bc5641e32aae6edbda715c2d8204584f5dc4ca3c3d70d57cbdcd2f0eec958"
+		},
+		{
+			"path": "skills/asam-ui-spec-driven-delivery/references/delivery-records.md",
+			"sha256": "0a7d91478ef1ae22ee9c63085bee780aa98d01ed38840458b77e2cfd1f45ecf0"
+		},
+		{
+			"path": "skills/asam-ui-spec-driven-delivery/agents/openai.yaml",
+			"sha256": "bc51531cdc58fac05f258f429d01ab6cf6ca7ccedea92bdf6d44456129721d8d"
+		}
+	],
+	"sharedRuntime": [
+		{
+			"path": "agent-adapter-MEXYGVGH.mjs",
+			"sha256": "09aaf2124ceaeeba3dced3ddedc3bc22ebf97dbe6ea24cb7cd9a44cd44566186"
+		},
+		{
+			"path": "chunk-BW7NJ7MC.mjs",
+			"sha256": "9b288d0d5df6364ab65ed147a7ff323a0faf749ea738ebee7a9f50a1eded4e12"
+		},
+		{
+			"path": "chunk-CZNXWD3K.mjs",
+			"sha256": "d2d0580b18043a2903ae16db145c805d3e19d58ef0a4e6e2b50e2e33de27c463"
+		},
+		{
+			"path": "chunk-FETK4HZE.mjs",
+			"sha256": "6e9c9ba8803aca448dfb678ad2a66b77012f8bd1689a704bc354512952018eef"
+		},
+		{
+			"path": "chunk-I2UOIINJ.mjs",
+			"sha256": "ce48aa24099d773c303ec0693a90e08b294a6b9a4737c1d2c2f763a9f4f79899"
+		},
+		{
+			"path": "chunk-LEWRSU72.mjs",
+			"sha256": "bb9d254b834693561117bd2e21aeb225399e7e1fa83e8479413ae3b4011ac3aa"
+		},
+		{
+			"path": "chunk-STUXWECF.mjs",
+			"sha256": "b2131a446d534c05cf268924a6665378e83e5eb6fdf7dca798af6f692dc0bb10"
+		},
+		{
+			"path": "chunk-T4KTUSOH.mjs",
+			"sha256": "2a1c9c94413de656118e236b6d4698984e0c3b8b2db821ac1434e8e8cdcf2e69"
+		},
+		{
+			"path": "packages/agent-cli/src/cli.mjs",
+			"sha256": "f7dd056acfba1dd2b2b88cf276b6d909f8c5b9d590e71a7567fdd1d1616576e4"
+		},
+		{
+			"path": "packages/agent-core/src/validation.mjs",
+			"sha256": "a06c8968005401b97c114c7288080c0018c3ea15408505c5516048ddda271018"
+		},
+		{
+			"path": "packages/mcp/src/server.mjs",
+			"sha256": "360d4f18dac2eaf19caf321ddbc97d3cf34b432e795ec25cb178f06020c885de"
+		},
+		{
+			"path": "validation-adapter-LR76KK6V.mjs",
+			"sha256": "ea2e77e7d8625d1cb5576a95f79f5d692e099b0cea09be180681e721be8bfac1"
+		},
+		{
+			"path": "validation-checks-UD72PX2G.mjs",
+			"sha256": "cef39520bc98732af4def6d6e2b4dcc4c30e7125adb7e7dc5c746ffb07af865a"
+		}
+	],
+	"hosts": {
+		"harness": {
+			"version": "0.2.2-rc.5",
+			"node": ">=24.9.0",
+			"mcpNode": ">=22.19 <23"
+		}
+	},
+	"qualification": [],
+	"artifacts": [
+		{
+			"host": "installer",
+			"platform": "any",
+			"arch": "any",
+			"format": "mjs",
+			"url": "https://asam-ui.cn/install/releases/1.0.0-darwin-arm64/installer.mjs",
+			"sha256": "2e1ebc6a2d63424ef087f81dbffbfe762675c593173beb5b94c7774a8ce63c74",
+			"bytes": 197248
+		},
+		{
+			"host": "codex",
+			"platform": "darwin",
+			"arch": "arm64",
+			"format": "tar.gz",
+			"url": "https://asam-ui.cn/install/releases/1.0.0-darwin-arm64/codex-1.0.0-darwin-arm64.tgz",
+			"sha256": "8cb3131b3491f5de0cfe902be2717ceb42481d0ee0bb4aaba1ee67818967e5ec",
+			"bytes": 11654370
+		},
+		{
+			"host": "workbuddy",
+			"platform": "darwin",
+			"arch": "arm64",
+			"format": "tar.gz",
+			"url": "https://asam-ui.cn/install/releases/1.0.0-darwin-arm64/workbuddy-1.0.0-darwin-arm64.tgz",
+			"sha256": "052994406b23128b93bd3530a95a80cfeb3f457c4df7526f351e7a5ee7978ea1",
+			"bytes": 11660643
+		},
+		{
+			"host": "harness",
+			"platform": "darwin",
+			"arch": "arm64",
+			"format": "tar.gz",
+			"url": "https://asam-ui.cn/install/releases/1.0.0-darwin-arm64/harness-1.0.0-darwin-arm64.tgz",
+			"sha256": "2e280820bd560375ec681a58c4612efc2f5a2f3bf7891068ca7819d1ca509b20",
+			"bytes": 11619637
+		}
+	],
+	"testOnly": false,
+	"signing": {
+		"algorithm": "RSA-SHA256",
+		"publicKeyFingerprint": "25ca492c49e23760393c904eafdceb0f44bd9a61c251db9de9f74d7fa7cd4d07"
+	}
+}

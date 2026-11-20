@@ -1,0 +1,48 @@
+{
+	"schemaVersion": 1,
+	"id": "advanced-profile",
+	"productRoute": "/profile/advanced",
+	"advanced": true,
+	"sections": [
+		"对象摘要状态金额",
+		"五步流程与当前阶段",
+		"申请字段",
+		"采购明细与同数据合计",
+		"说明与本地附件",
+		"处理摘要与最近记录",
+		"详情/操作记录/相关对象三Tabs",
+		"公开FormDialog本地编辑回读"
+	],
+	"components": [
+		"AsamSteps",
+		"AsamStep",
+		"FlowSections",
+		"AsamCard",
+		"AsamDetailPanel",
+		"FieldGroups",
+		"AsamFieldView",
+		"AsamFormDialog",
+		"AsamDescriptions",
+		"AsamTable",
+		"AsamTabs",
+		"AsamTimeline",
+		"AsamAvatar",
+		"AsamLink",
+		"AsamButton"
+	],
+	"host": [
+		"AdvancedProfileHost（BasicProfileHost）.context为原ReadIdentity，id为原RecordId，使用idKey保留类型",
+		"services为页面局部前端读/保存/核实，coordinator必须跨弹层稳定，换coordinator需重新挂载",
+		"AsamDetailPanel为embedded内容；public useAsamDetail/useAsamEditor拥有读取/写协调，未知只核实原operation",
+		"returnTo复用旧safeReturn白名单；navigate仅本地登记目标；宿主负责权限及异步副作用",
+		"采购单价使用CNY分，合计/预算/摘要均来自实际行；null未知不能当0"
+	],
+	"limits": [
+		"共享basic b096为未验内部源码依赖，独立已验起点仅e105；不当资格前置",
+		"流程读取沿旧DetailServices.flow，在同一公开详情request context提交；未知阶段不捏造当前步骤",
+		"本地合成前端，无真实审批/采购DTO/API、上传存储/SSE/后台",
+		"原details三族和旧公共协议不变，含原流程读取协议的五步进度，无全页CRUD抽屉",
+		"正常UI2925/Pro6f9；真实安装来源独立记录，不消费后续popupOwner等未在6f9的能力",
+		"JS checkJs=false；strictTemplates=true；源Git/作者EOL/中央公开投影分列"
+	]
+}

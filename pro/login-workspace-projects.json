@@ -1,0 +1,319 @@
+{
+	"schemaVersion": 1,
+	"projects": [
+		{
+			"language": "ts",
+			"project": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/login-workspace.zip",
+			"source": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/login-workspace-source.zip",
+			"files": [
+				{
+					"path": "templates/account/I18n.ts",
+					"bytes": 345,
+					"sha256": "fb2e3b58df59734e2756fd31718af37dc9cf74130606d4806591c8a9931b8cc4"
+				},
+				{
+					"path": "templates/account/I18nEn.ts",
+					"bytes": 9652,
+					"sha256": "862c39e1f0dd6163668615b1bd7ff1087095b2feecf5f4c693d0366468e792e7"
+				},
+				{
+					"path": "templates/account/I18nParameters.ts",
+					"bytes": 8434,
+					"sha256": "2d853b4fb1401fba758ea3c1ac47ace64cdf2b3664222c1462f64ce6f3e95d72"
+				},
+				{
+					"path": "templates/account/I18nZh.ts",
+					"bytes": 9055,
+					"sha256": "70811ffcb7263195807ecafba9a2c49b51bf99283ba2563c82323d3e635b3137"
+				},
+				{
+					"path": "templates/account/Session.ts",
+					"bytes": 20267,
+					"sha256": "2b8629951c1964d8a060038adb2ad15249d7eaf61ec8b879e1d28ecdf2399f0a"
+				},
+				{
+					"path": "templates/account/Types.ts",
+					"bytes": 4121,
+					"sha256": "2a393d400384bab854982130bc03977e718a9c383ee72e1625ba4c7369ade668"
+				},
+				{
+					"path": "templates/account/login/App.vue",
+					"bytes": 5965,
+					"sha256": "45b9d54a0f99ef4ae569acef1eeb35823fe0b67d96c9e8e749718b743beba04f"
+				},
+				{
+					"path": "templates/account/login/Challenge.ts",
+					"bytes": 5566,
+					"sha256": "e77d6c12d5ddb5fb2b1078cb46a64af7392bfd97ece6c81772ebd67fad285d4a"
+				},
+				{
+					"path": "templates/account/login/Fixture.ts",
+					"bytes": 4161,
+					"sha256": "85a39ebe12ba378d0dc945bbc060c1750310406433a044394d85abedd9d03695"
+				},
+				{
+					"path": "templates/account/login/I18n.ts",
+					"bytes": 5062,
+					"sha256": "aceb6fb1b9b89f473e430df4edb67954fb22e7481f0951a27b47a0e089b8b60d"
+				},
+				{
+					"path": "templates/account/login/LoginPanel.vue",
+					"bytes": 13769,
+					"sha256": "430b087f50d6e3d9baed334cc63dc00e75af5d656d8ac9397312621ea00d779a"
+				},
+				{
+					"path": "templates/account/login/Types.ts",
+					"bytes": 1170,
+					"sha256": "e5883e07b3d23a01c7a75143e448642ee02d7fcfe6c21c42651acd776e2b73cc"
+				},
+				{
+					"path": "templates/account/login/mount.ts",
+					"bytes": 1062,
+					"sha256": "c963be8f2ab0438898e94ebd0ee41b23f9d90bbae605c104842dcb7f0da15759"
+				},
+				{
+					"path": "website-hosts/login-workspace.ts",
+					"bytes": 358,
+					"sha256": "ebd37b33afe6fd4c6ae8b3431df3d2425eba096c3ddfd0c6ca799caeb5788d78"
+				},
+				{
+					"path": "package.json",
+					"bytes": 1134,
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45"
+				},
+				{
+					"path": "pnpm-lock.yaml",
+					"bytes": 68309,
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf"
+				},
+				{
+					"path": "vendor/ui-158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88.tgz",
+					"bytes": 1282110,
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				},
+				{
+					"path": "vendor/pro-f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e.tgz",
+					"bytes": 483458,
+					"sha256": "f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e"
+				},
+				{
+					"path": "vendor/yudao-6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c.tgz",
+					"bytes": 5208,
+					"sha256": "6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c"
+				},
+				{
+					"path": "vendor/icons-feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84.tgz",
+					"bytes": 114588,
+					"sha256": "feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84"
+				},
+				{
+					"path": "vendor/maps-96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892.tgz",
+					"bytes": 105688,
+					"sha256": "96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892"
+				},
+				{
+					"path": "pnpm-workspace.yaml",
+					"bytes": 237,
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728"
+				},
+				{
+					"path": "patches/element-plus-2.14.7.patch",
+					"bytes": 69876,
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4"
+				},
+				{
+					"path": "main.ts",
+					"bytes": 622,
+					"sha256": "2d13a84dc671cafa8586f0d168eb67c7b744a6f9e3f9d8abb5fa3dd888bcc098"
+				},
+				{
+					"path": "index.html",
+					"bytes": 282,
+					"sha256": "bcb4b3c24d82ad093e730fd3663a5dc0f0ab650485920fc2ebfcba4b94e59eaf"
+				},
+				{
+					"path": "vite.config.ts",
+					"bytes": 155,
+					"sha256": "57b65d4d13406778d7e314093b7c42aa6ddf64f6464cc92a99ac815f9a57d992"
+				},
+				{
+					"path": "tsconfig.json",
+					"bytes": 505,
+					"sha256": "dff8266fc053e025a7195bc47329dedbc2da3afa85b9d49d33bc3c932a6d860d"
+				},
+				{
+					"path": "README.md",
+					"bytes": 1896,
+					"sha256": "ff6491fa3c6381a2cd2affbc11ad4f25d56c2996baaf0338d9ab184620e94a47"
+				},
+				{
+					"path": "LICENSE",
+					"bytes": 3139,
+					"sha256": "af998569465ec6ffcfe60b1689276c9c9b91856d852a0fbca808f6e2e3b271b5"
+				},
+				{
+					"path": "THIRD_PARTY_NOTICES.md",
+					"bytes": 1010,
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9"
+				}
+			]
+		},
+		{
+			"language": "js",
+			"project": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/login-workspace-js.zip",
+			"source": "https://asam-ui.cn/downloads/releases/c28986dde3665d302c3868cfd38a760391c7820b50824b8486a231486dc05612/pro/examples/templates/login-workspace-js-source.zip",
+			"files": [
+				{
+					"path": "templates/account/I18n.js",
+					"bytes": 345,
+					"sha256": "fb2e3b58df59734e2756fd31718af37dc9cf74130606d4806591c8a9931b8cc4"
+				},
+				{
+					"path": "templates/account/I18nEn.js",
+					"bytes": 9417,
+					"sha256": "f52519a574e55d88c4259d21a17807130cba708b65bc5fda1b6c92f3223c3156"
+				},
+				{
+					"path": "templates/account/I18nParameters.js",
+					"bytes": 11,
+					"sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+				},
+				{
+					"path": "templates/account/I18nZh.js",
+					"bytes": 8820,
+					"sha256": "5632f2ed23cdb56dcadd63b7b1685fec5ea4270589f02e5b3d83389150d92586"
+				},
+				{
+					"path": "templates/account/Session.js",
+					"bytes": 17839,
+					"sha256": "0f40325c6fe4a2989daa91403dfef52a792730fb86b08fbf4ca9e71f35504d8c"
+				},
+				{
+					"path": "templates/account/Types.js",
+					"bytes": 11,
+					"sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+				},
+				{
+					"path": "templates/account/login/App.vue",
+					"bytes": 5922,
+					"sha256": "a3845a7d8dfab8140cfb053f0029eaa7823157a0b682cc87f5530ffaa55d3ee3"
+				},
+				{
+					"path": "templates/account/login/Challenge.js",
+					"bytes": 4767,
+					"sha256": "4d82fcbcbf9da67899e1fd6e9e4923a93567767dfcfa0abc70ac14ccf8f6240b"
+				},
+				{
+					"path": "templates/account/login/Fixture.js",
+					"bytes": 3508,
+					"sha256": "310def0ebcb81ed09ec4c86b4896e11e8271903480039a6fda5befe7c41bcb67"
+				},
+				{
+					"path": "templates/account/login/I18n.js",
+					"bytes": 4338,
+					"sha256": "e78a0ef9844f522c1fd988e5ac123fb914be339bbb6fe699688045faaba4e496"
+				},
+				{
+					"path": "templates/account/login/LoginPanel.vue",
+					"bytes": 13355,
+					"sha256": "cc014f197f9e94ba6c419529257f6ccf75fd82e790ca66e30d92f02c9173bf5b"
+				},
+				{
+					"path": "templates/account/login/Types.js",
+					"bytes": 11,
+					"sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+				},
+				{
+					"path": "templates/account/login/mount.js",
+					"bytes": 864,
+					"sha256": "b06eb223ec01e6c96468830f886b4060cae16eeadcf298d502cc59e57057135b"
+				},
+				{
+					"path": "website-hosts/login-workspace.js",
+					"bytes": 257,
+					"sha256": "3630ec0e82237b6730cb8ed51ef59282c4ee415ad1cfea6f01ffca99329724dd"
+				},
+				{
+					"path": "package.json",
+					"bytes": 1134,
+					"sha256": "72db51e6e66cdbe563130ffab3029a9fcbfda47385eaeb445ae80cc698f1ea45"
+				},
+				{
+					"path": "pnpm-lock.yaml",
+					"bytes": 68309,
+					"sha256": "4b9547398483ea7fef2df08f9cb296c2951e8a21a940fb15801b46c5849762bf"
+				},
+				{
+					"path": "vendor/ui-158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88.tgz",
+					"bytes": 1282110,
+					"sha256": "158a1f228f5f95aa95690457471017e9078f623b23e2fe5d7008eec948343c88"
+				},
+				{
+					"path": "vendor/pro-f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e.tgz",
+					"bytes": 483458,
+					"sha256": "f1edfded731164d20a649443f94e196d658df3d5de8f7ba99e085b7d8550984e"
+				},
+				{
+					"path": "vendor/yudao-6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c.tgz",
+					"bytes": 5208,
+					"sha256": "6b6ea135b08cbd6d9f182f6e57b7ba4eb527d70ac8ba82b442be523dd735332c"
+				},
+				{
+					"path": "vendor/icons-feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84.tgz",
+					"bytes": 114588,
+					"sha256": "feec5d6e09a546ba2c2ded6d69fc138df9454859356a2ce07c0006be30af2f84"
+				},
+				{
+					"path": "vendor/maps-96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892.tgz",
+					"bytes": 105688,
+					"sha256": "96e0cecc3cefeca5a504ba9228e79ff2d86458f79d2f53afcc90da0a0984a892"
+				},
+				{
+					"path": "pnpm-workspace.yaml",
+					"bytes": 237,
+					"sha256": "90a3a9a4941558eb64cfa46b12f6a60c857125585c3a837f3d881b9998cfb728"
+				},
+				{
+					"path": "patches/element-plus-2.14.7.patch",
+					"bytes": 69876,
+					"sha256": "c1fea5923b0d78c0155c213ee186b0417e3790a0de3fdbe646e1aa5c9a1332c4"
+				},
+				{
+					"path": "main.js",
+					"bytes": 592,
+					"sha256": "32cf2dbf8d763941fc5ba8509763e36be60294b72da5560b3cba7fe3be0de566"
+				},
+				{
+					"path": "index.html",
+					"bytes": 282,
+					"sha256": "832160af06204bcb942a0642ca08fa3415720714d3c15e3f919082526c8b1b27"
+				},
+				{
+					"path": "vite.config.ts",
+					"bytes": 155,
+					"sha256": "57b65d4d13406778d7e314093b7c42aa6ddf64f6464cc92a99ac815f9a57d992"
+				},
+				{
+					"path": "tsconfig.json",
+					"bytes": 505,
+					"sha256": "9c5d72e0a4bad6e961d8fa531e956f1e1c33e42f29324cbb576658daf9ee3a5b"
+				},
+				{
+					"path": "README.md",
+					"bytes": 1896,
+					"sha256": "ff6491fa3c6381a2cd2affbc11ad4f25d56c2996baaf0338d9ab184620e94a47"
+				},
+				{
+					"path": "LICENSE",
+					"bytes": 3139,
+					"sha256": "af998569465ec6ffcfe60b1689276c9c9b91856d852a0fbca808f6e2e3b271b5"
+				},
+				{
+					"path": "THIRD_PARTY_NOTICES.md",
+					"bytes": 1010,
+					"sha256": "35ef1f4ad71d06336a66b5af3f5101fec4eaa8cf21257bea0b747d3baab328e9"
+				}
+			]
+		}
+	]
+}

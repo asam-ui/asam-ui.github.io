@@ -1,0 +1,1 @@
+import{t as e}from"./zh-CN-B5pAhh4V-cv2-WItR.js";function t(t,n){return t?.enabled.value?t.t(n):e[n]}export{t};

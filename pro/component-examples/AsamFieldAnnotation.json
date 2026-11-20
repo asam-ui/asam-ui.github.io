@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamFieldAnnotation",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "标签与说明",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamFieldAnnotation\n\t\t\tid=\"project-help\"\n\t\t\tfor-id=\"project-name\"\n\t\t\tlabel=\"项目名称\"\n\t\t\tdescription=\"填写便于识别的名称\"\n\t\t\trequired\n\t\t>\n\t\t\t<template #default=\"{ describedby, invalid, required }\">\n\t\t\t\t<AsamInput\n\t\t\t\t\tid=\"project-name\"\n\t\t\t\t\tv-model=\"value\"\n\t\t\t\t\t:aria-describedby=\"describedby\"\n\t\t\t\t\t:aria-invalid=\"invalid\"\n\t\t\t\t\t:required=\"required\"\n\t\t\t\t/>\n\t\t\t</template>\n\t\t</AsamFieldAnnotation>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamInput } from '@asam-ui/ui';\nimport { AsamFieldAnnotation } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst value = ref('');\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamFieldAnnotation\n\t\t\tid=\"project-help\"\n\t\t\tfor-id=\"project-name\"\n\t\t\tlabel=\"项目名称\"\n\t\t\tdescription=\"填写便于识别的名称\"\n\t\t\trequired\n\t\t>\n\t\t\t<template #default=\"{ describedby, invalid, required }\">\n\t\t\t\t<AsamInput\n\t\t\t\t\tid=\"project-name\"\n\t\t\t\t\tv-model=\"value\"\n\t\t\t\t\t:aria-describedby=\"describedby\"\n\t\t\t\t\t:aria-invalid=\"invalid\"\n\t\t\t\t\t:required=\"required\"\n\t\t\t\t/>\n\t\t\t</template>\n\t\t</AsamFieldAnnotation>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamInput } from '@asam-ui/ui';\nimport { AsamFieldAnnotation } from '@asam-ui/pro/components';\nimport { ref } from 'vue';\nconst value = ref('');\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "error",
+			"title": "错误说明",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamFieldAnnotation\n\t\t\tid=\"contact-help\"\n\t\t\tfor-id=\"contact-name\"\n\t\t\tlabel=\"联系人\"\n\t\t\terror=\"请填写联系人\"\n\t\t\trequired\n\t\t>\n\t\t\t<template #default=\"{ describedby, invalid, required }\">\n\t\t\t\t<AsamInput\n\t\t\t\t\tid=\"contact-name\"\n\t\t\t\t\t:aria-describedby=\"describedby\"\n\t\t\t\t\t:aria-invalid=\"invalid\"\n\t\t\t\t\t:required=\"required\"\n\t\t\t\t/>\n\t\t\t</template>\n\t\t</AsamFieldAnnotation>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamInput } from '@asam-ui/ui';\nimport { AsamFieldAnnotation } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamFieldAnnotation\n\t\t\tid=\"contact-help\"\n\t\t\tfor-id=\"contact-name\"\n\t\t\tlabel=\"联系人\"\n\t\t\terror=\"请填写联系人\"\n\t\t\trequired\n\t\t>\n\t\t\t<template #default=\"{ describedby, invalid, required }\">\n\t\t\t\t<AsamInput\n\t\t\t\t\tid=\"contact-name\"\n\t\t\t\t\t:aria-describedby=\"describedby\"\n\t\t\t\t\t:aria-invalid=\"invalid\"\n\t\t\t\t\t:required=\"required\"\n\t\t\t\t/>\n\t\t\t</template>\n\t\t</AsamFieldAnnotation>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamInput } from '@asam-ui/ui';\nimport { AsamFieldAnnotation } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

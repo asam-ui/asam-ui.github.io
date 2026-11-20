@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"component": "AsamPageContainer",
+	"demos": [
+		{
+			"id": "basic",
+			"title": "标题与操作",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamPageContainer title=\"项目概览\" description=\"查看当前进展\">\n\t\t\t<template #actions><AsamButton type=\"primary\">新建项目</AsamButton></template>\n\t\t\t<p>当前有 12 个进行中的项目。</p>\n\t\t</AsamPageContainer>\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamPageContainer } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamPageContainer title=\"项目概览\" description=\"查看当前进展\">\n\t\t\t<template #actions><AsamButton type=\"primary\">新建项目</AsamButton></template>\n\t\t\t<p>当前有 12 个进行中的项目。</p>\n\t\t</AsamPageContainer>\n\t</div>\n</template>\n\n<script setup>\nimport { AsamButton } from '@asam-ui/ui';\nimport { AsamPageContainer } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "status",
+			"title": "页面状态",
+			"variants": [
+				{
+					"language": "ts",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamPageContainer title=\"项目列表\" status=\"empty\" status-text=\"尚未创建项目\" />\n\t</div>\n</template>\n\n<script setup lang=\"ts\">\nimport { AsamPageContainer } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				},
+				{
+					"language": "js",
+					"entryName": "Demo.vue",
+					"files": [
+						{
+							"name": "Demo.vue",
+							"source": "<template>\n\t<div class=\"pro-example-stack\">\n\t\t<AsamPageContainer title=\"项目列表\" status=\"empty\" status-text=\"尚未创建项目\" />\n\t</div>\n</template>\n\n<script setup>\nimport { AsamPageContainer } from '@asam-ui/pro/components';\n</script>\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}

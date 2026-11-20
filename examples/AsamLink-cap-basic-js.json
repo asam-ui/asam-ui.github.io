@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamLink/cap-basic/js/Demo.vue",
-			"sha256": "ef9a62d82322406329f45f237d60bf1d4c3fd0308ffa821a57c51f26f72af7d4",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-45538b93eb34f7c8353ef834d09fb9078308acf069a09d261536a540d22bd0bd.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/45538b93eb34f7c8353ef834d09fb9078308acf069a09d261536a540d22bd0bd.txt\n-->\n<template>\n\t<div>\n\t\t<AsamLink href=\"https://example.com\" target=\"_blank\">default</AsamLink>\n\t\t<AsamLink type=\"primary\">primary</AsamLink>\n\t\t<AsamLink type=\"success\">success</AsamLink>\n\t\t<AsamLink type=\"warning\">warning</AsamLink>\n\t\t<AsamLink type=\"danger\">danger</AsamLink>\n\t\t<AsamLink type=\"info\">info</AsamLink>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamLinkCapBasicDemo' });\nimport { AsamLink } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.el-link {\n\tmargin-right: 8px;\n}\n</style>\n",
-			"originalSourceSha256": "0c0aaa4acac8c47a140cefbacbd32729733d7035ef62fde0e0be7ed2b7dba367",
+			"sha256": "284d585277b25cf9cdfe25a2daa672fb1c51b7cf1810737734ee0ee12bc9241b",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-45538b93eb34f7c8353ef834d09fb9078308acf069a09d261536a540d22bd0bd.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/45538b93eb34f7c8353ef834d09fb9078308acf069a09d261536a540d22bd0bd.txt\n-->\n<template>\n\t<div>\n\t\t<AsamLink href=\"#link-target-demo\">跳到本示例目标</AsamLink>\n\t\t<AsamLink type=\"primary\" href=\"https://example.com\" target=\"_blank\" rel=\"noopener\">\n\t\t\t打开外链\n\t\t</AsamLink>\n\t\t<p id=\"link-target-demo\">本示例目标</p>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamLinkCapBasicDemo' });\nimport { AsamLink } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.el-link {\n\tmargin-right: 8px;\n}\n</style>\n",
+			"originalSourceSha256": "d87db24f1805bd8b1b16290e6d7ef650fba1c3c5f4600fc0fdfa94bafd8527dd",
 			"notice": {
 				"id": "45538b93eb34f7c8353ef834d09fb9078308acf069a09d261536a540d22bd0bd",
 				"url": "/licenses/source-notices/45538b93eb34f7c8353ef834d09fb9078308acf069a09d261536a540d22bd0bd.txt",

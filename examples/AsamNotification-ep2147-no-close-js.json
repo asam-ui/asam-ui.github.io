@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
+	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamNotification/ep2147-no-close/js/Demo.vue",
-			"sha256": "200c5c1674dc1291fa502a7c4d5e47fd865229781dababd7c4c3802db0126289",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-05ceefaf2009bd70230ca335f824f3fdc1abf96999aecee1d7c664169cb946b3.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/05ceefaf2009bd70230ca335f824f3fdc1abf96999aecee1d7c664169cb946b3.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"open\"> 隐藏关闭按钮 </AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamNotification } from '@asam-ui/ui';\nimport { onBeforeUnmount } from 'vue';\nconst open = () => {\n\ttrackAsamNotification(\n\t\tAsamNotification.success({\n\t\t\ttitle: '信息',\n\t\t\tmessage: '这条消息没有关闭按钮。',\n\t\t\tshowClose: false\n\t\t})\n\t);\n};\nconst ownedAsamNotification = new Set();\nlet mountedAsamNotification = true;\nconst trackAsamNotification = (handle) => {\n\tif (mountedAsamNotification) ownedAsamNotification.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamNotification = false;\n\tfor (const handle of ownedAsamNotification) handle.close();\n\townedAsamNotification.clear();\n});\n</script>\n",
-			"originalSourceSha256": "32a50bc6e4f45b41e4078ec25d4aaff286b35d897dd61a5da0184e6b7c49050c",
+			"sha256": "81861db8ca4b4e82016a4fbb8088881500ddc00fd640f3a7361a74a8abdad07c",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-05ceefaf2009bd70230ca335f824f3fdc1abf96999aecee1d7c664169cb946b3.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/05ceefaf2009bd70230ca335f824f3fdc1abf96999aecee1d7c664169cb946b3.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"open\">隐藏关闭按钮</AsamButton>\n</template>\n\n<script setup>\nimport { AsamButton, AsamNotification } from '@asam-ui/ui';\nimport { onBeforeUnmount } from 'vue';\nconst open = () => {\n\ttrackAsamNotification(\n\t\tAsamNotification.success({\n\t\t\ttitle: '信息',\n\t\t\tmessage: '这条消息没有关闭按钮。',\n\t\t\tshowClose: false\n\t\t})\n\t);\n};\nconst ownedAsamNotification = new Set();\nlet mountedAsamNotification = true;\nconst trackAsamNotification = (handle) => {\n\tif (mountedAsamNotification) ownedAsamNotification.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamNotification = false;\n\tfor (const handle of ownedAsamNotification) handle.close();\n\townedAsamNotification.clear();\n});\n</script>\n",
+			"originalSourceSha256": "08c71ab74230ffe45dab58364b46db6c315b346a67663e7252d90a86f585b63b",
 			"notice": {
 				"id": "05ceefaf2009bd70230ca335f824f3fdc1abf96999aecee1d7c664169cb946b3",
 				"url": "/licenses/source-notices/05ceefaf2009bd70230ca335f824f3fdc1abf96999aecee1d7c664169cb946b3.txt",
