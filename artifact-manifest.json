@@ -70,9 +70,9 @@
     },
     {
       "path": "ai/expert-installation.html",
-      "bytes": 37700,
-      "sha256": "75117127cab0ea6b3d4df3269e63175eb2ee74e640227c596402dd8c29bf9323",
-      "origin": "ci-public-b3e4a5e99ac35eff00ca365312a0eb12844e1e0a"
+      "bytes": 37582,
+      "sha256": "0fda5d38210b7bf281adb3d644951e2950f31996142fd3f26def951de7fd808d",
+      "origin": "expert-1.0.1-90b9cde65b81aa7ce02d07345e81027741678fbf"
     },
     {
       "path": "ai/expert-pro-development.html",
@@ -94,9 +94,9 @@
     },
     {
       "path": "ai/expert.html",
-      "bytes": 46474,
-      "sha256": "5c1c7952d8bf798709afe22694d028ab5060d8962bc77cfdd4277fe4d4bc8fb8",
-      "origin": "ci-public-b3e4a5e99ac35eff00ca365312a0eb12844e1e0a"
+      "bytes": 45886,
+      "sha256": "ef1c1693fd0cd144a8f8bfd59f0fb25e2549538ef73654e440430482e958f5dc",
+      "origin": "expert-1.0.1-90b9cde65b81aa7ce02d07345e81027741678fbf"
     },
     {
       "path": "ai/index.html",
@@ -19258,9 +19258,9 @@
     },
     {
       "path": "en/ai/expert-installation.html",
-      "bytes": 35513,
-      "sha256": "a4efff86dc5161533eec15fcc16d8404fa6f83ce96223f463882a4746db3bf64",
-      "origin": "ci-public-b3e4a5e99ac35eff00ca365312a0eb12844e1e0a"
+      "bytes": 35396,
+      "sha256": "fb2bbdecd3cbed148e0a8ecfebd88bd45a45c9ef19c6e37d19ce37e77858a20e",
+      "origin": "expert-1.0.1-90b9cde65b81aa7ce02d07345e81027741678fbf"
     },
     {
       "path": "en/ai/expert-pro-development.html",
@@ -19282,9 +19282,9 @@
     },
     {
       "path": "en/ai/expert.html",
-      "bytes": 43365,
-      "sha256": "a07227c5208762299d7e279194c5cdd3dd508279075257734411a0dcab8978a1",
-      "origin": "ci-public-b3e4a5e99ac35eff00ca365312a0eb12844e1e0a"
+      "bytes": 42794,
+      "sha256": "ac9694a2ef31956bcb1eca47246a474900bd2aa5c4053dcbaeb52b3ddb1d95e3",
+      "origin": "expert-1.0.1-90b9cde65b81aa7ce02d07345e81027741678fbf"
     },
     {
       "path": "en/ai/index.html",
@@ -25655,20 +25655,20 @@
     {
       "path": "install/expert.cmd",
       "bytes": 869,
-      "sha256": "0101a67cd2172f2226fe96f67fe65648bf5ac38ccf25b86b4ffca3b7dde2ba2c",
-      "origin": "ci-public-b3e4a5e99ac35eff00ca365312a0eb12844e1e0a"
+      "sha256": "ff677f085fe32889a02da6573b09fc1bbcf00e530e9ede241816213b4f6856a2",
+      "origin": "expert-1.0.1-90b9cde65b81aa7ce02d07345e81027741678fbf"
     },
     {
       "path": "install/expert.ps1",
       "bytes": 16083,
-      "sha256": "73964a30d0f6f74cada1d13793380fb352d857d80c2f9c2ff4e88fe50d0740d2",
-      "origin": "ci-public-b3e4a5e99ac35eff00ca365312a0eb12844e1e0a"
+      "sha256": "5809edc659ef22784103c703f44eac4358c580655640feaa535c0e452360a8f0",
+      "origin": "expert-1.0.1-90b9cde65b81aa7ce02d07345e81027741678fbf"
     },
     {
       "path": "install/expert.sh",
       "bytes": 7923,
-      "sha256": "67afe37b8f7116a34d33fa455ecdc0a492717bcb4177586e1637faad1479bdcf",
-      "origin": "ci-public-b3e4a5e99ac35eff00ca365312a0eb12844e1e0a"
+      "sha256": "7d22d41c3e3ce3329726b4f96e4a7cad3f1b2bc30462109f3e281d0747df56fe",
+      "origin": "expert-1.0.1-90b9cde65b81aa7ce02d07345e81027741678fbf"
     },
     {
       "path": "install/releases/1.0.0-darwin-arm64/codex-1.0.0-darwin-arm64.tgz",
