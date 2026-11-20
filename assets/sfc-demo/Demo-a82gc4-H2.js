@@ -1,1 +1,0 @@
-import{Ct as e,H as t,v as n,w as r}from"./vue.esm-bundler-5NdF0u5k.js";import{t as i}from"./Index-DeVGMgmG-WgcM9YR-.js";var a=r({name:`AsamSkeletonCapAnimationDemo`,__name:`Demo`,setup(r){return(r,a)=>(t(),n(e(i),{rows:5,animated:``}))}});export{a as default};

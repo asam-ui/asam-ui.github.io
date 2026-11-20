@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamCarousel/cap-card/js/Demo.vue",
-			"sha256": "ee5b36dba4e26eda155410cc8f1d99054f213bf7a2b4a4166ce7f629908c55f1",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bd4b81af21642608971a1a7418e6bd9ef75b2a58984246bf1a57f6b2d9beb016.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bd4b81af21642608971a1a7418e6bd9ef75b2a58984246bf1a57f6b2d9beb016.txt\n-->\n<template>\n\t<AsamCarousel :interval=\"4000\" type=\"card\" height=\"200px\">\n\t\t<AsamCarouselItem v-for=\"item in 6\" :key=\"item\">\n\t\t\t<h3 class=\"ui032-text-2xl ui032-justify-center\">{{ item }}</h3>\n\t\t</AsamCarouselItem>\n\t</AsamCarousel>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamCarouselCapCardDemo' });\nimport { AsamCarousel, AsamCarouselItem } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.el-carousel__item h3 {\n\tcolor: var(--asam-color-text-regular);\n\topacity: 0.75;\n\tline-height: 200px;\n\tmargin: 0;\n\ttext-align: center;\n}\n\n.el-carousel__item:nth-child(2n) {\n\tbackground-color: var(--asam-color-surface-muted);\n}\n\n.el-carousel__item:nth-child(2n + 1) {\n\tbackground-color: var(--asam-color-surface-soft);\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n\n<style scoped>\n.ui032-text-2xl {\n\tfont-size: 1.5rem;\n}\n\n.ui032-justify-center {\n\tjustify-content: center;\n}\n</style>\n",
-			"originalSourceSha256": "9863a271c858e688d188015f69be85573916274f3fcb6f79ea611ca1649798f8",
+			"sha256": "3911299ae38f4efc795564a738b0491d1f9ac91bfd8e93891586524c8c3de4c0",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-bd4b81af21642608971a1a7418e6bd9ef75b2a58984246bf1a57f6b2d9beb016.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/bd4b81af21642608971a1a7418e6bd9ef75b2a58984246bf1a57f6b2d9beb016.txt\n-->\n<template>\n\t<AsamCarousel :interval=\"4000\" type=\"card\" height=\"200px\">\n\t\t<AsamCarouselItem v-for=\"item in 6\" :key=\"item\">\n\t\t\t<h3 class=\"ui032-text-2xl ui032-justify-center\">{{ item }}</h3>\n\t\t</AsamCarouselItem>\n\t</AsamCarousel>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamCarouselCapCardDemo' });\nimport { AsamCarousel, AsamCarouselItem } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* stylelint-disable selector-class-pattern -- Base-component BEM selectors are required for this demonstration. */\n\n.el-carousel__item h3 {\n\tcolor: #475669;\n\topacity: 0.75;\n\tline-height: 200px;\n\tmargin: 0;\n\ttext-align: center;\n}\n\n.el-carousel__item:nth-child(2n) {\n\tbackground-color: #99a9bf;\n}\n\n.el-carousel__item:nth-child(2n + 1) {\n\tbackground-color: #d3dce6;\n}\n\n/* stylelint-enable selector-class-pattern */\n</style>\n\n<style scoped>\n.ui032-text-2xl {\n\tfont-size: 1.5rem;\n}\n\n.ui032-justify-center {\n\tjustify-content: center;\n}\n</style>\n",
+			"originalSourceSha256": "0707afa0efb0befb25ef138b03b02db50bbccd0fa246d71ca10c36c72d14ea13",
 			"notice": {
 				"id": "bd4b81af21642608971a1a7418e6bd9ef75b2a58984246bf1a57f6b2d9beb016",
 				"url": "/licenses/source-notices/bd4b81af21642608971a1a7418e6bd9ef75b2a58984246bf1a57f6b2d9beb016.txt",

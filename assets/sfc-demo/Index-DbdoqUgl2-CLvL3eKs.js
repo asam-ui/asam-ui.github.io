@@ -1,1 +1,0 @@
-import"./vue.esm-bundler-5NdF0u5k.js";import{n as e,t}from"./progress-CZNtYlc6.js";var n=Object.assign({},t,{props:{...e,color:{...e.color,default:`var(--asam-display-solid)`}},install(e){e.component(`AsamProgress`,n)}});export{n as t};

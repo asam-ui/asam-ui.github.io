@@ -1,1 +1,0 @@
-import{c as e}from"./fromPairs-Cl4GCqt0.js";import{_r as t,dr as n,hr as r,ur as i}from"./sfc-demo.js";function a(e,i){return r(n(e,i,t),e+``)}function o(t){return e(t)&&i(t)}export{a as n,o as t};

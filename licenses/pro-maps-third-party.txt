@@ -1,7 +1,0 @@
-# 资源来源与许可
-
-Leaflet 固定1.9.4，使用正常发布包，未复制或修改其可执行算法。来源：[官方API（明确1.9.4）](https://leafletjs.com/reference.html)、[官方v1.9.4发布](https://github.com/Leaflet/Leaflet/releases/tag/v1.9.4)、[固定许可](https://raw.githubusercontent.com/Leaflet/Leaflet/v1.9.4/LICENSE)。完整BSD-2-Clause保留于 LEAFLET-LICENSE.md，打包/页面分发应保留本声明。
-
-GeoJSON依据 [RFC7946](https://datatracker.ietf.org/doc/html/rfc7946#section-3.1.1)，本示例只承接有限且显式的Point/LineString/Polygon子集。Data.ts点位/名称/线面由本任务自制，不来自地图抓取或外部地理数据；仅示意，不代表真实边界/地址。许可按本仓授权，不承诺未经授权地理数据可使用。
-
-marker 是自制数字 DOM/CSS，网格是本地 CSS；使用系统字体，无外部图标/图片/字体。Leaflet自带CSS保持发布包原样，包括其本地图片资产路径；默认不创建默认Icon marker或LayersControl，不会加载这些图片，真实网络由浏览器收据核实。SDK许可和在线瓦片/地理数据许可相互独立；本次没有实际在线供应方、账号或Key。

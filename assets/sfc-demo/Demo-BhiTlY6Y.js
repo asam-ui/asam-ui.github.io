@@ -1,0 +1,1 @@
+import{C as e,Ct as t,H as n,b as r,w as i}from"./vue.esm-bundler-5NdF0u5k.js";import{t as a}from"./Index-DFGXF048-CjhMOwKI.js";var o={style:{"max-width":`600px`}},s=i({name:`AsamAlertCapDescriptionDemo`,__name:`Demo`,setup(i){return(i,s)=>(n(),r(`div`,o,[e(t(a),{title:`带说明`,type:`success`,description:`这是一段说明。`})]))}});export{s as default};

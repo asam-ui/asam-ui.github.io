@@ -1,1 +1,0 @@
-var e=(e=`default`)=>({layout:`grid`,cardSize:e,columns:`auto`});export{e as t};

@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDrawer/ep2147-no-title/ts/Demo.vue",
-			"sha256": "ab9b04948f6feac311faf605b207a17a8d8f23e64f35eeb8b23e976ee8dd2320",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0a41f6f6102b9b1e959bf2b6ba0588d8416fa127f89db3eda60782f3d6856a4c.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/0a41f6f6102b9b1e959bf2b6ba0588d8416fa127f89db3eda60782f3d6856a4c.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" @click=\"drawer = true\">打开</AsamButton>\n\n\t<AsamDrawer v-model=\"drawer\" title=\"标题示例\" :with-header=\"false\">\n\t\t<span>你好！</span>\n\t</AsamDrawer>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDrawer } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst drawer = ref(false);\n</script>\n",
-			"originalSourceSha256": "d3bba21c4c10db9e67a0b16a377d58a2a5c850cf7d1dffea8bcc45c1ccae52f7",
+			"sha256": "2a52b6e31e85db1ddfbd7f3b61a93f1ca401c9208d874f43bd247f4d2c313b61",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-0a41f6f6102b9b1e959bf2b6ba0588d8416fa127f89db3eda60782f3d6856a4c.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/0a41f6f6102b9b1e959bf2b6ba0588d8416fa127f89db3eda60782f3d6856a4c.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"drawer = true\"> 打开 </AsamButton>\n\n\t<AsamDrawer v-model=\"drawer\" title=\"标题示例\" :with-header=\"false\">\n\t\t<span>你好！</span>\n\t</AsamDrawer>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDrawer } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst drawer = ref(false);\n</script>\n",
+			"originalSourceSha256": "9ebcda360917fd34a97acf56e453111cef7fca08cbd69ba4bd729c8517259db6",
 			"notice": {
 				"id": "0a41f6f6102b9b1e959bf2b6ba0588d8416fa127f89db3eda60782f3d6856a4c",
 				"url": "/licenses/source-notices/0a41f6f6102b9b1e959bf2b6ba0588d8416fa127f89db3eda60782f3d6856a4c.txt",

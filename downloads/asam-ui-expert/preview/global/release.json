@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "release": "2026.10.26-preview.1",
+  "createdAt": "2026-10-26T09:43:41.821Z",
+  "installerSource": {
+    "sourceSha": "c9e93f930e2e5ea7292ae78f02a6113297018efc",
+    "state": "fixed-commit",
+    "files": [
+      {
+        "path": "integrations/agents/harness/plugin.mjs",
+        "sha256": "fe33d1b106ae1c38a2bf6bd9fdf1601f81981cff9d0a78f8996c96e619d4cd43",
+        "gitSHA256": "fe33d1b106ae1c38a2bf6bd9fdf1601f81981cff9d0a78f8996c96e619d4cd43",
+        "textEolOnly": false
+      },
+      {
+        "path": "integrations/agents/harness/agent.mjs",
+        "sha256": "d5460ccb8cfb63ca7da7a68b927809347c7576acc326676b18544eaa0994cfe5",
+        "gitSHA256": "d5460ccb8cfb63ca7da7a68b927809347c7576acc326676b18544eaa0994cfe5",
+        "textEolOnly": false
+      },
+      {
+        "path": "tools/v2/hosts/harness-package.mjs",
+        "sha256": "135747e6bd930075ca410c71b8c4f1548f5f8eb213678e765844e9790cd10b41",
+        "gitSHA256": "135747e6bd930075ca410c71b8c4f1548f5f8eb213678e765844e9790cd10b41",
+        "textEolOnly": false
+      },
+      {
+        "path": "tools/v2/hosts/harness-install.mjs",
+        "sha256": "bf0d612a1f266a8f4613e38f0ec4c50f4007a5042793dde7aa4665f11dcedcb5",
+        "gitSHA256": "bf0d612a1f266a8f4613e38f0ec4c50f4007a5042793dde7aa4665f11dcedcb5",
+        "textEolOnly": false
+      },
+      {
+        "path": "tools/v2/hosts/release-manifest.mjs",
+        "sha256": "3261e5ce1b87661d89cc2b8b7c9ad528e2fdad959249d4b255bdcaa58006f069",
+        "gitSHA256": "3261e5ce1b87661d89cc2b8b7c9ad528e2fdad959249d4b255bdcaa58006f069",
+        "textEolOnly": false
+      },
+      {
+        "path": "tools/v2/hosts/bootstrap-package.mjs",
+        "sha256": "7ceea3616250d9cff53acf6377b340d11a7352f2a57baa8e5f72b0bf8e8f8a38",
+        "gitSHA256": "7ceea3616250d9cff53acf6377b340d11a7352f2a57baa8e5f72b0bf8e8f8a38",
+        "textEolOnly": false
+      },
+      {
+        "path": "tools/v2/hosts/online-install.mjs",
+        "sha256": "367ede16a68543125af131eab464f013c2aa22e800cb79d4360e034fd6546aba",
+        "gitSHA256": "367ede16a68543125af131eab464f013c2aa22e800cb79d4360e034fd6546aba",
+        "textEolOnly": false
+      },
+      {
+        "path": "tools/v2/hosts/online-install-entry.mjs",
+        "sha256": "112169c42455f9f9669f225f4461c3ec65deee940fa9ae516a9c2060b38a35aa",
+        "gitSHA256": "112169c42455f9f9669f225f4461c3ec65deee940fa9ae516a9c2060b38a35aa",
+        "textEolOnly": false
+      },
+      {
+        "path": "tools/v2/hosts/expert-release-package.mjs",
+        "sha256": "8e93360a4da32da0aa9578f4321ee1f80958b315d0c5e9c61fea8c488a3b7af2",
+        "gitSHA256": "8e93360a4da32da0aa9578f4321ee1f80958b315d0c5e9c61fea8c488a3b7af2",
+        "textEolOnly": false
+      },
+      {
+        "path": "tools/v2/hosts/files.mjs",
+        "sha256": "45e53660ea81bb3c6458100aa0428e0b944a9e6a7fb724252a5cb23d0e8367b5",
+        "gitSHA256": "2f368bb1357962aff421ab51bb081b51eb8e6e90cd8ab7a08d5a12fc22b216ee",
+        "textEolOnly": true
+      },
+      {
+        "path": "tools/v2/hosts/lifecycle.mjs",
+        "sha256": "40f7fb952a19852bbe72c8fdf121de811521106bc85ff8fef4ec68c60ab7e406",
+        "gitSHA256": "cc161f8550dcff2c18a2e6cf4ebf2307d3be003b5ea5312ed077e02b2b093cf7",
+        "textEolOnly": true
+      },
+      {
+        "path": "tools/v2/hosts/installers/expert.ps1.template",
+        "sha256": "cd6cac3a391bb21d214e02470661ca54aabb15a080c1f4462bbd4a17df94fe1a",
+        "gitSHA256": "cd6cac3a391bb21d214e02470661ca54aabb15a080c1f4462bbd4a17df94fe1a",
+        "textEolOnly": false
+      },
+      {
+        "path": "tools/v2/hosts/installers/expert.sh.template",
+        "sha256": "88bdbc0b35150a7f444c993a20effa06a3a057dcc35cee66a2e4bbc4e5abb2ca",
+        "gitSHA256": "88bdbc0b35150a7f444c993a20effa06a3a057dcc35cee66a2e4bbc4e5abb2ca",
+        "textEolOnly": false
+      }
+    ]
+  },
+  "testOnly": false,
+  "signing": {
+    "algorithm": "RSA-SHA256",
+    "publicKeyFingerprint": "39b22f9e916f25326d3d86339ed2d3bf24b3a671a073bcc58091b54308a7668f"
+  },
+  "entrypoints": {
+    "windows": "https://asam-ui.github.io/downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/expert.ps1",
+    "shell": "https://asam-ui.github.io/downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/expert.sh",
+    "manifest": "https://asam-ui.github.io/downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/release.json",
+    "offline": "https://asam-ui.github.io/downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/offline-2026.10.26-preview.1.tgz"
+  },
+  "core": {
+    "versions": {
+      "ui": "0.1.0-alpha.1",
+      "pro": "0.1.0-alpha.1",
+      "tool": "0.1.0-alpha.1",
+      "content": 1
+    },
+    "contentDigest": "d09bd366d8864271df2dc59262dbdb70c276eca1dda50f14d0f25c08bc6cfbf3"
+  },
+  "sharedSkillSHA256": "71fbbc9afff8e773b7ab893fd7e9c83e700dbc696b5282a30a436f319ba7867e",
+  "sharedRuntime": [
+    {
+      "path": "agent-adapter-OIB2KNZC.mjs",
+      "sha256": "489a4e85e69f7bbdf667ad0d39df6a5ba405c1d49598d990db63e03468d0f1f8"
+    },
+    {
+      "path": "chunk-2VS5SYWW.mjs",
+      "sha256": "ce48aa24099d773c303ec0693a90e08b294a6b9a4737c1d2c2f763a9f4f79899"
+    },
+    {
+      "path": "chunk-BRNZW4FA.mjs",
+      "sha256": "39379a763b65dbaaaf1275e7cbb201acae3942543f6026d087c6f7fe38a79479"
+    },
+    {
+      "path": "chunk-BW7NJ7MC.mjs",
+      "sha256": "9b288d0d5df6364ab65ed147a7ff323a0faf749ea738ebee7a9f50a1eded4e12"
+    },
+    {
+      "path": "chunk-RAJMVG6X.mjs",
+      "sha256": "d2d0580b18043a2903ae16db145c805d3e19d58ef0a4e6e2b50e2e33de27c463"
+    },
+    {
+      "path": "chunk-UQZMLYYU.mjs",
+      "sha256": "956d290ca2e86ac15e98b3009bd519fae27746bea6547e2987d8a96370033f2a"
+    },
+    {
+      "path": "chunk-ZNWM5IEN.mjs",
+      "sha256": "635da39ba4c71b619630d8ffec0e23d69c3699dd778020f781cd532f3478cfb1"
+    },
+    {
+      "path": "packages/agent-cli/src/cli.mjs",
+      "sha256": "9dab0c5b7f67dd941d8179a6302f4c659c418794da82e96f0718976eca6254ca"
+    },
+    {
+      "path": "packages/agent-core/src/validation.mjs",
+      "sha256": "ea91415da79c821ce38a30bd6a718f084156435e20a8d9b76d366f742ff96ad7"
+    },
+    {
+      "path": "packages/mcp/src/server.mjs",
+      "sha256": "a1af81a290311a52412d686711175086024cf0ad1ee65935af9fdb7eb45ec09e"
+    },
+    {
+      "path": "validation-adapter-AVSIKA45.mjs",
+      "sha256": "45f12930626a0367f83b6dc3d14cde5b07e1db158742647523cf314c7af3fb5f"
+    },
+    {
+      "path": "validation-checks-6YH2Y35B.mjs",
+      "sha256": "852bc1bd607dfbd0a25f184be5931d1b0ad93d9abf9552356efc7d659b374082"
+    }
+  ],
+  "hosts": {
+    "harness": {
+      "version": "0.2.1-rc.3",
+      "node": ">=24.9.0",
+      "mcpNode": ">=22.19 <23"
+    }
+  },
+  "qualification": [
+    {
+      "channel": "preview",
+      "fixedSource": "c9e93f930e2e5ea7292ae78f02a6113297018efc",
+      "previousDevCandidate": "2026.10.26-dev.11",
+      "transportAndSignature": "DEV signed transport/offline/public SDK checks passed",
+      "actualSelectedModelThreeModes": "not complete",
+      "independentQA": "pending full expert functionality",
+      "independentACC": "pending full expert functionality",
+      "verifiedTarget": "Windows x64",
+      "macOS": "not verified in this preview",
+      "linux": "not verified in this preview",
+      "publicationScope": "resources only; public website pages/menus unchanged"
+    }
+  ],
+  "artifacts": [
+    {
+      "host": "installer",
+      "platform": "any",
+      "arch": "any",
+      "format": "mjs",
+      "url": "https://asam-ui.github.io/downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/installer.mjs",
+      "sha256": "d3f47baff0bead0b8cbf1255bfcfbbee52186546ad40a2d24457281e6b397d10",
+      "bytes": 45707
+    },
+    {
+      "host": "codex",
+      "platform": "win32",
+      "arch": "x64",
+      "format": "tar.gz",
+      "url": "https://asam-ui.github.io/downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/codex-2026.10.26-preview.1.tgz",
+      "sha256": "71685c2a376331c91d8acbf6b4360463ee9c732626c13d3daf57ab6e166f8605",
+      "bytes": 6159636
+    },
+    {
+      "host": "workbuddy",
+      "platform": "win32",
+      "arch": "x64",
+      "format": "tar.gz",
+      "url": "https://asam-ui.github.io/downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/workbuddy-2026.10.26-preview.1.tgz",
+      "sha256": "cb3492cea77fcca7eae94fca948bdee118a60f4f37cf2e7201efa05e0a492cbc",
+      "bytes": 6167732
+    },
+    {
+      "host": "harness",
+      "platform": "win32",
+      "arch": "x64",
+      "format": "tar.gz",
+      "url": "https://asam-ui.github.io/downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/harness-2026.10.26-preview.1.tgz",
+      "sha256": "6d4ca501548e922752e8d7f46c7a25bab45b804eaaa02eba3919c4887fb76555",
+      "bytes": 6133102
+    }
+  ]
+}

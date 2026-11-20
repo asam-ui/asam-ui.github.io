@@ -1,1 +1,0 @@
-import{Mn as e,On as t,Yn as n,yr as r}from"./i18n-CJTJI6vg-3Uas6tNN.js";import{B as i}from"./components-ST0i0Wqf-D8-NR95E.js";var a={class:`pro-example-stack`},o={__name:`Demo`,setup(o){return(o,s)=>(n(),t(`div`,a,[e(r(i),{value:Date.now()-300*1e3,locale:`zh-CN`},null,8,[`value`])]))}};export{o as default};

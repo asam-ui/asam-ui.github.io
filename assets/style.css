@@ -1,318 +1,41 @@
 :root {
-	--asam-semantic-neutral-foreground: #475467;
-	--asam-semantic-neutral-foreground-hover: #344054;
-	--asam-semantic-neutral-foreground-active: #1d2939;
-	--asam-semantic-neutral-soft: #f2f4f7;
-	--asam-semantic-neutral-soft-hover: #e4e7ec;
-	--asam-semantic-neutral-soft-active: #d0d5dd;
-	--asam-semantic-neutral-outline: #667085;
-	--asam-semantic-neutral-solid: #475467;
-	--asam-semantic-neutral-solid-hover: #344054;
-	--asam-semantic-neutral-solid-active: #1d2939;
-	--asam-semantic-neutral-on-solid: #ffffff;
-	--asam-semantic-primary-foreground: #2d6bd6;
-	--asam-semantic-primary-foreground-hover: #255bb7;
-	--asam-semantic-primary-foreground-active: #1d4c9b;
-	--asam-semantic-primary-soft: #edf3ff;
-	--asam-semantic-primary-soft-hover: #dfeaff;
-	--asam-semantic-primary-soft-active: #ccdfff;
-	--asam-semantic-primary-outline: #2d6bd6;
-	--asam-semantic-primary-solid: #2d6bd6;
-	--asam-semantic-primary-solid-hover: #255bb7;
-	--asam-semantic-primary-solid-active: #1d4c9b;
-	--asam-semantic-primary-on-solid: #ffffff;
-	--asam-semantic-secondary-foreground: #2458a6;
-	--asam-semantic-secondary-foreground-hover: #1d4b90;
-	--asam-semantic-secondary-foreground-active: #183e78;
-	--asam-semantic-secondary-soft: #d7e3fc;
-	--asam-semantic-secondary-soft-hover: #c5d7f7;
-	--asam-semantic-secondary-soft-active: #b3cbf2;
-	--asam-semantic-secondary-outline: #2458a6;
-	--asam-semantic-secondary-solid: #2458a6;
-	--asam-semantic-secondary-solid-hover: #1d4b90;
-	--asam-semantic-secondary-solid-active: #183e78;
-	--asam-semantic-secondary-on-solid: #ffffff;
-	--asam-semantic-success-foreground: #197342;
-	--asam-semantic-success-foreground-hover: #115b33;
-	--asam-semantic-success-foreground-active: #0b4728;
-	--asam-semantic-success-soft: #edf8f0;
-	--asam-semantic-success-soft-hover: #d9efdf;
-	--asam-semantic-success-soft-active: #c2e4cd;
-	--asam-semantic-success-outline: #197342;
-	--asam-semantic-success-solid: #13b64f;
-	--asam-semantic-success-solid-hover: #11a447;
-	--asam-semantic-success-solid-active: #0f8e3e;
-	--asam-semantic-success-on-solid: #ffffff;
-	--asam-semantic-warning-foreground: #9a5000;
-	--asam-semantic-warning-foreground-hover: #7e4000;
-	--asam-semantic-warning-foreground-active: #653300;
-	--asam-semantic-warning-soft: #fff4df;
-	--asam-semantic-warning-soft-hover: #ffe9bd;
-	--asam-semantic-warning-soft-active: #ffdaa0;
-	--asam-semantic-warning-outline: #9a5000;
-	--asam-semantic-warning-solid: #ff6a00;
-	--asam-semantic-warning-solid-hover: #e65f00;
-	--asam-semantic-warning-solid-active: #cc5500;
-	--asam-semantic-warning-on-solid: #ffffff;
-	--asam-semantic-danger-foreground: #bb3040;
-	--asam-semantic-danger-foreground-hover: #9c2534;
-	--asam-semantic-danger-foreground-active: #7e1d2a;
-	--asam-semantic-danger-soft: #fff0f1;
-	--asam-semantic-danger-soft-hover: #ffdde1;
-	--asam-semantic-danger-soft-active: #ffc8ce;
-	--asam-semantic-danger-outline: #bb3040;
-	--asam-semantic-danger-solid: #ff4d4f;
-	--asam-semantic-danger-solid-hover: #e64547;
-	--asam-semantic-danger-solid-active: #cc3e3f;
-	--asam-semantic-danger-on-solid: #ffffff;
-	--asam-semantic-info-foreground: #006d82;
-	--asam-semantic-info-foreground-hover: #00576b;
-	--asam-semantic-info-foreground-active: #004555;
-	--asam-semantic-info-soft: #eaf7fa;
-	--asam-semantic-info-soft-hover: #d2edf3;
-	--asam-semantic-info-soft-active: #b6e0ea;
-	--asam-semantic-info-outline: #006d82;
-	--asam-semantic-info-solid: #006d82;
-	--asam-semantic-info-solid-hover: #00576b;
-	--asam-semantic-info-solid-active: #004555;
-	--asam-semantic-info-on-solid: #ffffff;
-	--asam-semantic-surface: #ffffff;
-	--asam-semantic-muted: #f2f4f7;
-	--asam-semantic-text: #263445;
-	--asam-semantic-disabled-foreground: #7c8798;
-	--asam-semantic-disabled-background: #e9edf2;
-	--asam-semantic-disabled-border: #c5ccd6;
-	--asam-semantic-focus: #2457c5;
-	--asam-semantic-gradient-angle: 90deg;
-	--asam-semantic-gradient-start: #73b7ff;
-	--asam-semantic-gradient-end: #3590ff;
-	--asam-semantic-gradient-on: #ffffff;
-	--asam-semantic-gradient-tag-on: #101828;
-	--asam-semantic-gradient-ring: rgb(255 255 255 / 45%);
-	--asam-semantic-brand-surface: #1746a2;
-	--asam-semantic-brand-foreground: #ffffff;
-	--asam-semantic-brand-soft: #2857b3;
-	--asam-semantic-brand-soft-hover: #2e5db9;
-	--asam-semantic-brand-soft-active: #3864b7;
-	--asam-semantic-brand-solid-hover: #e8f0ff;
-	--asam-semantic-brand-solid-active: #d6e4ff;
-	--asam-semantic-brand-disabled-background: #254b90;
-	--asam-semantic-brand-disabled-foreground: #829dcf;
-	--asam-semantic-brand-disabled-border: #5475b0;
 	--asam-color-primary: #2d6bd6;
-	--asam-color-primary-hover: #255bb7;
-	--asam-color-primary-active: #1d4c9b;
-	--asam-color-success: #13b64f;
-	--asam-color-success-hover: #11a447;
-	--asam-color-success-active: #0f8e3e;
-	--asam-color-warning: #ff6a00;
-	--asam-color-warning-hover: #e65f00;
-	--asam-color-warning-active: #cc5500;
-	--asam-color-danger: #ff4d4f;
-	--asam-color-danger-hover: #e64547;
-	--asam-color-danger-active: #cc3e3f;
-	--asam-color-info: #006d82;
-	--asam-color-info-hover: #00576b;
-	--asam-color-info-active: #004555;
-	--asam-color-primary-gradient-start: #73b7ff;
-	--asam-color-success-strong: #24BF33;
-	--asam-color-surface: #ffffff;
-	--asam-color-surface-page: #FFFFFF;
-	--asam-color-surface-muted: #f2f4f7;
-	--asam-color-surface-soft: #ECF1FC;
-	--asam-color-surface-info: #E6F4FF;
-	--asam-color-surface-success: #EAF8EF;
-	--asam-color-text-primary: #263445;
-	--asam-color-text-regular: #434343;
-	--asam-color-text-secondary: #8C95B6;
-	--asam-color-on-solid: #ffffff;
-	--asam-color-border: #ECF1FC;
-	--asam-color-divider: #ECF1FC;
-	--asam-color-shadow: #00000026;
-	--asam-color-transparent: transparent;
-	--asam-color-dialog-title: #0958D9;
-	--asam-color-palette-error-red-01: #F44547;
-	--asam-color-palette-error-red-02: #F96D6F;
-	--asam-color-palette-warning-orange-01: #FF6A00;
-	--asam-color-palette-warning-orange-02: #FF8400;
-	--asam-color-palette-auxiliary-brown: #E4C39F;
+	--asam-color-primary-hover: #3590ff;
+	--asam-color-primary-active: #1677ff;
+	--asam-color-surface: #fff;
+	--asam-color-surface-muted: #f3f5f9;
+	--asam-color-surface-soft: #ecf1fc;
+	--asam-color-text-primary: #3d3d3d;
 	--asam-radius-control: 4px;
 	--asam-radius-action: 6px;
 	--asam-radius-card: 10px;
 	--asam-radius-dialog: 8px;
-	--asam-radius-pill: 20px;
-}
-:root[data-theme='dark'] {
-	--asam-semantic-neutral-foreground: #cad3e0;
-	--asam-semantic-neutral-foreground-hover: #dce3ed;
-	--asam-semantic-neutral-foreground-active: #f1f5fa;
-	--asam-semantic-neutral-soft: #273345;
-	--asam-semantic-neutral-soft-hover: #344259;
-	--asam-semantic-neutral-soft-active: #43536c;
-	--asam-semantic-neutral-outline: #8a9ab2;
-	--asam-semantic-neutral-solid: #cad3e0;
-	--asam-semantic-neutral-solid-hover: #dce3ed;
-	--asam-semantic-neutral-solid-active: #f1f5fa;
-	--asam-semantic-neutral-on-solid: #101828;
-	--asam-semantic-primary-foreground: #99bcff;
-	--asam-semantic-primary-foreground-hover: #b7ceff;
-	--asam-semantic-primary-foreground-active: #d3e0ff;
-	--asam-semantic-primary-soft: #1e3255;
-	--asam-semantic-primary-soft-hover: #29436f;
-	--asam-semantic-primary-soft-active: #355585;
-	--asam-semantic-primary-outline: #99bcff;
-	--asam-semantic-primary-solid: #99bcff;
-	--asam-semantic-primary-solid-hover: #b7ceff;
-	--asam-semantic-primary-solid-active: #d3e0ff;
-	--asam-semantic-primary-on-solid: #101828;
-	--asam-semantic-secondary-foreground: #9fceff;
-	--asam-semantic-secondary-foreground-hover: #b5d9ff;
-	--asam-semantic-secondary-foreground-active: #cce5ff;
-	--asam-semantic-secondary-soft: #263e59;
-	--asam-semantic-secondary-soft-hover: #2e4b6a;
-	--asam-semantic-secondary-soft-active: #365879;
-	--asam-semantic-secondary-outline: #9fceff;
-	--asam-semantic-secondary-solid: #9fceff;
-	--asam-semantic-secondary-solid-hover: #b5d9ff;
-	--asam-semantic-secondary-solid-active: #cce5ff;
-	--asam-semantic-secondary-on-solid: #101828;
-	--asam-semantic-success-foreground: #79dca2;
-	--asam-semantic-success-foreground-hover: #a0e8bc;
-	--asam-semantic-success-foreground-active: #c0f1d2;
-	--asam-semantic-success-soft: #193b2d;
-	--asam-semantic-success-soft-hover: #24513d;
-	--asam-semantic-success-soft-active: #31654d;
-	--asam-semantic-success-outline: #79dca2;
-	--asam-semantic-success-solid: #13b64f;
-	--asam-semantic-success-solid-hover: #11a447;
-	--asam-semantic-success-solid-active: #0f8e3e;
-	--asam-semantic-success-on-solid: #ffffff;
-	--asam-semantic-warning-foreground: #f4c477;
-	--asam-semantic-warning-foreground-hover: #f9d69e;
-	--asam-semantic-warning-foreground-active: #ffe6bd;
-	--asam-semantic-warning-soft: #40321f;
-	--asam-semantic-warning-soft-hover: #57432a;
-	--asam-semantic-warning-soft-active: #6b5437;
-	--asam-semantic-warning-outline: #f4c477;
-	--asam-semantic-warning-solid: #ff6a00;
-	--asam-semantic-warning-solid-hover: #e65f00;
-	--asam-semantic-warning-solid-active: #cc5500;
-	--asam-semantic-warning-on-solid: #ffffff;
-	--asam-semantic-danger-foreground: #ffa2ad;
-	--asam-semantic-danger-foreground-hover: #ffbdc5;
-	--asam-semantic-danger-foreground-active: #ffd7dc;
-	--asam-semantic-danger-soft: #45252e;
-	--asam-semantic-danger-soft-hover: #60313e;
-	--asam-semantic-danger-soft-active: #783e4d;
-	--asam-semantic-danger-outline: #ffa2ad;
-	--asam-semantic-danger-solid: #ff4d4f;
-	--asam-semantic-danger-solid-hover: #e64547;
-	--asam-semantic-danger-solid-active: #cc3e3f;
-	--asam-semantic-danger-on-solid: #ffffff;
-	--asam-semantic-info-foreground: #79d1e4;
-	--asam-semantic-info-foreground-hover: #a1e1ee;
-	--asam-semantic-info-foreground-active: #c5eef5;
-	--asam-semantic-info-soft: #173841;
-	--asam-semantic-info-soft-hover: #21505c;
-	--asam-semantic-info-soft-active: #2d6471;
-	--asam-semantic-info-outline: #79d1e4;
-	--asam-semantic-info-solid: #79d1e4;
-	--asam-semantic-info-solid-hover: #a1e1ee;
-	--asam-semantic-info-solid-active: #c5eef5;
-	--asam-semantic-info-on-solid: #101828;
-	--asam-semantic-surface: #161d29;
-	--asam-semantic-muted: #222c3b;
-	--asam-semantic-text: #e6eaf0;
-	--asam-semantic-disabled-foreground: #7f8b9e;
-	--asam-semantic-disabled-background: #293344;
-	--asam-semantic-disabled-border: #455269;
-	--asam-semantic-focus: #a8c6ff;
-	--asam-semantic-gradient-angle: 90deg;
-	--asam-semantic-gradient-start: #73b7ff;
-	--asam-semantic-gradient-end: #3590ff;
-	--asam-semantic-gradient-on: #ffffff;
-	--asam-semantic-gradient-tag-on: #101828;
-	--asam-semantic-gradient-ring: rgb(255 255 255 / 45%);
-	--asam-semantic-brand-surface: #1746a2;
-	--asam-semantic-brand-foreground: #ffffff;
-	--asam-semantic-brand-soft: #2857b3;
-	--asam-semantic-brand-soft-hover: #2e5db9;
-	--asam-semantic-brand-soft-active: #3864b7;
-	--asam-semantic-brand-solid-hover: #e8f0ff;
-	--asam-semantic-brand-solid-active: #d6e4ff;
-	--asam-semantic-brand-disabled-background: #254b90;
-	--asam-semantic-brand-disabled-foreground: #829dcf;
-	--asam-semantic-brand-disabled-border: #5475b0;
-	--asam-color-primary: #99bcff;
-	--asam-color-primary-hover: #b7ceff;
-	--asam-color-primary-active: #d3e0ff;
-	--asam-color-success: #13b64f;
-	--asam-color-success-hover: #11a447;
-	--asam-color-success-active: #0f8e3e;
-	--asam-color-warning: #ff6a00;
-	--asam-color-warning-hover: #e65f00;
-	--asam-color-warning-active: #cc5500;
-	--asam-color-danger: #ff4d4f;
-	--asam-color-danger-hover: #e64547;
-	--asam-color-danger-active: #cc3e3f;
-	--asam-color-info: #79d1e4;
-	--asam-color-info-hover: #a1e1ee;
-	--asam-color-info-active: #c5eef5;
-	--asam-color-primary-gradient-start: #73b7ff;
-	--asam-color-success-strong: #24BF33;
-	--asam-color-surface: #161d29;
-	--asam-color-surface-page: #101828;
-	--asam-color-surface-muted: #222c3b;
-	--asam-color-surface-soft: #273345;
-	--asam-color-surface-info: #173841;
-	--asam-color-surface-success: #193b2d;
-	--asam-color-text-primary: #e6eaf0;
-	--asam-color-text-regular: #cad3e0;
-	--asam-color-text-secondary: #8a9ab2;
-	--asam-color-on-solid: #ffffff;
-	--asam-color-border: #43536c;
-	--asam-color-divider: #344259;
-	--asam-color-shadow: #00000066;
-	--asam-color-transparent: transparent;
-	--asam-color-dialog-title: #99bcff;
-	--asam-color-palette-error-red-01: #F44547;
-	--asam-color-palette-error-red-02: #F96D6F;
-	--asam-color-palette-warning-orange-01: #FF6A00;
-	--asam-color-palette-warning-orange-02: #FF8400;
-	--asam-color-palette-auxiliary-brown: #E4C39F;
-	--asam-radius-control: 4px;
-	--asam-radius-action: 6px;
-	--asam-radius-card: 10px;
-	--asam-radius-dialog: 8px;
-	--asam-radius-pill: 20px;
-}
-:root {
 	--asam-font: 'Source Han Sans CN', 'Microsoft YaHei', 'PingFang SC', sans-serif;
 	--page: var(--asam-color-surface);
 	--surface: var(--asam-color-surface-muted);
 	--soft: var(--asam-color-surface-soft);
-	--ink: var(--asam-color-text-primary);
-	--text: var(--asam-color-text-regular);
-	--muted: var(--asam-semantic-neutral-foreground);
-	--border: var(--asam-color-divider);
+	--ink: #18243c;
+	--text: var(--asam-color-text-primary);
+	--muted: #606c80;
+	--border: #e4e9f1;
 	--accent: var(--asam-color-primary);
-	--accent-text: var(--asam-semantic-primary-foreground);
-	--header: color-mix(in srgb, var(--asam-color-surface) 96%, transparent);
+	--accent-text: color-mix(in srgb, var(--asam-color-primary) 90%, #000);
+	--header: rgb(255 255 255 / 95%);
 	--shadow: 0 14px 48px rgb(34 64 107 / 12%);
 	--mono: 'Cascadia Code', 'SFMono-Regular', Consolas, monospace;
 	/* Layer order: sticky content 1, header 5, feedback 10, native dialogs top layer. */
 	color-scheme: light;
 }
 :root[data-theme='dark'] {
-	--page: var(--asam-color-surface);
-	--surface: var(--asam-color-surface-muted);
-	--soft: var(--asam-color-surface-soft);
-	--ink: var(--asam-color-text-primary);
-	--text: var(--asam-color-text-regular);
-	--muted: var(--asam-semantic-neutral-foreground);
-	--border: var(--asam-color-divider);
-	--accent-text: var(--asam-semantic-primary-foreground);
-	--header: color-mix(in srgb, var(--asam-color-surface) 96%, transparent);
+	--page: #101723;
+	--surface: #172132;
+	--soft: #1c2b43;
+	--ink: #f0f4fa;
+	--text: #d1dae8;
+	--muted: #a6b3c7;
+	--border: #2d3b50;
+	--accent-text: #8fc2ff;
+	--header: rgb(16 23 35 / 96%);
 	--shadow: 0 14px 48px rgb(0 0 0 / 24%);
 	color-scheme: dark;
 }
@@ -357,15 +80,7 @@ button:disabled {
 	color: var(--ink);
 	background: #b5d5ff;
 }
-:focus-visible:not(
-	:where(
-		.cd-demo-preview *,
-		.el-overlay *,
-		.el-popper *,
-		#preview-canvas *,
-		.asam-application-provider *
-	)
-) {
+:focus-visible {
 	outline: 3px solid var(--accent-text);
 	outline-offset: 4px;
 }
@@ -380,26 +95,15 @@ img {
 	max-width: 100%;
 	display: block;
 }
-:is(h1, h2, h3, p):not(
-	:where(
-		.cd-demo-preview *,
-		.el-overlay *,
-		.el-popper *,
-		#preview-canvas *,
-		.asam-application-provider *
-	)
-) {
+h1,
+h2,
+h3,
+p {
 	margin: 0;
 }
-:is(h1, h2, h3):not(
-	:where(
-		.cd-demo-preview *,
-		.el-overlay *,
-		.el-popper *,
-		#preview-canvas *,
-		.asam-application-provider *
-	)
-) {
+h1,
+h2,
+h3 {
 	color: var(--ink);
 	line-height: 1.35;
 }
@@ -1016,16 +720,7 @@ code {
 	font-size: 0.88em;
 	overflow-wrap: anywhere;
 }
-p
-	> code:not(
-		:where(
-			.cd-demo-preview *,
-			.el-overlay *,
-			.el-popper *,
-			#preview-canvas *,
-			.asam-application-provider *
-		)
-	) {
+p > code {
 	color: var(--accent-text);
 	background: var(--surface);
 	padding: 2px 4px;
@@ -1125,15 +820,7 @@ p
 .copy-button:hover {
 	color: var(--accent-text);
 }
-pre:not(
-	:where(
-		.cd-demo-preview *,
-		.el-overlay *,
-		.el-popper *,
-		#preview-canvas *,
-		.asam-application-provider *
-	)
-) {
+pre {
 	margin: 0;
 	padding: 22px;
 	overflow: auto;
@@ -1141,16 +828,7 @@ pre:not(
 	color: var(--text);
 	tab-size: 2;
 }
-pre
-	code:not(
-		:where(
-			.cd-demo-preview *,
-			.el-overlay *,
-			.el-popper *,
-			#preview-canvas *,
-			.asam-application-provider *
-		)
-	) {
+pre code {
 	font-size: inherit;
 	white-space: pre;
 	overflow-wrap: normal;
@@ -2242,8 +1920,3 @@ dialog::backdrop {
 		font-size: 25px;
 	}
 }
-
-.primary:hover { background: var(--asam-color-primary-hover); border-color: var(--asam-color-primary-hover); }
-.primary:active { background: var(--asam-color-primary-active); border-color: var(--asam-color-primary-active); }
-.primary, .feature-blue, .feature-blue :is(h3, p, .feature-code), .token-big,
-.brand-swatch, .brand-swatch .copy-button:hover { color: var(--asam-semantic-primary-on-solid); }

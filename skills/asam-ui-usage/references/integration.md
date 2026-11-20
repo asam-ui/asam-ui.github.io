@@ -8,15 +8,9 @@ Vue 2、非 Vue 工程或不满足交付包 peerDependencies 时，不强升整�
 
 ## 固定来源
 
-对本次需要补装或按要求升级的包查询 npm 官方 `latest`。例如需要平台 Provider 桥接时，先从 Skill 目录运行：
+读取 tarball 内 `package/package.json` 或已安装 `node_modules/@asam-ui/ui/package.json` 的 `version`、`exports`、`peerDependencies`。发布前使用交付者提供的本地 tarball 与 SHA256；可由组件库固定提交执行 `pnpm --filter @asam-ui/ui build` 和 `pnpm --dir packages/ui pack --pack-destination <产物目录>` 生成，生产者记录提交和产物哈希。消费者无需 checkout 组件库。
 
-```sh
-node scripts/check-latest.mjs @asam-ui/platform-provider
-```
-
-按结果核对 `peerDependencies`、归档 `integrity` 和实际归档中的 `package.json`、运行入口及类型。目标工程满足当期 peer 后，在目标应用包运行 `pnpm add --save-exact --registry=https://registry.npmjs.org/ <输出中的 specifier>`。多个所需包可以一起查询，再按各自查得的版本安装。目录的固定版本用于校验已有安装和对照契约。查到的新版本若尚未入目录，以其归档为准。开发工具确有需要时也查询其独立发布版本，例如 `@asam-ui/mcp`。它无需进入业务应用的运行时依赖。
-
-发布前使用交付者提供的本地 tarball 与 SHA256；可由组件库固定提交执行 `pnpm --filter @asam-ui/ui build` 和 `pnpm --dir packages/ui pack --pack-destination <产物目录>` 生成，生产者记录提交和产物哈希。消费者无需 checkout 组件库。当前 Skill 可随源码提交或本地分发包安装。
+当前 Skill 可随源码提交或本地分发包安装；远端分支未推送、npm 未首发时不要提供假装可用的 `npx`、GitHub 安装命令或 registry 版本。正式发布后仍固定版本，先核实渠道存在。
 
 按实际包管理器在目标 package 中安装固定 tarball（路径含空格时按当前 shell 引号规则处理）：
 
@@ -26,9 +20,9 @@ pnpm add --save-exact /absolute/path/asam-ui-ui-0.1.0-alpha.1.tgz
 # 或 yarn add --exact /absolute/path/asam-ui-ui-0.1.0-alpha.1.tgz
 ```
 
-不同时执行三条命令。Vue 与 Element Plus 依据 peer 范围保留已有兼容版本，缺失时固定到已验证兼容版本；自动导入才添加兼容的 `unplugin-vue-components`。芋道请求或字典桥接需要时才接入 `@asam-ui/ui-yudao`。平台应用需要桥接现有请求或字典缓存时选 `@asam-ui/platform-provider`。先核宿主已有的 provider 与依赖。
+不同时执行三条命令。Vue 与 Element Plus 依据 peer 范围保留已有兼容版本，缺失时固定到已验证兼容版本；自动导入才添加兼容的 `unplugin-vue-components`。不默认安装 adapter、router、store 或整个 Element Plus 插件。芋道请求/字典确有需要时才安装同一交付批次的 `@asam-ui/ui-yudao`。
 
-需要图标时独立安装 `@asam-ui/icons-vue`，核对其 exports、声明和归档摘要。安装后运行本 Skill 的 `scripts/inspect-contract.mjs <实际包目录>` 检查交付文件。`--runtime` 会执行已信任包的 ESM。新契约迁移见 [迁移指南](migration.md)。
+需要图标时安装同批 `@asam-ui/icons-vue` 固定 tarball，核对其独立 exports、声明和 SHA256；它不由核心 UI 安装或注册自动提供。安装后运行本 Skill 的 `scripts/inspect-contract.mjs <实际包目录>` 检查交付文件；`--runtime` 会执行已信任包的 ESM，用于核对真实根出口和三导入模式。新契约迁移见 [迁移指南](migration.md)。
 
 安装后核对实际解析版本与 lockfile 差异。一个 package 不在 dependencies/devDependencies 重复添加同一依赖；已有版本不兼容时报告具体影响，不用 `--force`、`--legacy-peer-deps` 绕过。包管理器可能更新锁文件，因此先保留基线，不能把所有锁文件变化解释为本 Skill 所需。
 

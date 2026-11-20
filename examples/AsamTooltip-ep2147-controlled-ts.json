@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTooltip/ep2147-controlled/ts/Demo.vue",
-			"sha256": "d36ef44172e93f6aed53e8c94b4e5fcd184b9f46a848b04c57a360821b39184c",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d.txt\n-->\n<template>\n\t<AsamTooltip :visible=\"visible\">\n\t\t<template #content>\n\t\t\t<span>内容</span>\n\t\t</template>\n\t\t<span @mouseenter=\"visible = true\" @mouseleave=\"visible = false\">\n\t\t\t<AsamButton type=\"default\">悬停查看</AsamButton>\n\t\t</span>\n\t</AsamTooltip>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst visible = ref(false);\n</script>\n",
-			"originalSourceSha256": "dbe4ae8f2b86db1117a526dbc83e37b9b8b6129000a45ba9694b3cf29186bec7",
+			"sha256": "586f005014e7e701ce0a64a9f553d1d55f0870e5e6757aa5b78e1bb2ee912215",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d.txt\n-->\n<template>\n\t<AsamTooltip :visible=\"visible\">\n\t\t<template #content>\n\t\t\t<span>内容</span>\n\t\t</template>\n\t\t<span @mouseenter=\"visible = true\" @mouseleave=\"visible = false\"\n\t\t\t><AsamButton type=\"default\"> 悬停查看 </AsamButton></span\n\t\t>\n\t</AsamTooltip>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst visible = ref(false);\n</script>\n",
+			"originalSourceSha256": "b51aeecd25fb68c9e98bedf12f31aebf7bc6fddcc442275b4d7fe18011e08175",
 			"notice": {
 				"id": "950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d",
 				"url": "/licenses/source-notices/950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d.txt",

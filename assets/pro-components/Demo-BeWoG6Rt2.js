@@ -1,1 +1,0 @@
-import{Mn as e,Nn as t,On as n,Yn as r,yr as i}from"./i18n-CJTJI6vg-3Uas6tNN.js";import{l as a}from"./components-ST0i0Wqf-D8-NR95E.js";var o={class:`pro-example-stack`},s=t({__name:`Demo`,setup(t){return(t,s)=>(r(),n(`div`,o,[e(i(a),{layout:`list`,count:2,label:`列表正在加载`}),e(i(a),{layout:`form`,count:2,label:`表单正在加载`})]))}});export{s as default};

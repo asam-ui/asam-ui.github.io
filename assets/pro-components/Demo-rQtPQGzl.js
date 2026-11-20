@@ -1,1 +1,0 @@
-import{Mn as e,On as t,Yn as n,ar as r,yr as i}from"./i18n-CJTJI6vg-3Uas6tNN.js";import{G as a,d as o}from"./components-ST0i0Wqf-D8-NR95E.js";var s={class:`pro-example-stack`},c={__name:`Demo`,setup(c){return(c,l)=>(n(),t(`div`,s,[e(i(o),{columns:2,density:`compact`},{default:r(()=>[e(i(a),{title:`项目一`}),e(i(a),{title:`项目二`})]),_:1})]))}};export{c as default};

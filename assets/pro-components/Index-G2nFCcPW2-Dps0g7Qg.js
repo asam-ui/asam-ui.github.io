@@ -1,1 +1,0 @@
-import{et as e}from"./i18n-CJTJI6vg-3Uas6tNN.js";var t=Object.assign({},e,{install(e){e.component(`AsamSpace`,t)}});export{t};

@@ -1,1 +1,0 @@
-import{Mn as e,Nn as t,On as n,Yn as r,yr as i}from"./i18n-CJTJI6vg-3Uas6tNN.js";import{B as a}from"./components-ST0i0Wqf-D8-NR95E.js";var o={class:`pro-example-stack`},s=t({__name:`Demo`,setup(t){return(t,s)=>(r(),n(`div`,o,[e(i(a),{value:Date.now()-6e4,format:e=>Math.round(Math.abs(e)/6e4)+` 分钟前更新`},null,8,[`value`,`format`])]))}});export{s as default};

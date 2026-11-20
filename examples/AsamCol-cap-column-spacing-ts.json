@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamCol/cap-column-spacing/ts/Demo.vue",
-			"sha256": "70c2b217af45348dfaae494a5c8414403de724f7713c6535735677ab35170522",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-91ee12432351934278bfd1fde0237e3f6009620d88c114785bbeb5bdafddd9f0.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/91ee12432351934278bfd1fde0237e3f6009620d88c114785bbeb5bdafddd9f0.txt\n-->\n<template>\n\t<AsamRow :gutter=\"20\">\n\t\t<AsamCol :span=\"6\"><div class=\"column-block\">6 列</div></AsamCol>\n\t\t<AsamCol :span=\"6\"><div class=\"column-block\">6 列</div></AsamCol>\n\t\t<AsamCol :span=\"6\"><div class=\"column-block\">6 列</div></AsamCol>\n\t\t<AsamCol :span=\"6\"><div class=\"column-block\">6 列</div></AsamCol>\n\t</AsamRow>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamColCapColumnSpacingDemo' });\nimport { AsamRow, AsamCol } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n.column-block {\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n\tbox-sizing: border-box;\n\tborder-radius: 4px;\n\tmin-height: 36px;\n\tborder: 1px solid var(--asam-color-primary);\n\tbackground: color-mix(in srgb, var(--asam-color-primary) 18%, var(--asam-color-surface));\n\tcolor: var(--asam-color-text-primary);\n}\n</style>\n",
-			"originalSourceSha256": "11793265b11cfb8e629fafd063f895adebc19b1815157ad10a36f6d9abd05758",
+			"sha256": "18137185055e6e999a3486b0b29b33bddde1a66a51788ff3c9f29604db011494",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-91ee12432351934278bfd1fde0237e3f6009620d88c114785bbeb5bdafddd9f0.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/91ee12432351934278bfd1fde0237e3f6009620d88c114785bbeb5bdafddd9f0.txt\n-->\n<template>\n\t<AsamRow :gutter=\"20\">\n\t\t<AsamCol :span=\"6\"><div class=\"grid-content ep-bg-purple\" /></AsamCol>\n\t\t<AsamCol :span=\"6\"><div class=\"grid-content ep-bg-purple\" /></AsamCol>\n\t\t<AsamCol :span=\"6\"><div class=\"grid-content ep-bg-purple\" /></AsamCol>\n\t\t<AsamCol :span=\"6\"><div class=\"grid-content ep-bg-purple\" /></AsamCol>\n\t</AsamRow>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamColCapColumnSpacingDemo' });\nimport { AsamRow, AsamCol } from '@asam-ui/ui';\n</script>\n\n<style>\n.el-row {\n\tmargin-bottom: 20px;\n}\n\n.el-row:last-child {\n\tmargin-bottom: 0;\n}\n\n.el-col {\n\tborder-radius: 4px;\n}\n\n.grid-content {\n\tborder-radius: 4px;\n\tmin-height: 36px;\n}\n</style>\n",
+			"originalSourceSha256": "d249636d2dadf8a4bf2387f1e4bb2f76c9c1b296b63059e79dca9161761c9c34",
 			"notice": {
 				"id": "91ee12432351934278bfd1fde0237e3f6009620d88c114785bbeb5bdafddd9f0",
 				"url": "/licenses/source-notices/91ee12432351934278bfd1fde0237e3f6009620d88c114785bbeb5bdafddd9f0.txt",

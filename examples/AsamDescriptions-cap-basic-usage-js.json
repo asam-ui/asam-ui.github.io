@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDescriptions/cap-basic-usage/js/Demo.vue",
-			"sha256": "c503b3f12f676ca44bb83a1fd90702ea8a713fc8990eba0fbc052fe6cda46514",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-1032a4d4fde5f19573539f8e65d3a033368ce18b4e036819ae3f1abfd05943ff.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/1032a4d4fde5f19573539f8e65d3a033368ce18b4e036819ae3f1abfd05943ff.txt\n-->\n<template>\n\t<AsamDescriptions title=\"用户信息\">\n\t\t<AsamDescriptionsItem label=\"用户名\">kooriookami</AsamDescriptionsItem>\n\t\t<AsamDescriptionsItem label=\"电话\">18100000000</AsamDescriptionsItem>\n\t\t<AsamDescriptionsItem label=\"地点\">苏州</AsamDescriptionsItem>\n\t\t<AsamDescriptionsItem label=\"备注\">\n\t\t\t<AsamTag size=\"small\">学校</AsamTag>\n\t\t</AsamDescriptionsItem>\n\t\t<AsamDescriptionsItem label=\"地址\">江苏省苏州市吴中区吴中大道 1188 号</AsamDescriptionsItem>\n\t</AsamDescriptions>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamDescriptionsCapBasicUsageDemo' });\nimport { AsamDescriptions, AsamDescriptionsItem, AsamTag } from '@asam-ui/ui';\n</script>\n",
-			"originalSourceSha256": "b5efd26b6c3b6773453dca7de32eca2938bb225facbd4f3b162b3182a5436607",
+			"sha256": "f888fa00dcaa79e37b60536162833df97c5161a484d009570a272d6be30d87e0",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-1032a4d4fde5f19573539f8e65d3a033368ce18b4e036819ae3f1abfd05943ff.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/1032a4d4fde5f19573539f8e65d3a033368ce18b4e036819ae3f1abfd05943ff.txt\n-->\n<template>\n\t<AsamDescriptions title=\"用户信息\">\n\t\t<AsamDescriptionsItem label=\"用户名\">kooriookami</AsamDescriptionsItem>\n\t\t<AsamDescriptionsItem label=\"电话\">18100000000</AsamDescriptionsItem>\n\t\t<AsamDescriptionsItem label=\"地点\">苏州</AsamDescriptionsItem>\n\t\t<AsamDescriptionsItem label=\"备注\">\n\t\t\t<AsamTag size=\"small\">学校</AsamTag>\n\t\t</AsamDescriptionsItem>\n\t\t<AsamDescriptionsItem label=\"地址\">\n\t\t\t江苏省苏州市吴中区吴中大道 1188 号\n\t\t</AsamDescriptionsItem>\n\t</AsamDescriptions>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamDescriptionsCapBasicUsageDemo' });\nimport { AsamDescriptions, AsamDescriptionsItem, AsamTag } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "252120cbb6da12af66281364d6729002d028ff792f15d7c87f5aa46594368dae",
 			"notice": {
 				"id": "1032a4d4fde5f19573539f8e65d3a033368ce18b4e036819ae3f1abfd05943ff",
 				"url": "/licenses/source-notices/1032a4d4fde5f19573539f8e65d3a033368ce18b4e036819ae3f1abfd05943ff.txt",

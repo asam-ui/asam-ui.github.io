@@ -1,0 +1,1 @@
+import{C as e,Ct as t,H as n,_ as r,b as i,w as a}from"./vue.esm-bundler-5NdF0u5k.js";import{t as o}from"./Index-CM-nT6xM-Bbuszq0R.js";var s=a({name:`AsamDividerCapBasicUsageDemo`,__name:`Demo`,setup(a){return(a,s)=>(n(),i(`div`,null,[s[0]||=r(`span`,null,` 清晨坐在窗前，世界如过客般短暂停留，点头后离去。 `,-1),e(t(o)),s[1]||=r(`span`,null,` 细小的思绪如树叶沙沙作响，在心中低语着喜悦。 `,-1)]))}});export{s as default};

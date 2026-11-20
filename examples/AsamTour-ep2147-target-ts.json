@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTour/ep2147-target/ts/Demo.vue",
-			"sha256": "2d4d893c97b7c3771525c823d7563466e8d1e7dbd4d03d4742e6b96436f2d0ca",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-d05023b2fb4ee45b3059ee6e66e9cba365f243ca896806b413c662fec5c3bc3d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/d05023b2fb4ee45b3059ee6e66e9cba365f243ca896806b413c662fec5c3bc3d.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" @click=\"open = true\">开始导览</AsamButton>\n\n\t<AsamDivider />\n\n\t<AsamSpace>\n\t\t<span id=\"btn1\"><AsamButton type=\"default\">上传</AsamButton></span>\n\t\t<span id=\"btn2\"><AsamButton type=\"default\">保存</AsamButton></span>\n\t\t<AsamButton type=\"default\" ref=\"btnRef\" :icon=\"MoreFilled\" />\n\t</AsamSpace>\n\n\t<AsamTour v-model=\"open\">\n\t\t<AsamTourStep target=\"#btn1\" title=\"上传文件\" description=\"将文件放在这里。\" />\n\t\t<AsamTourStep :target=\"el\" title=\"保存\" description=\"保存修改\" />\n\t\t<AsamTourStep :target=\"btnRef?.$el\" title=\"其他操作\" description=\"点击查看其他内容\" />\n\t</AsamTour>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDivider, AsamSpace, AsamTour, AsamTourStep } from '@asam-ui/ui';\ntype ButtonInstance = InstanceType<typeof AsamButton>;\nimport { ref } from 'vue';\nimport { MoreFilled } from '@asam-ui/icons-vue';\n\nconst el = () => document.querySelector<HTMLElement>('#btn2');\nconst btnRef = ref<ButtonInstance>();\n\nconst open = ref(false);\n</script>\n",
-			"originalSourceSha256": "6b84a61ec46aadf640761a7f51216502b1d6271d2d0b7ac8449eeb0597da235f",
+			"sha256": "33e2af2af7c9d41d8fb7d5af8fad37689da28f9b25ed5218d1ac61888f43b7fa",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-d05023b2fb4ee45b3059ee6e66e9cba365f243ca896806b413c662fec5c3bc3d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/d05023b2fb4ee45b3059ee6e66e9cba365f243ca896806b413c662fec5c3bc3d.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"open = true\">开始导览</AsamButton>\n\n\t<AsamDivider />\n\n\t<AsamSpace>\n\t\t<span id=\"btn1\"><AsamButton type=\"default\">上传</AsamButton></span>\n\t\t<span id=\"btn2\"><AsamButton type=\"default\">保存</AsamButton></span>\n\t\t<AsamButton type=\"default\" ref=\"btnRef\" :icon=\"MoreFilled\" />\n\t</AsamSpace>\n\n\t<AsamTour v-model=\"open\">\n\t\t<AsamTourStep target=\"#btn1\" title=\"上传文件\" description=\"将文件放在这里。\" />\n\t\t<AsamTourStep :target=\"el\" title=\"保存\" description=\"保存修改\" />\n\t\t<AsamTourStep :target=\"btnRef?.$el\" title=\"其他操作\" description=\"点击查看其他内容\" />\n\t</AsamTour>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDivider, AsamSpace, AsamTour, AsamTourStep } from '@asam-ui/ui';\ntype ButtonInstance = InstanceType<typeof AsamButton>;\nimport { ref } from 'vue';\nimport { MoreFilled } from '@asam-ui/icons-vue';\n\nconst el = () => document.querySelector<HTMLElement>('#btn2');\nconst btnRef = ref<ButtonInstance>();\n\nconst open = ref(false);\n</script>\n",
+			"originalSourceSha256": "ff709d27cc3947c21566336597241666505deaf2e697b705a63fc3eecc907ce2",
 			"notice": {
 				"id": "d05023b2fb4ee45b3059ee6e66e9cba365f243ca896806b413c662fec5c3bc3d",
 				"url": "/licenses/source-notices/d05023b2fb4ee45b3059ee6e66e9cba365f243ca896806b413c662fec5c3bc3d.txt",

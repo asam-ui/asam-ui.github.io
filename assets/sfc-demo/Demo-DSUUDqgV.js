@@ -1,1 +1,0 @@
-import{Ct as e,H as t,v as n,w as r}from"./vue.esm-bundler-5NdF0u5k.js";import{t as i}from"./Index-DFtHKiSO-DNQaJB1d.js";var a=r({name:`AsamEmptyCapImageSizeDemo`,__name:`Demo`,setup(r){return(r,a)=>(t(),n(e(i),{"image-size":200}))}});export{a as default};

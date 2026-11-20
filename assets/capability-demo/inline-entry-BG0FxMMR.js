@@ -1,1 +1,0 @@
-import{Ct as e,Rt as t,W as n,x as r}from"./vue.esm-bundler-vg3bltyC.js";import{b as i}from"./index.esm-BEAscIcX.js";var a={"aria-live":`polite`},o={__name:`MinimalExample`,setup(o){let{width:s,height:c}=i();return(i,o)=>(n(),r(`output`,a,t(e(s))+` × `+t(e(c)),1))}};export{o as default};

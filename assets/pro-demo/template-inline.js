@@ -1,2 +1,0 @@
-await Promise.all(["/assets/pro-demo/style-Djia4Qvi.css","/assets/pro-demo/style-CfWH7XXa.css","/assets/pro-demo/dist-usAqAh6T.css","/assets/pro-demo/css-vars-YX1pxd4f.css"].map(href => new Promise((resolve, reject) => { const link = document.createElement('link'); link.rel = 'stylesheet'; link.href = href; link.onload = resolve; link.onerror = reject; document.head.append(link); })));
-await import('./template-inline-EzpXJn2h.js');

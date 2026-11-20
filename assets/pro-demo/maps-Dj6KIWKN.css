@@ -1,1 +1,0 @@
-.demo-controls{color:#263344;background:#eef1f5;border-bottom:1px solid #ced5df;flex-wrap:wrap;align-items:center;gap:16px;padding:14px 24px;font:12px/1.8 system-ui,sans-serif;display:flex}.demo-controls label{align-items:center;gap:5px;display:flex}.demo-controls button:not([class*=el-]),.demo-controls select:not([class*=el-]){min-height:30px}

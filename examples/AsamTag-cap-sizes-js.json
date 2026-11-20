@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTag/cap-sizes/js/Demo.vue",
-			"sha256": "e7b544f5023cf61eb4bfb42c0274f1aa742d4fd5c2aa5a3ec153de088f35120f",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4.txt\n-->\n<template>\n\t<div class=\"flex gap-2\">\n\t\t<AsamTag size=\"large\">large</AsamTag>\n\t\t<AsamTag size=\"big\">big</AsamTag>\n\t\t<AsamTag>default</AsamTag>\n\t\t<AsamTag size=\"small\">small</AsamTag>\n\t\t<AsamTag size=\"mini\">mini</AsamTag>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTagCapSizesDemo' });\nimport { AsamTag } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n\tflex-wrap: wrap;\n\talign-items: center;\n}\n\n.gap-2 {\n\tgap: 0.5rem;\n}\n</style>\n",
-			"originalSourceSha256": "e657b842003760fd272c57ee79fe802c72521596e62acb63d230dcbff1a5ecdc",
+			"sha256": "a9e05b5bbff525f471df3f2b4cb78d9c4d58538fce4160b33a082a2c3db530e0",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4.txt\n-->\n<template>\n\t<div class=\"flex gap-2\">\n\t\t<AsamTag size=\"large\">大尺寸</AsamTag>\n\t\t<AsamTag>默认</AsamTag>\n\t\t<AsamTag size=\"small\">小尺寸</AsamTag>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamTagCapSizesDemo' });\nimport { AsamTag } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.gap-2 {\n\tgap: 0.5rem;\n}\n</style>\n",
+			"originalSourceSha256": "d273a9724c0502ad6c36874a05d3388f7a54513bdef2a35a44464274d88f18c8",
 			"notice": {
 				"id": "561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4",
 				"url": "/licenses/source-notices/561a3e904ffc44172f696b6bc653f241ad5a95a23dc6bb8727d45a690ca286c4.txt",

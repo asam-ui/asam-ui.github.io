@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDrawer/ep2147-customization-header/js/Demo.vue",
-			"sha256": "2c6eb1f284f17b805bc5dabdad82e127b396fe2a7fd1cfd94e02a5ce09f883da",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" @click=\"visible = true\">打开自定义头部的抽屉</AsamButton>\n\t<AsamDrawer v-model=\"visible\" :show-close=\"false\">\n\t\t<template #header=\"{ close, titleId, titleClass }\">\n\t\t\t<h4 :id=\"titleId\" :class=\"titleClass\">自定义头部示例</h4>\n\t\t\t<AsamButton type=\"default\" @click=\"close\">\n\t\t\t\t<AsamIcon class=\"el-icon--left\"><CircleCloseFilled /></AsamIcon>\n\t\t\t\t关闭\n\t\t\t</AsamButton>\n\t\t</template>\n\t\t这是抽屉内容。\n\t</AsamDrawer>\n</template>\n\n<script setup>\nimport { AsamButton, AsamDrawer, AsamIcon } from '@asam-ui/ui';\nimport { ref } from 'vue';\nimport { CircleCloseFilled } from '@asam-ui/icons-vue';\nconst visible = ref(false);\n</script>\n",
-			"originalSourceSha256": "dbca9c58b070c95dba80a760c768b711681134a9316a4e24f4ba1d3ffdfa1a57",
+			"sha256": "f47dbadb170126bbd053cb7e6d85d5ded35092e967f311735cf4f47ff537f312",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"visible = true\"> 打开自定义头部的抽屉 </AsamButton>\n\t<AsamDrawer v-model=\"visible\" :show-close=\"false\">\n\t\t<template #header=\"{ close, titleId, titleClass }\">\n\t\t\t<h4 :id=\"titleId\" :class=\"titleClass\">自定义头部示例</h4>\n\t\t\t<AsamButton type=\"default\" @click=\"close\">\n\t\t\t\t<AsamIcon class=\"el-icon--left\"><CircleCloseFilled /></AsamIcon>\n\t\t\t\t关闭\n\t\t\t</AsamButton>\n\t\t</template>\n\t\t这是抽屉内容。\n\t</AsamDrawer>\n</template>\n\n<script setup>\nimport { AsamButton, AsamDrawer, AsamIcon } from '@asam-ui/ui';\nimport { ref } from 'vue';\nimport { CircleCloseFilled } from '@asam-ui/icons-vue';\nconst visible = ref(false);\n</script>\n",
+			"originalSourceSha256": "6bbaf367420a92f51cc7db41998b703cabec47c353bc9c3cbd57bad75b6385c1",
 			"notice": {
 				"id": "6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf",
 				"url": "/licenses/source-notices/6b7d41d93e9e3b3a6c05eba41c0c7319812650cdbfdc9294341e0c33ebbebbdf.txt",

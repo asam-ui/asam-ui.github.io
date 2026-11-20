@@ -3,36 +3,32 @@
 	"packages": [
 		{
 			"name": "@asam-ui/ui",
-			"version": "2.0.1",
-			"entrySHA256": "e005c2e451568a8d2360afb91a3e9b250b0f131c31af78858295ee5ea523e585",
-			"declarationTreeSHA256": "4efaccb0622b5c6bafe3c990d36782ce77b1aa6a9c10ff52c916c25b08d2dc79",
-			"manifestSHA256": "5286150375ca3755aeafb54d5f17a5a0e5b75e77d9d9064df4643b1304a482dc",
-			"declarationFiles": 1423,
-			"registryMetadata": "https://registry.npmjs.org/%40asam-ui%2Fui/2.0.1",
+			"version": "1.0.0",
+			"entrySHA256": "ec4503fb39cb1a51c512efc0cd7fd83981cefb73aefc0d5081c0bd29987d2947",
+			"declarationTreeSHA256": "18fe0317a9e06870851d39a3ea9f8ca1dde638ba66de585f1767a5c628cef79e",
+			"declarationFiles": 1409,
+			"registryMetadata": "https://registry.npmjs.org/%40asam-ui%2Fui/1.0.0",
 			"index": "/types/ui.json",
-			"typeCount": 1111,
+			"typeCount": 1082,
 			"validation": {
 				"status": "complete",
 				"diagnostics": []
 			},
-			"tab": "ui",
 			"page": "/type-dictionary.html#package-ui"
 		},
 		{
 			"name": "@asam-ui/ui-yudao",
-			"version": "2.0.1",
+			"version": "1.0.0",
 			"entrySHA256": "8e09a33a11db43c439b432cbc2d8eddd35b540177f2e72260d801e76bbe0c930",
 			"declarationTreeSHA256": "40c72a626aa311379690b90be30c58ca10bcf1d1cd0ff1dd1489dd9d0e6b3920",
-			"manifestSHA256": "2e862652f4fddf528452e3153f3b271e7e1ef217813cb489f971529ab38d05ed",
 			"declarationFiles": 1,
-			"registryMetadata": "https://registry.npmjs.org/%40asam-ui%2Fui-yudao/2.0.1",
+			"registryMetadata": "https://registry.npmjs.org/%40asam-ui%2Fui-yudao/1.0.0",
 			"index": "/types/ui-yudao.json",
 			"typeCount": 2,
 			"validation": {
 				"status": "complete",
 				"diagnostics": []
 			},
-			"tab": "ui",
 			"page": "/type-dictionary.html#package-ui-yudao"
 		},
 		{
@@ -40,7 +36,6 @@
 			"version": "1.0.0",
 			"entrySHA256": "6336e83742fb0320cf005ce1461c5cc27f6fae495c3528200f1572af0e31fc40",
 			"declarationTreeSHA256": "8ef5e3a7122f3e11e9ee658289887a9f7250b18365fd590cf9ac1580fb460496",
-			"manifestSHA256": "394e34cd9df353a535a58efb62fa260f421ca84fac2afb71130b7895296533ae",
 			"declarationFiles": 295,
 			"registryMetadata": "https://registry.npmjs.org/%40asam-ui%2Ficons-vue/1.0.0",
 			"index": "/types/icons-vue.json",
@@ -49,21 +44,7 @@
 				"status": "complete",
 				"diagnostics": []
 			},
-			"tab": "ui",
 			"page": "/type-dictionary.html#package-icons-vue"
-		},
-		{
-			"name": "@asam-ui/pro",
-			"version": "2.0.1",
-			"entrySHA256": "426cb8013a2659d1752a11f195b1f8d10598056c2c8ad2f7359f9053d3567c5b",
-			"index": "/types/pro.json",
-			"typeCount": 461,
-			"validation": {
-				"status": "complete",
-				"diagnostics": []
-			},
-			"tab": "pro",
-			"page": "/type-dictionary.html#package-pro"
 		}
 	]
 }

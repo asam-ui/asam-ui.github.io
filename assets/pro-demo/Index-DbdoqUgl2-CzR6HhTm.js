@@ -1,1 +1,0 @@
-import{dn as e,un as t}from"./chunk-DmhlhrBa-BoWoli-h.js";var n=Object.assign({},t,{props:{...e,color:{...e.color,default:`var(--asam-display-solid)`}},install(e){e.component(`AsamProgress`,n)}});export{n as t};

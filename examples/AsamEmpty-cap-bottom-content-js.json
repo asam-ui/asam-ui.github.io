@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamEmpty/cap-bottom-content/js/Demo.vue",
-			"sha256": "0bce09aefabf73a44d3813e02076160fd53ecceb4bf60ba2ce4b6693e69fe6f9",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt\n-->\n<template>\n\t<AsamEmpty description=\"当前筛选条件下没有记录\">\n\t\t<AsamButton\n\t\t\ttype=\"primary\"\n\t\t\tnative-type=\"button\"\n\t\t\t:aria-expanded=\"showHelp\"\n\t\t\t@click=\"showHelp = !showHelp\"\n\t\t>\n\t\t\t{{ showHelp ? '收起筛选说明' : '查看筛选说明' }}\n\t\t</AsamButton>\n\t\t<p v-if=\"showHelp\" class=\"example-paragraph\">放宽筛选条件后可以再次查询。</p>\n\t</AsamEmpty>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamEmptyCapBottomContentDemo' });\nimport { ref } from 'vue';\nimport { AsamEmpty, AsamButton } from '@asam-ui/ui';\nconst showHelp = ref(false);\n</script>\n",
-			"originalSourceSha256": "3f244fbea57ab1109286b00433a291ad9fc9a47d388237a288d9368c17927c59",
+			"sha256": "b10bd97b847454bd19aa5e7b7b59f0112f0fdc71b8692df14c114d8bbdf552a4",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt\n-->\n<template>\n\t<AsamEmpty>\n\t\t<AsamButton type=\"default\">按钮</AsamButton>\n\t</AsamEmpty>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamEmptyCapBottomContentDemo' });\nimport { AsamEmpty, AsamButton } from '@asam-ui/ui';\n</script>\n",
+			"originalSourceSha256": "9c06d948f92db5f96d85f6007c59d211bf7b0b2d4fc393105b913315c33515c0",
 			"notice": {
 				"id": "78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f",
 				"url": "/licenses/source-notices/78bcd0e8b08f543c5c9056ad202d5c8c2364ba0f4e6bfa1830b45e181fbc425f.txt",

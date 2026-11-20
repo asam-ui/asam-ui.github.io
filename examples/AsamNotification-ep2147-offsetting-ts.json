@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamNotification/ep2147-offsetting/ts/Demo.vue",
-			"sha256": "df8970fefe86bda6c82fa3121dd61b58357974d1976daa76acf7b4157760a958",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-b8b469714f1b8dbca76c7027e89e3c5ced7da39f0146eeb6bb35c43fd76a47ee.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/b8b469714f1b8dbca76c7027e89e3c5ced7da39f0146eeb6bb35c43fd76a47ee.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" @click=\"open\">带偏移量的通知</AsamButton>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamNotification, type AsamNotificationHandle } from '@asam-ui/ui';\n\nimport { onBeforeUnmount } from 'vue';\n\nconst open = () => {\n\ttrackAsamNotification(\n\t\tAsamNotification.success({\n\t\t\ttitle: '成功',\n\t\t\tmessage: '这是一条成功消息。',\n\t\t\toffset: 100\n\t\t})\n\t);\n};\n\nconst ownedAsamNotification = new Set<AsamNotificationHandle>();\nlet mountedAsamNotification = true;\nconst trackAsamNotification = (handle: AsamNotificationHandle) => {\n\tif (mountedAsamNotification) ownedAsamNotification.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamNotification = false;\n\tfor (const handle of ownedAsamNotification) handle.close();\n\townedAsamNotification.clear();\n});\n</script>\n",
-			"originalSourceSha256": "638d9cdf4728981b13dba7b22b298c674273b75ae6aa416e6aba367d3dcc7f72",
+			"sha256": "d7fc587e42e37fc3d6638be382d1781ea948e1fec417c0e2327d5dc5a6c67525",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-b8b469714f1b8dbca76c7027e89e3c5ced7da39f0146eeb6bb35c43fd76a47ee.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/b8b469714f1b8dbca76c7027e89e3c5ced7da39f0146eeb6bb35c43fd76a47ee.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"open\"> 带偏移量的通知 </AsamButton>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamNotification, type AsamNotificationHandle } from '@asam-ui/ui';\n\nimport { onBeforeUnmount } from 'vue';\n\nconst open = () => {\n\ttrackAsamNotification(\n\t\tAsamNotification.success({\n\t\t\ttitle: '成功',\n\t\t\tmessage: '这是一条成功消息。',\n\t\t\toffset: 100\n\t\t})\n\t);\n};\n\nconst ownedAsamNotification = new Set<AsamNotificationHandle>();\nlet mountedAsamNotification = true;\nconst trackAsamNotification = (handle: AsamNotificationHandle) => {\n\tif (mountedAsamNotification) ownedAsamNotification.add(handle);\n\telse handle.close();\n\treturn handle;\n};\nonBeforeUnmount(() => {\n\tmountedAsamNotification = false;\n\tfor (const handle of ownedAsamNotification) handle.close();\n\townedAsamNotification.clear();\n});\n</script>\n",
+			"originalSourceSha256": "49aa4c41ef94fcacb08639d0fe22829a22ab3ba9b15a20b8e96ed48594c5233f",
 			"notice": {
 				"id": "b8b469714f1b8dbca76c7027e89e3c5ced7da39f0146eeb6bb35c43fd76a47ee",
 				"url": "/licenses/source-notices/b8b469714f1b8dbca76c7027e89e3c5ced7da39f0146eeb6bb35c43fd76a47ee.txt",

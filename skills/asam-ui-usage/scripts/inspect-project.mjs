@@ -47,10 +47,8 @@ export function inspectProject(directory) {
 		'vite',
 		'element-plus',
 		'@asam-ui/ui',
-		'@asam-ui/pro',
 		'@asam-ui/icons-vue',
 		'@asam-ui/ui-yudao',
-		'@asam-ui/platform-provider',
 		'unplugin-vue-components'
 	]) {
 		const path = resolve(root, 'node_modules', name, 'package.json');
@@ -63,11 +61,6 @@ export function inspectProject(directory) {
 			};
 		}
 	}
-	const ui = installed['@asam-ui/ui'];
-	const pro = installed['@asam-ui/pro'];
-	const uiMajor = /^(\d+)\./.exec(ui?.version)?.[1];
-	const proUiPeer = pro?.peerDependencies?.['@asam-ui/ui'] ?? null;
-	const exactProPeer = /^\d+\.\d+\.\d+(?:-[\w.-]+)?$/.test(proUiPeer ?? '');
 	const files = [
 		'AGENTS.md',
 		'vite.config.ts',
@@ -96,12 +89,6 @@ export function inspectProject(directory) {
 		ancestors,
 		dependencies,
 		installed,
-		asam: {
-			uiMajor: uiMajor === undefined ? null : Number(uiMajor),
-			proUiPeer,
-			proUiPairing: !pro ? 'absent' : !exactProPeer ? 'unknown' :
-				ui?.version === proUiPeer ? 'matched' : 'mismatch'
-		},
 		scripts: pkg.scripts ?? {},
 		files,
 		next: 'Read applicable AGENTS and existing configuration before preparing a diff; this inspection does not modify files or prove compatibility.'

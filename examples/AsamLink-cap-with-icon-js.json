@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamLink/cap-with-icon/js/Demo.vue",
-			"sha256": "301574305e555f4b75af0db916fb4bf70b39639f4a98308cc465bf6e0176e189",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e881889a995bfd8181a06e49e12da3a7a0b8ff9ae7708939fb7bfcf8e2043f6d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e881889a995bfd8181a06e49e12da3a7a0b8ff9ae7708939fb7bfcf8e2043f6d.txt\n-->\n<template>\n\t<div>\n\t\t<AsamLink :icon=\"Edit\">编辑</AsamLink>\n\t\t<AsamLink>\n\t\t\t检查\n\t\t\t<AsamIcon class=\"el-icon--right\"><icon-view /></AsamIcon>\n\t\t</AsamLink>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamLinkCapWithIconDemo' });\nimport { AsamLink, AsamIcon } from '@asam-ui/ui';\nimport { Edit, View as IconView } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.el-link {\n\tmargin-right: 8px;\n}\n</style>\n",
-			"originalSourceSha256": "1e763aa41b60069394bf84127a1bb73cf65d962912520b428005078d2e2ebcf1",
+			"sha256": "985608ca66054f885270956500ee360037a97171f1cf88aa64f9473ef6fa5c5b",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e881889a995bfd8181a06e49e12da3a7a0b8ff9ae7708939fb7bfcf8e2043f6d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e881889a995bfd8181a06e49e12da3a7a0b8ff9ae7708939fb7bfcf8e2043f6d.txt\n-->\n<template>\n\t<div>\n\t\t<AsamLink :icon=\"Edit\">编辑</AsamLink>\n\t\t<AsamLink>\n\t\t\t检查<AsamIcon class=\"el-icon--right\"><icon-view /></AsamIcon>\n\t\t</AsamLink>\n\t</div>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamLinkCapWithIconDemo' });\nimport { AsamLink, AsamIcon } from '@asam-ui/ui';\nimport { Edit, View as IconView } from '@asam-ui/icons-vue';\n</script>\n\n<style scoped>\n.el-link {\n\tmargin-right: 8px;\n}\n</style>\n",
+			"originalSourceSha256": "f361eeda927caae7ad62f14aff81c5ef3e45a28934e60ef16861c864e9f160ee",
 			"notice": {
 				"id": "e881889a995bfd8181a06e49e12da3a7a0b8ff9ae7708939fb7bfcf8e2043f6d",
 				"url": "/licenses/source-notices/e881889a995bfd8181a06e49e12da3a7a0b8ff9ae7708939fb7bfcf8e2043f6d.txt",

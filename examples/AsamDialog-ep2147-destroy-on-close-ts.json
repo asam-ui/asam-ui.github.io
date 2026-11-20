@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDialog/ep2147-destroy-on-close/ts/Demo.vue",
-			"sha256": "e7e2ab1b3ec5ffe0aee2aba4e6ac4a20bdd31167c1c1f434eb7d73bd29465103",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e0940d5691d6f7ca85203de70a27a059f26d69b91541d22c4514bba62847a336.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e0940d5691d6f7ca85203de70a27a059f26d69b91541d22c4514bba62847a336.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" @click=\"centerDialogVisible = true\">点击打开对话框</AsamButton>\n\n\t<AsamDialog v-model=\"centerDialogVisible\" title=\"注意\" width=\"500\" destroy-on-close center>\n\t\t<span>注意：首次打开对话框前，此节点及其下方节点不会渲染。</span>\n\t\t<div>\n\t\t\t<strong>额外内容（未渲染）</strong>\n\t\t</div>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton type=\"default\" @click=\"centerDialogVisible = false\">取消</AsamButton>\n\t\t\t\t<AsamButton type=\"primary\" @click=\"centerDialogVisible = false\">确认</AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDialog } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst centerDialogVisible = ref(false);\n</script>\n",
-			"originalSourceSha256": "7fd4931d086f21dacbfb87c29bd562a231af2c2113940dff3ac555344622811b",
+			"sha256": "9ed9123aafb9f8f4cc1731e9d2e961d8b98e4d854f448ea51e83a168ca75e422",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-e0940d5691d6f7ca85203de70a27a059f26d69b91541d22c4514bba62847a336.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/e0940d5691d6f7ca85203de70a27a059f26d69b91541d22c4514bba62847a336.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"centerDialogVisible = true\">\n\t\t点击打开对话框\n\t</AsamButton>\n\n\t<AsamDialog v-model=\"centerDialogVisible\" title=\"注意\" width=\"500\" destroy-on-close center>\n\t\t<span> 注意：首次打开对话框前，此节点及其下方节点不会渲染。 </span>\n\t\t<div>\n\t\t\t<strong>额外内容（未渲染）</strong>\n\t\t</div>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton type=\"default\" @click=\"centerDialogVisible = false\">取消</AsamButton>\n\t\t\t\t<AsamButton type=\"default\" @click=\"centerDialogVisible = false\"> 确认 </AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n</template>\n\n<script lang=\"ts\" setup>\nimport { AsamButton, AsamDialog } from '@asam-ui/ui';\n\nimport { ref } from 'vue';\n\nconst centerDialogVisible = ref(false);\n</script>\n",
+			"originalSourceSha256": "dfae23c627c2560f69c8a8f36b7d29ae6457e5ff6d81156cab79a1ec27068699",
 			"notice": {
 				"id": "e0940d5691d6f7ca85203de70a27a059f26d69b91541d22c4514bba62847a336",
 				"url": "/licenses/source-notices/e0940d5691d6f7ca85203de70a27a059f26d69b91541d22c4514bba62847a336.txt",

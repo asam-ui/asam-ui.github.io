@@ -1,1 +1,0 @@
-import{Mn as e,Nn as t,On as n,Yn as r,yr as i}from"./i18n-CJTJI6vg-3Uas6tNN.js";import{t as a}from"./AsamAdminLayout-DMsByuNN-BU6iescZ.js";var o={class:`pro-example-stack`},s=t({__name:`Demo`,setup(t){return(t,s)=>(r(),n(`div`,o,[e(i(a),{title:`项目列表`,status:`empty`,"status-text":`尚未创建项目`})]))}});export{s as default};

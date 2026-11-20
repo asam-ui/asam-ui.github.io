@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTag/cap-basic/ts/Demo.vue",
-			"sha256": "8a1eae5f0abe27985292d8b7133e106be9299b3bfffabe6c1aa47003231ce8e7",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-d73b777653d5f68b4c7976bcfafcecc69e3790220114c1843f60e4bd1f24f6c5.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/d73b777653d5f68b4c7976bcfafcecc69e3790220114c1843f60e4bd1f24f6c5.txt\n-->\n<template>\n\t<div class=\"flex gap-2\">\n\t\t<AsamTag color=\"var(--asam-semantic-primary-soft)\">自定义背景</AsamTag>\n\t\t<AsamTag type=\"secondary\" color=\"var(--asam-semantic-success-soft)\">\n\t\t\t次要标签自定义背景\n\t\t</AsamTag>\n\t\t<AsamTag type=\"gradient\" color=\"var(--asam-semantic-info-soft)\">渐变标签自定义背景</AsamTag>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTagCapBasicDemo' });\nimport { AsamTag } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.gap-2 {\n\tgap: 0.5rem;\n}\n</style>\n",
-			"originalSourceSha256": "8f4d37b51efe5a4dadbf6ec96ef300041401e840ce3b32c4ff6bc2628fd7f486",
+			"sha256": "c574eb9cdb84e861466b1b0621ac4b03a862489506924a7dc1d6bb6127bbb960",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-d73b777653d5f68b4c7976bcfafcecc69e3790220114c1843f60e4bd1f24f6c5.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/d73b777653d5f68b4c7976bcfafcecc69e3790220114c1843f60e4bd1f24f6c5.txt\n-->\n<template>\n\t<div class=\"flex gap-2\">\n\t\t<AsamTag type=\"primary\">标签 1</AsamTag>\n\t\t<AsamTag type=\"success\">标签 2</AsamTag>\n\t\t<AsamTag type=\"info\">标签 3</AsamTag>\n\t\t<AsamTag type=\"warning\">标签 4</AsamTag>\n\t\t<AsamTag type=\"danger\">标签 5</AsamTag>\n\t</div>\n</template>\n\n<script lang=\"ts\" setup>\ndefineOptions({ name: 'AsamTagCapBasicDemo' });\nimport { AsamTag } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.flex {\n\tdisplay: flex;\n}\n\n.gap-2 {\n\tgap: 0.5rem;\n}\n</style>\n",
+			"originalSourceSha256": "51728727d578a1b1943da447a0ce1d0a54f0249e48c621fccfb793b437f5ad41",
 			"notice": {
 				"id": "d73b777653d5f68b4c7976bcfafcecc69e3790220114c1843f60e4bd1f24f6c5",
 				"url": "/licenses/source-notices/d73b777653d5f68b4c7976bcfafcecc69e3790220114c1843f60e4bd1f24f6c5.txt",

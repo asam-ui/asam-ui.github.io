@@ -1,1 +1,0 @@
-function e(e,t,n){let r=e.closest(`[data-locale]`)?.dataset.locale||document.documentElement.lang;return r===`en`||r.startsWith(`en-`)?n:t}export{e as t};

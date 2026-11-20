@@ -1,1 +1,0 @@
-import{Bt as e,zt as t}from"./chunk-DmhlhrBa-BoWoli-h.js";var n=Object.assign({},t,{install(e){e.component(`AsamTimeline`,n)}}),r=Object.assign({},e,{install(e){e.component(`AsamTimelineItem`,r)}});export{n,r as t};

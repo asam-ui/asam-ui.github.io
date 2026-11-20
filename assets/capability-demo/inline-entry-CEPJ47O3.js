@@ -1,1 +1,0 @@
-import{Ct as e,Rt as t,T as n,W as r,x as i}from"./vue.esm-bundler-vg3bltyC.js";import{a}from"./index.esm-BEAscIcX.js";var o=n({__name:`MinimalExample`,setup(n){return(n,o)=>(r(),i(`output`,null,t(e(a)?`浏览器环境`:`非浏览器环境`),1))}});export{o as default};

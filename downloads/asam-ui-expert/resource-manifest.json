@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "channel": "preview",
+  "release": "2026.10.26-preview.1",
+  "expertSource": "c9e93f930e2e5ea7292ae78f02a6113297018efc",
+  "windowsX64": true,
+  "macOSVerified": false,
+  "linuxVerified": false,
+  "publicKeyFingerprint": "39b22f9e916f25326d3d86339ed2d3bf24b3a671a073bcc58091b54308a7668f",
+  "stableCommands": {
+    "cn": {
+      "windows": "https://asam-ui.cn/downloads/asam-ui-expert/preview/cn/expert.ps1",
+      "shell": "https://asam-ui.cn/downloads/asam-ui-expert/preview/cn/expert.sh"
+    },
+    "global": {
+      "windows": "https://asam-ui.github.io/downloads/asam-ui-expert/preview/global/expert.ps1",
+      "shell": "https://asam-ui.github.io/downloads/asam-ui-expert/preview/global/expert.sh"
+    }
+  },
+  "files": [
+    {
+      "path": "downloads/asam-ui-expert/preview/cn/expert.ps1",
+      "bytes": 4835,
+      "sha256": "4b17fc54692846f4c9b1980428e9682850d6a3164a2b0c689f385991aa1a5a71"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/cn/expert.sh",
+      "bytes": 3563,
+      "sha256": "6bc14126aae97b7f5e7daa8f8049d00effbd811b587bb5f0ade7b4a5be217814"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/cn/PREVIEW.md",
+      "bytes": 414,
+      "sha256": "f7bc5608e097b7bd315bab142900047e4acc3e625769b69af2db8063202a0ec0"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/cn/release-public.pem",
+      "bytes": 451,
+      "sha256": "aa891e5581f48a7aadf3994976e748162e1a91f257a50ae9d4f7b8d200db05b4"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/cn/release.json",
+      "bytes": 8106,
+      "sha256": "814c852d46dda95b999960361743325a75d00276a9bbd263b93c847437fe45f8"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/cn/release.json.sig",
+      "bytes": 345,
+      "sha256": "c5998e536e80ae879a2b4cb57ac8ef05bd66ce67a0c390aae7a6adc5d3930d5a"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/global/expert.ps1",
+      "bytes": 4847,
+      "sha256": "11d9a45dca5e5d1384425354ef5df8526c69f3e3a810d752737ee927f9d81942"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/global/expert.sh",
+      "bytes": 3575,
+      "sha256": "5538710ffda6cbd91f626ccf5507e8abc26ed7605f9eeaaf9c103631859efc9b"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/global/PREVIEW.md",
+      "bytes": 414,
+      "sha256": "f7bc5608e097b7bd315bab142900047e4acc3e625769b69af2db8063202a0ec0"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/global/release-public.pem",
+      "bytes": 451,
+      "sha256": "aa891e5581f48a7aadf3994976e748162e1a91f257a50ae9d4f7b8d200db05b4"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/global/release.json",
+      "bytes": 8809,
+      "sha256": "6cdc2693bd8c9ac1f237b947c6a65edff1476f52c845ff270a11c4df2c27b85d"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/global/release.json.sig",
+      "bytes": 345,
+      "sha256": "bcac834bb41884b2c3876f12f672263594e59e6bd90d2d644388bc53c5dd9839"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/cn/codex-2026.10.26-preview.1.tgz",
+      "bytes": 6159636,
+      "sha256": "71685c2a376331c91d8acbf6b4360463ee9c732626c13d3daf57ab6e166f8605"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/cn/expert.ps1",
+      "bytes": 4835,
+      "sha256": "4b17fc54692846f4c9b1980428e9682850d6a3164a2b0c689f385991aa1a5a71"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/cn/expert.sh",
+      "bytes": 3563,
+      "sha256": "6bc14126aae97b7f5e7daa8f8049d00effbd811b587bb5f0ade7b4a5be217814"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/cn/harness-2026.10.26-preview.1.tgz",
+      "bytes": 6133102,
+      "sha256": "6d4ca501548e922752e8d7f46c7a25bab45b804eaaa02eba3919c4887fb76555"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/cn/installer.mjs",
+      "bytes": 45707,
+      "sha256": "d3f47baff0bead0b8cbf1255bfcfbbee52186546ad40a2d24457281e6b397d10"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/cn/offline-2026.10.26-preview.1.tgz",
+      "bytes": 18493366,
+      "sha256": "90c042c1a294f80c7ea6f63882058ff1f9269e02a8311ec80b62565fb614b739"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/cn/OFFLINE.md",
+      "bytes": 568,
+      "sha256": "517a8ab915ff5e0108915eb054fdf5f1d0b411807fbffea7e2563b140080c198"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/cn/PREVIEW.md",
+      "bytes": 414,
+      "sha256": "f7bc5608e097b7bd315bab142900047e4acc3e625769b69af2db8063202a0ec0"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/cn/release-public.pem",
+      "bytes": 451,
+      "sha256": "aa891e5581f48a7aadf3994976e748162e1a91f257a50ae9d4f7b8d200db05b4"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/cn/release.json",
+      "bytes": 8106,
+      "sha256": "814c852d46dda95b999960361743325a75d00276a9bbd263b93c847437fe45f8"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/cn/release.json.sig",
+      "bytes": 345,
+      "sha256": "c5998e536e80ae879a2b4cb57ac8ef05bd66ce67a0c390aae7a6adc5d3930d5a"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/cn/workbuddy-2026.10.26-preview.1.tgz",
+      "bytes": 6167732,
+      "sha256": "cb3492cea77fcca7eae94fca948bdee118a60f4f37cf2e7201efa05e0a492cbc"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/codex-2026.10.26-preview.1.tgz",
+      "bytes": 6159636,
+      "sha256": "71685c2a376331c91d8acbf6b4360463ee9c732626c13d3daf57ab6e166f8605"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/expert.ps1",
+      "bytes": 4847,
+      "sha256": "11d9a45dca5e5d1384425354ef5df8526c69f3e3a810d752737ee927f9d81942"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/expert.sh",
+      "bytes": 3575,
+      "sha256": "5538710ffda6cbd91f626ccf5507e8abc26ed7605f9eeaaf9c103631859efc9b"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/harness-2026.10.26-preview.1.tgz",
+      "bytes": 6133102,
+      "sha256": "6d4ca501548e922752e8d7f46c7a25bab45b804eaaa02eba3919c4887fb76555"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/installer.mjs",
+      "bytes": 45707,
+      "sha256": "d3f47baff0bead0b8cbf1255bfcfbbee52186546ad40a2d24457281e6b397d10"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/offline-2026.10.26-preview.1.tgz",
+      "bytes": 18493460,
+      "sha256": "5eabf2a90f2e9f47ffcfce17f1e95254401761899e41d7fa1b2592c40909350a"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/OFFLINE.md",
+      "bytes": 568,
+      "sha256": "517a8ab915ff5e0108915eb054fdf5f1d0b411807fbffea7e2563b140080c198"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/PREVIEW.md",
+      "bytes": 414,
+      "sha256": "f7bc5608e097b7bd315bab142900047e4acc3e625769b69af2db8063202a0ec0"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/release-public.pem",
+      "bytes": 451,
+      "sha256": "aa891e5581f48a7aadf3994976e748162e1a91f257a50ae9d4f7b8d200db05b4"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/release.json",
+      "bytes": 8809,
+      "sha256": "6cdc2693bd8c9ac1f237b947c6a65edff1476f52c845ff270a11c4df2c27b85d"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/release.json.sig",
+      "bytes": 345,
+      "sha256": "bcac834bb41884b2c3876f12f672263594e59e6bd90d2d644388bc53c5dd9839"
+    },
+    {
+      "path": "downloads/asam-ui-expert/preview/releases/2026.10.26-preview.1/global/workbuddy-2026.10.26-preview.1.tgz",
+      "bytes": 6167732,
+      "sha256": "cb3492cea77fcca7eae94fca948bdee118a60f4f37cf2e7201efa05e0a492cbc"
+    }
+  ],
+  "publicWebsitePagesAndMenusUnchanged": true,
+  "qualification": [
+    {
+      "channel": "preview",
+      "fixedSource": "c9e93f930e2e5ea7292ae78f02a6113297018efc",
+      "previousDevCandidate": "2026.10.26-dev.11",
+      "transportAndSignature": "DEV signed transport/offline/public SDK checks passed",
+      "actualSelectedModelThreeModes": "not complete",
+      "independentQA": "pending full expert functionality",
+      "independentACC": "pending full expert functionality",
+      "verifiedTarget": "Windows x64",
+      "macOS": "not verified in this preview",
+      "linux": "not verified in this preview",
+      "publicationScope": "resources only; public website pages/menus unchanged"
+    }
+  ]
+}

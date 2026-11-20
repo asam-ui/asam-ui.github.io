@@ -7,14 +7,14 @@
 		<meta name="description" content="ASAM UI 静态设计原型。Vue 3 组件、安装指南与设计系统。" />
 		<title>主题与 CSS variables · ASAM UI</title>
 		<link rel="icon" href="/assets/favicon.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" type="image/svg+xml" />
-		<link rel="stylesheet" href="/assets/style.css?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7" />
+		<link rel="stylesheet" href="/assets/style.css?v=0cdd5a6a810484abae152069deb3dc17cfa855392e6ea3cf2503b01d9162cd88" />
 		<script src="/assets/theme-init.js"></script>
 		<script src="/assets/vendor/gsap.min.js" defer></script>
 		<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 		<script src="/assets/catalog.js" defer></script>
-		<script src="/assets/app.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7" defer></script>
+		<script src="/assets/app.js?v=0cdd5a6a810484abae152069deb3dc17cfa855392e6ea3cf2503b01d9162cd88" defer></script>
 		
-	<link rel="stylesheet" href="/assets/ai-guide.css"><link rel="stylesheet" href="/assets/website-layout.css?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><link rel="stylesheet" href="/assets/component-docs.css?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><script src="/assets/website-layout.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"></script><script src="/assets/site-navigation.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7" defer></script><script src="/assets/site-language.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7" defer></script><script src="/assets/site-region.js" defer></script><meta name="asam-site-build" content="8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><link rel="alternate" hreflang="en" href="/en/guide/theme.html"><link rel="stylesheet" href="/assets/document-controls/document-controls.css?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"><script type="module" src="/assets/document-controls/document-controls.js?v=8b5888f2f0ce1f89e1ba06c3efb264d23fe9e558f081124a61f7bf7a425515c7"></script><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a"><link rel="canonical" href="https://asam-ui.cn/guide/theme.html"></head>
+	<link rel="stylesheet" href="/assets/ai-guide.css"><link rel="stylesheet" href="/assets/website-layout.css?v=0cdd5a6a810484abae152069deb3dc17cfa855392e6ea3cf2503b01d9162cd88"><script src="/assets/website-layout.js?v=0cdd5a6a810484abae152069deb3dc17cfa855392e6ea3cf2503b01d9162cd88"></script><script src="/assets/site-navigation.js?v=0cdd5a6a810484abae152069deb3dc17cfa855392e6ea3cf2503b01d9162cd88" defer></script><script src="/assets/site-region.js?v=0cdd5a6a810484abae152069deb3dc17cfa855392e6ea3cf2503b01d9162cd88" defer></script><meta name="asam-site-build" content="0cdd5a6a810484abae152069deb3dc17cfa855392e6ea3cf2503b01d9162cd88"><link rel="canonical" href="/guide/theme.html"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a"></head>
 	<body data-page="getting-started">
 		<a class="skip-link" href="#main">跳到正文</a>
 		<header class="site-header" data-site-component="header">
@@ -24,23 +24,15 @@
 				>
 				<nav class="primary-nav" aria-label="主导航">
 					<a href="/getting-started.html" aria-current="page">开始使用</a
-					><a href="/design-system.html">设计系统</a><a href="/component-catalog.html">组件</a>
-				<a href="/pro/index.html">Pro</a><a href="/ai/index.html">AI</a></nav>
-				<div class="nav-actions"><details class="site-version-disclosure" data-site-versions>
-		<summary><span data-site-version-label>版本信息</span><span class="site-version-arrow" aria-hidden="true">▾</span></summary>
-		<section class="site-version-panel" aria-label="文档版本">
-			<p class="site-version-heading">本次文档使用的版本</p>
-			<ul>
-				<li><strong>UI v2.0.1</strong><span>该版本号已在 npm 发布</span><a href="/guide/ui-changelog.html">查看 UI 更新日志</a></li><li><strong>Pro v2.0.1</strong><span>该版本号已在 npm 发布</span><a href="/guide/pro-changelog.html">查看 Pro 更新日志</a></li>
-			</ul>
-			<p>配套要求为 Pro 与 UI 按包声明配对。已验证的公开安装组合为 UI 2.0.1、Vue 3.5.34、Element Plus 2.14.7。</p>
-			<nav aria-label="版本文档">
-				<a href="/guide/compatibility.html">版本与兼容说明</a>
-				<a href="/guide/upgrade.html">升级指南</a>
-			</nav>
-		</section>
-	</details>
-					<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;\n\t\t\t\t\t\t&lt;span class=\&quot;icon-wrap\&quot;\n\t\t\t\t\t\t\t&gt;&lt;svg\n\t\t\t\t\t\t\t\tclass=\&quot;icon\&quot;\n\t\t\t\t\t\t\t\taria-hidden=\&quot;true\&quot;\n\t\t\t\t\t\t\t\tfocusable=\&quot;false\&quot;\n\t\t\t\t\t\t\t\txmlns=\&quot;http://www.w3.org/2000/svg\&quot;\n\t\t\t\t\t\t\t\tviewBox=\&quot;0 0 256 256\&quot;\n\t\t\t\t\t\t\t\tfill=\&quot;currentColor\&quot;\n\t\t\t\t\t\t\t&gt;\n\t\t\t\t\t\t\t\t&lt;path\n\t\t\t\t\t\t\t\t\td=\&quot;M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z\&quot;\n\t\t\t\t\t\t\t\t/&gt;&lt;/svg&gt;&lt;/span\n\t\t\t\t\t\t&gt;&lt;span&gt;搜索文档&lt;/span&gt;&lt;kbd&gt;Ctrl K&lt;/kbd&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;search-trigger&quot;,&quot;type&quot;:&quot;default&quot;,&quot;data-open-search&quot;:true,&quot;aria-haspopup&quot;:&quot;dialog&quot;,&quot;aria-controls&quot;:&quot;search-dialog&quot;,&quot;aria-expanded&quot;:&quot;false&quot;,&quot;aria-label&quot;:&quot;搜索文档，快捷键 Control K&quot;},&quot;idPrefix&quot;:&quot;document-0&quot;,&quot;injectionPrefix&quot;:10000}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default search-trigger asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-open-search="true" aria-haspopup="dialog" aria-controls="search-dialog" aria-expanded="false" aria-label="搜索文档，快捷键 Control K" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">
+					><a href="/component-catalog.html">组件</a><a href="/design-system.html">设计系统</a>
+				<a href="/ai/index.html">AI</a></nav>
+				<div class="nav-actions"><span class="site-version">v1.0.0</span>
+					<button
+						class="search-trigger"
+						type="button"
+						data-open-search
+						aria-label="搜索文档，快捷键 Control K"
+					>
 						<span class="icon-wrap"
 							><svg
 								class="icon"
@@ -53,7 +45,12 @@
 								<path
 									d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
 								/></svg></span
-						><span>搜索文档</span><kbd>Ctrl K</kbd></span><!--]--></span></button></span><div class="site-action-icons"><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;20\&quot; height=\&quot;20\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;rect x=\&quot;3\&quot; y=\&quot;4\&quot; width=\&quot;18\&quot; height=\&quot;16\&quot; rx=\&quot;2\&quot;/&gt;&lt;path d=\&quot;M8 4v16M16 4v16\&quot;/&gt;&lt;path class=\&quot;wide-expand\&quot; d=\&quot;m11 10-2 2 2 2m2-4 2 2-2 2\&quot;/&gt;&lt;path class=\&quot;wide-contract\&quot; d=\&quot;m9 10 2 2-2 2m6-4-2 2 2 2\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button website-wide-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;aria-pressed&quot;:&quot;false&quot;,&quot;aria-label&quot;:&quot;开启宽屏模式&quot;,&quot;title&quot;:&quot;开启宽屏模式&quot;},&quot;idPrefix&quot;:&quot;document-1&quot;,&quot;injectionPrefix&quot;:10001}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text icon-button website-wide-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" aria-pressed="false" aria-label="开启宽屏模式" title="开启宽屏模式" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 4v16M16 4v16"/><path class="wide-expand" d="m11 10-2 2 2 2m2-4 2 2-2 2"/><path class="wide-contract" d="m9 10 2 2-2 2m6-4-2 2 2 2"/></svg></span><!--]--></span></button></span><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;20\&quot; height=\&quot;20\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; stroke-linecap=\&quot;round\&quot; stroke-linejoin=\&quot;round\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;path d=\&quot;M3 6h10M8 3v3m3 0c0 5-3 8-7 10m1-7c0 3 3 5 5 6m3 5 4-10 4 10m-7-3h6\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button site-language-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;tag&quot;:&quot;a&quot;,&quot;href&quot;:&quot;/en/guide/theme.html&quot;,&quot;hreflang&quot;:&quot;en&quot;,&quot;data-site-language-toggle&quot;:&quot;&quot;,&quot;data-site-language-route&quot;:&quot;/en/guide/theme.html&quot;,&quot;data-site-language-match&quot;:&quot;true&quot;,&quot;data-native-navigation&quot;:&quot;&quot;,&quot;aria-label&quot;:&quot;Switch to English&quot;,&quot;title&quot;:&quot;Switch to English&quot;},&quot;idPrefix&quot;:&quot;document-2&quot;,&quot;injectionPrefix&quot;:10002}"><a class="el-button el-button--default el-button--default is-text icon-button site-language-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" href="/en/guide/theme.html" hreflang="en" data-site-language-toggle data-site-language-route="/en/guide/theme.html" data-site-language-match="true" data-native-navigation aria-label="Switch to English" title="Switch to English" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h10M8 3v3m3 0c0 5-3 8-7 10m1-7c0 3 3 5 5 6m3 5 4-10 4 10m-7-3h6"/></svg></span><!--]--></span></a></span><div class="site-region-switch"><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;20\&quot; height=\&quot;20\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;circle cx=\&quot;12\&quot; cy=\&quot;12\&quot; r=\&quot;9\&quot;/&gt;&lt;ellipse cx=\&quot;12\&quot; cy=\&quot;12\&quot; rx=\&quot;4\&quot; ry=\&quot;9\&quot;/&gt;&lt;path d=\&quot;M3 12h18M5 6h14M5 18h14\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button site-region-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;data-site-region-toggle&quot;:&quot;&quot;,&quot;aria-label&quot;:&quot;切换站点区域&quot;,&quot;aria-expanded&quot;:&quot;false&quot;,&quot;aria-controls&quot;:&quot;site-region-options&quot;,&quot;title&quot;:&quot;切换站点区域&quot;},&quot;idPrefix&quot;:&quot;document-3&quot;,&quot;injectionPrefix&quot;:10003}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text icon-button site-region-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-site-region-toggle aria-label="切换站点区域" aria-expanded="false" aria-controls="site-region-options" title="切换站点区域" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6h14M5 18h14"/></svg></span><!--]--></span></button></span><nav id="site-region-options" class="site-regions" aria-label="站点区域" hidden><a data-site-region="cn" href="https://asam-ui.cn/guide/theme.html">国内</a><a data-site-region="international" href="https://asam-ui.github.io/guide/theme.html">Global</a></nav></div><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;\n\t\t\t\t\t\t&lt;span class=\&quot;icon-wrap\&quot;\n\t\t\t\t\t\t\t&gt;&lt;svg\n\t\t\t\t\t\t\t\tclass=\&quot;icon\&quot;\n\t\t\t\t\t\t\t\taria-hidden=\&quot;true\&quot;\n\t\t\t\t\t\t\t\tfocusable=\&quot;false\&quot;\n\t\t\t\t\t\t\t\txmlns=\&quot;http://www.w3.org/2000/svg\&quot;\n\t\t\t\t\t\t\t\tviewBox=\&quot;0 0 256 256\&quot;\n\t\t\t\t\t\t\t\tfill=\&quot;currentColor\&quot;\n\t\t\t\t\t\t\t&gt;\n\t\t\t\t\t\t\t\t&lt;path\n\t\t\t\t\t\t\t\t\td=\&quot;M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z\&quot;\n\t\t\t\t\t\t\t\t/&gt;&lt;/svg\n\t\t\t\t\t\t&gt;&lt;/span&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button theme-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;aria-label&quot;:&quot;切换显示模式&quot;},&quot;idPrefix&quot;:&quot;document-4&quot;,&quot;injectionPrefix&quot;:10004}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text icon-button theme-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" aria-label="切换显示模式" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">
+						><span>搜索文档</span><kbd>Ctrl K</kbd></button
+					><div class="site-action-icons"><button type="button" class="icon-button website-wide-toggle" aria-pressed="false" aria-label="开启宽屏模式" title="开启宽屏模式"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 4v16M16 4v16"/><path class="wide-expand" d="m11 10-2 2 2 2m2-4 2 2-2 2"/><path class="wide-contract" d="m9 10 2 2-2 2m6-4-2 2 2 2"/></svg></button><div class="site-region-switch"><button type="button" class="icon-button site-region-toggle" data-site-region-toggle aria-label="切换站点区域" aria-expanded="false" aria-controls="site-region-options" title="切换站点区域"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6h14M5 18h14"/></svg></button><nav id="site-region-options" class="site-regions" aria-label="站点区域" hidden><a data-site-region="cn" href="https://asam-ui.cn/guide/theme.html">国内</a><a data-site-region="international" href="https://asam-ui.github.io/guide/theme.html">Global</a></nav></div><button
+						class="icon-button theme-toggle"
+						type="button"
+						aria-label="切换显示模式"
+					>
 						<span class="icon-wrap"
 							><svg
 								class="icon"
@@ -66,7 +63,14 @@
 								<path
 									d="M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z"
 								/></svg
-						></span></span><!--]--></span></button></span><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;\n\t\t\t\t\t\t&lt;span class=\&quot;icon-wrap\&quot;\n\t\t\t\t\t\t\t&gt;&lt;svg\n\t\t\t\t\t\t\t\tclass=\&quot;icon\&quot;\n\t\t\t\t\t\t\t\taria-hidden=\&quot;true\&quot;\n\t\t\t\t\t\t\t\tfocusable=\&quot;false\&quot;\n\t\t\t\t\t\t\t\txmlns=\&quot;http://www.w3.org/2000/svg\&quot;\n\t\t\t\t\t\t\t\tviewBox=\&quot;0 0 256 256\&quot;\n\t\t\t\t\t\t\t\tfill=\&quot;currentColor\&quot;\n\t\t\t\t\t\t\t&gt;\n\t\t\t\t\t\t\t\t&lt;path\n\t\t\t\t\t\t\t\t\td=\&quot;M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z\&quot;\n\t\t\t\t\t\t\t\t/&gt;&lt;/svg\n\t\t\t\t\t\t&gt;&lt;/span&gt;\n\t\t\t\t\t&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;icon-button menu-toggle&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;aria-label&quot;:&quot;展开导航&quot;,&quot;aria-controls&quot;:&quot;mobile-nav&quot;,&quot;aria-expanded&quot;:&quot;false&quot;},&quot;idPrefix&quot;:&quot;document-5&quot;,&quot;injectionPrefix&quot;:10005}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text icon-button menu-toggle asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" aria-label="展开导航" aria-controls="mobile-nav" aria-expanded="false" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">
+						></span></button
+					><button
+						class="icon-button menu-toggle"
+						type="button"
+						aria-label="展开导航"
+						aria-controls="mobile-nav"
+						aria-expanded="false"
+					>
 						<span class="icon-wrap"
 							><svg
 								class="icon"
@@ -80,12 +84,25 @@
 									d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
 								/></svg
 						></span>
-					</span><!--]--></span></button></span></div>
+					</button></div>
 				</div>
 			</div>
 			<nav id="mobile-nav" class="mobile-nav" aria-label="移动端导航" hidden>
 				<a href="/getting-started.html"
 					 aria-current="page">开始使用<span class="icon-wrap"
+						><svg
+							class="icon"
+							aria-hidden="true"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 256 256"
+							fill="currentColor"
+						>
+							<path
+								d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+							/></svg></span></a
+				><a href="/component-catalog.html"
+					>组件<span class="icon-wrap"
 						><svg
 							class="icon"
 							aria-hidden="true"
@@ -110,36 +127,18 @@
 							<path
 								d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
 							/></svg></span
-				></a><a href="/component-catalog.html"
-					>组件<span class="icon-wrap"
-						><svg
-							class="icon"
-							aria-hidden="true"
-							focusable="false"
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 256 256"
-							fill="currentColor"
-						>
-							<path
-								d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
-							/></svg></span></a
-				>
-			<a href="/pro/index.html">Pro</a><a href="/ai/index.html">AI</a><details class="mobile-section-nav"><summary>本页导航</summary><div class="docs-sidebar mobile-sidebar-content" data-site-component="sidebar" data-site-section="docs" aria-label="文档目录"><nav class="docs-primary-navigation" aria-label="全站文档导航"><span class="sidebar-heading">文档导航</span><a href="/getting-started.html">开始使用</a><a href="/component-catalog.html">组件目录</a><a href="/design-system.html">设计系统</a><span class="sidebar-heading">Pro</span><a href="/pro/installation.html">快速开始</a><a href="/pro/components.html">高级组件</a><a href="/pro/application.html">应用能力</a><a href="/pro/templates.html">页面模板</a><span class="sidebar-heading">版本</span><a href="/guide/compatibility.html">版本与兼容说明</a><a href="/guide/upgrade.html">升级指南</a><a href="/guide/ui-changelog.html">UI 更新日志</a><a href="/guide/pro-changelog.html">Pro 更新日志</a><span class="sidebar-heading">AI</span><a href="/ai/index.html">AI 接入</a><a href="/type-dictionary.html">类型字典</a></nav><div class="sidebar-divider"></div><span class="sidebar-heading">深入使用</span><a href="/guide/installation.html">安装与消费</a><a href="/guide/architecture.html">架构与边界</a><a href="/guide/provider.html">数据 provider</a><a href="/guide/contracts.html">联合类型与透传契约</a><a href="/guide/data-driven.html">数据驱动</a><a href="/guide/theme.html" class="selected" aria-current="page">主题与 CSS variables</a></div></details><details class="mobile-section-nav"><summary>本页内容</summary><div class="mobile-page-toc"><span>本页内容</span><nav><a href="#公开主题接口">公开主题接口</a><a href="#颜色、边框与文字约定">颜色、边框与文字约定</a><a href="#四档尺寸与继承">四档尺寸与继承</a><a href="#formitem-间距与布局工具类">FormItem 间距与布局工具类</a></nav></div></details></nav>
+				></a>
+			<a href="/ai/index.html">AI</a><details class="mobile-section-nav"><summary>本页导航</summary><div class="docs-sidebar mobile-sidebar-content" data-site-component="sidebar" data-site-section="docs" aria-label="文档目录"><span class="sidebar-heading">文档导航</span><a href="/getting-started.html">开始使用</a><a href="/component-catalog.html">组件目录</a><a href="/design-system.html">设计系统</a><a href="/type-dictionary.html">类型字典</a><div class="sidebar-divider"></div><span class="sidebar-heading">深入使用</span><a href="/guide/installation.html">安装与消费</a><a href="/guide/architecture.html">架构与边界</a><a href="/guide/provider.html">数据 provider</a><a href="/guide/contracts.html">联合类型与透传契约</a><a href="/guide/data-driven.html">数据驱动</a><a href="/guide/theme.html" class="selected" aria-current="page">主题与 CSS variables</a></div></details><details class="mobile-section-nav"><summary>本页内容</summary><div class="mobile-page-toc"><span>本页内容</span><nav><a href="#公开主题接口">公开主题接口</a><a href="#颜色、边框与文字约定">颜色、边框与文字约定</a><a href="#四档尺寸与继承">四档尺寸与继承</a><a href="#formitem-间距与布局工具类">FormItem 间距与布局工具类</a></nav></div></details></nav>
 		</header><div id="site-view">
 		
-		<div class="docs-layout wrap site-doc-layout" data-site-component="layout"><aside class="docs-sidebar" data-site-component="sidebar" data-site-section="docs" aria-label="文档目录"><nav class="docs-primary-navigation" aria-label="全站文档导航"><span class="sidebar-heading">文档导航</span><a href="/getting-started.html">开始使用</a><a href="/component-catalog.html">组件目录</a><a href="/design-system.html">设计系统</a><span class="sidebar-heading">Pro</span><a href="/pro/installation.html">快速开始</a><a href="/pro/components.html">高级组件</a><a href="/pro/application.html">应用能力</a><a href="/pro/templates.html">页面模板</a><span class="sidebar-heading">版本</span><a href="/guide/compatibility.html">版本与兼容说明</a><a href="/guide/upgrade.html">升级指南</a><a href="/guide/ui-changelog.html">UI 更新日志</a><a href="/guide/pro-changelog.html">Pro 更新日志</a><span class="sidebar-heading">AI</span><a href="/ai/index.html">AI 接入</a><a href="/type-dictionary.html">类型字典</a></nav><div class="sidebar-divider"></div><span class="sidebar-heading">深入使用</span><a href="/guide/installation.html">安装与消费</a><a href="/guide/architecture.html">架构与边界</a><a href="/guide/provider.html">数据 provider</a><a href="/guide/contracts.html">联合类型与透传契约</a><a href="/guide/data-driven.html">数据驱动</a><a href="/guide/theme.html" class="selected" aria-current="page">主题与 CSS variables</a></aside><article id="main" tabindex="-1" class="docs-content ai-content"><h1 id="主题与-css-variables" tabindex="-1">主题与 CSS variables <a class="header-anchor" href="#主题与-css-variables" aria-label="Permalink to &quot;主题与 CSS variables&quot;">&ZeroWidthSpace;</a></h1>
+		<div class="docs-layout wrap site-doc-layout" data-site-component="layout"><aside class="docs-sidebar" data-site-component="sidebar" data-site-section="docs" aria-label="文档目录"><span class="sidebar-heading">文档导航</span><a href="/getting-started.html">开始使用</a><a href="/component-catalog.html">组件目录</a><a href="/design-system.html">设计系统</a><a href="/type-dictionary.html">类型字典</a><div class="sidebar-divider"></div><span class="sidebar-heading">深入使用</span><a href="/guide/installation.html">安装与消费</a><a href="/guide/architecture.html">架构与边界</a><a href="/guide/provider.html">数据 provider</a><a href="/guide/contracts.html">联合类型与透传契约</a><a href="/guide/data-driven.html">数据驱动</a><a href="/guide/theme.html" class="selected" aria-current="page">主题与 CSS variables</a></aside><article id="main" tabindex="-1" class="docs-content ai-content"><h1 id="主题与-css-variables" tabindex="-1">主题与 CSS variables <a class="header-anchor" href="#主题与-css-variables" aria-label="Permalink to &quot;主题与 CSS variables&quot;">&ZeroWidthSpace;</a></h1>
 <p>完整 TS/JS SFC 与可交互结果见 <a href="/theme.html">主题与四档尺寸示例</a>。文档采用固定 Element Plus 2.14.7 与 ASAM 四档契约；颜色、边框、文字由 tokens 承接，不另造同名空组件。</p>
 <p>先加载 <code>element-plus/dist/index.css</code>，再加载 <code>@asam-ui/ui/style.css</code>。默认样式从 <code>--asam-*</code> 语义变量读取颜色、文字、边框、圆角、间距和尺寸，并把常用 Element Plus 变量映射到相同语义。查看 <strong>设计系统/基础色板</strong> 和 <strong>设计系统/主题覆盖示例</strong> 的实时结果。</p>
-<div data-asam-code-block data-code-single-line="false" class="language-ts vp-adaptive-theme"><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;18\&quot; height=\&quot;18\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;rect x=\&quot;8\&quot; y=\&quot;3\&quot; width=\&quot;12\&quot; height=\&quot;14\&quot; rx=\&quot;2\&quot;/&gt;&lt;path d=\&quot;M16 17v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;asam-code-copy&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;size&quot;:&quot;small&quot;,&quot;title&quot;:&quot;复制代码&quot;,&quot;aria-label&quot;:&quot;复制代码&quot;,&quot;data-copy-value&quot;:&quot;import { applyAsamTheme, createAsamTheme } from '@asam-ui/ui/tokens';\n\napplyAsamTheme(createAsamTheme({ color: { primary: '#0f766e' } }));\n&quot;},&quot;idPrefix&quot;:&quot;document-6&quot;,&quot;injectionPrefix&quot;:10006}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--small is-text asam-code-copy asam-button asam-button-default asam-button-small asam-button-press-feedback" style="--asam-button-icon-size:16px;" title="复制代码" aria-label="复制代码" data-copy-value="import { applyAsamTheme, createAsamTheme } from &#39;@asam-ui/ui/tokens&#39;;
-
-applyAsamTheme(createAsamTheme({ color: { primary: &#39;#0f766e&#39; } }));
-" data-asam-size="small" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="8" y="3" width="12" height="14" rx="2"/><path d="M16 17v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3"/></svg></span><!--]--></span></button></span><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { applyAsamTheme, createAsamTheme } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui/tokens'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<div class="language-ts vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-1" aria-label="复制代码">复制</button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-1"><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { applyAsamTheme, createAsamTheme } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@asam-ui/ui/tokens'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
 <span class="line"></span>
 <span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">applyAsamTheme</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">createAsamTheme</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({ color: { primary: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#0f766e'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> } }));</span></span></code></pre>
 </div><p>只覆盖 <code>color.primary</code> 时，hover、active 与渐变起点随之推导；也可分别指定。传入目标元素可把变量限定在局部容器：</p>
-<div data-asam-code-block data-code-single-line="false" class="language-ts vp-adaptive-theme"><span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;&lt;svg viewBox=\&quot;0 0 24 24\&quot; width=\&quot;18\&quot; height=\&quot;18\&quot; fill=\&quot;none\&quot; stroke=\&quot;currentColor\&quot; stroke-width=\&quot;1.5\&quot; aria-hidden=\&quot;true\&quot;&gt;&lt;rect x=\&quot;8\&quot; y=\&quot;3\&quot; width=\&quot;12\&quot; height=\&quot;14\&quot; rx=\&quot;2\&quot;/&gt;&lt;path d=\&quot;M16 17v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3\&quot;/&gt;&lt;/svg&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;class&quot;:&quot;asam-code-copy&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;size&quot;:&quot;small&quot;,&quot;title&quot;:&quot;复制代码&quot;,&quot;aria-label&quot;:&quot;复制代码&quot;,&quot;data-copy-value&quot;:&quot;const scope = document.querySelector&lt;HTMLElement&gt;('#preview');\nif (scope) applyAsamTheme(createAsamTheme({ color: { primary: '#0f766e' } }), scope);\n&quot;},&quot;idPrefix&quot;:&quot;document-7&quot;,&quot;injectionPrefix&quot;:10007}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--small is-text asam-code-copy asam-button asam-button-default asam-button-small asam-button-press-feedback" style="--asam-button-icon-size:16px;" title="复制代码" aria-label="复制代码" data-copy-value="const scope = document.querySelector&lt;HTMLElement&gt;(&#39;#preview&#39;);
-if (scope) applyAsamTheme(createAsamTheme({ color: { primary: &#39;#0f766e&#39; } }), scope);
-" data-asam-size="small" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="8" y="3" width="12" height="14" rx="2"/><path d="M16 17v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3"/></svg></span><!--]--></span></button></span><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> scope</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> document.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">querySelector</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">HTMLElement</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#preview'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<div class="language-ts vp-adaptive-theme"><button type="button" class="ai-copy" data-copy="ai-code-2" aria-label="复制代码">复制</button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code id="ai-code-2"><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> scope</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> document.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">querySelector</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">HTMLElement</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#preview'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (scope) </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">applyAsamTheme</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">createAsamTheme</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({ color: { primary: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#0f766e'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> } }), scope);</span></span></code></pre>
 </div><p>也可在安装时传 <code>app.use(AsamUI, { theme, target })</code>。默认写入 <code>document.documentElement</code>；局部 target 只影响其 DOM 后代，挂到 body 的弹出层仍继承全局变量。页面级样式应使用 <code>--asam-*</code>，不依赖内部生成类名。可通过 <code>defaultAsamTheme</code> 与 <code>toAsamCssVariables</code> 查询完整当前变量集；手写变量清单会随 tokens 变化而过期。</p>
 <p>字体栈优先列出思源黑体，但包没有附带字体文件。字符串 <code>icon</code> 是兼容属性，不自动加载图标运行时；需要可见图标时传组件或 <code>icon</code> slot。</p>
@@ -147,7 +146,7 @@ if (scope) applyAsamTheme(createAsamTheme({ color: { primary: &#39;#0f766e&#39; 
 <p><code>@asam-ui/ui/tokens</code> 导出 <code>defaultAsamTheme</code>、<code>createAsamTheme(overrides)</code>、<code>toAsamCssVariables(tokens)</code>、<code>applyAsamTheme(tokens?, target?)</code>、基础色板、设计值和四档密度。<code>AsamThemeTokens</code> 是完整对象类型，<code>DeepPartial&lt;AsamThemeTokens&gt;</code> 是覆盖类型，<code>AsamControlDensityTokens</code> 描述密度。完整返回对象与默认对象相互独立；传入 <code>undefined</code> 的覆盖字段保留默认值。<code>toAsamCssVariables</code> 将嵌套驼峰字段变为 <code>--asam-*</code> 字符串变量。<code>applyAsamTheme</code> 在同一目标再次应用时移除上次已写入而本次不存在的变量；服务端没有 document 且省略 target 时不执行 DOM 操作。</p>
 <p><code>border</code>、<code>typography.lineHeight</code> 和 <code>density.*.formItemMarginBottom</code> 为可选新增字段，保留既有完整对象的类型兼容。用 <code>createAsamTheme</code> 获得包含默认新增字段的对象；旧手写对象缺省这些字段时 CSS 使用默认回退。覆盖的类型仍严格检查字段值，不能把数值传给 CSS 长度字段。</p>
 <h2 id="颜色、边框与文字约定" tabindex="-1">颜色、边框与文字约定 <a class="header-anchor" href="#颜色、边框与文字约定" aria-label="Permalink to &quot;颜色、边框与文字约定&quot;">&ZeroWidthSpace;</a></h2>
-<div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><table tabindex="0">
+<table tabindex="0">
 <thead>
 <tr>
 <th>范围</th>
@@ -189,11 +188,11 @@ if (scope) applyAsamTheme(createAsamTheme({ color: { primary: &#39;#0f766e&#39; 
 </tr>
 </tbody>
 </table>
-</div></div><p>暗色通过 <code>createAsamTheme</code> 覆盖 surface、text、border 和语义颜色后应用。示例提供完整局部暗色覆盖与亮暗切换；默认主题仍为既定亮色，不依赖 HTML 的 <code>.dark</code> 自动改变 ASAM tokens。使用原生 <code>dark/css-vars.css</code> 的宿主仍需将 ASAM 语义色与自己的主题一致配置。局部主题不改变 body 级 teleported 弹层；需要同色弹层时应用全局主题，或使用相应组件支持的容器/teleported 配置。</p>
+<p>暗色通过 <code>createAsamTheme</code> 覆盖 surface、text、border 和语义颜色后应用。示例提供完整局部暗色覆盖与亮暗切换；默认主题仍为既定亮色，不依赖 HTML 的 <code>.dark</code> 自动改变 ASAM tokens。使用原生 <code>dark/css-vars.css</code> 的宿主仍需将 ASAM 语义色与自己的主题一致配置。局部主题不改变 body 级 teleported 弹层；需要同色弹层时应用全局主题，或使用相应组件支持的容器/teleported 配置。</p>
 <p>原生 <code>--el-color-error</code>、<code>error-light-3/5/7/8/9</code> 和 <code>error-dark-2</code> 与已有 danger 语义映射一致，默认、全局及局部主题都随当前 danger 变化；无需新增主题字段。原生 MessageBox 的 error 状态等直接消费这些变量的内容也沿用此映射。</p>
 <p>六个 <code>--el-color-{primary,success,warning,danger,error,info}-rgb</code> tuple 保留 Element Plus 编译值；<code>applyAsamTheme</code> 首次应用与重复应用都不转换它们，也不承诺动态 RGB 转换 API。<code>rgba(var(--el-color-error-rgb), 0.16)</code> 使用原生 tuple，而 <code>var(--el-color-error)</code> 使用当前 danger 语义色。亮暗示例提供六个实际 tuple 消费面；默认、全局、局部和嵌套应用均验证此保留边界。需要当前语义色的透明背景时使用 <code>color-mix(in srgb, var(--asam-color-danger) 16%, transparent)</code>。</p>
 <h2 id="四档尺寸与继承" tabindex="-1">四档尺寸与继承 <a class="header-anchor" href="#四档尺寸与继承" aria-label="Permalink to &quot;四档尺寸与继承&quot;">&ZeroWidthSpace;</a></h2>
-<div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><div class="cd-table-scroll" data-body-table tabindex="0" role="region" aria-label="正文表格"><table tabindex="0">
+<table tabindex="0">
 <thead>
 <tr>
 <th>size</th>
@@ -224,7 +223,7 @@ if (scope) applyAsamTheme(createAsamTheme({ color: { primary: &#39;#0f766e&#39; 
 </tr>
 </tbody>
 </table>
-</div></div><p>优先级为显式组件 size → 最近 Group → Form/FormItem → ConfigProvider → default。省略 scope 的 size 继续继承；响应式更新 provider 不覆盖更近的显式 Form/Group。数据包装复用同一个 ASAM injection key，不应复制 size context。big 只在传给原生 Element Plus 时桥接为 default，ASAM 后代与 <code>data-asam-size='big'</code> 仍为 big。自定义组件可用 <code>useAsamControlSize</code> 和 <code>toElementPlusControlSize</code>，仅真实 scope 容器调用 <code>provideAsamControlSize</code>。</p>
+<p>优先级为显式组件 size → 最近 Group → Form/FormItem → ConfigProvider → default。省略 scope 的 size 继续继承；响应式更新 provider 不覆盖更近的显式 Form/Group。数据包装复用同一个 ASAM injection key，不应复制 size context。big 只在传给原生 Element Plus 时桥接为 default，ASAM 后代与 <code>data-asam-size='big'</code> 仍为 big。自定义组件可用 <code>useAsamControlSize</code> 和 <code>toElementPlusControlSize</code>，仅真实 scope 容器调用 <code>provideAsamControlSize</code>。</p>
 <p>Textarea 高度由 rows/autosize 控制；Table、Descriptions、Pagination 等使用字号、图标、padding、gap 或 rowPadding 密度，不强制行高40/36/32/28。Icon/Avatar 的图形尺寸、Drawer 宽高、Space 间距、TimelineItem 节点大小继续保留各自 size 类型，不传四档字符串去替代数值尺寸。</p>
 <h2 id="formitem-间距与布局工具类" tabindex="-1">FormItem 间距与布局工具类 <a class="header-anchor" href="#formitem-间距与布局工具类" aria-label="Permalink to &quot;FormItem 间距与布局工具类&quot;">&ZeroWidthSpace;</a></h2>
 <p>2.14.7 在每个 FormItem 上声明 <code>--el-form-item-margin-bottom</code>。ASAM 在同一 item 上将它桥接到 <code>--asam-form-item-margin-bottom</code>，避免只写父容器却被原生局部声明遮住。四档默认均消费既有 <code>layout.fieldGap='20px'</code>；可通过 <code>density.big.formItemMarginBottom</code> 等覆写指定档位。局部旧完整主题省略新增间距字段时，<code>applyAsamTheme</code> 在本次目标上补四档 <code>var(--asam-layout-field-gap)</code> 回退，避免继承根部已经计算好的20px；局部 <code>fieldGap='31px'</code> 或 <code>'0px'</code> 仍有效，显式 density 覆盖优先。<code>toAsamCssVariables</code> 仍按实际对象序列化，缺省字段不会被它新增。嵌套 FormItem 的原生 margin-bottom:0 规则保留，label/content 行高和单行控件高度仍由各组件适配，不把间距变量当高度。</p>
@@ -237,70 +236,56 @@ if (scope) applyAsamTheme(createAsamTheme({ color: { primary: &#39;#0f766e&#39; 
 				<a class="footer-brand" href="/index.html"><span class="footer-brand-mark" aria-hidden="true"><img class="brand-image brand-image-light" src="/assets/brand/mark-light.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="32" height="32" alt="" aria-hidden="true" decoding="async"><img class="brand-image brand-image-dark" src="/assets/brand/mark-dark.svg?v=be86e5634f02282f9020d2858898941705a49e54c436908497de9d5bce793b3a" width="32" height="32" alt="" aria-hidden="true" decoding="async"></span><span>ASAM UI</span></a
 				><span>让一致的体验，从组件开始。</span>
 			</div>
-			<div class="footer-links"><a class="footer-icp" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">蒙ICP备15002457号-5</a>
+			<div class="footer-links"><span class="site-version">v1.0.0</span><a class="footer-icp" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">蒙ICP备15002457号-5</a>
 				<a href="/getting-started.html#release">当前接入方式</a
 				><a href="/design-system.html">设计系统</a
 				>
 			</div>
 		</footer>
 		</div><dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
-	<header class="site-search-top">
-		<h2 id="search-title">搜索文档</h2>
-		<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;关闭 &lt;kbd&gt;Esc&lt;/kbd&gt;&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;data-close-dialog&quot;:true,&quot;aria-label&quot;:&quot;关闭搜索&quot;},&quot;idPrefix&quot;:&quot;document-8&quot;,&quot;injectionPrefix&quot;:10008}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-close-dialog="true" aria-label="关闭搜索" data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">关闭 <kbd>Esc</kbd></span><!--]--></span></button></span>
-	</header>
-	<div class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;form&quot;,&quot;content&quot;:&quot;&quot;,&quot;props&quot;:{&quot;class&quot;:&quot;site-search-form&quot;,&quot;role&quot;:&quot;search&quot;},&quot;idPrefix&quot;:&quot;document-9&quot;,&quot;injectionPrefix&quot;:10009}"><form class="el-form el-form--default el-form--label-right site-search-form asam-base-form asam-control-default" role="search" data-asam-size="default"><!--[--><!--[--><div data-document-form-content>
-		<div class="site-search-field-slot">
-			<div class="search-field">
-				<div class="site-search-input">
-					<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"/></svg>
-					<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;input&quot;,&quot;content&quot;:&quot;&quot;,&quot;props&quot;:{&quot;id&quot;:&quot;global-search&quot;,&quot;type&quot;:&quot;search&quot;,&quot;placeholder&quot;:&quot;搜索文档&quot;,&quot;autocomplete&quot;:&quot;off&quot;,&quot;maxlength&quot;:120,&quot;aria-label&quot;:&quot;搜索基础组件、Pro 组件和页面模板&quot;},&quot;idPrefix&quot;:&quot;document-11&quot;,&quot;injectionPrefix&quot;:10011}"><div class="el-input el-input--default asam-input asam-control-default" style=""><!-- input --><!--[--><!-- prepend slot --><!--v-if--><div class="el-input__wrapper"><!-- prefix slot --><!--v-if--><input class="el-input__inner" data-asam-size="default" maxlength="120" type="search" autocomplete="off" tabindex="0" aria-label="搜索基础组件、Pro 组件和页面模板" placeholder="搜索文档" style=""><!-- suffix slot --><!--v-if--></div><!-- append slot --><!--v-if--><!--]--></div></span>
-				</div>
-				<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;搜索&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;submit&quot;,&quot;type&quot;:&quot;primary&quot;},&quot;idPrefix&quot;:&quot;document-12&quot;,&quot;injectionPrefix&quot;:10012}"><button ariadisabled="false" type="submit" class="el-button el-button--primary el-button--default asam-button asam-button-primary asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-asam-size="default" data-asam-button-type="primary" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">搜索</span><!--]--></span></button></span>
+			<div class="dialog-top">
+				<h2 id="search-title">搜索文档</h2>
+				<button class="icon-button" type="button" data-close-dialog aria-label="关闭搜索">
+					<span class="icon-wrap"
+						><svg
+							class="icon"
+							aria-hidden="true"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 256 256"
+							fill="currentColor"
+						>
+							<path
+								d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+							/></svg
+					></span>
+				</button>
 			</div>
-		</div>
-	</div><!--]--><!--]--></form></div>
-	<div id="search-results" class="search-results">
-		<section class="site-search-history" data-search-history hidden>
-			<h3>最近搜索</h3>
-			<div data-search-queries></div>
-		</section>
-		<div class="site-search-columns">
-			<section aria-labelledby="search-group-base">
-				<div class="site-search-column-heading">
-					<h3 id="search-group-base">基础组件</h3>
-					<span data-search-count="base"></span>
-					<a href="/component-catalog.html" data-search-browse>浏览目录</a>
-				</div>
-				<ul data-search-items="base"></ul>
-				<p class="site-search-empty" data-search-empty="base" hidden></p>
-				<section class="site-search-documents" data-search-documents hidden><h4>相关文档</h4><ul></ul></section>
-			</section><section aria-labelledby="search-group-pro">
-				<div class="site-search-column-heading">
-					<h3 id="search-group-pro">Pro 组件</h3>
-					<span data-search-count="pro"></span>
-					<a href="/pro/components.html" data-search-browse>浏览目录</a>
-				</div>
-				<ul data-search-items="pro"></ul>
-				<p class="site-search-empty" data-search-empty="pro" hidden></p>
-				
-			</section><section aria-labelledby="search-group-templates">
-				<div class="site-search-column-heading">
-					<h3 id="search-group-templates">页面模板</h3>
-					<span data-search-count="templates"></span>
-					<a href="/pro/templates.html" data-search-browse>浏览目录</a>
-				</div>
-				<ul data-search-items="templates"></ul>
-				<p class="site-search-empty" data-search-empty="templates" hidden></p>
-				
-			</section>
-		</div>
-	</div>
-	<footer class="site-search-footer">
-		<p class="site-search-shortcuts"><kbd>↑</kbd><kbd>↓</kbd> 选择 <kbd>Enter</kbd> 打开 <kbd>Esc</kbd> 关闭</p>
-		<p class="sr-only" role="status" data-search-status></p>
-		<span class="asam-document-control" data-asam-document-control="{&quot;kind&quot;:&quot;button&quot;,&quot;content&quot;:&quot;清空历史&quot;,&quot;props&quot;:{&quot;nativeType&quot;:&quot;button&quot;,&quot;type&quot;:&quot;default&quot;,&quot;text&quot;:true,&quot;data-search-clear-history&quot;:true,&quot;hidden&quot;:true},&quot;idPrefix&quot;:&quot;document-10&quot;,&quot;injectionPrefix&quot;:10010}"><button ariadisabled="false" type="button" class="el-button el-button--default el-button--default is-text asam-button asam-button-default asam-button-default asam-button-press-feedback" style="--asam-button-icon-size:16px;" data-search-clear-history="true" hidden data-asam-size="default" data-asam-button-type="default" data-v-6ba679f6><!--v-if--><span class=""><!--[--><span class="asam-document-label">清空历史</span><!--]--></span></button></span>
-	</footer>
-</dialog>
+			<label class="search-field"
+				><span class="sr-only">搜索组件或指南</span
+				><span class="icon-wrap"
+					><svg
+						class="icon"
+						aria-hidden="true"
+						focusable="false"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 256 256"
+						fill="currentColor"
+					>
+						<path
+							d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+						/></svg></span
+				><input
+					id="global-search"
+					type="search"
+					placeholder="搜索组件、安装、主题…"
+					autocomplete="off"
+			/></label>
+			<div id="search-results" class="search-results" aria-live="polite"></div>
+			<p class="dialog-hint">
+				<kbd>Tab</kbd> 选择结果 <kbd>Enter</kbd> 打开 <kbd>Esc</kbd> 关闭
+			</p>
+		</dialog>
 		<div class="toast" role="status" aria-live="polite"></div>
 	</body>
 </html>

@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamDialog/ep2147-nested-dialog/js/Demo.vue",
-			"sha256": "64c84b8a842dae70bccb0820794bb26443659b7e2877aa9755e219934f645ae4",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-a75efffb096d39d2e68ca4dd2d47172ca04c3d98a55515abf7f3a582a697528d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/a75efffb096d39d2e68ca4dd2d47172ca04c3d98a55515abf7f3a582a697528d.txt\n-->\n<template>\n\t<AsamButton type=\"primary\" @click=\"outerVisible = true\">打开外层对话框</AsamButton>\n\n\t<AsamDialog v-model=\"outerVisible\" title=\"外层对话框\" width=\"800\">\n\t\t<span>这是外层对话框。</span>\n\t\t<AsamDialog v-model=\"innerVisible\" width=\"500\" title=\"内层对话框\" append-to-body>\n\t\t\t<span>这是内层对话框。</span>\n\t\t</AsamDialog>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton type=\"default\" @click=\"outerVisible = false\">取消</AsamButton>\n\t\t\t\t<AsamButton type=\"primary\" @click=\"innerVisible = true\">打开内层对话框</AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n</template>\n\n<script setup>\nimport { AsamButton, AsamDialog } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst outerVisible = ref(false);\nconst innerVisible = ref(false);\n</script>\n",
-			"originalSourceSha256": "d05f485f554d6a3c1740ae5a616743a4d255ca2044b67defb94b5f06fec282db",
+			"sha256": "c9ff03996c3f0eaf02a3c16cc61c3542a8b86963112d580bdf99c3c265366172",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-a75efffb096d39d2e68ca4dd2d47172ca04c3d98a55515abf7f3a582a697528d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/a75efffb096d39d2e68ca4dd2d47172ca04c3d98a55515abf7f3a582a697528d.txt\n-->\n<template>\n\t<AsamButton type=\"default\" @click=\"outerVisible = true\"> 打开外层对话框 </AsamButton>\n\n\t<AsamDialog v-model=\"outerVisible\" title=\"外层对话框\" width=\"800\">\n\t\t<span>这是外层对话框。</span>\n\t\t<AsamDialog v-model=\"innerVisible\" width=\"500\" title=\"内层对话框\" append-to-body>\n\t\t\t<span>这是内层对话框。</span>\n\t\t</AsamDialog>\n\t\t<template #footer>\n\t\t\t<div class=\"dialog-footer\">\n\t\t\t\t<AsamButton type=\"default\" @click=\"outerVisible = false\">取消</AsamButton>\n\t\t\t\t<AsamButton type=\"default\" @click=\"innerVisible = true\">\n\t\t\t\t\t打开内层对话框\n\t\t\t\t</AsamButton>\n\t\t\t</div>\n\t\t</template>\n\t</AsamDialog>\n</template>\n\n<script setup>\nimport { AsamButton, AsamDialog } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst outerVisible = ref(false);\nconst innerVisible = ref(false);\n</script>\n",
+			"originalSourceSha256": "fd1c661b9dd3291e170990633ff6edbcc91c9e22e4ab958f2e48d4a9e4054e3b",
 			"notice": {
 				"id": "a75efffb096d39d2e68ca4dd2d47172ca04c3d98a55515abf7f3a582a697528d",
 				"url": "/licenses/source-notices/a75efffb096d39d2e68ca4dd2d47172ca04c3d98a55515abf7f3a582a697528d.txt",

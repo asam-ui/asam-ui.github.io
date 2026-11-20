@@ -1,1 +1,0 @@
-import{Mn as e,On as t,Yn as n,yr as r}from"./i18n-CJTJI6vg-3Uas6tNN.js";import{U as i}from"./components-ST0i0Wqf-D8-NR95E.js";var a={class:`pro-example-stack`},o={__name:`Demo`,setup(o){return(o,s)=>(n(),t(`div`,a,[e(r(i),{"model-value":new Date,label:`排期日历`,readonly:``},null,8,[`model-value`])]))}};export{o as default};

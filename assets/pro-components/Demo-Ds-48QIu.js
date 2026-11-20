@@ -1,1 +1,0 @@
-import{Mn as e,On as t,Yn as n,hr as r,yr as i}from"./i18n-CJTJI6vg-3Uas6tNN.js";import{U as a}from"./components-ST0i0Wqf-D8-NR95E.js";var o={class:`pro-example-stack`},s={__name:`Demo`,setup(s){let c=r(new Date);return(r,s)=>(n(),t(`div`,o,[e(i(a),{modelValue:c.value,"onUpdate:modelValue":s[0]||=e=>c.value=e,label:`工作日历`},null,8,[`modelValue`])]))}};export{s as default};

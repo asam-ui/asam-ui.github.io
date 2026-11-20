@@ -1,1 +1,0 @@
-import{Mr as e}from"./chunk-DmhlhrBa-BoWoli-h.js";function t(t,n,r){return e({get:t,set(e){r.some(t=>Object.is(t,e))&&n(e)}})}function n(t,n){return e({get:t,set(e){typeof e==`boolean`&&n(e)}})}function r(t,n){return e({get:t,set(e){typeof e==`string`&&n(e)}})}export{t as n,r,n as t};

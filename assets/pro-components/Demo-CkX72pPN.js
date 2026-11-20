@@ -1,1 +1,0 @@
-import{Mn as e,Nn as t,On as n,Yn as r,yr as i}from"./i18n-CJTJI6vg-3Uas6tNN.js";import{D as a}from"./components-ST0i0Wqf-D8-NR95E.js";var o={class:`pro-example-stack`},s=t({__name:`Demo`,setup(t){return(t,s)=>(r(),n(`div`,o,[e(i(a),{value:2400,"reduced-motion":``,unit:`项`})]))}});export{s as default};

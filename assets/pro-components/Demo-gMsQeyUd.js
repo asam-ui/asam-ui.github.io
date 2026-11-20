@@ -1,2 +1,0 @@
-import{Mn as e,Nn as t,On as n,Yn as r,hr as i,yr as a}from"./i18n-CJTJI6vg-3Uas6tNN.js";import{a as o}from"./components-ST0i0Wqf-D8-NR95E.js";var s={class:`pro-example-stack`},c=t({__name:`Demo`,setup(t){let c=i(`# 项目说明
-记录目标与进度。`);return(t,i)=>(r(),n(`div`,s,[e(a(o),{kind:`markdown`,modelValue:c.value,"onUpdate:modelValue":i[0]||=e=>c.value=e,label:`项目说明`},null,8,[`modelValue`])]))}});export{c as default};

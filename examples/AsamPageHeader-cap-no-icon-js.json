@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamPageHeader/cap-no-icon/js/Demo.vue",
-			"sha256": "0c117d73dede3bba2165402f8c08f5313a9c7689ea75652c0c43e9ae8054f1cc",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-233b85c4ebc97a0c45c57b1faa1ef0c2ebbc6c5df05cf59b2074baa01b5ca0ea.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/233b85c4ebc97a0c45c57b1faa1ef0c2ebbc6c5df05cf59b2074baa01b5ca0ea.txt\n-->\n<template>\n\t<AsamPageHeader icon=\"\">\n\t\t<template #content>\n\t\t\t<span class=\"text-large font-600 mr-3\">标题</span>\n\t\t</template>\n\t</AsamPageHeader>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamPageHeaderCapNoIconDemo' });\nimport { AsamPageHeader } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.text-large {\n\tfont-size: var(--el-font-size-large);\n}\n\n.font-600 {\n\tfont-weight: 600;\n}\n\n.mr-3 {\n\tmargin-right: 0.75rem;\n}\n</style>\n",
-			"originalSourceSha256": "d9cdf4b53fcf1098e5afd93da354b76faaaee79a9f0dacc8f18895d908df6a3c",
+			"sha256": "f9a3f335588e45cdfa4f19dfda10744a8f68206bab4882fb87c163a5f1ffb56e",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-233b85c4ebc97a0c45c57b1faa1ef0c2ebbc6c5df05cf59b2074baa01b5ca0ea.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/233b85c4ebc97a0c45c57b1faa1ef0c2ebbc6c5df05cf59b2074baa01b5ca0ea.txt\n-->\n<template>\n\t<AsamPageHeader icon=\"\">\n\t\t<template #content>\n\t\t\t<span class=\"text-large font-600 mr-3\"> 标题 </span>\n\t\t</template>\n\t</AsamPageHeader>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamPageHeaderCapNoIconDemo' });\nimport { AsamPageHeader } from '@asam-ui/ui';\n</script>\n\n<style scoped>\n/* Local styles keep this sample runnable without a website utility-CSS preset. */\n.text-large {\n\tfont-size: var(--el-font-size-large);\n}\n\n.font-600 {\n\tfont-weight: 600;\n}\n\n.mr-3 {\n\tmargin-right: 0.75rem;\n}\n</style>\n",
+			"originalSourceSha256": "a2a54584630b3be02141eccc935d085ea79ec5502aa51b7026f7289de83e1f50",
 			"notice": {
 				"id": "233b85c4ebc97a0c45c57b1faa1ef0c2ebbc6c5df05cf59b2074baa01b5ca0ea",
 				"url": "/licenses/source-notices/233b85c4ebc97a0c45c57b1faa1ef0c2ebbc6c5df05cf59b2074baa01b5ca0ea.txt",

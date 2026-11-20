@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamSpace/cap-vnode-type-spacer/js/Demo.vue",
-			"sha256": "5bc2200c1c80f1a879ca4d361f73d58cd7d39616b3f34124f63c36996d0ecfd2",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-080bd9640d52b5d2578dd49998855bc9e08682467fd7c7fd945cbdc9b15d2be8.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/080bd9640d52b5d2578dd49998855bc9e08682467fd7c7fd945cbdc9b15d2be8.txt\n-->\n<template>\n\t<AsamSpace :size=\"size\" :spacer=\"spacer\">\n\t\t<div v-for=\"i in 2\" :key=\"i\">\n\t\t\t<AsamButton type=\"default\">按钮 {{ i }}</AsamButton>\n\t\t</div>\n\t</AsamSpace>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamSpaceCapVnodeTypeSpacerDemo' });\nimport { AsamSpace, AsamButton } from '@asam-ui/ui';\nimport { h, ref } from 'vue';\nimport { AsamDivider } from '@asam-ui/ui';\nconst size = ref(10);\nconst spacer = h(AsamDivider, { direction: 'vertical' });\n</script>\n",
-			"originalSourceSha256": "a60cac2af8c4e84fffd597da2625463806187d31c8a503c8abadba1f936b85e5",
+			"sha256": "d58fb04345595ecb3028dc610b7b0bc3326e501be9a70c914a50688e2b50be44",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-080bd9640d52b5d2578dd49998855bc9e08682467fd7c7fd945cbdc9b15d2be8.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/080bd9640d52b5d2578dd49998855bc9e08682467fd7c7fd945cbdc9b15d2be8.txt\n-->\n<template>\n\t<AsamSpace :size=\"size\" :spacer=\"spacer\">\n\t\t<div v-for=\"i in 2\" :key=\"i\">\n\t\t\t<AsamButton type=\"default\"> 按钮 {{ i }} </AsamButton>\n\t\t</div>\n\t</AsamSpace>\n</template>\n\n<script setup>\ndefineOptions({ name: 'AsamSpaceCapVnodeTypeSpacerDemo' });\nimport { AsamSpace, AsamButton } from '@asam-ui/ui';\nimport { h, ref } from 'vue';\nimport { AsamDivider } from '@asam-ui/ui';\nconst size = ref(10);\nconst spacer = h(AsamDivider, { direction: 'vertical' });\n</script>\n",
+			"originalSourceSha256": "d53e2bb96b5450a65e67d5d689c876847e9199a1d467f197a7166a94ea6199e5",
 			"notice": {
 				"id": "080bd9640d52b5d2578dd49998855bc9e08682467fd7c7fd945cbdc9b15d2be8",
 				"url": "/licenses/source-notices/080bd9640d52b5d2578dd49998855bc9e08682467fd7c7fd945cbdc9b15d2be8.txt",

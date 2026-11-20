@@ -1,1 +1,0 @@
-import{Ai as e,Mr as t,Zr as n,ti as r}from"./chunk-DmhlhrBa-BoWoli-h.js";function i(i){let a=e(1440),o=t(()=>a.value<700?1:a.value<1100?2:4),s;return r(()=>{let e=i.value;if(!e)return;let t=()=>{a.value=e.getBoundingClientRect().width};t(),s=new ResizeObserver(t),s.observe(e)}),n(()=>s?.disconnect()),{width:a,columns:o}}export{i as t};

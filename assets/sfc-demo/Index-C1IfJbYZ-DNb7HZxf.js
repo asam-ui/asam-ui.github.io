@@ -1,1 +1,0 @@
-import"./vue.esm-bundler-5NdF0u5k.js";import{t as e}from"./repeat-click-Xs1C3EeT.js";var t=Object.assign({},e,{install(e){e.directive(`asam-repeat-click`,t)}});export{t};

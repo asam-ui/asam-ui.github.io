@@ -1,1 +1,0 @@
-import{Ct as e,Rt as t,T as n,W as r,x as i}from"./vue.esm-bundler-vg3bltyC.js";import{m as a}from"./index.esm-BEAscIcX.js";var o={"aria-live":`polite`},s=n({__name:`MinimalExample`,setup(n){let s=a();return(n,a)=>(r(),i(`output`,o,`页面状态：`+t(e(s)),1))}});export{s as default};

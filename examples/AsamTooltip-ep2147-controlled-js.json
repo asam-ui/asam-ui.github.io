@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"sourceSha": "b3e4a5e99ac35eff00ca365312a0eb12844e1e0a",
+	"sourceSha": "bc13c8998ab4b7a2d63558a716e2caaa76cf8d55",
 	"entry": "Demo.vue",
 	"files": [
 		{
 			"name": "Demo.vue",
 			"sourcePath": "apps/website/examples/AsamTooltip/ep2147-controlled/js/Demo.vue",
-			"sha256": "c8353890a9a1361c52c97e94df1f212c55e86bedb0aace42deca4c67fdff4cee",
-			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d.txt\n-->\n<template>\n\t<AsamTooltip :visible=\"visible\">\n\t\t<template #content>\n\t\t\t<span>内容</span>\n\t\t</template>\n\t\t<span @mouseenter=\"visible = true\" @mouseleave=\"visible = false\">\n\t\t\t<AsamButton type=\"default\">悬停查看</AsamButton>\n\t\t</span>\n\t</AsamTooltip>\n</template>\n\n<script setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst visible = ref(false);\n</script>\n",
-			"originalSourceSha256": "53494e718611d75681e5b723cf8936c67b2bba7f611168e458564ae74766ba27",
+			"sha256": "aaa54838e65267be31feb571a7a4a66f6a48e8aa0d55c8841b424fdb96bd36e5",
+			"source": "<!--\nSPDX-License-Identifier: MIT\nComplete attribution and permission: LICENSE-950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d.txt\nIncluded in the source bundle; notice resource: /licenses/source-notices/950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d.txt\n-->\n<template>\n\t<AsamTooltip :visible=\"visible\">\n\t\t<template #content>\n\t\t\t<span>内容</span>\n\t\t</template>\n\t\t<span @mouseenter=\"visible = true\" @mouseleave=\"visible = false\"\n\t\t\t><AsamButton type=\"default\"> 悬停查看 </AsamButton></span\n\t\t>\n\t</AsamTooltip>\n</template>\n\n<script setup>\nimport { AsamButton, AsamTooltip } from '@asam-ui/ui';\nimport { ref } from 'vue';\nconst visible = ref(false);\n</script>\n",
+			"originalSourceSha256": "858772bbcdcb474bf983c8be0888547884d141d4370f053c76de3af023e481be",
 			"notice": {
 				"id": "950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d",
 				"url": "/licenses/source-notices/950284faa8e0f7ee8b188bf721fef0c015e5ad06c2c4f0f1795a823a2f899e9d.txt",

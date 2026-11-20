@@ -3,8 +3,7 @@
 	background: var(--page);
 }
 
-.cd-page [hidden],
-.cd-demo [hidden] {
+.cd-page [hidden] {
 	display: none !important;
 }
 
@@ -60,12 +59,6 @@
 	font-weight: 600;
 }
 
-.cd-catalog [data-catalog-count] {
-	margin-inline-start: var(--asam-space-xs);
-	color: var(--asam-color-text-secondary);
-	font-variant-numeric: tabular-nums;
-}
-
 .cd-sidebar a,
 .cd-catalog a,
 .cd-toc a {
@@ -79,71 +72,22 @@
 	color: #566175;
 }
 
-main.cd-catalog-page > p,
-.cd-main .pro-component-catalog > p,
-.cd-catalog-page:has(> .pro-component-catalog) > p {
-	margin-block: 0;
-}
-
-.cd-catalog-search {
-	--catalog-search-background: var(--asam-color-surface);
-	--catalog-search-border: var(--asam-semantic-neutral-outline);
-	--catalog-search-text: var(--asam-color-text-primary);
-	--catalog-search-placeholder: var(--asam-color-text-regular);
-
-	display: grid;
-	gap: 8px;
-	margin-block: 0;
-}
-
-.cd-catalog-search > .asam-document-control {
-	display: block;
+.cd-page input[type='search'] {
 	width: 100%;
-	min-width: 0;
-}
-
-/* stylelint-disable selector-class-pattern -- Theme the public AsamInput wrapper's Element Plus elements. */
-.cd-catalog-search > input[type='search'],
-.cd-main .cd-catalog-search .asam-input .el-input__wrapper {
-	width: 100%;
-	min-height: 0;
-	margin: 0;
+	margin-top: 8px;
 	padding: 10px;
-	border: 1px solid var(--catalog-search-border);
+	border: 1px solid #9fa8b5;
 	border-radius: 8px;
-	background: var(--catalog-search-background);
-	color: var(--catalog-search-text);
-	font-size: 15px;
-	line-height: 1.75;
-	box-shadow: none;
+	background: white;
+	color: #202a3a;
 }
-
-.cd-main .cd-catalog-search .asam-input .el-input__inner {
-	height: 1.75em;
-	padding: 0;
-	color: var(--catalog-search-text);
-	font: inherit;
-}
-
-.cd-catalog-search > input[type='search']::placeholder,
-.cd-main .cd-catalog-search .asam-input .el-input__inner::placeholder {
-	color: var(--catalog-search-placeholder);
-}
-
-.cd-catalog-search > input[type='search']:focus-visible,
-.cd-main .cd-catalog-search .asam-input .el-input__wrapper:has(input:focus-visible) {
-	outline: 2px solid var(--asam-color-primary);
-	outline-offset: 2px;
-}
-/* stylelint-enable selector-class-pattern */
 
 .cd-main {
 	min-width: 0;
 	padding: 40px clamp(20px, 4vw, 64px) 80px;
 }
 
-.cd-main > h1,
-.cd-catalog-page > h1 {
+.cd-main > h1 {
 	font-size: clamp(28px, 3vw, 40px);
 	line-height: 1.3;
 	margin: 8px 0 16px;
@@ -167,24 +111,24 @@ main.cd-catalog-page > p,
 	color: var(--muted);
 }
 
-.cd-prose h2:not(.cd-demo-preview *, .el-overlay *, .el-popper *) {
+.cd-prose h2:not(.cd-demo-preview *) {
 	margin: 48px 0 20px;
 	font-size: 24px;
 	scroll-margin-top: 20px;
 }
 
-.cd-prose h3:not(.cd-demo-preview *, .el-overlay *, .el-popper *) {
+.cd-prose h3:not(.cd-demo-preview *) {
 	font-size: 18px;
 	margin: 24px 0 16px;
 }
 
-.cd-prose p:not(.cd-demo-preview *, .el-overlay *, .el-popper *) {
+.cd-prose p:not(.cd-demo-preview *) {
 	line-height: 1.8;
 	overflow-wrap: anywhere;
 	margin: 16px 0;
 }
 
-.cd-prose a:not(.cd-demo-preview *, .el-overlay *, .el-popper *) {
+.cd-prose a:not(.cd-demo-preview *) {
 	color: #9d322c;
 }
 
@@ -208,13 +152,12 @@ main.cd-catalog-page > p,
 	--text: var(--asam-color-text-primary);
 	--muted: #606c80;
 	--border: #e4e9f1;
-	--accent-text: var(--asam-semantic-primary-foreground);
+	--accent-text: color-mix(in srgb, var(--asam-color-primary) 90%, #000);
 
 	color-scheme: light;
 	color: var(--text);
 	background: var(--page);
-	padding: calc(2 * var(--asam-space-lg, 16px))
-		calc(var(--asam-space-lg, 16px) + var(--asam-space-sm, 8px));
+	padding: 32px 24px;
 	min-height: 120px;
 }
 
@@ -223,8 +166,8 @@ main.cd-catalog-page > p,
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
-	gap: calc(var(--asam-space-sm, 8px) + var(--asam-space-xs, 4px));
-	padding: calc(var(--asam-space-sm, 8px) + var(--asam-space-xs, 4px)) var(--asam-space-lg, 16px);
+	gap: 12px;
+	padding: 12px 16px;
 	border-top: 1px solid #d9dfe7;
 	background: #f8f9fb;
 }
@@ -245,13 +188,10 @@ main.cd-catalog-page > p,
 	font-size: 13px;
 }
 
-.cd-files .asam-button[data-file][aria-selected='true'] {
-	--asam-button-state-ink: var(--accent-text);
-	--asam-button-state-fill: var(--soft);
-	--asam-button-state-border: var(--accent);
-	--asam-button-state-hover-ink: var(--accent-text);
-	--asam-button-state-hover-fill: var(--soft);
-	--asam-button-state-hover-border: var(--accent);
+.cd-files button[aria-selected='true'] {
+	border-color: var(--accent);
+	color: var(--accent-text);
+	background: var(--soft);
 }
 
 .cd-source-header {
@@ -280,146 +220,9 @@ main.cd-catalog-page > p,
 	flex-shrink: 0;
 	align-items: center;
 	gap: 8px;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	align-self: start;
 }
 
-.pro-template-inline-mount {
-	position: relative;
-	min-width: 0;
-	min-height: 280px;
-	max-height: 720px;
-	overflow: auto;
-	isolation: isolate;
-}
-
-.pro-template-inline-mount > [data-template-inline-surface] {
-	min-width: 0;
-}
-
-/* 后载的 Element Plus 容器规则会覆盖欢迎页的布局网格。 */
-.pro-template-inline-mount[data-template-runtime='welcome'] .asam-admin-layout {
-	display: grid;
-}
-
-.pro-template-inline-mount[data-template-runtime='chatbot'] {
-	--chatbot-layout-height: min(100dvh, 720px);
-}
-
-.cd-source-actions > .asam-document-control {
-	display: inline-flex;
-}
-
-.cd-source-actions .asam-button {
-	margin: 0;
-}
-
-.cd-source-variant [data-file-panel],
-.cd-source-variant [data-file-panel] [data-asam-code-block] {
-	position: relative;
-}
-
-.cd-source-variant[data-file-layout='tree'] {
-	display: grid;
-	grid-template-columns: minmax(240px, 32%) minmax(0, 1fr);
-	grid-template-rows: max-content minmax(0, 1fr);
-}
-
-.cd-source-variant[data-file-layout='tree'] > .cd-source-header {
-	display: contents;
-}
-
-.cd-source-variant[data-file-layout='tree'] .cd-file-tree {
-	grid-column: 1;
-	grid-row: 2;
-	display: block;
-	overflow: auto;
-	padding: 12px;
-	border-right: 1px solid var(--border);
-	background: var(--soft);
-}
-
-.cd-source-tree {
-	min-width: 100%;
-	width: max-content;
-	max-height: 70dvh;
-	overflow: auto;
-	background: transparent;
-}
-
-/* stylelint-disable-next-line selector-class-pattern -- 原生 Tree 节点内容需要保留右侧滚动余量。 */
-.cd-source-tree .el-tree-node__content {
-	padding-inline-end: 12px;
-}
-
-.cd-source-tree-label {
-	white-space: nowrap;
-	font-size: 13px;
-}
-.cd-file-tree button {
-	justify-content: flex-start;
-	width: 100%;
-	margin-block: 3px;
-	white-space: nowrap;
-	text-align: left;
-}
-.cd-source-directory > summary {
-	padding-block: 6px;
-	color: var(--muted);
-	font-size: 12px;
-	overflow-wrap: anywhere;
-}
-.cd-source-variant .cd-source-directory {
-	margin: 0;
-}
-.cd-source-directory > div {
-	padding-inline-start: 8px;
-}
-.cd-source-variant[data-file-layout='tree'] .cd-source-actions {
-	grid-column: 1 / -1;
-	grid-row: 1;
-	min-width: 0;
-	padding: 12px;
-	background: var(--soft);
-	min-height: 0;
-}
-.cd-source-variant[data-file-layout='tree'] > [data-file-panel] {
-	grid-column: 2;
-	grid-row: 2;
-	min-width: 0;
-}
-@media (max-width: 767px) {
-	.cd-demo-preview {
-		overflow-x: auto;
-	}
-
-	.cd-source-variant[data-file-layout='tabs'] > .cd-source-header {
-		display: grid;
-		grid-template-columns: minmax(0, 1fr);
-	}
-
-	.cd-source-variant[data-file-layout='tabs'] .cd-source-actions {
-		justify-content: flex-start;
-	}
-
-	.cd-source-variant[data-file-layout='tree'] {
-		grid-template-columns: minmax(0, 1fr);
-	}
-	.cd-source-variant[data-file-layout='tree'] .cd-file-tree {
-		grid-column: 1;
-		grid-row: 2;
-		max-height: 200px;
-		border-right: 0;
-		border-bottom: 1px solid var(--border);
-	}
-	.cd-source-variant[data-file-layout='tree'] > [data-file-panel] {
-		grid-column: 1;
-		grid-row: 3;
-	}
-}
-
-.cd-page pre:not(.cd-demo-preview *, .el-overlay *, .el-popper *) {
+.cd-page pre:not(.cd-demo-preview *) {
 	max-width: 100%;
 	overflow-x: auto;
 	padding: 20px;
@@ -431,7 +234,7 @@ main.cd-catalog-page > p,
 	tab-size: 4;
 }
 
-.cd-page code:not(.cd-demo-preview *, .el-overlay *, .el-popper *) {
+.cd-page code:not(.cd-demo-preview *) {
 	font-family: SFMono-Regular, Consolas, monospace;
 	overflow-wrap: anywhere;
 }
@@ -647,13 +450,12 @@ main.cd-catalog-page > p,
 	margin: auto;
 }
 
-.cd-page .cd-main :focus-visible:not(:where(.cd-demo-preview *, .el-overlay *, .el-popper *)) {
+.cd-page :focus-visible {
 	outline: 2px solid var(--accent);
 	outline-offset: 3px;
 }
 
 /* These controls draw focus on their wrapper, not on the editable child. */
-.cd-page .asam-input input:focus-visible,
 .cd-page .el-input-tag__input:focus-visible,
 .cd-page .el-select__input:focus-visible,
 .cd-page .el-select-v2__combobox-input:focus-visible {
@@ -705,148 +507,6 @@ main.cd-catalog-page > p,
 	}
 
 	.cd-demo-preview {
-		padding: calc(var(--asam-space-lg, 16px) + var(--asam-space-sm, 8px))
-			var(--asam-space-lg, 16px);
+		padding: 24px 16px;
 	}
-}
-
-/* 基础组件、Pro、类型资料与 AI 正文共用表格视觉。 */
-.site-doc-layout :is(.cd-table-scroll, .pro-api-scroll) {
-	max-width: 100%;
-	overflow-x: auto;
-	margin-block: 20px;
-}
-.site-doc-layout :is(.cd-table-scroll, .pro-api-scroll) table {
-	display: table;
-	border-collapse: collapse;
-	width: 100%;
-	table-layout: auto;
-	font-size: 14px;
-	line-height: 1.7;
-}
-.site-doc-layout :is(.cd-table-scroll, .pro-api-scroll) :is(th, td) {
-	padding: 12px 16px;
-	border: 0;
-	border-bottom: 1px solid var(--border);
-	vertical-align: top;
-	overflow-wrap: anywhere;
-}
-.site-doc-layout :is(.cd-table-scroll, .pro-api-scroll) th {
-	color: var(--ink);
-	background: var(--surface);
-	text-align: left;
-	font-weight: 600;
-}
-.site-doc-layout :is(.cd-table-scroll, .pro-api-scroll) td {
-	color: var(--text, var(--ink));
-}
-.site-doc-layout :is(.cd-table-scroll, .pro-api-scroll) code {
-	white-space: pre-wrap;
-	overflow-wrap: anywhere;
-}
-
-.site-doc-layout :is(.cd-api .cd-table-scroll, .cd-api.cd-table-scroll) > table {
-	table-layout: fixed;
-	font-size: 13px;
-}
-
-.site-doc-layout :is(.cd-api .cd-table-scroll, .cd-api.cd-table-scroll) :is(th, td) {
-	padding: 12px;
-}
-
-.site-doc-layout :is(.cd-api .cd-table-scroll, .cd-api.cd-table-scroll) th {
-	background: transparent;
-}
-
-.type-dictionary .cd-api table {
-	table-layout: fixed;
-	width: 100%;
-}
-.type-dictionary .cd-api :is(th, td):nth-child(1) {
-	width: 27%;
-}
-.type-dictionary .cd-api :is(th, td):nth-child(2) {
-	width: 35%;
-}
-.type-dictionary .cd-api :is(th, td):nth-child(3) {
-	width: 18%;
-}
-.type-dictionary .cd-api :is(th, td):nth-child(4) {
-	width: 20%;
-}
-.type-filter-row {
-	display: flex;
-	align-items: center;
-	gap: 16px;
-	margin-block: 24px;
-	flex-wrap: wrap;
-}
-.type-filter-row .asam-input {
-	width: min(100%, 360px);
-}
-.type-filter-row [role='status'] {
-	color: var(--muted);
-	font-size: 13px;
-}
-.type-definitions details {
-	padding: 12px 0;
-	border-bottom: 1px solid var(--border);
-	scroll-margin-top: 96px;
-}
-.type-definitions details pre {
-	max-width: 100%;
-	white-space: pre-wrap;
-	overflow-wrap: anywhere;
-}
-
-.cd-main .cd-catalog-search .asam-input {
-	width: 100%;
-	min-width: 0;
-	height: auto;
-	font-size: 15px;
-	line-height: 1.75;
-}
-
-.cd-source-variant .cd-source-copy-control {
-	position: absolute;
-	top: 8px;
-	right: 8px;
-	z-index: 1;
-}
-
-.cd-source-variant .cd-source-copy-control .asam-button {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	width: 32px;
-	height: 32px;
-	padding: 0;
-	margin: 0;
-	border: 0;
-	background: transparent;
-	color: var(--muted);
-}
-
-.cd-source-variant .cd-source-copy-control .asam-button:is(:hover, :focus-visible) {
-	background: var(--page);
-	color: var(--accent-text);
-}
-
-.cd-source-variant [data-code-single-line='true'] > .cd-source-copy-control {
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-.cd-source-variant [data-file-panel][data-source-file] pre {
-	padding-inline-end: 52px;
-}
-
-.cd-source-variant [data-file-panel] .cd-copy-status {
-	position: absolute;
-	top: 8px;
-	right: 48px;
-	z-index: 1;
-	font-size: 12px;
-	background: var(--page);
-	color: var(--text);
 }

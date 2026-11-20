@@ -1,1 +1,0 @@
-import{It as e}from"./chunk-DmhlhrBa-BoWoli-h.js";var t=Object.assign({},e,{install(e){e.component(`AsamTree`,t)}});export{t};

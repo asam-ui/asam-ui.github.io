@@ -1,1 +1,0 @@
-import"./vue.esm-bundler-5NdF0u5k.js";import{n as e}from"./Index-C1pAtClx-B-9icFBv.js";var t=Object.assign({},e,{install(e){e.component(`AsamTabPane`,t)}});export{t};
