@@ -7,7 +7,7 @@ command -v "$asam_node22" >/dev/null || { echo '请准备 Node.js >=22.19 <23，
 "$asam_node22" -e 'const [major,minor]=process.versions.node.split(".").map(Number);if(major!==22||minor<19)process.exit(2)' || {
 	echo '需要独立的 Node.js >=22.19 <23；Harness 使用自己的运行时。' >&2; exit 2;
 }
-manifest_url=$(printf '%s' 'aHR0cHM6Ly9hc2FtLXVpLmNuL2luc3RhbGwvcmVsZWFzZXMvMS4wLjEtZGFyd2luLWFybTY0L3JlbGVhc2UuanNvbg==' | openssl base64 -d -A)
+manifest_url=$(printf '%s' 'aHR0cHM6Ly9hc2FtLXVpLmNuL2luc3RhbGwvcmVsZWFzZXMvMS4wLjItZGFyd2luLWFybTY0L3JlbGVhc2UuanNvbg==' | openssl base64 -d -A)
 allow_http_test=0
 downloads=$("$asam_node22" -e 'const fs=require("node:fs"),p=require("node:path"),root=p.join(require("node:os").homedir(),"Downloads"),dir=p.join(root,"ASAM-UI");try{fs.mkdirSync(dir,{recursive:true,mode:0o700});if(!fs.lstatSync(dir).isDirectory())process.exit(2);process.stdout.write(dir)}catch{process.exit(2)}') || {
 	echo '无法使用 Downloads/ASAM-UI，请检查同名文件、目录链接和写入权限。' >&2; exit 2;
